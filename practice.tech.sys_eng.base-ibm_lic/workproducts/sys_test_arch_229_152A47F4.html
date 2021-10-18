@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Deliverable: System Test Architecture
+			(DCD 229)
+		</title>
+<meta name="uma.type" content="Deliverable">
+<meta name="uma.name" content="sys_test_arch_229">
+<meta name="uma.presentationName" content="System Test Architecture">
+<meta name="element_type" content="artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_ic10YD1DEd6fVa8fv3BibQ", "_sgIdIGptEeSdxcAgtnf5og", "mwebC2FA7061789A8D5B85256DC600795A31"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_WCR4YcRdEdyD76CYS6Ta7A", "mwebC2FA7061789A8D5B85256DC600795A31"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebC2FA7061789A8D5B85256DC600795A31"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Deliverable: System Test Architecture
+			(DCD 229)
+		</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/deliverable.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The System Test Architecture document defines the architecture needed to perform all “end-to-end” system testing.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">The document describes the System Test architecture(s) to allow for verification/ validation of all requirements as defined
+in the project’s Requirements Traceability and Verification matrix. The System Test Architecture is reviewed at the
+Preliminary Design Review. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>Examples of the test phases that can be covered by a System Test Architecture include: 
+<ul>
+    <li>
+        Systems Integration Tests
+    </li>
+    <li>
+        Performance / Stress Tests
+    </li>
+    <li>
+        User Acceptance Tests
+    </li>
+    <li>
+        Operability Tests
+    </li>
+    <li>
+        Pre-Production Tests
+    </li>
+    <li>
+        Other similar test phases, which are part of your project.
+    </li>
+</ul>
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>The Systems Engineering team should develop this document in conjunction with the Test Manager and his/her team.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Responsible:
+								</span></td><td class="sectionTableCell"><span class="sectionTableCellHeading">Modified By:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/infrastructure_architect_1578FFE0.html" guid="mwebBD14B77ED1325BE4852567D800507451">Infrastructure Architect</a>
+</li>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/systems_eng_pro_3670F084.html" guid="mweb73C3E4C06821DB1E85256D170044BDE1">Systems Engineering Professional</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Tasks</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Input To:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/perform_critical_design_review_cleanup_841C7FF5.html" guid="mweb093C356700000113D4B29F3A1CD25A19">Perform Critical Design Review Cleanup</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/perform_critical_design_review_3BD2F06D.html" guid="mweb093C356700000113D4B27DAC59012EBB">Perform the Critical Design Review</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/perform_prelim_design_review_DD16CE78.html" guid="mweb093C356700000113D4B23B217873B6F9">Perform the Preliminary Design Review</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/preliminary_design_review_cleanup_44B3DEF0.html" guid="mweb093C356700000113D4B24726020D2C51">Preliminary Design Review Cleanup</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/prepare_for_critical_design_review_D9D0BA24.html" guid="mweb093C356700000113D4B25A8538DAE679">Prepare for Critical Design Review</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/prepare_for_preliminary_design_review_7C105411.html" guid="mweb093C356700000113D4B2343F34EB7A5D">Prepare for Preliminary Design Review</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Output From:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/assemble_system_test_arch_doc_C147456D.html" guid="mweb093C356700000113D4B20921D337699B">Assemble System Test Architecture document</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/perform_critical_design_review_cleanup_841C7FF5.html" guid="mweb093C356700000113D4B29F3A1CD25A19">Perform Critical Design Review Cleanup</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/preliminary_design_review_cleanup_44B3DEF0.html" guid="mweb093C356700000113D4B24726020D2C51">Preliminary Design Review Cleanup</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Templates</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../practice.tech.sys_eng.base-ibm_lic/guidances/templates/system_test_arch_7E7F4938.html" guid="_HQ5zIKS-Edy_Ycb9vtUAhg">System Test Architecture</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Deliverable Properties</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Deliverable Parts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/application_function_model_92E5152A.html" guid="mwebA65B7D730F4E0340852568820056CCB7">Application Function Model</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_delv.extend-ibm_int/workproducts/application_model_089_684BF71E.html" guid="mweb9731CB0C33907A2785256B1B006F5391">Application Model</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/component_model_333A932.html" guid="mweb0BBA8C7269610775852568B3006C3ACF">Component Model</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/data_model_201FD2D8.html" guid="mweb92DDF88B152881D585256885005042A1">Data Model</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/deployment_unit_model_6EA973D.html" guid="_pu0XUDDXEdyz_pzDMsV8FQ">Deployment Unit Model</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/operational_model_5CE9CFC9.html" guid="mwebD1869C2CAF6E9991852568A4004FA5D9">Operational Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.base-ibm_lic/workproducts/sys_comp_arch_231_EA99AB21.html" guid="mweb57034FE3ECA7114D85256DC600795B23">System/Component Architecture</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/system_context_5222F1AD.html" guid="_htWFcEMFEdyP_Jn83ylwUQ">System Context</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Packaging Instructions</th><td class="sectionTableCell">The System Test Architecture will be a subset of the System/Component architecture (at the component level). The System
+Test Architecture will use the Component Level architecture as a basis for its definition.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/guidances/guidelines/conducting_pdr_181E823F.html" guid="mweb3B94FFAF2D4DA39A85256D130052F2D8">Conducting a Preliminary Design Review</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Estimation Considerations</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/guidances/estimationconsiderations/sys_test_arch_legacy_AA2AE44F.html" guid="_6GdokKSxEdy_Ycb9vtUAhg">System Test Architecture (Legacy)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

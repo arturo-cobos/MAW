@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing Managed IT Elements</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="managed_it_elements_dev">
+<meta name="uma.presentationName" content="Developing Managed IT Elements">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_h77XYC-mEdyGz7hib8BMuw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_h77XYC-mEdyGz7hib8BMuw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing Managed IT Elements</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Migrated development approach from existing IBM Global Services Method work product.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/managed_it_elements_25E9CF67.html" guid="mweb16E9879380BD375285256886005B0611">Managed IT Elements</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">The following steps should be followed:<br />
+<br />
+<b>Step 1.</b> Review the overall picture of the technology that is to be managed. This should be a check on the technology
+scope of the project as well. The following topics should be considered during the discussion: <br />
+<u>Identify the Major Components</u>. Identify the major components needed to deliver the key services and mission critical
+business application. Components can be systems, servers, workstations, network elements, programs, or data. The component
+identification needs only to be done at a level sufficient to clearly differentiate what will and what will not be included
+in the target system. Where there is potential for ambiguity, list related or similar components that are specifically
+excluded from the scope of the target system. <br />
+<u>Identify Exclusions</u>. Review each component of the target system for factors that might require that a component be
+excluded from the scope of the management system being designed. Before making a final decision to exclude a particular
+component, think through the potential management and service-quality ramifications of doing so. <br />
+<u>Document the Target System Scope</u>. A diagram showing the components needed to deliver the business application or
+service, indicating what is included and excluded from the target system, is often the most effective way to document the
+scope of the target system. Capture any explanatory notes or rationale that might be needed to reference later. <br />
+<b>Step 2.</b> Select the Appropriate View. To form element groups that have meaning in a specific environment, the
+designer must know the business strategy, critical success factors and business applications of the enterprise. These
+factors must be examined to clearly understand systems management in the client's context. This understanding was obtained
+in the generation of the Systems Management Principles. The principles establish the style to be used in managing the
+defined environment. This style is matched to a specific view. It is sometimes valuable early in the decomposition process
+to use more than one view. The different insights obtained can be discussed with the client and the most suitable view
+selected. <i>Note that to use the templates from the SMFD-TE method, the component view must be selected.</i> <br />
+<b>Step 3.</b> Define the managed element list. Note that, while hardware and software components tend to dominate the
+element axis, other element types such as services provided by common carriers or internet providers may, in many cases, be
+included on the axis. However, elements should not be included if they do not reside within the target environment as
+previously defined. <br />
+To finalize the components to be included on the element axis list it is important to conduct an objective "reasonableness
+check" to ensure that the list has not grown to an impractical length. The client sponsor should review the list for
+accuracy and then give their approval. The sponsor must be cautioned that too long a list will create a higher level of
+complexity and therefore may jeopardize the success of the engagement, as there will be temptation to add additional
+elements. 
+<ul>
+    <li>
+        <div>
+            Start with the straw man list of elements provided by the SMFD-TE method.
+        </div>
+    </li>
+    <li>
+        <div>
+            Meet with designated clients and create element list by adding to and changing the straw man list.
+        </div>
+    </li>
+    <li>
+        <div>
+            Conduct "reasonableness check" of significant elements list. Ensure the following:
+        </div>
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        - The element axis is composed of only significant elements.<br />
+        - The length of the element axis is manageable, given the scope of the engagement.<br />
+        - The element axis represents all essential management requirements of the target environment.
+    </p>
+</blockquote>
+<p>
+    Where possible, consolidate or "roll-up" the elements into aggregate groups of elements in order to facilitate
+    completion of the design work and to eliminate useless discussions. The guideline used for combining elements into
+    groups should be whether the specific technology elements in question generate unique and significant skill, tool, and
+    data requirements or not. If they do, then keep them as separate entities in the element list. If they do not, then
+    combine them with similar elements to form a "generic" grouping of elements; i.e. generic desktop peripherals. See the
+    SMFD-TE method for a complete discussion.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

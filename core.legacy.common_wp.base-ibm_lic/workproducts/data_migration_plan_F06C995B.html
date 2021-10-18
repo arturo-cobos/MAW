@@ -1,0 +1,541 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Artifact: Data Migration Plan
+			(APP 017)
+		</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="data_migration_plan">
+<meta name="uma.presentationName" content="Data Migration Plan">
+<meta name="uma.category" content="@Type:@Name:@DisplayName">
+<meta name="uma.category" content="WorkProductType:plan:Plan">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_Y3ixcFq4Ed6NVp6oO7pJwg", "_sc9NUGptEeSdxcAgtnf5og", "mwebDFECFDE6B757374A852568820061938D"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_ic10YD1DEd6fVa8fv3BibQ", "_sgIdIGptEeSdxcAgtnf5og", "mwebDFECFDE6B757374A852568820061938D"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_vrCfoa6CEdyI4IDvQ60EJA", "_ht3agO3tEdugFZ65awqtDw", "_VCOY4O3uEdugFZ65awqtDw", "mwebDFECFDE6B757374A852568820061938D"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_HcVQwMRfEdyD76CYS6Ta7A", "_13NR66xcEdyf7rzERpP8vA", "mwebDFECFDE6B757374A852568820061938D"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_WCR4YMRdEdyD76CYS6Ta7A", "mwebDFECFDE6B757374A852568820061938D"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebDFECFDE6B757374A852568820061938D"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Artifact: Data Migration Plan
+			(APP 017)
+		</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/artifact.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The Data Migration Plan work product covers the plan for migrating (automated/manual) data. </td>
+</tr>
+<tr>
+<td>Domains: <a href="./../../core.default.cat_def.base-ibm_lic/domains/data_C1AE5663.html" guid="_VCOY4O3uEdugFZ65awqtDw">Data</a>
+<br>Work Product Kinds: <a href="./../../core.default.cat_def.base-ibm_lic/workproducttypes/plan_F180533.html" guid="_13NR66xcEdyf7rzERpP8vA">Plan</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The purpose of this work product is:
+</p>
+<ul>
+    <li>
+        To ensure that representative data and processes are available for the testing and acceptance of the data transfer
+        programs
+    </li>
+    <li>
+        To identify, plan and document both the data and the processes that need to be in place to successfully
+        migrate/load and accept the data required by the business to run the solution in a production environment. This is
+        demonstrated initially in the Integration Test
+    </li>
+    <li>
+        To plan for/ensure the availability of the required system capacity in order to handle the production
+        migration/load of the data, and execution of the conversion programs and interfaces
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Parent Deliverables</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../practice.tech.sys_eng.base-ibm_lic/workproducts/component_reqs_spec_197_2203FD2B.html" guid="mweb077AE52EF99C45D885256D10007B6C92">Component Requirements Specifications</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_delv.base-ibm_lic/workproducts/high_level_solution_plans_114_F681EF92.html" guid="mwebECE5633C0B61A36385256B1C007E51E1">High-Level Solution Plans</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_delv.extend-ibm_int/workproducts/soln_deployment_plans_delv_079_7CE852BF.html" guid="mweb78A88634DC71251D85256B1D00117F26">Solution Deployment Plans Deliverable</a>
+</li>
+<li>
+<a href="./../../core.tech.swd.common.extend-ibm_int/workproducts/solution_plan_0544_13D76E58.html" guid="_QqlhuH7tEd-Spt3EoYp3Bg">Solution Plan</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.base-ibm_lic/workproducts/semp_230_1579E56D.html" guid="mwebA51CD45A0D41A9CE85256DC6007969B5">Systems Engineering Management Plan (SEMP)</a>
+</li>
+<li>
+<a href="./../../core.tech.swd.common.base-ibm_lic/workproducts/updated_deploy_plans_delv_050_52B52D0E.html" guid="mweb0DE567644576804985256B1D0014619C">Updated Deployment Plans Deliverable</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Fulfilled Slots</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../core.gen.slot.base-ibm_lic/workproducts/technical_approach_slot_50CD1AB5.html" guid="_zy8JAIoFEd-TbpnqeEc_4g">[Technical Approach]</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Responsible:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/information_architect_C80144F0.html" guid="mwebE17B2E5F8993A528852567D80050659C">Information Architect</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Modified By:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/information_architect_C80144F0.html" guid="mwebE17B2E5F8993A528852567D80050659C">Information Architect</a>
+</li>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/infrastructure_architect_1578FFE0.html" guid="mwebBD14B77ED1325BE4852567D800507451">Infrastructure Architect</a>
+</li>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/systems_eng_pro_3670F084.html" guid="mweb73C3E4C06821DB1E85256D170044BDE1">Systems Engineering Professional</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Tasks</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Input To:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.gen.deployment_mgmt.base-ibm/tasks/initialize_system_data_sources_5C6771D1.html" guid="_UNtoAYNnEd6ZssFTs4b4Eg">Initialize System Data Sources</a>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/assemble_architecture_document_14069162.html" guid="mweb093C356700000113D4ADDE94F6442BD1">Assemble Architecture Document</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/assemble_component_req_specification_FC70DD7D.html" guid="mweb093C356700000113D4B1BB5889B6FF22">Assemble Component Requirements Specification</a>
+</li>
+<li>
+<a href="./../../process.tech.ad_20.base-ibm_int/tasks/assemble_solution_plan_deliverable_BA7BCFB4.html" guid="_W0_45n7xEd-Spt3EoYp3Bg">Assemble Solution Plan Deliverable</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/assemble_system_req_document_8F086931.html" guid="mweb093C356700000113D4ADB73C918A4C25">Assemble System Requirements Document</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/perform_critical_design_review_cleanup_841C7FF5.html" guid="mweb093C356700000113D4B29F3A1CD25A19">Perform Critical Design Review Cleanup</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/perform_critical_design_review_3BD2F06D.html" guid="mweb093C356700000113D4B27DAC59012EBB">Perform the Critical Design Review</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/perfrom_prod_readiness_review_4C9DB864.html" guid="mweb093C356700000113D4B3300AD0610CA6">Perform the Production Readiness Review</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/prepare_for_critical_design_review_D9D0BA24.html" guid="mweb093C356700000113D4B25A8538DAE679">Prepare for Critical Design Review</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/prepare_for_prod_readiness_review_67E7E050.html" guid="mweb093C356700000113D4B3283F3AFC6968">Prepare for Production Readiness Review</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/prod_readiness_review_cleanup_3D15CE55.html" guid="mweb093C356700000113D4B33B553F670957">Production Readiness Review Cleanup</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/update_system_comp_arch_doc_AC64A07D.html" guid="mweb093C356700000113D4B1E6C3859499FE">Update System/Component Architecture Document</a>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<a href="./../../practice.gen.deployment_mgmt_soma.addon-ibm_lic/tasks/deploy_services_install_soa_components_178A4C0A.html" guid="_0e3osFSdEdueYbvaLyDcJQ">Deploy Services and Install SOA Components</a>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<a href="./../../practice.tech.assess_tech_impact.base-ibm_lic/tasks/analyze_baseline_12BC15FD.html" guid="_HEy2EBC0Ed2d6ZU3Wcr6fA">Analyze Baseline</a>
+</li>
+<li>
+<a href="./../../practice.mgmt.project_process_tailoring.extend-ibm_lic/tasks/archive_engagement_2326BA86.html" guid="mweb093C35670000010E6077363ADE049AD9">Archive Engagement</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev.base-ibm_lic/tasks/create_build_A871C513.html" guid="_79ZFQIW3Ed6eRN4Jq00Nbw">Create Build</a>
+</li>
+<li>
+<a href="./../../practice.gen.deployment_mgmt.base-ibm/tasks/define_deployment_procedures_FFE52554.html" guid="_H5w59URAEdy0e9h1zdJ_TA">Define Deployment Procedures</a>
+</li>
+<li>
+<a href="./../../practice.tech.acceptance_testing.base-ibm_lic/tasks/design_acceptance_test_spec_7EF1C7B9.html" guid="_uWQNgFmXEd-RLsfIF0kO2g">Design the Acceptance Test Specification</a>
+</li>
+<li>
+<a href="./../../practice.gen.deployment_mgmt.base-ibm/tasks/detail_deployment_plan_84EADECA.html" guid="_Dc1EwINnEd6ZssFTs4b4Eg">Detail Deployment Plan</a>
+</li>
+<li>
+<a href="./../../practice.gen.deployment_mgmt.base-ibm/tasks/detail_system_management_plan_E3A12E0.html" guid="_L0rggINnEd6ZssFTs4b4Eg">Detail System Management Plan</a>
+</li>
+<li>
+<a href="./../../practice.mgmt.release_mgmt.base-ibm_lic/tasks/detail_release_plan_5FCBCAF5.html" guid="_H5w5xURAEdy0e9h1zdJ_TA">Detail the Release Plan</a>
+</li>
+<li>
+<a href="./../../practice.tech.full_test_mgmt.base-ibm_lic/tasks/develop_master_test_plan_7C96D8B8.html" guid="_Jg_hAHWmEd-Ptqyaq9EfkQ">Develop Master Test Plan</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/develop_service_stubs_AD7CEC89.html" guid="_oJKHAPHfEduwurd-t5g8eQ">Develop Service Stubs</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/develop_wsdl_based_test_cases_DCA96461.html" guid="_kyBPQPHjEduwurd-t5g8eQ">Develop Test Cases to be Generated based on WSDL</a>
+</li>
+<li>
+<a href="./../../practice.tech.full_test_mgmt.base-ibm_lic/tasks/develop_test_strategy_B23CC0E1.html" guid="_Hcq40HWmEd-Ptqyaq9EfkQ">Develop Test Strategy</a>
+</li>
+<li>
+<a href="./../../practice.gen.deployment_mgmt.base-ibm/tasks/install_system_components_4B0085E7.html" guid="_UNtoAoNnEd6ZssFTs4b4Eg">Install System Components</a>
+</li>
+<li>
+<a href="./../../practice.gen.deployment_mgmt.base-ibm/tasks/outline_system_management_plan_18D7F2F0.html" guid="_L0rggYNnEd6ZssFTs4b4Eg">Outline System Management Plan</a>
+</li>
+<li>
+<a href="./../../practice.mgmt.release_mgmt.base-ibm_lic/tasks/outline_release_plan_E44ED0BC.html" guid="_cxz2MIW7Ed6u16JzuIDfVA">Outline the Release Plan</a>
+</li>
+<li>
+<a href="./../../practice.tech.full_test_mgmt.base-ibm_lic/tasks/plan_integration_test_FDEB2986.html" guid="_i8fVYFmWEd-RLsfIF0kO2g">Plan Integration Testing</a>
+</li>
+<li>
+<a href="./../../practice.tech.full_test_mgmt.base-ibm_lic/tasks/plan_operability_test_B5788939.html" guid="_sImVEFmVEd-RLsfIF0kO2g">Plan Operability Testing</a>
+</li>
+<li>
+<a href="./../../practice.tech.full_test_mgmt.base-ibm_lic/tasks/plan_sys_test_4C4A3A87.html" guid="_ZaWpEFmcEd-RLsfIF0kO2g">Plan System Testing</a>
+</li>
+<li>
+<a href="./../../practice.mgmt.release_mgmt.base-ibm_lic/tasks/refine_goals_for_the_program_cycle_9F83F94.html" guid="_kvq9QIW-Ed6u16JzuIDfVA">Refine Goals for the Programming Cycle</a>
+</li>
+<li>
+<a href="./../../practice.tech.user_exp_design.base-ibm_lic/tasks/refine_usability_design_eval_plan_F1E3F7CD.html" guid="_H5nvzERAEdy0e9h1zdJ_TA">Refine Usability Design and Evaluation Plan</a>
+</li>
+<li>
+<a href="./../../practice.tech.assess_tech_impact.base-ibm_lic/tasks/revise_impact_analysis_FFCE9C1C.html" guid="_H5w5qURAEdy0e9h1zdJ_TA">Revise Impact Analysis</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/specify_test_cases_for_choreography_C25A1503.html" guid="_N_LwoPHjEduwurd-t5g8eQ">Specify Test Cases for Service Choreography</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/specify_vuln_security_penetration_tests_5C0FBA37.html" guid="_w9npcPHjEduwurd-t5g8eQ">Specify Vulnerability Security Penetration Tests</a>
+</li>
+<li>
+<a href="./../../practice.gen.deployment_mgmt.base-ibm/tasks/test_prod_cutover_plan_16C4323D.html" guid="_H5w50URAEdy0e9h1zdJ_TA">Test the Production Cutover Plan</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Output From:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.data_design.extend-ibm_lic/tasks/develop_data_migration_plan_F71D3E42.html" guid="_agvxoFq9Ed6NVp6oO7pJwg">Develop Data Migration Plan</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/perform_critical_design_review_cleanup_841C7FF5.html" guid="mweb093C356700000113D4B29F3A1CD25A19">Perform Critical Design Review Cleanup</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/prod_readiness_review_cleanup_3D15CE55.html" guid="mweb093C356700000113D4B33B553F670957">Production Readiness Review Cleanup</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Main Description</th><td class="sectionTableCell"><p>
+    Data migration is defined as the movement or transfer of data from one data reference (file, database, etc.) in one
+    system to another data reference (file, database, etc) in the same or another system. The data reference from which the
+    transfer occurs is called the source and the reference that receives the data is called the target. When data migration
+    occurs only once for a data reference, it is called a conversion. When it occurs on an ongoing basis, it is called an
+    interface.
+</p>
+<p>
+    The manner in which the transfer takes place can be described as one of the following:
+</p>
+<ul>
+    <li>
+        Initial Load - the target has been defined but contains no data. Initial load can be a complete one-time transfer
+        or portions of the complete initial set of data can be loaded in increments. This is typically viewed as a one-time
+        operation
+    </li>
+    <li>
+        Refresh - target currently contains a complete set of data. Current target data will be deleted and replaced with a
+        complete set of new data. Once the current target data is deleted, the load operation is similar to an Initial
+        Load. This is typically viewed as an ongoing operation
+    </li>
+    <li>
+        Incremental Update - target currently contains a complete set of data. Updates will be applied one row at a time
+        and only the changed rows will be affected, this is typically viewed as an ongoing operation. In this approach, the
+        data received from the source can be supplied is a variety of ways:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Source operational database made available for processing
+            </li>
+            <li>
+                Database unload / image copy operation produced a copy of the database
+            </li>
+            <li>
+                Application program operated on the source to produce a file of only changes
+            </li>
+            <li>
+                Database system produced a file of only the changes
+            </li>
+        </ul>
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Brief Outline</th><td class="sectionTableCell"><p>
+    This work product consists of the following information:
+</p>
+<ul dir="ltr" style="MARGIN-RIGHT: 0px">
+    <li>
+        <div>
+            List of all of the assumptions related to the migration of data required for the system.
+        </div>
+    </li>
+    <li>
+        <div>
+            Identification of all of the data transfers required for the system. The Data Migration Plan indicates the
+            following for each data transfer (conversion or interface):
+        </div>
+        <ul>
+            <li>
+                The frequency with which this migration will be performed
+            </li>
+            <li>
+                The volume of data to be transferred
+            </li>
+            <li>
+                Preparation procedures before initiating the data migration processes, both technical and business
+            </li>
+            <li>
+                The predecessors to migrating specific data objects, e.g., legacy system processing contingencies or audit
+                success
+            </li>
+            <li>
+                The sequence necessary to successfully migrate the data, e.g., the need to load customer master data before
+                loading sales orders
+            </li>
+            <li>
+                The timings related to the migration of specific data objects
+            </li>
+            <li>
+                The successors to migrating specific data objects, e.g., audit initiation and user sign-off
+            </li>
+            <li>
+                The number and type of resources necessary to perform the migration/load and confirmation of each data
+                object
+            </li>
+            <li>
+                Contingency procedures to be initiated in the event of failure of part of or the entire process
+            </li>
+            <li>
+                The post migration procedures to be actioned having completed all of the data migration processes, both
+                technical and business, e.g., senior management sign-off and back-ups.
+            </li>
+        </ul>
+    </li>
+    <li>
+        A data migration schedule indicating: 
+        <ul>
+            <li>
+                When the conversions (one time data transfers) should take place
+            </li>
+            <li>
+                When the interfaces should occur.
+            </li>
+        </ul>
+    </li>
+    <li>
+        For each data transfer – describe the process, resources and technology required to perform the following: 
+        <ul>
+            <li>
+                Data extract
+            </li>
+            <li>
+                Data cleansing
+            </li>
+            <li>
+                Data transformation
+            </li>
+            <li>
+                Data validation
+            </li>
+            <li>
+                Data load / update
+            </li>
+            <li>
+                Data error detection and correction.
+            </li>
+        </ul>
+    </li>
+    <li>
+        Summary – summarize the resources and technology required to meet the migration schedule.
+    </li>
+</ul><br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/guidances/examples/data_migration_plan_8762EF2A.html" guid="_HU3ocDW1EdyXOdc_6y3sLA">Data Migration Plan</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The following guidance is recommended:
+</p>
+<ul>
+    <li>
+        A previous project's documentation/plan could be used as a starting point for the development of this project's
+        Data Migration Plan. Care must be taken to ensure that this is systematically reviewed before acceptance, as each
+        project will have its own idiosyncrasies.
+    </li>
+    <li>
+        <div>
+            In the situation of Unit Testing, it will initially be acceptable to independently test each unit without the
+            existence of the full Data Migration plan. However, any unexpected adverse experiences should be communicated
+            with the project team responsible for this data transfer.
+        </div>
+    </li>
+    <li>
+        <div>
+            The Data Migration Plan for an operational system should be done in a timely fashion so that it can be used to
+            extract the other plans. However, if this is not the case, the other Data Migration Plans will have to be
+            developed separately, thereby forfeiting the re-use opportunity, and more importantly, the assurance of a
+            complete and integrated plan.
+        </div>
+    </li>
+    <li>
+        <div>
+            The timing of data migration can be crucial, especially for dynamic data, e.g., invoices, orders, etc. Less
+            critical is the extraction and loading of static data. However, loading materials two weeks prior to a ‘go
+            live’ situation, for example, may require a later manual load of any new materials created on the legacy system
+            during this period, or a second extraction and load after ‘go live’ to fill in the gaps.
+        </div>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Tailoring</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Impact of not having</th><td class="sectionTableCell">Without a plan for migrating/loading the data, there is a probability of missing tasks, performing the tasks in an
+inexpedient sequence, or failing to plan the "window" for the preparation of the production system. Such would cause a
+delay in the early stages of the project or the abandonment of the production go-live.</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Reasons for not needing</th><td class="sectionTableCell">There artifact is only used if&nbsp;data needs to be migrated in which case it is required</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/guidelines/data_migration_plan_dev_DD461BFC.html" guid="_p7VtMDW1EdyXOdc_6y3sLA">Developing Data Migration Plan</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Supporting Materials</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/guidances/supportingmaterials/data_migration_plan_ref_78E75D80.html" guid="_RyK4UDW2EdyXOdc_6y3sLA">References: Data Migration Plan</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Estimation Considerations</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/estimationconsiderations/data_migration_plan_legacy_845828A2.html" guid="mweb037092098333333302">Data Migration Plan (Legacy)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

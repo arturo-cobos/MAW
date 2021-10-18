@@ -1,0 +1,535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Artifact: Deployment Unit Specification
+			(ART 0526)
+		</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="deployment_unit_spec">
+<meta name="uma.presentationName" content="Deployment Unit Specification">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_spO6ADDXEdyz_pzDMsV8FQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Artifact: Deployment Unit Specification
+			(ART 0526)
+		</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/artifact.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This artifact describes a deployment unit or a set of deployment units.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The purpose of this artifact is to simplify the placement of components onto nodes. This simplification is achieved by
+    grouping components (and their different operational facets) into deployment units significantly reducing the number of
+    things that need to be placed and the level of complexity in developing the operational architecture aspect of an IT
+    system.
+</p>
+<p>
+    This artifact assists in mapping the non-functional requirements onto nodes and determining the connections required
+    between nodes to support interactions between components.
+</p>
+<p>
+    This artifact provides a bridge between the functional and the operational aspects of the architecture of an IT system
+    and provides a mechanism for negotiations and discussions between the different roles responsible for developing these
+    two architecture aspects.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Container Artifact</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/deployment_unit_model_6EA973D.html" guid="_pu0XUDDXEdyz_pzDMsV8FQ">Deployment Unit Model</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Responsible:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/technical_solution_architect_86C345D1.html" guid="mweb13E09E200176D42E052569F100647201">Technical Solution Architect</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Modified By:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/technical_solution_architect_86C345D1.html" guid="mweb13E09E200176D42E052569F100647201">Technical Solution Architect</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Tasks</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Input To:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/complete_logical_operational_model_8145EF4E.html" guid="_4wNggEN7Edy0bYSPkMeI5Q">Complete Logical Operational Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/complete_operational_model_EC275E1D.html" guid="_HKZ9EIo_Ed-ta-foczjBcA">Complete Operational Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/detail_logical_operational_model_9CC78E2D.html" guid="_80rE0AruEdy5ib8CxgclIA">Detail Logical Operational Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/detail_physical_operational_model_E867E7DC.html" guid="_DA-TwEN-Edy0bYSPkMeI5Q">Detail Physical Operational Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/dev_deployment_unit_model_30834206.html" guid="_opkKADDYEdyz_pzDMsV8FQ">Develop Deployment Unit Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/outline_high_level_operational_model_A773C0B5.html" guid="_s0ikwIoLEd-ta-foczjBcA">Outline High Level Operational Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/outline_logical_operational_model_DA4A5900.html" guid="_5YlYcAruEdy5ib8CxgclIA">Outline Logical Operational Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/outline_physical_operational_model_EFDC3480.html" guid="_WWwHkEN8Edy0bYSPkMeI5Q">Outline Physical Operational Model</a>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/complete_physical_component_model_C7D8A293.html" guid="_fIhfoBAWEd2QWeRzIzQSNQ">Complete Physical Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/detail_physical_component_model_8DD3C4C.html" guid="_Y3OSgEN3Edy0bYSPkMeI5Q">Detail Physical Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/transform_completed_component_model_3B645446.html" guid="_S7A0YBArEd2JzakANm7Vow">Transform Completed Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/transform_detail_component_model_33B92C63.html" guid="_OT-EQEN5Edy0bYSPkMeI5Q">Transform Detail Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/transform_outline_component_model_4E9BF488.html" guid="_mfkiEEN4Edy0bYSPkMeI5Q">Transform Outline Component Model</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Output From:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/dev_deployment_unit_spec_5A5DF43.html" guid="_i7LAkDGYEdyU_cHE_KgUww">Develop Deployment Unit Specification</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Main Description</th><td class="sectionTableCell"><p>
+    This artifact’s terminology is defined within the System Description Standard R3 Semantic Specification (see Guidance
+    for link) which includes definitions for:
+</p>
+<ul>
+    <li>
+        Actors (and workers) – the roles a user or an external system play with respect to the target system
+    </li>
+    <li>
+        Components - modular units of functionality, which make this functionality available through an interface.
+    </li>
+    <li>
+        Deployment Units – a grouping of facets of a component that have similar characteristics.
+    </li>
+    <li>
+        Connectors – enable the exchange of messages (interactions) between resource containers.
+    </li>
+    <li>
+        Interactions – identify the messages exchanged between one or two resource containers in the context of a
+        collaboration, and the sequencing of these messages via their associated send/receive events.
+    </li>
+    <li>
+        Nodes - a collection of components fulfilling a specific responsibility with a certain quality of service within
+        the target system.
+    </li>
+    <li>
+        Connections - supports the required connectivity between connectable model elements.
+    </li>
+    <li>
+        Zones – an aggregation of a number of model elements with a common (sub-) set of values for a particular
+        non-functional requirement and/or non-functional characteristic.
+    </li>
+</ul>
+<p>
+    A deployment unit (DU) is used to represent the various operational facets of <em>components</em> including their
+    non-functional requirement’s and service level characteristics.
+</p>
+<p>
+    Deployment units may represent both <em>application</em> and <em>technical</em> components.
+</p>
+<p>
+    A deployment unit is considered as a single unit for requirements analysis and placement considerations.
+</p>
+<p>
+    A deployment unit associates or references additional information with the different facets of a component (e.g.,
+    resource requirements, service level requirements, and technical dependencies) that are either relevant or related to
+    the placement of the component onto the nodes of an IT System.
+</p>
+<p>
+    Components defined within the functional aspect of the architecture of an IT system have four different operational
+    facets:
+</p>
+<ul>
+    <li>
+        Presentation; the presentation between the IT system and its users and/or between the IT system and IT systems, as
+        delivered by the components responsible for presentation to these external actors.
+    </li>
+    <li>
+        Execution; the operational execution of the component within the IT system (i.e where the execution code that
+        implements the component will be loaded as a process and run on an IT platform central processing unit) and the
+        associated resource demands such as “transactions per second” or “required response time”.&nbsp;
+    </li>
+    <li>
+        Data; the data the component uses together with it’s persistence characteristics such as “size of record”, “number
+        of records”, rate of change”, or “currency”
+    </li>
+    <li>
+        Installation; a component’s installation files, such as its .EXE and .INI files (i.e. where its executables and
+        configuration/context data will be stored), together with its installation characteristics such as “executable
+        size”.
+    </li>
+</ul>
+<p>
+    A component may have any one or all of the above facets depending on what the component does.&nbsp; But, all components
+    must have an Execution facet since all components perform at least one action when implemented in an IT system.
+</p>
+<p>
+    Deployment units (DUs) are groupings of these operational facets. The deployment units aggregate the requirements and
+    characteristics of the grouped component facets.
+</p>
+<p>
+    Groupings are made for a particular facet type and therefore deployment units are associated with a specific facet:
+</p>
+<ul>
+    <li>
+        Presentation DU; groupings of the presentation facets of components.&nbsp;
+    </li>
+    <li>
+        Execution DU; groupings of the execution facets of components
+    </li>
+    <li>
+        Data DU; groupings of the data facets of components.
+    </li>
+    <li>
+        Installation DU; groupings of the installation facets of components.
+    </li>
+</ul>
+<p>
+    Depending on the development approach adopted and/or the context, it can be very helpful to create levels of this
+    artifact.&nbsp; The two basic levels of this artifact are:
+</p>
+<ul>
+    <li>
+        <strong>Logical</strong>:&nbsp; This level describes the characteristics and capabilities of deployment units in a
+        <strong>technology independent and product neutral</strong> manner.
+    </li>
+    <li>
+        <strong>Physical</strong>:&nbsp; This level describes characteristics and capabilities of deployment units in a
+        <strong>technology and product dependent</strong> manner.
+    </li>
+</ul>
+<p>
+    Both levels of this artifact may be further described at three different sub-levels relating to the degree to which the
+    level has been sized:
+</p>
+<ul>
+    <li>
+        <strong>Unsized</strong> (or unranged) – the technology and products are specified to support the components
+        deployed but not sized and without detailing how the system will achieve the service level characteristics.
+    </li>
+    <li>
+        <strong>Ranged</strong> – the technology and products are specified to support a bounded range of requirements for
+        a defined range of circumstances.
+    </li>
+    <li>
+        <strong>Sized</strong> – the technology and products are specified and sized to support the components deployed and
+        details how the system will achieve the service level characteristics.&nbsp;
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Brief Outline</th><td class="sectionTableCell"><p>
+    This artifact typically includes:
+</p>
+<ul>
+    <li>
+        An introduction, describing the overall context and content of the artifact, the nature of the artifact its scope
+        and depth of detail, its level, and its degree of completeness.
+    </li>
+    <li>
+        A list of deployment units
+    </li>
+    <li>
+        A structured description of the deployment unit(s) including 
+        <ul>
+            <li>
+                Type (e.g. execution, data, installation or presentation),
+            </li>
+            <li>
+                The list of components that have been grouped into the deployment unit
+            </li>
+            <li>
+                The non-functional requirements associated with the deployment unit. The non-functional requirements
+                recorded depend on the type of DU and the specific project circumstances.&nbsp; In general, service level
+                requirements must be documented.
+            </li>
+            <li>
+                For the physical level of the artifact, the implementation of the deployment unit. Specific technologies or
+                products should be defined, including product name, version number, and pre- and/or co-requisite products.
+            </li>
+        </ul>
+        <ul>
+            <li>
+                For the physical level of the artifact, the atomic resource requirements of the deployment unit. For
+                example: 
+                <ul>
+                    <li>
+                        An execution DU, representing the execution of a component’s operations implemented in a particular
+                        technology, will require a certain number of CPU milliseconds for one execution.
+                    </li>
+                    <li>
+                        A data DU, representing the data aspects of a component implemented on a particular database
+                        technology, will require a certain number of kB per record.
+                    </li>
+                    <li>
+                        An installation DU, representing the executable of a component implemented in a particular
+                        technology, will require a certain number of MB per executable file.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Notation</th><td class="sectionTableCell"><p>
+    This artifact is documented in a combination of structured text, structured tables, matrices using a specialized
+    notation and naming standards which are defined in the IBM System Description Standard V3 and the IBM Architecture
+    Description Standard (ADS) Operational Model Notation Guidance V2.&nbsp;&nbsp; Please refer to these for details of the
+    notation.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Templates</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/guidances/templates/deployment_unit_specification_formal_FC37D538.html" guid="_xU7RYPnrEdyRSrojMjQ7Vg">Deployment Unit Specification (formal)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The non-functional requirements and the characteristics for a deployment unit may not necessarily be the same as for
+    the individual components represented by the deployment unit.&nbsp; They may be more or less demanding – although it is
+    recommended that an explanation of the difference between requirements and characteristics be provided.&nbsp;
+</p>
+<p>
+    If there are no differences, and component splitting and/or grouping has been simple, a reference to the appropriate
+    component description will suffice.
+</p>
+<p>
+    Generally, an IT system’s non-functional requirements and, in particular, its service level characteristics of
+    performance, availability and security may be associated with a particular type of deployment unit, representing the
+    facet of the individual components from which the solution’s architecture is constructed.&nbsp; For example:
+</p>
+<ul>
+    <li>
+        A required workload, described in terms of “transactions per second” or “visits per hour” is associated with an
+        execution DU, representing the execution facets of the involved components, and helps in deriving the CPU sizing of
+        nodes
+    </li>
+    <li>
+        The need to support a specific number of customer records, each of a certain size, is associated with a data DU,
+        representing the data facets of the involved components, and helps in deriving the disk capacity of nodes
+    </li>
+    <li>
+        The need to provide a mobile user with a graphical user interface is associated with a presentation DU,
+        representing the presentation facets of the involved component(s), and helps in deriving the selection of a hand
+        held terminal (HHT).
+    </li>
+</ul>
+<p>
+    The placement of deployment units on nodes is within the operational aspect of the architecture of the IT system.&nbsp;
+    In order for an operational model to achieve the functional and non-functional requirements for the IT system, it is
+    invariably necessary to locate:
+</p>
+<ul>
+    <li>
+        The various facets of each component in different locations.&nbsp; For example, the data facets of a component may
+        be held centrally, while its execution takes place on a workstation and its executables are stored on a
+        departmental file server.
+    </li>
+    <li>
+        A particular facet of a component in multiple locations and/or location types.&nbsp; For example: 
+        <ul>
+            <li>
+                under normal circumstances a component may execute on a server, but in the event of network failure the
+                same component may be required to execute on the workstation,&nbsp; or
+            </li>
+            <li>
+                the primary copy of a component’s data may be held on a central server, but an operational copy – or
+                replica is available on the workstation.
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    Generally, this placement relates to all (application and technical) components, and therefore all deployment inits.
+</p>
+<p>
+    Deployment units need to address placement to address security requirements.&nbsp;
+</p>
+<ul>
+    <li>
+        Components may need to be separated by zone boundaries to address risk management concerns e.g., highly trusted
+        componets may be separated from low trust level components or separation may be required to address the Privacy
+        implications of storing specified data together.
+    </li>
+    <li>
+        Deployment units for flow control may be required to secure data flows separated across different zones.
+    </li>
+</ul>
+<p>
+    Different deployment units may also be needed for different trust environments to fullfill the functional security
+    requirements within the different trust environments.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Tailoring</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Impact of not having</th><td class="sectionTableCell"><p>
+    Not documenting Deployment Units can lead to:
+</p>
+<ul>
+    <li>
+        A loss of information about the non functional requirements associated with components and a failure of the
+        operational model in achieving the&nbsp; desired Non Functional Requirements
+    </li>
+    <li>
+        Increased complexity during placement due to the numbers of fine-grained components that need to be taken into
+        account
+    </li>
+    <li>
+        Increased cost of the solution, caused by inappropriate “over engineering” due to the inappropriately coarse
+        grained placement decisions.<br />
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Reasons for not needing</th><td class="sectionTableCell"><p>
+    If the operational model is trivial, this work product need not be produced.
+</p>
+<p>
+    If the relationships between components and nodes are simple, the allocation of components may be recorded directly on
+    the operational model without using intermediary Deployment Units, although great care will be required to ensure the
+    different aspects of each component are understood and all questions considered.
+</p>
+<p>
+    Under certain circumstances, such as when defining certain types of generalized OM, it is valid to focus purely on the
+    location of execution of components.&nbsp; In these cases, it is valid to place components directly onto the OM’s
+    nodes, since the placement is implicitly related to execution only.
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Representation Options</th><td class="sectionTableCell"><p>
+    This artifact can be documented in an electronic document, spreadsheet or tool and notated using IBM’s Architecture
+    Description Standard (ADS) version 2 or above. It is recommended to leverage tooling whenever possible due to the
+    complex task of maintaining the various relationships and connections between the Deployment Units.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/guidances/guidelines/deployment_unit_specification_74BEF5BC.html" guid="_pfmWMDeTEdyFMtjeREc5MQ">Deployment Unit Specification Guideline</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

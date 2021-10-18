@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Data Migration Programs</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="data_migration_programs">
+<meta name="uma.presentationName" content="Data Migration Programs">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_hWGq0DW3EdyXOdc_6y3sLA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Data Migration Programs</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">These routines are very language dependent. The following example is in pseudo code where formula is a transformation function or procedure. It is transforming a column of data in a table in a source database to a table in a target database.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/data_migration_programs_947D234F.html" guid="mweb3B959C944E542F14852568820061A9DF">Data Migration Programs</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <br />
+     Connect sqlHandle1 to database1;<br />
+     Connect sqlHandle2 to database2;<br />
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        Using sqlHandle1 Select column1, primarykey<br />
+    </p>
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <p>
+            From table1 into :variableA, :primarykey;<br />
+        </p>
+    </blockquote>
+    <p>
+        While (sqlFetch from sqlHandle1)<br />
+    </p>
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <p>
+            {<br />
+             variableB = <i>formula</i> (variableA);<br />
+             sqlExecute using sqlHandle2<br />
+        </p>
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <p>
+                (update table2<br />
+            </p>
+            <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                <p>
+                    set column1 = :variableB<br />
+                     where primarykey = :primarykey);<br />
+                </p>
+            </blockquote>
+        </blockquote>
+        <p>
+            }
+        </p>
+    </blockquote>
+</blockquote></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

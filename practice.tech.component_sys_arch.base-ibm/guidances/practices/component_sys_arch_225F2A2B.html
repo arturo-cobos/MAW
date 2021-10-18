@@ -1,0 +1,734 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Practice: Component Based System Architecture</title>
+<meta name="uma.type" content="Practice">
+<meta name="uma.name" content="component_sys_arch">
+<meta name="uma.presentationName" content="Component Based System Architecture">
+<meta name="element_type" content="Practice">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_40aPEFtaEd6bpPG1p_gnYA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_40aPEFtaEd6bpPG1p_gnYA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Practice: Component Based System Architecture</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/practice.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This practice defines the system's functional and operational architecture.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content References</th><td class="sectionTableCell">
+<ul>
+<li>
+<img src="./../../../images/roadmap.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/guidances/roadmaps/how_to_adopt_D63F8EE4.html" guid="_51re0FtaEd6bpPG1p_gnYA">How to Adopt the Component Based System Architecture Practice</a>
+</li>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/roadmap.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/roadmaps/component_modeling_in_soma_8205C17F.html" guid="_povWMG53Ed-IT6JE-sh1PQ">Component Modeling in SOMA</a>
+</li>
+</ul>
+<ul>
+<li>Key Concepts</li>
+<ul>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/architectural_pattern_7308BF1.html" guid="_rmX1gIBmEd2z9IawWqZSFw">Architectural Pattern</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/layering_60B66437.html" guid="_V2vkwEeZEd2fPvaEVG7O3Q">Layering</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/logical_and_physical_components_93EAAF0D.html" guid="_3mMfQIDvEd2z9IawWqZSFw">Logical and Physical Components</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/reference_architecture_4159505E.html" guid="_CriTYESUEd2eKeXZgLpnkQ">Reference Architecture</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/reusable_asset_43D27168.html" guid="_S8L70ID3Ed2z9IawWqZSFw">Reusable Asset</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/transformation_F6C85709.html" guid="_me4cMIDzEd2z9IawWqZSFw">Transformation</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/concepts/ibm_soa_ref_arch_86A81A68.html" guid="_JAbSEG85Ed-9z7-UXfcS-A">IBM SOA Reference Architecture - Two Views</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/concepts/ibm_soa_ref_arch_solution_view_CF8E0BDF.html" guid="_bo6j0Kc1Ed2pr7pb2_6dZA">IBM SOA Reference Architecture : Solution View</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/concepts/service_orientation_397D305A.html" guid="_0AzTMGdFEd-j6-ZOl9DeCA">Service Orientation</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/concepts/soma_8DC58C12.html" guid="_rr5B4BmFEdqx_IUyKxxtEg">Service-Oriented Modeling and Architecture (SOMA)</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.bus.common.extend-ibm_lic/guidances/concepts/subsystem_bridging_business_it_7F0A9635.html" guid="_GgxgAG5NEd-IT6JE-sh1PQ">Subsystem Bridging Business and IT</a>
+</li>
+<li>
+<img src="./../../../images/whitepaper.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/whitepapers/ibm_soa_ref_arch_solution_view_E8BE9C46.html" guid="_LtswgEq-EduxwIVIhJQ80A">IBM SOA Reference Architecture : Solution View</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>Work Products</li>
+<ul>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/architectural_decisions_3059F4D3.html" guid="mweb4BA812D47EEFD0A3852568820057215A">Architectural Decisions</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/architecture_overview_7BDD690F.html" guid="mweb3072ED040425425485256882005791A4">Architecture Overview</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/component_model_333A932.html" guid="mweb0BBA8C7269610775852568B3006C3ACF">Component Model</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/deployment_unit_model_6EA973D.html" guid="_pu0XUDDXEdyz_pzDMsV8FQ">Deployment Unit Model</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/infrastructure_gap_analysis_E82D9579.html" guid="mwebF0BDC03F4792DD3F8525688200764D6B">Infrastructure Gap Analysis</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/operational_model_5CE9CFC9.html" guid="mwebD1869C2CAF6E9991852568A4004FA5D9">Operational Model</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/ref_arch_fit_gap_analysis_505D71D5.html" guid="mwebCB8ECB58A8362ADD852568850059188E">Reference Architecture Fit Gap Analysis</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/technical_proof_of_concept_CEDA4198.html" guid="mwebDADCD71C49E3EA6485256885005CD538">Technical Proof of Concept</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/viability_assessment_5EE7A3B5.html" guid="mweb25893FBE05A65D6E852568850063E2A4">Viability Assessment</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/node_model_A7902E3B.html" guid="_xi5-sDDXEdyz_pzDMsV8FQ">Node Model</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/workproducts/service_model_AA7DDA59.html" guid="_fxbwIBmHEdqx_IUyKxxtEg">Service Model</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/component_specification_E4F5FE35.html" guid="_kWT_QIfDEdyrHMpF6xBNiQ">Component Specification</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/workproducts/variations_model_628B06E1.html" guid="_pC7doBscEdqPvNY1HlMbiA">Variations Model</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>Tasks</li>
+<ul>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/complete_component_model_8CA2B02B.html" guid="_mQ_sgIo9Ed-ta-foczjBcA">Complete Component Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/complete_logical_component_model_28DBC837.html" guid="_j4gc0BAWEd2QWeRzIzQSNQ">Complete Logical Component Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/complete_logical_operational_model_8145EF4E.html" guid="_4wNggEN7Edy0bYSPkMeI5Q">Complete Logical Operational Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/complete_operational_model_EC275E1D.html" guid="_HKZ9EIo_Ed-ta-foczjBcA">Complete Operational Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/complete_physical_component_model_C7D8A293.html" guid="_fIhfoBAWEd2QWeRzIzQSNQ">Complete Physical Component Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/complete_physical_operational_model_22A8FE80.html" guid="_spv9oEN-Edy0bYSPkMeI5Q">Complete Physical Operational Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/conduct_viability_assessment_AAFB4AB0.html" guid="_6eH7UDDZEdyz_pzDMsV8FQ">Conduct Viability Assessment</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/confirm_arch_overview_B2F04F34.html" guid="_hI9i8De1EdyjZfPoe205xw">Confirm Architecture Overview</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/detail_logical_component_model_B7AE0DD3.html" guid="_ByOF0EN3Edy0bYSPkMeI5Q">Detail Logical Component Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/detail_logical_operational_model_9CC78E2D.html" guid="_80rE0AruEdy5ib8CxgclIA">Detail Logical Operational Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/detail_physical_component_model_8DD3C4C.html" guid="_Y3OSgEN3Edy0bYSPkMeI5Q">Detail Physical Component Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/detail_physical_operational_model_E867E7DC.html" guid="_DA-TwEN-Edy0bYSPkMeI5Q">Detail Physical Operational Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/dev_arch_overview_2B486C7E.html" guid="_YiUHsDDaEdyz_pzDMsV8FQ">Develop Architecture Overview</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/dev_deployment_unit_model_30834206.html" guid="_opkKADDYEdyz_pzDMsV8FQ">Develop Deployment Unit Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/dev_deployment_unit_spec_5A5DF43.html" guid="_i7LAkDGYEdyU_cHE_KgUww">Develop Deployment Unit Specification</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/dev_infra_gap_analysis_6B319D97.html" guid="_IEWgcDDaEdyz_pzDMsV8FQ">Develop Infrastructure Gap Analysis</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/dev_ref_arch_fit_gap_analysis_B17633EF.html" guid="_A0MFgDDaEdyz_pzDMsV8FQ">Develop Reference Architecture Fit-Gap Analysis</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/dev_tech_proof_of_concept_703DB22A.html" guid="_QJk7IDDaEdyz_pzDMsV8FQ">Develop Technical Proof of Concept</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/doc_arch_decisions_F3C7C693.html" guid="_UI-v8DDaEdyz_pzDMsV8FQ">Document Architectural Decisions</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/outline_high_level_component_model_10F7F97E.html" guid="_vyo8UIoFEd-ta-foczjBcA">Outline High Level Component Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/outline_high_level_operational_model_A773C0B5.html" guid="_s0ikwIoLEd-ta-foczjBcA">Outline High Level Operational Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/outline_logical_component_model_319510FA.html" guid="_tvWp4EN1Edy0bYSPkMeI5Q">Outline Logical Component Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/outline_logical_operational_model_DA4A5900.html" guid="_5YlYcAruEdy5ib8CxgclIA">Outline Logical Operational Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/outline_physical_component_model_EDD266CE.html" guid="_h3a9IEN2Edy0bYSPkMeI5Q">Outline Physical Component Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/outline_physical_operational_model_EFDC3480.html" guid="_WWwHkEN8Edy0bYSPkMeI5Q">Outline Physical Operational Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/review_viability_assessment_5F99538F.html" guid="_vZ6sIDGLEdyoN6uzw6xFqQ">Review Viability Assessment</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/transform_completed_component_model_3B645446.html" guid="_S7A0YBArEd2JzakANm7Vow">Transform Completed Component Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/transform_detail_component_model_33B92C63.html" guid="_OT-EQEN5Edy0bYSPkMeI5Q">Transform Detail Component Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/transform_outline_component_model_4E9BF488.html" guid="_mfkiEEN4Edy0bYSPkMeI5Q">Transform Outline Component Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/verify_logical_component_model_25835B88.html" guid="_yncvUEN3Edy0bYSPkMeI5Q">Verify Logical Component Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/verify_physical_component_model_EE7FC30F.html" guid="_Jz5n0EN4Edy0bYSPkMeI5Q">Verify Physical Component Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/apply_ooad_in_subsystem_scope_31D8DC2D.html" guid="_N98YMG55Ed-IT6JE-sh1PQ">Apply OOAD in Subsystem Scope</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/assign_service_to_service_components_FF37FDF4.html" guid="_I8Qt4B_XEdqF5c1Hhhq2Uw">Assign Services to Service Components</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/conduct_variation_oriented_design_7090DB34.html" guid="_8zQeoF2OEduE1aXRcyVMBg">Conduct Variation Oriented Design</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/decompose_svc_component_into_func_tech_comp_9DFD05A3.html" guid="_KSJFoF2PEduE1aXRcyVMBg">Decompose Service Components into Functional and Technical Components</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/define_component_attributes_8C7476F8.html" guid="_kScygEOIEduXIri7BAc1Jg">Define Component Attributes</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/define_component_diagram_9D4ED85C.html" guid="_2bK7MF2OEduE1aXRcyVMBg">Define Component Diagram</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/define_component_interface_F7626A68.html" guid="_RQVcQF2OEduE1aXRcyVMBg">Define Component Interface </a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/define_component_internal_flow_5BBD8598.html" guid="_poTssF2OEduE1aXRcyVMBg">Define Component Internal Flow</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/define_events_C338D598.html" guid="_cOrZIF2OEduE1aXRcyVMBg">Define Events</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/define_subsystem_dependencies_DA2033E6.html" guid="_syBaMF2PEduE1aXRcyVMBg">Define Subsystem Dependencies</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/identify_service_components_D12C18DE.html" guid="_irvtwF2PEduE1aXRcyVMBg">Identify Service Components</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/detail_soa_solution_stack_layer_1082625C.html" guid="_oXQEoFNLEdyq6ekMfKtD3A">Detail SOA Solution Stack Layer</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/select_patterns_B1E055E4.html" guid="_rviNABUEEd2JfYwFlWguXQ">Select Patterns</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/make_architectural_decisions_FCD9BCA6.html" guid="_NxuuYKcxEd2pr7pb2_6dZA">Make Architectural Decisions</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/make_realization_decisions_7174DBC6.html" guid="_9HZXAEOBEduXIri7BAc1Jg">Make Realization Decisions</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/validate_realization_decisions_897A8221.html" guid="_7znjAB_eEdqF5c1Hhhq2Uw">Validate Realization Decision</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/consolidate_realization_decisions_3DF34BD2.html" guid="_mXJ28F7sEdur6fWrpBRDlw">Consolidate Realization Decisions</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>Guidance</li>
+<ul>
+<li>Guidelines</li>
+<ul>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/dev_logical_app_operational_model_332DFBC4.html" guid="_zFJ90EXOEdySN4ARbXZqvw">Developing the Logical Application Operational Model</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/dev_logical_operational_model_8F861D3.html" guid="_phCt0EXPEdySN4ARbXZqvw">Developing the Logical Operational Model</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/dev_physical_operational_model_B736E60.html" guid="_Dh8q8EXQEdySN4ARbXZqvw">Developing the Physical Operational Model</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/documenting_architectural_decisions_8EF0BD39.html" guid="_RtLzgIByEd2z9IawWqZSFw">Documenting Architectural Decisions</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/identifying_components_EB167396.html" guid="_DJSD8IEcEd2z9IawWqZSFw">Identifying Components</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/representing_interfaces_to_external_systems_5A7757E1.html" guid="_i85tQEeaEd2fPvaEVG7O3Q">Representing Interfaces to External Systems</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/specifying_components_E78FD8AF.html" guid="_-k2PcIEbEd2z9IawWqZSFw">Specifying Components</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/structuring_components_26FC87E6.html" guid="_HI8-gIEcEd2z9IawWqZSFw">Structuring Components</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/transforming_components_613F775F.html" guid="_JyRxMIEcEd2z9IawWqZSFw">Transforming Components</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch.extend-ibm_lic/guidances/guidelines/component_modeling_e2e_FFC85327.html" guid="_zm_a4E2yEeGPmPRl08aZSg">Component Modeling</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/guidelines/apply_ooad_in_subsystem_scope_8635C7D4.html" guid="_-xppcG5SEd-IT6JE-sh1PQ">Apply Object Oriented Design and Analysis within Subsystem</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/guidances/guidelines/component_specification_2184ED0D.html" guid="_A5LGUJumEd2XPtAxb4NjMQ">SOMA Component Specification</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/guidances/guidelines/subsystem_analysis_8DB1311B.html" guid="_2OXnQJ8YEd2-HI67sNQnfA">SOMA Subsytem Analysis</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/guidelines/value_add_soma_and_soa_7FA5F579.html" guid="_rc970GdDEd-j6-ZOl9DeCA">Value Add of SOMA and SOA</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/guidances/guidelines/realization_decisions_3E7E482F.html" guid="_imQ8wG3ZEd-QEvUa7et6CA">Realization Decisions</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/guidances/guidelines/sample_realization_decisions_by_layers_C35B6A87.html" guid="_TxXR0G9JEd-9z7-UXfcS-A">Sample Realization Decisions By Architecture Layers</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/guidances/guidelines/when_to_make_realization_decisions_40A448F6.html" guid="_Re-04OlsEd2F2P0M0JH2TA">When to Make Realization Decisions</a>
+</li>
+</ul>
+</ul>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Inputs</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.bus.slot.base-ibm/workproducts/business_design_slot_E033C894.html" guid="_OIXJkBYREd2eavK0BKAMiA">[Business Design]</a>
+</li>
+<li>
+<a href="./../../../core.tech.slot.base/workproducts/technical_architecture_slot_FF074CDD.html" guid="_8OD-cLPTEduocbW-TPTq7A">[Technical Architecture]</a>
+</li>
+<li>
+<a href="./../../../core.tech.slot.base/workproducts/technical_design_slot_84295A08.html" guid="_IcQOUEqdEdyi3_jfs__bIQ">[Technical Design]</a>
+</li>
+<li>
+<a href="./../../../core.tech.slot.base/workproducts/technical_specification_slot_2812F7EF.html" guid="_i3vkoLS-EduDY8LNbMCDBA">[Technical Specification]</a>
+</li>
+<li>
+<a href="./../../../core.tech.slot.base/workproducts/technical_test_results_slot_7B0CA334.html" guid="_fahB0EfUEdyiPI8btkmvmw">[Technical Test Results]</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    The purpose for this practice are:
+</p>
+<ul>
+    <li>
+        To design the subsystems that are identified and mapped to the functional areas during Functional Area Analysis as
+        part of business design
+    </li>
+    <li>
+        To define the dependencies among the subsystems
+    </li>
+    <li>
+        To define the composition of each of the subsystems into its constituent component by identifying service component
+        realizing services and associated functional component implementing business logic, and technical components
+        encapsulating technical capabilities&nbsp;by applying object oriented design principles within the boundary of the
+        subsystem
+    </li>
+    <li>
+        To elaborate the components both in terms of static structure and dynamic behavior in terms of fined grained
+        components
+    </li>
+    <li>
+        To define interfaces for the service components and any kind of functional and technical components
+    </li>
+    <li>
+        To define internal structure and flow of service components in terms of functional and technical components<br />
+    </li>
+</ul>
+<p>
+    This practice also contains Realization capability patterns in SOMA that are performed and repeated through the SOMA
+    life cycle and are not just performed during Realization. The purpose for each of the capability patterns are described
+    below.
+</p>
+<p>
+    The purpose of Pattern Selection as&nbsp;an ongoing activity in SOMA&nbsp;is:
+</p>
+<ul>
+    <li>
+        To leverage proven techniques, considerations, and best practices to address a specific solution problem and to
+        help realize the services, components and flows
+    </li>
+    <li>
+        To enforce a quality delivery
+    </li>
+    <li>
+        To reduce the cost and expedite the development process
+    </li>
+</ul>
+<p>
+    The purpose of Establish Realization Decisions as&nbsp;an ongoing activity in SOMA is:
+</p>
+<ul>
+    <li>
+        To make Realization decisions about how the five fundamental constructs of service orientation, namely, services,
+        flows, components, information, rules and policies will be designed and implemented
+    </li>
+    <li>
+        To make architectural decisions about the overall solution
+    </li>
+</ul>
+<p>
+    The purpose of Detail SOA Reference Architecture as&nbsp;an ongoing activity in SOMA is:
+</p>
+<ul>
+    <li>
+        To update the reference architecture to reflect the latest evolution of the SOA after each of the SOMA capability
+        patterns is applied
+    </li>
+    <li>
+        To provide detailed insight into the to-be architecture gained by applying each of the SOMA capability patterns
+    </li>
+</ul>
+<p>
+    The purpose of Technical Feasibility Exploration as&nbsp;an ongoing activity in SOMA is:
+</p>
+<ul>
+    <li>
+        To reduce and mitigate technical risks associated with the solution
+    </li>
+    <li>
+        To provide moving forward decisions with a specific aspect of an SOA solution
+    </li>
+    <li>
+        To assess the viability of a proposed technical solution to address a specific issue
+    </li>
+    <li>
+        To perform systematic evaluation of the pros and cons of the potential solutions
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    This practice designs the subsystems that are identified and mapped to the functional areas during Functional Area
+    Analysis and defines the composition of each of the subsystems into its constituent component and then specifies these
+    component by defining their interfaces. This practice also makes realization and architectural decisions about the
+    services and the overall solution.
+</p>
+<p>
+    <a class="elementLinkWithUserText" href="./../../../core.bus.common.extend-ibm_lic/guidances/concepts/subsystem_bridging_business_it_7F0A9635.html" guid="_GgxgAG5NEd-IT6JE-sh1PQ"><strong>How Subsystem bridges Business and IT?</strong></a>
+</p>
+<p>
+    In Functional Area Analysis, subsystems are identified for each of the functional areas.
+</p>
+<p>
+    SOMA employs traditional component modeling principles but adds more rigor to the functional architecture by aligning
+    with the business. The first step in component modeling technique is Component Identification, where candidate
+    components are identified based on principles of partitioning, layering, and structuring. In SOMA, Component
+    Identification is performed in two places: First, Component Identification is performed in Functional Area Analysis
+    where subsystems are identified that are mapped to the functional areas, which is a business concept or construct.
+    Second, then Component Identification is again performed in Subsystem Analysis where the subsystems are further
+    decomposed into its constituent components defining the composition of the subsystem. The detailed structure of the
+    subsystems are defined in terms of the constituent components, namely, service component, functional component, and
+    technical components.
+</p>
+<p>
+    The second step in component modeling is Component Specification which is a business-as-usual activity and it is
+    applicable for both SOA and non-SOA projects. The only step that you may skip in Component Specification for a non-SOA
+    project is assigning or allocating services to components. On the other hand, we still need to make placement of the
+    functionality to the components in a non-SOA project which is similar to allocating services to components.
+</p>
+<h4>
+    Subsystem Analysis
+</h4>
+<p>
+    Subsystem Analysis decomposes the subsystems identified&nbsp;during Functional Area Analysis into their constituent
+    service, functional and technical components.&nbsp;&nbsp;
+</p>
+<p>
+    Once we make the transition from the business domain (functional areas) to the IT domain, we map the functional areas
+    defined by the former to subsystems, their IT counterparts in the IT domain. Subsystem Analysis (SSA) decomposes the
+    subsystems identified by Functional Area Analysis into their constituent service, functional and technical
+    components.<br />
+    <br />
+    Up to this point, services have been identified and specified. It is time to start the process of identifying and
+    specifying the service components that are responsible for realization of the services.<br />
+    <br />
+    Subsystem Analysis begins with the determination and documentation of the dependencies between subsystems that
+    correspond to the functional areas that have been identified so far. Usually a functional area will correspond to a
+    single subsystem; that is the simplifying assumption that has been found to be accurate in many, if not most cases. If
+    we decide to map a functional area to several subsystems, that can also be feasible and valid; but usually means the
+    domain modeling and &nbsp;decomposition did not go deep enough and the functional areas are not granular enough. Before
+    we further discuss this process, and what is involved in Subsystem Analysis, we will define what a system and a
+    subsystem are and how they relate to services and SOA.<br />
+    <br />
+    A system is typically used to describe one or more applications that are deployed in some operating environment. A
+    system is a composite of subsystems i.e. a system consists of subsystems. A subsystem can be considered as a logical
+    grouping of functions or components, needed to realize services. (A good heuristic is to use “seven plus or minus two”
+    functional components per subsystem).<br />
+    <br />
+    In Domain Modeling and Decomposition, the Process Modeling and Decomposition identified leaf-level sub-processes that
+    qualify as services. These leaf-level sub-processes can be placed on the subsystems as the services&nbsp;and their
+    service operations&nbsp;that the subsystem, as a façade, will provide. The functionality of these subsytems will be
+    realized by the&nbsp;constituent functional components. Their non-functional requirements will be used to mine out the
+    technical components.<br />
+    <br />
+    <strong>ISV Considerations:</strong> Services may be realized through existing subsystems such as custom applications,
+    software packages and/or Independent Software Vendors. As the following section explains, in some cases, identification
+    of new subsystems may involve physical grouping of services based on criteria such as data affinity, cost, performance
+    etc., although subsystem identification is usually done top-down during Functional Area Analysis activity. The
+    allocation of the components to the architectural tiers, in order to satisfy architectural constraints imposed by
+    non-functional requirements, is explained in Service Realization.
+</p>
+<p>
+    When identifying subsystems, take into considerations the following aspects:
+</p>
+<ol>
+    <li>
+        Geographic locations (if a function area is implemented in two different locations, then we may consider one
+        subsystem for each location)
+    </li>
+    <li>
+        Organizational responsibilities (if a functional area is split and managed by two different managers, then we may
+        consider to create two subsystems if the split is<br />
+        logical and likely to continue)
+    </li>
+    <li>
+        Types of systems ( if a functional area is split and implemented by one or more different IT systems, then each IT
+        system can become a subsystem)
+    </li>
+</ol>
+<h4>
+    Component Specification
+</h4>
+<p>
+    After the boundaries of the service components, their functional and technical components and services have been
+    identified through subsystem analysis, the detailed structure of Enterprise Components viz Service, Functional,
+    Technical Components&nbsp;are specified in Component Specification (CS).
+</p>
+<p>
+    One of the problems that large frameworks have always encountered is that they tend to build and use larger object
+    graphs. The dependency between fine-grained individual objects increases the complexity of the usage and reuse of the
+    framework. This is often a barrier to entry as many failed industry frameworks have testified.
+</p>
+<p>
+    The typical OOAD approaches implicitly suggest the common practice of creating larger object models (class diagrams).
+    In SOMA, we use Functional Area Analysis to define and agree on a set of business related boundaries for subsequent
+    components. As we transition into the IT domain, we select the subsystems that will provide the functionality for the
+    functional areas as larger grained entities. We define the dependencies between them and design their internal
+    structure.
+</p>
+<p>
+    The key enhancement that SOMA offers in component modeling is that the initial scoping is done for something
+    larger&nbsp;than an object,namely, Subsystem&nbsp;and&nbsp;then a&nbsp;systematic application of the object-oriented
+    analysis and design is performed within the confines of the Subsystem.
+</p>
+<p>
+    In Component Specification we describe the interface and high level attributes, internal flow/dependencies, structure
+    and variations of Service Components in terms for fine grained components such as Functional and Technical Components.
+    We also describe interfaces of Functional and Technical components. Also Service are assigned/placed to Service
+    Component for realization.&nbsp;This&nbsp;is a key realization decisions.
+</p>
+<p>
+    Realization capability patterns in SOMA are not only applied in Realization phase, but also applied in early phases in
+    the SOMA lifecycle to build the realization of the solution on-hand gradually and continuously throughout the SOMA
+    lifecycle which is fractal in nature. Read more about fractal nature of SOMA method <img alt="" src="./../../../images/no_rup.gif">&#160;<a class="elementLinkWithUserText" href="./../../../pages_not_installed/pages_not_installed.html" guid="_pNee0G8tEd-9z7-UXfcS-A"><strong>here</strong></a>.<br />
+</p>
+<h4>
+    Pattern Selection
+</h4>
+<p>
+    Pattern Selection allows to leverage proven techniques, considerations, and best practices to address a specific
+    solution problem and to help realize the services, components and flows.&nbsp;It enforces a quality delivery and reduce
+    the cost and expedite the development process. The intent of this section of this lesson is not to describe the
+    patterns in various domains There are patterns&nbsp;in the areas of Enterprise Service Bus or ESB design, Rule
+    Analysis, and Information Services that may be are c.
+</p>
+<h4>
+    Realization Decisions
+</h4>
+<p>
+    As part of making Realization Decisions we make build versus buy versus transform kinds of decisions. This is not a
+    straightforward build versus buy decision: other interesting options come into the picture. There are a number of
+    alternatives to be considered relative to deciding how to realize services, namely, Build, Buy, Integrate, Transform,
+    Subscribe, Outsource. Transformation uses a combination of techniques including business rules extraction to pull out a
+    segment of functionality to be used independently for the realization of the components and services. Integrate is the
+    wrappering of legacy functionality to achieve the to-be functionality; integration is invocation-based. Subscription is
+    based on the availability of a publish-subscribe model in a message-oriented middleware context in which a consumer
+    subscribes to the services provided by the provider. One of the other options is to outsource the functionality, for
+    example, payroll functions, out to some other business. As B2B integration has become more common, this option is being
+    used considerably.
+</p>
+<h4>
+    SOA Reference Architecture&nbsp;
+</h4>
+<p>
+    SOMA leverages IBM SOA Reference Architecture throughout the lifecycle. IBM SOA Reference Architecture has two views:
+    First, the Solution View; second, the Middleware View. Solution View of the IBM SOA Reference Architecture is also
+    called IBM SOA Solution Stack, S3. Read more two views of the IBM SOA Reference Architecture <a class="elementLinkWithUserText" href="./../../../core.tech.soma.common.base-ibm_lic/guidances/concepts/ibm_soa_ref_arch_86A81A68.html" guid="_JAbSEG85Ed-9z7-UXfcS-A">here</a>.
+</p>
+<p>
+    SOA Solution Stack also known as Solution View of IBM SOA Reference Architecture enables SOMA to define layered
+    architecture for a solution: SOA or non-SOA. SOMA Method is built keeping in view the layered architecture. Layering
+    offers key benefits in creating solutions. These benefits are: First, layers help make IT systems to be easily changed
+    or extended and make them more portable. A change to a lower layer that does not affect its interface will require no
+    change to a higher layer. For example, any J2EE compliant application server that conforms to the J2EE standard may be
+    freely substituted without change to the application-level software. In general, changes to a layered software system
+    that affect no interface are confined to a single layer. Second, layers provide Architectural Blueprint for
+    constructing the system. Knowing the layers in which their software resides, developers know what services they can
+    rely on in the coding environment. Layers may define work assignments for development teams, although this is not
+    always the case. Third, layers help architects to communicate. In a large system, the number of dependencies among
+    modules expands rapidly. Organizing the software into layers with interfaces is an important tool to manage complexity
+    and communicate the structures to developers. Layers help with architects to analyze. They can be used for analyzing
+    the impact of changes to the design. Fifth, layering can be strict or non-strict. A strict layering scheme means that
+    the components can only use components in the same layer or layers immediately below them. A non-strict layering scheme
+    means components can use components in the same or any lower layer. Note that as a general rule, however, components
+    should not be allowed to use components in the upper layers. If components have dependencies on components in higher
+    layers, then it becomes difficult to replace the upper layer components without having to change the lower level
+    components.
+</p>
+<p>
+    As we apply the various capability patterns in SOMA to identify, specify, realize, and implement the five fundamental
+    constructs of service orientation, namely, services, flows or business processes, components, information, and rules
+    and policies, we detail and populate the SOA references architecture to document and capture the architectural elements
+    of each of the layers of the reference architecture. Detail SOA Solution Stack Layer, capability pattern in SOMA
+    focuses on refining and providing detailed content for the specific layers of the SOA Solution Stack which is a
+    Solution View of IBM SOA Reference Architecture.
+</p>
+<p>
+    <img style="WIDTH: 1012px; HEIGHT: 555px" height="555" alt="" src="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/guidances/practices/resources/instantiated_soa_ref_arch.jpeg"     width="600" />
+</p>
+<p>
+    <br />
+    &nbsp;
+</p>
+<h4>
+    Technical Feasibility Exploration
+</h4>
+<p>
+    Technical Feasibility Exploration is performed to select a set of representative services, corresponding to usage
+    scenarios within the domain, to identify major architectural challenges that they present, and to identify a set of
+    corresponding proof of concepts that are recommended to be implemented to exercise the architectural decisions in a
+    subsequent realization phase. It is also performed to reduce risk and to analyze areas of unknown complexity. SOA
+    Solution Stack, or S3, which is also known as Solution View of the IBM SOA Reference Architecture is leveraged in
+    performing the Technical Feasibility Exploration in SOMA. The SOA Solution Stack is typically instantiated in six basic
+    ways as depicted on the following diagram as Pattern 1 to Pattern 6. In Technical Feasibility Exploration, we first
+    prioritize the services, we identify key usage scenarios for the services, and then we identify and select interaction
+    patterns for each of the scenarios from Pattern 1 through 6 as depicted on the figure below. Then we map and group
+    services to these interaction patterns, and then plan and define the proof of concept for each of these realization
+    scenarios followed by actual implementation of the proof of concept. Also note that as you move from Pattern 1 to
+    Pattern 6, it reflects increasing business value and flexibility from IT systems and also reflects the maturity of the
+    organization.
+</p>
+<p>
+    <img style="WIDTH: 767px; HEIGHT: 323px" height="303" alt="" src="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/guidances/practices/resources/tfe_patterns.jpeg" width="600" /><br />
+</p>
+<h4>
+    Solution Template
+</h4>
+<p>
+    Every SOA engagement tends to have unique characteristics and each SOA solution is a hybrid of various solution types.
+    SOMA has defined Solution Templates for various solution types as solutions accelerators from method perspective.
+    Solution Template is a mechanism for extending a software engineering method to incorporate and combine multiple
+    strategies and approaches for building an overall solution. Various realization strategies and constraints must be
+    taken into account including: ISV or packaged applications in the operating environment or have been chosen
+    strategically as an implementation platform; aspects of service, components and flows that must be custom built;
+    aspects of the solution that should leverage existing legacy applications and create adaptors/connectors to tap into
+    existing functionality.
+</p>
+<p>
+    <br />
+    <br />
+    <br />
+    &nbsp;
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Test Matrices</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="test_matrices">
+<meta name="uma.presentationName" content="Test Matrices">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_P26uQDJ6Ed261rFYA7Y8NQ"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_P26uQDJ6Ed261rFYA7Y8NQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Test Matrices</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Test matrices are tables that are used for a variety of purposes in test design.  Any cell, which is checked, indicates that it is used or is applicable. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/test_specification_E0A1A8C5.html" guid="mwebCE3B2E307A951B9485256885005D8027">Test Specification</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <em><strong>Functional Requirements Matrix -&nbsp;</strong></em>used to document, at a high level, the functional
+    requirements for the application system.&nbsp; For each functional requirement, there is a:&nbsp;
+</p>
+<ul>
+    <li>
+        Reference number
+    </li>
+    <li>
+        Description
+    </li>
+    <li>
+        Objective
+    </li>
+    <li>
+        Evaluation criteria
+    </li>
+    <li>
+        Business priority (i.e., the impact to the business if defects in the area were to be discovered in production).
+    </li>
+</ul>
+<p>
+    <em><strong>Structural Requirements Matrix -&nbsp;</strong></em>used to document at a high level the technical
+    requirements for the application system.&nbsp; For each structural enabler, there is a:&nbsp;
+</p>
+<ul>
+    <li>
+        Reference number
+    </li>
+    <li>
+        Description
+    </li>
+    <li>
+        Objective
+    </li>
+    <li>
+        Evaluation criteria
+    </li>
+    <li>
+        Business, development, or operations priority.
+    </li>
+</ul>
+<p>
+    <em><strong>Test Conditions Matrix -</strong></em> Test conditions are identified by decomposing a
+    function/sub-function.&nbsp; These requirements can often be expressed in the form, “If &lt;test condition&gt; then
+    &lt;outcome&gt;.”&nbsp; Each test condition has a measurable objective and normally requires the execution of several
+    test cases.&nbsp; The Test Conditions Matrix is a worksheet used to formulate the test conditions that, if met, will
+    produce the expected result.&nbsp; It is a tool used to assist in the design of test cases.&nbsp; Each test condition
+    has a reference number.
+</p>
+<p>
+    <strong><em>Test Sets Matrix -</em></strong> A test set is a collection of test conditions.&nbsp; Test sets are created
+    for purposes of test execution only.&nbsp; A test set is created such that its size is manageable to run and its
+    grouping of test conditions facilitates testing.&nbsp; The grouping reflects the application build strategy.&nbsp;
+    Typically, the group:
+</p>
+<ul>
+    <li>
+        Is capable of being executed together
+    </li>
+    <li>
+        Runs in batch or on-line
+    </li>
+    <li>
+        Grouping alternatives include: 
+        <ul>
+            <li>
+                Valid, invalid or no data
+            </li>
+            <li>
+                System or structure related
+            </li>
+            <li>
+                Processing cycles related
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    Each test set has a reference number.&nbsp; The Test Sets Matrix is a worksheet that relates the test conditions to the
+    test set in which the condition is to be tested.&nbsp; Rows list the test conditions and columns list the test
+    sets.&nbsp; A checkmark in a cell indicates the test set will be used for the corresponding test condition.
+</p>
+<p>
+    <strong><em>Test Conditions Coverage Matrix -</em></strong> This matrix is&nbsp;used for planning, and for illustrating
+    that all test conditions are covered by one or more test cases.&nbsp; Each test set has a Test Conditions Coverage
+    Matrix.&nbsp; The Test Conditions Coverage Matrix has a reference number and a test set reference number.&nbsp; Rows
+    are used to list the test conditions (condition reference number and description), and columns are used to list all
+    test cases in the test set.&nbsp; Rows without check marks indicate conditions that are not tested.&nbsp;&nbsp;Columns
+    without check marks indicate test cases that are not used.
+</p>
+<p>
+    <strong><em>Test Requirements Coverage Matrix -</em></strong> This matrix is&nbsp;used to illustrate that all
+    requirements are covered by one or more test cases.&nbsp; Each test set has a Test Requirements Coverage Matrix.&nbsp;
+    This same matrix may be used to illustrate that all functions are covered by one or more test cases.&nbsp; The Test
+    Requirements Coverage Matrix has a reference number and a test set reference number.&nbsp; Rows are used to list the
+    requirements (requirement reference number and description), and columns are used to list the test cases in the test
+    set.&nbsp; This matrix can be used to validate requirements or to illustrate test coverage.&nbsp; Rows without check
+    marks indicate requirements that are not tested.&nbsp; Columns without check marks indicate test cases that are not
+    used.&nbsp; The test requirements coverage achieved by all test sets may be consolidated using the same form.&nbsp; In
+    this case, rows are used to list the requirements (requirement reference number and description), and columns are used
+    to list all test sets.&nbsp; Rows without check marks indicate requirements that are not tested.&nbsp; Columns without
+    check marks indicate test sets that are not used.&nbsp;
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

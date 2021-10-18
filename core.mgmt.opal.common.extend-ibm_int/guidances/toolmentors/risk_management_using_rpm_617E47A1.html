@@ -1,0 +1,1097 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tool Mentor: Risk Management Using Rational Portfolio Manager</title>
+<meta name="uma.type" content="ToolMentor">
+<meta name="uma.name" content="risk_management_using_rpm">
+<meta name="uma.presentationName" content="Risk Management Using Rational Portfolio Manager">
+<meta name="uma.category" content="Tool:rpm:Rational Portfolio Manager">
+<meta name="element_type" content="tool_mentor">
+<meta name="tool" content="Rational Portfolio Manager">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_4ghTYHu_Ed6TsOLr_oVa_g", "_-wJ0gBwmEd22jZjNtWB9-A"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_VTspMMRfEdyD76CYS6Ta7A", "_SG-TMEBPEd-wGLsu70MtEw", "_-wJ0gBwmEd22jZjNtWB9-A"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_-wJ0gBwmEd22jZjNtWB9-A"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Tool Mentor: Risk Management Using Rational Portfolio Manager</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/toolmentor.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This tool mentor provides guidance on how to perform Risk Management when using the OnDemand Process Asset Library (OPAL) and Rational Portfolio Manager (Rational PM).</td>
+</tr>
+<tr>
+<td>Tool: <a href="./../../../core.mgmt.opal.common.extend-ibm_int/tools/rpm_8A92C682.html" guid="_SG-TMEBPEd-wGLsu70MtEw">Rational Portfolio Manager</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h1>
+    <strong>1. Purpose</strong>
+</h1>This document provides guidance how Rational PM is used to support Risk Management in accordance with the OnDemand
+Process Asset Library (OPAL). This document may serve as a template for creating a tailored procedure or guideline. <br />
+This guidance document contains three sections: 
+<ol>
+    <li>
+        Purpose
+    </li>
+    <li>
+        How Rational PM supports the OPAL procedure
+    </li>
+    <li>
+        Usage table for Rational PM data elements (fields)
+    </li>
+</ol>
+<p>
+    The intent of this guidance is to provide sufficient direction on how Rational PM is used on a project to support Risk
+    Management, so that there are no ambiguities about the process and the team training can be concise.
+</p>
+<p>
+    The guidance assumes a basic understanding of how to use Rational PM and is not intended to be training material.
+    Detailed training on the use of Rational PM can be found by selecting Education and Training from the <a href="http://w3.ams1.ibm.com/igsdf/tools_mgmt.nsf/Content/RPM_RoleBased Education">GBS Rational Portfolio Management
+    Enablement</a> page.
+</p>
+<p>
+    <b>2. OPAL RPM Procedure - Tool Implementation of the OPAL Procedure</b><br />
+    <br />
+    The following process steps are taken from the <a href="http://opal.ibm.com/home/practice.mgmt.opal.hand_except.extend-ibm_int/capabilitypatterns/continuous_risk_management_procedure_int_B740EE9A.html" target="_blank">IMSP600 Continuous Risk Management Procedure</a>. State refers to the State field in the
+    Identification Portlet of the Risk in Rational PM. Each procedure step and associated OPAL data to be captured and
+    updated are detailed below.<br />
+</p>
+<table class="TableGrid" border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="55">
+                <p class="Normal" align="center">
+                    Step
+                </p>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="360">
+                <p class="Normal" align="center">
+                    Description
+                </p>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="216">
+                <p class="Normal" align="center">
+                    Input State Values
+                </p>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="216">
+                <p class="Normal" align="center">
+                    Possible Output State Values
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="55">
+                <p class="Normal" align="center">
+                    1
+                </p>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="360">
+                <br />
+                Prepare for Risk Management
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="216">
+                <br />
+                N/A
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="216">
+                <br />
+                N/A
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="55">
+                <p class="Normal" align="center">
+                    2
+                </p>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="360">
+                <br />
+                Identify and Analyze Risk
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="216">
+                <br />
+                Identified
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="216">
+                <br />
+                Assigned, Rejected, Closed
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="55">
+                <p class="Normal" align="center">
+                    3
+                </p>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="360">
+                <br />
+                Plan Risk Response
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="216">
+                <br />
+                Assigned
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="216">
+                <br />
+                Response Planned, Rejected, Closed
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="55">
+                <p class="Normal" align="center">
+                    4
+                </p>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="360">
+                <br />
+                Continuously Assess Risk
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="216">
+                <br />
+                Response Planned
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="216">
+                <br />
+                Occurred, Response Planned, Rejected, Closed
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="55">
+                <p class="Normal" align="center">
+                    5
+                </p>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="360">
+                <br />
+                Launch Risk Control Actions
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="216">
+                <br />
+                Occurred
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="216">
+                <br />
+                Implemented: Contingency, Occurred
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="55">
+                <p class="Normal" align="center">
+                    6
+                </p>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="360">
+                <br />
+                Close Risk
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="216">
+                <br />
+                Implemented: Contingency
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="216">
+                <br />
+                Closed
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Risk_ProcessFlow.jpg" width="600" height="558" /> 
+<h4>
+    Step 1 - Prepare for Risk Management
+</h4>This step is not part of the RPM Risk Management state flow. It determines potential sources of risk and
+classification criteria, defines risk qualification criteria, and establishes risk management strategy. <br />
+<p class="Normal">
+    <strong>Step 2 - Identify and Analyze Risk-performed by Project Manager or Contract Business Office</strong><br />
+</p>
+<p class="Normal">
+    Please note that Rational PM elements in <b>BOLD</b> text and highlights are considered required. Other fields and
+    portlets are recommended for completeness. Refer to the table in section 3 for a complete description of all fields,
+    standards and practices.
+</p>
+<ul>
+    <li class="Normal">
+        <b>Identify Risk -</b> CREATE Risk in Scope Management using the OPAL IMSP600 Risk template and the OPAL IMSP600
+        layout. 
+        <ul>
+            <li class="Normal">
+                Key information that should be captured includes <b>Rank</b>, <b>Description</b>, <b>Target Date</b>,
+                <b>Proposed By</b>, <b>Risk Matrix</b>, and <b>Consequences</b>. A value for Risk Category should be
+                captured in the Attribute portlet. Assign Risk owner in the Staffing view or <b>Resources</b> portlet.
+                <b>State</b> set to IDENTIFIED
+            </li>
+            <li class="Normal">
+                The OPAL IMSP600 Risk template can be located by selecting Template from the Rational PM Scope Management
+                View and expanding the Scope Templates / OPAL Scope Templates folder
+            </li>
+        </ul>
+    </li>
+</ul>
+<p class="Normal">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Risk_CreateElement.jpg" width="600" height="219" /><br class="Normal" />
+</p>&nbsp; 
+<p class="Normal">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Risk_Identify.jpg" width="429" height="383" />
+</p>
+<ul>
+    <li class="Normal">
+        <b>Analyze Risk -</b> Evaluate the risk in terms of impact, probability, and time frame of possible occurrence.
+        Update <b>Risk Matrix</b> and enter data in the Order of Magnitude Mitigation Cost/Revenue, Background, and
+        <b>Consequences</b> portlets. 
+        <ul>
+            <li class="Normal">
+                If the Risk is accepted change <b>State</b> to ASSIGNED. Update <b>Approved By</b> portlet with name of
+                person accepting the risk.
+            </li>
+            <li class="Normal">
+                If the Risk is invalid update <b>Status</b> portlet with reasons for why the risk was rejected and change
+                <b>State</b> to CLOSED
+            </li>
+        </ul>
+    </li>
+</ul>
+<p class="Normal">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Risk_Analyze.jpg" width="446" height="395" />
+</p>
+<h4>
+    Step 3 - Plan Risk Response - performed by Risk Owner
+</h4>
+<ul>
+    <li>
+        <p class="Normal">
+            Determine if Risk is in scope of project
+        </p>
+        <ul>
+            <li>
+                <p class="Normal">
+                    If Risk can be transferred to another project or organization
+                </p>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p class="Normal">
+            Transfer risk and track it as External Dependency
+        </p>
+        <ul>
+            <li>
+                <p class="Normal">
+                    RECORD: document decision in <b>Status</b> portlet. Change <b>State</b>to CLOSE
+                </p>
+            </li>
+            <li>
+                <p class="Normal">
+                    If Risk is in scope of project
+                </p>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p class="Normal">
+            Create Risk Mitigation Plan and store results in the <b>Summary of Risk Mitigation Plan</b> portlet
+        </p>
+    </li>
+    <li>
+        <p class="Normal">
+            Determine Risk containment approach and create Risk contingency plan and Risk reserve plan. Store in the
+            <b>Background</b> portlet or attach as document in Document Management
+        </p>
+    </li>
+    <li>
+        <p class="Normal">
+            RECORD: document decision in <b>Status</b> portlet. Change <b>State</b> to RESPONSE PLANNED
+        </p>
+    </li>
+</ul>
+<p class="Normal">
+    <br />
+</p>
+<p class="Normal">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Risk_PlanResponse.jpg" width="414" height="369" />
+</p>
+<h4>
+    Step 4 - Continuously Assess Risk - performed by Project Manager
+</h4>
+<ul>
+    <li>
+        Track risk control information and determine risk control actions. Reassess risk factors, examine the risk for
+        indications of the probability of risk increasing, and determine if the risk factors previously identified still
+        apply. Execute Risk Mitigation Plan as needed.
+    </li>
+    <li>
+        Update Status portlet with results of the Risk assessment. Update Risk Matrix, Mitigation/Impact,
+        Mitigation/Factors, Order of Magnitude Mitigation Cost/Benefit, Background, Summary of Risk Mitigation Plan,
+        Consequences portlets based on the assessment.
+    </li>
+    <li>
+        Outcome of assessment
+    </li>
+    <li>
+        If the Risk has occurred Change State to OCCURRED
+    </li>
+    <li>
+        If the Risk has not occurred but is still valid State remains RESPONSE PLANNED
+    </li>
+    <li>
+        If the Risk is no longer valid Change State to CLOSED
+    </li>
+</ul>
+<p class="tabletextchar1charchar">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Risk_Assess.jpg" width="417" height="371" /><br class="tabletextchar1charchar" />
+    &nbsp;
+</p>
+<ul>
+    <li class="Normal">
+        Use the Rational PM Portfolio Viewer <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Risk_PortfolioViewerIcon.jpg" width="77"         height="23" /> for detailed analysis of Risk 
+        <ul>
+            <li class="Normal">
+                Utilize the Rational PM Pivot OPAL ENG351 Risk Details for analysis
+            </li>
+        </ul>
+    </li>
+</ul>
+<p class="Normal">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Risk_ReportPivot.jpg" width="600" height="191" /><br class="Normal" />
+</p>
+<div type="disc">
+    <ul>
+        <li class="Normal">
+            Utilize the Rational PM Reports OPAL ENG351 Risk Details Report and OPAL ENG353 Risk Log to capture point in
+            time reports and for distribution to stakeholders without access to Rational PM. Reports can be generated on a
+            periodic basis and stored in the PCB to capture a point in time view of the Risks.
+        </li>
+    </ul>
+</div>
+<p class="Normal">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Risk_ReportList.jpg" width="496" height="152" /><br class="Normal" />
+    <br />
+</p>
+<p class="Normal">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Risk_ReportDetail.jpg" width="600" height="576" /> <img alt=""     src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Risk_ReportLog.jpg" width="600" height="186" />
+</p>
+<h4>
+    Step 5 - Launch Risk Control Actions - performed by Project Manager or Contract Business Office
+</h4>
+<ul>
+    <li>
+        React to risk occurrence, execute actions based on the Risk Contingency Plan 
+        <ul>
+            <li>
+                Update the Status and Actions Taken portlets. Validate the Risk Contingency plan and update the Summary of
+                Risk Mitigation Plan portlet.
+            </li>
+        </ul>
+    </li>
+    <li>
+        Outcome 
+        <ul>
+            <li>
+                If action is not required to react to the Risk occurrence Change State to IMPLEMENTED: CONTINGENCY
+            </li>
+            <li>
+                If action is required State remains OCCURRED
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    <br />
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Risk_Control.jpg" width="424" height="378" /><br />
+    &nbsp;
+</p>
+<p>
+    <b>3. Usage table for Rational PM data elements (fields)</b><br />
+    The table below describes the portlets and fields in the OPAL IMSP600 Risk Layout in Rational PM. Portlets and Fields
+    in <b>BOLD</b> are required, other fields and portlets are recommended for completeness.<br />
+    Note: different layouts exist and vary in the portlets they display.
+</p>
+<table class="NormalTable" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                <b>Portlet / Field</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                <b>Description</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                <b>Standards and Practices</b>
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="708" colspan="3">
+                <br />
+                <b>Identification Portlet</b>
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                <b>Rank</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Rank defines the level of Severity of the Risk<br />
+                This field is critical to the Business Management Review (BMR) Investment Map and should be set for each
+                Risk
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Select one of the following values: 900: Critical<br />
+                700: High<br />
+                500: Medium<br />
+                300: Low
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                Reference Number
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Repository unique identifier for Risk<br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Rational PM assigns reference Number automatically
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                External Reference Number
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                The project may have its own numbering system. This field can be used for tracking that number
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                External Reference Number is the manual text assigned by the PM<br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                Risk Event Occurred Date/Time
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Date / time that the risk event occurred
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter the Date/Time of the event that caused this Risk occurrence
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                Element security
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Security control - project level or by invitation<br />
+                Project level is the default<br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                For Confidential and commercially sensitive information use 'by invitation'.
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                <b>Target Date</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Target date for closing Risk
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter the target date that is expected for closure of the Risk
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                EST/Start
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Estimated start date
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter the date that activity is expected to start on the Risk
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                EST/Finish
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Estimated finish date
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter the date that activity is expected to finish on the Risk
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                <b>State</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                The state is related to the step in workflow<br />
+                <br />
+                <br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Use the following basic state values to identify the state of the Risk during the lifecycle<br />
+                <u>Basic states</u><br />
+                Identified: Initial state<br />
+                Assigned: Risk is being resolved with approved plan<br />
+                Response Planned: Risk that has been supported with Risk Mitigation and / or Contingency plans<br />
+                Occurred: Risk that occurred and requires review and possible response<br />
+                'Implemented: Contingency': Risk that has previously occurred, plans and actions taken to control risk have
+                finished<br />
+                Closed: Risk has been resolved, validated, and accepted by the Risk Owner<br />
+                <u>Non OPAL States</u>: These state values are available in RPM but are not used in the OPAL
+                procedure<br />
+                <br />
+                <br />
+                Technical Review<br />
+                Financial Review<br />
+                General Review<br />
+                Approved<br />
+                Rejected<br />
+                Implemented - Mitigation<br />
+                In Progress<br />
+                To Be Validated
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="708" colspan="3">
+                <br />
+                <b>Free Text Portlets</b>
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                <b>Description</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Risk description, in sufficient detail to be understood by others on the team
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter a complete and detailed description of the Risk. Symptoms and facts that are causing concern
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                <b>Status</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Log of assessment of Risk status
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter additional comments as needed to trace the progress and resolution of the Risk. For example, record
+                the history of a Risk transfer, including the justification for the transfer and the person to whom it was
+                transferred. Status should be updated on a regular basis. The date / time stamp function should be used to
+                identify multiple entries
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                <b>Background</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                The history of this element and how it arrived at this particular point in the project<br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter additional information of more background is required to support the description<br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                <b>Summary of Risk Mitigation Plan</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Can be used as a summary for the risk mitigation<br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter a brief description of the activities needed to reduce the impact and probability of the risk
+                occurring<br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                <b>Consequences</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Description of the Consequences of this Risk on the project<br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Description of the adverse situation or loss to the project if the Risk occurs.<br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                <b>Actions Taken</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Description of all actions taken to mitigate the risk<br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Description of all actions taken for the Risk<br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="708" colspan="3">
+                <br />
+                <b>Risk Matrix</b>
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                <b>Impact</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Select a value from the drop-down list
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Select value of 20, 40, 60, 80, or 100
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                <b>Probability</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Select a value from the drop-down list
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Select value of 20, 40, 60, 80, or 100
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                <b>Precision</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                The current level of understanding of the event - rated as High, Medium or Low.
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Select value of High, Medium, or Low
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                Consequence Cost
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Cost of the consequences if the Risk is not addressed.
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter value of consequences if the Risk occurs
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                Probability Cost
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Consequence Cost * % Impact
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                System calculated
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                Exposure %
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                (Probability + Impact) / 2
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                System calculated
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="708" colspan="3">
+                <br />
+                <b>Mitigation/Impact</b>
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                Schedule impact in day(s)
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Enter impact in days the Risk may have on the schedule as approved
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter value in days
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                Order of Magnitude Work in hour(s)
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Enter an estimate of the total hours to mitigate this risk
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter value in hours
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                Order of Magnitude Work Low in hour(s)
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Enter an estimate of the minimum hours to mitigate this Risk<br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter value in hours
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                Order of Magnitude Work High in hour(s)
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Enter an estimate of the maximum hours to mitigate this Risk
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter value in hours
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="708" colspan="3">
+                <br />
+                <b>Order of Magnitude Mitigation Cost / Revenue</b>
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                Order of Magnitude Cost
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                An estimate of the maximum dollar amount to mitigate this Risk
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter value in selected currency
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                Order of Magnitude Cost Low
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                An estimate of the minimum dollar amount to mitigate this Risk
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter value in selected currency
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                Order of Magnitude Cost High
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                An estimate of the maximum dollar amount to mitigate this Risk
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter value in selected currency
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                Order of Magnitude Non-Billable Benefits
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                The best estimate, in dollars, for non-billable revenue
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter value in selected currency
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                The best estimate, in dollars, for non-billable revenue
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                The best estimate, in dollars, for billable revenue
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter value in selected currency
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="708" colspan="3">
+                <br />
+                <b>Other Portlets</b>
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                Mitigation/Factors
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Description of mitigation factors<br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter the Mitigating factors/triggers<br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                Attributes
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Select attributes. Can be used to identify subproject for Risk, or escalated Risk to program rollup
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter a specific value for the Risk Category attribute. Other attributes are dependent upon the owning
+                organization
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                <b>Resources</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Resources that are assigned to the Risk
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Assign resources within this portlet (or Staffing View). If restricted access is needed use the 'By
+                Invitation' option
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                <b>Proposed by</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Resource proposing Risk
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter the name of the resource that has proposed the Risk. Selection can be made from RPM address book or
+                directly entered for non RPM users. Default is resource entering record
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                <b>Approved by</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Resource approving the Risk as potentially impacting the project
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter the name of the resource that has approved the Risk. Selection can be made from RPM address book or
+                directly entered for non RPM users
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                <b>Closed By</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                Resource that closed the Risk
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter the name of the resource that has closed the Risk. Selection can be made from RPM address book or
+                directly entered for non RPM users
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="161">
+                <br />
+                Status Update
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="264">
+                <br />
+                History (version) of updates made to the RPM Risk record
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                System generated version control with ID, date, and time stamp of Risk record change
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

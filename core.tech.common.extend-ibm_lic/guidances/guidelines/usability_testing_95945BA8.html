@@ -1,0 +1,593 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Usability Testing</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="usability_testing">
+<meta name="uma.presentationName" content="Usability Testing">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb55B9F6E79B7B5AB18525666C0070D029"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb55B9F6E79B7B5AB18525666C0070D029"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Usability Testing</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline describes techniques for conducting usability evaluations, either via usability tests or heuristic reviews.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.user_exp_design.base-ibm_lic/tasks/conduct_usability_test_72E05E46.html" guid="_GlzyQIW0Ed6eRN4Jq00Nbw">Conduct Usability Test</a>
+</li>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/current_solution_eval_67995A34.html" guid="mwebF2DD2EFDE50580C8852568820060F0D2">Current Solution Evaluation</a>
+</li>
+<li>
+<a href="./../../../practice.tech.user_exp_design.base-ibm_lic/tasks/evaluate_current_user_experience_260A8726.html" guid="_H5d-rURAEdy0e9h1zdJ_TA">Evaluate Current User Experience</a>
+</li>
+<li>
+<a href="./../../../practice.tech.user_exp_design.base-ibm_lic/tasks/refine_ui_prototype_59C56F52.html" guid="_H5w5kERAEdy0e9h1zdJ_TA">Refine User Interface Prototype</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/usability_test_plan_780912D6.html" guid="mweb46FDC03E3B3755AF852568850060E33D">Usability Test Plan</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Introduction
+</h3>
+<p>
+    The first type of usability evaluation is known as a usability test.&nbsp; A usability test is a controlled evaluation
+    of the usability of a software application or prototype by a set of representative users.&nbsp; A formal usability test
+    is usually conducted in a laboratory setting, using workrooms fitted with one-way glass, video cameras, and a recording
+    station.&nbsp; Both quantitative and qualitative data are gathered.&nbsp; Prior to conducting the evaluation, a formal
+    usability test plan is written.
+</p>
+<p>
+    The second type of usability evaluation discussed is a heuristic review.&nbsp; A heuristic review involves one or more
+    human-interface specialists applying a set of guidelines to gauge the solution’s usability, pinpoint areas for
+    remediation, and provide recommendations for design change.&nbsp; This systematic evaluation employs usability
+    principles that should be followed by all user interface designers such as error prevention, provision of feedback and
+    consistency, etc
+</p>
+<h3>
+    Development Approach
+</h3>
+<h4>
+    Usability Test
+</h4>
+<p>
+    Conducting a usability test consists of these major steps:
+</p>
+<ul>
+    <li>
+        Recruit participants to be involved in the usability test
+    </li>
+    <li>
+        Prepare the usability test cases.
+    </li>
+    <li>
+        Execute the usability test cases with the participants.
+    </li>
+    <li>
+        Have a debriefing session with the participants.
+    </li>
+    <li>
+        Summarize your observations.
+    </li>
+    <li>
+        If necessary, refine the work product, and then rerun the test with a different set of similar participants.
+    </li>
+</ul>
+<h4>
+    Recruit Participants
+</h4>
+<p>
+    Decide how many participants it is practical to test.&nbsp; A determining factor in selecting the number of
+    participants to test is the amount of time that can be spent with the participant.&nbsp; Most times, the participant
+    will only be available for a short period of time (perhaps ½ day).&nbsp; Strive to include a representative user from
+    each user category identified earlier.&nbsp; Do not attempt to involve as many users as possible.&nbsp; Instead, strive
+    for involving a few users that are maximally representative of the categories that have been identified.&nbsp; Involve
+    inexperienced users: if they are successful with the system, chances are high that other more experienced users will
+    also be successful.
+</p>
+<p>
+    Recruit people directly from the target user population.&nbsp; Recruit participants directly from the work areas that
+    will eventually deploy the software under development.&nbsp; Contact their first line management no less than three
+    weeks from the beginning of the study to obtain approval for their employee’s participation.
+</p>
+<h4>
+    Prepare the Usability Test Cases
+</h4>
+<p>
+    The usability test plan work product description [7] provides specific detail for the development of usability test
+    cases.&nbsp; This activity occurs during the planning stages of the study.&nbsp; The following summarizes the main
+    steps from that document.
+</p>
+<p>
+    Identify the 20% of use cases that will be executed 80% of the time.&nbsp; If the use cases have been validated with
+    users, data regarding user’s assessment and rank of importance, frequency of use, and satisfaction will be available
+    (see [8] for more details).&nbsp; Identify the top 20% of use cases from this list to serve as the basis for the
+    usability test case development.
+</p>
+<p>
+    For this pool of use cases, develop a set of usability test cases containing starting and end states with concrete
+    data.&nbsp; Unlike use cases in general, usability test cases should be very specific and not provide information about
+    “a customer,” but rather about “John Smith” and “Mary Jones.” usability test cases should also be reasonably well
+    focused.&nbsp; Very general end states may lead the participant to attempt functions that cannot be simulated in the
+    user interface prototype or are not the focus of the study.&nbsp; Furthermore, it should be possible for users to
+    complete all of the usability test cases within the time allowed.&nbsp; Therefore, decide on the maximum time that can
+    be spent with each participant and then plan the usability test cases to fit that time.<br />
+    Perform a dry run of the usability test.&nbsp; It is useful to have a dry run of the session.&nbsp; The purpose of the
+    dry run is not to gather actual test results, but rather to ‘test the test’.&nbsp;&nbsp; This helps determine whether
+    the usability test cases are comprehensible to the participant, whether the usability test cases may lead to unexpected
+    situations (for example, unforeseen system crashes), and whether there is sufficient time to complete the test.
+</p>
+<h4>
+    Have the Participants Execute the Usability Test Cases
+</h4>
+<ol>
+    <li>
+        <strong>What to do before the participants arrive</strong>
+    </li>
+</ol>
+<ul>
+    <li>
+        Develop pre-test questionnaire to obtain participant background and experience data.&nbsp; Review the usability
+        test plan [7] for information regarding the development of pre-test questionnaires.<br />
+        Ensure the prototype is ready to use in an environment that resembles their actual working environment.&nbsp;
+        Ensure that the test environment is similar to the actual working environment in noise level and workstation
+        layout.
+    </li>
+    <li>
+        Create a printed copy of the usability test cases for the participants.&nbsp; Omit all information that is meant
+        for developers and other test conductors (related use cases, test result template, etc.)
+    </li>
+    <li>
+        Ensure participant recording system is ready.&nbsp; This may take on a variety of forms, such as: 
+        <ul>
+            <li>
+                Scoring sheets - If data is collected using scoring hardcopy scoring sheets, ensure that an ample supply of
+                the sheets is available prior to the test
+            </li>
+            <li>
+                Tape recording – Ensure that an adequate supply of audiotapes are available.&nbsp; Ensure microphones are
+                positioned unobtrusively.&nbsp;
+            </li>
+            <li>
+                Video recording - This option is expensive but has the advantage that it can also capture the visual
+                aspects of what the participant is doing and attending to.
+            </li>
+        </ul>
+    </li>
+    <li>
+        Some way of recording what the participants do.&nbsp; Typically, usability tests can be run using a portable or
+        fixed usability lab.&nbsp; If these facilities are not available, data can be collected in the following manner: 
+        <ul>
+            <li>
+                Written notes documenting the comments and actions of the participant.
+            </li>
+            <li>
+                Customizing a software prototype.&nbsp; This encompasses adding procedures to the software that create a
+                log of the participant’s actions and the effects the participant’s actions have on the prototype.&nbsp;
+                This may require quite some extra programming from the developers.
+            </li>
+            <li>
+                Use of a screen-capturing tool (for instance Lotus ScreenCam).&nbsp; Such tools create a ‘software home
+                movie’ of what appears on the computer screen.&nbsp; The disadvantage is that such tools require quite a
+                lot of disk space.
+            </li>
+            <li>
+                Use of a data-capturing tool (for instance WinRunner).&nbsp; These kinds of tools capture every participant
+                action undertaken and allow later on ‘editing’ and ‘replaying’ these participant actions.&nbsp; The
+                advantage of these kinds of tools is that they allow the results of executing usability test cases to be
+                reused during, for instance, stress testing (the captured participant actions can for instance be replayed
+                in parallel 100 times).&nbsp;
+            </li>
+            <li>
+                Again, these kinds of tools are not capable of capturing what the participant is saying.&nbsp;&nbsp;
+            </li>
+            <li>
+                Use of video recording equipment.&nbsp;&nbsp;
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    <strong>2.&nbsp;&nbsp; What to do when the participants arrive</strong>
+</p>
+<ul>
+    <li>
+        Put the test participants at ease.&nbsp; Introduce yourself.&nbsp; Explain that the objective of the test is to
+        evaluate the system, not the participants themselves.&nbsp; The whole session should be conducted in an informal
+        manner, with a primary goal of putting the participants at ease.&nbsp; The participants should think of themselves
+        as co-evaluators, not as guinea pigs.
+    </li>
+    <li>
+        Explain the approach.&nbsp; Explain what input will be given to them, what they are supposed to do with it, and
+        what they can expect the test conductor to do during the session.&nbsp; Emphasize that the test is aimed at
+        evaluating the software, not the test participant, and that the results in no way will be construed as reflection
+        of the participant’s aptitude, skills, or knowledge.
+    </li>
+    <li>
+        Have participant’s complete pre-test demographic background questionnaire.
+    </li>
+    <li>
+        Give the participants the usability test cases that they are expected to execute.
+    </li>
+    <li>
+        Describe to participants the “Think-Aloud” approach to usability test participation.&nbsp; Demonstrate the
+        think-aloud approach by setting the time on a digital watch or deleting a file in a Windows Explorer.
+    </li>
+    <li>
+        Start recording the session.&nbsp;&nbsp; Indicate to the participants that the test conductor will signal the start
+        of a usability test case session.
+    </li>
+</ul>
+<p>
+    <strong>3.&nbsp;&nbsp;&nbsp; What to do while the participants are using the system</strong>
+</p>
+<p>
+    Note each occurrence of unexpected participant behavior.&nbsp;&nbsp; For example: a participant might use a complicated
+    series of commands where a much simpler sequence would have resulted in the same effect.&nbsp; Such data is very
+    important because it shows a discrepancy between how the developer expected the participant to use the system and how
+    the participant actually used it.&nbsp;
+</p>
+<p>
+    Note each occurrence of unexpected system behavior.&nbsp; This means that the system did not behave as the participant
+    expected.&nbsp; If necessary, ask the participant what he/she was expecting.&nbsp; These are also important indicators
+    of possible usability defects.
+</p>
+<p>
+    Encourage the participants to think aloud while using the system.&nbsp; Ask participants to give you a running
+    documentary on what they are doing, what’s going on, or simply what they are thinking.
+</p>
+<p>
+    Note each “think-aloud” comment on the usability of the system.&nbsp; Comments on usability are subjective statements
+    or evaluations of the interface (for instance: ‘That seemed to take a lot of effort!’ ‘Why do I have to type in this
+    data again if I already did it on the previous screen?’).&nbsp; These comments are very important because they reflect
+    a typical participant’s reaction to the system interface design.&nbsp; Although a participant may be working with the
+    system properly and performing well, he or she may nevertheless find this interaction awkward or difficult.
+</p>
+<p>
+    Do not interfere with the participant as he or she attempts to complete the use case.&nbsp; As difficult as it may be,
+    do not give encouragement (or discouragement) as the user works through the use case.&nbsp; Even seemingly innocuous
+    and non-invasive comments such as “Mmm Hmm” and “Good!” during the session can compromise the objectivity of the
+    session.&nbsp; Even nonverbal communication can throw off the results of the study.&nbsp; Unless the user signals he or
+    she needs help, do not interact with the participant while he or she is completing a scenario.&nbsp; The only
+    acceptable time to comment on participant progress is when they ask for help and you are trying to understand why they
+    encountered a problem.
+</p>
+<p>
+    <strong>4.&nbsp;&nbsp; Debrief the participants</strong>
+</p>
+<ul>
+    <li>
+        Administer the post-test questionnaire.&nbsp; This questionnaire is aimed at qualitatively measuring user
+        satisfaction with the design and identifying participant’s perceptions of strengths and weaknesses with the
+        design.&nbsp;
+    </li>
+    <li>
+        Ask participants both specific and open-ended questions about their experiences with the system. Continue video or
+        audio recording during this time; some of the most interesting comments come out at this stage.&nbsp; An example of
+        a specific question could be: ‘Should the default value here be allowed or not allowed?’ An example of an
+        open-ended question could be: ‘What were the 3 best/worst things about the prototype?’
+    </li>
+    <li>
+        Ask a number of questions about the general format of the usability test.&nbsp; Did the participants find the
+        recording equipment intrusive? Were the usability test cases representative for their most important tasks? Was the
+        prototype realistic enough?
+    </li>
+</ul>
+<p>
+    <strong>5.&nbsp;&nbsp;&nbsp; Summarize test observations</strong>
+</p>
+<p>
+    Set aside some time immediately after each test session to summarize observations and to check and update the test
+    notes on unexpected behaviors and participant comments.&nbsp; This activity is especially important if all that is
+    available are the test observers’ and participants’ written notes and comments.&nbsp; If audio and videotaping was
+    conducted, these can be reviewed at a later time.
+</p>
+<h4>
+    Heuristic Review
+</h4>
+<p>
+    A heuristic review should ideally be carried out by more than one expert evaluator.&nbsp; Averaging the results of six
+    heuristic evaluations, Nielsen and others found that single evaluators found, on average, only 35% of usability
+    problems.&nbsp; However, they found that 60% of usability problems were found when there were three evaluators and 75%
+    of the usability problems were identified when five evaluators were used.&nbsp; Not much improvement was found by
+    adding many more evaluators, with only another 15% of the usability problems being found by 10 evaluators.
+</p>
+<p>
+    There are three major steps for conducting a heuristic review:
+</p>
+<p>
+    <strong>1. Pre-evaluation training session</strong>
+</p>
+<p>
+    During this step, the evaluators should be provided a short (90 minute to two hour) training session to familiarize the
+    evaluators with the domain being addressed.&nbsp; They also should be trained in regard to using a common terminology
+    and rating system for identifying problems.&nbsp; Even though they should all be usability experts, this secondary
+    training will provide a common measurement system for communicating findings.
+</p>
+<p>
+    The evaluators should then be given a presentation on the scenarios that they will be evaluating.&nbsp; They should not
+    be shown screen dumps of the system or provided with descriptions of system interaction techniques, but instead should
+    be walked through the scenario and provided with the correct solution for solving the domain problem identified in the
+    scenario.
+</p>
+<p>
+    <strong>2. Actual evaluation</strong>
+</p>
+<p>
+    Evaluators exercise the prototype and evaluate the usability of the system on the basis of the usability principles
+    described above and score the results against a checklist.
+</p>
+<p>
+    Evaluators are given usage scenarios to help guide them in their evaluations.&nbsp; They are asked to identify all
+    problems and classify them into three categories:
+</p>
+<ul>
+    <li>
+        High: Prevents the user from successfully completing the task.&nbsp; Will cause extreme user dissatisfaction.&nbsp;
+        Examples include difficult-to-use widgets and forms and extremely confusing navigation.
+    </li>
+    <li>
+        Moderate: Causes the user difficulty but task can be completed.&nbsp; Will cause user dissatisfaction.&nbsp;
+        Example includes requiring user to scroll to see vital information, somewhat confusing navigation, and nonstandard
+        use of color, widgets, and terminology.&nbsp;
+    </li>
+    <li>
+        Low: Minor problems that do not significantly affect task completion.&nbsp; May cause some user dissatisfaction,
+        especially when considered in aggregate.&nbsp; Examples include some aspects of visual design, punctuation and
+        terminology.
+    </li>
+</ul>
+<p>
+    Evaluators are asked to identify which of the nine principles of usability is violated.&nbsp; Evaluators are also asked
+    to classify the identified problems into action codes to help prioritize follow-on work items:
+</p>
+<ul>
+    <li>
+        High: Action must be taken prior to deployment to enable task completion and avoid extreme user dissatisfaction.
+    </li>
+    <li>
+        Moderate:&nbsp; Action should be taken prior to deployment to facilitate task completion and avoid user
+        dissatisfaction.
+    </li>
+    <li>
+        Low:&nbsp; Action should be taken prior to deployment to avoid user dissatisfaction.
+    </li>
+</ul>
+<p>
+    Evaluators can be observed so that the observers act as scribes and record evaluator’s findings and comments as they
+    work.&nbsp; This reduces the amount of time required for post evaluation analysis. Evaluators are asked not to discuss
+    their findings until all evaluations are complete.
+</p>
+<p>
+    <strong>3. Post-evaluation debriefing</strong>
+</p>
+<p>
+    A post-evaluation debriefing with all evaluators present occurs to discuss the findings of the study and to brainstorm
+    ways for improving the user-interface to address individual problems.
+</p>
+<h3>
+    Advice and Guidance
+</h3>
+<p>
+    The following guidance is suggested:
+</p>
+<ul>
+    <li>
+        Developers responsible for producing the interface should observe at least some usability testing sessions.&nbsp;
+        The developers should also receive written copies of participant reactions to and comments about their interaction
+        with the system.
+    </li>
+    <li>
+        Invite the test sponsors to attend a usability test session, especially if there is any doubt about the value of
+        usability work.
+    </li>
+    <li>
+        During the recruitment of users, keep in mind that even working with only a handful of participants can provide a
+        lot of useful information.&nbsp; Additional participants will help to identify the recurrent problems and make the
+        evaluation more complete.&nbsp;&nbsp;&nbsp;
+    </li>
+    <li>
+        A key to this activity is ensuring that representative users are identified and used in the interface
+        evaluations.&nbsp; Do not rely on “exemplar” users who are participating in the interface evaluation as a reward
+        for good performance.&nbsp; Make all efforts to use evaluation participants who represent the general user
+        population
+    </li>
+    <li>
+        Obtaining participants for evaluations often takes a couple of week’s lead-time.&nbsp; Do not assume that it will
+        be easy to schedule their time.&nbsp; Plan ahead in arranging their participation.
+    </li>
+    <li>
+        Do not let the evaluation run longer than scheduled.&nbsp; Take a day to dry run the evaluation so that you will
+        have an accurate idea how long the session will be.&nbsp;&nbsp;&nbsp;
+    </li>
+    <li>
+        When running the evaluation, stifle your urge to assist users when they are stumbling through a scenario.&nbsp;
+        Much can be learned about the flaws in the design if the users are not aided in any way during the
+        evaluation.&nbsp; On the other hand, if a user is stuck on a particular part of the user-interface and there is
+        ample evidence (based on the results of other users) that the interface requires massive redesign, it is
+        permissible to stop the evaluation and move the user on to the next task.
+    </li>
+    <li>
+        Ideally, if there is evidence that a part of the user-interface requires massive redesign to improve usability, go
+        ahead and make the changes as soon as possible so that the changes can be evaluated on the next go around.
+    </li>
+    <li>
+        Just before the execution of the usability test cases, be sure to check out the quality of the audio and the video
+        equipment.&nbsp; In particular the microphone should be placed carefully so as to avoid background noise from disk
+        drives, the video camera have an obstructed line of sight to the participants work area and computer display, and
+        the video tape unit is loaded and cued up with a blank video tape.
+    </li>
+    <li>
+        During the execution of the usability test cases, the participants must be allowed to make mistakes, find problems,
+        and ask you questions.&nbsp; As difficult as it may be, do not help the participant with leading comments or
+        advice.
+    </li>
+    <li>
+        When participants do an encounter a problem and are stuck, use the following questions as heuristics in generating
+        participant discussion: 
+        <ul>
+            <li>
+                How do we do that?
+            </li>
+            <li>
+                What do you want to do?
+            </li>
+            <li>
+                What will happen if …?
+            </li>
+            <li>
+                What has the system done now?
+            </li>
+            <li>
+                What is the system trying to tell you with this message?
+            </li>
+            <li>
+                Why has the system done that?
+            </li>
+            <li>
+                What were you expecting to happen then?
+            </li>
+        </ul>
+    </li>
+    <li>
+        During the execution of the usability test cases, be as non-intrusive as possible.&nbsp; Refrain from commenting on
+        participant actions and performance.&nbsp; When engaging the participant, phrase questions in a non-threatening and
+        non-critical manner.&nbsp; For example: instead of asking a participant: “Why did you do that?” rephrase your
+        question ‘What were you expecting the system to do?’ The tone of remarks is as important as their content.
+    </li>
+    <li>
+        During the debriefing session, be sure to manage the participants’ expectations.&nbsp; If the prototype is in the
+        form of an executable program, participants might get the impression that the system is as good as finished.&nbsp;
+        Make it very clear to them that this is not the case and that it will typically take three times longer to produce
+        an operational system than to make a prototype.&nbsp; Also remind the participant, that they should not share their
+        comments or experiences with other user’s who may eventually serve as participants in the study, as this may
+        confound or skew the results.
+    </li>
+    <li>
+        When summarizing test observations, we do not recommend that you spend much time reviewing the video tape
+        recordings of participant sessions.&nbsp; The main function of these tapes is to act as a back up if there are
+        important details of the session that are not easily recalled.&nbsp; The tapes can also provide very concrete
+        demonstrations of participant problems during presentation to other developers or to the project sponsor.&nbsp;
+        Such demonstrations often prove to be better sources of support for change than formal statistics about usability.
+    </li>
+</ul>
+<h4>
+    Heuristic Review
+</h4>
+<ul>
+    <li>
+        Have evaluators go through the interface twice: once to focus on navigation and flow, the second time to focus on
+        individual dialogue elements, widgets, forms, and wording.
+    </li>
+    <li>
+        Try to use two to three evaluators in performing the evaluation.&nbsp; Combine their results for a final
+        evaluation.&nbsp; There should be ample overlap, but each evaluator should have input above and beyond that of the
+        others.<br />
+        If the evaluators have never conducted a heuristic evaluation before, consider running a short sample session,
+        which takes them through the entire process.&nbsp; Often times, they will feel more comfortable in their relative
+        contribution.&nbsp; Research has shown that experienced heuristic evaluators are better at identifying more
+        usability problems.
+    </li>
+</ul>
+<h3>
+    References
+</h3>
+<ul>
+    <li>
+        Dumas, J.S., and Redish, J.C. A Practical Guide to Usability Testing.&nbsp; Norwood, NJ: Ablex, 1993.
+    </li>
+    <li>
+        IBM, Object-Oriented Graphical User Interface Design, Course Code OB11, IBM Education and Training, 1995.
+    </li>
+    <li>
+        Nielsen, Jakob Usability Engineering.&nbsp; N.Y.: AP Professional (Academic Press), 1993.
+    </li>
+    <li>
+        Redmond-Pyle, D., & Moore, A. Graphical User Interface Design and Evaluation, Prentice Hall, 1995, ISBN
+        0-13-315193-X, page 80-104, 247-267.
+    </li>
+    <li>
+        Rubin, J. Handbook of Usability Testing - How to Plan, Design, and Conduct Effective Tests, John Wiley & Sons,
+        Inc., 1994, ISBN 0-471-59403-2, page 179-185.
+    </li>
+    <li>
+        Stern, K.R. Usability Test Plan Template, April 1998. Available from <a href="mailto:krstern@us.ibm.com">krstern@us.ibm.com</a>.
+    </li>
+    <li>
+        Usability Test Plan Work Product Description. Systems Integration / Application Development (SI/AD) Methodology,
+        IBM Global Services, 1998.
+    </li>
+    <li>
+        Use Case Validation Report Work Product Description. Systems Integration / Application Development (SI/AD)
+        Methodology, IBM Global Services, 1998.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

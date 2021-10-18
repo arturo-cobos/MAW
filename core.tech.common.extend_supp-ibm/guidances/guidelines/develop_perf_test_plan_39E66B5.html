@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing a Performance Test Plan</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="develop_perf_test_plan">
+<meta name="uma.presentationName" content="Developing a Performance Test Plan">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_wF1rEHODEdyur-UVVhx-aQ"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_wF1rEHODEdyur-UVVhx-aQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing a Performance Test Plan</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Introduction
+</h3>
+<p>
+    One of the biggest misconceptions of performance testing is that you can create a high-load performance test
+    specification and just start it running, capture the measurements, and then you have successfully completed your
+    performance test.&nbsp; Assuming perfect system design and with some additional scrutiny of the test results, this is
+    an idealized result.&nbsp; However, in practice, this never happens.&nbsp; This is like suggesting that once a program
+    is written and compiled, it may be shipped since it obviously does not need to be tested as it was written without any
+    product defects.
+</p>
+<h3>
+    Create Scheduled Testing Plans
+</h3>
+<p>
+    You should create a conservatively scheduled testing plan taking into account the needs for analyzing and tuning major
+    subsystems and newly delivered components that are part of the application environment on the system under test
+    (SUT).&nbsp; Plan a heavy load test for each of these new subsystems to ensure that they are properly balanced with the
+    remainder of the SUT.&nbsp; This may include tuning operating system or server parameters, running multiple instances
+    of a web server, J2EE application server, or even changing the connection style to a back-end database server.&nbsp;
+    Ensuring that front-end load balancing equipment is working properly and is not circumvented by the load testing driver
+    systems is also important.
+</p>
+<h3>
+    Plan for Load Testing Sizing
+</h3>
+<p>
+    In addition, you must size and deploy an appropriate complex of load testing driver systems and networking capacity so
+    that the system under test can be fully loaded.&nbsp; Your driver systems must not end up to be the bottleneck
+    preventing further scaling up of the work load.&nbsp; One simplification that can help guarantee this is using multiple
+    exact duplicates of the driver system and testing the capacity of a single driver system and then de-rating its
+    capacity for the actual performance tests by 10-15% to ensure ample driver capacity.
+</p>
+<p>
+    Once the basic tuning and capacity testing have been done and you are convinced that the test environment is ready for
+    a full load test, you can begin by testing at 10-20% of full load, then 50% of full load, and finally at 100% of full
+    load.&nbsp; Making 2 or 3 100% full load tests may be important if there are any possibilities of unanticipated system
+    response time variation due to an ill-defined initial system state or a variable test parameter such as network
+    bandwidth availability that might be beyond your control during the test.&nbsp; Make sure you maintain the 100% load
+    point for a long enough period to ensure that your measurements are taken during a steady state period of system
+    activity.
+</p>
+<p>
+    If overload or excess capacity needs to be tested, schedule a test run that begins as at 100% of full load and then
+    ramps up 5-10% of additional load at a time until the measured responses or verification points begin failing to pass
+    acceptable level.&nbsp; This is your basic system capacity load level.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

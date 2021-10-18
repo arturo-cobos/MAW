@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Development Cost Justifications</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="development_cost_justifications">
+<meta name="uma.presentationName" content="Development Cost Justifications">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb33E4D8164474B66C852568B800619EF3"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb33E4D8164474B66C852568B800619EF3"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Development Cost Justifications</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This Technique Paper documents the &quot;Development Cost Justifications&quot;, e.g. field level details, layout for reporting requirements etc. which are not documented in the &quot;Future Fit/Gap Analysis&quot;, as the latter only documents to the transaction level (level 4). </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Introduction
+</h3>
+<p>
+    The details required will depend upon what is to be subsequently developed from each particular "Development Cost
+    Justification" i.e.:
+</p>
+<ul>
+    <li>
+        Data conversion (extract and load)<br />
+    </li>
+    <li>
+        Interface (inbound and outbound)<br />
+    </li>
+    <li>
+        Package extension<br />
+    </li>
+    <li>
+        Report<br />
+    </li>
+    <li>
+        Security profiles
+    </li>
+</ul>
+<h3>
+    General Guidance
+</h3>
+<h4>
+    Purpose
+</h4>
+<p>
+    To provide the details at an adequate level (i.e. at a lower level than the "Future Fit/Gap Analysis" supplies) to
+    allow the creation of the "Justification" (incl. functional information and field/screen level technical detail) for
+    each of the development requirements and security profiles.
+</p>
+<h4>
+    Impact of Not Using This Technique Paper
+</h4>
+<p>
+    The level of detail will not be enough to create the technical specifications, that enable development of the areas
+    above, since the detail required is not supplied by the "Future Fit/Gap Analysis" Work Product.
+</p>
+<p>
+    If an attempt is made to technically specify or develop solutions without accurate detail, then there will be an
+    overhead caused by the necessity to correct or adjust miss-understandings or assumptions.
+</p>
+<p>
+    This will obviously lead to a delay and increase the development costs within the project.
+</p>
+<p>
+    The levels of detail will not be enough to estimate the different development requirements, which in turn makes it
+    difficult to achieve a justification and subsequently a sign-off for any developments required. The security profiles
+    can only be set up to a granularity corresponding to transaction detail level, not to field or screen level, as the
+    details for this level have not been identified or specified.
+</p>
+<h4>
+    Reasons for Not Needing This Technique Paper
+</h4>
+<p>
+    The only acceptable situation where the output of this Technique Paper is not needed is where the project undertaken
+    does not require any development and where there are no authorization checks to be performed.
+</p>
+<h4>
+    Notation
+</h4>
+<h4>
+    <img height="248" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/developmentcostjustificationfig1.JPG" width="600" />
+</h4>
+<h4>
+    <img height="134" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/developmentcostjustificationfig2.JPG" width="600" />
+</h4>
+<h4>
+    <br />
+    Development Approach
+</h4>
+<p>
+    Input to this Technique:
+</p>
+<ul>
+    <li>
+        Approved "Business Process Flows" (level 1-4) from the "Future Fit/Gap Analysis" Work Product covering:<br />
+        -&nbsp; Data Conversion Requirements for master and transaction data – for both extracting and loading.<br />
+        -&nbsp; Interfaces Requirements - for both inbound and outbound interfaces.<br />
+        -&nbsp; Additions to or enhancements of the package solution (package extensions).<br />
+        -&nbsp; Enhancements to, or creation of reports.<br />
+        -&nbsp; Authorization requirements (security profiles).<br />
+        - &nbsp;Approved Business Transaction Scripts ("Future Process Design Documentation") and "Solution Design
+        Matrix".<br />
+    </li>
+</ul>
+<p>
+    Output from this Technique:<br />
+</p>
+<ul>
+    <li>
+        Relevant "Justifications" for:<br />
+        - &nbsp;Data Conversion requirements (extract & load).<br />
+        - &nbsp;Interfaces requirements (inbound & outbound, extract & load).<br />
+        - &nbsp;Package Extension requirements.<br />
+        - &nbsp;Report requirements.<br />
+        - &nbsp;Security Profile requirements.<br />
+    </li>
+    <li>
+        Relevant "Detailed Future Documentation" for:<br />
+        - &nbsp;Data Conversion requirements (extract & load).<br />
+        - &nbsp;Interfaces requirements (inbound & outbound, extract & load).&nbsp;<br />
+        - &nbsp;Report requirements.<br />
+        - &nbsp;Security Profile requirements.
+    </li>
+</ul>
+<h4>
+    Development Activities
+</h4>
+<p>
+    The following tasks are performed in support of developing the cost justifications
+</p>
+<p>
+    <strong>For Data Conversion - Load:</strong>
+</p>
+<ol>
+    <li>
+        Complete the "Justification" form for Data Conversion for each data object (master data and transaction data
+        object).<br />
+    </li>
+    <li>
+        Complete the Detailed Target Package Documentation.&nbsp; Obtain approval for development.
+    </li>
+</ol>
+<p>
+    <strong>For Interfaces - Inbound & Load:</strong>
+</p>
+<ol>
+    <li>
+        Complete the "Justification" form for Interfaces for each identified interface requirement.
+    </li>
+    <li>
+        Complete the Detailed Target Package Documentation
+    </li>
+    <li>
+        Obtain approval for development.
+    </li>
+</ol>
+<p>
+    <strong>For Interfaces - Outbound & Load:</strong>
+</p>
+<ol>
+    <li>
+        Complete the "Justification" form for Interfaces for each identified interface requirement.<br />
+    </li>
+    <li>
+        Complete the "Detailed Legacy Documentation" form.
+    </li>
+    <li>
+        Obtain approval for development.
+    </li>
+</ol>
+<p>
+    <strong>For Package Extensions:<br />
+    </strong>
+</p>
+<ol>
+    <li>
+        Complete the "Justification" form package extensions.
+    </li>
+    <li>
+        Obtain approval for development
+    </li>
+</ol>
+<p>
+    The level of approval may be higher for package extensions, than for the other development requirements.<br />
+</p>
+<p>
+    <strong>For Reports:</strong>
+</p>
+<ol>
+    <li>
+        Complete the "Justification" form for reports.
+    </li>
+    <li>
+        Complete the Detailed Source Package Documentation, i.e. "Detailed Source SAP Documentation" form for SAP.
+    </li>
+    <li>
+        Obtain approval for development.
+    </li>
+</ol>
+<p>
+    The level of approval may be higher for enhancements to existing reports, than for the development of new reports.
+</p>
+<p>
+    <strong>For Security Profiles (Authorizations):</strong>
+</p>
+<ol>
+    <li>
+        Complete the "Justification" form for authorizations.
+    </li>
+    <li>
+        Complete the Detailed Authorization Documentation.
+    </li>
+    <li>
+        Prepare the Master List of To-Be transactions showing job roles per transaction, including information on
+        qualifiers or job role constraints, e.g. sign-off limit of purchase orders.
+    </li>
+    <li>
+        As the transactions are assigned a security profile, check off the transactions - job role on the list. This will
+        serve as a check that all the designed To-Be worksteps are actually assigned a job roles (or security profile).
+    </li>
+    <li>
+        Obtain approval for development.
+    </li>
+</ol>
+<p>
+    Forward the "Justifications" to "Development Requirements" for prioritization.
+</p>
+<p>
+    Forward the Detailed To-Be Documentation for the data conversions and interfaces to "Data Mapping Legacy to Package" as
+    the To-Be specifications.
+</p>
+<p>
+    Forward the Detailed To-Be Documentation for the package extensions to "Package Extension Specifications" and reports
+    to "Report Specifications" giving the required level of technical details.
+</p>
+<p>
+    Forward the Detailed To-Be Documentation for security profile to "Authorization Specification & Unit Test" giving
+    the required level of technical details.
+</p>
+<h4>
+    Validation and Verification
+</h4>
+<p>
+    Each "Detailed To-Be Justification" will be validated and approved by the technical project manager/Application
+    Development Consultant as applicable, this may require a ‘walk-through’ with the person responsible for preparing the
+    appropriate "Technical Specification".
+</p>
+<h4>
+    Advice and Guidance
+</h4>
+<p>
+    For Reports and Interfaces any changes in the configuration of the Package system must be notified to the developers of
+    both the Legacy and Package system programs.&nbsp; Minor configuration changes can have major impacts on the programs
+    in either system.<br />
+    There may be tools available to assist in the preparation of the Detailed To-Be Documentation, for example where screen
+    / field information is required, so this is worth checking with your technical project team.
+</p>
+<p>
+    Efforts spent on ensuring the completeness and clarity in this area will result in a reduced time scale for development
+    and will diminish the ‘interruption’ of non-technical project team members to attain explanation in the later stages of
+    the project.
+</p>
+<p>
+    Each "Justification" form has been given a unique reference number, sequential within the development area. This number
+    reference number belongs to the specific development requirement, and should never be changed, once given.
+</p>
+<p>
+    It is proposed that the unique reference numbering should follow the following format:
+</p>
+<ul>
+    <li>
+        Data Conversion - DCnnn - where nnn starts at 001 and is incremented by 001 for each new data conversion.<br />
+    </li>
+    <li>
+        Interface (whether inbound or outbound) - IFnnn - where nnn starts at 001 and is incremented by 001 for each new
+        interface, inbound and outbound interfaces should be numbered separately.<br />
+    </li>
+    <li>
+        Reports and Package extensions - XXnnn where XX describes the functional area that this applies to.<br />
+    </li>
+    <li>
+        For each new report or package extension. If there is not any suitable prefix for the functional area then ‘RE’
+        should be used for reports and ‘PE’ for package extensions.<br />
+    </li>
+    <li>
+        Authorizations - Aunnn where nnn starts at 001 and is incremented by 001 for each new authorizations.
+    </li>
+</ul>
+<p>
+    Once a unique reference number has been allocated then the details must also be added to the "Development Requirement
+    and Approval" form contained in the "Development Requirements" Work Product.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Supporting Materials</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/supportingmaterials/dataconversionjustificationform.doc_6EFE5197.html" guid="mweb370798145486111348">DataConversionjustificationform.doc</a>
+</li>
+<li>
+<a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/supportingmaterials/interface_justification_form_39312E7E.html" guid="mweb370798145370370818">Interface Justification Form</a>
+</li>
+<li>
+<a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/supportingmaterials/pckg_ext_justification_form_39312B72.html" guid="mweb370798145370370773">Package Extension Justification Form</a>
+</li>
+<li>
+<a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/supportingmaterials/report_justification_form_FB5286A7.html" guid="mweb37079814548611129">Report Justification Form</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

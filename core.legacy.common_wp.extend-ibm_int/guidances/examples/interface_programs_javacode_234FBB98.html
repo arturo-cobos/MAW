@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Interface Programs: Java Code Fragments </title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="interface_programs_javacode">
+<meta name="uma.presentationName" content="Interface Programs: Java Code Fragments ">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_o4HGwDm0Edyq7q3pb7lBeQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Interface Programs: Java Code Fragments </td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The following two Java code fragments show examples of how part of the internal framework for Visual Banker interfaces with CTI.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/interface_programs_6BE2E601.html" guid="mweb281FECC045929ECC85256885004E74DE">Interface Programs</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><P><B>Fragment 1</B> <BR></P>
+<P>package COM.footprint.telecom.model; <BR><BR>/* Copyright (c) 1999 IBM Corporation. All rights reserved. */ <BR><BR>/** <BR>* The TelecomProvider is the interface that a class implements to provide <BR>* telecom functionality to the <?xml:namespace prefix = st1 /><st1:place><st1:PlaceName>Contact</st1:PlaceName> <st1:PlaceType>Center</st1:PlaceType></st1:place> framework. It provides methods <BR>* to start and stop the provider functionality, and maintains state <BR>* information, notifying any interested objects of changes in state. <BR>* <BR>* @exception COM.footprint.telecom.model.TelecomProviderException <BR>*/ <BR>public interface TelecomProvider <BR>{ <BR>/** <BR>* Indicator specifying that the telecom provider is in service. <BR>*/ <BR>public static final int IN_SERVICE = 0; <BR>/** <BR>* Indicator specifying that the telecom provider is out of service. <BR>*/ <BR>public static final int OUT_OF_SERVICE = 1; <BR>/** <BR>* Indicator specifying that the telecom provider is not started. <BR>*/ <BR>public static final int SHUTDOWN = 2; <BR>/** <BR>* Indicator specifying that the telecom provider is not active. <BR>*/ <BR>public static final int DISCONNECTED = 3; <BR>/** <BR>* Indicator specifying that the telecom provider is in an unknown state. <BR>*/ <BR>public static final int UNKNOWN = 4; <BR><BR>/** <BR>* Registers interest for a specific listener in receiving notification of <BR>* state changes for this telecom provider. <BR>* <BR>* @param listener COM.footprint.telecom.model.ProviderStateListener, the <BR>* listener object that wishes to start being notified of <BR>* telecom provider state changes <BR>*/ <BR>void addProviderStateListener(ProviderStateListener listener); <BR><BR>/** <BR>* Retrieves the current state of the telecom provider. <BR>* <BR>* @return int - the current state value <BR>*/ <BR>int getState(); <BR><BR>/** <BR>* Retrieves the descriptor for the telecom provider. <BR>* <BR>* @return COM.footprint.telecom.model.TelecomDescriptor - the descriptor <BR>* value for the telecom provider <BR>*/ <BR>TelecomDescriptor getTelecomDescriptor(); <BR><BR>/** <BR>* Deregisters interest for a specific listener in receiving notification of <BR>* state changes for this telecom provider. <BR>* <BR>* @param listener COM.footprint.telecom.model.ProviderStateListener, the <BR>* listener object that wishes to stop being notified of <BR>* telecom provider state changes <BR>*/ <BR>void removeProviderStateListener(ProviderStateListener listener); <BR><BR>/** <BR>* Starts the telecom provider. <BR>* <BR>* @exception COM.footprint.telecom.model.TelecomProviderException <BR>*/ <BR>void start() <BR>throws TelecomProviderException; <BR><BR>/** <BR>* Stops the telecom provider. <BR>* <BR>* @exception COM.footprint.telecom.model.TelecomProviderException <BR>*/ <BR>void stop() <BR>throws TelecomProviderException; <BR>} <BR></P><B></B>
+<P><B>Fragment 2</B> <BR></P>
+<P>package COM.footprint.telecom.model; <BR><BR>/* Copyright (c) 1999 IBM Corporation. All rights reserved. */ <BR><BR>/** <BR>* The ContactDataChangeListener is the interface that a class implements in <BR>* order to receive notification that a ContactData object has undergone a <BR>* change in state. The listening object registers interest in this <BR>* notification by calling the addContactDataChangeListener() method for the <BR>* ContactData object. The ContactData object notifies listeners of a change <BR>* in state by calling the contactDataChange() method. <BR>* <BR>* @see COM.footprint.telecom.model.ContactData <BR>* @see COM.footprint.telecom.model.ContactData#addContactDataChangeListener <BR>*/ <BR>public interface ContactDataChangeListener <BR>{ <BR>/** <BR>* Performs the processing required when a ContactData object has changed <BR>* state. <BR>* <BR>* @param event COM.footprint.telecom.model.ContactDataChangeEvent, <BR>* the event describing the changes that have occurred in the <BR>* ContactData object <BR>* <BR>* @see COM.footprint.telecom.model.ContactData <BR>* @see COM.footprint.telecom.model.ContactDataChangeEvent <BR>*/ <BR>void contactDataChange(ContactDataChangeEvent event); <BR>} </P></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

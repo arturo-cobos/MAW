@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Decomposing Business Processes</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="decomposing_business_processes">
+<meta name="uma.presentationName" content="Decomposing Business Processes">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_5Mi1gEozEd6D_7XK49c0nw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_5Mi1gEozEd6D_7XK49c0nw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Decomposing Business Processes</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline provides tips regarding decomposing business processes.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The level of business process detail that is initially created by a team of business analysts might be insufficient for
+    follow-on work that focuses on realizing the business process.&nbsp; In that case, the process must be further
+    decomposed until it is fit for the required purpose.&nbsp; This guideline provides some advice regarding approaches to
+    process decomposition.
+</p>
+<p>
+    As is&nbsp;discussed in <a class="elementLinkWithType" href="./../../../core.bus.common.extend-ibm/guidances/concepts/business_process_decomposition_70D1DA00.html" guid="_0XDGMEozEd6D_7XK49c0nw">Concept: Business Process Decomposition</a>,&nbsp;business process decomposition can
+    result in a hierarchy of processes and sub-processes, which eventually end in leaf-level sub-processes that&nbsp;leave
+    us dealing with&nbsp;fine-grained user actions.&nbsp; The following figure is duplicated from that concept to
+    illustrate&nbsp;a possible process hierarchy.
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img alt="" src="./../../../core.bus.common.extend-ibm/guidances/guidelines/resources/bus_proc_decomp_2.gif" width="549" height="262" />
+</p>
+<p>
+    Each level of process decomposition&nbsp;can involve&nbsp;a drill-down through the organizational functional structure
+    that was used to describe the previous level of the process.&nbsp; So, a process description might involve the
+    interaction between business domains, which are the largest concepts used to describe business functional
+    structure.&nbsp;&nbsp; At the next level, the sub-process that is the responsibility of a given domain might be
+    analyzed in terms of the interactions between the functional areas/business systems that comprise the domain.&nbsp; Yet
+    another round of decomposition might find us examining how the sub-sub-process which is the responsibility of a given
+    business system might be realized by interactions between the business workers the business system owns.
+</p>
+<p>
+    The recursive nature of the process decompositional drill-down calls out for a system-of-systems approach, where the
+    behaviors (processes) at each level of the overall system (that is, the business) are discovered using a consistent
+    method.&nbsp; Further, the transition from one level of the process to the next needs to be managed consistently.&nbsp;
+    Rational's <a href="http://www.redbooks.ibm.com/abstracts/sg247368.html?Open" target="_blank">Model Driven Systems
+    Development</a> (MDSD) method is a useful&nbsp;approach for achieving a high degree of consistency in representation
+    and technique as you progress through your process decomposition.
+</p>
+<p>
+    As we decompose the business processes, there are several things to consider and document:
+</p>
+<p>
+    <strong>Actors</strong> -- Each level of process description potentially will&nbsp;have a different set of
+    actors.&nbsp; At the top-most level, the actors are the actors which interact with the enterprise as a whole.&nbsp; At
+    the next level down, as we isolate (for example) a given domain to understand how its functional areas interact to
+    realize the sub-process for which it is responsible, the enterprise actors remain -- but the other domains also become
+    actors!&nbsp; Upon isolating a functional area for the next round of process analysis, the actors (for that specific
+    analysis) become the actors the domain dealt with -- plus the other functional areas within the domain!&nbsp;
+</p>
+<p>
+    <strong>Events</strong> -- We need to identify the events that trigger a process or sub-process.&nbsp; Identifying a
+    process (or certain of its steps)&nbsp;as being event-driven can provide hints&nbsp;regarding requirements that any
+    automated implementation support (for example) publish-and-subscribe&nbsp;event notification.&nbsp;
+</p>
+<p>
+    <strong>Business entities</strong> that are involved in, or transformed by, the business process.&nbsp; This knowledge
+    is important for subsequent specification of service messages and service operation signatures.
+</p>
+<p>
+    <strong>Opportunities for automation.</strong>&nbsp;&nbsp; All steps in a business process are not well-suited for
+    automation, and others certainly are.&nbsp; Be focused on discriminating between these two.&nbsp; Lack of
+    discrimination can lead to wasted effort on the one hand, and missed opportunity on the other.&nbsp; One caution,
+    though -- be aware that what might not be a good candidate for automation today, might be a great candidate
+    later.&nbsp; Be sure to flag manual process steps that are particularly costly or error-prone.&nbsp; They might be good
+    candidates for consideration at a later time.
+</p>
+<p>
+    <strong>Geographical distribution</strong> among the entities that are involved in executing a process.&nbsp; Spatial
+    distribution of processing elements can impose more taxing non-functional requirements on process elements.&nbsp; The
+    sooner this is realized, the better.
+</p><br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.bus.common.extend-ibm/guidances/concepts/business_process_decomposition_70D1DA00.html" guid="_0XDGMEozEd6D_7XK49c0nw">Business Process Decomposition</a>
+</li>
+<li>
+<a href="./../../../core.bus.common.extend-ibm/guidances/concepts/business_worker_54116484.html" guid="__uNa8VoGEd6Gvq_dRUXeQw">Business Worker</a>
+</li>
+<li>
+<a href="./../../../core.bus.common.extend-ibm/guidances/concepts/functional_area_analysis_9B1F96D5.html" guid="_fk1woEo1Ed6D_7XK49c0nw">Functional Area Analysis</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

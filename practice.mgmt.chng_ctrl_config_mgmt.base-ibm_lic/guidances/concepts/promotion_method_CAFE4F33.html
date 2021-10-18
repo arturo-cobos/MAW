@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: Promotion Method</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="promotion_method">
+<meta name="uma.presentationName" content="Promotion Method">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_Y1yukIX-Ed-Vnc6sgFVO5A", "_sb-88GptEeSdxcAgtnf5og", "_JsXkdHTaEd-KGq2Ooqf_9A"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4Y8RdEdyD76CYS6Ta7A", "_JsXkdHTaEd-KGq2Ooqf_9A"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_JsXkdHTaEd-KGq2Ooqf_9A"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: Promotion Method</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">A promotion method defines how product information is assigned to promotion levels and establishes the set of authorizations for access and approval. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.mgmt.chng_ctrl_config_mgmt.base-ibm_lic/tasks/manage_configuration_baselines_releases_9EE08456.html" guid="_Ia-WYIYIEd-El7EMWwFLlQ">Manage Configuration Baselines and Releases</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_promotion_method__definition" name="XE_promotion_method__definition"></a> 
+<h3>
+    <a id="Definition" name="Definition">Definition</a>
+</h3>
+<p>
+    As the project progresses and the completeness and stability of baselines improve, "promotion levels" can be used to
+    characterize the baseline in terms of its completeness or stability.&nbsp;Promotion levels and other baseline
+    attributes should be defined as appropriate to meet the needs of the individual project, although you'll typically find
+    that a common set of definitions can be reused in many different projects. Here's an example of promotion levels that
+    might be appropriate to use:
+</p>
+<ul>
+    <li>
+        Integration Tested
+    </li>
+    <li>
+        System Tested
+    </li>
+    <li>
+        Acceptance Tested
+    </li>
+    <li>
+        Production Delivered
+    </li>
+</ul>
+<p>
+    In this example, the levels are sequenced to reflect the relative progression in completeness and stability of the
+    software over time. Note that while the software will usually progress forward through these levels, it can also
+    regress in terms of completeness or stability. The act of changing the promotion level of a baseline in the former case
+    is called promoting and in the latter case demoting the baseline.
+</p>
+<h3>
+    <a id="Explanation" name="Explanation">Explanation</a>
+</h3>
+<p>
+    On occasion, the configuration manager may need to demote a baseline by changing its promotion level to one that is
+    lower in the promotion level order. For example, the integrator may discover a a major bug in a newly created baseline.
+    To prevent developers introducing this bug into their development workspaces, the problems with the baseline can also
+    be more clearly indicated by adding a label to the the baseline such as "rejected".
+</p>
+<h3>
+    <a id="Use" name="Use">Use</a><a id="XE_promotion_method__guidelines_for" name="XE_promotion_method__guidelines_for"></a>
+</h3>
+<p>
+    The recommended baseline represents a system configuration that has achieved a specific promotion level. A baseline
+    becomes part of the set of recommended baselines when it is promoted to a certain level, for example, "Acceptance
+    Tested". Promotion levels can be used in project development policies. For example, a policy on a project could be that
+    a given baseline is considered "recommended" when it reaches a particular promotion level. This policy helps to ensure
+    that developers rebase their workspaces whenever a baseline passes an acceptable level of completeness and stability.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

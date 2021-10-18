@@ -1,0 +1,1577 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Iteration: Outline Technical Solution</title>
+<meta name="uma.type" content="Iteration">
+<meta name="uma.name" content="Outline Technical Solution">
+<meta name="uma.presentationName" content="Outline Technical Solution">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_H7vN8VloEeSXn5H3SMR4qw&path=_H7vN8VloEeSXn5H3SMR4qw,_IBAvglloEeSXn5H3SMR4qw,_ICIJ0FloEeSXn5H3SMR4qw';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_ICIJ0FloEeSXn5H3SMR4qw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Iteration: Outline Technical Solution</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/iteration.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Determine overall complexity and scope of the solution's qualitative and architectural requirements.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="10" class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../America Mobile MAW V1.0/deliveryprocesses/Outline Technical Solution_5F12E1AC.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Work Breakdown Structure</span></td><td width="1"><img src="./../../images/tab_middle-a_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_TBS" href="./../../America Mobile MAW V1.0/deliveryprocesses/Outline Technical Solution_5F12E1AC.html_tbs.html"><span style="white-space:nowrap;">Team Allocation</span></a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WPBS" href="./../../America Mobile MAW V1.0/deliveryprocesses/Outline Technical Solution_5F12E1AC.html_wpbs.html"><span style="white-space:nowrap;">Work Product Usage</span></a></td><td width="21"><img src="./../../images/tab_end-i.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="2"><img src="./../../images/shim.gif" height="2" alt="" title=""></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="5"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Work Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Work Breakdown", summary: "Work Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["steps", "Steps"],
+["id", "Index"],
+["predecessors", "Predecessors"],
+["model_info", "Model Info"],
+["type", "Type"],
+["is_planned", "Planned"],
+["is_repeatable", "Repeatable"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_ongoing", "Ongoing"],
+["is_event_driven", "Event Driven"],
+["is_optional", "Optional"],
+["teams", "Team"]],
+rows: [
+		
+{id: "58c6a60e", parentId: "", relPath: ",_ICSh4FloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "82", prefix: "", name: "describe_the_system_context", title: "Describe the System Context", url: "./../../America Mobile MAW V1.0/deliveryprocesses/describe_the_system_context_97A43E7C.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true]},
+	
+		
+		
+{id: "6d7d16d4", parentId: "58c6a60e", relPath: ",_ICSh4FloEeSXn5H3SMR4qw,_ICgkUVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "business_analyst", title: "Business Analyst", url: "./../../America Mobile MAW V1.0/deliveryprocesses/business_analyst_7AB4293A.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "230532c2", parentId: "58c6a60e", relPath: ",_ICSh4FloEeSXn5H3SMR4qw,_ICgkUlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "application_architect", title: "Application Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/application_architect_694D3D50.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e74ea620", parentId: "58c6a60e", relPath: ",_ICSh4FloEeSXn5H3SMR4qw,_ICgkVVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_specification_slot", title: "[Technical Specification]", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_specification_slot_3F460B59.html", 
+	predecessors: "", info: "Mandatory Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "b217eb45", parentId: "58c6a60e", relPath: ",_ICSh4FloEeSXn5H3SMR4qw,_ICgkVlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "system_context", title: "System Context", url: "./../../America Mobile MAW V1.0/deliveryprocesses/system_context_2DDF1F6F.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "cc80bdd5", parentId: "", relPath: ",_ICSh4VloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "83", prefix: "", name: "detail_non_functional_requirements", title: "Detail Non-Functional Requirements", url: "./../../America Mobile MAW V1.0/deliveryprocesses/detail_non_functional_requirements_A2421E8C.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "934397b5", parentId: "cc80bdd5", relPath: ",_ICSh4VloEeSXn5H3SMR4qw,_ICgkU1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_solution_architect", title: "Technical Solution Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_solution_architect_D2271315.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1b0aa7cf", parentId: "cc80bdd5", relPath: ",_ICSh4VloEeSXn5H3SMR4qw,_ICgkUlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "application_architect", title: "Application Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/application_architect_694D3D50.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ac13e20f", parentId: "cc80bdd5", relPath: ",_ICSh4VloEeSXn5H3SMR4qw,_ICgkVFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "infrastructure_architect", title: "Infrastructure Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/infrastructure_architect_34A82B49.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e7ee507", parentId: "cc80bdd5", relPath: ",_ICSh4VloEeSXn5H3SMR4qw,_IChLalloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "user_experience_pro", title: "User Experience Professional", url: "./../../America Mobile MAW V1.0/deliveryprocesses/user_experience_pro_A023D6C4.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "94f67dc7", parentId: "cc80bdd5", relPath: ",_ICSh4VloEeSXn5H3SMR4qw,_IChLeFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rqmts_matrix", title: "Requirements Matrix", url: "./../../America Mobile MAW V1.0/deliveryprocesses/rqmts_matrix_B9346B1A.html", 
+	predecessors: "", info: "External Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "f4ff413c", parentId: "cc80bdd5", relPath: ",_ICSh4VloEeSXn5H3SMR4qw,_IChLblloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "nonfunctional_requirements", title: "Non-Functional Requirements", url: "./../../America Mobile MAW V1.0/deliveryprocesses/nonfunctional_requirements_64B5B8E3.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "41e45ca6", parentId: "cc80bdd5", relPath: ",_ICSh4VloEeSXn5H3SMR4qw,_IChLbFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "business_design_slot", title: "[Business Design]", url: "./../../America Mobile MAW V1.0/deliveryprocesses/business_design_slot_6B7EC4BD.html", 
+	predecessors: "", info: "Optional Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e938c790", parentId: "cc80bdd5", relPath: ",_ICSh4VloEeSXn5H3SMR4qw,_ICgkVVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_specification_slot", title: "[Technical Specification]", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_specification_slot_3F460B59.html", 
+	predecessors: "", info: "Optional Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "42dee41e", parentId: "cc80bdd5", relPath: ",_ICSh4VloEeSXn5H3SMR4qw,_IChLbVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "use_case_model", title: "Use-Case Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/use_case_model_761CA4CD.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "8219684a", parentId: "42dee41e", relPath: ",_ICSh4VloEeSXn5H3SMR4qw,_IChLbVloEeSXn5H3SMR4qw,_IChLa1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "actor", title: "Actor", url: "./../../America Mobile MAW V1.0/deliveryprocesses/actor_8FDAC89.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "94e7fef0", parentId: "42dee41e", relPath: ",_ICSh4VloEeSXn5H3SMR4qw,_IChLbVloEeSXn5H3SMR4qw,_IChLb1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "use_case", title: "Use Case", url: "./../../America Mobile MAW V1.0/deliveryprocesses/use_case_CD8F8EA8.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "48203f8a", parentId: "cc80bdd5", relPath: ",_ICSh4VloEeSXn5H3SMR4qw,_IChLblloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "nonfunctional_requirements", title: "Non-Functional Requirements", url: "./../../America Mobile MAW V1.0/deliveryprocesses/nonfunctional_requirements_64B5B8E3.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "4cc89408", parentId: "", relPath: ",_ICU-IFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "84", prefix: "", name: "doc_arch_decisions", title: "Document Architectural Decisions", url: "./../../America Mobile MAW V1.0/deliveryprocesses/doc_arch_decisions_209AF04A.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "true", eventDriven: "true", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true]},
+	
+		
+		
+{id: "b650f682", parentId: "4cc89408", relPath: ",_ICU-IFloEeSXn5H3SMR4qw,_ICgkU1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_solution_architect", title: "Technical Solution Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_solution_architect_D2271315.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "38fdc911", parentId: "4cc89408", relPath: ",_ICU-IFloEeSXn5H3SMR4qw,_ICgkUlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "application_architect", title: "Application Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/application_architect_694D3D50.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "c575642b", parentId: "4cc89408", relPath: ",_ICU-IFloEeSXn5H3SMR4qw,_ICgkVFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "infrastructure_architect", title: "Infrastructure Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/infrastructure_architect_34A82B49.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "2ab8e0df", parentId: "4cc89408", relPath: ",_ICU-IFloEeSXn5H3SMR4qw,_ICgkV1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../America Mobile MAW V1.0/deliveryprocesses/architectural_decisions_96B8F534.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "be3dcccf", parentId: "4cc89408", relPath: ",_ICU-IFloEeSXn5H3SMR4qw,_ICgkV1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../America Mobile MAW V1.0/deliveryprocesses/architectural_decisions_96B8F534.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "cdcf0caf", parentId: "", relPath: ",_ICWMQFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "85", prefix: "", name: "dev_arch_overview", title: "Develop Architecture Overview", url: "./../../America Mobile MAW V1.0/deliveryprocesses/dev_arch_overview_C9B9E620.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true]},
+	
+		
+		
+{id: "79d28b4b", parentId: "cdcf0caf", relPath: ",_ICWMQFloEeSXn5H3SMR4qw,_ICgkU1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_solution_architect", title: "Technical Solution Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_solution_architect_D2271315.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ddb664f3", parentId: "cdcf0caf", relPath: ",_ICWMQFloEeSXn5H3SMR4qw,_ICgkUlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "application_architect", title: "Application Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/application_architect_694D3D50.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1e0a43e9", parentId: "cdcf0caf", relPath: ",_ICWMQFloEeSXn5H3SMR4qw,_ICgkVFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "infrastructure_architect", title: "Infrastructure Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/infrastructure_architect_34A82B49.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "bdc79295", parentId: "cdcf0caf", relPath: ",_ICWMQFloEeSXn5H3SMR4qw,_ICgkWFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "ref_arch_fit_gap_analysis", title: "Reference Architecture Fit Gap Analysis", url: "./../../America Mobile MAW V1.0/deliveryprocesses/ref_arch_fit_gap_analysis_F93A0D68.html", 
+	predecessors: "", info: "External Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "f938022e", parentId: "cdcf0caf", relPath: ",_ICWMQFloEeSXn5H3SMR4qw,_ICgkVVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_specification_slot", title: "[Technical Specification]", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_specification_slot_3F460B59.html", 
+	predecessors: "", info: "Mandatory Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "502b9eda", parentId: "cdcf0caf", relPath: ",_ICWMQFloEeSXn5H3SMR4qw,_ICgkV1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../America Mobile MAW V1.0/deliveryprocesses/architectural_decisions_96B8F534.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "a373612c", parentId: "cdcf0caf", relPath: ",_ICWMQFloEeSXn5H3SMR4qw,_ICgkWVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architecture_overview", title: "Architecture Overview", url: "./../../America Mobile MAW V1.0/deliveryprocesses/architecture_overview_3D7ED78.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "cd3856c4", parentId: "", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "86", prefix: "", name: "Outline Service Model", title: "Outline Service Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/Outline Service Model_5849D5D2.html", 
+	predecessors: "", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "na",
+	steps: []},
+	
+		
+		
+{id: "258081a0", parentId: "cd3856c4", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICJ_AFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "87", prefix: "", name: "identify_cand_svcs_based_on_pmd", title: "Identify Candidate Services based on Process Decomposition", url: "./../../America Mobile MAW V1.0/deliveryprocesses/identify_cand_svcs_based_on_pmd_335EC0EF.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true]},
+	
+		
+		
+{id: "826ddcd0", parentId: "258081a0", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICJ_AFloEeSXn5H3SMR4qw,_IBJ5e1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "soa_architect", title: "SOA Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/soa_architect_6F66580B.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "18bda658", parentId: "258081a0", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICJ_AFloEeSXn5H3SMR4qw,_IBJ5cFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "business_analyst", title: "Business Analyst", url: "./../../America Mobile MAW V1.0/deliveryprocesses/business_analyst_8431C9E2.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "30563a2c", parentId: "258081a0", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICJ_AFloEeSXn5H3SMR4qw,_IBJ5eVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "process_definition", title: "Process Definition", url: "./../../America Mobile MAW V1.0/deliveryprocesses/process_definition_17F36E30.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "8a7b2a4c", parentId: "258081a0", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICJ_AFloEeSXn5H3SMR4qw,_IBQAE1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "service_portfolio", title: "Service Portfolio", url: "./../../America Mobile MAW V1.0/deliveryprocesses/service_portfolio_D69385D0.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1eb747c9", parentId: "cd3856c4", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICL0MFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "88", prefix: "", name: "identify_cand_svcs_based_on_iam", title: "Identify Candidate Services based on Data Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/identify_cand_svcs_based_on_iam_773114B2.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "e6ddf45b", parentId: "1eb747c9", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICL0MFloEeSXn5H3SMR4qw,_ICJ_AVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "soa_architect", title: "SOA Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/soa_architect_3DFCA0FF.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "6fa6f845", parentId: "1eb747c9", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICL0MFloEeSXn5H3SMR4qw,_ICO3hVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "information_architect", title: "Information Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/information_architect_5D167667.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "244d9c13", parentId: "1eb747c9", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICL0MFloEeSXn5H3SMR4qw,_ICO3hlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "data_model", title: "Data Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/data_model_4BAF8A7D.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "514f3fcb", parentId: "1eb747c9", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICL0MFloEeSXn5H3SMR4qw,_ICJ_AlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "service_portfolio", title: "Service Portfolio", url: "./../../America Mobile MAW V1.0/deliveryprocesses/service_portfolio_2C95B515.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "c3befb89", parentId: "cd3856c4", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICNpYFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "89", prefix: "", name: "identify_svc_cap_for_sub_goals", title: "Identify Candidate Services Based on Business Drivers", url: "./../../America Mobile MAW V1.0/deliveryprocesses/identify_svc_cap_for_sub_goals_E7E3CB24.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true]},
+	
+		
+		
+{id: "c03b7509", parentId: "c3befb89", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICNpYFloEeSXn5H3SMR4qw,_ICJ_AVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "soa_architect", title: "SOA Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/soa_architect_3DFCA0FF.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "fa1d811d", parentId: "c3befb89", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICNpYFloEeSXn5H3SMR4qw,_ICO3gVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "business_analyst", title: "Business Analyst", url: "./../../America Mobile MAW V1.0/deliveryprocesses/business_analyst_98849448.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "812d5f9d", parentId: "c3befb89", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICNpYFloEeSXn5H3SMR4qw,_ICO3glloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "business_area_expert", title: "Business Area Expert", url: "./../../America Mobile MAW V1.0/deliveryprocesses/business_area_expert_871DA85E.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e136cbb8", parentId: "c3befb89", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICNpYFloEeSXn5H3SMR4qw,_ICO3g1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "key_perf_indicators", title: "Key Performance Indicators (KPIs)", url: "./../../America Mobile MAW V1.0/deliveryprocesses/key_perf_indicators_EFF77E23.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "82b70aa4", parentId: "c3befb89", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICNpYFloEeSXn5H3SMR4qw,_ICO3hFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:true, 
+	index: "", prefix: "", name: "service_model", title: "Service Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/service_model_52789657.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e8ecd3d0", parentId: "82b70aa4", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICNpYFloEeSXn5H3SMR4qw,_ICO3hFloEeSXn5H3SMR4qw,_ICJ_AlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "", prefix: "", name: "service_portfolio", title: "Service Portfolio", url: "./../../America Mobile MAW V1.0/deliveryprocesses/service_portfolio_2C95B515.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1e4c6cb8", parentId: "cd3856c4", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICO3gFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "90", prefix: "", name: "identify_cand_svcs_based_on_rpa", title: "Identify Candidate Services based on Business Rules", url: "./../../America Mobile MAW V1.0/deliveryprocesses/identify_cand_svcs_based_on_rpa_8DE6B438.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true]},
+	
+		
+		
+{id: "8d39cef6", parentId: "1e4c6cb8", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICO3gFloEeSXn5H3SMR4qw,_ICJ_AVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "soa_architect", title: "SOA Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/soa_architect_3DFCA0FF.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "48fb6e6", parentId: "1e4c6cb8", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICO3gFloEeSXn5H3SMR4qw,_ICO3h1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "business_rules", title: "Business Rules", url: "./../../America Mobile MAW V1.0/deliveryprocesses/business_rules_B4896042.html", 
+	predecessors: "", info: "External Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "6aa9510e", parentId: "1e4c6cb8", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICO3gFloEeSXn5H3SMR4qw,_ICQFo1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "process_definition", title: "Process Definition", url: "./../../America Mobile MAW V1.0/deliveryprocesses/process_definition_276F7D2C.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ae126a0", parentId: "1e4c6cb8", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICO3gFloEeSXn5H3SMR4qw,_ICJ_AlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "service_portfolio", title: "Service Portfolio", url: "./../../America Mobile MAW V1.0/deliveryprocesses/service_portfolio_2C95B515.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "21d2b48c", parentId: "cd3856c4", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICQFoVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "91", prefix: "", name: "identify_cand_svcs_based_on_voa", title: "Identify Candidate Services based on Variation Oriented Analysis", url: "./../../America Mobile MAW V1.0/deliveryprocesses/identify_cand_svcs_based_on_voa_CFFC9351.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "true", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true]},
+	
+		
+		
+{id: "17a3d022", parentId: "21d2b48c", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICQFoVloEeSXn5H3SMR4qw,_ICJ_AVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "soa_architect", title: "SOA Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/soa_architect_3DFCA0FF.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "2ca61318", parentId: "21d2b48c", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICQFoVloEeSXn5H3SMR4qw,_ICQFolloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "variations_model", title: "Variations Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/variations_model_BE95A767.html", 
+	predecessors: "", info: "External Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "86bcebb9", parentId: "21d2b48c", relPath: ",_ICIJ0lloEeSXn5H3SMR4qw,_ICQFoVloEeSXn5H3SMR4qw,_ICJ_AlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "service_portfolio", title: "Service Portfolio", url: "./../../America Mobile MAW V1.0/deliveryprocesses/service_portfolio_2C95B515.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d84fd54d", parentId: "", relPath: ",_ICXaYFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "92", prefix: "", name: "outline_high_level_component_model", title: "Outline High Level Component Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/outline_high_level_component_model_E73A708B.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true]},
+	
+		
+		
+{id: "7a97547f", parentId: "d84fd54d", relPath: ",_ICXaYFloEeSXn5H3SMR4qw,_ICgkUlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "application_architect", title: "Application Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/application_architect_694D3D50.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1db03d25", parentId: "d84fd54d", relPath: ",_ICXaYFloEeSXn5H3SMR4qw,_ICgkWlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_design_slot", title: "[Technical Design]", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_design_slot_F271018E.html", 
+	predecessors: "", info: "Mandatory Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7e0232fb", parentId: "d84fd54d", relPath: ",_ICXaYFloEeSXn5H3SMR4qw,_ICgkVVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_specification_slot", title: "[Technical Specification]", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_specification_slot_3F460B59.html", 
+	predecessors: "", info: "Mandatory Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d68061df", parentId: "d84fd54d", relPath: ",_ICXaYFloEeSXn5H3SMR4qw,_ICgkV1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../America Mobile MAW V1.0/deliveryprocesses/architectural_decisions_96B8F534.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d3d261", parentId: "d84fd54d", relPath: ",_ICXaYFloEeSXn5H3SMR4qw,_ICgkWVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architecture_overview", title: "Architecture Overview", url: "./../../America Mobile MAW V1.0/deliveryprocesses/architecture_overview_3D7ED78.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "623f9e5f", parentId: "d84fd54d", relPath: ",_ICXaYFloEeSXn5H3SMR4qw,_ICgkWFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "ref_arch_fit_gap_analysis", title: "Reference Architecture Fit Gap Analysis", url: "./../../America Mobile MAW V1.0/deliveryprocesses/ref_arch_fit_gap_analysis_F93A0D68.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "b70da63d", parentId: "d84fd54d", relPath: ",_ICXaYFloEeSXn5H3SMR4qw,_ICgkW1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "component_model", title: "Component Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/component_model_5B4AD753.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "cf16c8d9", parentId: "", relPath: ",_ICadsFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "93", prefix: "", name: "identify_common_interactions", title: "Identify Common Interactions", url: "./../../America Mobile MAW V1.0/deliveryprocesses/identify_common_interactions_6BBB164B.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true]},
+	
+		
+		
+{id: "9f4f59e0", parentId: "cf16c8d9", relPath: ",_ICadsFloEeSXn5H3SMR4qw,_ICgkUlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "application_architect", title: "Application Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/application_architect_694D3D50.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "28878a04", parentId: "cf16c8d9", relPath: ",_ICadsFloEeSXn5H3SMR4qw,_ICgkWlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_design_slot", title: "[Technical Design]", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_design_slot_F271018E.html", 
+	predecessors: "", info: "Mandatory Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7e6f680a", parentId: "cf16c8d9", relPath: ",_ICadsFloEeSXn5H3SMR4qw,_ICgkVVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_specification_slot", title: "[Technical Specification]", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_specification_slot_3F460B59.html", 
+	predecessors: "", info: "Mandatory Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d469aa3e", parentId: "cf16c8d9", relPath: ",_ICadsFloEeSXn5H3SMR4qw,_ICgkV1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../America Mobile MAW V1.0/deliveryprocesses/architectural_decisions_96B8F534.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "349f7110", parentId: "cf16c8d9", relPath: ",_ICadsFloEeSXn5H3SMR4qw,_ICgkWVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architecture_overview", title: "Architecture Overview", url: "./../../America Mobile MAW V1.0/deliveryprocesses/architecture_overview_3D7ED78.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "8ce541ec", parentId: "cf16c8d9", relPath: ",_ICadsFloEeSXn5H3SMR4qw,_ICgkWFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "ref_arch_fit_gap_analysis", title: "Reference Architecture Fit Gap Analysis", url: "./../../America Mobile MAW V1.0/deliveryprocesses/ref_arch_fit_gap_analysis_F93A0D68.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "255e7190", parentId: "cf16c8d9", relPath: ",_ICadsFloEeSXn5H3SMR4qw,_ICgkXFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_template", title: "Architectural Template", url: "./../../America Mobile MAW V1.0/deliveryprocesses/architectural_template_BDCBEF87.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "8578095e", parentId: "", relPath: ",_ICcS4FloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "94", prefix: "", name: "outline_high_level_operational_model", title: "Outline High Level Operational Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/outline_high_level_operational_model_32C79F97.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "76bede1c", parentId: "8578095e", relPath: ",_ICcS4FloEeSXn5H3SMR4qw,_ICgkU1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_solution_architect", title: "Technical Solution Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_solution_architect_D2271315.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "f57dca79", parentId: "8578095e", relPath: ",_ICcS4FloEeSXn5H3SMR4qw,_ICgkVFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "infrastructure_architect", title: "Infrastructure Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/infrastructure_architect_34A82B49.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "9ae241c7", parentId: "8578095e", relPath: ",_ICcS4FloEeSXn5H3SMR4qw,_ICgkVVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_specification_slot", title: "[Technical Specification]", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_specification_slot_3F460B59.html", 
+	predecessors: "", info: "Mandatory Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ba77b613", parentId: "8578095e", relPath: ",_ICcS4FloEeSXn5H3SMR4qw,_ICgkW1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "component_model", title: "Component Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/component_model_5B4AD753.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1bd56a8f", parentId: "8578095e", relPath: ",_ICcS4FloEeSXn5H3SMR4qw,_IChLcFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "deployment_unit_model", title: "Deployment Unit Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/deployment_unit_model_3010A6DC.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "70792be7", parentId: "1bd56a8f", relPath: ",_ICcS4FloEeSXn5H3SMR4qw,_IChLcFloEeSXn5H3SMR4qw,_IChLc1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "deployment_unit_spec", title: "Deployment Unit Specification", url: "./../../America Mobile MAW V1.0/deliveryprocesses/deployment_unit_spec_922170C7.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "b463bfb5", parentId: "8578095e", relPath: ",_ICcS4FloEeSXn5H3SMR4qw,_IChLcVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "location_model", title: "Location Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/location_model_3AAE86EC.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ffa219e3", parentId: "8578095e", relPath: ",_ICcS4FloEeSXn5H3SMR4qw,_IChLclloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "zone_model", title: "Zone Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/zone_model_29479B02.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "5e5b65ff", parentId: "8578095e", relPath: ",_ICcS4FloEeSXn5H3SMR4qw,_ICgkXVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "operational_model", title: "Operational Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/operational_model_C869CF97.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "b6af4e5d", parentId: "5e5b65ff", relPath: ",_ICcS4FloEeSXn5H3SMR4qw,_ICgkXVloEeSXn5H3SMR4qw,_IChLcVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "location_model", title: "Location Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/location_model_3AAE86EC.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "56343f01", parentId: "5e5b65ff", relPath: ",_ICcS4FloEeSXn5H3SMR4qw,_ICgkXVloEeSXn5H3SMR4qw,_IChLdFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "node_model", title: "Node Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/node_model_F4A288FB.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ba28445b", parentId: "5e5b65ff", relPath: ",_ICcS4FloEeSXn5H3SMR4qw,_ICgkXVloEeSXn5H3SMR4qw,_IChLclloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "zone_model", title: "Zone Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/zone_model_29479B02.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "f9f6651", parentId: "", relPath: ",_ICdhAFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "95", prefix: "", name: "dev_svc_level_charac_model", title: "Assess Service Level Characteristics", url: "./../../America Mobile MAW V1.0/deliveryprocesses/dev_svc_level_charac_model_F4CBF65E.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true]},
+	
+		
+		
+{id: "e323bcb2", parentId: "f9f6651", relPath: ",_ICdhAFloEeSXn5H3SMR4qw,_ICgkU1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_solution_architect", title: "Technical Solution Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_solution_architect_D2271315.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "33a8d370", parentId: "f9f6651", relPath: ",_ICdhAFloEeSXn5H3SMR4qw,_ICgkVFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "infrastructure_architect", title: "Infrastructure Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/infrastructure_architect_34A82B49.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "9d3a3696", parentId: "f9f6651", relPath: ",_ICdhAFloEeSXn5H3SMR4qw,_ICgkXVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "operational_model", title: "Operational Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/operational_model_C869CF97.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "3adbbb4a", parentId: "9d3a3696", relPath: ",_ICdhAFloEeSXn5H3SMR4qw,_ICgkXVloEeSXn5H3SMR4qw,_IChLcVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "location_model", title: "Location Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/location_model_3AAE86EC.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "77035c7e", parentId: "9d3a3696", relPath: ",_ICdhAFloEeSXn5H3SMR4qw,_ICgkXVloEeSXn5H3SMR4qw,_IChLdFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "node_model", title: "Node Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/node_model_F4A288FB.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "cbab6a82", parentId: "9d3a3696", relPath: ",_ICdhAFloEeSXn5H3SMR4qw,_ICgkXVloEeSXn5H3SMR4qw,_IChLclloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "zone_model", title: "Zone Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/zone_model_29479B02.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "31fd62b2", parentId: "f9f6651", relPath: ",_ICdhAFloEeSXn5H3SMR4qw,_IChLYFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "technical_architecture_slot", title: "[Technical Architecture]", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_architecture_slot_825DD1A6.html", 
+	predecessors: "", info: "Optional Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "8b5d09b6", parentId: "31fd62b2", relPath: ",_ICdhAFloEeSXn5H3SMR4qw,_IChLYFloEeSXn5H3SMR4qw,_IChLYVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "atomic_characteristics", title: "Atomic Characteristics", url: "./../../America Mobile MAW V1.0/deliveryprocesses/atomic_characteristics_8CFBB1B6.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "9a283a2", parentId: "31fd62b2", relPath: ",_ICdhAFloEeSXn5H3SMR4qw,_IChLYFloEeSXn5H3SMR4qw,_IChLYlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "business_technical_event_map", title: "Business Technical Event Map", url: "./../../America Mobile MAW V1.0/deliveryprocesses/business_technical_event_map_7B94C5CC.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "bbdd1d18", parentId: "31fd62b2", relPath: ",_ICdhAFloEeSXn5H3SMR4qw,_IChLYFloEeSXn5H3SMR4qw,_IChLY1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "slc_model", title: "Service Level Characteristic Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/slc_model_E46E9B91.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "f8e37996", parentId: "f9f6651", relPath: ",_ICdhAFloEeSXn5H3SMR4qw,_ICgkVVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_specification_slot", title: "[Technical Specification]", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_specification_slot_3F460B59.html", 
+	predecessors: "", info: "Optional Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7cfade08", parentId: "f9f6651", relPath: ",_ICdhAFloEeSXn5H3SMR4qw,_IChLYVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "atomic_characteristics", title: "Atomic Characteristics", url: "./../../America Mobile MAW V1.0/deliveryprocesses/atomic_characteristics_8CFBB1B6.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "b49ce368", parentId: "f9f6651", relPath: ",_ICdhAFloEeSXn5H3SMR4qw,_IChLYlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "business_technical_event_map", title: "Business Technical Event Map", url: "./../../America Mobile MAW V1.0/deliveryprocesses/business_technical_event_map_7B94C5CC.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "6c682e9", parentId: "f9f6651", relPath: ",_ICdhAFloEeSXn5H3SMR4qw,_IChLY1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "slc_model", title: "Service Level Characteristic Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/slc_model_E46E9B91.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1b683581", parentId: "", relPath: ",_ICevI1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "96", prefix: "", name: "conduct_viability_assessment", title: "Conduct Viability Assessment", url: "./../../America Mobile MAW V1.0/deliveryprocesses/conduct_viability_assessment_A25F002E.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true]},
+	
+		
+		
+{id: "2f0c95d", parentId: "1b683581", relPath: ",_ICevI1loEeSXn5H3SMR4qw,_ICgkU1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_solution_architect", title: "Technical Solution Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_solution_architect_D2271315.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "40eb0229", parentId: "1b683581", relPath: ",_ICevI1loEeSXn5H3SMR4qw,_ICgkUlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "application_architect", title: "Application Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/application_architect_694D3D50.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d0a20839", parentId: "1b683581", relPath: ",_ICevI1loEeSXn5H3SMR4qw,_ICgkVFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "infrastructure_architect", title: "Infrastructure Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/infrastructure_architect_34A82B49.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7541366b", parentId: "1b683581", relPath: ",_ICevI1loEeSXn5H3SMR4qw,_ICgkVVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_specification_slot", title: "[Technical Specification]", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_specification_slot_3F460B59.html", 
+	predecessors: "", info: "Mandatory Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "c9b0e667", parentId: "1b683581", relPath: ",_ICevI1loEeSXn5H3SMR4qw,_ICgkV1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../America Mobile MAW V1.0/deliveryprocesses/architectural_decisions_96B8F534.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "24d63a81", parentId: "1b683581", relPath: ",_ICevI1loEeSXn5H3SMR4qw,_ICgkW1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "component_model", title: "Component Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/component_model_5B4AD753.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7681066d", parentId: "1b683581", relPath: ",_ICevI1loEeSXn5H3SMR4qw,_ICgkXVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "operational_model", title: "Operational Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/operational_model_C869CF97.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "a292060b", parentId: "7681066d", relPath: ",_ICevI1loEeSXn5H3SMR4qw,_ICgkXVloEeSXn5H3SMR4qw,_IChLcVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "location_model", title: "Location Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/location_model_3AAE86EC.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ce0b5006", parentId: "7681066d", relPath: ",_ICevI1loEeSXn5H3SMR4qw,_ICgkXVloEeSXn5H3SMR4qw,_IChLdFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "node_model", title: "Node Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/node_model_F4A288FB.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "2e4f2e5a", parentId: "7681066d", relPath: ",_ICevI1loEeSXn5H3SMR4qw,_ICgkXVloEeSXn5H3SMR4qw,_IChLclloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "zone_model", title: "Zone Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/zone_model_29479B02.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "cf4c4d08", parentId: "1b683581", relPath: ",_ICevI1loEeSXn5H3SMR4qw,_ICgkWFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "ref_arch_fit_gap_analysis", title: "Reference Architecture Fit Gap Analysis", url: "./../../America Mobile MAW V1.0/deliveryprocesses/ref_arch_fit_gap_analysis_F93A0D68.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1f001758", parentId: "1b683581", relPath: ",_ICevI1loEeSXn5H3SMR4qw,_IChLZFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "viability_assessment", title: "Viability Assessment", url: "./../../America Mobile MAW V1.0/deliveryprocesses/viability_assessment_46EFB3C5.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "4a337024", parentId: "", relPath: ",_ICQFpVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "97", prefix: "", name: "adm_technical_feasibility_evaluation", title: "Plan Technical Feasibility Evaluation (optional) - Customer", url: "./../../America Mobile MAW V1.0/deliveryprocesses/adm_technical_feasibility_evaluation_948E7570.html", 
+	predecessors: "", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "true", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "na",
+	steps: []},
+	
+		
+		
+{id: "a0804cb8", parentId: "4a337024", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQssFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "98", prefix: "", name: "prioritize_services_for_tfe", title: "Prioritize Services for Technical Feasibility Exploration", url: "./../../America Mobile MAW V1.0/deliveryprocesses/prioritize_services_for_tfe_FE996AAA.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "true", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1083fe1e", parentId: "a0804cb8", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQssFloEeSXn5H3SMR4qw,_ICQssVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "soa_architect", title: "SOA Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/soa_architect_9374ABA.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "a252817a", parentId: "a0804cb8", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQssFloEeSXn5H3SMR4qw,_ICQsslloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "service_model", title: "Service Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/service_model_F7D05ED0.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "419ac76a", parentId: "a0804cb8", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQssFloEeSXn5H3SMR4qw,_ICQss1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "technical_proof_of_concept", title: "Technical Proof of Concept", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_proof_of_concept_60AA3495.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7fbb756e", parentId: "4a337024", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQsu1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "99", prefix: "", name: "identify_key_usage_scenarios_of_svcs_for_tfe", title: "Identify Key Usage Scenarios of Services", url: "./../../America Mobile MAW V1.0/deliveryprocesses/identify_key_usage_scenarios_of_svcs_for_tfe_E9CDF8D3.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "true", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d4ecca80", parentId: "7fbb756e", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQsu1loEeSXn5H3SMR4qw,_ICQssVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "soa_architect", title: "SOA Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/soa_architect_9374ABA.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "6943874b", parentId: "7fbb756e", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQsu1loEeSXn5H3SMR4qw,_ICQstVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "information_architect", title: "Information Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/information_architect_CDC92CD9.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "38fc9c1b", parentId: "7fbb756e", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQsu1loEeSXn5H3SMR4qw,_ICQstlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "infrastructure_architect", title: "Infrastructure Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/infrastructure_architect_BC6240EF.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "849c0b01", parentId: "7fbb756e", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQsu1loEeSXn5H3SMR4qw,_ICQsvFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "business_requirements_slot", title: "[Business Requirements]", url: "./../../America Mobile MAW V1.0/deliveryprocesses/business_requirements_slot_4C4F1107.html", 
+	predecessors: "", info: "Mandatory Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "249fcf37", parentId: "7fbb756e", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQsu1loEeSXn5H3SMR4qw,_ICQsuVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../America Mobile MAW V1.0/deliveryprocesses/architectural_decisions_925B0EF8.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "6520b189", parentId: "7fbb756e", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQsu1loEeSXn5H3SMR4qw,_ICQsslloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "service_model", title: "Service Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/service_model_F7D05ED0.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "be80588d", parentId: "7fbb756e", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQsu1loEeSXn5H3SMR4qw,_ICQsulloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "technical_specification_slot", title: "[Technical Specification]", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_specification_slot_80F4230E.html", 
+	predecessors: "", info: "Optional Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "5c4258f1", parentId: "7fbb756e", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQsu1loEeSXn5H3SMR4qw,_ICQsvVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "process_definition", title: "Process Definition", url: "./../../America Mobile MAW V1.0/deliveryprocesses/process_definition_56ECF117.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "9ea25a87", parentId: "7fbb756e", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQsu1loEeSXn5H3SMR4qw,_ICQss1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "technical_proof_of_concept", title: "Technical Proof of Concept", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_proof_of_concept_60AA3495.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "eec2943b", parentId: "4a337024", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQswVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "100", prefix: "", name: "map_and_group_svcs_to_inter_patterns_for_tfe", title: "Map and Group Services To Interaction Patterns", url: "./../../America Mobile MAW V1.0/deliveryprocesses/map_and_group_svcs_to_inter_patterns_for_tfe_1B7ED336.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "true", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "a446dedb", parentId: "eec2943b", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQswVloEeSXn5H3SMR4qw,_ICQssVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "soa_architect", title: "SOA Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/soa_architect_9374ABA.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1e696181", parentId: "eec2943b", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQswVloEeSXn5H3SMR4qw,_ICQsslloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "service_model", title: "Service Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/service_model_F7D05ED0.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "591487ff", parentId: "eec2943b", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQswVloEeSXn5H3SMR4qw,_ICQss1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "technical_proof_of_concept", title: "Technical Proof of Concept", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_proof_of_concept_60AA3495.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d2d22d9b", parentId: "4a337024", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQswlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "101", prefix: "", name: "identify_plan_req_proof_of_concept", title: "Identify and Plan Required Proof-of-Concepts", url: "./../../America Mobile MAW V1.0/deliveryprocesses/identify_plan_req_proof_of_concept_A17E74C.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "true", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "8c282f68", parentId: "d2d22d9b", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQswlloEeSXn5H3SMR4qw,_ICQstFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "technical_solution_architect", title: "Technical Solution Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_solution_architect_C32B4CC9.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "fded4138", parentId: "d2d22d9b", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQswlloEeSXn5H3SMR4qw,_ICQst1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "application_architect", title: "Application Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/application_architect_253C16B4.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "97a8fdb4", parentId: "d2d22d9b", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQswlloEeSXn5H3SMR4qw,_ICQstVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "information_architect", title: "Information Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/information_architect_CDC92CD9.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "22d9bf4a", parentId: "d2d22d9b", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQswlloEeSXn5H3SMR4qw,_ICQstlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "infrastructure_architect", title: "Infrastructure Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/infrastructure_architect_BC6240EF.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "c2183a64", parentId: "d2d22d9b", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQswlloEeSXn5H3SMR4qw,_ICQsuFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "project_risk_slot", title: "[Project Risk]", url: "./../../America Mobile MAW V1.0/deliveryprocesses/project_risk_slot_87BD2EE8.html", 
+	predecessors: "", info: "Mandatory Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e443f8", parentId: "d2d22d9b", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQswlloEeSXn5H3SMR4qw,_ICQsulloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "technical_specification_slot", title: "[Technical Specification]", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_specification_slot_80F4230E.html", 
+	predecessors: "", info: "Optional Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e56f86ea", parentId: "d2d22d9b", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQswlloEeSXn5H3SMR4qw,_ICQsuVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../America Mobile MAW V1.0/deliveryprocesses/architectural_decisions_925B0EF8.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "f7f272ba", parentId: "d2d22d9b", relPath: ",_ICQFpVloEeSXn5H3SMR4qw,_ICQswlloEeSXn5H3SMR4qw,_ICQss1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "technical_proof_of_concept", title: "Technical Proof of Concept", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_proof_of_concept_60AA3495.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d4ecca92", parentId: "", relPath: ",_ICgkUFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "102", prefix: "", name: "assemble_architecture_model_deliverable", title: "Assemble Architecture Model Deliverable", url: "./../../America Mobile MAW V1.0/deliveryprocesses/assemble_architecture_model_deliverable_7016492A.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true]},
+	
+		
+		
+{id: "34fd61b7", parentId: "d4ecca92", relPath: ",_ICgkUFloEeSXn5H3SMR4qw,_ICgkU1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_solution_architect", title: "Technical Solution Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_solution_architect_D2271315.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "c49838c3", parentId: "d4ecca92", relPath: ",_ICgkUFloEeSXn5H3SMR4qw,_ICgkUlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "application_architect", title: "Application Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/application_architect_694D3D50.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "706d6e7b", parentId: "d4ecca92", relPath: ",_ICgkUFloEeSXn5H3SMR4qw,_ICgkVFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "infrastructure_architect", title: "Infrastructure Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/infrastructure_architect_34A82B49.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "a81317e1", parentId: "d4ecca92", relPath: ",_ICgkUFloEeSXn5H3SMR4qw,_ICgkV1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../America Mobile MAW V1.0/deliveryprocesses/architectural_decisions_96B8F534.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "9fdb771", parentId: "d4ecca92", relPath: ",_ICgkUFloEeSXn5H3SMR4qw,_ICgkXFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_template", title: "Architectural Template", url: "./../../America Mobile MAW V1.0/deliveryprocesses/architectural_template_BDCBEF87.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "a5ce3463", parentId: "d4ecca92", relPath: ",_ICgkUFloEeSXn5H3SMR4qw,_ICgkWVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architecture_overview", title: "Architecture Overview", url: "./../../America Mobile MAW V1.0/deliveryprocesses/architecture_overview_3D7ED78.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "be66838b", parentId: "d4ecca92", relPath: ",_ICgkUFloEeSXn5H3SMR4qw,_ICgkW1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "component_model", title: "Component Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/component_model_5B4AD753.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "9a4ddb9", parentId: "d4ecca92", relPath: ",_ICgkUFloEeSXn5H3SMR4qw,_IChLaFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "data_model", title: "Data Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/data_model_A6ECE29E.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ea012613", parentId: "d4ecca92", relPath: ",_ICgkUFloEeSXn5H3SMR4qw,_IChLcFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "deployment_unit_model", title: "Deployment Unit Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/deployment_unit_model_3010A6DC.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ae920ad3", parentId: "ea012613", relPath: ",_ICgkUFloEeSXn5H3SMR4qw,_IChLcFloEeSXn5H3SMR4qw,_IChLc1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "deployment_unit_spec", title: "Deployment Unit Specification", url: "./../../America Mobile MAW V1.0/deliveryprocesses/deployment_unit_spec_922170C7.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1b1bdf0b", parentId: "d4ecca92", relPath: ",_ICgkUFloEeSXn5H3SMR4qw,_ICgkXVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "operational_model", title: "Operational Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/operational_model_C869CF97.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7dbdb034", parentId: "1b1bdf0b", relPath: ",_ICgkUFloEeSXn5H3SMR4qw,_ICgkXVloEeSXn5H3SMR4qw,_IChLcVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "location_model", title: "Location Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/location_model_3AAE86EC.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "af7b3998", parentId: "1b1bdf0b", relPath: ",_ICgkUFloEeSXn5H3SMR4qw,_ICgkXVloEeSXn5H3SMR4qw,_IChLdFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "node_model", title: "Node Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/node_model_F4A288FB.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1fdb2ce", parentId: "1b1bdf0b", relPath: ",_ICgkUFloEeSXn5H3SMR4qw,_ICgkXVloEeSXn5H3SMR4qw,_IChLclloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "zone_model", title: "Zone Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/zone_model_29479B02.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "6d35d730", parentId: "d4ecca92", relPath: ",_ICgkUFloEeSXn5H3SMR4qw,_IChLZVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_architecture", title: "Security Architecture", url: "./../../America Mobile MAW V1.0/deliveryprocesses/security_architecture_518D93D5.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "c2e5572e", parentId: "d4ecca92", relPath: ",_ICgkUFloEeSXn5H3SMR4qw,_IChLY1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "slc_model", title: "Service Level Characteristic Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/slc_model_E46E9B91.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "f215880", parentId: "d4ecca92", relPath: ",_ICgkUFloEeSXn5H3SMR4qw,_IChLZlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "standards", title: "Standards", url: "./../../America Mobile MAW V1.0/deliveryprocesses/standards_4026A7EB.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "6e91d636", parentId: "d4ecca92", relPath: ",_ICgkUFloEeSXn5H3SMR4qw,_IChLZ1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_proof_of_concept", title: "Technical Proof of Concept", url: "./../../America Mobile MAW V1.0/deliveryprocesses/technical_proof_of_concept_A9007DB0.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ac4f7b6", parentId: "d4ecca92", relPath: ",_ICgkUFloEeSXn5H3SMR4qw,_IChLaVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architecture_model_0537", title: "Architecture Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/architecture_model_0537_B18AC2AE.html", 
+	predecessors: "", info: "Output", type: "Deliverable Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

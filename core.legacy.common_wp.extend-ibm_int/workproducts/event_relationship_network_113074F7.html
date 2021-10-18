@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Artifact: Event Relationship Network
+			(OPS 401)
+		</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="event_relationship_network">
+<meta name="uma.presentationName" content="Event Relationship Network">
+<meta name="uma.category" content="@Type:@Name:@DisplayName">
+<meta name="uma.category" content="WorkProductType:model:Model">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_vrCfoa6CEdyI4IDvQ60EJA", "_O0L-wO3tEdugFZ65awqtDw", "_gW388O3uEdugFZ65awqtDw", "mweb0AE0D7847C177EFB85256B9C0054A324"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_HcVQwMRfEdyD76CYS6Ta7A", "_13NR6qxcEdyf7rzERpP8vA", "mweb0AE0D7847C177EFB85256B9C0054A324"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_WCR4YMRdEdyD76CYS6Ta7A", "mweb0AE0D7847C177EFB85256B9C0054A324"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb0AE0D7847C177EFB85256B9C0054A324"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Artifact: Event Relationship Network
+			(OPS 401)
+		</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/artifact.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The Event Relationship Network work product documents the logical associations of specific sets of event messages issued within an individual IT resource. </td>
+</tr>
+<tr>
+<td>Domains: <a href="./../../core.default.cat_def.base-ibm_lic/domains/it_mgmt_monitoring_E620653D.html" guid="_gW388O3uEdugFZ65awqtDw">IT Management & Monitoring</a>
+<br>Work Product Kinds: <a href="./../../core.default.cat_def.base-ibm_lic/workproducttypes/model_A63E2F6E.html" guid="_13NR6qxcEdyf7rzERpP8vA">Model</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">The ERN is a design document. Its purpose is to describe event relationships at the level of detail necessary for
+customization of systems and network management event correlation software. The ERN provides the detailed information for
+the IBM services team, the client team, or any subcontracted team to customize the client’s event correlation software for
+effective correlation of the events addressed within the ERN.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Main Description</th><td class="sectionTableCell"><p>
+    Event Relationship Networks (ERNs) provide a conceptual framework for description of event correlation logic. One ERN
+    is created for each source of event messages present in the IT environment targeted within the scope of the project.
+    Example event sources include network resources such as routers and switches, server hardware, server operating
+    systems, middle-ware such as MQ Series, databases, and applications.&nbsp;&nbsp;&nbsp;
+</p>
+<p>
+    ERNs can grow to include a large number of events. For this reason the ERN framework includes the concept of the ERN
+    subnet. ERN subnets contain an arbitrary subset of the events contained in an ERN. ERN subnets are cross-referenced
+    (linked) within an ERN.&nbsp;&nbsp;&nbsp;
+</p>
+<p>
+    There exists no single standard for protocols used by IT resources when issuing event messages. Different categories of
+    IT resources adopt differing event protocols. Examples include ASCII messages written to system or application logs,
+    Simple Network Management Protocol (SNMP) traps issued by IP network devices, and Common Management Information
+    Protocol (CMIP) notifications issued by telecommunications equipment. The Event Relationship Network provides an
+    abstracted view of event correlation relationships which transcends the specifics of any individual event protocol and
+    is thus capable of describing event correlation logic spanning all resource types and event protocols present in the
+    target IT environment.&nbsp;&nbsp;&nbsp;
+</p>
+<p>
+    This abstracted perspective of event correlation logic also enables the designer to create ERNs for any client
+    regardless of the event correlation software used by the client. The ERN work product is a totally open design tool,
+    independent of both the client’s event protocols and event management tools. This enables use of ERNs across a broad
+    spectrum of client environments and IBM engagements.
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Brief Outline</th><td class="sectionTableCell"><p>
+    ERNs are defined using a graphical syntax and notated as a directed acyclic graph. Events are represented as nodes and
+    are labeled with the role of the event within the ERN.&nbsp; Arcs from one node (event) to the next indicate that the
+    latter is associated with the former. These graphs do not depict causal relationships, nor are they temporal
+    relationships.
+</p>
+<p>
+    An ERN must contain, at minimum:
+</p>
+<ul>
+    <li>
+        An ERN Table of Contents
+    </li>
+    <li>
+        One ERN subnet
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/examples/event_relationship_network_739A4749.html" guid="_FM2oICumEdyMqZ4XfzRBaQ">Event Relationship Network</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">IT Specialists, IT Architects, and Consultants would normally use Event Relationship Networks as a tool for analysis and
+documentation of IT event correlation requirements.&nbsp; However, the syntax of Event Relationship Networking may be
+applied to event relationships that exist outside of the IT environment.&nbsp; For example, ERNs may be used to indicate
+the relationships amongst non-IT business events issued by business processes, independent of the IT applications which may
+be implemented to support these processes.&nbsp; As the client’s management focus shifts from management of the IT
+infrastructure to management of end-to-end services and business processes ERNs may be utilized to address yet other
+classes of events and other event correlation applications. <br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Tailoring</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Impact of not having</th><td class="sectionTableCell">Any event management design and implementation project, which addresses event correlation, should document its event
+correlation requirements with ERNs. No other standard exists for documentation of event correlation logic. Not utilizing
+this work product would result in incomplete and ineffective event correlation documentation. As a result, when the design
+is implemented the event correlation software is unlikely to deliver the correlation results required by the client.</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Reasons for not needing</th><td class="sectionTableCell">The project does not include event correlation design and/or implementation.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/guidelines/event_relationship_network_dev_B4A290B4.html" guid="_h-3wECuoEdyMqZ4XfzRBaQ">Developing Event Relationship Network</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Supporting Materials</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/supportingmaterials/sys_mgmt_svcs_ref_452AE085.html" guid="_XIG2IEbBEd2Py94jZb8MSQ">References: Systems Management Services</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Estimation Considerations</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/estimationconsiderations/event_relationship_network_legacy_8EF29FEA.html" guid="mweb037363598865740700">Event Relationship Network (Legacy)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

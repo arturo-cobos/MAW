@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Artifact: Event Source Design
+			(OPS 402)
+		</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="event_source_design">
+<meta name="uma.presentationName" content="Event Source Design">
+<meta name="uma.category" content="@Type:@Name:@DisplayName">
+<meta name="uma.category" content="WorkProductType:specification:Specification">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_vrCfoa6CEdyI4IDvQ60EJA", "_O0L-wO3tEdugFZ65awqtDw", "_gW388O3uEdugFZ65awqtDw", "mweb168C6D9363841D1985256B9C005590A9"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_HcVQwMRfEdyD76CYS6Ta7A", "_13NR8KxcEdyf7rzERpP8vA", "mweb168C6D9363841D1985256B9C005590A9"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_WCR4YMRdEdyD76CYS6Ta7A", "mweb168C6D9363841D1985256B9C005590A9"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb168C6D9363841D1985256B9C005590A9"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Artifact: Event Source Design
+			(OPS 402)
+		</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/artifact.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">An event source is an IT component, element or sub-element upon which the delivery of a specific IT business service depends.</td>
+</tr>
+<tr>
+<td>Domains: <a href="./../../core.default.cat_def.base-ibm_lic/domains/it_mgmt_monitoring_E620653D.html" guid="_gW388O3uEdugFZ65awqtDw">IT Management & Monitoring</a>
+<br>Work Product Kinds: <a href="./../../core.default.cat_def.base-ibm_lic/workproducttypes/specification_362AFF86.html" guid="_13NR8KxcEdyf7rzERpP8vA">Specification</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">The Event Source Design is a design document. Each Event Source Design work product documents the complete repertoire of
+events that may potentially be emitted by an event source and the detailed processing requirements for each class of event,
+including event filtering, thresholding, forwarding, correlation and actions. IBM Global Services personnel use these
+specifications when customizing IT resource implementation parameters and event management software.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Main Description</th><td class="sectionTableCell"><p>
+    The Event Source Design&nbsp;artifact documents for an individual event source:
+</p>
+<ul>
+    <li>
+        The event source event repertoire and
+    </li>
+    <li>
+        The event filtering, forwarding, correlation, and automation specifications for each event within the event
+        repertoire.
+    </li>
+</ul>
+<p>
+    Examples of event sources would include (components) servers, network appliances, bandwidth providers, (elements)
+    server hardware, operating systems, middleware, applications, databases and (sub-elements) server RAM, application
+    processes, and database tables. Any IT technology which has the capability of logging messages or emitting standard
+    event protocols such as Simple Network Management Protocol (SNMP) traps is an event source. Technologies which do not
+    support this capability are not considered event sources.
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Brief Outline</th><td class="sectionTableCell"><p>
+    Event Source Design work products contain at minimum:
+</p>
+<ul>
+    <li>
+        <div>
+            A BASE Worksheet
+        </div>
+    </li>
+    <li>
+        <div>
+            A DISCARD Worksheet
+        </div>
+    </li>
+    <li>
+        <div>
+            A Entry Tier Worksheet
+        </div>
+    </li>
+    <li>
+        <div>
+            And an Enterprise Tier Worksheet
+        </div>
+    </li>
+</ul>
+<p>
+    Optional Worksheets include:
+</p>
+<ul>
+    <li>
+        <div>
+            A Netview Worksheet
+        </div>
+    </li>
+    <li>
+        <div>
+            Up to three Intermediate Tier Worksheets
+        </div>
+    </li>
+    <li>
+        <div>
+            A BAROC Worksheet
+        </div>
+    </li>
+    <li>
+        <div>
+            And a Visio Worksheet
+        </div>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/examples/event_source_design_CEFC767A.html" guid="_gxiS4CurEdyMqZ4XfzRBaQ">Event Source Design</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">IT Specialists, IT Architects, and Consultants would normally use Event Source Designs as a tool for analysis and
+documentation of IT event processing requirements.&nbsp; However, the content of Event Source Designs may be applied to
+event processing requirements that exist outside of the IT environment.&nbsp; For example, Event Source Designs may be used
+to indicate processing requirements across non-IT business events issued by business processes, independent of the IT
+applications which may be implemented to support these processes.&nbsp; As the client’s management focus shifts from
+management of the IT infrastructure to management of end-to-end services and business processes Event Source Designs may be
+utilized to address yet other classes of events and other event correlation applications. <br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Tailoring</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Impact of not having</th><td class="sectionTableCell">All event management design and implementation projects require detailed documentation of the event repertoires associated
+with the event sources addressed by the projects. In addition these projects must develop detailed documentation of the
+event processing required for each event within the repertoire. No other standard exists for documentation of event
+repertoires and event processing specifications. Not utilizing this work product would result in incomplete and ineffective
+event processing documentation. When implemented the event processing software is unlikely to deliver the correlation
+results required by the client.</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Reasons for not needing</th><td class="sectionTableCell">The project does not include event management design and/or implementation.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/guidelines/event_source_design_dev_6EF30F0F.html" guid="_EpAQACutEdyMqZ4XfzRBaQ">Developing Event Source Design</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Supporting Materials</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/supportingmaterials/sys_mgmt_svcs_ref_452AE085.html" guid="_XIG2IEbBEd2Py94jZb8MSQ">References: Systems Management Services</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Estimation Considerations</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/estimationconsiderations/event_source_design_legacy_A8AD5020.html" guid="mweb037363599166666601">Event Source Design (Legacy)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RoleSets nodeId="21bd22bd">
+<RoleSet pname="Any" name="any" nodeId="3a0e7f7">
+<Role pname="Any Role" name="any_role" nodeId="54b62af9"></Role>
+<Role pname="Business Area Expert" name="business_area_expert" nodeId="36d24e3b"></Role>
+<Role pname="Employee" name="employee" nodeId="87e7913d"></Role>
+<Role pname="Estimator" name="estimator" nodeId="6a03b47f"></Role>
+<Role pname="Facilitator" name="facilitator" nodeId="bb18f781"></Role>
+<Role pname="Management Team" name="management_team" nodeId="9d351ac3"></Role>
+<Role pname="Originator" name="originator" nodeId="ee4a5dc5"></Role>
+<Role pname="Project Office" name="project_office" nodeId="d0668107"></Role>
+<Role pname="Project Team member" name="project_team_member" nodeId="217bc409"></Role>
+<Role pname="Resolution Owner" name="resolution_owner" nodeId="12ab8099"></Role>
+<Role pname="Reviewer" name="reviewer" nodeId="2133bea9"></Role>
+<Role pname="Risk Owner" name="risk_owner" nodeId="47677915"></Role>
+<Role pname="Sponsor" name="sponsor" nodeId="53ca2257"></Role>
+<Role pname="Stakeholder" name="stakeholder" nodeId="7a98df59"></Role>
+<Role pname="Subcontractor" name="subcontractor" nodeId="86fb889b"></Role>
+<Role pname="Subject Matter Expert" name="subject_matter_expert" nodeId="adca459d"></Role>
+<Role pname="User" name="user" nodeId="ba2ceedf"></Role>
+</RoleSet>
+<RoleSet pname="Business" name="business" nodeId="9effdb1">
+<Role pname="Business Analyst" name="business_analyst" nodeId="ed5e5523"></Role>
+<Role pname="Business Architect" name="business_architect" nodeId="3d2163f5"></Role>
+<Role pname="Business Design Consultant" name="business_design_consultant" nodeId="208fbb67"></Role>
+<Role pname="Business Operations Professional" name="business_operations_professional" nodeId="7052ca39"></Role>
+<Role pname="Business Process Analyst" name="business_process_analyst" nodeId="5e2b397b"></Role>
+<Role pname="Business Transformation Consultant" name="business_transformation_consultant" nodeId="adee484d"></Role>
+<Role pname="Contract Business Office (CBO)" name="contract_business_office" nodeId="915c9fbf"></Role>
+<Role pname="Industry Consultant" name="industry_consultant" nodeId="e11fae91"></Role>
+<Role pname="Process Owner" name="process_owner" nodeId="c48e0603"></Role>
+<Role pname="Strategy Consultant" name="strategy_consultant" nodeId="145114d5"></Role>
+</RoleSet>
+<RoleSet pname="Content" name="content" nodeId="f7bf6c47">
+<Role pname="Information Developer" name="info_developer" nodeId="4f57627"></Role>
+<Role pname="Text/Graphics Specialist" name="text_graphics_spec" nodeId="2af0d28b"></Role>
+</RoleSet>
+<RoleSet pname="Data" name="data" nodeId="3826dc6b">
+<Role pname="Data Specialist" name="data_specialist" nodeId="87168a9f"></Role>
+<Role pname="Information Architect" name="information_architect" nodeId="6b5842af"></Role>
+</RoleSet>
+<RoleSet pname="Deployment" name="deployment" nodeId="ba47f0e3"></RoleSet>
+<RoleSet pname="Facilities" name="facilities" nodeId="9e89a8f3">
+<Role pname="Facility Management Specialist" name="facility_management_specialist" nodeId="ed795727"></Role>
+</RoleSet>
+<RoleSet pname="Hardware" name="hardware" nodeId="d1bb0f37">
+<Role pname="Configuration Engineering Professional" name="configuration_eng_pro" nodeId="20aabd6b"></Role>
+<Role pname="Hardware Architect" name="hardware_architect" nodeId="4ec757b"></Role>
+<Role pname="Quality Analyst" name="quality_analyst" nodeId="53dc23af"></Role>
+</RoleSet>
+<RoleSet pname="Infrastructure" name="infrastructure" nodeId="381ddbbf">
+<Role pname="Infrastructure Architect" name="infrastructure_architect" nodeId="870d89f3"></Role>
+<Role pname="Infrastructure Specialist" name="infrastructure_specialist" nodeId="7a62db51"></Role>
+<Role pname="Network Consultant" name="network_consultant" nodeId="86c58493"></Role>
+<Role pname="Server Support Specialist" name="server_support_specialist" nodeId="ad944195"></Role>
+</RoleSet>
+<RoleSet pname="Management" name="management" nodeId="b9f6ead7">
+<Role pname="Delivery Engagement Manager" name="delivery_engagement_manager" nodeId="e0c5a7d9"></Role>
+<Role pname="Delivery Owner" name="delivery_owner" nodeId="ed28511b"></Role>
+<Role pname="Delivery Project Executive" name="delivery_project_executive" nodeId="3ceb5fed"></Role>
+<Role pname="Engagement Manager" name="engagement_manager" nodeId="2059b75f"></Role>
+<Role pname="Independent Project Manager" name="independent_project_manager" nodeId="701cc631"></Role>
+<Role pname="Measurements and Reporting Analyst" name="measurements_reporting_analyst" nodeId="538b1da3"></Role>
+<Role pname="People Manager" name="people_manager" nodeId="a34e2c75"></Role>
+<Role pname="Project Administrator" name="project_administrator" nodeId="86bc83e7"></Role>
+<Role pname="Project Executive" name="project_executive" nodeId="d67f92b9"></Role>
+<Role pname="Project Management Office (PMO)" name="project_management_office" nodeId="c45801fb"></Role>
+<Role pname="Project Manager" name="project_manager" nodeId="141b10cd"></Role>
+<Role pname="Project Portfolio Manager" name="project_portfolio_manager" nodeId="f913fa77"></Role>
+<Role pname="Project Quality Analyst" name="project_quality_analyst" nodeId="4a293d79"></Role>
+<Role pname="Resource Deployment Manager" name="resource_deployment_mgr" nodeId="2c4560bb"></Role>
+<Role pname="Service Delivery Manager" name="service_delivery_manager" nodeId="3acd9ecb"></Role>
+<Role pname="Technical Team Leader" name="technical_team_leader" nodeId="5f76c6ff"></Role>
+<Role pname="Transition Manager" name="transition_manager" nodeId="6dff050f"></Role>
+</RoleSet>
+<RoleSet pname="Marketing" name="marketing" nodeId="92a82d43">
+<Role pname="Client Relationship Team Lead" name="client_relationship_team_lead" nodeId="a1306b53"></Role>
+<Role pname="Deal Facilitator" name="deal_facilitator" nodeId="eecde557"></Role>
+<Role pname="Opportunity Identifier" name="opportunity_identifier" nodeId="d461d197"></Role>
+<Role pname="Opportunity Owner" name="opportunity_owner" nodeId="21ff4b9b"></Role>
+<Role pname="Relationship Owner" name="relationship_owner" nodeId="79337db"></Role>
+<Role pname="Sales Specialist" name="sales_specialist" nodeId="5530b1df"></Role>
+<Role pname="Solution Manager" name="solution_manager" nodeId="3ac49e1f"></Role>
+</RoleSet>
+<RoleSet pname="Method" name="method" nodeId="88621823">
+<Role pname="Method Exponent" name="method_exponent" nodeId="6f80969b"></Role>
+</RoleSet>
+<RoleSet pname="Operations" name="operations" nodeId="bd1e109f">
+<Role pname="Business Continuity and Resiliency Servics Consultant" name="business_conty_recovy_svcs_con" nodeId="a2b1fcdf"></Role>
+<Role pname="Computer Operator" name="computer_operator" nodeId="f04f76e3"></Role>
+<Role pname="Customer Service Representative" name="customer_service_representative" nodeId="e4f6fc71"></Role>
+<Role pname="Database Administrator" name="database_administrator" nodeId="32947675"></Role>
+<Role pname="Operations Architect" name="operations_architect" nodeId="182862b5"></Role>
+<Role pname="Systems Administrator" name="systems_administrator" nodeId="2338d7c6"></Role>
+<Role pname="Systems Management Specialist" name="systems_management_specialist" nodeId="4b59c8f8"></Role>
+<Role pname="Technical Support Representative" name="technical_support_representative" nodeId="566a3e0a"></Role>
+</RoleSet>
+<RoleSet pname="Organization" name="organization" nodeId="a77f810c">
+<Role pname="Asset Management Analyst" name="asset_mgmt_analyst" nodeId="899ba44e"></Role>
+<Role pname="Learning Consultant" name="learning_consultant" nodeId="dab0e750"></Role>
+<Role pname="Learning Developer" name="learning_developer" nodeId="bccd0a92"></Role>
+<Role pname="Learning Facilitator" name="learning_facilitator" nodeId="ce4a670"></Role>
+<Role pname="Learning Operations Specialist" name="learning_operations_specialist" nodeId="f052fde2"></Role>
+</RoleSet>
+<RoleSet pname="Security &amp; Privacy" name="security_privacy" nodeId="40160cb4">
+<Role pname="Security and Privacy Consultant" name="security_privacy_consultant" nodeId="2dee7bf6"></Role>
+<Role pname="Security Specialist" name="security_specialist" nodeId="7db18ac8"></Role>
+</RoleSet>
+<RoleSet pname="Software" name="software" nodeId="611fe23a">
+<Role pname="Application Architect" name="application_architect" nodeId="b0e2f10c"></Role>
+<Role pname="Application Consultant" name="application_consultant" nodeId="9451487e"></Role>
+<Role pname="Application Developer" name="application_developer" nodeId="e4145750"></Role>
+<Role pname="Integration Architect" name="integration_architect" nodeId="c782aec2"></Role>
+<Role pname="Package Solution Consultant" name="package_solution_consultant" nodeId="d4b8b8a2"></Role>
+<Role pname="SOA Architect" name="soa_architect" nodeId="fab41506"></Role>
+<Role pname="SOA Developer" name="soa_developer" nodeId="7ea1ee6"></Role>
+<Role pname="Software Architect" name="software_architect" nodeId="56d9cd1a"></Role>
+<Role pname="Software Designer" name="software_designer" nodeId="3b1b852a"></Role>
+<Role pname="Software Release Manager" name="software_release_mgr" nodeId="8a0b335e"></Role>
+<Role pname="Software Specialist" name="software_specialist" nodeId="6e4ceb6e"></Role>
+</RoleSet>
+<RoleSet pname="Technology" name="technology" nodeId="bec72bda">
+<Role pname="Application Development Products Support Specialist" name="app_dev_prod_support_spec" nodeId="a45b181a"></Role>
+<Role pname="Configuration Control Board" name="configuration_control_board" nodeId="f1f8921e"></Role>
+<Role pname="Enterprise Architect" name="enterprise_architect" nodeId="d78c7e5e"></Role>
+<Role pname="IT Management Consultant" name="it_management_consultant" nodeId="2529f862"></Role>
+<Role pname="Product Engineering / Product Field Engineering Technician" name="prod_eng_prod_field_eng_tech" nodeId="abde4a2"></Role>
+<Role pname="Systems Engineering Professional" name="systems_eng_pro" nodeId="585b5ea6"></Role>
+<Role pname="Systems Programmer" name="systems_programmer" nodeId="4d02e434"></Role>
+<Role pname="Team Leader" name="team_leader" nodeId="9aa05e38"></Role>
+<Role pname="Technical Solution Architect" name="technical_solution_architect" nodeId="80344a78"></Role>
+<Role pname="Technical Solution Manager" name="technical_solution_manager" nodeId="8b44bf8a"></Role>
+</RoleSet>
+<RoleSet pname="Test" name="test" nodeId="b365b0bc">
+<Role pname="Test Architect" name="test_architect" nodeId="be7625ce"></Role>
+<Role pname="Test Specialist" name="test_specialist" nodeId="f8b68d0"></Role>
+</RoleSet>
+<RoleSet pname="User Experience" name="user_experience" nodeId="f1a78c12">
+<Role pname="User Experience Professional" name="user_experience_pro" nodeId="42bccf14"></Role>
+</RoleSet>
+<RoleSet pname="Third Party (expertise)" name="third_party_expertise" nodeId="24d8f256"></RoleSet>
+<RoleSet pname="Adjunct" name="adjunct" nodeId="75ee3558">
+<Role pname="Any Role" name="any_role" nodeId="580a589a"></Role>
+<Role pname="Business Area Expert" name="business_area_expert" nodeId="a91f9b9c"></Role>
+<Role pname="Delivery Owner" name="delivery_owner" nodeId="95a5d6ae"></Role>
+<Role pname="Employee" name="employee" nodeId="e6bb19b0"></Role>
+<Role pname="Estimator" name="estimator" nodeId="c8d73cf2"></Role>
+<Role pname="Facilitator" name="facilitator" nodeId="19ec7ff4"></Role>
+<Role pname="Opportunity Identifier" name="opportunity_identifier" nodeId="fc08a336"></Role>
+<Role pname="Opportunity Owner" name="opportunity_owner" nodeId="a90e146"></Role>
+<Role pname="Originator" name="originator" nodeId="2f3a097a"></Role>
+<Role pname="Process Owner" name="process_owner" nodeId="3dc2478a"></Role>
+<Role pname="Project Team member" name="project_team_member" nodeId="626b6fbe"></Role>
+<Role pname="Relationship Owner" name="relationship_owner" nodeId="727e4006"></Role>
+<Role pname="Resolution Owner" name="resolution_owner" nodeId="9727683a"></Role>
+<Role pname="Reviewer" name="reviewer" nodeId="a5afa64a"></Role>
+<Role pname="Risk Owner" name="risk_owner" nodeId="f34d204e"></Role>
+<Role pname="Sponsor" name="sponsor" nodeId="d8e10c8e"></Role>
+<Role pname="Stakeholder" name="stakeholder" nodeId="267e8692"></Role>
+<Role pname="Subject Matter Expert" name="subject_matter_expert" nodeId="c1272d2"></Role>
+<Role pname="User" name="user" nodeId="59afecd6"></Role>
+</RoleSet>
+<RoleSet pname="Administrator" name="administrator" nodeId="3f43d916">
+<Role pname="Business Operations Professional" name="business_operations_professional" nodeId="8ce1531a"></Role>
+<Role pname="Database Administrator" name="database_administrator" nodeId="72753f5a"></Role>
+<Role pname="Project Administrator" name="project_administrator" nodeId="c012b95e"></Role>
+<Role pname="Systems Administrator" name="systems_administrator" nodeId="b4ba3eec"></Role>
+</RoleSet>
+<RoleSet pname="Analyst" name="analyst" nodeId="257b8f0">
+<Role pname="Asset Management Analyst" name="asset_mgmt_analyst" nodeId="e7eba530"></Role>
+<Role pname="Business Analyst" name="business_analyst" nodeId="f2fc1a42"></Role>
+<Role pname="Business Process Analyst" name="business_process_analyst" nodeId="1b1d0b74"></Role>
+<Role pname="Customer Service Representative" name="customer_service_representative" nodeId="262d8086"></Role>
+<Role pname="Measurements and Reporting Analyst" name="measurements_reporting_analyst" nodeId="7742c388"></Role>
+<Role pname="Project Quality Analyst" name="project_quality_analyst" nodeId="595ee6ca"></Role>
+<Role pname="Quality Analyst" name="quality_analyst" nodeId="aa7429cc"></Role>
+<Role pname="Technical Support Representative" name="technical_support_representative" nodeId="8c904d0e"></Role>
+</RoleSet>
+<RoleSet pname="Architect" name="architect" nodeId="dda59010">
+<Role pname="Application Architect" name="application_architect" nodeId="c1a0d296"></Role>
+<Role pname="Business Architect" name="business_architect" nodeId="12b61598"></Role>
+<Role pname="Configuration Engineering Professional" name="configuration_eng_pro" nodeId="ff3c50aa"></Role>
+<Role pname="Enterprise Architect" name="enterprise_architect" nodeId="505193ac"></Role>
+<Role pname="Hardware Architect" name="hardware_architect" nodeId="326db6ee"></Role>
+<Role pname="Information Architect" name="information_architect" nodeId="8382f9f0"></Role>
+<Role pname="Infrastructure Architect" name="infrastructure_architect" nodeId="659f1d32"></Role>
+<Role pname="Integration Architect" name="integration_architect" nodeId="b6b46034"></Role>
+<Role pname="Operations Architect" name="operations_architect" nodeId="98d08376"></Role>
+<Role pname="SOA Architect" name="soa_architect" nodeId="a758c186"></Role>
+<Role pname="Software Architect" name="software_architect" nodeId="cc01e9ba"></Role>
+<Role pname="Systems Engineering Professional" name="systems_eng_pro" nodeId="dc14ba02"></Role>
+<Role pname="Technical Solution Architect" name="technical_solution_architect" nodeId="bde236"></Role>
+<Role pname="Test Architect" name="test_architect" nodeId="f462046"></Role>
+<Role pname="User Experience Professional" name="user_experience_pro" nodeId="33ef487a"></Role>
+</RoleSet>
+<RoleSet pname="Consultant" name="consultant" nodeId="4277868a">
+<Role pname="Application Consultant" name="application_consultant" nodeId="9015008e"></Role>
+<Role pname="Business Continuity and Resiliency Servics Consultant" name="business_conty_recovy_svcs_con" nodeId="75a8ecce"></Role>
+<Role pname="Business Design Consultant" name="business_design_consultant" nodeId="c34666d2"></Role>
+<Role pname="Business Transformation Consultant" name="business_transformation_consultant" nodeId="a8da5312"></Role>
+<Role pname="Deal Facilitator" name="deal_facilitator" nodeId="f677cd16"></Role>
+<Role pname="Engagement Manager" name="engagement_manager" nodeId="dc0bb956"></Role>
+<Role pname="Industry Consultant" name="industry_consultant" nodeId="29a9335a"></Role>
+<Role pname="IT Management Consultant" name="it_management_consultant" nodeId="1e50b8e8"></Role>
+<Role pname="Learning Consultant" name="learning_consultant" nodeId="6bee32ec"></Role>
+<Role pname="Method Exponent" name="method_exponent" nodeId="51821f2c"></Role>
+<Role pname="Network Consultant" name="network_consultant" nodeId="9f1f9930"></Role>
+<Role pname="Package Solution Consultant" name="package_solution_consultant" nodeId="841882da"></Role>
+<Role pname="Security and Privacy Consultant" name="security_privacy_consultant" nodeId="92a0c0ea"></Role>
+<Role pname="Strategy Consultant" name="strategy_consultant" nodeId="b749e91e"></Role>
+<Role pname="Team Leader" name="team_leader" nodeId="c5d2272e"></Role>
+</RoleSet>
+<RoleSet pname="Designer" name="designer" nodeId="ea7b4f62">
+<Role pname="Software Designer" name="software_designer" nodeId="f9038d72"></Role>
+</RoleSet>
+<RoleSet pname="Developer" name="developer" nodeId="46a10776">
+<Role pname="Application Developer" name="application_developer" nodeId="2c34f3b6"></Role>
+<Role pname="Information Developer" name="info_developer" nodeId="79d26dba"></Role>
+<Role pname="Learning Developer" name="learning_developer" nodeId="e6a970da"></Role>
+<Role pname="SOA Developer" name="soa_developer" nodeId="3446eade"></Role>
+<Role pname="Systems Programmer" name="systems_programmer" nodeId="8bfba6d6"></Role>
+<Role pname="Text/Graphics Specialist" name="text_graphics_spec" nodeId="d99920da"></Role>
+</RoleSet>
+<RoleSet pname="Manager" name="manager" nodeId="bf2d0d1a">
+<Role pname="Client Relationship Team Lead" name="client_relationship_team_lead" nodeId="cca871e"></Role>
+<Role pname="Delivery Engagement Manager" name="delivery_engagement_manager" nodeId="f25e735e"></Role>
+<Role pname="Delivery Project Executive" name="delivery_project_executive" nodeId="3ffbed62"></Role>
+<Role pname="Independent Project Manager" name="independent_project_manager" nodeId="258fd9a2"></Role>
+<Role pname="People Manager" name="people_manager" nodeId="30a04eb4"></Role>
+<Role pname="Project Executive" name="project_executive" nodeId="58c13fe6"></Role>
+<Role pname="Project Manager" name="project_manager" nodeId="63d1b4f8"></Role>
+<Role pname="Project Portfolio Manager" name="project_portfolio_manager" nodeId="b4e6f7fa"></Role>
+<Role pname="Resource Deployment Manager" name="resource_deployment_mgr" nodeId="97031b3c"></Role>
+<Role pname="Service Delivery Manager" name="service_delivery_manager" nodeId="e8185e3e"></Role>
+<Role pname="Software Release Manager" name="software_release_mgr" nodeId="ca348180"></Role>
+<Role pname="Solution Manager" name="solution_manager" nodeId="1cd456ba"></Role>
+<Role pname="Technical Solution Manager" name="technical_solution_manager" nodeId="fef079fc"></Role>
+<Role pname="Technical Team Leader" name="technical_team_leader" nodeId="5005bcfe"></Role>
+<Role pname="Transition Manager" name="transition_manager" nodeId="3221e040"></Role>
+</RoleSet>
+<RoleSet pname="Specialist" name="specialist" nodeId="83372342">
+<Role pname="Application Development Products Support Specialist" name="app_dev_prod_support_spec" nodeId="7466dfd2"></Role>
+<Role pname="Computer Operator" name="computer_operator" nodeId="c57c22d4"></Role>
+<Role pname="Data Specialist" name="data_specialist" nodeId="a7984616"></Role>
+<Role pname="Facility Management Specialist" name="facility_management_specialist" nodeId="f8ad8918"></Role>
+<Role pname="Infrastructure Specialist" name="infrastructure_specialist" nodeId="dac9ac5a"></Role>
+<Role pname="Learning Facilitator" name="learning_facilitator" nodeId="e951ea6a"></Role>
+<Role pname="Learning Operations Specialist" name="learning_operations_specialist" nodeId="dfb129e"></Role>
+<Role pname="Product Engineering / Product Field Engineering Technician" name="prod_eng_prod_field_eng_tech" nodeId="1c8350ae"></Role>
+<Role pname="Sales Specialist" name="sales_specialist" nodeId="412c78e2"></Role>
+<Role pname="Security Specialist" name="security_specialist" nodeId="4fb4b6f2"></Role>
+<Role pname="Server Support Specialist" name="server_support_specialist" nodeId="9d98a680"></Role>
+<Role pname="Software Specialist" name="software_specialist" nodeId="84b724f8"></Role>
+<Role pname="Systems Management Specialist" name="systems_management_specialist" nodeId="d2549efc"></Role>
+<Role pname="Test Specialist" name="test_specialist" nodeId="944bca54"></Role>
+</RoleSet>
+<RoleSet pname="Team" name="team" nodeId="e1e94458">
+<Role pname="Configuration Control Board" name="configuration_control_board" nodeId="c77d3098"></Role>
+<Role pname="Contract Business Office (CBO)" name="contract_business_office" nodeId="151aaa9c"></Role>
+<Role pname="Management Team" name="management_team" nodeId="faae96dc"></Role>
+<Role pname="Project Management Office (PMO)" name="project_management_office" nodeId="484c10e0"></Role>
+<Role pname="Project Office" name="project_office" nodeId="2ddffd20"></Role>
+<Role pname="Subcontractor" name="subcontractor" nodeId="7b7d7724"></Role>
+</RoleSet>
+<RoleSet pname="Third Party (type)" name="third_party_type" nodeId="61116364"></RoleSet>
+</RoleSets>

@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Artifact: Workload Specification</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="workload_def_spec">
+<meta name="uma.presentationName" content="Workload Specification">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_WCR4YMRdEdyD76CYS6Ta7A", "_Ls0OIHOEEdyur-UVVhx-aQ"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_Ls0OIHOEEdyur-UVVhx-aQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Artifact: Workload Specification</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/artifact.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This specification contains the testing goals and the workload details (including user types, user scenarios, rates of work, measurements to be made, and performance objectives) necessary to be successful.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><ul class="noindent">
+    <li>
+        To accurately define the loading conditions under which the Target Test Items must operate within their Target
+        Configuration Environment.
+    </li>
+    <li>
+        To define a realistic representative workload that allows performance risks to be accurately assessed.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Main Description</th><td class="sectionTableCell">The workload profiles composing this artifact represent candidate conditions to be simulated against the Target Test Items
+under one or more Test Environment Configurations. These are typically determined by analyzing anticipated or existing
+actor characteristics, user business statistics, and so on. <!--EndFragment--></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Brief Outline</th><td class="sectionTableCell"><p>
+    <b>1. Introduction</b>
+</p>
+<blockquote>
+    <p>
+        Identifies the purpose, background, and objectives of the performance testing within this project.
+    </p>
+</blockquote>
+<p>
+    <b>2. System Attributes and Variables</b>
+</p>
+<blockquote>
+    <p>
+        Identifies the attributes and variables of the system that uniquely identify the workload for the system being
+        modeled.
+    </p>
+</blockquote>
+<p>
+    <b>3. Actor and External Clients Definitions</b>
+</p>
+<blockquote>
+    <p>
+        Identifies classes of external clients whose scenarios will need to be modeled to simulate or emulate loads on the
+        system-under-test. Additionally, this section identifies the proportion to which any actor comprises the load for a
+        performance test.
+    </p>
+</blockquote>
+<p>
+    <b>4. Actor Attributes</b>
+</p>
+<blockquote>
+    <p>
+        Identifies the attributes and variables of each actor that uniquely identify the different characteristics of the
+        external clients of the system. For each actor, identifies information such as human or non-human, data-feed rate,
+        think time, transaction style, transaction complexity, and behavior patterns characterizing the variability in user
+        interaction with the system.
+    </p>
+</blockquote>
+<p>
+    <b>5. Actor Work Profile</b>
+</p>
+<blockquote>
+    <p>
+        Identifies the specific scenarios executed by an actor, and the percentage of time or proportion of effort spent by
+        the actor executing the scenarios to accomplish their total business responsibilities.
+    </p>
+</blockquote>
+<p>
+    <b>6. Work Load Profile</b>
+</p>
+<blockquote>
+    <p>
+        For a given profile, identifies the number of external clients being simulated or emulated during the test,
+        including the number, type, and distribution of the transactions. A profile may be defined in terms of "peak load",
+        "average load" and so on.
+    </p>
+</blockquote>
+<p align="left">
+    <b>7. Measurements and Criteria</b>
+</p>
+<blockquote>
+    <p align="left">
+        Identifies the measurement and criteria to be used to evaluate successful achievement of the identified performance
+        objectives. Measurements typically include response time limits or throughput capacity.
+    </p>
+</blockquote>
+<p>
+    <b>8. Remote Terminal Emulation Requirements</b>
+</p>
+<blockquote>
+    <p>
+        Identifies the requirements and constraints necessary to be addressed in creating a Test Environment Configuration
+        that is acceptable for implementing and executing the performance testing.
+    </p>
+</blockquote></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Tailoring</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Impact of not having</th><td class="sectionTableCell"><p>
+    If the system under development has to address performance concerns, then not capturing the associated&nbsp;testing
+    goals and workload details might lead to:
+</p>
+<ul>
+    <li>
+        Failure of the system to match its performance requirements.
+    </li>
+    <li>
+        Lack of consistency in testing these requirements.
+    </li>
+    <li>
+        Missing key user scenarios, types, profiles.
+    </li>
+    <li>
+        Late discovery of performance related problems.
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Reasons for not needing</th><td class="sectionTableCell">Key artifact for most systems, especially those where system performance under load must be evaluated or where there are
+other significant quality risks associated with system operation under load. Not usually required for systems that will be
+deployed on a standalone target system.</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Representation Options</th><td class="sectionTableCell"><p>
+    The contents and format may require modification to meet the needs of internal or external standards, guidelines, and so on.
+    Optionally, some aspects can be encapsulated within the Test Plan.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Checklists</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/checklists/performance_testing_26CB9314.html" guid="_sB9l8HODEdyur-UVVhx-aQ">Workload Specification</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/concepts/performance_testing_178031DC.html" guid="_ovaQEHODEdyur-UVVhx-aQ">Performance Testing</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/guidelines/spec_work_profiles_83841C10.html" guid="_XyqTAMUwEdyJCceLNDhCjA">Specifying Work Profiles and Performance Measurements</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

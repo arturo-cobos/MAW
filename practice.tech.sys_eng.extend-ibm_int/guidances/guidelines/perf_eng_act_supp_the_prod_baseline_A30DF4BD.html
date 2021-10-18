@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Performance Engineering Activities Supporting the Production Baseline</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="perf_eng_act_supp_the_prod_baseline">
+<meta name="uma.presentationName" content="Performance Engineering Activities Supporting the Production Baseline">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mwebFA52CE6F31DB4642852572AC006EB6A1"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebFA52CE6F31DB4642852572AC006EB6A1"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Performance Engineering Activities Supporting the Production Baseline</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The Production Readiness Review (PRR) ensures that the implemented, tested system has been able to meet its requirements and is ready to be deployed. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.sys_eng.extend-ibm_int/tasks/perfrom_prod_readiness_review_4C9DB864.html" guid="mweb093C356700000113D4B3300AD0610CA6">Perform the Production Readiness Review</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1 Description
+</h3>
+<p>
+    In an Enterprise SE&A project, the Test Baseline encompasses the release contents, test plans and implementation
+    for the system described in the preceding baselines.
+</p>
+<p>
+    <strong>Figure 1 – Production Baseline in SE Capability Pattern</strong>
+</p>
+<p>
+    <img height="518" alt="" src="./../../../practice.tech.sys_eng.extend-ibm_int/guidances/guidelines/resources/perf_eng_act_supp_the_prod_baseline_img1.JPG" width="583" />
+</p>
+<p>
+    In the SE Capability Pattern, a number of work products are developed before it is time to review the Production
+    Baseline, as shown below.
+</p>
+<p>
+    <img style="WIDTH: 686px; HEIGHT: 141px" height="137" alt=""     src="./../../../practice.tech.sys_eng.extend-ibm_int/guidances/guidelines/resources/perf_eng_act_supp_the_prod_baseline_img2.JPG" width="600" />
+</p>
+<p>
+    The performance engineering team has a vested interest in ensuring that performance testing has confirmed the ability
+    of the system to meet its performance requirements, and that there are no performance- or capacity-related obstacles to
+    the system’s deployment in the production environment. Deliverables which are deemed deficient from a performance and
+    capacity standpoint may lead to the entry of a defect, which is then taken into account during the PRR Scorecard
+    process.
+</p>
+<p>
+    The PE team should also be working with operations and performance/capacity management personnel to ensure that system
+    performance and capacity can be managed successfully, and that performance-related service level attainment can be
+    measured and reported on an ongoing basis.
+</p>
+<h3>
+    2 Usage Context
+</h3>
+<p>
+    This technique paper should be used as guidance on applying PE activities and techniques in support of the Production
+    Baseline Phase.
+</p>
+<h3>
+    3 Content
+</h3>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        <strong>Organizing the PE Effort during the Production Baseline Phase</strong>
+    </p>
+    <p>
+        During this stage of the project, the PE team is typically concerned with activities such as the following.
+    </p>
+    <ul>
+        <li>
+            <b>Test confirmation of solution’s ability to meet performance requirements</b> – The performance test results
+            will generally give the most reliable indication, short of live production, of whether the solution is going to
+            be able to meet performance requirements.&nbsp;
+        </li>
+        <li>
+            <b>Validation of PE findings</b> – The results of the performance test will provide valuable feedback to the PE
+            team of the accuracy and effectiveness of their estimating, modeling and performance risk management efforts to
+            date.&nbsp;
+        </li>
+        <li>
+            <b>Deployment recommendation</b> – Once the planned testing is complete, the PE team should have a relatively
+            complete picture of how the solution can be expected to perform. At this point, the PE team may be called upon
+            directly or indirectly to contribute to a recommendation of whether or not the solution should be
+            deployed.&nbsp;
+        </li>
+        <li>
+            <b>Turnover to delivery / operations</b> – Since the delivery / operations team will be assuming responsibility
+            for the developed solution, the PE team and others should participate in turning over information that will be
+            needed to deploy and manage the solution in the production environment.&nbsp;
+        </li>
+        <li>
+            <b>Accepted monitoring approach</b> – During test, the performance monitoring approach should be rehearsed to
+            make sure that it will adequately support production.&nbsp;
+        </li>
+        <li>
+            <b>Confirmed capacity sizing</b> – Performance test results should serve to validate capacity sizing
+            information developed earlier.&nbsp;
+        </li>
+        <li>
+            <b>Accepted SLAs</b> – The delivery / operations team will be finalizing and instituting the Service Level
+            Agreement(s) for the system defined earlier, using findings from test and from initial production experience to
+            confirm that the SLAs can be supported.
+        </li>
+    </ul>
+    <p>
+        <b>Calibration and validation of earlier models</b> – Results from performance testing can be used to validate the
+        findings of earlier modeling, and make future modeling more accurate by adjusting the model so that its results
+        align more closely with the results of performance testing.
+    </p>
+</blockquote>
+<p dir="ltr">
+    <strong>Risk and Performance Management Focus during the Production Baseline Phase</strong>
+</p>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    The results of performance testing will serve to validate the findings of performance engineering, and more importantly
+    it will give a clearer, more complete picture of performance risk associated with the system. The PE team must now
+    contribute to the process of deciding whether or not the tested system can be deployed as planned. Ultimately the
+    decision of whether or not the system will be deployed is made by management, but the PE team and the other technical
+    stakeholders will be responsible for advising management of any risks associated with deployment which need to be
+    considered, and making a recommendation of what should be done. For SE&A-managed projects, the Production Readiness
+    Review (PRR) will provide the PE team their primary opportunity to contribute to the deployment decision.
+</p>
+<p dir="ltr">
+    <strong>Preparing for Production during the Production Baseline Phase</strong>
+</p>
+<p dir="ltr">
+    The primary purpose of the production baseline phase is to prepare to turn the solution over to the delivery /
+    operations team for deployment. Up to now, the PE team may already have been working with the delivery / operations
+    team on matters such as monitoring, capacity sizing and SLAs, which should now be close to a finalized state. The PE
+    team can continue to assist the delivery / operations team by:
+</p>
+<ul dir="ltr">
+    <li>
+        <div>
+            Participating in peer reviews of performance- and capacity-related deployment work products prior to the
+            PRR,&nbsp;
+        </div>
+    </li>
+    <li>
+        <div>
+            Ensuring that lessons learned from earlier phases (such as performance defects encountered and recommendations
+            for tuning and other improvements) are communicated to the delivery / operations team,&nbsp;
+        </div>
+    </li>
+    <li>
+        <div>
+            Seeing that the necessary performance and capacity management tools and procedures are in place to manage the
+            production system.
+        </div>
+    </li>
+</ul>
+<p dir="ltr">
+    <strong>Estimating Performance of the Production Solution</strong>
+</p>
+<p dir="ltr">
+    Even after performance results are available from the test and production environments, performance estimation and
+    modeling can still play a very important role in the future of the system. As previously discussed, the results of
+    testing and production can be used to calibrate earlier performance models, and then the improved models can be reused
+    to make performance and capacity projections for the future, even after deployment. Once developed, performance models
+    can continue to serve as valuable assets for future performance and capacity management if they are well maintained and
+    leveraged.
+</p>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    <strong>Interacting with Test Team during the Production Baseline Phase</strong>
+</p>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    The performance test may include multiple test scenarios and approaches, depending on what types of applications are
+    being tested, which performance requirements are covered and what areas of performance risk are being examined. For a
+    complex solution with many components, the combination of component-level and end-to-end performance testing may take
+    weeks or even months to complete, between populating databases, executing test scenarios, analyzing test results,
+    getting problems resolved as they are encountered, implementing tuning changes and other performance improvements, and
+    reporting on the results of the test. The performance test will require the use of a variety of skills, including test
+    environment management, performance test scripting and execution, platform-specific analysis and tuning,
+    application-level analysis and project management.
+</p>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    The PE team can assist in this effort by alerting the performance test teams to key performance risk areas in advance,
+    by reviewing the test plans and cases, and by assisting with the performance problem determination and performance
+    results analysis. It is helpful if the PE team and the performance test team uses a process such as the one shown below
+    to select a measurement and analysis approach that supports the performance reporting needs for the task at hand.
+</p>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    <img style="WIDTH: 655px; HEIGHT: 514px" height="514" alt=""     src="./../../../practice.tech.sys_eng.extend-ibm_int/guidances/guidelines/resources/perf_eng_act_supp_the_prod_baseline_img3.JPG" width="600" />
+</p>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    Depending on how responsibilities are divided, the PE team and the performance test team may choose either to
+    consolidate their respective teams’ findings or create separate reports. However this is done, the goal should be to
+    provide the customer not only with the results of the PE and testing efforts, but with analysis, findings and
+    recommendations which can be understood and used to make business decisions.
+</p>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    <strong>Participating in the Production Readiness Review (PRR)</strong>
+</p>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    In addition to reviewing the results of the performance test, the following excerpt from the Preliminary Review
+    scorecard denotes the PRR criteria which apply to performance matters.
+</p><br dir="ltr" style="MARGIN-RIGHT: 0px" />
+<br />
+<table style="WIDTH: 597px; HEIGHT: 28px" cellspacing="2" cellpadding="2" width="597" border="1">
+    <tbody>
+        <tr>
+            <td>
+                <p>
+                    <strong>1. Requirements and Architecture (Content)</strong>
+                </p>
+                <p>
+                    <b>1.2 Requirements in the baseline versus requirements being delivered - Non functional requirements
+                    defined, enumerated, traced</b>
+                </p>
+                <p>
+                    <b>1.5 Gaps or risks identified and mitigated or transferred (Exclusions)</b>
+                </p>
+                <p>
+                    <b>2. Test Results</b>
+                </p>
+                <p>
+                    <b>2.2 Non-functional testing complete or projected</b>
+                </p>
+                <p>
+                    <b>2.4 Gaps or risks identified and mitigated or transferred (Exclusions)</b>
+                </p>
+                <p>
+                    <b>3. Expected Availability, Performance, and Response Times</b>
+                </p>
+                <p>
+                    <b>3.1 Expected end-to-end availability in production</b>
+                </p>
+                <p>
+                    <b>3.2 Expected system response times and other performance criteria (if not covered in performance or
+                    stress test results)</b>
+                </p>
+                <p>
+                    <b>3.3 Infrastructure changes made to the production systems to meet requirements</b>
+                </p>
+                <p>
+                    <b>3.4 Gaps or risks identified and mitigated or transferred (Exclusions)</b>
+                </p>
+                <p>
+                    <b>6. Deployment / Production Readiness</b>
+                </p>
+                <p>
+                    <b>6.2 Install Plans defined</b>
+                </p>
+                <p>
+                    <b>6.6 Dependencies, Issues and Risks defined</b>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    Below are some examples of questions that the PE team can be asking above and beyond the standard PRR scorecard
+    criteria.
+</p>
+<ul dir="ltr">
+    <li>
+        <div style="MARGIN-RIGHT: 0px">
+            Do the performance test results indicate that the solution will meet the performance requirements and SLRs
+            within the constraints of the capacity plan?&nbsp;
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-RIGHT: 0px">
+            Is there (or are there plans to develop) a Service Level Agreement (SLA) for the deployed solution?&nbsp;
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-RIGHT: 0px">
+            Have the tuning recommendations from test been communicated to the deployment team and planned for
+            implementation?&nbsp;
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-RIGHT: 0px">
+            Have all tests been completed and all performance requirements been met within acceptable tolerances?&nbsp;
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-RIGHT: 0px">
+            Is there documented evidence of the performance acceptance criteria having been met? If not, will the
+            stakeholder sign off on any exceptions to allow deployment to continue?&nbsp;
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-RIGHT: 0px">
+            Did the performance test team rehearse the live monitoring and performance/capacity management tools and
+            processes that will be used by the production support team? If so, have the results of this rehearsal been
+            communicated to production support, or were they involved in the rehearsal process?&nbsp;
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-RIGHT: 0px">
+            Has the production support implemented the live monitoring and reporting tools and processes that will be
+            needed to support the deployed solution with respect to performance and capacity?&nbsp;
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-RIGHT: 0px">
+            Has the performance risk been reassessed since the TRR and are those risks being adequately addressed?<br />
+            Are there plans that will allow for a backout, staged implementation or extra capacity should unforeseen
+            critical performance or capacity issues occur?
+        </div>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

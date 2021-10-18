@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Integration Testing</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="integration_testing">
+<meta name="uma.presentationName" content="Integration Testing">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb7D5C2E483B4798FD852567FA0048BEEE"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb7D5C2E483B4798FD852567FA0048BEEE"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Integration Testing</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1&nbsp;Description
+</h3>
+<p>
+    An Integration Test is conducted to prove that a module or group of interfacing modules operates as expected and that
+    the program code performs as defined in the module specification. If an existing Integration Test Plan is being reused
+    as a basis for this Integration Test Plan (Form 12) ensure that the Integration Groups accurately reflect this
+    Maintenance Work Item.
+</p>
+<p>
+    When resolving a Problem Log, some of the test conditions will already have been identified as part of "Recreate
+    Problem," and will be available for reuse from the Problem Resolution Report.
+</p>
+<h4>
+    1&nbsp; Integration Group Definition
+</h4>
+<p>
+    Programs that use the same data stores are grouped to form units, Integration Groups, that can be discretely tested to
+    a high level.&nbsp; For instance, programs that create, modify, delete, and report on a particular record type form a
+    good integration group.&nbsp; If possible, choose the integration groups so that a common logic module is in only one
+    group.&nbsp;
+</p>
+<p>
+    However, for maintenance on some legacy systems it may not always be possible for clean cut logical Integration Groups
+    to be scoped.&nbsp; This is due primarily to the way that the system has been constructed where multiple modules access
+    a small number of very large files.&nbsp; To then create meaningful Integration Groups would be to create Integration
+    Groups that were almost the entire system.
+</p>
+<p>
+    To help define an Integration Group's scope, reference should be made to the impact analysis that was performed in the
+    Analyse System Components task.&nbsp; By reviewing such reports as where a data element (field) is used by a module it
+    will be possible to build Integration Groups based on this analysis.
+</p>
+<p>
+    The Integration Group dependency should now be established.&nbsp;
+</p>
+<p>
+    Complete the following steps using the database prepared in the Construct Database subtask.
+</p>
+<ol>
+    <li>
+        Prepare Data - To test a module, prepare both JCL and test data.&nbsp;<br />
+    </li>
+    <li>
+        Prepare Test Conditions - A rule that must be tested to ensure the correct operation of a procedure step, module,
+        action statement or statement block.
+    </li>
+</ol>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    [NOTE: if there are dates involved, consider the implications for 21st Century]
+</p>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    There are several types of conditions:
+</p>
+<ul>
+    <li>
+        Permitted Range Checks are test conditions on whether or not a value falls within a defined range.&nbsp; Values
+        outside the range must be rejected.&nbsp; A test case is developed for valid, invalid, null and boundary
+        values.<br />
+    </li>
+    <li>
+        Algorithms and Computations are test conditions to check correct functioning of algorithms.<br />
+    </li>
+    <li>
+        Integrity Conditions are test conditions to ensure that integrity rules are correctly applied on database
+        updates.<br />
+    </li>
+    <li>
+        Existence Checks are attempts made to retrieve records that should exist and others that should not exist.
+    </li>
+</ul>
+<p>
+    The information recorded for a test condition is the procedure/step/action statement/statement block to be validated,
+    and the rule to be tested.
+</p>
+<p>
+    For example, the statement block or program/module associated with the control condition "month less than 13" results
+    in two test conditions whose rules are:
+</p>
+<ul>
+    <li>
+        If MONTH less than 13 then valid path taken<br />
+    </li>
+    <li>
+        If MONTH not less than 13 then invalid path taken
+    </li>
+</ul>
+<p>
+    Note, it may be possible to be more specific about what a valid or invalid path is.&nbsp; No test data values are
+    specified here.
+</p>
+<p dir="ltr">
+    3.&nbsp;&nbsp;Prepare Test Case – For each test condition, prepare a test case consisting of input data and anticipated
+    results.&nbsp; A comparison of anticipated and actual test results will show if the result is correct or erroneous.
+</p>
+<p>
+    Errors will normally require individual test cases.&nbsp; Whenever possible, verify several correct test conditions in
+    a single test case.
+</p>
+<p>
+    4.&nbsp;Document Test Case – For each test case, document:
+</p>
+<ul>
+    <li>
+        Test conditions that the test case is verifying<br />
+    </li>
+    <li>
+        Field values for input screens, documents, and records<br />
+    </li>
+    <li>
+        Initial database state<br />
+    </li>
+    <li>
+        Field values for output screens, reports, and records<br />
+    </li>
+    <li>
+        Resulting database state
+    </li>
+</ul>
+<p>
+    Test Cases are grouped into Test Cycles.
+</p>
+<p>
+    5.&nbsp;Prepare Test Cycle
+</p>
+<p>
+    A test cycle is a collection of test cases that are applied in sequence to verify the correct operation of all the test
+    conditions tested by the test cases.&nbsp; It may be performed as a practical on-line testing session, a batch test run
+    or an entirely clerical trial procedure.&nbsp; The test cases are applied in sequence within a test cycle.
+</p>
+<p>
+    In general, the test data for a test cycle will consist of an initial database, input data for each test case,
+    anticipated results for each test case and a final database of expected results.
+</p>
+<p>
+    For each test case, all activities of the tester are recorded.&nbsp; Input data consist of the activities required,
+    together with values for the fields that must be entered.&nbsp; This assumes that the database, files and screens have
+    results based on the previous test cases.
+</p>
+<p>
+    The anticipated results, documented in the test plan, must be detailed enough to show the specific results that are to
+    be validated by testing.&nbsp; If multiple test cases have been developed for a test condition, the test cases may
+    belong to different test cycles and may be documented accordingly.&nbsp; The final test case in a test cycle must
+    provide a full description of the anticipated database.
+</p>
+<p>
+    The Integration Test Cycle dependency should now be established.
+</p>
+<p>
+    6.&nbsp;Define Database State – The formats of the test data will vary, for example, with modification to the test
+    database, dialogue inputs, or inputs to a dialogue simulator.&nbsp; Rather than define the initial database state and
+    the resulting database state for each test case, it may be easier to do it once for the entire test cycle.
+</p>
+<p>
+    7.&nbsp;Define Test Data – If a module is not involved in integration testing, it is not necessary to define test data
+    for that module.&nbsp; The module will be tested when its calling module is tested.
+</p>
+<p>
+    8.&nbsp;Sample Integration Tests
+</p>
+<p>
+    9.&nbsp;Permitted Range Checks – Test conditions to check acceptance of a value within a range and rejection of values
+    outside a range must be derived.&nbsp; A field shall be tested for valid, invalid, null and boundary values.
+</p>
+<p>
+    10.&nbsp;Algorithm and Computation – Test conditions to check the correct functioning of algorithms must be derived.
+</p>
+<p>
+    11.&nbsp;Integrity Rule – Test conditions to ensure that integrity rules are correctly applied must be derived,
+    particularly on database updates.
+</p>
+<p>
+    12.&nbsp;Existence Checks – Attempts must be made to:
+</p>
+<ul>
+    <li>
+        Retrieve records that should exist and others that should not exist<br />
+    </li>
+    <li>
+        Store records with duplicate keys , including both valid and invalid instances
+    </li>
+</ul>
+<p>
+    13.&nbsp;Edit Function – Certain fields (e.g., dates) are likely to be stored in a different format from the one in
+    which they are displayed.&nbsp; Test conditions must be established to ensure that this works, perhaps using white-box
+    techniques.
+</p>
+<p>
+    14.&nbsp;Input-Output – Test conditions are required to ensure that records are created, updated and deleted.&nbsp;
+    This can usually be performed by multiple test cycles that use the black-box method.&nbsp; Test conditions must also be
+    created to ensure the working of basic database functions, such as the attempted creation of duplicate key records, the
+    retrieval of non-existent records, and the changing and deletion of key fields.
+</p>
+<p>
+    15.&nbsp;Output Formatting – Processing related to the arrangement of information on a screen or report must be
+    checked.&nbsp; A higher-level test must take data from being input on a screen to being printed on a report.
+</p>
+<p>
+    16.&nbsp;Audit Trails – Any internal checks, such as record counts and access constraints, should be tested.
+</p>
+<p>
+    17.&nbsp;Security Violation – Test conditions shall be derived to attempt to violate security.
+</p>
+<p>
+    18.&nbsp;Error Handling – Conditions should be established to identify and report expected (e.g., user-created) and
+    unexpected, system-failure-created (e.g., database-call) errors.
+</p>
+<p>
+    19.&nbsp;Regression Test – This is a test that ensures that no new errors have been introduced into existing
+    modules/integration group.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

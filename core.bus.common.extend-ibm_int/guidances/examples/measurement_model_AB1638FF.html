@@ -1,0 +1,1441 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Measurement Model</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="measurement_model">
+<meta name="uma.presentationName" content="Measurement Model">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_RugcsFrLEdyF--678j6dPw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Measurement Model</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.bus.common.extend-ibm_lic/workproducts/measurement_model_3C6612FB.html" guid="mweb711C1245231E681985256A0D007648AF">Measurement Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><div>
+    <a><strong>Measurement Entity Model Goals-Behaviors Mapping</strong></a>
+</div>
+<div>
+    &nbsp;
+</div>
+<div>
+    <table border="1">
+        <thead>
+            <tr>
+                <td valign="top" width="218">
+                    <br />
+                     <strong>Goals</strong> 
+                </td>
+                <td valign="top" width="263">
+                    <br />
+                     <b>Behaviors</b> 
+                </td>
+                <td valign="top" width="315">
+                    <br />
+                     <b>Measurement Entity</b> 
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td valign="top" width="218">
+                    <ol>
+                        <li>
+                            Right Job Mix
+                        </li>
+                        <li style="list-style: none">
+                            <ul>
+                                <li>
+                                    Skill Requirements
+                                </li>
+                                <li>
+                                    Skills Inventory
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Retention and Growth<br />
+                        </li>
+                    </ol>
+                </td>
+                <td valign="top" width="263">
+                    <ul>
+                        <li>
+                            Forecast skill need on a rolling <i>x</i> month basis
+                        </li>
+                        <li>
+                            Know/monitor the current skills
+                        </li>
+                        <li>
+                            Manage to the skills gap
+                        </li>
+                        <li>
+                            Proactive approach to retain high performers
+                        </li>
+                        <li>
+                            Proactive approach to retain critical skill areas
+                        </li>
+                        <li>
+                            Plan and manage to short-term and long-term usage of contractors
+                        </li>
+                        <li>
+                            Manage to the reduction of long-term contractor dependencies
+                        </li>
+                        <li>
+                            Recruit entry level staff to meet a portion of future skills need
+                        </li>
+                        <li>
+                            Hire experienced people to fill immediate skill needs, which are long-term in nature
+                        </li>
+                    </ul>
+                </td>
+                <td valign="top" width="315">
+                    <ul>
+                        <li>
+                            Right Job mix (planned need vs. job inventory)
+                        </li>
+                        <li>
+                            Job Satisfaction
+                        </li>
+                        <li>
+                            Percent Contract Attrition
+                        </li>
+                        <li>
+                            Contractor engagement duration
+                        </li>
+                        <li>
+                            Percent Subcontractor Utilization
+                        </li>
+                        <li>
+                            Job offer acceptance rate
+                        </li>
+                        <li>
+                            Cycle time to fill a position&nbsp;
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div>
+    <br />
+     <strong>Sample Measurement Model</strong>
+</div>
+<div>
+    &nbsp;
+</div>
+<div>
+    Below is a partial table showing computed metrics that support the measurement entities defined above. Initially, the
+    table may contain partly defined measurement entities. The final version of this table should clearly indicate the
+    computed metrics that will be implemented at the account.
+</div>
+<div>
+    &nbsp;
+</div>
+<div>
+    <table border="1">
+        <thead>
+            <tr>
+                <td width="105">
+                    <br />
+                     <b>Computed Metric Name</b> 
+                </td>
+                <td width="135">
+                    <br />
+                     <b>Computed Metric Definition</b> 
+                </td>
+                <td width="105">
+                    <br />
+                     <b>Primitive Metrics</b> 
+                </td>
+                <td width="113">
+                    <br />
+                     <b>Calculation</b> 
+                </td>
+                <td width="98">
+                    <br />
+                     <b>Frequency of Data Capture</b> 
+                </td>
+                <td width="113">
+                    <br />
+                     <b>Reporting Frequency</b> 
+                </td>
+                <td width="90">
+                    <br />
+                     <b>Reporting Process</b> 
+                </td>
+                <td width="135">
+                    <br />
+                     <b>Organizational Owner</b> 
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td valign="top" width="105">
+                    <br />
+                     <b>Percent Contract Attrition</b> 
+                </td>
+                <td valign="top" width="135">
+                    <br />
+                     Number of resources who leave the account as a percentage of the contract population
+                </td>
+                <td valign="top" width="105">
+                    <br />
+                     X = IBM Attritions<br />
+                     Y = Subcontractor Attritions<br />
+                     A = IBM Head Count<br />
+                     B = Subcontractor Head Count
+                </td>
+                <td valign="top" width="113">
+                    <br />
+                     Percent Contract Attrition = ((X+Y) / (A+B)) * 100
+                </td>
+                <td valign="top" width="98">
+                    <br />
+                     Monthly
+                </td>
+                <td valign="top" width="113">
+                    <br />
+                     Monthly
+                </td>
+                <td valign="top" width="90">
+                    <br />
+                     HR Planning Process
+                </td>
+                <td valign="top" width="135">
+                    <br />
+                     HR Manager
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="105">
+                    <br />
+                     <b>Percent Subcontractor Utilization</b> 
+                </td>
+                <td valign="top" width="135">
+                    <br />
+                     Number of billable labor hours worked by subcontractors on a contract as a percentage of the number of
+                    labor hours worked by subcontractors
+                </td>
+                <td valign="top" width="105">
+                    <br />
+                     X = Subcontractor Billable Labor Hours<br />
+                     Y = Subcontractor Labor Hours
+                </td>
+                <td valign="top" width="113">
+                    <br />
+                     Percent Subcontractor Utilization = (X / Y) * 100<br />
+                     
+                </td>
+                <td valign="top" width="98">
+                    <br />
+                     Weekly
+                </td>
+                <td valign="top" width="113">
+                    <br />
+                     Monthly
+                </td>
+                <td valign="top" width="90">
+                    <br />
+                     PE Review Process
+                </td>
+                <td valign="top" width="135">
+                    <br />
+                     Business Operations Manager
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="105">
+                    <br />
+                     <b>Job Satisfaction</b> 
+                </td>
+                <td valign="top" width="135">
+                    <br />
+                     The satisfaction of randomly surveyed employees. A numeric value will be assigned to reflect the level
+                    of satisfaction. The range of results of 80% of those surveyed will be reported. Details will be
+                    available by job family (perhaps job grade within family), and by survey category.
+                </td>
+                <td valign="top" width="105">
+                    <br />
+                     Detailed survey results<br />
+                     
+                </td>
+                <td valign="top" width="113">
+                    <br />
+                     Uses a scale 0-3 and averages all scores per questions, then averages by roll-up
+                </td>
+                <td valign="top" width="98">
+                    <br />
+                     Quarterly
+                </td>
+                <td valign="top" width="113">
+                    <br />
+                     Quarterly
+                </td>
+                <td valign="top" width="90">
+                    <br />
+                     Job Survey Process
+                </td>
+                <td valign="top" width="135">
+                    <br />
+                     LOB Manager
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>
+    <br clear="all" />
+     <a><strong>Behaviors to Measurement Entity Matrix</strong></a>
+</p>
+<table border="1">
+    <tbody>
+        <tr>
+            <td width="183">
+                <br />
+                 
+            </td>
+            <td width="619" colspan="8">
+                <br />
+                 <b>People Measurements</b> 
+            </td>
+        </tr>
+        <tr>
+            <td width="183">
+                <br />
+                 <b>Behaviors/ Measurements</b> 
+            </td>
+            <td width="64">
+                <br />
+                 Job Satisfaction
+            </td>
+            <td width="83">
+                <br />
+                 Percent Contract Attrition
+            </td>
+            <td width="83">
+                <br />
+                 Reasons for Exit
+            </td>
+            <td width="75">
+                <br />
+                 Certification Program Effectiveness
+            </td>
+            <td width="68">
+                <br />
+                 Contractor Engagement Duration
+            </td>
+            <td width="90">
+                <br />
+                 Percent Subcontractor Utilization
+            </td>
+            <td width="45">
+                <br />
+                 Unfilled Positions
+            </td>
+            <td width="113">
+                <br />
+                 Job Offer Acceptance Rate
+            </td>
+        </tr>
+        <tr>
+            <td width="183">
+                <br />
+                 <b>People Behaviors</b> 
+            </td>
+            <td width="64">
+                <br />
+                 
+            </td>
+            <td width="83">
+                <br />
+                 
+            </td>
+            <td width="83">
+                <br />
+                 
+            </td>
+            <td width="75">
+                <br />
+                 
+            </td>
+            <td width="68">
+                <br />
+                 
+            </td>
+            <td width="90">
+                <br />
+                 
+            </td>
+            <td width="45">
+                <br />
+                 
+            </td>
+            <td width="113">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr>
+            <td width="183">
+                <br />
+                 Forecast skill need on a rolling x month basis
+            </td>
+            <td width="64">
+                <br />
+                 
+            </td>
+            <td width="83">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="83">
+                <br />
+                 
+            </td>
+            <td width="75">
+                <br />
+                 
+            </td>
+            <td width="68">
+                <br />
+                 
+            </td>
+            <td width="90">
+                <br />
+                 
+            </td>
+            <td width="45">
+                <br />
+                 
+            </td>
+            <td width="113">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr>
+            <td width="183">
+                <br />
+                 Know/monitor the current skills
+            </td>
+            <td width="64">
+                <br />
+                 
+            </td>
+            <td width="83">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="83">
+                <br />
+                 
+            </td>
+            <td width="75">
+                <br />
+                 
+            </td>
+            <td width="68">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="90">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="45">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="113">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr>
+            <td width="183">
+                <br />
+                 Manage to the skills gap
+            </td>
+            <td width="64">
+                <br />
+                 
+            </td>
+            <td width="83">
+                <br />
+                 
+            </td>
+            <td width="83">
+                <br />
+                 
+            </td>
+            <td width="75">
+                <br />
+                 
+            </td>
+            <td width="68">
+                <br />
+                 
+            </td>
+            <td width="90">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="45">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="113">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr>
+            <td width="183">
+                <br />
+                 Actively manage environmental issues
+            </td>
+            <td width="64">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="83">
+                <br />
+                 
+            </td>
+            <td width="83">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="75">
+                <br />
+                 
+            </td>
+            <td width="68">
+                <br />
+                 
+            </td>
+            <td width="90">
+                <br />
+                 
+            </td>
+            <td width="45">
+                <br />
+                 
+            </td>
+            <td width="113">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr>
+            <td width="183">
+                <br />
+                 Plan and manage to short-term and long-term usage of contractors
+            </td>
+            <td width="64">
+                <br />
+                 
+            </td>
+            <td width="83">
+                <br />
+                 
+            </td>
+            <td width="83">
+                <br />
+                 
+            </td>
+            <td width="75">
+                <br />
+                 
+            </td>
+            <td width="68">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="90">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="45">
+                <br />
+                 
+            </td>
+            <td width="113">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr>
+            <td width="183">
+                <br />
+                 Manage to the reduction of long-term contractor dependencies
+            </td>
+            <td width="64">
+                <br />
+                 
+            </td>
+            <td width="83">
+                <br />
+                 
+            </td>
+            <td width="83">
+                <br />
+                 
+            </td>
+            <td width="75">
+                <br />
+                 
+            </td>
+            <td width="68">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="90">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="45">
+                <br />
+                 
+            </td>
+            <td width="113">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr>
+            <td width="183">
+                <br />
+                 Recruit entry level staff to meet a portion of future skills need
+            </td>
+            <td width="64">
+                <br />
+                 
+            </td>
+            <td width="83">
+                <br />
+                 
+            </td>
+            <td width="83">
+                <br />
+                 
+            </td>
+            <td width="75">
+                <br />
+                 
+            </td>
+            <td width="68">
+                <br />
+                 
+            </td>
+            <td width="90">
+                <br />
+                 
+            </td>
+            <td width="45">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="113">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr>
+            <td width="183">
+                <br />
+                 Hire experienced people to fill immediate skill needs, which are long-term in nature
+            </td>
+            <td width="64">
+                <br />
+                 
+            </td>
+            <td width="83">
+                <br />
+                 
+            </td>
+            <td width="83">
+                <br />
+                 
+            </td>
+            <td width="75">
+                <br />
+                 
+            </td>
+            <td width="68">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="90">
+                <br />
+                 
+            </td>
+            <td width="45">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="113">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr>
+            <td width="183">
+                <br />
+                 Proactively manage recruitment until new hires are on-board
+            </td>
+            <td width="64">
+                <br />
+                 
+            </td>
+            <td width="83">
+                <br />
+                 
+            </td>
+            <td width="83">
+                <br />
+                 
+            </td>
+            <td width="75">
+                <br />
+                 
+            </td>
+            <td width="68">
+                <br />
+                 
+            </td>
+            <td width="90">
+                <br />
+                 
+            </td>
+            <td width="45">
+                <br />
+                 
+            </td>
+            <td width="113">
+                <br />
+                 <b>X</b> 
+            </td>
+        </tr>
+        <tr>
+            <td width="183">
+                <br />
+                 Proactively foster long-term relationships with local recruitment sources
+            </td>
+            <td width="64">
+                <br />
+                 
+            </td>
+            <td width="83">
+                <br />
+                 
+            </td>
+            <td width="83">
+                <br />
+                 
+            </td>
+            <td width="75">
+                <br />
+                 
+            </td>
+            <td width="68">
+                <br />
+                 
+            </td>
+            <td width="90">
+                <br />
+                 
+            </td>
+            <td width="45">
+                <br />
+                 
+            </td>
+            <td width="113">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr>
+            <td width="183">
+                <br />
+                 Create an environment attractive to targeted recruits
+            </td>
+            <td width="64">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="83">
+                <br />
+                 
+            </td>
+            <td width="83">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="75">
+                <br />
+                 
+            </td>
+            <td width="68">
+                <br />
+                 
+            </td>
+            <td width="90">
+                <br />
+                 
+            </td>
+            <td width="45">
+                <br />
+                 
+            </td>
+            <td width="113">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr>
+            <td width="183">
+                <br />
+                 <b>Measurement Subtotal</b> 
+            </td>
+            <td width="64">
+                <br />
+                 <b>2</b> 
+            </td>
+            <td width="83">
+                <br />
+                 <b>2</b> 
+            </td>
+            <td width="83">
+                <br />
+                 <b>2</b> 
+            </td>
+            <td width="75">
+                <br />
+                 <b>0</b> 
+            </td>
+            <td width="68">
+                <br />
+                 <b>4</b> 
+            </td>
+            <td width="90">
+                <br />
+                 <b>4</b> 
+            </td>
+            <td width="45">
+                <br />
+                 <b>4</b> 
+            </td>
+            <td width="113">
+                <br />
+                 <b>1</b> 
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <br />
+     The measurement subtotal scores are derived from simple counts of the number of X’s in each of the columns. Those
+    measures with the highest scores satisfy the most number of behaviors and are more desirable as important measures
+    since they provide more knowledge and insight for the cost of implementation.&nbsp;<br />
+     <b><br clear="all" />
+    </b><br />
+     <a><strong>Related Measurement Entity Matrix</strong></a>
+</p>
+<table border="1">
+    <tbody>
+        <tr>
+            <td width="218">
+                <br />
+                 
+            </td>
+            <td width="555" colspan="16">
+                <br />
+                 <b>People Measurements</b> 
+            </td>
+        </tr>
+        <tr>
+            <td width="218">
+                <br />
+                 <b>Measurements</b> 
+            </td>
+            <td width="60">
+                <br />
+                 Job Satisfaction
+            </td>
+            <td width="68" colspan="3">
+                <br />
+                 Percent Contract Attrition
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 Reasons for Exit
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 Certification Program Effectiveness
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 Contractor Engagement Duration
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 Percent Subcontractor Utilization
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 Unfilled Positions
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 Job Offer Acceptance Rate
+            </td>
+        </tr>
+        <tr>
+            <td width="218">
+                <br />
+                 <b>People Measurements</b> 
+            </td>
+            <td width="60">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="3">
+                <br />
+                 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr>
+            <td width="218">
+                <br />
+                 Job Satisfaction
+            </td>
+            <td width="63" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="63">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="2">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr>
+            <td width="218">
+                <br />
+                 Percent Contract Attrition
+            </td>
+            <td width="63" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="63">
+                <br />
+                 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="2">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr>
+            <td width="218">
+                <br />
+                 Reasons for Exit
+            </td>
+            <td width="63" colspan="2">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="63">
+                <br />
+                 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="2">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr>
+            <td width="218">
+                <br />
+                 Certification Program Effectiveness
+            </td>
+            <td width="63" colspan="2">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="63">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="2">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr>
+            <td width="218">
+                <br />
+                 Contractor Engagement Duration
+            </td>
+            <td width="63" colspan="2">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="63">
+                <br />
+                 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="2">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr>
+            <td width="218">
+                <br />
+                 Percent Subcontractor Utilization
+            </td>
+            <td width="63" colspan="2">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="63">
+                <br />
+                 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="2">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr>
+            <td width="218">
+                <br />
+                 Unfilled Positions
+            </td>
+            <td width="63" colspan="2">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="63">
+                <br />
+                 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="2">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr>
+            <td width="218">
+                <br />
+                 Job Offer Acceptance Rate
+            </td>
+            <td width="63" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="63">
+                <br />
+                 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 <b>X</b> 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 
+            </td>
+            <td width="2">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr>
+            <td width="218">
+                <br />
+                 <b>Measurement Subtotal</b> 
+            </td>
+            <td width="63" colspan="2">
+                <br />
+                 <b>5</b> 
+            </td>
+            <td width="63">
+                <br />
+                 <b>2</b> 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 <b>2</b> 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 <b>3</b> 
+            </td>
+            <td width="75" colspan="2">
+                <br />
+                 <b>2</b> 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 <b>3</b> 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 <b>2</b> 
+            </td>
+            <td width="68" colspan="2">
+                <br />
+                 <b>2</b> 
+            </td>
+            <td width="2">
+                <br />
+                 
+            </td>
+        </tr>
+        <tr height="0">
+            <td width="214">
+            </td>
+            <td width="59">
+            </td>
+            <td width="3">
+            </td>
+            <td width="62">
+            </td>
+            <td width="2">
+            </td>
+            <td width="71">
+            </td>
+            <td width="2">
+            </td>
+            <td width="71">
+            </td>
+            <td width="2">
+            </td>
+            <td width="71">
+            </td>
+            <td width="2">
+            </td>
+            <td width="64">
+            </td>
+            <td width="2">
+            </td>
+            <td width="64">
+            </td>
+            <td width="2">
+            </td>
+            <td width="64">
+            </td>
+            <td width="2">
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <br />
+     The measurement subtotal is derived from the sum of Xs in each of the columns. Those measures that have the highest
+    scores also have the highest number of related measures, generally making them more desirable selections for the
+    initial Measurement Model. When prioritized against the results of the behaviors to measurement matrix, an initial set
+    of measurements can be identified.
+</p>
+<p>
+    The blacked out cells indicate a same-to-same condition that is irrelevant to the related measurements score.<b><br     clear="all" />
+    </b><br />
+     <a><strong>Measurement Model Categorization Schema</strong></a>
+</p>
+<p>
+    <img height="349" alt="" src="./../../../core.bus.common.extend-ibm_int/guidances/examples/resources/mmex1.JPG" width="507" />
+</p>
+<p>
+    <img height="377" alt="" src="./../../../core.bus.common.extend-ibm_int/guidances/examples/resources/mmex2.JPG" width="600" />
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

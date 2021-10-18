@@ -1,0 +1,856 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tool Mentor: Action Management using Rational PM</title>
+<meta name="uma.type" content="ToolMentor">
+<meta name="uma.name" content="action_management_rpm">
+<meta name="uma.presentationName" content="Action Management using Rational PM">
+<meta name="uma.category" content="Tool:rpm:Rational Portfolio Manager">
+<meta name="element_type" content="tool_mentor">
+<meta name="tool" content="Rational Portfolio Manager">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_4ghTYHu_Ed6TsOLr_oVa_g", "_zEamIBwmEd22jZjNtWB9-A"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_VTspMMRfEdyD76CYS6Ta7A", "_SG-TMEBPEd-wGLsu70MtEw", "_zEamIBwmEd22jZjNtWB9-A"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_zEamIBwmEd22jZjNtWB9-A"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Tool Mentor: Action Management using Rational PM</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/toolmentor.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This tool mentor provides guidance on how to perform Action Management when using the OnDemand Process Asset Library (OPAL) and Rational Portfolio Manager (Rational PM).</td>
+</tr>
+<tr>
+<td>Tool: <a href="./../../../core.mgmt.opal.common.extend-ibm_int/tools/rpm_8A92C682.html" guid="_SG-TMEBPEd-wGLsu70MtEw">Rational Portfolio Manager</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <strong>1. Purpose</strong>
+</p>
+<p>
+    This document provides guidance how Rational PM is used to support Action Management in accordance with the OnDemand
+    Process Asset Library (OPAL). This document may serve as a template for creating a tailored procedure or
+    guideline.<br />
+    This guidance document contains three sections:
+</p>
+<ol>
+    <li>
+        Purpose
+    </li>
+    <li>
+        How Rational PM supports the OPAL procedure
+    </li>
+    <li>
+        Usage table for Rational PM data elements (fields)
+    </li>
+</ol>
+<p>
+    The intent of this guidance is to provide sufficient direction on how Rational PM is used on a project to support
+    Action Management, so that there are no ambiguities about the process and the team training can be concise.
+</p>
+<p>
+    The guidance assumes a basic understanding of how to use Rational PM and is not intended to be training material.
+    Detailed training on the use of Rational PM can be found by selecting Education and Training from the <a href="http://w3.ams1.ibm.com/igsdf/tools_mgmt.nsf/Content/RPM_RoleBased Education">GBS Rational Portfolio Management
+    Enablement</a> page.
+</p>
+<p>
+    <b>2. OPAL RPM Procedure - Tool Implementation of the OPAL Procedure</b>
+</p>
+<p>
+    The following process steps are taken from the <a href="http://opal.ibm.com/home/practice.mgmt.opal.hand_except.extend-ibm_int/capabilitypatterns/action_management_procedure_int_5C1795BC.html" target="_blank">IMSP605 Action Management Procedure</a>. State refers to the State field in the Identification Portlet
+    of the Action in Rational PM. Each procedure step and associated OPAL data to be captured and updated are detailed
+    below.
+</p>
+<table class="TableGrid" border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td valign="top" width="55">
+                <p class="Normal" align="center">
+                    Step
+                </p>
+            </td>
+            <td valign="top" width="392">
+                <p class="Normal" align="center">
+                    Description
+                </p>
+            </td>
+            <td valign="top" width="184">
+                <p class="Normal" align="center">
+                    Input State Value
+                </p>
+            </td>
+            <td valign="top" width="216">
+                <p class="Normal" align="center">
+                    Possible Output State Values
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="55">
+                <p class="Normal" align="center">
+                    1
+                </p>
+            </td>
+            <td valign="top" width="392">
+                <br />
+                Review Action Log, Cancel, or Launch Pending Actions
+            </td>
+            <td valign="top" width="184">
+                <br />
+                Open
+            </td>
+            <td valign="top" width="216">
+                <br />
+                Assigned, Rejected, Closed
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="55">
+                <p class="Normal" align="center">
+                    2
+                </p>
+            </td>
+            <td valign="top" width="392">
+                <br />
+                Monitor Progress of Actions
+            </td>
+            <td valign="top" width="184">
+                <br />
+                Assigned
+            </td>
+            <td valign="top" width="216">
+                <br />
+                Assigned, To Be Validated
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="55">
+                <p class="Normal" align="center">
+                    3
+                </p>
+            </td>
+            <td valign="top" width="392">
+                <br />
+                Review Effectiveness of Actions
+            </td>
+            <td valign="top" width="184">
+                <br />
+                To Be Validated
+            </td>
+            <td valign="top" width="216">
+                <br />
+                Assigned, Implemented
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="55">
+                <br class="Normal" align="center" />
+                <br />
+            </td>
+            <td valign="top" width="392">
+                <br />
+                Close Action (RPM Workflow Step)
+            </td>
+            <td valign="top" width="184">
+                <br />
+                Implemented
+            </td>
+            <td valign="top" width="216">
+                <br />
+                Closed
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Action_ProcessFlow.jpg" width="600" height="550" /> 
+<h4 class="Normal">
+    Step 1 - Review Action Log, Cancel, or Launch Pending Actions - performed by Project Manager
+</h4>
+<p class="Normal">
+    Please note that Rational PM elements in <b>BOLD</b> text and highlights are considered required. Other fields and
+    portlets are recommended for completeness. Refer to the table in section 3 for a complete description of all fields,
+    standards and practices.
+</p>
+<ul>
+    <li class="Normal">
+        Receives Action from project stakeholder. 
+        <ul>
+            <li class="Normal">
+                CREATE Action in Scope Management using the OPAL IMSP605 Action template and the OPAL IMSP605 Action
+                layout. Key information that should be captured includes <b>Rank, Description, Target Date,</b> and
+                <b>Proposed By</b>. A value for the Action Category should be captured in the Attributes portlet. Action
+                <b>State</b>: OPEN
+            </li>
+            <li class="Normal">
+                The OPAL IMSP605 Action template can be located by selecting Template from the Rational PM Scope Management
+                View and expanding the Scope Templates / OPAL Scope Templates folder.
+            </li>
+        </ul>
+    </li>
+</ul>
+<p class="Normal">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Action_CreateElement.jpg" width="600" height="244" /><br class="Normal" />
+    <br />
+</p>
+<p class="Normal">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Action_Launch.jpg" width="440" height="480" /><br class="Normal" />
+    <br />
+</p>
+<ul>
+    <li class="Normal">
+        Review for validity: 
+        <ul>
+            <li class="Normal">
+                If Action is determined to be valid and in scope 
+                <ul>
+                    <li class="Normal">
+                        RECORD - assign Action owner in Staffing view or <b>Resources</b> portlet, enter Est Start, Est
+                        Finish, and <b>Target Date</b>. Additional information to capture includes Quantification/Impact,
+                        Order of Magnitude Cost/Benefits, Origin, and Impact portlets. Change <b>State</b> to ASSIGNED
+                    </li>
+                </ul>
+            </li>
+            <li class="Normal">
+                If Action is determined to be invalid reject Action 
+                <ul>
+                    <li class="Normal">
+                        RECORD&#160;- document reason for rejecting Action in the <b>Status</b> portlet, update Closed By
+                        portlet with person closing the Action. Change <b>State</b> to CLOSED
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul><br />
+<br />
+<p class="Normal">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Action_Validate.jpg" width="531" height="449" /><br class="Normal" />
+    <br />
+</p>
+<h4>
+    Step 2 - Monitor Progress of Actions - performed by Project Manager or designated Action Owner
+</h4>
+<ul>
+    <li class="Normal">
+        Review progress of launched actions. If the action requires more effort than originally expected, make it a task in
+        the Work Management view, or create a change request, or take some other appropriate action. 
+        <ul>
+            <li class="Normal">
+                If the action activity begins or is still in progress record activity in the <b>Status</b> portlet.
+                <b>State</b> remains ASSIGNED.
+            </li>
+            <li class="Normal">
+                For those actions that are performed and are completed, update <b>Resolution</b> portlet to reflect what
+                was done that resolved this Action and change <b>State</b> to 'TO BE VALIDATED'.<br />
+            </li>
+        </ul>
+    </li>
+    <li class="Normal">
+        Use OPAL ENG313 Action Detail Report and OPAL ENG314 Action Log to assist with monitoring of actions, reviews, and
+        provide information to non Rational PM users.
+    </li>
+</ul>
+<p class="Normal" align="center">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Action_Monitor.jpg" width="446" height="378" /><br class="Normal" align="center" />
+    <br />
+    <br class="Normal" align="center" />
+    <br />
+</p>
+<p class="Normal" align="center">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Action_ReportDetail.jpg" width="531" height="515" />
+</p>
+<p class="Normal" align="center">
+    <strong><img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Action_ReportLog.jpg" width="600" height="435" /></strong>
+</p>
+<h4>
+    Step 3 - Review Effectiveness of Actions - performed by Project Manager or designated Action Owner
+</h4>
+<ul>
+    <li class="Normal">
+        Determine if a effectiveness review is needed 
+        <ul>
+            <li class="Normal">
+                If it is determined that an effectiveness review is not needed update <b>Status</b> portlet and <b>Closed
+                By</b> portlet with person closing the action. Change <b>State</b> to CLOSED
+            </li>
+            <li class="Normal">
+                If it is determined that an effectiveness review is needed, launch effectiveness review. Document the
+                effectiveness review criteria and schedule in the <b>Review</b> portlet. 
+                <ul>
+                    <li class="Normal">
+                        If the effectiveness review demonstrates the Action can be closed update Closed <b>By</b> portlet
+                        with person and date. Document results of any effectiveness review in <b>Review</b> portlet. Change
+                        <b>State</b> to CLOSED
+                    </li>
+                    <li class="Normal">
+                        If the effectiveness review demonstrates the Actions taken did not meet the objectives, modify the
+                        Action, and document the results of the review in the <b>Review</b> portlet. Change <b>State</b> to
+                        ASSIGNED<br />
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<p class="Normal" align="center">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Action_Review.jpg" width="600" height="538" />
+</p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+    <p class="Normal" align="center">
+        3. Usage table for Rational PM data elements (fields)<br />
+        The table below describes the portlets and fields in the OPAL IMSP605 Action Layout in Rational PM. Portlets and
+        fields in <b>BOLD</b> are required, other fields and portlets are recommended for completeness.
+    </p>
+    <p class="Normal" align="center">
+        Note: different layouts exist and vary in the portlets they display.<br />
+        <br />
+    </p>
+</blockquote>
+<table class="NormalTable" border="1" cellspacing="0" bordercolor="#111111" cellpadding="0" width="99%">
+    <tbody>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                <b>Portlet/Field</b>
+            </td>
+            <td valign="top" width="40%" align="left">
+                <br />
+                <b>Description</b>
+            </td>
+            <td valign="top" width="40%" align="left">
+                <br />
+                <b>Standards and Practices</b>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#c0c0c0" valign="top" width="20%" colspan="3" align="left">
+                <br />
+                <b>Identification Portlet</b>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                <b>Rank</b>
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Rank defines the level of Severity of the Action<br />
+                <br />
+                This field is critical to the BMR Investment Map and should be set for each Action
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                <br />
+                <div>
+                    Select one of the following values:
+                </div>
+                <div>
+                    900: Critical
+                </div>
+                <div>
+                    700: High
+                </div>
+                <div>
+                    500: Medium
+                </div>
+                <div>
+                    300: Low
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                Reference Number
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Repository unique identifier for Action
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Rational PM assigns reference Number automatically
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                External Reference Number
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                The project may have its own numbering system. This field can be used for tracking that number
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                External Reference Number is the manual text assigned by the PM
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                Element security
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Security control - project level or by invitation. Project Level is the default
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                For confidential and commercially sensitive information, use "by invitation"
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                <b>Target Date</b>
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Target date for closing Action
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Enter the target date that is expected for closure of the Action
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                EST/Start
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Estimated start date
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Enter the date that activity is expected to start on the Action
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                EST/Finish
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Estimated finish date
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Enter the date that activity is expected to finish on the Action
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                <b>State</b>
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                The state is related to the step in workflow
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Use the following state values to identify the state of the Action during the lifecycle 
+                <div>
+                    <u>States</u>
+                </div>
+                <div>
+                    <div>
+                        Open: Initial state that the action has been put into Rational PM (action recorded)
+                    </div>
+                    <div>
+                        Assigned: Action has been assigned to responsible project team member(s)
+                    </div>
+                    <div>
+                        In Progress: Action is being resolved with approved plan
+                    </div>
+                    <div>
+                        To be validated: For those actions that are performed and require a later effectiveness review
+                    </div>
+                    <div>
+                        Closed: Action has been performed, validated, and accepted by the Action Owner
+                    </div><br />
+                    <br />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#c0c0c0" valign="top" width="20%" colspan="3" align="left">
+                <br />
+                <b>Free Text Portlets</b>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                <b>Description</b>
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Action description, in sufficient detail to be understood by others on the team
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Enter a complete and detailed description of the Action. Symptoms and facts that are causing concern
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                <b>Status</b>
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Comments on action solution
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Log of actions taken to perform Action management. Place the most current status on top marking it with the
+                automated date and time stamp
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                <b>Origin</b>
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                The basis of the action item. Where was it derived from
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Identifier of related issue or other event, if recorded, that this action is intended to resolve. There can
+                be more than one identifier
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                Impact
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Impact of this Action on the overall project
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Document the impact that this Action has on the project in terms of cost, schedule, scope, or customer
+                satisfaction. Reference any applicable Change Requests
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                <b>Resolution</b>
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Action Resolution
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Document the items or activities that resolved the Action
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                <b>Review</b>
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Information related to Action effectiveness reviews
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Enter necessity to review, schedule for review, and effectiveness criteria
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#c0c0c0" valign="top" width="20%" colspan="3" align="left">
+                <br />
+                <b>Quantification/Impact portlet</b>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                Schedule Impact in days
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Impact in days the element may have on the schedule
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Enter value in days
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                <b>Order of Magnitude Work in hours(s)</b>
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                The best estimate of the amount of work required to respond to this element
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Enter value in hours
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                Order of Magnitude Work Low in hour(s)
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                An estimate of the minimum amount of work required to respond to this element
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Enter value in hours
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                Order of Magnitude Work High in hour(s)
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                An estimate of the maximum amount of work required to respond to this element
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Enter value in hours
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#c0c0c0" valign="top" width="20%" colspan="3" align="left">
+                <br />
+                <b>Order of Magnitude Cost / Benefit portlet</b>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                <b>Order of Magnitude Cost</b>
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Ballpark estimate for the cost of the element
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Enter value in selected currency
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                Order of Magnitude Cost Low
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Ballpark estimate for the lowest possible cost of the element
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Enter value in selected currency
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                Order of Magnitude Cost High
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Ballpark estimate for the highest possible cost of the element
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Enter value in selected currency
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                Order of Magnitude Billable Revenue
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Ballpark estimate for the amount of Billable Revenue impacted by the element
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Enter value in selected currency
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                Order of Magnitude Non Billable Benefits
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Ballpark estimate for the amount of Non Billable Benefits impacted by the element
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                ter value in selected currency
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#c0c0c0" valign="top" width="20%" colspan="3" align="left">
+                <br />
+                <b>Other Portlets</b>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                Attributes
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Select attributes. Can be used to identify category of action. May be useful for portfolio reporting
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Enter a specific value for the Action Category attribute. Other attributes are dependent upon the owning
+                organization
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                <b>Resources</b>
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Resources that are assigned to the Action
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Assign resources within this portlet (or Staffing View). If restricted access is needed use the 'By
+                Invitation' option
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                <b>Proposed by</b>
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Name and date that resource opened the action
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Default entry is resource that created the action. Can be modified
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                Approved by
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Name and date that resource approved the action
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                For actions requiring approval this is the name of approver and date approved
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                <b>Closed By</b>
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Name and date that resource closed the action
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                Default entry is resource that closed the action. Can be modified
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="20%" align="left">
+                <br />
+                Status Update
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                History (version) of updates made to the RPM Action record
+            </td>
+            <td valign="top" width="40%">
+                <br />
+                System generated version control with ID, date, and time stamp of Action record change
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

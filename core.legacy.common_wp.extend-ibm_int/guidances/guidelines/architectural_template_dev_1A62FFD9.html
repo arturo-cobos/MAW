@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing Architectural Template</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="architectural_template_dev">
+<meta name="uma.presentationName" content="Developing Architectural Template">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_93TaYCVkEdyakqTCvnPBsA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_93TaYCVkEdyakqTCvnPBsA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing Architectural Template</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Migrated development approach from existing IBM Global Services Method work product</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/architectural_template_EBD3A673.html" guid="mweb85C7CEEC6BEC284B8525688200573750">Architectural Template</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    To define an Architectural Template on a project:
+</p>
+<p>
+    <b>1.</b> <b>Identify Required Templates</b>
+</p>
+<p>
+    Decide what topics are to be addressed by Architectural Templates. Candidates are:
+</p>
+<ul>
+    <li>
+        Integration of the user interface with the information system (e.g., MVC)
+    </li>
+    <li>
+        Multi-user synchronization
+    </li>
+    <li>
+        Client/Server communication
+    </li>
+    <li>
+        Persistency
+    </li>
+    <li>
+        Security
+    </li>
+    <li>
+        Error handling
+    </li>
+    <li>
+        Recovery
+    </li>
+    <li>
+        Workflow
+    </li>
+    <li>
+        Event notification
+    </li>
+    <li>
+        Transaction handling
+    </li>
+</ul>
+<p>
+    Compose a list of areas for which a generic approach can be outlined. Check for which one of these areas a combined
+    abstract collaboration can be defined.
+</p>
+<p>
+    <b>2.</b> <b>Decide Rules and Policies</b>
+</p>
+<p>
+    For each Architectural Template, define principles that govern the general features and behavior as well as the
+    interface of a service. These principles form the "heart" of an Architectural Template.
+</p>
+<p>
+    For example, a transaction strategy must define how resources are shared and how locking is handled:
+</p>
+<ul>
+    <li>
+        Decide how to share resources. One of the key decisions is defining the strategy for working with objects that are
+        used concurrently in different transactions. Specify whether there a separate instance of the customer object for
+        each transaction, a single instance that is shared between transactions. Each approach may lead to a very different
+        design and even to different infrastructure requirements. In both cases, a notification mechanism should inform
+        dependent objects at the end of the transaction.
+    </li>
+    <li>
+        Decide how to handle locking. On behalf of transactions, a locking strategy has to be defined. A transaction
+        service can drive the release of locks as the transaction commits or aborts. There are different possible lock
+        modes – read, write, intention read, intention write, and upgrade. Write locks can be optimistic or pessimistic.
+        Note that in a distributed object environment, locking is not necessarily handled only by the database.
+    </li>
+</ul>
+<p>
+    <b>3.</b> <b>Choose Implementation Approach and Products</b>
+</p>
+<p>
+    Decide whether the Architectural Template will be implemented by commercially available middleware, by adapting an
+    asset, or by project-specific code. For example, concrete products that will provide the basis for the transaction
+    handling have to be chosen. This may include a decision for a DBMS, a standard TP monitor, or an implementation of a
+    CORBA OTS.
+</p>
+<p>
+    The chosen rules and policies can influence the product choice profoundly, i.e., in such a way that it imposes another
+    decision (e.g., to favor a database that supports row-level locking or an implementation of a CORBA transaction service
+    that supports nested transactions). This choice is interdependent with other architectural choices.
+</p>
+<p>
+    <b>4.</b> <b>Define Detailed Collaborations</b>
+</p>
+<p>
+    In defining these collaborations:
+</p>
+<ul>
+    <li>
+        Identify abstract use cases out of concrete use cases.
+    </li>
+    <li>
+        Define the informal representation of the architecture (potentially based on the identified abstract
+        collaborations).
+    </li>
+    <li>
+        Determine the required roles and interactions in order to realize the abstract use cases. Document the
+        implementation of these roles in terms of the classes that will take on these roles. As a consequence, a class
+        diagram can be drawn relating the base classes of the framework to one another.
+    </li>
+</ul>
+<p>
+    Even when projects use a large-grained asset such as the San Francisco frameworks or CORBA based middleware, the
+    particular approach used to tackle the above areas needs to be decided. Many of these large-grained assets still leave
+    open a number of possibilities for constructing a particular solution.
+</p>
+<p>
+    <b>5.</b> <b>Validate the Adopted Approach</b>
+</p>
+<p>
+    Assess if needed transaction rates and usability requirements are met. This can be achieved by setting up prototypes
+    (see Section 6, Validation and Verification, for more detail).
+</p>
+<p>
+    <b>6.</b> <b>Define the Programming Interface</b>
+</p>
+<p>
+    According to the rules and policies, define the programming interface that is used by the application developer.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

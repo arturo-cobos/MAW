@@ -1,0 +1,670 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Designing for Performance and Capacity</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="designing_perf_capacity">
+<meta name="uma.presentationName" content="Designing for Performance and Capacity">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mwebE3636861DE592DCE8025666B004E0D71"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebE3636861DE592DCE8025666B004E0D71"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Designing for Performance and Capacity</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1&nbsp;Introduction
+</h3>
+<p>
+    The objective of this technique is to ensure that a design satisfies performance requirements and capacity
+    requirements. The technique is used during the production, validation and refinement of an Operational Model. It
+    describes issues to be considered, and how to approach the design and validation of performance and capacity
+    characteristics. It is applicable to all systems.
+</p>As the Operational Model evolves throughout a project, it is common for different parts of it to be at different levels
+of abstraction (and detail), and the technique should be applied flexibly to reflect this (e.g., step 3 may be used in one
+part of the system before step 2 is used in another). 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>Prior to using this technique, overall performance and capacity requirements for the system should have been
+captured in non-functional requirements. As the Operational Model has been developed, some more specific or local
+performance and capacity requirements may already have been identified. 
+<p>
+    There are often tradeoffs with other objectives and requirements - for example, delivering high performance may
+    conflict with high security or high availability.
+</p>
+<h3>
+    2&nbsp;Refine Conceptual-Level Operational Model for Performance and Capacity
+</h3>
+<h4>
+    2.1&nbsp; Sensitivity of Sizing to Inaccuracies
+</h4>
+<p>
+    When working upon the Capacity and Sizing of conceptual nodes and point to point connections (and subsequent units of
+    sizing in later work products), you should always be aware of the sensitivity of your decisions and calculations to the
+    accuracy of your input data.&nbsp; For example if you have a very rough number, such as the number of characters in a
+    set of attributes that describes a list of customers, you should be aware of the accuracy of your input number.&nbsp;
+    This is especially needed if you anticipate being close to the capacity of a unit such as a storage device.&nbsp; Some
+    numbers that you work with will even be guesses or very rough assumptions so make sure that you always recognize this
+    when you use them.&nbsp; If you do not understand this, you may force errors into the design.&nbsp; These errors may
+    increase, as more and more decisions are taken based upon data that is less and less accurate.
+</p>
+<p>
+    Be sensitive to:
+</p>
+<p>
+    The original source of data
+</p>
+<ul>
+    <li>
+        The criticality of the data to each design decision
+    </li>
+    <li>
+        How the data might be changing during the design process because of new information or changing requirements<br />
+    </li>
+    <li>
+        Multiplier factors that might turn small errors into large mistakes.
+    </li>
+</ul>
+<h4>
+    2.2&nbsp; Numerical Values
+</h4>
+<p>
+    Review the numerical values you have assigned to each of the conceptual nodes and their interconnections.<br />
+    This will give you some idea of the gross number of components.&nbsp; For example:
+</p>
+<ul>
+    <li>
+        Number of end-user workstations<br />
+    </li>
+    <li>
+        Number of departments, thus number of departmental systems, etc.<br />
+    </li>
+    <li>
+        Number of host systems<br />
+    </li>
+    <li>
+        Number of interconnections, associations or relationships like the number of server that a client must support.
+    </li>
+</ul>
+<p>
+    You probably will not be able to define actual numbers of computers etc. - we have not yet worked out how the
+    conceptual nodes will be realized in technological terms.&nbsp; Do not spend much time trying to do this - unless you
+    can see a reason for concern which might lead to a change in the conceptual-level Operational Model (such as might be
+    necessary to see the overall throughput required to distribute X Gb of data to Y stores from a single HQ, in a Z hour
+    long window).
+</p>
+<p>
+    Note if any of these numerics indicate a need to distinguish different parts of the Operational Model.&nbsp; For
+    example:
+</p>
+<ul>
+    <li>
+        Are there “large,” “medium” and “small” offices/stores/branches?<br />
+    </li>
+    <li>
+        Do some locations carry a different subset of the IT system than others (e.g., “Insurance Office” versus “Insurance
+        Agency”)?<br />
+    </li>
+    <li>
+        Do some parts of the IT system operate in different time zones (therefore with different peak times as perceived
+        from the central services)?
+    </li>
+</ul>
+<h4>
+    2.3&nbsp; Performance and Sizing Characteristics
+</h4>
+<p>
+    Check each conceptual node and its interconnections for reasonable performance and sizing characteristics.&nbsp; Do
+    this by walking through the major processes and flows for each conceptual node and its interconnections.&nbsp; For
+    example:
+</p>
+<ul>
+    <li>
+        Business transactions per second (Txn/sec) of each conceptual node as specified by the business processes (messages
+        per second if given)<br />
+    </li>
+    <li>
+        Response times to user requests<br />
+    </li>
+    <li>
+        Response times within each conceptual node<br />
+    </li>
+    <li>
+        Storage requirements (gross, if known)<br />
+    </li>
+    <li>
+        Batch processing windows.
+    </li>
+</ul>
+<p>
+    Note any obvious constraints that you might foresee, such as:
+</p>
+<ul>
+    <li>
+        Limited capacity of a PWS<br />
+    </li>
+    <li>
+        The limited capacity of a branch server.<br />
+    </li>
+    <li>
+        Limited capacity of a WAN<br />
+    </li>
+    <li>
+        The maximum size of a single large host.
+    </li>
+</ul>
+<p>
+    This activity may suggest a need to relocate or split data and processing.&nbsp; If so, you may wish to evaluate the
+    probable impact of this.&nbsp; You may already be able to make a judgement about the technical feasibility of the
+    system.
+</p>
+<p>
+    Note: You are not trying to do a detailed sizing exercise here - that comes in the development of the
+    specification-level Operational Model.&nbsp; Look for obvious out-of-line situations or gross estimates.
+</p>
+<h3>
+    3&nbsp;Refine Specification-Level Operational Model for Performance and Capacity
+</h3>
+<h4>
+    3.1&nbsp; Specified Node Performance Requirements
+</h4>
+<p>
+    Quantify the performance characteristics for components (or deployment units) that execute on a single specified
+    node.<br />
+    For the following activities you will need information about numbers of transactions and DB accesses.&nbsp; If this is
+    not yet known, you may have to make assumptions based on similar systems.&nbsp; Based on what is currently known about
+    the system and applications:
+</p>
+<ul>
+    <li>
+        Summarize the online processing workload.&nbsp; (This is at a System Selection Handbook level of detail - number
+        and size of transactions, number of users, physical I/Os, etc.)<br />
+    </li>
+    <li>
+        If you have the information, estimate the rate of DB accesses or file I/O for online work.<br />
+    </li>
+    <li>
+        Estimate the file processing rate and transaction processing rate needed for batch.<br />
+    </li>
+    <li>
+        Estimate the data rates needed for security dumping, file copies, etc.<br />
+    </li>
+    <li>
+        Estimate data storage volumes.&nbsp; Try to make a reasonable allowance for programs, software, work files,
+        etc.<br />
+    </li>
+    <li>
+        Note any points about the number and speed of removable media I/O devices.
+    </li>
+</ul>
+<h4>
+    3.2&nbsp;&nbsp; Inter-Node Processing Performance
+</h4>
+<p>
+    Quantify performance characteristics for components executing on multiple nodes.&nbsp; For each type of transaction
+    estimate:
+</p>
+<ul>
+    <li>
+        Processing and I/O on this node.<br />
+    </li>
+    <li>
+        Message flows to and from other nodes.<br />
+    </li>
+    <li>
+        Security, synchronization and recovery functions required.&nbsp; (You should already have this information for the
+        major transaction types.)&nbsp; Analyze the flows for distributed presentation managers carefully.<br />
+    </li>
+    <li>
+        Costs of managing distributed processing.<br />
+    </li>
+</ul>
+<p>
+    Note: It will probably not be clear whether the division of processing will give the required response, or what the
+    load on each node will be until you develop the Operational Model to the level of physical products.&nbsp; For the
+    moment you are trying to find obvious places where the system design will not meet the requirements.&nbsp; Do not get
+    stuck in too much detail.
+</p>
+<h4>
+    3.3&nbsp; Connection Segment Performance Requirements
+</h4>
+<p>
+    Perform the following analyses:
+</p>
+<ul>
+    <li>
+        Quantify the performance characteristics for the interactions between components on different specified nodes as
+        well as the types of traffic need to share the connection segment.<br />
+    </li>
+    <li>
+        Identify characteristics that indicate that more than one connection segment may be needed between the two
+        specified nodes.<br />
+    </li>
+    <li>
+        For each connection segment in turn, document all the different types of traffic and their volumes and
+        characteristics.&nbsp; Consider probable system traffic (overhead) and also application traffic.<br />
+    </li>
+    <li>
+        Be careful not to associate characteristics of particular interactions with the connection segment - you are
+        looking to identify the overall capacity and performance requirements.
+    </li>
+</ul>
+<h3>
+    4&nbsp;Refine Physical Operational Model for Performance and Capacity
+</h3>
+<h4>
+    4.1&nbsp; General Guidance
+</h4>
+<p>
+    It is possible that, so far, the selection process has not considered in fine detail the ability of the nodes (now made
+    up of products rather than specifications) to deliver the solution’s non-functional requirements, and that you have
+    documented the product selection directly into the various specified node box diagrams.&nbsp; (In particular, this
+    means that, for hardware specifically, you may have selected product families rather than fully specified models.)
+</p>
+<p>
+    Therefore, you will need to conduct this step <strong>for all specified nodes</strong>.
+</p>
+<p>
+    It is quite possible that, in order to achieve the node’s non-functional requirements, you will want to consider
+    <strong>merging</strong> or <strong>splitting</strong> the specified nodes as you now transform them into physical
+    nodes.
+</p>
+<p>
+    The step is composed of several sub-steps:
+</p>
+<ol>
+    <li>
+        Size the node workloads.<br />
+    </li>
+    <li>
+        If too large: 
+        <ul>
+            <li>
+                Divide workload amongst nodes
+            </li>
+            <li>
+                Plan for workload division
+            </li>
+            <li>
+                Identify new services to support division
+            </li>
+            <li>
+                Evaluate effects of workload division
+            </li>
+        </ul>
+    </li>
+    <li>
+        If too small:<br />
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Combine workloads onto nodes<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        Evaluate Network capacity and performance.
+    </li>
+</ol>
+<h4>
+    4.2&nbsp; Size Node Workloads
+</h4>
+<p>
+    This sub-step involves:
+</p>
+<ul>
+    <li>
+        Calculating the required workloads on each specified node<br />
+    </li>
+    <li>
+        Understanding the performance capabilities of the selected hardware family when required to support these
+        workloads.
+    </li>
+</ul>
+<p>
+    To do this you must have:
+</p>
+<ul>
+    <li>
+        A knowledge of the processing requirements for a workload “unit” represented on the node by the collection of
+        components (execution deployment units)<br />
+    </li>
+    <li>
+        A knowledge of the volumes expressed in the same workload units possibly with expected growth figures<br />
+    </li>
+    <li>
+        A knowledge of the resource consumption, for the selected product family (including the requirements of the
+        underpinning products selected for the specified node’s technical components)<br />
+    </li>
+    <li>
+        A target loading level of the physical node, to meet response time expectations.
+    </li>
+</ul>
+<h4>
+    4.3&nbsp; Review Node Workloads - Divide if too Large
+</h4>
+<p>
+    Review workload at the largest nodes of each type.&nbsp; Given the product family selected for this node, determine
+    whether:
+</p>
+<ul>
+    <li>
+        The entire workload is too large to be run on the largest machine at an acceptable utilization level, or<br />
+    </li>
+    <li>
+        Any single part of the load is too large to be run on a single processor or within a single address space.
+    </li>
+</ul>
+<p>
+    Your calculations should include both the initial workload and any predicted, or best-case, growth of the workload over
+    the life of the system.&nbsp; If you decide the workload is too large in the largest node, repeat this sub step for the
+    next largest case.
+</p>
+<h4>
+    4.4&nbsp; Plan for Workload Division
+</h4>
+<p>
+    For each specified node you have decided to split into two or more physical nodes, consider how you will do it, and
+    whether you will be able to (or want to) ensure they provide the “outside world” with the appearance of a single “black
+    box.”
+</p>
+<p>
+    First, consider what the division will be based on.&nbsp; For example:
+</p>
+<ol>
+    <li>
+        <u>Division by activity</u> (e.g., running “accounts” on physical node A and “order entry” on physical node
+        B)<br />
+    </li>
+    <li>
+        <u>Division by user</u> (e.g., running accounts and order entry for users X on physical node A and for users Y on
+        physical node B)<br />
+    </li>
+    <li>
+        <u>Division by transaction routing</u> (e.g., splitting all processing evenly between physical nodes A and B, maybe
+        with a load splitting node C and a data server node D).
+    </li>
+</ol>
+<p>
+    (It is probable that only option 3 (or some variant) will not influence the topology of the specification-level
+    Operational Model)
+</p>
+<p>
+    Evaluate the effects of the division:
+</p>
+<ul>
+    <li>
+        What extra traffic will be required between the separated parts of the workload? 
+        <ul>
+            <li>
+                Function shipping
+            </li>
+            <li>
+                Data sharing
+            </li>
+            <li>
+                Network access.<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        What extra load will this place on the physical nodes?<br />
+    </li>
+    <li>
+        What are the effects on response of the division?<br />
+    </li>
+    <li>
+        What are the costs of the division?
+    </li>
+</ul>
+<p>
+    Use the summary of processing from the Operational Model to identify parts of the workload that can be moved.&nbsp;
+    Division of the workload may be by:
+</p>
+<ul>
+    <li>
+        Transferring some parts of the processing to another existing physical node or to a new type of physical
+        node.<br />
+    </li>
+    <li>
+        Transferring some of the users and all their processing to a new physical node.
+    </li>
+</ul>
+<p>
+    If you have defined new types of physical nodes, the changes must be checked against the earlier Operational
+    Models.&nbsp; These may need to be amended, and appropriate activities repeated for the affected nodes.
+</p>
+<h4>
+    4.5&nbsp; Required Services for Workload Division
+</h4>
+<p>
+    For each set of physical nodes, which will now deliver the workload of a single specified node, check how the various
+    (newly required) common services are to be provided.&nbsp; Determine how will the system provide:
+</p>
+<ul>
+    <li>
+        Access to shared data<br />
+    </li>
+    <li>
+        Network Access<br />
+    </li>
+    <li>
+        Printing
+    </li>
+</ul>
+<h4>
+    4.6&nbsp; Evaluate the Effects of Workload Division
+</h4>
+<p>
+    For each set of physical nodes that will now deliver the workload of a single specified node, determine:
+</p>
+<ul>
+    <li>
+        The products, hardware and software, that will be used to link the nodes<br />
+    </li>
+    <li>
+        The extra traffic between machines that will be required<br />
+    </li>
+    <li>
+        The communications adapters and links with the necessary capacity available
+    </li>
+</ul>
+<p>
+    And, particularly if there are nodes of different architectures at the location:
+</p>
+<ul>
+    <li>
+        How many different System Management and operation tools will be in use?<br />
+    </li>
+    <li>
+        What skills will be needed and from where will they be provided?<br />
+    </li>
+    <li>
+        How will support staff be able to communicate with all the nodes at the location?
+    </li>
+</ul>
+<h4>
+    4.7&nbsp; Review Node Workloads - Combine if Too Small
+</h4>
+<p>
+    Review workload at the smallest nodes of each type.&nbsp; Given the product family selected for this node, determine
+    whether any of the nodes are so lightly loaded that they can be combined to form a single node, for example, a print
+    server and a file server on a LAN might be combined.
+</p>
+<ul>
+    <li>
+        Check that there are no logical reasons for the nodes to be separate, for example, security.&nbsp; Also, consider
+        the implications of growth.<br />
+    </li>
+    <li>
+        If nodes can be combined, review locations with progressively larger workloads to see whether their nodes also can
+        be combined.<br />
+    </li>
+    <li>
+        Combine the nodes, unless there are reasons for not doing so.&nbsp; Next, check whether earlier Operational Models
+        need to be changed, and update the various box diagrams and other documentation.<br />
+    </li>
+    <li>
+        If appropriate, check that by combining any nodes, you have not reduced the redundancy of the system diagram by
+        reducing:<br />
+        - &nbsp;Horizontal standby (two nodes into one)<br />
+        -&nbsp; Vertical stand-in<br />
+        -&nbsp; A “closed-down” alternative route in the system flow.
+    </li>
+</ul>
+<h4>
+    4.8&nbsp; Network Capacity and Performance
+</h4>
+<p>
+    Check transmission volumes between nodes.&nbsp; Use average message sizes, protocol information and volume information
+    for:
+</p>
+<ul>
+    <li>
+        Online transactions<br />
+    </li>
+    <li>
+        Remote data access or function shipping<br />
+    </li>
+    <li>
+        File transfers<br />
+    </li>
+    <li>
+        System and network management
+    </li>
+</ul>
+<p>
+    Consider the time frames available for each type of use and the existence of coinciding peaks.&nbsp; Check that you
+    have not changed the underlying connectivity of the system.&nbsp; Have you created more connections?&nbsp; Have you
+    eliminated any connections?&nbsp; Rationalize your design to take account of such actions.
+</p>
+<h4>
+    4.9&nbsp; Review Network Capacity
+</h4>
+<p>
+    Consider the following questions:
+</p>
+<ul>
+    <li>
+        Is the network near the limit of capacity?&nbsp; How many of the physical connections in the network fully loaded
+        or nearly fully loaded?<br />
+    </li>
+    <li>
+        What upgrade paths are available?&nbsp; Can the components, connections or physical nodes be upgraded or must
+        several be used in parallel?&nbsp; What is the impact of this?&nbsp; Is this network design a sound basis for
+        growth?
+    </li>
+</ul>
+<h3>
+    5&nbsp;Cross Reference to ISD
+</h3>
+<ul>
+    <li>
+        1.1 Sensitivity of sizing to inaccuracies Based on WSDDM/ISD A48<br />
+    </li>
+    <li>
+        1.2 Numerical Values Enhanced from WSDDM/ISD A49<br />
+    </li>
+    <li>
+        1.3 Performance and Sizing characteristics Based on WSDDM/ISD A50<br />
+    </li>
+    <li>
+        2.1 Specified node performance requirements Based on WSDDM/ISD F51<br />
+    </li>
+    <li>
+        2.2 Inter-node processing performance Based on WSDDM/ISD F52<br />
+    </li>
+    <li>
+        2.3 Connection segment performance requirements Based on WSDDM/ISD F58<br />
+    </li>
+    <li>
+        3.1 Size node workloads Based on WSDDM/ISD C16 through C18<br />
+        - &nbsp;(This activity is helped by the Performance Engineering Method)<br />
+    </li>
+    <li>
+        3.2 Review node workloads - divide if too large? Based on WSDDM/ISD C18<br />
+    </li>
+    <li>
+        3.3 Plan for workload division Enhanced from WSDDM/ISD C19<br />
+    </li>
+    <li>
+        3.4 Required services for workload division Based on WSDDM/ISD C20<br />
+    </li>
+    <li>
+        3.5 Evaluate the effects of workload division Based on WSDDM/ISD C21<br />
+    </li>
+    <li>
+        3.6 Review node workloads - combine if too small? Based on WSDDM/ISD C23S and C24CA<br />
+    </li>
+    <li>
+        3.7 Network Capacity and Performance Based on WSDDM/ISD C34<br />
+    </li>
+    <li>
+        3.8 Review network capacity Based on WSDDM/ISD C39
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

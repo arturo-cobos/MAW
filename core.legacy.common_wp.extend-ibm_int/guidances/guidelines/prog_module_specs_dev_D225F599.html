@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing Program Module Specifications</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="prog_module_specs_dev">
+<meta name="uma.presentationName" content="Developing Program Module Specifications">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_Y5Eo8ESxEdyDPKg15sK9ZA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_Y5Eo8ESxEdyDPKg15sK9ZA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing Program Module Specifications</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Migrated development approach from existing IBM Global Services Method work product.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/prog_module_specs_CC76E999.html" guid="mweb137FEE4A954831888525688500558263">Program Module Specifications</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">The development of a Program Module Specification is highly iterative. Many of the steps enumerated below are concurrent
+and not strictly sequential. The process of understanding module responsibilities, determining what responsibilities it
+assigns to the modules it invokes, and determining the data needs of all the modules involved proceed simultaneously.
+Furthermore, as one part of the specification becomes more concrete, it may affect the others. <br />
+The current module name is descriptive, giving indication of its intended function. Using its name, refer to the processes
+in the process model from which it derives. This module may map directly to a process of similar name or to a group of
+processes. In the latter case, its name will reflect the functional sum of which the individual group processes are
+separate steps. 
+<ul>
+    <li>
+        <div>
+            Review the process documentation and relevant system requirements to determine the details of the required
+            system function.
+        </div>
+    </li>
+    <li>
+        <div>
+            Inspect the program invocation model.<br />
+            - Determine the current module’s formal parameter interface with modules that invoke it, and develop a first
+            draft interface section.<br />
+            - Determine the modules that are invoked by the current module:
+        </div>
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <p>
+            - Ensure that the current module’s interface supports the information needs of the modules it calls.<br />
+            - Establish an understanding of the intended functions of the invoked modules.
+        </p>
+    </blockquote>
+</blockquote>
+<ul>
+    <li>
+        <div>
+            Review any database transactions that must occur within the scope of the module. Ensure that any data needed by
+            the transaction are provided by an interface. Ensure that any data provided by the transaction are used in an
+            interface.
+        </div>
+    </li>
+    <li>
+        <div>
+            Using the invoked module names and any transactions, develop a structured English description of the steps to
+            implement the requirements as enumerated in the process and system documentation.
+        </div>
+    </li>
+    <li>
+        <div>
+            Review the logic of the structured English description considering the following:<br />
+            - Does any logic actually belong in an invoked module?<br />
+            - Does any of the logic have enough internal cohesion to be made a module itself?<br />
+            - Is any logic used in more than one place? If so, it should be a module.<br />
+            - Do the data interfaces support the needs of the logic processing?<br />
+            - Does the logic support the efferent data interface requirements?
+        </div>
+    </li>
+</ul>
+<ul>
+    <li>
+        <div>
+            Formalize the interface definition of the current module so that data type, structure, units, domains, and
+            error handling are established. Ensure that the structured English logic is compatible with this formalization.
+        </div>
+    </li>
+    <li>
+        <div>
+            Ensure that the logic supports any data interfaces that have already been defined for invoked modules.
+        </div>
+    </li>
+    <li>
+        <div>
+            Examine the structured English logic for any pre-conditions that need to be documented for correct program
+            execution. Convert as many pre-conditions into interfaces that are checked at compile or link time as possible.
+        </div>
+    </li>
+    <li>
+        <div>
+            Examine the structured English logic for any post-conditions that are not manifested in the interfaces and that
+            represent side effects of program execution. Ensure that these side effects are really necessary.
+        </div>
+    </li>
+    <li>
+        <div>
+            Document any module performance requirements that may have been extracted from the process model or system
+            requirements.
+        </div>
+    </li>
+    <li>
+        <div>
+            Estimate the module’s lines of code size from the structured English description of its processing. If
+            productivity estimates have been provided, estimate the labor hours required to implement the module based on
+            its complexity.
+        </div>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

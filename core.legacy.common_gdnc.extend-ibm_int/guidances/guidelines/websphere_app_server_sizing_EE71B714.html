@@ -1,0 +1,895 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: WebSphere Application Server Sizing</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="websphere_app_server_sizing">
+<meta name="uma.presentationName" content="WebSphere Application Server Sizing">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb71EE226AAB167CF385256A73004E970C"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb71EE226AAB167CF385256A73004E970C"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: WebSphere Application Server Sizing</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This technique paper (TP) addresses considerations for sizing the WebSphere Application Server (WAS) over multiple platforms. It provides an overview of what the practitioner must consider to properly size for WAS. After all issues are discussed, the TP provides tools to aid the practitioner in this process. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1&nbsp;Steps
+</h3>
+<p>
+    The following sections address the considerations when sizing a box for WebSphere Application Server 3.5.
+</p>
+<ul>
+    <li>
+        Starting Point - Base Requirements
+    </li>
+    <li>
+        Best Approach to Sizing WAS
+    </li>
+    <li>
+        Example WAS Solutions
+    </li>
+    <li>
+        Sizing Tools Available
+    </li>
+    <li>
+        WAS 3.5 Sizing WorkSheet
+    </li>
+</ul>
+<p>
+    <strong>1.1&nbsp; Starting Point – Base Requirements</strong>
+</p>
+<p>
+    There are no easy answers to capacity planning questions.&nbsp; The list below serves as a starting point for sizing
+    issues.&nbsp; These are the hardware requirements for installing WebSphere Application Server on any supported
+    platform. Other supported software (for example, your database program) may have additional requirements.
+</p>
+<ul>
+    <li>
+        75 MB disk space to install from compact disc
+    </li>
+    <li>
+        300 MB disk space to install from Web download (100 MB installation image, 100 MB to unzip files, 75 - 100 MB to
+        install)&nbsp;
+    </li>
+    <li>
+        300 MB disk space for product (footprint)&nbsp;
+    </li>
+    <li>
+        256 MB of RAM to run IBM WebSphere Application Server (512 MB is recommended)&nbsp;
+    </li>
+    <li>
+        Network interface
+    </li>
+</ul>
+<p>
+    The requirements given above are basically what come printed on the WebSphere box.&nbsp; In practice, these
+    requirements have been proven inadequate.&nbsp; For decent performance, there is a recommended base requirement to host
+    WAS of 1024MB, not 512MB and especially not 256MB.&nbsp; In addition, WAS uses DB2, which has a base requirement of 512
+    MB.&nbsp; This is a total base requirement of 1536 MB of memory.
+</p>
+<p>
+    <strong>1.2&nbsp; Best Approach to Sizing WAS</strong>
+</p>
+<p>
+    The significant factor in determining system requirements for WebSphere Application Server is processor performance and
+    RAM. WAS specifies a minimum of 512 MB RAM, however, 1024MB or 1536MB if using DB2, have been determined to be more
+    appropriate for good performance.&nbsp; Disk capacity requirements depend on the Web content developed for the
+    solution, the WebSphere Application Server itself requires around 40 MB of space.
+</p>
+<p>
+    WebSphere is but one component of many in a production environment. The client, the communications network, the web
+    server, the application server, the database server, and the Java Virtual Machine (JVM) all play a role in
+    performance.&nbsp; When determining your hardware needs there are several things to consider in addition to the
+    requirements listed above.&nbsp; The most important of these issues are:
+</p>
+<ul>
+    <li>
+        How busy will it be?&nbsp; Such as, how many hits per hour the server will handle?&nbsp;&nbsp;
+    </li>
+    <li>
+        What other workloads in addition to WAS will be running on this box and what are those workloads
+        requirements?&nbsp;&nbsp;
+    </li>
+    <li>
+        How large is the application (number of static web pages, JSPs, servlets, EJBs and so forth)?
+    </li>
+</ul>
+<p>
+    As&nbsp;a practitioner you will need to know how the infrastructure will be set up.&nbsp; In order to size a box you
+    must know what workloads it will be expected to handle.&nbsp; How many application servers will run on this box?&nbsp;
+    Will the web server run on the same box as the App Server?&nbsp; Where will the database server run?&nbsp; What are the
+    disk requirements of the application itself?&nbsp; One cannot begin to properly size WAS until all the questions are
+    answered.
+</p>
+<p>
+    Now comes the tricky part: performance.&nbsp; How will this machine be expected to run?&nbsp; How many hits will it
+    receive and how will it grow in the future?&nbsp; Simply put, the faster the processor and the larger the memory the
+    better the performance.&nbsp; If the minimum requirements are all that are met, this practitioner has left no room for
+    vertical scaling (the addition of clones).&nbsp; Adding clones will increase performance only if the machine is not
+    running at 100% capacity.&nbsp; If this box is sized to have the resources necessary to support additional application
+    servers (clones), performance can be increased both vertically and horizontally.
+</p>
+<p>
+    In summary when sizing for WebSphere, the practitioner should consider the following:
+</p>
+<ol>
+    <li>
+        The infrastructure – how the workloads will be distributed.&nbsp; The practitioner must know which workloads will
+        run on each machine he wants to size.&nbsp; More importantly, he or she must know how many machines will share the
+        workoad.
+    </li>
+    <li>
+        The requirements of each supported workload.
+    </li>
+    <li>
+        The size of the application being served.&nbsp; He must know how much RAM and disk space the web content will
+        require.&nbsp;
+    </li>
+    <li>
+        If sessions are to be used, he must know how much memory and disk space each session will require.
+    </li>
+    <li>
+        The practitioner must know how busy the servers will be and how many hits are expected.&nbsp; The busier the server
+        the more memory required and the faster the processors must be.
+    </li>
+    <li>
+        He or she must know what the plans for growth are and how they are planning to scale.&nbsp; If they plan to scale
+        vertically (cloning), the machine must have the resources necessary to support this.&nbsp; If they plan to scale
+        horizontally (additional servers) the RAM and memory requirements may not be as great. More information on this can
+        be found at <a href="http://www-4.ibm.com/software/webservers/appserv/doc/v30/se/web/help/model.htm">http://www-4.ibm.com/software/webservers/appserv/doc/v30/se/web/help/model.htm</a>
+    </li>
+</ol>
+<p>
+    <strong>1.3&nbsp; Example WebSphere Solution Sizing Requirements</strong>
+</p>
+<p>
+    Below is a table of the suggested configuration requirmements for a successful WebSphere v3.5 solution on a variety of
+    platforms. These configurations will provide adequate performance for a midrange workload. Note that WebSphere best
+    scales linearly, and to improve performance of a system, it is suggested to simply add more machines rather than
+    increase the number of processors or size of RAM.&nbsp; There have been tests where there are diminishing returns once
+    the processors increase above four.&nbsp; It is not reccomended that you use these suggestions as a substitute for the
+    tools listed within this paper.
+</p>
+<p>
+    <img height="407" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/websphere_app_server_sizing_table1.JPG" width="600" />
+</p>
+<p>
+    The configurations given above are a good starting point for medium sized development efforts. Optimal configuration
+    information will be largely influenced by the many components of the individual environment, and will only be
+    determined after several development efforts are underway.
+</p>
+<p>
+    <strong>1.4&nbsp; Sizing Tools</strong>
+</p>
+<p>
+    Some hardware platforms offer sizing tools to make the sizing process easier.&nbsp; These platforms and there tools are
+    discussed in detail below.
+</p>
+<p>
+    <strong>NT, AIX, and Solaris Platforms</strong>
+</p>
+<p>
+    Perhaps the most useful tool, this site provides an estimate as to what type of processor, number of CPUs, and/or
+    number of machines necessary to achieve a throughput of your selection.&nbsp; You will enter the workload and the
+    expected TPS (transactions per second), and the tool will return to you suggestions and response times.&nbsp;
+</p>
+<p>
+    <strong>AS/400 (OS/400)</strong>
+</p>
+<p>
+    Sizing AS/400 has been made simple thanks to the convenient IBM Workload Estimator.&nbsp; The IBM Workload Estimator is
+    an easy to use sizing tool that can be run on-line or be downloaded to your PC for mobile use. It is an invaluable tool
+    that takes into account how many hits per hour are expected, number of static HTML pages being served, JSPs, servlets,
+    EJBs and so forth.&nbsp; It takes everything into account needed to decide on the appropriate hardware.&nbsp; The
+    estimator has been enhanced to include the ability for multiple existing systems to be present in an estimation. This
+    will aid you in considering consolidating multiple AS/400 systems into one new iSeries 400.&nbsp;&nbsp; One of the new
+    tutorials, "Consolidating Existing Systems", deals with this feature.&nbsp; The tool is currently capable of sizing
+    Domino, Java, WebSphere, WebSphere CommerceSuite, and traditional workloads, either separately or in combination.&nbsp;
+</p>
+<p>
+    The IBM Workload Estimator can be located at: <a href="http://as400service.ibm.com/servlet/EstimatorServlet">http://as400service.ibm.com/servlet/EstimatorServlet</a>
+</p>
+<p>
+    <strong>RS/6000 (UNIX and Linux)</strong>
+</p>
+<p>
+    IBM provides a sizing tool for the WebSphere Application Server on RS/6000 to estimate required hardware configuration.
+    This sizing tool for RS/6000 Servers running WebSphere Application Server has been developed to answer the need for
+    readily accessible sizing assistance for IBM's WebSphere Application Server product.&nbsp; It provides a Web-based
+    sizing tool that helps the specialist to answer a few basic questions, and then provides detailed recommendations as to
+    the RS/6000 servers that meet the needs of the solution. The sizer for the IBM WebSphere Application Server has been
+    developed based upon performance information derived from a standard benchmark designed by IBM lab. This tool makes it
+    easy to determine proper RS/6000 server models for given workloads.
+</p>
+<p>
+    The sizing tool can be accessed at the following URL: <a href="http://w3-1.ibm.com/sales/systems/ibmsm.nsf/mainframeset?readform&geo=EMEA&cdoc=rs6ksizer">http://w3-1.ibm.com/sales/systems/ibmsm.nsf/mainframeset?readform&geo=EMEA&cdoc=rs6ksizer</a>
+</p>
+<p>
+    Specific directions on using this tool may be found at:<a href="http://www-1.ibm.com/servers/eserver/pseries/solutions/eb/websphere_app_guide.pdf" target="_blank">http://www-1.ibm.com/servers/eserver/pseries/solutions/eb/websphere_app_guide.pdf</a>
+</p>
+<p>
+    <strong>All Platforms</strong>
+</p>
+<p>
+    The WAS 3.5 Sizing Worksheet provides a generic approach to sizing WAS for any platform, however, whenever possible use
+    the platform specific tools listed above.&nbsp; This worksheet is also helpful to use in conjunction with the platform
+    specific tools listed in this paper.&nbsp; If used properly this worksheet provides a rough estimate of suggested RAM,
+    disk space, and processing power necessary to support WAS and a given application.&nbsp; The WebSphere Sizing Worksheet
+    is attached at the end of this document.
+</p>
+<p>
+    <strong>1.5&nbsp; Appendix A – WAS 3.5 Sizing Worksheet</strong>
+</p>
+<p>
+    This worksheet is intended to aid the practitioner in sizing a machine for WAS 3.5 and the application it is to
+    support.&nbsp; This worksheet provides only a rough estimate, and a margin of error is to be expected.&nbsp; One should
+    also consult the sizing tools available online.&nbsp; These URLs can befound on the WAS Sizing technique paper.
+</p>
+<p>
+    Disclaimer:&nbsp; This tool and the information contained within ("Materials") are being provided to IBM Internals to
+    assist them with planning for customer proposals and installations. These are provided on an "as-is" basis.&nbsp; We
+    make no representations or warranties regarding these Materials and do not provide any guarantee or assurance that the
+    use of such Materials will result in a successful customer installation. Users must take full responsibility in using
+    the information and implementing the method presented here. We are not liable for any damages arising out of the
+    contents of this document.
+</p>
+<p>
+    <strong>Assumptions:</strong>
+</p>
+<ul>
+    <li>
+        Assumes an n-tier environment.&nbsp; This tool works best for sizing a box in a typical 3-tier environment.&nbsp;
+        In other words, the web server and the database servers will reside on different machines.&nbsp; If you are using
+        this tool to size a box supporting either the web server or the DB server in addition to WAS, be sure to include
+        its requirements in steps 12 and 13.&nbsp; Remember results will be most accurate for the n-tier environment.
+    </li>
+    <li>
+        If you are clustering boxes to share the workload, you may use this tool in different ways.&nbsp; You may enter
+        full values for all of the questions, and when the requirements are given at the end of the worksheet spread the
+        requirements accross all the boxes you plan to use.&nbsp; Alternatively, you may enter only the values for the
+        workload each box will be expected to support.&nbsp; If you are sizing only one box, no adjustments are necessary.
+    </li>
+    <li>
+        This worksheet assumes default WebSphere settings.&nbsp; If you adjust these setting you must compensate for the
+        adjustments in the worksheet.
+    </li>
+</ul>
+<p>
+    <strong>Part One:</strong><br />
+</p>
+<p>
+    Answer the following questions about the box you are sizing and record your answers to the right.&nbsp; Each input is
+    explained below.&nbsp; <strong>It is recommended to read the explanation on the next page for each question before
+    answering it.</strong>
+</p>
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <th id="" scope="col" abbr="">
+            </th>
+            <th id="" scope="col" abbr="">
+                Input Required&nbsp;
+            </th>
+            <th id="" scope="col" abbr="">
+                Value
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <strong>1</strong>
+            </td>
+            <td>
+                What is the maximum number of concurrent users expected to be sustained at any time?&nbsp;<br />
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>2</strong>
+            </td>
+            <td>
+                <p>
+                    Will Sessions be Used?
+                </p>
+                <p>
+                    (if no skip to 4)&nbsp;
+                </p>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>3</strong>
+            </td>
+            <td>
+                What is the session size?&nbsp;&nbsp; Record your answer in MB<br />
+                ( Remember: 1KB = .001MB) &nbsp;MB
+            </td>
+            <td>
+                <strong>MB</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>4</strong>
+            </td>
+            <td>
+                What is the anticipated number of concurrent JDBC connections for all planned databases?&nbsp;
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>5</strong>
+            </td>
+            <td>
+                What is the maximum RAM requirement of the Web Application itself?&nbsp; Especially important if using
+                EJBs.&nbsp; Use MB
+            </td>
+            <td>
+                <strong>MB</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>6</strong>
+            </td>
+            <td>
+                What is the total size of the application?&nbsp; Use MB.
+            </td>
+            <td>
+                <strong>MB</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>7</strong>
+            </td>
+            <td>
+                Will the Admin console reside on this box or another?&nbsp; Enter yes if on this box.&nbsp;
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>8</strong>
+            </td>
+            <td>
+                Will the Admin database reside on this box or another?&nbsp; Enter yes if on this box.&nbsp;
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>9</strong>
+            </td>
+            <td>
+                What are the operating system’s RAM requirements?&nbsp; Use MB.
+            </td>
+            <td>
+                <strong>MB</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>10</strong>
+            </td>
+            <td>
+                What are the operating system’s disk requirements?&nbsp; Use MB.
+            </td>
+            <td>
+                <strong>MB</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>11</strong>
+            </td>
+            <td>
+                Will there be any other workloads supported on this machine?<br />
+                (If no skip to 14)&nbsp;
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>12</strong>
+            </td>
+            <td>
+                What are the RAM requirements of all other workloads supported by this machine?&nbsp; Use MB.
+            </td>
+            <td>
+                <strong>MB</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>13</strong>
+            </td>
+            <td>
+                What are the disk requirements of all other workloads on this machine?<br />
+                Use MB.
+            </td>
+            <td>
+                MB
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>14</strong>
+            </td>
+            <td>
+                What Risk Ratio Percent (margin of error) do you wish to use?&nbsp;
+            </td>
+            <td>
+                %
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>15</strong>
+            </td>
+            <td>
+                How many application server clones will be supported on this machine?&nbsp; For NT and W2K you must add a
+                clone for every 25 concurrent users.&nbsp;
+            </td>
+            <td>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <strong>Explanation of Inputs</strong>
+</p>
+<ol>
+    <li>
+        The number of users being serviced at any point in time.&nbsp; In other words, the total number of user requests
+        active in the WebSphere server.&nbsp; Remember, if using NT or W2K with OSE connect (web server on different box)
+        you must create a clone for every 25 concurrent users or spray to a different box.&nbsp; You will be asked how many
+        clones in number 15.&nbsp; See the WebSphere Info Center for more details on cloning.
+    </li>
+    <li>
+        Answer yes or no.
+    </li>
+    <li>
+        The size (bytes) of multiplying number of records and number of bytes in a record in inquiring
+        database.&nbsp;&nbsp; If you do not know the exact number use the following to estimate:&nbsp; Small=100,
+        Medium=1000, Large=10000 bytes.
+    </li>
+    <li>
+        Every JDBC connection will require RAM.&nbsp; Include the maximum number of anticipated JDBC connections to all
+        planned databases including the session database, the application database, and the LDAP database.
+    </li>
+    <li>
+        To determine this you must consult the application developer.&nbsp; Obtain a maximum estimate from the
+        developer.&nbsp; The number and complexity of EJBs, JSPs, servlets, and static web pages will affect the
+        requirements.&nbsp; If EJBs are not being used, step five is less of a concern.
+    </li>
+    <li>
+        What is the maximum disk size required by the application.&nbsp; Be sure to include all web pages, EJBs, JSPs, and
+        Servlets.
+    </li>
+    <li>
+        RAM requirements depend on how large your Web applications are and whether you are running your administration
+        console from the same server or from another server in your network. By running your administration database from
+        another server in your network, you can free up memory resources and thereby reduce RAM requirements.
+    </li>
+    <li>
+        RAM requirements depend on how large your Web applications are and whether you are running your administration
+        database from the same server or from another server in your network. By running your administration database from
+        another server in your network, you can free up memory resources and thereby reduce RAM requirements.
+    </li>
+    <li>
+        Different platforms have different requirements.&nbsp; You must determine the requirements of your selected
+        platform.
+    </li>
+    <li>
+        Different platforms have different requirements.&nbsp; You must determine the requirements of your selected
+        platform.
+    </li>
+    <li>
+        If you have other workloads (i.e.: a database server, application server) supported by this machine, you must add
+        those requirements to those of WAS and the application.&nbsp; For example, HTTP server has a base requirement of
+        180MB of RAM.&nbsp; See the WebServer Sizing TP.
+    </li>
+    <li>
+        Compute RAM requirements of all other workloads.&nbsp; Use MB.
+    </li>
+    <li>
+        Compute disk requirements of all other workloads.&nbsp; Use MB.
+    </li>
+    <li>
+        This is a 'fudge factor', or error allowance. The sizing suggestions will be at least this much higher than your
+        target throughput. That is, if your target throughput is 50 TPS, and you specify a risk ratio of 20%, the system
+        will be sized to handle 60 TPS. Use this to compensate for uncertainty in the size of your transactions.&nbsp; If
+        the machine will be handling heavy/complicated transactional workloads it is advised to increase this percent.
+    </li>
+    <li>
+        Vertical scaling (the addition of clones) is an excellent method to increase performance so long as your CPU is
+        running at less than 100%.&nbsp; Each clone will require RAM, enter the number of clones you plan on
+        creating.&nbsp; Do not include the model as a clone.&nbsp; IMPORTANT: If you are running NT or W2K, you
+        <strong>must</strong> create a clone for every 25 concurrent users.&nbsp; For example: if you answered 100 to
+        number one, you must create at least four clones (100 / 4).
+    </li>
+</ol>
+<p>
+    <strong>Part Two: Compute Suggested RAM</strong>
+</p><br />
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <th id="" scope="col" abbr="">
+            </th>
+            <th id="" scope="col" abbr="">
+                Step
+            </th>
+            <th id="" scope="col" abbr="">
+                Value
+            </th>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                A
+            </th>
+            <td>
+                If you answered <strong>Yes</strong> to number <strong>2</strong> multiply value <strong>1</strong> by
+                value <strong>3.</strong>&nbsp;&nbsp; Record your answer to the right.
+            </td>
+            <td>
+                MB
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                B
+            </th>
+            <td>
+                Multiply value <strong>A</strong> by 1800 (1800 seconds in a 30mininute timeout period.&nbsp; 30 min is the
+                default timeout period).&nbsp; If you adjust the timeout period, adjust this formula as well.&nbsp; Record
+                your answer to the right.&nbsp;
+            </td>
+            <td>
+                MB
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                C
+            </th>
+            <td>
+                Multiply the value from number <strong>4</strong> by 5MB.&nbsp; (We are assuming a safe average of 5MB per
+                JDBC connection).&nbsp; Record your answer to the right.
+            </td>
+            <td>
+                MB
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                D
+            </th>
+            <td>
+                Enter the value from step <strong>5</strong> to the right.
+            </td>
+            <td>
+                MB
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                E
+            </th>
+            <td>
+                If you answered yes to number <strong>7</strong> enter 128 to the right.
+            </td>
+            <td>
+                MB
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                F
+            </th>
+            <td>
+                If you answered yes to number <strong>8</strong> enter 512 to the right. (Base requirement for DB2)&nbsp;
+            </td>
+            <td>
+                MB
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                G
+            </th>
+            <td>
+                Enter the value of number <strong>9</strong> to the right.
+            </td>
+            <td>
+                MB
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                H
+            </th>
+            <td>
+                If you answered <strong>yes</strong> to number <strong>11</strong> enter value <strong>12</strong> to the
+                right.
+            </td>
+            <td>
+                MB
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                I
+            </th>
+            <td>
+                Multiply the value of number <strong>15</strong> by 128 and record your answer to the right.&nbsp; (Average
+                heap size of a clone is 128MB).&nbsp;
+            </td>
+            <td>
+                MB
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                J
+            </th>
+            <td>
+                Add values <strong>B</strong> through <strong>I</strong> and record your answer to the right.
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                K
+            </th>
+            <td>
+                Calculate the percent represented in number <strong>14</strong> of the value in step
+                <strong>J</strong>.&nbsp; (For example if step J is 1000 and number 14 is 50%, record 500 to the right).
+            </td>
+            <td>
+                MB
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                L
+            </th>
+            <td>
+                Add step <strong>J</strong> to step <strong>K</strong> and record your answer to the right.
+            </td>
+            <td>
+                MB
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                M
+            </th>
+            <td>
+                Add 1024 to value <strong>L</strong>. (suggested base requirements for WAS itself)
+            </td>
+            <td>
+                MB
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                N
+            </th>
+            <td>
+                Convert to GB if necessary.&nbsp; (Remember 1000MB equals 1GB)
+            </td>
+            <td>
+                GB
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<p>
+    <strong>The value of K is the suggested amount of RAM.</strong>
+</p>
+<p>
+    <strong>Part Three: Compute Disk-Space</strong>
+</p>
+<p>
+    Unless you are dealing with an extremely large application, disk space is less of a concern than it was in the
+    past.&nbsp; If, however, you need to determine necessary disk space these steps will help you in determining your
+    needs.<br />
+    <br />
+</p>
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <th id="" scope="col" abbr="">
+            </th>
+            <th id="" scope="col" abbr="">
+                Step
+            </th>
+            <th id="" scope="col" abbr="">
+                Value
+            </th>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                A
+            </th>
+            <td>
+                Enter the value of number <strong>6</strong> to the right.
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                B
+            </th>
+            <td>
+                Enter the value of number <strong>10</strong> and record your value to the right.&nbsp;
+            </td>
+            <td>
+                MB
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                C
+            </th>
+            <td>
+                Enter the value of number <strong>13</strong> and record your answer to the right.&nbsp;
+            </td>
+            <td>
+                MB
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                D
+            </th>
+            <td>
+                Enter the value 600 (footprint for WAS).
+            </td>
+            <td>
+                MB
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                E
+            </th>
+            <td>
+                Add values <strong>A</strong> through <strong>D</strong> and record it to the right.&nbsp;&nbsp;
+            </td>
+            <td>
+                MB
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                F
+            </th>
+            <td>
+                Double value <strong>E</strong> and record answer to the right.&nbsp; You may wish to triple this
+                number.&nbsp;
+            </td>
+            <td>
+                MB
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                G
+            </th>
+            <td>
+                Convert value <strong>E</strong> to GB if necessary.
+            </td>
+            <td>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<p>
+    <strong>The value of H is the estimated necessary disk space</strong>
+</p>
+<p>
+    <strong>Note:</strong> If this machine is supporting a writable database server, this estimate will be inaccurate.
+</p>
+<p>
+    <strong>Part Four: Processing Power and Clustering</strong>
+</p>
+<p>
+    Determining processing power is the most difficult part of sizing for WAS.&nbsp; To make things easier, IBM offers a
+    site that provides an estimate as to what type of processor, number of CPUs, and/or number of machines necessary to
+    achieve a throughput of your selection.&nbsp; You will enter the workload and the expected TPS (transactions per
+    second), and the tool will return to you a list of suggestions and response times.&nbsp; The tool works for NT, AIX,
+    and Solaris platforms.&nbsp;
+</p>
+<p>
+    Sizing a server to support a given workload is not a simple task. A complete sizing exercise can take weeks of effort
+    and involve a bewilding number of variables.&nbsp; If you are unable to conduct your own testing specific to your
+    environment, it is recommended that you review other benchmarks that may be similar to your situation.&nbsp; The
+    Standard PerformanceEvaluation Corporation maintains a standardized set of relative benchmarks and metrics.&nbsp; Use
+    these to evaluate your situation and aid you in deciding on appropriate processing power and clustering options.
+</p>
+<p>
+    <strong>The URL for the site is</strong>: <a href="http://www.spec.org/">http://www.spec.org/</a>
+</p>
+<p>
+    <strong>Closing Considerations</strong>
+</p>
+<p>
+    The intention of this worksheet was to provide only estimates.&nbsp;&nbsp; While it is more likely to overestimate
+    rather than underestimate, there are no guarantees.&nbsp; There are many possible factors specific to each situation
+    that could upset these recommendations.&nbsp; Optimal configuration information will be largely influenced by the many
+    components of the individual environment, and will only be optimally determined after several development efforts are
+    underway.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

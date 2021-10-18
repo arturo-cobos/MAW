@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Problem Resolution Report</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="problem_resolution_report">
+<meta name="uma.presentationName" content="Problem Resolution Report">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_TvBU4DA3EdyMBeZCVbDB5w"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Problem Resolution Report</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/problem_resolution_report_5C842469.html" guid="mweb26892BD509BFE9EC852568850052BFFC">Problem Resolution Report</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><TABLE border=1>
+<TBODY>
+<TR>
+<TD vAlign=top width=336><BR><B>Problem Id: 368988 </B></TD>
+<TD vAlign=top width=336><BR><B>Change Id: 675989</B></TD></TR>
+<TR>
+<TD vAlign=top width=336><BR><B>Time: </B><?xml:namespace prefix = st1 /><st1:time Minute="30" Hour="11"><B>11:30</B></st1:time><B></B></TD>
+<TD vAlign=top width=336><BR><B>Date: </B><st1:date Year="1999" Day="22" Month="6"><B>22/06/99</B></st1:date><B></B></TD></TR></TBODY></TABLE>
+<P><BR><B>PROBLEM</B>: <BR></P>
+<P>Job has abended at S04I001 with following message: <BR>*E* PARM DATE NOT 1 WEEK GREATER THAN LAST RUN. <BR>PIH110 is a weekly job. <BR>The last time it ran (<st1:date Year="1999" Day="18" Month="6">18/06/99</st1:date>), job finished ok. yy/week processed: 9922. <BR>Job has been run again this morning (<st1:date Year="1999" Day="22" Month="6">22/06/99</st1:date>) for the yy/week 9922 (due to HOME weekly RERUN See Prob 407335), causing the abend. <BR>Investigated and discussed with R. Marsden. <BR>Re-run of this job was not necessary. <BR></P><B></B>
+<P><B>Solution:</B> <BR></P>
+<P>Change 408382 raised to delete output files rolled up in previous steps and request to production to mark job as completed. <BR>Dataset to be deleted: <BR>MVSR: I.HSG.NP.INTERMED.POLTRANS.ROLLUP.G0300V00 <BR></P><B></B>
+<P><B>Retrospective Action:</B> <BR></P>
+<P>Problem and Solution re-appraised by D. Smith <st1:date Year="1999" Day="23" Month="6">23/06/99</st1:date> - no further action required. </P></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

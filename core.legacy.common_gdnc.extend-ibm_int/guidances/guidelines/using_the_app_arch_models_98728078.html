@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Using the Application and Architecture Models</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="using_the_app_arch_models">
+<meta name="uma.presentationName" content="Using the Application and Architecture Models">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb3167E208DF94990985256D010065E8A7"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb3167E208DF94990985256D010065E8A7"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Using the Application and Architecture Models</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline explains and offers a rationale for choosing between two different approaches that can help bridge the gap between the definition of requirements for an IT system based business solution and its implementation.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h4>
+    1&nbsp;Introduction
+</h4>
+<p>
+    The paper also points out the consequences of each approach on the tailoring of the selected project engagement model,
+    i.e. on the definition of the project’s work breakdown structure (WBS) and on the adoption of specific work products
+    (WP’s) and as such will of great value during the Method Adoption Workshop.&nbsp; The focus is on&nbsp;how
+    to&nbsp;organizine the work needed to develop the functional aspect of the IT System in the context of a application
+    development project.
+</p>
+<h3>
+    2&nbsp;Background
+</h3>
+<p>
+    The IBM Global Services Method (The Method) presents a rich set of engagement models and WPD’s in order to meet the
+    requirements of an as wide as possible variety of IT system implementation projects. In all cases, The Method addresses
+    the general problem of moving from requirements to implementation in two different ways:
+</p>
+<ul>
+    <li>
+        emphasizing the use of the ‘architecture model’ (subsequently referred to as ‘architecture model’ driven approach)
+    </li>
+    <li>
+        relying on the use of the ‘application model’ (subsequently referred to as ‘application model’ driven approach)
+    </li>
+</ul>
+<p>
+    The ‘architecture model’ construct refers to a group of WP’s related to the functional and operational aspect of the
+    architecture, most notably the Component Model WP, Deployment Unit WP and Operational Model WP. The ‘application model’
+    construct groups a number of analysis and design related WP’s either created in the context of a structured or an
+    object-oriented approach, such as Program Module Specification WP and Class Diagram WP.
+</p>
+<p>
+    The generalized WBS proposed for e.g. the CAD engagement models includes, however, activities both for the architecture
+    and the application model driven approaches. Consequently, without careful tailoring of the engagement model, the
+    resulting WBS and the set of adopted WP’s might cause unnecessary work and confusion.
+</p>
+<p>
+    Understanding the scope and complexity of the IT system is fundamental to determining an appropriate tailoring of the
+    engagement model for delivering that system. One key decision is whether the method work products of the application or
+    architecture model should be the focus of effort during the early architecture and design tasks of the engagement. This
+    clearly affects the type of roles needed and resource profiles. The Lead Architect will set such a direction for the
+    project and advise the Project Manager about which approach should be followed in delivering the IT system.
+</p>
+<p>
+    Note that the architecture and application model are not perfect substitutes for one another, since the development of
+    the solution’s design will almost certainly need WPs from each model.&nbsp; However in both the architecture and the
+    application model, WPs are present that support the definition of the high level structure of the IT System and
+    consequently only one of them will be created during the definition of the functional aspect of the architecture. As
+    will be shown later, the use of the architecture model driven approach does not exclude the use of the application
+    model driven approach. The latter will still be used although only within the scope(s) defined by the components of the
+    associated Component Model WP. Alternatively, the use of the application model driven approach will typically imply
+    that some WPs associated with the architecture model driven approach will not be created. The WP’s associated with the
+    operational aspect (Deployment Units WP and Operational Model WP) will always be relevant given that the WPD’s grouped
+    in the application model do not address the operational aspect of the architecture.<br />
+</p>
+<h3>
+    3&nbsp;Approaches for bridging the gap between requirements and implementation
+</h3>
+<p>
+    A combination of WPs taken from both the architecture and application models is needed in order to support a complete
+    end-to-end design and specification of the functional aspects of an IT system. However, the actual WP’s used and the
+    emphasis laid on the various activities of the WBS differ substantially between the two approaches. This section will
+    focus on the approaches themselves, while the next will take a closer look at the effect of adopting a particular
+    approach on tailoring the engagement model.
+</p>
+<ul>
+    <li>
+        In the architecture model driven approach, the WP’s covering the functional and the operational aspect of the
+        architecture will be used to specify the overall structure of the system down to a sufficient level of detail. The
+        ‘sufficient’ level of detail refers to the situation in which a well specified context has been created for all
+        subsequent design and implementation level activities.
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        Typically, the application model related WP’s will then be used to drive the overall design of the system up to the
+        point where the implementation activities can take place. Thus, in the architecture model driven approach, this
+        design level activity will each time take place within the overall structure(s) defined by the work products
+        belonging to the architecture model.
+    </p>
+</blockquote>
+<ul>
+    <li>
+        The application model driven approach on the other hand will rely on a ‘high level’ version of the applicable
+        design level WPs to drive out the overall software structure of the system, while the WP’s of the architecture
+        model will be used to address the needs of the operational aspect of the architecture. This approach uses different
+        work products (complying with the same work product description) addressing firstly the need to establish an
+        overall structure, and subsequently documenting the design level detail needed to be able to move towards
+        implementation.
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        Thus, like the architecture model driven approach, a context is established within which the ‘design level’
+        versions are created, in this case by the ‘high level’ version of the same work product description.
+    </p>
+</blockquote>
+<h3>
+    4&nbsp;The Effect of the Approaches on Tailoring the Engagement Model
+</h3>
+<p>
+    A key driver determining the choice between the ‘Architecture Model’ and the ‘Application Model’ approaches will be the
+    scope and complexity of the IT system to be delivered. This complexity is assessed during the Solution Design phase
+    (such as during the proposal development) and is one of the key inputs to the Method Adoption Workshop (MAW) conducted
+    early in the Solution Delivery project. This workshop determines the activities and tasks that will be incorporated in
+    the WBS and the WP’s that will be produced during the engagement. It is crucial to understand that the focus of effort,
+    certainly during Solution Outline and Macro Design, will differ significantly depending on the approach chosen, (Ref.
+    2):
+</p>
+<ul>
+    <li>
+        In less complex engagements where the application model leads, no tasks related to the creation and refinement of
+        the WP’s supporting the functional aspect of the architecture will be scheduled. For example, if the IT system is a
+        simple client / server application consisting of a client application, some server stored procedures and associated
+        database tables, then developing a high level component model will not provide more insight than the relevant
+        design level work product.<br />
+        &nbsp;<br />
+        <img height="359" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/usingtheappandarchmodelsfig1.JPG" width="600" />
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Figure1: Application Model Lead
+            </p>
+        </blockquote>
+    </blockquote>
+    <p>
+        However, as the diagram above shows, certain WP’s belonging to the architecture model will still be created,
+        notably the Operational Model WP - unless the system is also straightforward from an operational aspect’s point of
+        view. Consequently, the way in which the information will flow between the WP’s of the architecture and application
+        models will have to be defined during the tailoring of the engagement model as no such explicit linkage is
+        currently defined within the Global Services Method.
+    </p>
+</blockquote>
+<ul>
+    <li>
+        With a large and complex IT system, such as a distributed multi-technology system integration project, it will
+        almost certainly be necessary to adopt an architecture model driven approach, although it may only possible to
+        identify the required components at a very coarse level during Solution Outline (during the task ‘Develop High
+        Level Component Model’). In such a system, additional effort will be required on the architecture model during
+        Solution Delivery. This effort will be aimed at defining all required components and their interactions down to a
+        sufficient level of detail so that a context can be provided for all subsequent design level activities. These
+        design level activities will then typically create one or more of the work products grouped in the Application
+        Model, defining for example system functions and logical data entities.<br />
+        &nbsp;<br />
+        <img height="371" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/usingtheappandarchmodelsfig2.JPG" width="597" />
+    </li>
+</ul>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Figure 2: Architecture Model Lead
+</p>
+<h3>
+    5&nbsp;Step Wise Procedure to Ensure a Consistent Rollout of the Chosen Approach
+</h3>
+<p>
+    Deciding on which approach to adopt, and how the chosen approach influences the development of the work products
+    associated with the functional aspects of the project can be accomplished during the MAW (or similar event) by
+    following a step-by-step procedure:
+</p>
+<h4>
+    Step 1: Understand the scope and complexity of the IT system
+</h4>
+<p>
+    Use the System Context diagram and Architecture Overview diagram WPs to understand the scope and complexity of the
+    solution that has to be delivered. These will probably have been created as part of Solution Design; although they
+    should be refined as you start Solution Delivery:
+</p>
+<ul>
+    <li>
+        The System Context diagram will highlight the various involved user groups and external interfaces and therefore
+        provide an indication of the scale and complexity of the IT system. A small-scale or simple system will only have a
+        very limited number of external systems and only a limited number of user groups.
+    </li>
+    <li>
+        The Architecture Overview diagram will give an overview of the solution to be delivered. On the basis of this
+        overview, an initial assessment can be made of the relative complexity of the solution. A simple system will only
+        consist of a single application while a more complex one may involve several different applications offering
+        opportunities for e.g. the development of common technical services.
+    </li>
+</ul>
+<h4>
+    Step 2: Select an approach
+</h4>
+<p>
+    Decide on the approach given the degree of complexity and the scope identified during the previous step. For complex IT
+    Systems we would recommend the adoption of the architecture model driven approach given the advantages obtained through
+    the creation of a Component Model WP (such as the definition of an overall functional structure of the system
+    emphasizing the definition of cohesive and decoupled components (See Ref 3)). Also, even when the system is
+    straightforward from the functional aspect’s point of view, one might want to consider adopting the architecture model
+    driven approach for the better linkage it supports between the Component and Operational Model.
+</p>
+<h4>
+    Step 3: Adopt the appropriate work products to organize the development of the functional aspect of the architecture of
+    the IT system
+</h4>
+<p>
+    In the architecture model driven approach, the Component Model is the key work product for specifying the functional
+    architecture of an IT system. Hereto a number of techniques are available for identifying and specifying the components
+    of the IT system (Ref. 3 & 4). This might be the case for a large new system integration effort e.g. a
+    multi-channel CRM solution or leading-edge technology projects where component blueprints and best practices do not
+    exist.
+</p>
+<p>
+    In an application driven approach, the key WP depends on the adopted software development style:
+</p>
+<ul>
+    <li>
+        where a Structured Analysis and Design development method is used, the key work product will be the Program Module
+        Invocation Model, defining how various applications and code modules collaborate.
+    </li>
+    <li>
+        Alternatively, Object-oriented development methods will rely on the Class Diagram and Interaction Diagram work
+        products to document the structures and collaborations of the identified classes.
+    </li>
+</ul>
+<h4>
+    Step 4: Ensure that only the activities relevant for one of the approaches are present in the WBS
+</h4>
+<p>
+    In the case of the architecture model driven approach, remove tasks that outline or refine the high level application
+    model. In this approach, that role is assumed by the Component Model WP.
+</p>
+<p>
+    Alternatively, in the case of the application driven approach, all tasks related to outlining or refining the component
+    model should be removed from the WBS. In this approach, that role is assumed by the ‘high level version’ of the
+    appropriate Application Model related WP.
+</p>
+<h4>
+    Step 5: Ensure that the relevant architecture and application model related WP’s are joined up
+</h4>
+<p>
+    In the case of the architecture model driven approach, a decision needs to be taken about whether the components
+    specified in the component model WP will be implemented following a structured or an object oriented approach. This
+    decision will lead to the adoption of the relevant application model related WP. This WP will take the component
+    specification as its starting point.
+</p>
+<p>
+    Alternatively, in the case of the application model driven approach, the linkage between the high level and the design
+    level of the adopted WP needs to be established so that a seamless integration between both levels is obtained.
+</p>
+<h4>
+    Step 6: Ensure the linkage between the functional and operational aspects of the architecture
+</h4>
+<p>
+    The operational aspect of the architecture of the IT system (mainly documented in the Operational Model WP) is usually
+    developed in parallel to the functional aspect of the IT system. The Deployment Unit work product is used to bridge
+    between the functional and operational sides of the solution.
+</p>
+<p>
+    If the architecture driven approach is adopted, the WBS and the technique papers associated with the Component and
+    Operational Model WP’s together with the DU development technique paper will ensure that both aspects are linked up and
+    synchronized regularly during the engagement.
+</p>
+<p>
+    In the case of the application driven approach, the link between the functional and operational aspects of the solution
+    is also via the identification and definition of appropriate DUs – but this time associated with the DFD Application
+    Model (Execution DU) and Physical Database Model WP (Data DU) for the structured approach or with the Interaction
+    Diagram WP (Execution DU) and Class Diagram WP (Data DU) for the object oriented approach. There are not, however,
+    technique papers yet available within The Method to support this linkage.
+</p>
+<h3>
+    6&nbsp;Appendix : The WPD’s of the Application Model
+</h3>
+<p>
+    The application model groups the WP’s documenting the design of software in an IT system through object-oriented
+    analysis and design techniques or structured analysis and design techniques. This is captured in a number of work
+    products, some of which are classified as either “structured” or “object-oriented”.
+</p>
+<p>
+    On a large complex engagement there are likely to be both types. Some applications of the IT system will be designed
+    and implemented using an OO method, whilst others will be designed and implemented using a structured method because
+    they are going to be custom built using non-OO technology or result in a package based implementation.
+</p>
+<p>
+    Note that the application model does not include any WPs associated with the operational aspects of the solution.&nbsp;
+    Consequently, projects adopting the application model approach will need to also adopt WPs from the operational aspects
+    of the architecture model group. Also, no requirements WP’s are included in the overview, given that this appendix only
+    includes those WP’s that are of immediate concern to this technique paper. Obviously, this does not imply that no
+    requirements related WP’s should be adopted.
+</p>
+<h4>
+    Work Products
+</h4>
+<p>
+    The <em>object-oriented</em> analysis and design work products in the application model are:
+</p>
+<ul>
+    <li>
+        <strong>Class Diagram</strong> – represents the application model as a number of software objects and their static
+        relationships.<br />
+    </li>
+    <li>
+        <strong>Interaction Diagram</strong> – depict the internal behaviour of the system through collaborating objects
+        that send messages and return responses to each other.<br />
+    </li>
+    <li>
+        <strong>Statechart Diagram</strong> – depicts the behaviour of a single class by describing the states it may
+        attain and how external stimuli cause a change in state.
+    </li>
+</ul>
+<p>
+    The <em>structured</em> analysis and design work products in the application model are:
+</p>
+<ul>
+    <li>
+        <strong>Database Transaction Descriptions</strong> – defines database operations into a set of transactions that
+        will ensure data integrity and enforce business rules.<br />
+    </li>
+    <li>
+        <strong>Logical Data Model –</strong> a diagram showing the relationship of entities, and their attributes, that
+        represent the information that the IT system must manage.<br />
+    </li>
+    <li>
+        <strong>Process Data Usage</strong> – defines all the dependency relationships between business processes and data
+        entities.<br />
+    </li>
+    <li>
+        <strong>Program Invocation Model</strong> – describes the calling hierarchy of the IT system’s application mapping
+        the functional model onto code modules.<br />
+    </li>
+    <li>
+        <strong>Program Module Specifications</strong> – specifies the interface and function of code modules.<br />
+    </li>
+    <li>
+        <strong>DFD Application Model</strong> – a functional decomposition of the IT system.
+    </li>
+</ul>
+<h4>
+    Activities
+</h4>
+<p>
+    The development of the application model is done through three key activities:
+</p>
+<ul>
+    <li>
+        <strong>Outline Application Model</strong> – defines the major pieces of function (either classes or entities /
+        processes) and their relationships independent of implementation.<br />
+    </li>
+    <li>
+        <strong>Refine Application Model</strong> – user specifications, business process definitions and business
+        requirements refine the system-wide information needed to specify software releases.<br />
+    </li>
+    <li>
+        <strong>Detail Application Model</strong> – detail the specification of part of the system for a release.<br />
+    </li>
+</ul>
+<h3>
+    7&nbsp;Appendix: The WPD’s of the Architecture Model
+</h3>
+<p>
+    The architecture model groups the WP’s documenting the functional and operational aspect of the architecture of the IT
+    system in order to meet the business requirements and satisfy the non-functional requirements. This is captured in a
+    number of work products, some of which are classified as either “functional” or “operational”.
+</p>
+<p>
+    Note that the WPs associated with the operational aspects of the IT system’s architecture will also need to be adopted
+    when using the application model.
+</p>
+<p>
+    There are also some architecture work products for specialist architecture disciplines such as networking and
+    performance engineering.
+</p>
+<p>
+    Also, no requirements WP’s are included in the overview, given that this appendix only includes those WP’s that are of
+    immediate concern to this technique paper. Obviously, this does not imply that no requirements related WP’s should be
+    adopted.
+</p>
+<h4>
+    Work Products
+</h4>
+<p>
+    The key functional architecture work products in the architecture model are:
+</p>
+<ul>
+    <li>
+        <strong>Architectural Template</strong> – documents the common design patterns or technical implementation
+        solutions for certain aspects of the solution such as persistence management.<br />
+    </li>
+    <li>
+        <strong>Component Model –</strong> describes the structure of an IT system in terms of components and their
+        responsibilities, interfaces, static relationships, and the way they collaborate to deliver the required
+        functionality.
+    </li>
+</ul>
+<p>
+    The key operational architecture work products in the architecture model are:
+</p>
+<ul>
+    <li>
+        <strong>Deployment Unit</strong> – describes components and data that are grouped together for deployment on
+        nodes.<br />
+    </li>
+    <li>
+        <strong>Operational Model</strong> – defines the distribution of an IT system’s components onto geographically
+        distributed nodes and connections.
+    </li>
+</ul>
+<h4>
+    Activities
+</h4>
+<p>
+    The development of the application model is done through three key activities:
+</p>
+<ul>
+    <li>
+        <strong>Outline Architecture Model</strong> – define the overall shape and style of the architecture for the IT
+        system, system-wide technology and design decisions, and asset assessment and selection.<br />
+    </li>
+    <li>
+        <strong>Design Architecture Model</strong> – design the architecture of the overall IT system to be robust and
+        flexible for all its releases, selecting infrastructure and application development products.<br />
+    </li>
+    <li>
+        <strong>Refine Architecture Model</strong> – finalise the architecture required for a particular release that will
+        support that release’s functional and non-functional requirements.
+    </li>
+</ul>
+<h3>
+    8&nbsp;References
+</h3>
+<ol>
+    <li>
+        Custom Development and Business Intelligence engagement models, IBM Global Services Method <a href="http://method.ibm.com/">http://method.ibm.com/</a><br />
+    </li>
+    <li>
+        CRM Solution Design and Delivery Process, <a href="http://w3-5.ibm.com/services/emea/north/3ntgs.nsf/alldocsbytitle/the sdd process blueprint booklet">http://w3-5.ibm.com/services/emea/north/3ntgs.nsf/alldocsbytitle/the+sdd+process+blueprint+booklet</a><br />
+    </li>
+    <li>
+        Component Modelling Technique Paper, IBM Global Services Method <a href="http://method.ibm.com/">http://method.ibm.com/</a><br />
+    </li>
+    <li>
+        Composing an EAI Conceptual Architecture Technique Paper, IBM Global Services Method <a href="http://method.ibm.com/">http://method.ibm.com/</a><br />
+        &nbsp;&nbsp;&nbsp;<br />
+    </li>
+</ol></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

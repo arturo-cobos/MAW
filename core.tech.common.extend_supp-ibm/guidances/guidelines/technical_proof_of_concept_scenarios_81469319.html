@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Technical Proof of Concept Scenarios</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="technical_proof_of_concept_scenarios">
+<meta name="uma.presentationName" content="Technical Proof of Concept Scenarios">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_luzL0DeYEdyFMtjeREc5MQ"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_luzL0DeYEdyFMtjeREc5MQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Technical Proof of Concept Scenarios</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Technical Proof of Concept Scenarios outline situations which may warrant the development of a technical proof of concept for a given engagement.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/dev_tech_proof_of_concept_703DB22A.html" guid="_QJk7IDDaEdyz_pzDMsV8FQ">Develop Technical Proof of Concept</a>
+</li>
+<li>
+<a href="./../../../practice.tech.component_sys_arch.extend-ibm_lic/tasks/dev_tech_proof_of_concept_D658DC29.html" guid="__lOsgSjQEeCOoqqZ5M9x9Q">Develop Technical Proof of Concept</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/technical_proof_of_concept_CEDA4198.html" guid="mwebDADCD71C49E3EA6485256885005CD538">Technical Proof of Concept</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Since a Technical Proof of Concept actually validates a component design and produces executable code, it is difficult
+    to document a running example.&nbsp; This document will simply highlight scenarios which may warrant the development of
+    a Technical Proof of Concept.
+</p>
+<p>
+    <br />
+    1.&nbsp;In order to fit a particular customer's existing IT platform, a project was implemented using Smalltalk and
+    COBOL with C++ infrastructure code.&nbsp; This particular combination of technologies was at that time totally unknown
+    in the relevant development shop, so a small subsection of the product was developed as a Technical Proof of
+    Concept.&nbsp; It included the bare minimum to demonstrate the compatibility of the components and measure the
+    end-to-end performance characteristics of a simple transaction.&nbsp; The transaction was measured using a desktop
+    object on the client, the messaging service between the client and the host, and a simple server component.&nbsp; The
+    following results were produced:
+</p>
+<ul>
+    <li>
+        Metrics for the performance and capacity characteristics of the technology, such as message size information and
+        turnaround time.
+    </li>
+    <li>
+        Outline requirements for tools to monitor and verify the cost of the technology, in this case the incorporation of
+        trace points in the application logic to support performance analysis and debugging.
+    </li>
+    <li>
+        Recommendations that some of the technology should not be used.&nbsp; In this case, the proposed version of
+        Smalltalk was replaced with one from another supplier because of the inefficiency of the garbage collection
+        process.
+    </li>
+    <li>
+        Developer guidance on the most effective way to use the technology, for example on how to reduce total time
+        perceived by the end-user by overlapping client and server processing.
+    </li>
+</ul>
+<p>
+    2.&nbsp;Another project development team performed some initial work to learn exactly how MQSeries worked.&nbsp; The
+    output from this was in the form of flow diagrams that identified the areas within the product that could become
+    performance concerns.
+</p>
+<p>
+    3.&nbsp;A third project required an interface to an existing system.&nbsp; The new interface had aggressive performance
+    requirements.&nbsp; A Technical Proof of Concept was created to validate the design options for maximizing the
+    throughput of the interface.
+</p>
+<p>
+    On a fourth project, the designers were unsure which batch architecture would yield the shortest overnight run
+    time.&nbsp; The cost of actually developing more than one option was prohibitive, so a detailed simulation of the
+    various options was carried out using a tool to determine which was the most effective.&nbsp; Note that this approach
+    should only be used with great care, as any simulation is only as good as the data that goes into it (refer to the
+    Performance Model WPD).
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Defining Architecture Specification</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="defining_arch_spec">
+<meta name="uma.presentationName" content="Defining Architecture Specification">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mwebACBC1C55502A51688025666B004CF4B5"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebACBC1C55502A51688025666B004CF4B5"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Defining Architecture Specification</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This technique is used during the elaboration of an Operational Model from a conceptual level to the specification of nodes, connections and components.  A fully specified Operational Model is sometimes referred to as an Architecture Specification. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    A specification-level Operational Model is at an appropriate level of abstraction and detail to be used as a key part
+    of an Invitation to Tender (ITT), where there is a need to maximize the opportunity for a wide range of vendors to
+    present their best solution, without changing the overall structure of the design.&nbsp; Alternatively, the project
+    team can subsequently develop the Operational Model to a physical level, by selecting software and technology products,
+    which satisfy the specifications.
+</p>
+<p>
+    This technique takes a conceptual-level Operational Model and transforms it in several ways:
+</p>
+<ul>
+    <li>
+        It identifies the underlying technical requirements necessary to deliver the required business function where and
+        when it is needed, with the appropriate service level characteristics and within the necessary constraints.<br />
+    </li>
+    <li>
+        A subset of constraints have already been accommodated, specifically the limitations imposed on the design due to
+        the non-functional capabilities of the solution’s network infrastructure.&nbsp; This has already largely determined
+        the shape and style of the solution, in terms of the application’s data and function placement across the geography
+        of the client.<br />
+    </li>
+    <li>
+        It converts the vaguely defined conceptual nodes (which simply represent some form of approximate co-location of
+        application-oriented deployment units) into fully specified, potentially independently deployable computer systems
+        and other IT hardware, referred to as specified nodes.&nbsp; Specified nodes are described in terms of technical
+        requirements, not technical products which meet these requirements<br />
+    </li>
+    <li>
+        It converts the “point-to-point” connections (which represent the required component interactions) into fully
+        specified inter-node connections (referred to as connection segments since an interaction may need to be supported
+        by several “linked” connections).&nbsp; Connection segments are described in terms of technical requirements, not
+        technical products that meet these requirements.<br />
+    </li>
+    <li>
+        It refines the system management requirements, described in general terms at the conceptual level, into full
+        specifications.<br />
+        During the transformation the deployment units and components may be relocated and/or redefined according to the
+        design choices made.
+    </li>
+</ul>
+<p>
+    This technique is used in parallel with specific techniques to design for availability, security, performance and
+    capacity, and system management.
+</p>
+<p>
+    As the Operational Model evolves throughout a project, it is common for different parts of it to be at different levels
+    abstraction (and detail), and the technique should be applied flexibly to reflect this.
+</p>
+<p>
+    As a ‘deployment unit’ is merely a convenient collection of components, the technique often refers to placing
+    components rather than deployment units.&nbsp; Where it is important to distinguish between placing the data aspect,
+    execution aspect, installation aspect, the term deployment unit is used.
+</p><br />
+<p>
+    <a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/definingarchitecturespecification.doc" target="_blank">definingarchitecturespecification.doc</a>
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Package Extensions: Visual Banker Engagement</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="package_extensions_visual_banker">
+<meta name="uma.presentationName" content="Package Extensions: Visual Banker Engagement">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_aHincEQSEdyKRcVRCznYRg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Package Extensions: Visual Banker Engagement</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Sample package extensions for Visual Banker.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/package_extensions_B9A04579.html" guid="mwebC2622A1C6984A6DF85256885005198A7">Package Extensions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Visual Banker provides a framework on which to build retail applications for banks. Visual Banker does not necessarily
+    provide all the functionality required by each bank. Therefore, each installation may have to extend the Visual Banker
+    Framework to meet the client’s requirements. The following example comes from an actual Visual Banker engagement.
+</p>
+<h5>
+    Reason
+</h5>Display a visual indication (busy cursor) when long operations are taking place. 
+<h5>
+    Code Changes
+</h5>Change COM.footprint.ApplicationCatalog.view.ApplicationCatalogView launchApplicationView() to comment out the hide()
+and show() calls as indicated below: <br />
+/** <br />
+* Launch the selected application. <br />
+*/ <br />
+private void launchApplication ( ) { <br />
+<br />
+setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR)); <br />
+Action anAction = (Action)getcontainer().getSelectedNode().getObject(); <br />
+String appName = getcontainer().getSelectedNode().getLabel(); <br />
+java.awt.event.ActionEvent e = new java.awt.event.ActionEvent(getParentFrame(),java.awt.event.ActionEvent.ACTION_FIRST,"");
+<br />
+if (anAction.isEnabled()) { <br />
+<b>//getParent().hide();</b> <br />
+try { <br />
+anAction.actionPerformed(e); <br />
+disposeParent(); <br />
+setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR)); <br />
+} <br />
+catch(Exception x) { <br />
+setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR)); <br />
+handleException(new ApplicationLaunchFailedException(x, appName)); <br />
+<b>// getParent().show();</b> <br />
+} <br />
+} <br />
+else { <br />
+<b>//getParent().hide();</b> <br />
+setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR)); <br />
+handleException(new ApplicationLaunchFailedException(appName)); <br />
+<b>//getParent().show();</b> <br />
+} <br />
+}</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

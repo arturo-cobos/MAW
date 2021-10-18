@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Performance Engineering PRR Criteria Checklist</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="perf_eng_prr_criteria">
+<meta name="uma.presentationName" content="Performance Engineering PRR Criteria Checklist">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb86E3A9BB56C1299B852572BC006683D7"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb86E3A9BB56C1299B852572BC006683D7"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Performance Engineering PRR Criteria Checklist</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The Production Readiness Review (PRR) ensures that the implemented, tested system has been able to meet its requirements and is ready to be deployed. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.sys_eng.extend-ibm_int/tasks/perfrom_prod_readiness_review_4C9DB864.html" guid="mweb093C356700000113D4B3300AD0610CA6">Perform the Production Readiness Review</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1 Description
+</h3>
+<p>
+    In an Enterprise SE&A project, the Test Baseline encompasses the release contents, test plans and implementation
+    for the system described in the preceding baselines.
+</p>
+<p>
+    This technique paper contains the checklists which the PE team uses during the PRR to ensure that the PE goals and
+    objectives have been adhered to during the Test Readiness Phase, It is important that the that performance testing has
+    confirmed the ability of the system to meet its performance requirements, and that there are no performance- or
+    capacity-related obstacles to the system’s deployment in the production environment. Deliverables, which are deemed
+    deficient from a performance and capacity standpoint, may lead to the entry of a defect, which is then taken into
+    account during the PRR Scorecard process.
+</p>
+<h3>
+    2 Usage Context
+</h3>
+<p>
+    This technique paper should be used as guidance while conducting a Production Readiness Review in an enterprise
+    SE&A project.
+</p>
+<h3>
+    3 Content
+</h3>
+<p>
+    The following PE specific items should be verified during PRR:
+</p>
+<p>
+    <strong>PRR Preparation</strong>
+</p>
+<ul>
+    <li>
+        PE work products / deliverables from earlier phases are revisited based on any new information from
+        development&nbsp; 
+        <ul>
+            <li>
+                Performance estimates&nbsp;
+            </li>
+            <li>
+                Performance models&nbsp;
+            </li>
+            <li>
+                Resulting performance reports (SLCA, Operational Model updates, sizing)&nbsp;
+            </li>
+        </ul>
+    </li>
+    <li>
+        Key performance risks areas in developed solution were evaluated using selected estimation / modeling
+        techniques&nbsp;
+    </li>
+    <li>
+        Results of estimation forwarded to appropriate areas (e.g. development, test team, stakeholders, etc.)&nbsp;
+    </li>
+    <li>
+        Component baseline materials reviewed by PE team, especially&nbsp;
+    </li>
+    <li>
+        Test results&nbsp;
+    </li>
+    <li>
+        Deployment / production management plans
+    </li>
+</ul>
+<p>
+    <strong>PRR Performance Questions</strong>
+</p>
+<ul>
+    <li>
+        Do the performance test results indicate that the solution will meet the performance requirements, SLRs within the
+        constraints of the capacity plan?&nbsp;
+    </li>
+    <li>
+        Is there (or are there plans to develop) a Service Level Agreement (SLA) for the deployed solution?&nbsp;
+    </li>
+    <li>
+        Have the tuning recommendations from test been communicated to the deployment team and planned for
+        implementation?&nbsp;
+    </li>
+    <li>
+        Have all tests been completed and all performance requirements been met within acceptable tolerances?&nbsp;
+    </li>
+    <li>
+        Is there documented evidence of the performance acceptance criteria having been met? If not, will the stakeholder
+        sign off on any exceptions to allow deployment to continue?&nbsp;
+    </li>
+    <li>
+        Did the performance test team rehearse the live monitoring and performance/capacity management tools and processes
+        that will be used by the production support team? If so, have the results of this rehearsal been communicated to
+        production support, or were they involved in the rehearsal process?&nbsp;
+    </li>
+    <li>
+        Has the production support implemented the live monitoring and reporting tools and processes that will be needed to
+        support the deployed solution with respect to performance and capacity?&nbsp;
+    </li>
+    <li>
+        Has the performance risk been reassessed since the TRR and are those risks being adequately addressed?&nbsp;
+    </li>
+    <li>
+        Are there plans that will allow for a backout staged implementation or extra capacity should unforeseen critical
+        performance or capacity issues occur?&nbsp;
+    </li>
+    <li>
+        Will the performance-centric items satisfy the applicable TRR scorecard criteria, i.e.&nbsp; 
+        <ul>
+            <li>
+                <b>Requirements and Architecture (Content)</b>&nbsp; 
+                <ul>
+                    <li>
+                        Requirements in the baseline versus requirements being delivered - Non functional requirements
+                        defined, enumerated, traced&nbsp;
+                    </li>
+                    <li>
+                        Gaps or risks identified and mitigated or transferred (Exclusions)&nbsp;
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Test Results</b>&nbsp; 
+                <ul>
+                    <li>
+                        Non-functional testing complete or projected&nbsp;
+                    </li>
+                    <li>
+                        Gaps or risks identified and mitigated or transferred (Exclusions)&nbsp;
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Expected Availability, Performance, and Response Times</b>&nbsp; 
+                <ul>
+                    <li>
+                        Expected end-to-end availability in production&nbsp;
+                    </li>
+                    <li>
+                        Expected system response times and other performance criteria (if not covered in performance or
+                        stress test results)&nbsp;
+                    </li>
+                    <li>
+                        Infrastructure changes made to the production systems to meet requirements&nbsp;
+                    </li>
+                    <li>
+                        Gaps or risks identified and mitigated or transferred (Exclusions)&nbsp;
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Deployment / Production Readiness</b>&nbsp; 
+                <ul>
+                    <li>
+                        Install Plans defined&nbsp;
+                    </li>
+                    <li>
+                        Dependencies, Issues and Risks defined
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    <strong>PRR Actions</strong>
+</p>
+<ul>
+    <li>
+        PRR issues are raised for concerns which may affect PRR scorecard findings.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

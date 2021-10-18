@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Practice: Data Design</title>
+<meta name="uma.type" content="Practice">
+<meta name="uma.name" content="data_design">
+<meta name="uma.presentationName" content="Data Design">
+<meta name="element_type" content="Practice">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_Y3ixcFq4Ed6NVp6oO7pJwg"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_Y3ixcFq4Ed6NVp6oO7pJwg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Practice: Data Design</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/practice.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This practice provides for the logical and physical design of the required databases to support the application.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content References</th><td class="sectionTableCell">
+<ul>
+<li>
+<img src="./../../../images/roadmap.gif" height="16" width="16"><a href="./../../../practice.tech.data_design.extend-ibm_lic/guidances/roadmaps/how_to_adopt_814C0298.html" guid="_b2XRYKk4Ed6Bf6fYS7-QCA">How to Adopt the Data Design Practice</a>
+</li>
+</ul>
+<ul>
+<li>Key Concepts</li>
+<ul>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/conceptual_data_modeling_66CED24C.html" guid="_qsV2cAo-Edygr55FhBZqVw">Conceptual Data Modeling</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.common.extend_supp-ibm/guidances/concepts/normalizing_data_C007944B.html" guid="_u14esAo-Edygr55FhBZqVw">Normalizing Data</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../practice.tech.data_design.base-ibm/guidances/concepts/relational_db_object_orientation_916C8A4C.html" guid="_SxF-QAo-Edygr55FhBZqVw">Relational Databases and Object Orientation</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../practice.tech.data_design.extend-ibm_lic/guidances/concepts/associative_entity_DA7AC4E0.html" guid="_lnRUkOqQEd6xl_ClTCtxYA">Associative Entity</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../practice.tech.data_design.extend-ibm_lic/guidances/concepts/characteristic_entity_E5CEAFA9.html" guid="_sVnb4OqQEd6xl_ClTCtxYA">Characteristic Entity</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../practice.tech.data_design.extend-ibm_lic/guidances/concepts/composition_generailized_hierachy_11786B4C.html" guid="_7AFsQOqQEd6xl_ClTCtxYA">Composition and Generalized Hierarchies</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../practice.tech.data_design.extend-ibm_lic/guidances/concepts/generalization_specialization_C35B29DF.html" guid="_7ZH3UOqQEd6xl_ClTCtxYA">Generalization-Specialization</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/concepts/service_orientation_397D305A.html" guid="_0AzTMGdFEd-j6-ZOl9DeCA">Service Orientation</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/concepts/soma_8DC58C12.html" guid="_rr5B4BmFEdqx_IUyKxxtEg">Service-Oriented Modeling and Architecture (SOMA)</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>Work Products</li>
+<ul>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/data_migration_specification_B4ADA350.html" guid="mweb22D39A44D3A01C698525688200617C95">Data Migration Specification</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/data_model_201FD2D8.html" guid="mweb92DDF88B152881D585256885005042A1">Data Model</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/physical_database_design_B38821A2.html" guid="mweb67A87EB3268559088525688500520A8B">Physical Database Design</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/data_migration_plan_F06C995B.html" guid="mwebDFECFDE6B757374A852568820061938D">Data Migration Plan</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/data_migration_programs_947D234F.html" guid="mweb3B959C944E542F14852568820061A9DF">Data Migration Programs</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/database_trans_desc_D8976B63.html" guid="mweb618E9D383D17810F852568820061D9D6">Database Transaction Descriptions</a>
+</li>
+<li>
+<img src="./../../../images/outcome.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/data_migrated_49D3579D.html" guid="_t5h5oFBKEeC-nZrGQNBVmA">Data Migrated </a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>Tasks</li>
+<ul>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.data_design.base-ibm/tasks/detail_logical_data_model_2C3DDB31.html" guid="_FDafkAo5Edygr55FhBZqVw">Detail Logical Data Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.data_design.base-ibm/tasks/develop_data_migration_specs_665DA8D2.html" guid="_2XUcMAoEEdylK4Y6kXK2hQ">Develop Data Migration Specifications</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.data_design.base-ibm/tasks/develop_physical_database_design_3AB5F1C6.html" guid="_7CyLUAo8Edygr55FhBZqVw">Develop Physical Database Design</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.data_design.base-ibm/tasks/outline_logical_data_model_AD31F6F5.html" guid="_8eAI8Ao4Edygr55FhBZqVw">Outline Logical Data Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.data_design.extend-ibm_lic/tasks/build_data_migration_programs_3F43DC5D.html" guid="_osg9MIrAEd-7e_ca0o78uQ">Build Data Migration Programs</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.data_design.extend-ibm_lic/tasks/develop_conceptual_data_model_BC40C974.html" guid="_9pe18Fq9Ed6NVp6oO7pJwg">Develop Conceptual Data Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.data_design.extend-ibm_lic/tasks/develop_data_migration_plan_F71D3E42.html" guid="_agvxoFq9Ed6NVp6oO7pJwg">Develop Data Migration Plan</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.data_design.extend-ibm_lic/tasks/develop_db_trans_desc_42F09CBB.html" guid="_kQrOQCojEd6XSu3by8hfTQ">Develop Database Transaction Descriptions</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.data_design.extend-ibm_lic/tasks/load_data_new_environment_F7AFAFD9.html" guid="_J5mXsIrCEd-7e_ca0o78uQ">Load Data into New Environment</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.data_design.extend-ibm_lic/tasks/validate_migrated_data_DA88FF41.html" guid="_UojNsIrCEd-7e_ca0o78uQ">Validate Migrated Data</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.data_design_soma.addon-ibm_lic/tasks/begin_data_mapping_acrossa_soa_layers_8D23E131.html" guid="_ExpbQO3LEduV8s10_kGWGg">Begin Data Mapping Across SOA Layers</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.data_design_soma.addon-ibm_lic/tasks/decide_on_buy_build_enhance_data_sources_46173A0E.html" guid="_vUNXYO3MEduV8s10_kGWGg">Decide on Buy or Build or Enhance Data Sources</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.data_design_soma.addon-ibm_lic/tasks/define_common_messaging_standard_and_format_56016F43.html" guid="_puzPgJYVEd20ttcATDSVvQ">Define Common Messaging Standard and Format</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.data_design_soma.addon-ibm_lic/tasks/develop_canonical_message_model_DC0C7F99.html" guid="_AxmgUA1TEdyt-OtHf-OS2Q">Develop Canonical Message Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.data_design_soma.addon-ibm_lic/tasks/identify_data_quality_concerns_80A98C8A.html" guid="_GEjOkO3AEduV8s10_kGWGg">Identify Data Quality Concerns</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.data_design_soma.addon-ibm_lic/tasks/refine_canonical_message_model_D4F43EFF.html" guid="_R9_F8G8YEd-9z7-UXfcS-A">Refine Canonical Message Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.data_design_soma.addon-ibm_lic/tasks/select_information_service_pattern_5D7D09E7.html" guid="_K7TzoEE6EdyXD8cemHsDrA">Select Information Service Pattern</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>Guidance</li>
+<ul>
+<li>
+<img src="./../../../images/toolmentor.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/toolmentors/information_discipline_7D2D8B96.html" guid="_W5wSgBL3Ed2t0d9pJfMO0A">Information Discipline</a>
+</li>
+<li>Guidelines</li>
+<ul>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.data_design.base-ibm/guidances/guidelines/designing_data_migration_subsys_44DB9D05.html" guid="_UvqqkC5rEdyh0Z_E1QrtAQ">Designing Data Migration Subsystems</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.data_design.base-ibm/guidances/guidelines/fwd_eng_relational_db_89563280.html" guid="_cEZVoAo-Edygr55FhBZqVw">Forward-engineering Relational Databases</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.data_design.base-ibm/guidances/guidelines/rev_eng_relational_db_ED42F963.html" guid="_iqQPUAo-Edygr55FhBZqVw">Reverse-engineering Relational Databases</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/guidelines/value_add_soma_and_soa_7FA5F579.html" guid="_rc970GdDEd-j6-ZOl9DeCA">Value Add of SOMA and SOA</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.data_design_soma.addon-ibm_lic/guidances/guidelines/message_specification_536D24B5.html" guid="_D0RyAJxVEd2etf0ILItSnQ">Message Specification</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/guidelines/information_discipline_DAC8BBF3.html" guid="_nHAtoBLeEd2t0d9pJfMO0A">Information Discipline</a>
+</li>
+</ul>
+</ul>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Inputs</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.bus.slot.base-ibm/workproducts/business_design_slot_E033C894.html" guid="_OIXJkBYREd2eavK0BKAMiA">[Business Design]</a>
+</li>
+<li>
+<a href="./../../../core.tech.slot.base/workproducts/technical_architecture_slot_FF074CDD.html" guid="_8OD-cLPTEduocbW-TPTq7A">[Technical Architecture]</a>
+</li>
+<li>
+<a href="./../../../core.tech.slot.base/workproducts/technical_design_slot_84295A08.html" guid="_IcQOUEqdEdyi3_jfs__bIQ">[Technical Design]</a>
+</li>
+<li>
+<a href="./../../../core.tech.slot.base/workproducts/technical_specification_slot_2812F7EF.html" guid="_i3vkoLS-EduDY8LNbMCDBA">[Technical Specification]</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell">The purpose of this practice is to guide the project team in outlining and detailing the logical and physical databases
+that will support the application under development. Any data migration that is needed should also be considered during
+development of the application and its deployment into the production environment.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    The information discipline in SOMA considers information from top down business perspective and incorporates
+    information into business design in <strong>Information Analysis and Modeling</strong> practice.&nbsp;It&nbsp;aligns
+    solution design&nbsp;to business needs from information perspective and helps identifying information services that the
+    business requires. Furthermore, it introduces message modeling and message specification to existing data design
+    practices to define service specification using a common message model. A common message model limits data
+    transformation across and within&nbsp;the layers of the architecture.
+</p>
+<p>
+    <strong>Information Specification</strong>
+</p>
+<p>
+    In this practice, we begin to design information - both data design and message&nbsp;specification -&nbsp;&nbsp;in
+    Information Specification (IS).
+</p>
+<p>
+    We develop the Logical Data Model, defining the data structures and relationships for all the business entities within
+    the scope. The Logical Data Model takes these high level entities in Conceptual Data Model and elaborates to include
+    detailed definitions of their attributes and relationships for data design. Then we perform Data Quality Analysis to
+    quantify the data quality risks, validate data matching rules, define detailed data integration mapping strategies, and
+    begin evaluation of alternative service realization choices where providing acceptable data quality proves to be
+    problematic. This may lead to technical feasibility studies.
+</p>
+<p>
+    We also develop Canonical Message Model that is used in services specification to define service messages. Each service
+    contains one or more operations and each operation includes input, output, and error message definitions. To maximize
+    service reuse and service interoperability, all service messages should comply with a Canonical Message Model. The
+    Canonical Message Model defines the physical structures, rules, and semantics of the data being passed in service
+    messages. It is normally implemented as an XML schema or set of schemas. Like the Logical Data Models which it is
+    derived from Conceptual Data Model, the Canonical Message Model may be based directly or indirectly on industry
+    standard models. Solutions are designed and deployed as multiple architectural and operational layers. Data flows exist
+    both horizontally across an architectural layer—for example, through the activities of a business process—as well as
+    vertically up and down through architectural layers; for example, from a business process down through the services to
+    service component, to application and database layers. Establishing a standardized and shared data representation
+    throughout the solution helps minimize data transformation required for the solution to operate. The Data Mapping
+    activity defines the data transformation rules needed to integrate all solution elements to ensure data is shared
+    correctly within and across architectural layers.
+</p>
+<p>
+    <strong>Information Realization</strong>
+</p>
+<p>
+    Next, we make realization decisions&nbsp;related to information elements in the solution in Information Realization
+    (IR).
+</p>
+<p>
+    We make Realization Decisions and Architectural Decisions on realizing the information services. We select types of
+    Information Services such as data validation services, data cleansing service, master data services; and also we Select
+    Information Integration Patterns such as data consolidation patterns, data federation patterns, and so on.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">How to read this practice</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    The best way to read this practice is to first familiarize yourself with its overall structure - what it is in it and
+    how it is organized.&nbsp;
+</p>
+<p>
+    The best place to start is with the <strong>Key Concepts</strong> for the practice - those concepts that are critical
+    to understand in order to adopt the practice.&nbsp;Once you understand the key concepts, you can turn your attention to
+    the <strong>Work&nbsp;Products</strong>&nbsp;produced by the practice.&nbsp;&nbsp;Then you can&nbsp;review
+    the&nbsp;practices <strong>Tasks</strong>.&nbsp;From the work products and the tasks, you can access applicable
+    guidance - guidelines and tool mentors associated with each task provide details of how to perform the
+    task.&nbsp;Templates and checklists associated with the work products guide you in their completion and evaluation. You
+    can also access the guidance provided by the practice directly by using the <strong>Guidance</strong>&nbsp;folder.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Additional Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell">For more information on practices,&nbsp;see the <a href="http://www.ibm.com/developerworks/rational/practices/" target="_blank">practices resource page&nbsp;on IBM&reg; DeveloperWorks&reg;</a>.</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

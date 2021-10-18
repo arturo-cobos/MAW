@@ -1,0 +1,385 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Rent-a-Car Input Validation</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="rent_a_car_input_validation">
+<meta name="uma.presentationName" content="Rent-a-Car Input Validation">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_ceOcAB-zEdqm5chU-jPYYQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Rent-a-Car Input Validation</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The customer is a major car rental company called “Rent-a-car” in this paper. This example shows sample inputs to SOMA from CBM materials developed in the Rent-a-car scenario.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.soma.common.base-ibm_lic/workproducts/input_validated_D10C655F.html" guid="_JyVoMKdTEd2VfKRjUPBflw">Input Validated</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Although SOMA does not require CBM as the source of inputs, the componentized and service oriented view of CBM makes it
+    a natural fit with SOMA. The example will focus on the following key CBM artifacts:
+</p>
+<ul>
+    <li>
+        CBM Heat map with CBM Competency and Business Component Descriptions
+    </li>
+    <li>
+        To-Be Business Process Model
+    </li>
+    <li>
+        High level business goals
+    </li>
+</ul>
+<p>
+    Figure 18 depicts "hot components" identified for the <i>Rent-a-car</i> example. These hot components - Customer
+    Service, Promotions Management, Rentals and Reservations and Fleet Management - denote the focus area of business
+    transformation. Hot components are visually represented by color-coding on the Car Rental segment of the Travel and
+    Transportation industry static CBM map.
+</p>
+<p align="center">
+    <img src="./../../../core.tech.soma.common.base-ibm_lic/guidances/examples/resources/Technique-Fig18.gif" />
+</p>
+<p>
+    <a id="_Ref85472898" name="_Ref85472898"></a><a id="_Ref85507252" name="_Ref85507252"></a><a id="_Toc85473838" name="_Toc85473838"></a><a id="_Toc85473706" name="_Toc85473706"></a><a id="_Toc107116730" name="_Toc107116730"></a><a id="_Ref99446803" name="_Ref99446803"></a>
+</p>
+<p align="center">
+    <strong>Figure</strong> 18: <strong><i>Rent-a-car</i> CBM heat map</strong>
+</p><br />
+<br />
+<p>
+    <i><br />
+    </i><span>Table 6 describes the <i>Rent-a-car</i> CBM competencies (columns in the CBM map). These CBM competencies
+    correspond to domains that will be analyzed by SOMA during domain decomposition.</span>
+</p><br />
+<div align="center">
+    <table cellspacing="0" cellpadding="0" width="630" border="1">
+        <tbody>
+            <tr>
+                <td valign="top" width="287">
+                    <p>
+                        <b>CBM Competency</b>
+                    </p>
+                </td>
+                <td valign="top" width="343">
+                    <p>
+                        <b>Description</b>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="287">
+                    <p>
+                        <b>Marketing & Customer Management<br />
+                        </b><i>to whom are we going to sell?</i>
+                    </p>
+                </td>
+                <td valign="top" width="343">
+                    <p>
+                        Current and planned interactions between the <i>Rent-a-car</i> enterprise and its existing and
+                        potential customers.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="287">
+                    <p>
+                        <b>Products</b><br />
+                        <i>what are we going to procure and sell?</i>
+                    </p>
+                </td>
+                <td valign="top" width="343">
+                    <p>
+                        Planning, selecting, procuring, displaying, pricing and promotions of the <i>Rent-a-car</i>
+                        products/services to customers.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="287">
+                    <p>
+                        <b>Rentals Management</b><br />
+                        <i>where and how are we going to sell?</i>
+                    </p>
+                </td>
+                <td valign="top" width="343">
+                    <p>
+                        Decisions associated with determining where products will be sold (physical location, online,
+                        phone), activities associated with rentals and reservations, and management of the rental
+                        agreements.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="287">
+                    <p>
+                        <b>Rental Fleet Logistics</b><br />
+                        <i>how do we manage the logistics of the rental fleet?</i>
+                    </p>
+                </td>
+                <td valign="top" width="343">
+                    <p>
+                        Decisions associated with determining how to obtain vehicles from the manufacturers and make them
+                        readily available for a customer rental.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="287">
+                    <p>
+                        <b>Business Administration</b><br />
+                        <i>how do we enable and support our business?</i>
+                    </p>
+                </td>
+                <td valign="top" width="343">
+                    <p>
+                        Decisions and activities that enable and support the <i>Rent-a-car</i> competencies.
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>
+    <span><a id="_Toc101699562" name="_Toc101699562"></a><a id="_Ref91494558" name="_Ref91494558"></a><a id="_Ref85507614" name="_Ref85507614"></a><a id="_Toc85473837" name="_Toc85473837"></a><a id="_Toc85473705" name="_Toc85473705"></a><a id="_Ref85472789" name="_Ref85472789"></a></span>
+</p>
+<p align="center">
+    <span><strong>Table</strong></span> 6: <strong><i>Rent-a-car</i> CBM competency descriptions</strong>
+</p>
+<p>
+    The primary business component in focus as identified by the CBM engagement is the "Rentals and Reservations"
+    component. It offers a set of business services and consumes a set of business services which are offered by the other
+    collaborating components as shown in figure 19. The collaborating components also become "in focus" for the SOA
+    initiative since they provide services upon which the primary component depends.
+</p>
+<p align="center">
+    <img src="./../../../core.tech.soma.common.base-ibm_lic/guidances/examples/resources/Technique-Fig19.gif" />
+</p>
+<p>
+    <a id="_Ref94603754" name="_Ref94603754"></a><a id="_Ref88918139" name="_Ref88918139"></a><a id="_Toc85473839" name="_Toc85473839"></a><a id="_Toc85473707" name="_Toc85473707"></a><a id="_Toc107116731" name="_Toc107116731"></a><a id="_Ref99446841" name="_Ref99446841"></a>
+</p>
+<p align="center">
+    <strong>Figure</strong> 19: <strong><i>Rent-a-car</i> business components and services</strong>
+</p><br />
+<br />
+<p>
+    <span><br />
+    Descriptions of the CBM business components are summarized in table 7. The descriptions of the services would normally
+    be provided by CBM but are not shown here for the sake of brevity.</span>
+</p><br />
+<br />
+<br />
+<table cellspacing="0" cellpadding="0" width="615" align="center" border="1">
+    <tbody>
+        <tr>
+            <td valign="top" width="235">
+                <p>
+                    <b>Business Component</b>
+                </p>
+            </td>
+            <td valign="top" width="380">
+                <p>
+                    <b><i>Description</i></b>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="235">
+                <p>
+                    Rentals and Reservations<br />
+                    <i>Execute level Business component</i>
+                </p>
+            </td>
+            <td valign="top" width="380">
+                <p>
+                    Provides business services related to vehicle rental reservations. Provides support for both the
+                    reservations and rentals business processes.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="235">
+                <p>
+                    Customer Service<br />
+                    <i>Execute level Business component</i>
+                </p>
+            </td>
+            <td valign="top" width="380">
+                <p>
+                    Responsible for servicing the customer. Offers, among other things, services relating to maintenance of
+                    customer profile.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="235">
+                <p>
+                    Promotions Management<i><br />
+                    Control level Business component</i>
+                </p>
+            </td>
+            <td valign="top" width="380">
+                <p>
+                    Responsible for the management of promotions across the board.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="235">
+                <p>
+                    Fleet Management <i><br />
+                    Execute level Business component</i>
+                </p>
+            </td>
+            <td valign="top" width="380">
+                <p>
+                    Responsible for providing services around Fleet Management, Fleet Availability, etc.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<p>
+    <a id="_Toc101699563" name="_Toc101699563"></a><a id="_Toc85473840" name="_Toc85473840"></a><a id="_Toc85473708" name="_Toc85473708"></a><a id="_Ref85469365" name="_Ref85469365"></a><a id="_Ref85469351" name="_Ref85469351"></a>
+</p>
+<p align="center">
+    <strong>Table</strong> 7: <strong><i>Rent-a-car</i> CBM component descriptions</strong>
+</p>
+<p>
+    Figure 20 shows a high level business process model for the Rentals and Reservations CBM business component.
+</p>
+<p align="center">
+    <img src="./../../../core.tech.soma.common.base-ibm_lic/guidances/examples/resources/Technique-Fig20.gif" />
+</p>
+<p align="center">
+    <a id="_Ref89616093" name="_Ref89616093"></a><a id="_Toc107116732" name="_Toc107116732"></a><a id="_Ref99446907" name="_Ref99446907"><strong>Figure</strong></a> 20: <strong><i>Rent-a-car</i> hot component and level 1 process
+    model</strong>
+</p>
+<p>
+    The Rent Vehicle process is a long-running interruptible process that uses several short running non-interruptible
+    sub-processes: Reserve Vehicle, Check-out Vehicle, and Check-in Vehicle. The Rent Vehicle process can be initiated in
+    any of several ways, but it always starts with the Reserve Vehicle sub-process. Rent Vehicle could be initiated by
+    individual interactions over the phone, at a kiosk, over the internet or at a rental agency counter. Rent Vehicle could
+    also be initiated in a batch mode if a set of paper reservation forms were collected by a rental agency for deferred
+    use of the Reserve Vehicle sub-process.
+</p>
+<p>
+    Finally, the CBM engagement also identified the business goals and associated KPIs for each goal so that the
+    transformation can be measured objectively. These become part of the inputs that are required during the Goal-Service
+    Modeling activity of SOMA. Table 8 shows the goals and associated KPIs for the <i>Rent-a-car</i> scenario:
+</p>
+<div align="center">
+    <table cellspacing="0" cellpadding="0" width="618" border="1">
+        <tbody>
+            <tr>
+                <td valign="top" align="middle" width="303">
+                    <b>Goal</b>
+                </td>
+                <td valign="top" align="middle" width="315">
+                    <b>KPI</b>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="303">
+                    Increase the speed and agility in delivering new business services
+                </td>
+                <td valign="top" width="315">
+                    Time to deliver a new business service = 2 wks
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="303">
+                    Streamline processes to reduce operating costs
+                </td>
+                <td valign="top" width="315">
+                    Operating cost reduction from July 2004 levels = Reduce by 20% after deployment of services platform
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="303">
+                    Increase Revenue by 20% by the end of FY2005
+                </td>
+                <td valign="top" width="315">
+                    Revenue increase in FY2005 over FY2004 = 20%
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p align="center">
+    <a id="_Toc101699564" name="_Toc101699564"></a><a id="_Toc85473842" name="_Toc85473842"></a><a id="_Toc85473710" name="_Toc85473710"></a><a id="_Ref99446948" name="_Ref99446948"><strong>Table</strong></a> 8:
+    <strong><i>Rent-a-car</i> Goals and KPIs</strong>
+</p><br />
+<p>
+    <span>The above inputs set the stage for the SOMA approach to be illustrated in this technique paper. Each SOMA step
+    demonstrates how the outputs from the earlier stage are used by the technique to accomplish the overall goal of
+    creating the service model that best addresses the transformational objectives.</span>
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

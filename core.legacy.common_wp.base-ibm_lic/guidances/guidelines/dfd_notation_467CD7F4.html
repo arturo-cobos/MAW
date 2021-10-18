@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Data Flow Diagram (DFD) Notation</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="dfd_notation">
+<meta name="uma.presentationName" content="Data Flow Diagram (DFD) Notation">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_EdcXAEMBEd2_CKrC27jQ0g"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_EdcXAEMBEd2_CKrC27jQ0g"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Data Flow Diagram (DFD) Notation</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Detailed notation for the four different symbols used in data flow diagrams (DFDs): Data Flow, Data Store, Process Box and External Entity.  This guideline also includes an overview of how to breakdown individual diagrams into more detail.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/dfd_application_model_30B69F56.html" guid="mweb4B02A98FE711A9A0852569AB0056DADB">DFD Application Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Data Flow Diagrams express the flow of application data with four symbols. Four symbols are:
+</p>
+<ul>
+    <li>
+        <div>
+            Data Flow - Indicate the flow of data.
+        </div>
+    </li>
+    <li>
+        <div>
+            Data Store - Indicates store of data (file and database).
+        </div>
+    </li>
+    <li>
+        <div>
+            Process box - Indicates a transformation of flows of data.
+        </div>
+    </li>
+    <li>
+        <div>
+            External Entity - Indicates the source or destination of data (such as an organization, personnel, or other
+            subsystem).&nbsp;
+        </div>
+    </li>
+</ul>
+<p>
+    <strong><u>Data Flow</u></strong>
+</p>
+<ul dir="ltr" style="MARGIN-RIGHT: 0px">
+    <li>
+        A data flow is expressed by an arrow and shows the flow of information consisting of one or more data elements.
+    </li>
+    <li>
+        <div>
+            Enter all the data element names that flow on the arrow.
+        </div>
+    </li>
+    <li>
+        If a large number of data elements must be written, use a generic name or a representative name. 
+        <ul>
+            <li>
+                A generic name or a representative name must indicate the contents of the data precisely.
+            </li>
+            <li>
+                When a generic name or a representative name is used, assign identification numbers (ID) to the data flow
+                and describe the data element names in a separate data flow description.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <div>
+            Indicate the direction of a data flow to a process box, data store, or external entity by using an arrow.
+        </div>
+    </li>
+    <li>
+        <div>
+            Enter the name (data element name, generic name or representative name) near the data flow.
+        </div>
+    </li>
+    <li>
+        <div>
+            "Flow of materials", "action", or "flow of control" should not be indicated by a data flow. If those flows need
+            to be drawn, different notations from that of Data Flow should be used.
+        </div>
+    </li>
+</ul>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img height="33" alt="Symbol 1" src="./../../../core.legacy.common_wp.base-ibm_lic/guidances/guidelines/resources/dfd_application_model_symb_01.jpg" width="161" /><br />
+    <b><u>Data Store</u></b>
+</p>
+<ul>
+    <li>
+        A Data store box can be referred as data storage (file and database).
+    </li>
+    <li>
+        <div>
+            The data flow corresponding to a data store need not show the means of physical access. For example, in a case
+            where data is updated after a credit sales file is read an arrow to show the action of reading is not needed.
+        </div>
+    </li>
+    <li>
+        <div>
+            In the case where a data store name and identification number (ID) are used, they must be entered.&nbsp;
+        </div>
+    </li>
+</ul>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img height="46" alt="Symbol 2"     src="./../../../core.legacy.common_wp.base-ibm_lic/guidances/guidelines/resources/dfd_application_model_symb_02.jpg" width="166" />
+</p>
+<ul>
+    <li>
+        <div>
+            When the same data store is shown more than once on the same data flow diagram, this is indicated using a
+            vertical line on the data store box.
+        </div>
+    </li>
+</ul>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp; <img height="40" alt="Symbol 3" src="./../../../core.legacy.common_wp.base-ibm_lic/guidances/guidelines/resources/dfd_application_model_symb_03.jpg"     width="173" /><br />
+    <b><u>Process Box (Process)</u></b>&nbsp;
+</p>
+<ul>
+    <li>
+        A&nbsp;process shows the transformation of data from an input data flow to an output data flow.
+    </li>
+    <li>
+        <div>
+            For the names of processes, use explicit representations that clearly express functions and operations by
+            combining verb and object.
+        </div>
+    </li>
+    <li>
+        <div>
+            Clear representations: prepare, extract, store, verify.
+        </div>
+    </li>
+    <li>
+        <div>
+            Unclear representations: process, handle.
+        </div>
+    </li>
+    <li>
+        <div>
+            For processes, the process number can be entered in the upper section, and in the case of a physical model, the
+            organization name and the name of the person in charge who carries out the process can be entered in the lower
+            section.
+        </div>
+    </li>
+</ul>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img height="158" alt="Symbol 4" src="./../../../core.legacy.common_wp.base-ibm_lic/guidances/guidelines/resources/dfd_application_model_symb_04.jpg" width="323" /><br />
+    <b><u>External Entity (Data Source and Destination)</u></b>
+</p>
+<ul>
+    <li>
+        Data sources and destinations indicate external individuals, organizations and other systems outside the scope of
+        the application under analysis.
+    </li>
+    <li>
+        <div>
+            In cases where a data source or destination name and identification number (ID) for numbering are used, they
+            must be entered.
+        </div>
+    </li>
+</ul>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img height="90" alt="Symbol 5" src="./../../../core.legacy.common_wp.base-ibm_lic/guidances/guidelines/resources/dfd_application_model_symb_05.jpg" width="94" />
+</p>
+<ul>
+    <li>
+        In cases where the same data source or destination is used more than once in a data flow diagram, add diagonal
+        line(s) to the lower right section to show that they are the same one.
+    </li>
+</ul>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img height="73" alt="Symbol 6" src="./../../../core.legacy.common_wp.base-ibm_lic/guidances/guidelines/resources/dfd_application_model_symb_06.jpg" width="83" /><br />
+    <br />
+    <b><u>Explosion of Data Flow Diagram</u></b>
+</p>
+<p>
+    DFD can be drawn into details in a top-down manner. The highest level of DFD is called diagram 0, where major data
+    flows and data stores, and several processes are drawn to capture overall data flow of the application. By breaking
+    down each process on the diagram into the sufficient level of details, overall application structures and processes
+    become clear. Each process at the lower level will need to be related back to the high-level process. And also, it is
+    recommended to develop a context diagram to clarify the scope of analysis, which consists of one process, several
+    external entities.
+</p>
+<ul>
+    <li>
+        <div>
+            The context diagram is a special case of the DFD, in which a single process box represents the entire system.
+        </div>
+    </li>
+    <li>
+        The context diagram highlights several important characteristics of the system: 
+        <ul>
+            <li>
+                The people organizations, or systems, with which the system communicates. These are known as external
+                entities.
+            </li>
+            <li>
+                The data that the system receives from the outside world and that must be processed in some way.
+            </li>
+            <li>
+                The data produced by the system and sent to the outside world.
+            </li>
+            <li>
+                The data stores that are shared between the system and the external entities. These data stores are either
+                created outside the system and used by the system, or created by the system and used outside the system.
+            </li>
+            <li>
+                The boundary between the system and the rest of the world.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <div>
+            Even if there are a great many processes that could be expressed in the DFDs at each level, make a goal of
+            limiting the number of processes to seven per each diagram and break down the processes into the lower levels
+            to show the details.
+        </div>
+    </li>
+    <li>
+        <div>
+            Reference between the DFDs at each level is made possible by the correspondence of process numbers and DFD
+            diagram numbers. This can be done by giving the lower-level process box an identification number that is a
+            decimal of the high-level process box. For example, the process box number 3 at the level of diagram is
+            decomposed into 3.1, 3.2, 3.3, etc. If it is necessary to go to a third level, 3.3 is decomposed into 3.3.1,
+            3.3.2, and so on.
+        </div>
+    </li>
+    <li>
+        <div>
+            All the data elements that enter and leave the original process box should appear in the diagram after it is
+            exploded.
+        </div>
+    </li>
+    <li>
+        <div>
+            A data store that newly appears as a result of explosion is not shown in high level DFDs if it is one that is
+            used only within the exploded DFD.
+        </div>
+    </li>
+</ul>
+<p>
+    Each process should be exploded as the need arises. The level of detail (depth of hierarchy) need not necessarily be
+    the same.
+</p>
+<p>
+    <img height="739" alt="Explosion of DFD" src="./../../../core.legacy.common_wp.base-ibm_lic/guidances/guidelines/resources/dfd_application_model_02.jpg" width="567" />
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Security Profiles</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="security_profiles">
+<meta name="uma.presentationName" content="Security Profiles">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb4950811A9D25EBAE852568B80064F96F"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb4950811A9D25EBAE852568B80064F96F"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Security Profiles</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Introduction
+</h3>
+<p>
+    This technique paper supplements BUS 300 - Information Asset Profile and identifies how the security functions and
+    features of the system will be implemented in the organization.
+</p>The purpose of this technique is: 
+<ul>
+    <li>
+        To demonstrate how to grant access to system functions and features
+    </li>
+    <li>
+        Provide guidance to the security administrator (both for initial set-up and maintenance)
+    </li>
+    <li>
+        Ensure that the intent of the organization and business process designs (both access and denial of access) are
+        implemented in the package security parameter settings.
+    </li>
+</ul>
+<h3>
+    Example
+</h3>
+<p>
+    <img height="481" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/securityprofilesfig1.JPG" width="577" />
+</p>
+<p>
+    <img height="502" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/securityprofilesfig2.JPG" width="600" />
+</p>
+<h3>
+    Steps/Development Approach
+</h3>
+<h4>
+    Review Roles
+</h4>
+<h5>
+    1.&nbsp;Review Processes
+</h5>
+<p>
+    A table of processes and all the information requirements needs to be developed.&nbsp; This will help to clarify who
+    will be performing various functions in the new organization structure and which access requirements would be
+    appropriate to maintain quality control.&nbsp; Some data can be for information (I) and some will need updating
+    (U).&nbsp;
+</p>
+<p>
+    If the new organization structure is intended to have fewer controls and give the employees more responsibility, then
+    it is likely that there will be fewer functions, which do not allow update capabilities.
+</p>
+<p>
+    <strong>ACCESS REQUIREMENTS TABLE</strong>
+</p><br />
+<br />
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <th id="" scope="col" abbr="">
+                Process
+            </th>
+            <th id="" scope="col" abbr="">
+                Function
+            </th>
+            <th id="" scope="col" abbr="">
+                Access Requirements
+            </th>
+            <th id="" scope="col" abbr="">
+                Role
+            </th>
+            <th id="" scope="col" abbr="">
+                Department
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Accounts Payable&nbsp;
+            </td>
+            <td>
+                Add supplier&nbsp;
+            </td>
+            <td>
+                Supplier data (U)&nbsp;
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                Check invoices
+            </td>
+            <td>
+                Order data (I)<br />
+                Supplier data (I)<br />
+                Invoice data (U)&nbsp;&nbsp;
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                Make payment
+            </td>
+            <td>
+                Supplier data (I)<br />
+                Invoice data (U)<br />
+                Payment data (U)&nbsp;
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                Query invoices
+            </td>
+            <td>
+                Order data (U)<br />
+                Supplier data (U)<br />
+                Invoice data (U)<br />
+                Payment data (U)&nbsp;&nbsp;
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                Delay payment&nbsp;
+            </td>
+            <td>
+                Order data (U)<br />
+                Supplier data (U)<br />
+                Invoice data (U)<br />
+                Payment data (U)&nbsp;&nbsp;
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<h5>
+    &nbsp;&nbsp;<br />
+    2.&nbsp;Review ‘Future’ organization structure
+</h5>
+<p>
+    The organization design needs to be studied and roles need to be allocated to individuals to perform the various
+    functions.&nbsp; The role and department columns of the table below can now be completed.
+</p>
+<p>
+    <strong>ACCESS REQUIREMENTS TABLE</strong>
+</p><br />
+<br />
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <th id="" scope="col" abbr="">
+                Process
+            </th>
+            <th id="" scope="col" abbr="">
+                Function
+            </th>
+            <th id="" scope="col" abbr="">
+                Access Requirements
+            </th>
+            <th id="" scope="col" abbr="">
+                Role
+            </th>
+            <th id="" scope="col" abbr="">
+                &nbsp;Department/Group
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Accounts Payable
+            </td>
+            <td>
+                Add supplier&nbsp;
+            </td>
+            <td>
+                Supplier data (U)&nbsp;
+            </td>
+            <td>
+                Finance manager
+            </td>
+            <td>
+                Finance department
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                Check invoices
+            </td>
+            <td>
+                Order data (I)<br />
+                Supplier data (I)<br />
+                Invoice data (U)&nbsp;
+            </td>
+            <td>
+                Invoices clerk
+            </td>
+            <td>
+                Finance department
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                Make payment&nbsp;
+            </td>
+            <td>
+                Supplier data (I)<br />
+                Invoice data (U)<br />
+                Payment data (U)
+            </td>
+            <td>
+                Invoices clerk&nbsp;
+            </td>
+            <td>
+                Finance department
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                Query invoices
+            </td>
+            <td>
+                Order data (U)<br />
+                Supplier data (U)<br />
+                Invoice data (U)<br />
+                Payment data (U)&nbsp;
+            </td>
+            <td>
+                Finance manager&nbsp;
+            </td>
+            <td>
+                Finance department
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                Delay payment
+            </td>
+            <td>
+                Order data (U)<br />
+                Supplier data (U)<br />
+                Invoice data (U)<br />
+                Payment data (U)&nbsp;
+            </td>
+            <td>
+                Finance director
+            </td>
+            <td>
+                Finance department
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<p>
+    &nbsp;&nbsp;&nbsp;<br />
+    This may map onto the current roles of the individuals or, in some cases, give more (or less) responsibility.&nbsp;
+    This needs to be thought through when defining these roles.
+</p>
+<h4>
+    Review Security in Package
+</h4>
+<p>
+    The security features in the package need to be reviewed with respect to the requirements.&nbsp; The software supplier
+    should be able to provide guidance on an appropriate configuration.
+</p>
+<h4>
+    Align Package Features to Role
+</h4>
+<h5>
+    1.&nbsp;Define security strategy
+</h5>
+<p>
+    This activity determines an approach to security issues, which reflects the new organizational and behavioral
+    requirements.&nbsp; The following should be considered in developing this strategy:
+</p>
+<ul>
+    <li>
+        What is the best practice use of security features by other companies that have a similar organizational structure
+        to that being developed?<br />
+    </li>
+    <li>
+        How flat is the new organization structure?&nbsp; How many controls will be sufficient?<br />
+    </li>
+    <li>
+        How can the system support the new reporting lines if controls are limited?<br />
+    </li>
+    <li>
+        Will people be given more responsibility?&nbsp; Do the stakeholders agree that this is desirable?<br />
+    </li>
+    <li>
+        Will the security encourage the types of behaviors expected in the new organization?
+    </li>
+</ul>
+<h5>
+    2.&nbsp;Determine features for each role
+</h5>
+<p>
+    By using the following table, the security features that will be used for each function are determined.
+</p>
+<p>
+    <strong>ACCESS REQUIREMENTS TABLE</strong>
+</p><br />
+<br />
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <th id="" scope="col" abbr="">
+                Process
+            </th>
+            <th id="" scope="col" abbr="">
+                Function
+            </th>
+            <th id="" scope="col" abbr="">
+                Access Requirements
+            </th>
+            <th id="" scope="col" abbr="">
+                Role
+            </th>
+            <th id="" scope="col" abbr="">
+                Security Features
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Accounts Payable&nbsp;
+            </td>
+            <td>
+                Add supplier&nbsp;
+            </td>
+            <td>
+                Supplier data (U)
+            </td>
+            <td>
+                Finance manager
+            </td>
+            <td>
+                <strong>TO BE COMPLETED</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                Check invoices&nbsp;
+            </td>
+            <td>
+                Order data (I)<br />
+                Supplier data (I)<br />
+                Invoice data (U)&nbsp;
+            </td>
+            <td>
+                Invoices clerk&nbsp;
+            </td>
+            <td>
+                <strong>TO BE COMPLETED</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                Make payment&nbsp;
+            </td>
+            <td>
+                Supplier data (I)<br />
+                Invoice data (U)<br />
+                Payment data (U)
+            </td>
+            <td>
+                Invoices clerk
+            </td>
+            <td>
+                <strong>TO BE COMPLETED</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                Query invoices
+            </td>
+            <td>
+                Order data (U)<br />
+                Supplier data (U)<br />
+                Invoice data (U)<br />
+                Payment data (U)&nbsp;
+            </td>
+            <td>
+                Finance manager&nbsp;
+            </td>
+            <td>
+                <strong>TO BE COMPLETED</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                Delay payment&nbsp;
+            </td>
+            <td>
+                Order data (U)<br />
+                Supplier data (U)<br />
+                Invoice data (U)<br />
+                Payment data (U)&nbsp;
+            </td>
+            <td>
+                Finance director&nbsp;
+            </td>
+            <td>
+                <strong>TO BE COMPLETED</strong>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<h4>
+    <br />
+    Group Roles into Profiles
+</h4>
+<h5>
+    1.&nbsp;Review access requirements for each role
+</h5>
+<p>
+    Using the access requirements table, the roles need to be analyzed to see if there is any overlap.&nbsp; For example
+    the purchasing manager may have the same access requirements as the finance clerks for some financial information.
+</p>
+<h5>
+    2.&nbsp;Define profiles
+</h5>
+<p>
+    Profiles are defined and a chart of authorization/security profiles is developed.<br />
+    See Security.PRE as shown above.
+</p>
+<h4>
+    Assign Profiles to Jobs
+</h4>
+<h5>
+    1.&nbsp;Review organization chart
+</h5>
+<p>
+    Security profiles are assigned to individuals and groups on the organization chart.&nbsp; People may be disappointed or
+    excited about any changes in job description, which may result from the security profiling exercise.&nbsp; It is
+    important to highlight the areas of the organization chart that are likely to cause problems so that the Stakeholders
+    can be effectively managed.
+</p>
+<h3>
+    Validation and Verification
+</h3>
+<p>
+    Test the profiles on a wide variety of job titles.&nbsp; If the profiles have been designed well, the number of
+    profiles should not grow, while preserving the integrity of the security design.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

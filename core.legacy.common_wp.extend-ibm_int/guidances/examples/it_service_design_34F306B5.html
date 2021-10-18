@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: IT Service Design</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="it_service_design">
+<meta name="uma.presentationName" content="IT Service Design">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_8AZ84C6pEdyVypt1CQJZIA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: IT Service Design</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The following example shows the description of one service element, the distribution of software.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/it_service_design_CA2D34C6.html" guid="mweb856AF2E68590A3DC852568860059CE4C">IT Service Design</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    <a>DS2 - Distribute Software</a>
+</h3>
+<h4>
+    Service Description
+</h4>
+This service performs the delivery of software to a managed element. It begins with a software package (created in the DS1
+- Maintain Software Packages service) already resident in the software distribution repository and wraps a distribution
+script around the package. It transports and validates the installation. Upon a successful distribution, the inventory
+database is updated to reflect the changed status of the element. 
+<h4>
+    Service Customers
+</h4>
+1. Distributed Systems Management <br />
+2. APM <br />
+3. ECM 
+<h4>
+    Service Interfaces
+</h4>
+1. <b>Change Services.</b> Requests for distributions will be controlled via Change Services. In addition, distribution
+schedules will be coordinated with the global change calendar to avoid any conflicts. <br />
+2. <b>Schedule and Execute Jobs (EX1).</b> Software that is to be periodically refreshed may be triggered and monitored by
+the Schedule and Execute Jobs service. Scheduled pre-distribution inventory scanning may also be handled by this service.
+<br />
+3. <b>Monitor Availability (MA1).</b> The distribution of software and the validation of the installation may be monitored
+for errors using the Monitor Availability service. <br />
+4. <b>Problem Management Services.</b> Errors encountered during distribution, installation or validation may be recorded
+and managed by Problem Management Services. 
+<h4>
+    Service Activities
+</h4>
+1. A change request indicates a desire for software distribution. The change request must include which package is to be
+distributed, which elements are targeted to receive the package, and a desired timeframe for the distribution. The package
+is retrieved from the software distribution repository and the final package, complete with distribution scripts, is
+created. Input from the configuration management repository is used to validate the desired configuration of targeted
+elements (SD3). <br />
+2. The distribution plan is created taking into account network routing, optimum distribution path, as well as access to
+the necessary servers, workstations and/or laptops and so forth. The post-installation checklist is created. Scheduling
+information is retrieved from Change Services to ensure that no other planned change activities will affect the
+distribution (SD3). <br />
+3. Any resource requirements are determined and scheduled. Transport pre-req.’s are validated (SD4) <br />
+4. An inventory scan is executed in order to ensure that no unauthorized changes to the configuration have been made since
+the previous inventory scan (MI3). <br />
+5. The transport is effected and installation or de-installation procedures and/or scripts are executed (SD4). 6. The
+installation is checked for normal completion by reviewing a plan-provided checklist for items such as program file
+location, file size, accurate configuration, etc. Functional tests that validate the installation are performed. Any
+non-successful completion will invoke event management (MA1) or Problem Management Services as necessary (SD4). <br />
+7. Upon successful completion, an inventory scan of the target elements is performed to ensure that the inventory database
+provides an accurate picture of the changed elements (MI3). Change Services are informed of the status of the distribution.
+
+<h4>
+    Service Roles
+</h4>
+1. SDS - Software Distribution Scheduler <br />
+2. SDD - Software Distributor <br />
+3. SDCO - Software Distribution Coordinator <br />
+4. SDTS - Software Distribution Technical Specialist <br />
+5. AUTO - Automation 
+<h4>
+    Service Tools
+</h4>
+1. TST - Tivoli Scripting Tool <br />
+2. TSD - Tivoli Software Distribution <br />
+3. CMT - Change Ticket Tool <br />
+4. TWM - Tivoli Workload Manager <br />
+5. TMF - Tivoli Management Framework <br />
+6. TI - Tivoli Inventory <br />
+7. TUL - Tivoli User Link <br />
+8. EDT - Encryption/Decryption Tool <br />
+9. TRC - Tivoli Remote Control 
+<h4>
+    Service Flow:
+</h4>
+<h3>
+    &nbsp;<img height="643" alt="IT Service Design2" src="./../../../core.legacy.common_wp.extend-ibm_int/guidances/examples/resources/it_services_design_02.jpg" width="888" />
+</h3>
+<br /></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

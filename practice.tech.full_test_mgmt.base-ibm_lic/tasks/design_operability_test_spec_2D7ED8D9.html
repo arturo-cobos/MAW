@@ -1,0 +1,513 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Task: Design the Operability Test Specification</title>
+<meta name="uma.type" content="Task">
+<meta name="uma.name" content="design_operability_test_spec">
+<meta name="uma.presentationName" content="Design the Operability Test Specification">
+<meta name="uma.category" content="Discipline:tech_test:Technical Testing">
+<meta name="element_type" content="activity">
+<meta name="filetype" content="description">
+<meta name="role" content="Test Specialist">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_2MqpYGeSEd6Yrd44J2HAGg", "_sdxssGptEeSdxcAgtnf5og", "_qNfTQFmVEd-RLsfIF0kO2g"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_kpou0CmJEd65FoKJYXtPqg", "_vLdhkLUuEdyZzqoEHUdEQA", "_H0dQkLUvEdyZzqoEHUdEQA", "_qNfTQFmVEd-RLsfIF0kO2g"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', true, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div id="page-guid" value="_qNfTQFmVEd-RLsfIF0kO2g"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Task: Design the Operability Test Specification</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/task.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Design operability test specification.</td>
+</tr>
+<tr>
+<td>Disciplines: <a href="./../../core.default.cat_def.base-ibm_lic/disciplines/tech_test_65BE95A1.html" guid="_H0dQkLUvEdyZzqoEHUdEQA">Technical Testing</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">To ensure all operability tests are well thought-out, and use tools and techniques suited to the tasks at hand based on the
+test plans.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Primary Performer:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/test_specialist_EBC2F1A0.html" guid="mweb70BAB7D6643F3326852568D8004A6107">Test Specialist</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Additional Performers:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/operations_architect_91793EC2.html" guid="mwebF92A040068AFEED7852567D8005090C7">Operations Architect</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Inputs</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Mandatory:
+								</span>
+<ul></ul>
+<ul>
+<li>
+<a href="./../../core.tech.slot.base/workproducts/technical_architecture_slot_FF074CDD.html" guid="_8OD-cLPTEduocbW-TPTq7A">[Technical Architecture]</a>
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/architectural_decisions_3059F4D3.html" guid="mweb4BA812D47EEFD0A3852568820057215A">Architectural Decisions</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/architecture_overview_7BDD690F.html" guid="mweb3072ED040425425485256882005791A4">Architecture Overview</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/component_model_333A932.html" guid="mweb0BBA8C7269610775852568B3006C3ACF">Component Model</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/deployment_unit_model_6EA973D.html" guid="_pu0XUDDXEdyz_pzDMsV8FQ">Deployment Unit Model</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/infrastructure_gap_analysis_E82D9579.html" guid="mwebF0BDC03F4792DD3F8525688200764D6B">Infrastructure Gap Analysis</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/operational_model_5CE9CFC9.html" guid="mwebD1869C2CAF6E9991852568A4004FA5D9">Operational Model</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/performance_model_1704530C.html" guid="mweb74B5132A0F22A078852568CE006C3E50">Performance Model</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/ref_arch_fit_gap_analysis_505D71D5.html" guid="mwebCB8ECB58A8362ADD852568850059188E">Reference Architecture Fit Gap Analysis</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/security_architecture_E622835F.html" guid="mweb370C564F69E6DC6285256886005E1ADC">Security Architecture</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/technical_proof_of_concept_CEDA4198.html" guid="mwebDADCD71C49E3EA6485256885005CD538">Technical Proof of Concept</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/viability_assessment_5EE7A3B5.html" guid="mweb25893FBE05A65D6E852568850063E2A4">Viability Assessment</a>
+</li>
+</ul>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Optional:
+								</span>
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/master_test_plan_316F37F1.html" guid="mweb6453F1B420F775748525688500505CDC">Master Test Plan</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/operability_test_plan_400CBEBC.html" guid="mweb9FA778C07F7E6B27852569A50049F56A">Operability Test Plan</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/test_specification_E0A1A8C5.html" guid="mwebCE3B2E307A951B9485256885005D8027">Test Specification</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Outputs</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/test_case_87487533.html" guid="_AkB1IEwQEd6CNsUreFNCVw">Test Case</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/test_data_45DFDAB6.html" guid="_DaazcEwQEd6CNsUreFNCVw">Test Data</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/test_env_config_C1CB0041.html" guid="mweb91E917F13D7C5F4A85256885005D0D33">Test Environment Configuration</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/test_script_29AE464B.html" guid="_B37F8EwQEd6CNsUreFNCVw">Test Script</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/test_specification_E0A1A8C5.html" guid="mwebCE3B2E307A951B9485256885005D8027">Test Specification</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Select appropriate tools and processes to assist in developing and executing the tests, and capturing, analyzing and
+    reporting on the results. Design the tests that will exercise the business functions and the technical functions test
+    in the context of operability requirements and the operability test plan. Identify data synchronization requirements
+    and transactions necessary to cross the application interfaces and provide specified complexity. Document the test
+    specification and review it with stakeholders.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Steps</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="sectionTableSingleCell">
+<div class="stepHeading">Select testing techniques and tools for operability testing</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    Select the different testing tools and techniques to improve the effectiveness and the efficiency of the test. The
+    tools selected must focus on achieving the test objectives and the overall testing strategy. The identification of the
+    purchasing, implementation and training requirements associated with the different options.<br />
+    <br />
+    All the techniques listed above are industry standard techniques. Education on some of the white and black box
+    techniques can be found in the TPM Overview and TPM Workshop course.<br />
+    <br />
+    Tools to support the operability test include:
+</p>
+<ul>
+    <li>
+        Simulation tools: simulation of large numbers of terminals (this is limited by capability of the operating system
+        to support concurrent processes) 
+        <ul>
+            <li>
+                The ability to record and play back multiple operator sessions
+            </li>
+        </ul>
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                The ability to control remotely tests running on each terminal
+            </li>
+            <li>
+                The ability to synchronize precisely the tests on each terminal (to test concurrent access, for example)
+            </li>
+            <li>
+                The ability to measure system response from the viewpoint of each terminal
+            </li>
+            <li>
+                The ability to read data from a central test data source
+            </li>
+            <li>
+                The ability to accumulate and analyze test results centrally
+            </li>
+        </ul>
+    </li>
+    <li>
+        Test automation
+    </li>
+    <li>
+        Test drivers 
+        <ul>
+            <li>
+                Provides for regression testing
+            </li>
+            <li>
+                Used for volume test to vary load statistically and dynamically
+            </li>
+            <li>
+                Ability to drive a large variety of system types, e.g., telephone call generators
+            </li>
+            <li>
+                Used to validate IT work performed (e.g., check the returned message content, preferably while the test is
+                executing and produce error messages when incorrect
+            </li>
+        </ul>
+    </li>
+    <li>
+        Data creation tools
+    </li>
+    <li>
+        Reporting tools 
+        <ul>
+            <li>
+                Automatically updates the test repository on completion of a test run
+            </li>
+            <li>
+                Gives you the option of updating the repository
+            </li>
+            <li>
+                Lets you view selected results data in real-time
+            </li>
+            <li>
+                Generates statistical reports on performance ratings against various load conditions across the system
+            </li>
+            <li>
+                Generates reports of failures detected at each
+            </li>
+            <li>
+                Views test results that relate to each terminal on a summary screen
+            </li>
+            <li>
+                Provides graphical versions of statistical
+            </li>
+            <li>
+                Provides report customization and formatting
+            </li>
+        </ul>
+    </li>
+    <li>
+        Monitoring and analysis tools 
+        <ul>
+            <li>
+                Provides real-time and historical recording for later analysis
+            </li>
+            <li>
+                Provides format structures for recording the data
+            </li>
+            <li>
+                Assist in data reduction and statistical analysis - especially from volume tests where a log record may be
+                produced for every "transaction"
+            </li>
+        </ul>
+    </li>
+    <li>
+        Debugging tools 
+        <ul>
+            <li>
+                Assists in finding and correcting the cause of a fault or failure in an application
+            </li>
+        </ul>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Develop operability test design</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    Operability tests are developed from the Service Delivery requirements defined early in the project lifecycle,
+    typically during master test planning. The tests should address conformance to the requirements and also to prove that
+    they have been met. A representative from service delivery should be involved in test case development and execution so
+    their confidence will be increased.<br />
+    <br />
+    Operability testing includes:
+</p>
+<ul>
+    <li>
+        Audit ability testing
+    </li>
+    <li>
+        Backup / restore testing
+    </li>
+    <li>
+        Cohabitation testing
+    </li>
+    <li>
+        Concurrency testing
+    </li>
+    <li>
+        Contention testing
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Analyze available data and build operability test data</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    As part of the test planning process, the test data requirements are defined and set up. Test scripts must be created
+    containing both valid and invalid test data. This involves identifying data that will support the test, allow it to
+    execute as designed and provide meaningful output to measure against expected results.<br />
+    <br />
+    As part of this task, potential sources for test data are determined. The methods are identified to extract additional
+    or new data. Data from sources such as existing production and data from previous testing activities are examined to
+    determine the data required to perform this level of testing. Modifying existing data and supplementing them with
+    additional data as required build test data.<br />
+    <br />
+    The processes required to support the data are also defined. For example:
+</p>
+<ul>
+    <li>
+        How will data be built or extracted?
+    </li>
+    <li>
+        How often will it be backed up?
+    </li>
+    <li>
+        How, when and where will this data be maintained? By whom?
+    </li>
+</ul>Note: Re-use and recycling is key to reducing the effort to create test data, both for the extraction process and the
+data itself.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Identify operability test environment requirements</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    Define both the necessary and desired properties of the test environment. Include enough information to plan for
+    establishing the environment but do not include a detailed specification of the environment itself - this should be
+    provided in the test specification document, which corresponds to this plan. This specification should include:
+</p>
+<ul>
+    <li>
+        Identification of the physical components, the communications, the system and middleware necessary.
+    </li>
+    <li>
+        The mode or state of usage (for example, standalone or dedicated to the discrete usage of the application alone).
+    </li>
+    <li>
+        Other software or supplies needed to support testing (e.g. specialized stationery).
+    </li>
+    <li>
+        Security and access requirements to the test area and equipment.
+    </li>
+    <li>
+        Test tools and utilities required.
+    </li>
+    <li>
+        Identify any other testing needs (publications, office space).
+    </li>
+    <li>
+        Additional software licences to cover test period usage.
+    </li>
+    <li>
+        Support resources and skills required to maintain the test environments.
+    </li>
+    <li>
+        Identify a source for any of the needs that are not currently available to the test group.
+    </li>
+    <li>
+        If any other projects are to make parallel usage of any of the above, reference it.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Document the operability test specification including performance test specifications</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    Document for the operability test level, the test cases for each test condition or group of conditions that will:
+</p>
+<ul>
+    <li>
+        Test the specifications for what the system must do.
+    </li>
+    <li>
+        Test the system the way it will be used.
+    </li>
+    <li>
+        Perform destructive testing.
+    </li>
+</ul>Note: Ensure that regression testing is considered for modules that are being enhanced, fixed or modified in any way.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Review the operability test specification</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><ul>
+    <li>
+        Prepare for peer review of test cases
+    </li>
+    <li>
+        Perform peer review on the test cases
+    </li>
+    <li>
+        Ensure that operability test specifications clearly define&nbsp;and describe components
+    </li>
+    <li>
+        Ensure that the operability test cases covers: 
+        <ul>
+            <li>
+                Valid input/output conditions.
+            </li>
+            <li>
+                Invalid and unexpected input/output conditions.
+            </li>
+        </ul>
+    </li>
+    <li>
+        Ensure that the following have been completed as required:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Test scenarios
+            </li>
+            <li>
+                Test matrices
+            </li>
+            <li>
+                Test conditions
+            </li>
+            <li>
+                Test cases
+            </li>
+            <li>
+                Test data
+            </li>
+            <li>
+                Test scripts
+            </li>
+        </ul>
+    </li>
+    <li>
+        Review and finalize the tools and techniques to be used in operability testing
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

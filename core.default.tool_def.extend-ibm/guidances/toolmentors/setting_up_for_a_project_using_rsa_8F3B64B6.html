@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tool Mentor: Setting Up for a Project Using Rational Software Architect</title>
+<meta name="uma.type" content="ToolMentor">
+<meta name="uma.name" content="setting_up_for_a_project_using_rsa">
+<meta name="uma.presentationName" content="Setting Up for a Project Using Rational Software Architect">
+<meta name="uma.category" content="Tool:rational_software_architect:Rational Software Architect">
+<meta name="element_type" content="tool_mentor">
+<meta name="tool" content="Rational Software Architect">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_4ghTYHu_Ed6TsOLr_oVa_g", "{C4D01FEE-0C3F-4061-A0C7-06988A6E964F}"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_VTspMMRfEdyD76CYS6Ta7A", "_u4ZsoER-Ed2eKeXZgLpnkQ", "{C4D01FEE-0C3F-4061-A0C7-06988A6E964F}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{C4D01FEE-0C3F-4061-A0C7-06988A6E964F}"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Tool Mentor: Setting Up for a Project Using Rational Software Architect</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/toolmentor.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This tool mentor describes how to set up the RSA modeling environment for a project.</td>
+</tr>
+<tr>
+<td>Tool: <a href="./../../../core.default.tool_def.extend-ibm/tools/rational_software_architect_C8418B9F.html" guid="_u4ZsoER-Ed2eKeXZgLpnkQ">Rational Software Architect</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Overview
+</h3>
+<p>
+    Setting up for a project means laying the foundation that enables team members to work on the same model at the same
+    time. Developing complex systems requires that groups of analysts, architects, and developers have the ability see and
+    access the "big picture" at the same time as they are working on their own portion of that picture-simultaneously.
+    Successfully managing an environment in which multiple team members have different kinds of access to the same model
+    requires:
+</p>
+<ul>
+    <li>
+        formulating a working strategy for managing team activity
+    </li>
+    <li>
+        having the tools that can support that strategy
+    </li>
+</ul>
+<p>
+    In the guidance that follows, these terms will be used:
+</p>
+<p>
+    <i>Project</i> refers to a file system location that is known to the Eclipse workspace and is used to store the Eclipse
+    resources&nbsp;that are the work products of a development effort
+</p>
+<p>
+    <i>Conceptual models</i> are models that express abstract concepts like use cases, analysis classes, and design
+    components. They are not tightly bound to implementation code. They are stored in files with <i>.emx</i> extensions.
+    They are distinct from <i>implementation models</i>, which consist of implementation code itself, plus diagrams of the
+    code that are stored in files with <i>.dnx</i> extensions. (You can think of an implementation model as equivalent to
+    the project that contains the code and code diagrams.)
+</p>
+<p>
+    The following basic steps lay this foundation:
+</p>
+<ul>
+    <li>
+        <a href="#Establishing the Role">Establishing the Role of Conceptual Modeling and the Modeling Work
+        Breakdown</a>
+    </li>
+    <li>
+        <a href="#Tailor Templates and Defaults">Tailor Templates and Defaults</a> (optional)
+    </li>
+    <li>
+        <a href="#Determine Model Partitioning Strategy">Determine Model Partitioning Strategy</a>
+    </li>
+    <li>
+        <a href="#Create Project and Models">Create Modeling Projects and Models</a>
+    </li>
+</ul>
+<h3>
+    <a id="Establishing the Role" name="Establishing the Role">Establishing the Role of Conceptual Modeling and the
+    Modeling Work Breakdown</a>
+</h3>
+<p>
+    Part of laying the foundation is determining how conceptual models will be used in the development effort. Will they
+    drive development, or will they be used more retrospectively (e.g. as a form of documentation)?
+</p>
+<p>
+    If models will drive development, determine:
+</p>
+<ul>
+    <li>
+        What types of models (such as Use Case, Analysis, and Enterprise IT Design) will be used.
+    </li>
+    <li>
+        The makeup (size and skill sets) of the conceptual modeling team.
+    </li>
+    <li>
+        The anticipated scope of the conceptual modeling effort.
+    </li>
+    <li>
+        How conceptual modeling work assignments will be apportioned among the team members.
+    </li>
+    <li>
+        How likely it is that multiple members of the team will have to work concurrently in the same areas of the
+        conceptual models.
+    </li>
+    <li>
+        What configuration management tool will be used for storing and versioning conceptual model assets, and what the
+        typical CM activities will be.
+    </li>
+</ul>
+<p>
+    Another consideration is what kinds of conceptual models will be used. The tool provides a handful of model templates
+    that can be used to instantiate new conceptual models of specific types such as Use Case Model, Analysis Model, and
+    Enterprise IT Design Model. The templates typically provide a basic UML package structure, and some example content.
+    They may also have certain UML2 profiles pre-applied.
+</p>
+<h3>
+    <a id="Tailor Templates and Defaults" name="Tailor Templates and Defaults">Tailor Templates and Defaults (optional)</a>
+</h3>
+<p>
+    In the steps that follow, you create models using standard templates, that include a basic packaging structure that
+    follows the <a href="http://www.ibm.com/developerworks/rational/library/04/r-3155/" target="_blank">Model Structure
+    Guidelines for RSx</a>.
+</p>
+<p>
+    You can optionally create your own specialized templates. In this way you can preset properties and options such as
+    default fonts, colors, line styles, file storage options, the ways in which stereotypes and other information are
+    presented. You can also define your own standard package structures and seed content, and have UML profiles of your
+    choice (including profiles you create) pre-applied.
+</p>
+<p>
+    For more information, refer to <i><a href="http://publib.boulder.ibm.com/infocenter/rtnlhelp/v6r0m0/topic/com.ibm.rsa.nav.doc/topics/trootsetupmodels.html?resultof=" target="_blank">Setting Up and Working with Models and Modeling Projects</a></i>.
+</p>
+<h3>
+    <a id="Determine Model Partitioning Strategy" name="Determine Model Partitioning Strategy">Determine Model Partitioning
+    Strategy</a>
+</h3>
+<p>
+    Taking into account the modeling work breakdown you identified in the previous steps, and factoring in some other
+    considerations that are discussed in the Team Development sections of online Help, determine a strategy for allocating
+    conceptual models to physical modeling files.
+</p>
+<p>
+    The tool&nbsp;supports two main approaches for how to break logical model instances:
+</p>
+<ul>
+    <li>
+        a planned approach wherein you decompose the models at the outset, by creating multiple modeling files per model.
+    </li>
+    <li>
+        an ad-hoc approach, based on model refactoring.
+    </li>
+</ul>
+<p>
+    In the real world, a mix of these two approaches is more probable: even if the partitioning strategy has been planned
+    in advance, there will be occasions when a model refactoring is necessary for improving team activities. For a detailed
+    discussion about this topic, see the <a href="http://www.ibm.com/developerworks/rational/library/04/r-3155/" target="_blank">Model Structure Guidelines for RSx</a>.
+</p>
+<p>
+    For more information, refer to <i><a href="http://publib.boulder.ibm.com/infocenter/rtnlhelp/v6r0m0/topic/org.eclipse.platform.doc.user/tasks/tasks-1h.htm" target="_blank">Working in a Team Environment</a></i>.
+</p>
+<h3>
+    <a id="Create Project and Models" name="Create Project and Models">Create Modeling Projects and Models</a>
+</h3>
+<p>
+    The following describes the process for establishing a set of conceptual models for a development effort. Note that you
+    will not necessarily create all of the projects and models at the outset - you may introduce them incrementally at
+    various stages of the development effort.
+</p>
+<ul>
+    <li>
+        Create a UML Project. Give it a name that reflects the development tasks and work products it will support (e.g.
+        "Timesheet Management System Models" or perhaps "Timesheet Management System Use Case Modeling Files")
+    </li>
+    <li>
+        When you create the project you will be asked to choose a type of conceptual modeling file to be created in the
+        project: 
+        <ul>
+            <li>
+                If your plan is to use a UML project per conceptual model type, then at this point you should select the
+                desired model type for the project.
+            </li>
+            <li>
+                If your plan is to use a UML project to house more than one type of conceptual model, then the model you
+                select at this point can be any of those types that you ultimately plan to house in the project.
+            </li>
+            <li>
+                Either way, choose a meaningful name for the new modeling file. The name should reflect the name of the
+                solution being developed and the type of the model (e.g. "Timesheet Management System Use Case Model" or
+                "Timesheet Management System Analysis Model"). If you plan to allocate the logical content of one
+                conceptual model to multiple modeling files, the name of each modeling file should also reflect the subset
+                of the logical content that is being housed in the file (e.g. "Timesheet Management System Employee
+                Management Use Cases" or "Timesheet Management System Project Management Use Cases").
+            </li>
+        </ul>
+    </li>
+    <li>
+        Add additional modeling files to the project as needed
+    </li>
+    <li>
+        Continue adding UML projects and adding additional modeling files to those projects until you have the set of UML
+        projects and modeling files you need.
+    </li>
+</ul>
+<p>
+    For a mapping between the RUP models and the&nbsp;tool specific&nbsp;ones and for a detailed description of the project
+    types, see the <a href="http://www.ibm.com/developerworks/rational/library/04/r-3155/" target="_blank">Model Structure
+    Guidelines for RSx</a>.
+</p>
+<p>
+    For more information, refer to <i><a href="http://publib.boulder.ibm.com/infocenter/rtnlhelp/v6r0m0/topic/com.ibm.rsa.nav.doc/topics/trootsetupmodels.html" target="_blank">Setting Up and Working with Models and Modeling Projects</a></i>.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

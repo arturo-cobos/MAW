@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Service Level Characteristic Analysis</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="slc_model">
+<meta name="uma.presentationName" content="Service Level Characteristic Analysis">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_o6rFkDfSEdy5uPLchEwddA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Service Level Characteristic Analysis</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This example SLCA is a simulation model of the flow of work through a multi-step business process for a Batch Billing Application. Each step is implemented as separate IT processes, running in series and processing batches of work. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/slc_model_CC623B4A.html" guid="mweb9CB4D059B708B98485256885005AD0C3">Service Level Characteristic Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">The purpose of the analysis is to understand the optimum configuration of the business process in order for it to complete
+within a target time. 
+<p>
+    <b><font size="2">Initial Analysis</font></b>
+</p>
+<p>
+    The workload was simulated as a series of identically sized batches. The effect of varying the number of batches (20,
+    40 and 60) on the overall billing elapsed time was analysed a given total workload. The figure below shows the
+    cumulative time in each section in hours for each of these batch profiles.
+</p>
+<p>
+    <img height="254" alt="" src="./../../../core.tech.common.extend-ibm_lic/guidances/examples/resources/slca_ex1.gif" width="280" />
+</p>
+<p>
+    <font size="2">As the number of batches increased, the overall bill run elapsed time for the workload came down
+    dramatically, leveling off at 7.2 hours as the number of batches is increased beyond 40.</font>
+</p>
+<p>
+    <font size="2">In the 60-batch case we analyzed the elapsed time for each individual process. In this case each batch
+    contained just less than 1 Million calls. The figure below shows the average elapsed time in minutes for the passage of
+    a <i>single</i> batch though the different processes:</font>
+</p>
+<p>
+    <font size="2"><img height="252" alt="" src="./../../../core.tech.common.extend-ibm_lic/guidances/examples/resources/slca_ex2.gif" width="300" /></font>
+</p>
+<p>
+    <font size="2"><font size="2">As can be seen, the bulk of the time was spent in the two Invoice Production phases of
+    the process, accounting for 50% and 31% of the total bill run elapsed time respectively.</font></font>
+</p>
+<p>
+    <font size="2"><font size="2"><b>Detailed Analysis</b></font></font>
+</p>
+<p>
+    <font size="2"><font size="2">The individual IT process times were split into the following components:</font></font>
+</p>
+<ul>
+    <li>
+        <font size="2"><font size="2">CPU time</font></font>
+    </li>
+    <li>
+        <font size="2"><font size="2">CPU wait time</font></font>
+    </li>
+    <li>
+        <font size="2"><font size="2">I/O time</font></font>
+    </li>
+</ul>
+<p>
+    <font size="2"><font size="2">The component times for an average batch in the 60-batch case are shown
+    below</font></font>
+</p>
+<p>
+    <font size="2"><font size="2"><img height="258" alt="" src="./../../../core.tech.common.extend-ibm_lic/guidances/examples/resources/slca_ex3.gif" width="310" /></font></font>
+</p>
+<p>
+    <font size="2"><font size="2"><font size="2">For the two Invoice Production processes the "Wait-for-CPU" time is the
+    major contributor. The excessive CPU wait-times result from the contention between large numbers of batches in these
+    CPU-intensive processes. This was a direct consequence of allowing the batches to flow through the pipe in a virtually
+    unconstrained manner.</font></font></font>
+</p>
+<p>
+    <font size="2"><font size="2"><font size="2">This contention was also reflected in the CPU, I/O and Memory utilisation
+    captured in the following figures:</font></font></font>
+</p>
+<p>
+    <font size="2"><font size="2"><font size="2"><img height="195" alt="" src="./../../../core.tech.common.extend-ibm_lic/guidances/examples/resources/slca_ex4.gif"     width="407" /></font></font></font>
+</p>
+<p>
+    <font size="2"><font size="2"><font size="2"><img height="351" alt="" src="./../../../core.tech.common.extend-ibm_lic/guidances/examples/resources/slca_ex5.gif"     width="318" /></font></font></font>
+</p>
+<p>
+    <font size="2"><font size="2"><font size="2"><img height="357" alt="" src="./../../../core.tech.common.extend-ibm_lic/guidances/examples/resources/slca_ex6.gif"     width="318" /></font></font></font>
+</p>
+<p>
+    <font size="2"><font size="2"><font size="2"><font size="2">In this configuration the CPU is running at 100% capacity
+    for almost the entire duration of the business process. Also, the virtual memory requirement is in excess of 30
+    Gigabytes! The I/O workload is concentrated around the early part of the run, in which the data required for billing is
+    extracted from the database, and the latter part of the run, in which the invoicing data is written back to the
+    database. The I/O workload involved in backing up intermediate transient data stores is also significant, the I/O
+    traffic associated with this giving rise to the peak observed at around 5 hours.</font></font></font></font>
+</p>
+<p>
+    <font size="2"><font size="2"><font size="2"><font size="2"><b>Improving Performance</b></font></font></font></font>
+</p>
+<p>
+    <font size="2"><font size="2"><font size="2"><font size="2">To reduce to a more acceptable level the amount of time
+    each batch spends <i>despatched</i> within an IT process (and hence the amount of resource allocated to it) this level
+    of contention must be reduced. Restricting the flow of batches through the business process could do this. To
+    understand the effect of such restrictions, a sequence of simulated bill runs was performed in which the flow of
+    batches through all sections of the business process was constrained. The results of these runs are shown below for 16,
+    8 and 4 stream configurations, in which no more than 16, 8 or 4 batches respectively can co-exist at any one time. The
+    previous unconstrained results are shown for comparison.</font></font></font></font>
+</p>
+<p>
+    <font size="2"><font size="2"><font size="2"><font size="2"><img height="258" alt="" src="./../../../core.tech.common.extend-ibm_lic/guidances/examples/resources/slca_ex7.gif"     width="314" /></font></font></font></font>
+</p>
+<p>
+    <font size="2"><font size="2"><font size="2"><font size="2"><font size="2">These results show that the times per batch
+    fall considerably as the number of streams is decreased. The introduction of batch restrictions however had a slightly
+    detrimental effect on the overall elapsed time. The time to complete for the entire workload increased to 7.3 hours in
+    the 16-stream case, 7.5 hours in the 8-stream case and 8.8 hours in the 4-stream case. This was due to the increase in
+    time each batch now spends waiting to be despatched. However, given the resources required to sustain the constrained
+    environment it was certain the overheads due to storage paging would far outweigh this increased wait for dispatch
+    time. The result would therefore be a significant reduction in overall billing elapsed
+    time.</font></font></font></font></font>
+</p>
+<p>
+    <font size="2"><font size="2"><font size="2"><font size="2"><font size="2">Evidence of the reduced contention was
+    clearly seen, as shown below, for the 4-stream case:</font></font></font></font></font>
+</p>
+<p>
+    <font size="2"><font size="2"><font size="2"><font size="2"><font size="2"><img height="217" alt=""     src="./../../../core.tech.common.extend-ibm_lic/guidances/examples/resources/slca_ex8.gif" width="320" /></font></font></font></font></font>
+</p>
+<p>
+    <font size="2"><font size="2"><font size="2"><font size="2"><font size="2"><img height="193" alt=""     src="./../../../core.tech.common.extend-ibm_lic/guidances/examples/resources/slca_ex9.gif" width="323" /></font></font></font></font></font>
+</p>
+<p>
+    <font size="2"><font size="2"><font size="2"><font size="2"><font size="2"><img height="154" alt=""     src="./../../../core.tech.common.extend-ibm_lic/guidances/examples/resources/slca_ex10.gif" width="324" /></font></font></font></font></font>
+</p>
+<p>
+    <font size="2"><font size="2"><font size="2"><font size="2"><font size="2"><font size="2">The CPU utilisation, although
+    still high, follows a more acceptable ‘saw tooth’ pattern rather than being stuck solidly at 100%. The memory picture
+    is also much improved with a peak requirement of just over 10 Gigabytes compared with a previous peak in excess of 30
+    Gigabytes. The average I/O rate is now spread much more evenly across the period of the business process; the peak
+    requirement now being under 1500 I/Os per second compared with a previous peak of almost 8000 I/Os per
+    second.</font></font></font></font></font></font>
+</p>
+<p>
+    <font size="2"><font size="2"><font size="2"><font size="2"><font size="2"><font     size="2"><b>Conclusion</b></font></font></font></font></font></font>
+</p>
+<p>
+    <font size="2"><font size="2"><font size="2"><font size="2"><font size="2"><font size="2">The results of this analysis
+    highlights the need to control the flow of batches to remove the bunching effects clearly seen in the unconstrained
+    configuration and so restricts the usage of resources to an acceptable limit. By throttling back on the workload the
+    percentage of the time spent by the operating system balancing the processing is much reduced, increasing the time
+    doing useful work. This analysis shows it will be possible to balance the workload such that one night’s bill
+    processing would fit into one night’s batch window, the size of processor required can be confidently
+    estimated.</font></font></font></font></font></font>
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

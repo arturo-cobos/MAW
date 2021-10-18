@@ -1,0 +1,573 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Reference Architecture Fit Gap Analysis for E-Commerce (LIUS) </title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="ref_arch_fit_gap_analysis_lius">
+<meta name="uma.presentationName" content="Reference Architecture Fit Gap Analysis for E-Commerce (LIUS) ">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_pxIJEDepEdyrF6K2SkiByg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Reference Architecture Fit Gap Analysis for E-Commerce (LIUS) </td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This example shows a partial Reference Architecture Fit-Gap Analysis between the LiUS e-commerce system based on the Online Buying Reference Architecture. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/dev_ref_arch_fit_gap_analysis_B17633EF.html" guid="_A0MFgDDaEdyz_pzDMsV8FQ">Develop Reference Architecture Fit-Gap Analysis</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/ref_arch_fit_gap_analysis_505D71D5.html" guid="mwebCB8ECB58A8362ADD852568850059188E">Reference Architecture Fit Gap Analysis</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <strong>Executive Summary</strong>
+</p>
+<p>
+    The potential of using the Online Buying Reference Architecture as a basis for the LiUS e-commerce system was assessed.
+    It was determined that the reference architecture provides a good basis on which to proceed but needs to be enhanced to
+    support the volumes and performance requirements of the LiUS e-commerce system.
+</p>
+<p>
+    <strong>Introduction</strong>
+</p>
+<p>
+    <br />
+    The purpose of this document is to provide a common understanding of the high-level functional and non-functional
+    requirements to be supported by the LiUS e-commerce system and to evaluate whether the Online Buying Reference
+    Architecture could be used as a basis for the LiUS system.
+</p>
+<p>
+    <strong>Key Drivers</strong><br />
+    The key business drivers behind the development of the LiUS e-commerce system are:
+</p>
+<ul>
+    <li>
+        Complement not replace LiUS stores with the LiUS e-commerce site. Customers should be able to reserve items on-line
+        and pick them up from stores.
+    </li>
+    <li>
+        Support effective cross selling ("customers who bought this item also bought these items").
+    </li>
+    <li>
+        Provide an e-commerce site in all geographies in which LiUS operates with a single data center.
+    </li>
+    <li>
+        Significantly improve on the down-time experience by the current site.
+    </li>
+    <li>
+        Leverage existing product and stock control systems.
+    </li>
+</ul>
+<p>
+    <br />
+    <strong>Architecture Requirements Checklist</strong><br />
+    The LiUS e-commerce system has the following key functional requirements:
+</p>
+<ul>
+    <li>
+        Browsing and searching the site, viewing products and the associated information about those products.
+    </li>
+    <li>
+        Checking the availability of products at a local LiUS store.
+    </li>
+    <li>
+        Purchasing products on-line in which case the site visitor must log-on and register if he has not already done so.
+        The status of orders can then subsequently be checked.
+    </li>
+    <li>
+        Applying for a LiUS Family card on-line and subsequently checking the status of the application.
+    </li>
+    <li>
+        Applying for a job at LiUS.
+    </li>
+    <li>
+        Contacting LiUS to ask a general question or place an e-mail order
+    </li>
+    <li>
+        Subscribing to regular updates, news articles etc about LiUS.
+    </li>
+    <li>
+        &#160;Interfaces to all relevant LiUS back-end systems (currently LiUS Stock Control System, LiUS Product System,,
+        LiUS e-mail, a search engine and a directory server).
+    </li>
+    <li>
+        Managing the site content. This includes creating, reviewing and publishing content and managing templates and
+        product structures. This functionality will be provided by a 3rd party content management system.
+    </li>
+    <li>
+        Site analysis tools.
+    </li>
+    <li>
+        Site personalization tools.
+    </li>
+    <li>
+        Site management tools.
+    </li>
+    <li>
+        Indexing the site content to allow an external search engine to search that content.
+    </li>
+</ul>
+<p>
+    The LiUS e-commerce system has the following key non-functional requirements:
+</p>
+<ul>
+    <li>
+        Overall Volumes:
+    </li>
+</ul>
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" border="1">
+    <tbody>
+        <tr bgcolor="#CCCCCC">
+            <td valign="top" width="165">
+                <br />
+                <br />
+            </td>
+            <td valign="top" width="137">
+                <p align="center">
+                    <strong>2003</strong>
+                </p>
+            </td>
+            <td valign="top" width="137">
+                <p align="center">
+                    <strong>2004</strong>
+                </p>
+            </td>
+            <td valign="top" width="137">
+                <p align="center">
+                    <strong>2005</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="165">
+                <p>
+                    <strong>Visits/month</strong>
+                </p>
+            </td>
+            <td valign="top" width="137">
+                <p>
+                    7.5 million
+                </p>
+            </td>
+            <td valign="top" width="137">
+                <p>
+                    12.5 million
+                </p>
+            </td>
+            <td valign="top" width="137">
+                <p>
+                    14 million
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="165">
+                <p>
+                    <strong>Pages/visit</strong>
+                </p>
+            </td>
+            <td valign="top" width="137">
+                <p>
+                    20
+                </p>
+            </td>
+            <td valign="top" width="137">
+                <p>
+                    20
+                </p>
+            </td>
+            <td valign="top" width="137">
+                <p>
+                    20
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="165">
+                <p>
+                    <strong>(Page requests / month)</strong>
+                </p>
+            </td>
+            <td valign="top" width="137">
+                <p>
+                    150 million
+                </p>
+            </td>
+            <td valign="top" width="137">
+                <p>
+                    250 million
+                </p>
+            </td>
+            <td valign="top" width="137">
+                <p>
+                    280 million
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="165">
+                <p>
+                    <strong>Peak day</strong>
+                </p>
+            </td>
+            <td valign="top" width="137">
+                <p>
+                    Mon-Fri
+                </p>
+            </td>
+            <td valign="top" width="137">
+                <p>
+                    Mon-Fri
+                </p>
+            </td>
+            <td valign="top" width="137">
+                <p>
+                    Mon-Fri
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="165">
+                <p>
+                    <strong>Peak hour</strong>
+                </p>
+            </td>
+            <td valign="top" width="137">
+                <p>
+                    10:00 - 14.00
+                </p>
+            </td>
+            <td valign="top" width="137">
+                <p>
+                    10:00 - 14.00
+                </p>
+            </td>
+            <td valign="top" width="137">
+                <p>
+                    10:00 - 14.00
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<ul>
+    <li>
+        Averaged response time of 2.7 seconds for 95% of transactions.
+    </li>
+    <li>
+        Under normal operational conditions the LiUS e-commerce system should be available between 00:00 and 23:59
+        hours.&#160; However, the following will be permitted, with advance notice of no less than 7 days
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                &#160;One scheduled outage of 2 hours max per month (software upgrade etc).
+            </li>
+            <li>
+                &#160;One scheduled outage of 8 hours max per quarter (major software upgrade, hardware change etc).<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        &#160;When an unscheduled outage occurs during core hours, the maximum permitted time to restore the service on
+        each and every occasion will be dependent on the specific function being recovered:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Disaster page ("site currently not available")&#160; &lt; 5min
+            </li>
+            <li>
+                &#160;Products available to view &lt; 2 hrs
+            </li>
+            <li>
+                &#160;Order placement and enquiry &lt; 12 hrs
+            </li>
+            <li>
+                &#160;Other functionality (e.g. personalisation)&#160;&lt; 24 hrs<br />
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    <strong>Subject Area Checklist</strong>&#160;
+</p>
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" border="1">
+    <tbody>
+        <tr bgcolor="#CCCCCC">
+            <td valign="top" width="166">
+                <p>
+                    <strong>Subject Area Domain</strong>
+                </p>
+            </td>
+            <td valign="top" width="116">
+                <p>
+                    <strong>Present in Ref. Architecture?</strong>
+                </p>
+            </td>
+            <td valign="top" width="112">
+                <p>
+                    <strong>Required by Customer?</strong>
+                </p>
+            </td>
+            <td valign="top" width="214">
+                <p>
+                    <strong>Issues/Risks/Notes</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="166">
+                <p>
+                    Collaboration
+                </p>
+            </td>
+            <td valign="top" width="116">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td valign="top" width="112">
+                <p>
+                    No
+                </p>
+            </td>
+            <td valign="top" width="214">
+                <p>
+                    None
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="166">
+                <p>
+                    Mobile
+                </p>
+            </td>
+            <td valign="top" width="116">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td valign="top" width="112">
+                <p>
+                    No
+                </p>
+            </td>
+            <td valign="top" width="214">
+                <p>
+                    None
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="166">
+                <p>
+                    Internet
+                </p>
+            </td>
+            <td valign="top" width="116">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td valign="top" width="112">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td valign="top" width="214">
+                <p>
+                    None
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="166">
+                <p>
+                    Electronic Mail
+                </p>
+            </td>
+            <td valign="top" width="116">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td valign="top" width="112">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td valign="top" width="214">
+                <p>
+                    LiUS has its own internal mail system which must be used.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="166">
+                <p>
+                    Content Management
+                </p>
+            </td>
+            <td valign="top" width="116">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td valign="top" width="112">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td valign="top" width="214">
+                <p>
+                    A 3 rd party content management system has already been procured.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="166">
+                <p>
+                    Integration
+                </p>
+            </td>
+            <td valign="top" width="116">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td valign="top" width="112">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td valign="top" width="214">
+                <p>
+                    Some problems related to protocols required by the LiUS stock control system.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="166">
+                <p>
+                    Outbound Communication
+                </p>
+            </td>
+            <td valign="top" width="116">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td valign="top" width="112">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td valign="top" width="214">
+                <p>
+                    Requirements is for MS-Word by reference architecture has a server-based mass-processing document
+                    management subsystem.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <strong>Statement of Fit</strong><br />
+    The following problems were not addressed by the Online Buying Reference Architecture:
+</p>
+<ul>
+    <li>
+        A back-end integration problem was encountered associated with LiUS's requirements for integration with its stock
+        control system.&#160; Consequently, some modifications will have to be made to the integration server.&#160; The
+        risk involved is rather limited given that LiUS has considerable experience in back-end integration with various
+        systems, and it is expected that a large part of the existing adapter design will be reused.
+    </li>
+    <li>
+        There is a requirements for the use of e-mail to advise customers of order status.&#160; Although the Online Buying
+        Reference Architecture provides some support for e-mail, it is not as fully integrated into the transactional
+        systems as desired.
+    </li>
+    <li>
+        The requirements is that outbound communications (delivery notes etc) be created using MS-Word, but the Online
+        Buying Reference Architecture provides a server-based mass-processing document composition paradigm to achieve
+        performance and integrity.&#160; LiUS has agreed to alter its requirement to fit the recommended pattern.
+    </li>
+    <li>
+        The performance characteristics required by LiUS, in particular those for peak hour transaction rates, are capable
+        of being met by the logical reference architecture pattern.&#160; However, currently the physical reference
+        architecture instantiation described by the Online Buying Reference Architecture proposes use of Distributed Object
+        Transaction Monitors, which limit the transaction rate to a value below that specified by LiUS.&#160; Additional
+        architectural work will be needed to modify the current physical reference architecture to support these higher
+        transaction rates.<br />
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Estimation Considerations: Test Specification (Legacy)</title>
+<meta name="uma.type" content="EstimationConsiderations">
+<meta name="uma.name" content="test_specification_legacy">
+<meta name="uma.presentationName" content="Test Specification (Legacy)">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb370786589467593350"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Estimation Considerations: Test Specification (Legacy)</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/estimationconsiderations.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/test_specification_E0A1A8C5.html" guid="mwebCE3B2E307A951B9485256885005D8027">Test Specification</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Test Specifications account for the number of test cases necessary to adequately test an application.&nbsp;
+</p>
+<p>
+    Techniques for estimating these costs are broken down into groups:
+</p>
+<ul>
+    <li>
+        Estimates for structured code based upon the traditional function point method.
+    </li>
+    <li>
+        Object or structured based estimates that use the Lifecycle Effort and Duration (LEAD) technique.
+    </li>
+</ul>
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table><b>Function Points</b> 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>In <i>Estimating Software Costs</i> by T Capers Jones (McGraw-Hill, 1998, ISBN 0-07-913094-1), the rule of thumb
+is; Number of Test Cases = Function Point Count1.2. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>LEAD Estimating Technique: 
+<ul>
+    <li>
+        Calculate Logical Transactions (LTs) * 50.
+    </li>
+    <li>
+        Calculate Entities * 75.
+    </li>
+    <li>
+        Calculate total entity references (ER) as the ratio of (ER/LT) *LT, then multiply by 20.
+    </li>
+    <li>
+        Add the results from 1, 2, and 3, and divide the result by 1500.
+    </li>
+    <li>
+        Raise this to power 1.2
+    </li>
+    <li>
+        For OT, this is the number of test cases. For structured, add 15%.
+    </li>
+</ul>As a rule of thumb, experience on client engagements suggests that one test case constructor can create 2-3 test cases
+per day. If automated testing tools are used to develop the test scripts, additional time per test case may be required
+depending on the skills of the test case constructor and the difficulty in debugging any scripting problems.</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

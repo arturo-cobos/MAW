@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Application Data Design - Developing Data Models</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="app_data_design_dev_data_models">
+<meta name="uma.presentationName" content="Application Data Design - Developing Data Models">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb15669F117D4DFE8085256F8100072DD9"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb15669F117D4DFE8085256F8100072DD9"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Application Data Design - Developing Data Models</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The purpose of this paper is to present fundamental concepts to structured data design for use as part of an application development effort. The topics discussed in this paper are done from a broad perspective and hold for most business applications. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">Topics related to specialized data design considerations such as dimensional data design techniques needed in many data
+warehouse projects are not covered in this paper. Nor are Enterprise Models (EMs) covered in this paper. Enterprise-wide
+modeling is a vehicle by which strategic planning for an enterprise can be accomplished. An EM’s purpose and intent are
+much more germane to aligning processes, information, and technology with the overall business directions of an enterprise
+rather than supporting a specific set of business processes associated with a given application. An enterprise model can
+serve as a high-level overlay to which the models discussed in this paper can be mapped, but is not mandatory in being able
+to create them. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>While this paper may present data design principles primarily from the context of developing a new, from-scratch
+application, elements of the discussion equally apply to other types of projects in which data design efforts may be a
+part. Examples of other projects in which these concepts may apply include but are not limited to data conversion/migration
+projects and application enhancements/modifications. The extent to which they apply to any given project will vary per each
+project’s scope definition and the degree to which data is relevant to the activities to be accomplished within that scope.
+
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>All the topics covered in this paper have strong affinity to development efforts where process and data design are
+not encapsulated and treated as strongly bound aspects of an application. This separation of process and data design is a
+core tenet of data design methodologies where they each are operationally viewed as separate but codependent disciplines.
+It is based on the viewpoint that, in relative comparison to one another, data – if properly designed – is less sensitive
+to change than processes over time. If the data design is too strongly aligned structurally to the processes it supports,
+it then too has the same relative degree of vulnerability as the process regarding change. Such was the case with the
+designs created prior to the emergence of data design methodologies. Consequently, one of the main objectives of data
+design is to ultimately support applications with data structures that not only support the application’s processes at its
+inception but continue to do so with nominal impact from changes time will bring, 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>This viewpoint at first glance may seem at odds with object-oriented (OO) development principles. However, OO
+modelers may benefit from this paper as many core data design concepts transcend physical implementation concerns and have
+comparable representation in OO class diagrams. In fact, in some OO development projects the OO class diagram serves as a
+starting point for data designs ultimately targeting non-OO databases. However, any commonality between OO design and data
+design concepts is tangential and is not a focus of discussion in this paper. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>This paper’s topics are listed here and are presented in the following order 
+<ol>
+    <li>
+        Data Design Overview – Describes the overall purpose and broad understanding of data design.
+    </li>
+    <li>
+        Data Models – Introduces the types of data models developed and their relationship to one another.
+    </li>
+    <li>
+        Entity Relationship Model (ERM): The Foundation Data Model – Discusses the most fundamental building blocks
+        comprising a data model and the notations used in data models to convey information about the data it depicts.
+    </li>
+    <li>
+        From Entity Relationship Model (ERM) to Conceptual Data Model (CDM) – Presents the analysis applied to resolve
+        many-to-many relationships in an ERM to progress data design to a CDM.
+    </li>
+    <li>
+        From Conceptual Data Model (CDM) to Logical Data Model (LDM) – Discusses the analysis applied via normalization
+        rules to a CDM to progress data design to a LDM completing Logical Data Design.
+    </li>
+    <li>
+        From Logical Data Model (LDM) to Physical Data Model (PDM) – Generically overviews items pertaining to the
+        transformation from logical to physical data design.
+    </li>
+    <li>
+        Standard Entities – These are conceptual entities that appear across many industries and can be used to frame the
+        discussion of data for a specific application.
+    </li>
+    <li>
+        The Cross Industry Data Model – These are structured, logical depictions of data using the data design concepts and
+        standard entities discussed in this paper.
+    </li>
+    <li>
+        Data Design Development Summarization
+    </li>
+</ol>
+<p>
+    <a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/ApplicationDataDesignDevelopingDataModels.doc" target="_blank">ApplicationDataDesignDevelopingDataModels.doc</a>
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

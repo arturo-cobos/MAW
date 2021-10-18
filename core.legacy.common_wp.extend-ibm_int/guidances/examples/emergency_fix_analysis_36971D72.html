@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Emergency Fix Analysis</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="emergency_fix_analysis">
+<meta name="uma.presentationName" content="Emergency Fix Analysis">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_7Orp8HYDEdykZvkFouWC_g"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Emergency Fix Analysis</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/emergency_fix_analysis_F6730247.html" guid="mweb1F71C84AE6CBB4F9852568820063BA46">Emergency Fix Analysis</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <b>PROBLEM</b><br />
+    PCG010 abended with message:<br />
+    C101A02 ABEND: CH VERSION NOS MISMATCH<br />
+    HUON VERSION NO. 0516<br />
+    EXPECTED VERSION NO. 0514<br />
+    PCG010 takes as input the whole GDG of HUON files:<br />
+    . C.G.HUON.BTCHFIN<br />
+    . C.G.HUON REFORMS<br />
+    PCG020 then deletes the whole GDG of these files.<br />
+    The prob. has been caused by a version of HUON files BDTd in between 05/08/99 PCG010/020 process, which was deleted by
+    PCG020 without being processed by PCG010.
+</p>
+<p>
+    1. PCG010 ran 05/08/99 17:42 processing:
+</p>
+<blockquote dir="ltr">
+    C.G.HUON.BTCHFIN.G001V00 / G002V00<br />
+    C.G.HUON.REFORMS.G001V00 / G002V00
+</blockquote>2. ALADY705/710 ran 06/08/99 02:00 creating: 
+<blockquote dir="ltr">
+    C.G.HUON.BTCHFIN.G003V00<br />
+    C.G.HUON.REFORMS.G003V00
+</blockquote>3. PCG020 ran 06/08/99 04:41 deleting: 
+<blockquote dir="ltr">
+    C.G.HUON.BTCHFIN.G001V00 / G002V00 / G003V00<br />
+    C.G.HUON.REFORMS.G001V00 / G002V00 / G003V00
+</blockquote>
+<p>
+    06/08/99 PCG010, did not fail because there were no HUON files to be processed.
+</p>
+<p>
+    <b>SOLUTION</b>
+</p>
+<p>
+    Request Production services the following:
+</p>
+<p>
+    1. Rename out of the GDG to holding names HUON files:
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        - a. C.G.HUON.BTCHFIN.G0002V00 To C.G.HUON.BTCHFIN.GEN2<br />
+        - a. C.G.HUON.BTCHFIN.G0003V00 To C.G.HUON.BTCHFIN.GEN3<br />
+        - a. C.G.HUON.BTCHFIN.G0004V00 To C.G.HUON.BTCHFIN.GEN4<br />
+        - b. C.G.HUON.REFORMS.G0002V00 To C.G.HUON.REFORMS.GEN2<br />
+        - b. C.G.HUON.REFORMS.G0003V00 To C.G.HUON.REFORMS.GEN3<br />
+        - b. C.G.HUON.REFORMS.G0004V00 To C.G.HUON.REFORMS.GEN4
+    </p>
+</blockquote>
+<p>
+    2. Re-BDT HUON files, processed by ALADY705/710 on the 06/08/99 at 02:00.
+</p>
+<p>
+    3. Rename back into the GDG files:
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        - a. C.G.HUON.BTCHFIN.GEN2 to C.G.HUON.BTCHFIN.G0003V00<br />
+        - b. C.G.HUON.REFORMS.GEN2 to C.G.HUON.REFORMS.G0003V00
+    </p>
+</blockquote>
+<p>
+    4. Run Proc. PCG000R
+</p>
+<p>
+    5. Re-run PCG010 from the beginning - CMT deleted
+</p>
+<p>
+    6. Run last night's PCG020
+</p>
+<p>
+    7. When PCG020 has finished ok rename back into the GDG files:
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        - a. C.G.HUON.BTCHFIN.GEN3 to C.G.HUON.BTCHFIN.G0002V0<br />
+        - a. C.G.HUON.BTCHFIN.GEN4 to C.G.HUON.BTCHFIN.G0003V0<br />
+        - b. C.G.HUON.REFORMS.GEN3 to C.G.HUON.REFORMS.G0002V0<br />
+        - b. C.G.HUON.REFORMS.GEN4 to C.G.HUON.REFORMS.G0003V0
+    </p>
+</blockquote>
+<p>
+    This data will be processed by tonight's pcg010
+</p>
+<p>
+    NOTE: ALADY705/710 has to be held until last night's PCG020 finishes ok.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

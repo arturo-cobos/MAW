@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Aligning Application Models for SOA Success</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="aligning_appl_models_soa">
+<meta name="uma.presentationName" content="Aligning Application Models for SOA Success">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb683333B72C04064F852571B000449F20"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb683333B72C04064F852571B000449F20"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Aligning Application Models for SOA Success</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">A large portion of solutions are an amalgam of multiple Independent Software Vendor (ISV) and custom applications. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Purpose
+</h3>
+<p>
+    A business object such as <i>customer</i>, <i>product</i>, <i>account</i> has distinct and disparate representations in
+    each of these applications. ISV applications tend to be "coarse grained" each needing proprietary implementation of
+    these objects to function. The appeal of Service Oriented Architectures (SOA) is the provision of common services
+    across (significant parts of) the organisation. Implicit in the service definitions is a homogenous set of business
+    objects. <i>How can an SOA solution be realised if compatibility between disparate object representations in underlying
+    applications is not examined and addressed?</i>
+</p>
+<p>
+    <img height="227" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/aligning_app_models_for_soa_fig1.JPG" width="684" />
+</p><b>Figure 1 Multiple Object Representations</b> 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>Figure 1 Multiple Object Representations shows an example of a solution comprising two ISV applications (App 1 and
+App 2) and a custom application (App 3); the two ISV applications are replacing a single existing custom legacy application
+(App 4) and data from this application will be migrated to both ISV App 1 and ISV App 2. Each application has its own
+representation of an <i>account</i> and a <i>customer</i>; Apps 1, 2 and 4 also have a <i>product</i>; however, each
+application’s implementation is different as denoted by the different shapes in the diagram. The question is: are the
+concepts sufficiently the same to allow the applications to present a common set of business objects to service clients? 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>This paper describes a technique that assesses the degree of alignment between application models participating in
+a solution and recommends the changes required to bring applications into alignment. Alignment is an analysis activity. It
+compares an object in one model with a ‘similar’ object in another model One model is always chosen as the “base” against
+which all other models are aligned. An application model is the set of objects in an application. Objects have both data
+and behaviour. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>Any project which integrates several ISV applications should use this technique to verify that one ISV
+application’s underlying object model will work with another application. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>Employing this technique provides: 
+<ul>
+    <li>
+        A mapping between application models
+    </li>
+    <li>
+        Early insight into the hidden cost of service realisation and integration
+    </li>
+    <li>
+        Lead time to lobby ISVs to change their product
+    </li>
+    <li>
+        Lead time for business to change their processes and products
+    </li>
+    <li>
+        A framework for integration issue resolution in micro design
+    </li>
+    <li>
+        Decisions about which application should master an object
+    </li>
+</ul>
+<p>
+    <a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/ModelAlignmentTechniquePaperv1.0.doc" target="_blank">ModelAlignmentTechniquePaperv1.0.doc</a>
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,626 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Defining Architecture Standards</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="defining_architecture_standards">
+<meta name="uma.presentationName" content="Defining Architecture Standards">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb34315B257BA4B2EB85256A690048C6A0"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb34315B257BA4B2EB85256A690048C6A0"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Defining Architecture Standards</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This technique paper can be used as reference to review application design documentation. It helps to create a business scenario, define some fundamental aspects of the architecture, and then develop architectural options, building block-by-block.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1&nbsp;Description
+</h3>
+<p>
+    The objective of this technique is to ensure that a design satisfies availability, security, system management,
+    performance and capacity requirements. The sequencing of application design review in relation to other work on the
+    operational model varies according to project circumstances.&nbsp; There are often tradeoffs with other objectives and
+    requirements; for example, delivering high availability may compromise a need for simple system management.
+</p>
+<h3>
+    2&nbsp;Context
+</h3>
+<p>
+    At this stage of the engagement you should have gained agreement from your customer on two key points:
+</p>
+<ul>
+    <li>
+        The complexity of the requirements does not lend itself to a simple e-business solution, and a more extensive
+        design process is needed.<br />
+    </li>
+    <li>
+        The business scenario created and presented correctly reflects what the customer is trying to achieve.
+    </li>
+</ul>
+<h4>
+    2.1&nbsp; Building block decision tables
+</h4>
+<p>
+    Build a table listing the Decision Points together with notes about the impact of each decision on the design of the
+    building block.
+</p>
+<p>
+    If, because of available resource and the size and complexity of the project, you are not able to answer all of the
+    design questions, you should make it clear what assumptions have been made and revisit those questions when you proceed
+    to a more detailed design.
+</p>
+<p>
+    The following building blocks are covered in this paper:
+</p>
+<ul>
+    <li>
+        Security<br />
+    </li>
+    <li>
+        System Management<br />
+    </li>
+    <li>
+        Client/Server<br />
+    </li>
+    <li>
+        Network<br />
+    </li>
+    <li>
+        Portability and Scalability<br />
+    </li>
+    <li>
+        Application and Data Logic
+    </li>
+</ul>
+<h4>
+    2.2&nbsp; Security<br />
+    <br />
+</h4>
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <th id="" scope="col" abbr="">
+                Decision Points&nbsp;
+            </th>
+            <th id="" scope="col" abbr="">
+                Impact
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Do transaction request flows need to be encrypted?&nbsp;
+            </td>
+            <td>
+                Encryption can be an expensive process and could impact the customer’s end-to-end budget. Deciding upon
+                which messages or parts of a message need encryption and the type of message flow across a firewall may
+                impact the design and certainly the technologies. Encryption technologies such as SSL can have a
+                significant increase in response time due to the additional CPU costs involved.<br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                If servers or clients will be located outside the USA, what encryption acceptable?&nbsp;
+            </td>
+            <td>
+                The US is relaxing some controls over the export of cryptographic products but your customer may need to
+                seek alternative cryptography from suppliers outside of the USA.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Is there a need for users to be identified to the servers with which they are communicating? How these
+                users will be identified to the server?&nbsp;
+            </td>
+            <td>
+                This is basic access security, which can be managed at the server, or it can be handled at the client using
+                applets or local client based logon procedures.<br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Does the customer need to restrict access to parts of the site?
+            </td>
+            <td>
+                The number and placement of firewalls is important to restrict unwarranted access to sensitive data and
+                applications.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                What privacy rules should be applied to information provided by users?&nbsp;
+            </td>
+            <td>
+                Policies should be in place for the use of collected user data. Many countries now have legislation
+                governing the holding of personal data on computer files.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                What are the legal requirements and company policies for auditing content, changes and transactions?&nbsp;
+            </td>
+            <td>
+                Companies have been held legally liable for the contents of their Web sites.
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    Following table lists various methods available for user identification on the Web:<br />
+    <br />
+</p><br />
+<br />
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <th id="" scope="col" abbr="">
+                Identification method
+            </th>
+            <th id="" scope="col" abbr="">
+                Uses
+            </th>
+            <th id="" scope="col" abbr="">
+                Comments
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Basic Authentication&nbsp;
+            </td>
+            <td>
+                Simple userid/password authentication
+            </td>
+            <td>
+                <em>Basic Authentication</em> has a specific meaning within the Web Protocol. It is supported by most Web
+                servers – including IBM HTTP Server - and allows simple control over access to files and directories based
+                on a userid. There are two main shortcomings to this method: - The password is masked rather than encrypted
+                for transmission, so this mechanism is not recommended for high-value transactions without some other form
+                of authentication&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+                - The browser caches the password and resubmits it on demand for later transactions. There is no explicit
+                logoff mechanism. This makes it unsuitable for walk up-and-use kiosk applications. Unless a user remembers
+                to close the browser, his identity can be assumed by the next user of the workstation.<br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Client Certificates
+            </td>
+            <td>
+                Strong authentication
+            </td>
+            <td>
+                This method authenticates a user with public/private key technology. The technique is used by web servers
+                and by the standard X.509 certificates of the Web SSL v3 protocol. It requires infrastructure to issue and
+                manage certificates.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Application specific
+            </td>
+            <td>
+                General user authentication&nbsp;
+            </td>
+            <td>
+                In this method, the Web server, the App Server or both handle user identification.
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<h4>
+    <br />
+    2.3&nbsp; Systems management and administration
+</h4>
+<p>
+    Systems management is a very broad term, which encompasses many disciplines such as performance measurement,
+    availability reporting, reactive problem reporting, software distribution, and updates, plus many types of problem
+    determination tools. Caution must be exercised when applying traditional system management techniques to the Web, since
+    many aspects of an Internet enabled environment are not under user control. This would apply to such areas as
+    end-to-end performance or problem determination of network outages.<br />
+    <br />
+</p>
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <th id="" scope="col" abbr="">
+                Decision Points
+            </th>
+            <th id="" scope="col" abbr="">
+                &nbsp;Impact
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Does the customer have the personnel and infrastructure to install, administer and maintain its own Web
+                environment?&nbsp;
+            </td>
+            <td>
+                If not, you may need to factor into your design ways to develop the appropriate infrastructure. This will
+                probably be more a financial consideration than system design, since it will probably involve hiring new
+                skills, retraining existing skills, or commissioning the services of a third party service provider.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                What hours should the service be available?&nbsp;
+            </td>
+            <td>
+                This depends very much on the nature of the customers’ business, although Web access is changing the nature
+                of the way that many customers do business today. This may require supporting access from different time
+                zones (typically across the Internet).<br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                What is the response times targets?
+            </td>
+            <td>
+                This can be an extremely variable factor depending very much on the complexity of the transaction, the
+                number of concurrent users, the power of the CPUs serving these users, as well as network response times.
+                On an Internet environment there is no way to accurately establish network response time. However, if
+                despite the unknowns you can budget for end-to-end response, it will help to checkpoint each component
+                within the building blocks during the design phase.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                How should the architecture support the process of problem reporting, tracking and fixing?&nbsp;
+            </td>
+            <td>
+                A fully architected solution will almost certainly involve many diverse and complex technologies but not by
+                choice.
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<h4>
+    2.4&nbsp; Client-server building block
+</h4>
+<p>
+    A key question comes in terms of application technology is what browser software will be used, and whether the users
+    are Internet or Intranet based.
+</p><br />
+<br />
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <th id="" scope="col" abbr="">
+                Decision Points
+            </th>
+            <th id="" scope="col" abbr="">
+                &nbsp;Impact
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Is the user connecting across an intranet or the Internet?
+            </td>
+            <td>
+                &nbsp;On an intranet you will have some control over the platform and software specifications of your
+                clients. This may be important, for instance, if you have specific levels of Java to support. If your users
+                connect via the Internet, your design point should be the two leading browsers.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                What national languages should the site support?&nbsp;
+            </td>
+            <td>
+                You clearly need to support the languages of your e-business customer set. If necessary, you may need to
+                have code support for different languages if your customer’s business extends across different countries.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                How will the choice of client affect end-to-end response?&nbsp;
+            </td>
+            <td>
+                <p>
+                    Key Internet technologies should be considered with respect to their affect on user response
+                    time.<br />
+                    -&nbsp;HTML is the common way to render pages on a browser; the information content of such pages can
+                    have a significant affect on response time. Complex objects and images can significantly affect
+                    download time, and hence the rendering time may cause workstation response to suffer.<br />
+                    -&nbsp;Java applets may have slow download times, but subsequent interactions through their local
+                    execution should improve workstation responsiveness.<br />
+                    - The use of servlets of JSPs to run the presentation logic means that the clients only need to support
+                    simple HTML output.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Is there a need to distribute application code, and if so, how will it be done?
+            </td>
+            <td>
+                This issue relates to two areas: The first concerns whether the customer’s users have the facilities
+                available to access the Internet, such as Internet browser software on their machines. The second point
+                relates to the downloading of special software such as applets, which may be needed to access the
+                Application server environment.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                How will I implement my Web access function to best suit my Application server function?
+            </td>
+            <td>
+                Will I use servlets, distributed objects, CGI programs, or server APIs? Usage patterns of users, skill
+                level of developers, number of concurrent users, and expected response times all are factors that will
+                affect how the business logic should be architected. For example, casual, infrequent access by a user may
+                dictate a simple CGI server API interface, while a highly interactive user requiring repeated interaction
+                with the server may dictate a servlet or distributed object approach.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                What security functions are required and how will these be dictated by the server technology?
+            </td>
+            <td>
+                All areas of security should be considered: authentication, authorization, privacy, data-integrity,
+                non-repudiation, auditing capabilities, as well as others. What additional capabilities (such as SSL and
+                HTTPS) can be added to restore security to its existing level? In many cases, security may have to be
+                strengthened if access is extending on a public basis through the Internet.
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<h4>
+    2.5&nbsp; Network building blocks
+</h4><br />
+<br />
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <th id="" scope="col" abbr="">
+                Decision Points
+            </th>
+            <th id="" scope="col" abbr="">
+                Impact
+            </th>
+        </tr>
+        <tr>
+            <td>
+                How will I manage very large numbers of concurrent browser requests?&nbsp;
+            </td>
+            <td>
+                When connecting to the Internet, where the number of user requests are indeterminate and possibly very
+                large, you may need to consider some front-end server support such as Network Dispatcher to workload
+                balance the browser requests to the back-end application server environment.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                How does the network affect my end-to-end response time?&nbsp;
+            </td>
+            <td>
+                Compare estimated traffic against available bandwidth to come up with initial estimates of network
+                responses. Take into account peaks as well as average loading.
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<h4>
+    2.6&nbsp; Portability and Scalability
+</h4>
+<p>
+    This addresses issues that you may have to review if a future requirement exists for porting the proposed architecture
+    to other or additional platforms.
+</p><br />
+<br />
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <th id="" scope="col" abbr="">
+                Decision Points
+            </th>
+            <th id="" scope="col" abbr="">
+                Impact
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <br />
+                Will there be a requirement for the customer to expand their current user environment?
+            </td>
+            <td>
+                This can occur as a result of growing the current intranet environment or adding Internet access capability
+                to the current user environment. For the first situation this can be sensibly projected, and a network
+                structure can be architected to allow for this future growth. The second situation is far less predictable
+                and consequently far more difficult to plan for. Therefore, the points to consider are:<br />
+                -&nbsp;Is it viable to have just one Web server for all potential Internet connections or do you route your
+                HTTP requests to different Internet gateways in order to distribute the user load?<br />
+                -&nbsp;If there is a requirement to download applets to each Internet browser that sends in an HTTP
+                request, is it therefore necessary to distribute the Web server load across a number of different Web
+                servers?<br />
+                In either situation you should choose an architecture that allows you to scale your front-end to support
+                additional Internet connections. It is essential to try to grow your front-end server support for
+                additional users with zero or minimal disruption to the Web and Application server environment.
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<h4>
+    2.7&nbsp; Application and data logic
+</h4>
+<p>
+    Application development will relate mainly to the programming requirements for the client, however there will be
+    programming effort required at the server if client applications need to be downloaded prior to use.
+</p><br />
+<br />
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <th id="" scope="col" abbr="">
+                Decision Points
+            </th>
+            <th id="" scope="col" abbr="">
+                Impact
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Has it been determined whether to use traditional programming development, object technology, or integrated
+                packages?
+            </td>
+            <td>
+                Existing packages, if they meet the requirements, are usually faster to implement. However, object
+                technologies such as C++, Java, or CORBA can offer benefits of speed and maintenance through their built-in
+                reuse capability. Although you may only be looking at client application software at this stage, you should
+                also look forward towards future server application architectures. If there is a requirement for the
+                customer to make future server applications more object oriented, then it may be of advantage to consider
+                these&nbsp; technologies for your proposed client applications.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Is normal HTML presentation adequate, or should the user interface be enhanced through the use of Java
+                applets?&nbsp;
+            </td>
+            <td>
+                Java applets can be used to make the presentation more flexible and user friendly, especially in higher
+                volume transaction-based applications. However, they take time to download and may be a concern over
+                dial-up connections.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                If the client application uses applets in the browser, will there be any security considerations?&nbsp;
+            </td>
+            <td>
+                A Java applet already has inbuilt security that only allows it to communicate with the Web server from
+                which it was downloaded. If the browser needs to communicate with other Web servers on the network, then
+                you should consider either the use of signed applets, or indirect connection through the applets’ own
+                server, as a means of doing this.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Is there value in placing some of the business application logic on the browser?
+            </td>
+            <td>
+                You should determine how best to distribute presentation logic. You can, for example, use straight HTML on
+                the browser, which implies that all validation of user input is carried out on the server. This may be all
+                right for some applications where little input is needed from the user. However, if interaction is needed
+                from the user as in a transaction-based application, can the server application support the amount of
+                client-to-server interactions that this might produce? The use of Java and scripting languages should be
+                considered as a means of placing more application logic in the browser, thereby reducing client/server
+                flows.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Will client-side scripting add any benefit to the function in the browser?
+            </td>
+            <td>
+                JavaScript and JScript are languages, which are imbedded within the HTML, and when interpreted by the
+                browser, can provide additional function to enhance the user interface and perform some validation of the
+                user input. Because of incompatibilities between some browsers, you should ensure that you adequately test
+                them in the environment in which you plan to use them.
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<h4>
+    2.8 Conclusion
+</h4>
+<p>
+    What we have done is to look at each of the building blocks in their most basic form and to construct a set of decision
+    points about which we can build the design criteria upon which to architect our solution. For each building block we
+    would normally expect to see a list of alternative options from which we can choose to build our solution. In many
+    cases, the customer will have imposed constraints or requirements upon us, which will narrow down these options. At
+    this point in the design approach as discussed, we should have completed three important tasks:
+</p>
+<ol>
+    <li>
+        Collected business requirements and other requirements from the customer with agreement from the customer that
+        these requirements are correct, complete, and may be used to build the solution.<br />
+    </li>
+    <li>
+        Developed a business scenario that represents the business processes, which your design will support.<br />
+    </li>
+    <li>
+        Started the process of developing architectural alternatives to the customer’s business situation within the
+        requirement definition provided by the customer.
+    </li>
+</ol>
+<p>
+    In the end as required review the design and revise it as necessary to satisfy availability, security, performance and
+    system management requirements.
+</p>
+<h3>
+    3&nbsp;References
+</h3>
+<p>
+    ESS Reference Architecture:
+</p>
+<p>
+    <img height="440" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/definingarchitecturestandards_eserefarch.JPG" width="594" />&nbsp;
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing Data Migration Programs</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="data_migration_programs_dev">
+<meta name="uma.presentationName" content="Developing Data Migration Programs">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_XuflcDW5EdyXOdc_6y3sLA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_XuflcDW5EdyXOdc_6y3sLA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing Data Migration Programs</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Migrated development approach from existing IBM Global Services Method work product.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/data_migration_programs_947D234F.html" guid="mweb3B959C944E542F14852568820061A9DF">Data Migration Programs</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Place the programs under change control as early as possible in the project’s life. Ensure that the specifications and
+    the implementation, including test cases, remain synchronized through strict version control in the build process. Use
+    a source code repository that supports versioning to assist with the management of the constant changes to the code
+    files. Differences between versions of a source file can be captured without maintaining multiple physical version
+    files of the same source file. A versioning tool that also supports release information is most desirable. A release
+    can be frozen when the interface programs are shipped. This allows the development team to respond to customer problems
+    by testing on a known code base.
+</p>
+<p>
+    Document the programs carefully. Place the documents under change control and make them accessible to the whole project
+    team. This can conveniently be done within the version management control system for the project. This will assist in
+    rectifying errors found in testing and provide a solid basis for the approval of the programs by the client.
+</p>
+<p>
+    Data Migration Programs may be created from source by using:
+</p>
+<ul>
+    <li>
+        Text editors
+    </li>
+    <li>
+        <div>
+            Design tools or languages such as the Interface Definition Language (IDL). The output of the tools may be
+            augmented by source written using a text editor
+        </div>
+    </li>
+    <li>
+        <div>
+            Visual programming techniques that generate source from graphic and text representations of the interface
+        </div>
+    </li>
+    <li>
+        <div>
+            DBMS tools and utilities
+        </div>
+    </li>
+    <li>
+        <div>
+            Structured Query Language (SQL) tools
+        </div>
+    </li>
+</ul>
+<p>
+    Check the source system to determine if it has programs already installed that could be used to migrate the data from
+    the source system or if other standard programs already exist. Investigate if these programs will actually migrate the
+    data correctly. They should be treated like those that require development and should be tested in conjunction with the
+    client’s application as a whole.
+</p>
+<p>
+    Intermediary files may be required during the transfer of information from one program to another, particularly if the
+    programs reside on different platforms. The format of these files should conform to the specifications governing the
+    project’s programming standards.
+</p>
+<p>
+    Perform the migration according to plans agreed with the client.&nbsp;&nbsp;
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

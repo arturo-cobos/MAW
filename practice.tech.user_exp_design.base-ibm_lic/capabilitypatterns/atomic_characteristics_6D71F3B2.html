@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Work Product Descriptor (Artifact): Atomic Characteristics</title>
+<meta name="uma.type" content="WorkProductDescriptor">
+<meta name="uma.name" content="atomic_characteristics">
+<meta name="uma.presentationName" content="Atomic Characteristics">
+<meta name="element_type" content="WorkProductDescriptor">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_zgaIIWDnEd6qmYWeODuFdA&path=_zgaIIWDnEd6qmYWeODuFdA,_3GBfUWssEd6qrr6kReNKqg,_rqq0yGptEeSdxcAgtnf5og';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, defaultQueryStr, false, true, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>WorkProductDescriptor<div id="page-guid" value="_rqq0yGptEeSdxcAgtnf5og"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Work Product Descriptor (Artifact): Atomic Characteristics</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/workdes_lg_dgm32.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This artifact documents units of work and associated cost information. </td>
+</tr>
+<tr>
+<td>Based on Method Work Product: <a href="./../../core.tech.common.extend-ibm_lic/workproducts/atomic_characteristics_33F2634B.html" guid="mwebB46DB2BA77E3BFF9852568CE006BF20D">Atomic Characteristics</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The atomic characteristics captured in this artifact refer to the various units of work, and their associated costs,
+    that are used when describing and measuring the qualities of an IT system.&nbsp; It is important to know these
+    characteristics when building the various service level characteristic models (e.g. performance model, security model
+    etc) that are used to validate the architecture of the IT system. Some examples of atomic characteristics which may be
+    relevant for different types of service level characteristic are:
+</p>
+<ul>
+    <li>
+        CPU cost per business transaction – needed for building performance models.
+    </li>
+    <li>
+        Mean time between failure – needed for building availability models.
+    </li>
+    <li>
+        Database rows per entity – needed for building capacity models.
+    </li>
+    <li>
+        User authentications per hour – needed for building security and performance models.
+    </li>
+</ul>
+<p>
+    Atomic characteristics will naturally vary by the type of technology used so this must be known in advance if realistic
+    atomic characteristics are to be captured.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Properties</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row" id="property_Optional" abbr="Optional">Optional</th><td class="sectionTableCell" align="left" headers="property_Optional"><img width="20" height="15" alt="" title="" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row" id="property_Planned" abbr="Planned">Planned</th><td class="sectionTableCell" align="left" headers="property_Planned"><img width="20" height="15" alt="" title="" src="./../../images/indent.gif"></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The following should be taken into account when creating this artifact:&nbsp;
+</p>
+<ul>
+    <li>
+        Where a perfect workload and environment match cannot be obtained talk to product specialists and vendors to
+        understand how different environments may effect the cost information being used.
+    </li>
+    <li>
+        Cost data for various units of work can often be obtained from product developers and vendors however treat these
+        with caution as they are often highly context sensitive and may be completely different outside this context.&nbsp;
+        Ensure therefore that the costs associated with the various units of work relate both to a workload and environment
+        that are representative of the system being built.&nbsp; Consider not just the volume of usage, but also the type
+        and spread of usage.
+    </li>
+    <li>
+        The effort required to collect the information for this artifact will vary significantly with the level of modeling
+        that needs to be performed.&nbsp; If the information can be collected as a result of technology research alone,
+        this activity can be completed in a matter of days.&nbsp; However, if extensive prototyping is necessary to build
+        this information the elapsed time can extend to weeks or even months depending on the scope of the information
+        required.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+					contentPage.onload();
+					contentPage.processPage.fixDescriptorLinks();
+				</script>
+</html>

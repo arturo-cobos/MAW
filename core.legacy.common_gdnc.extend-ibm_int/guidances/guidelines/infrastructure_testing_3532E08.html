@@ -1,0 +1,544 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Infrastructure Testing</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="infrastructure_testing">
+<meta name="uma.presentationName" content="Infrastructure Testing">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb3C158F4F57FA049A852569A50074E467"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb3C158F4F57FA049A852569A50074E467"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Infrastructure Testing</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This paper reviews the basic concepts and approaches to testing an Infrastructure.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1 Scope
+</h3>
+<p>
+    To an applications developer, the concept of testing an infrastructure is not a normal process to be considered.&nbsp;
+    And yet, as developers hasten to go to market quickly with newer technology and coding techniques, the environment on
+    which these applications run are frequently suspect for delaying rollout or negatively affecting the final
+    implementation.
+</p>
+<p>
+    An infrastructure test is designed to verify that the way a system has been architect will support the applications
+    that reside on it. It is a validation of the basic operating setup of hardware, software, network and interfaces and
+    includes verification in regards to performance, capacity, load, security and business recovery functions as dictated
+    by non-functional requirements of the application systems.&nbsp;&nbsp; Typically an enterprise operates more than one
+    environment, one for development, one for final Quality Assurance, another for production. The infrastructure test may
+    be applied to all of the various environments, or to part of one environment such as a specific platform (e.g. Unix
+    servers).&nbsp; Finally, an Infrastructure test may occur at varying times during the construction of these
+    environments.
+</p>
+<h4>
+    1.1&nbsp; A Short description of the Infrastructure Testing Engagement Model
+</h4>
+<p>
+    The Infrastructure Testing Engagement Model describes testing technical or structural components: hardware, software,
+    operating systems and network connectivity.&nbsp; It also includes testing the supporting operational
+    processes.&nbsp;&nbsp; At a minimum, the following levels of testing or test focus areas are included in every
+    Infrastructure testing engagement:
+</p>
+<ul>
+    <li>
+        Basic system and system software verification<br />
+    </li>
+    <li>
+        System Tests using scenario drivers<br />
+    </li>
+    <li>
+        Acceptance Test
+    </li>
+</ul>
+<h4>
+    1.2&nbsp; A Brief Review of Terminology
+</h4>
+<p>
+    Some terms found that throughout this White Paper may be confusing.&nbsp;&nbsp; Although these definitions are not
+    official, for the purposes of this document, please consider the terms used as follows:
+</p>
+<p>
+    <strong>Infrastructure:</strong>&nbsp; Infrastructure includes all aspects of the physical and operating environment
+    within an enterprise, including network, system software, procedures.
+</p>
+<p>
+    <strong>Environment:</strong>&nbsp; An environment would be one instance of an infrastructure.&nbsp; For example, the
+    target of testing may be only the QA environment set up for the purposes of testing applications in
+    ‘close-to-production’ conditions.&nbsp; Other targets of testing may be the Production environment, a Sandbox
+    environment (used to try out new concepts or software), or a Development environment.
+</p>
+<p>
+    <strong>Platform:</strong>&nbsp; This is used, within this document, to refer to a specific portion of one environment
+    such as a ‘server farm’ or components which have similar characteristics such as the NT platform or Unix platform
+    (assuming that each component is similarly configured and operated).
+</p>
+<h3>
+    2 Content
+</h3>
+<p>
+    This White Paper will expand on the above definition by answering the following questions:
+</p>
+<p>
+    What is the scope of Infrastructure Testing?
+</p>
+<p>
+    Why Conduct Infrastructure Tests?
+</p>
+<p>
+    What makes Infrastructure Testing unique?
+</p>
+<p>
+    What unique tasks should you expect to encounter in the Infrastructure Testing Engagement Model?
+</p>
+<p>
+    What are some practical suggestions for approaching an Infrastructure Test?
+</p>
+<h3>
+    3&nbsp;What is the Scope of Infrastructure Testing
+</h3>
+<p>
+    The Scope of Infrastructure testing may extend from a structural test to include testing of critical application
+    systems that operate within that infrastructure.
+</p>
+<p>
+    The structural components that may be targeted for testing include:
+</p>
+<ul>
+    <li>
+        Facilities:&nbsp; Physical building (Security, lighting, handicap access, physical design); powers systems – power
+        distribution, UPS, grounding, remote emergency power off, standby generators; protection systems
+        (annunciation/control, damage protection systems);&nbsp; Mechanical systems (HVAC, chilling systems)<br />
+    </li>
+    <li>
+        Physical Network:&nbsp; Cabling, Connectivity, Organization<br />
+    </li>
+    <li>
+        Logical Network:&nbsp; Routing Services, LAN/WAN design<br />
+    </li>
+    <li>
+        Computing Resources:&nbsp; Distributed Servers, Rack mounts, Mainframes, Firewall/Proxy, File and Print services,
+        e-mail services, Mail gateways, Web servers, Database servers, Application servers, Mirroring systems, Load
+        dispatchers, redundant fail-over systems<br />
+    </li>
+    <li>
+        Interfaces:&nbsp; with vendors, suppliers, and business partners, excluding application-specific code.<br />
+    </li>
+    <li>
+        Operational Processes:&nbsp; Change management, Problem Management, Performance Management, Software Distribution,
+        Asset Management, Availability Management, Backup/Recovery Management, Disaster Recovery Process, Testing
+        Procedures, Version Control, Help Desk
+    </li>
+</ul>
+<p>
+    As the testing of an Infrastructure expands, it may include all levels of testing normally applied to application
+    development such as Systems Integration, and Operability testing.&nbsp; Acceptance testing is executed after
+    Environment test (see below) or following Systems Integration testing, whichever is performed last.&nbsp;
+</p>
+<p>
+    As the diagram below shows, the distinction between application and infrastructure testing becomes fuzzy.&nbsp; After
+    the Environment test is conducted on an environment, application systems are used to continue the Infrastructure
+    test.&nbsp; The ‘intent’ of the Infrastructure test, however, is different since the goal is to determine to what
+    extent a target environment prevents or diminishes an application or application systems from operating according to
+    their design goals.
+</p>
+<p>
+    <img height="333" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/infrastructure_test.GIF" width="676" />
+</p>
+<h3>
+    4&nbsp;Why Conduct Infrastructure Tests?
+</h3>
+<p>
+    The ideal goal of an infrastructure is to run as adaptive, scaleable, available and secure as possible while supporting
+    the enterprise application systems.&nbsp; These goals cannot be achieved without adequate testing.&nbsp; As an
+    infrastructure evolves, testing to ensure it supports critical applications is crucial.&nbsp; Tests may be conducted at
+    any interval but should be especially considered under circumstances involving significant IT change such as:
+</p>
+<ul>
+    <li>
+        As a result of mergers or acquisitions, when two systems or enterprises are consolidated into one large
+        environment.<br />
+    </li>
+    <li>
+        Structural replacement and upgrading to support a new application system. Testing the application, itself, is
+        treated under other engagement models.&nbsp; However, testing the non-functional requirements and ensuring they
+        match the new application design are included within this model.<br />
+    </li>
+    <li>
+        Sometimes large-scale changes to an environment make an Infrastructure test a wise choice.&nbsp;&nbsp;&nbsp;<br />
+    </li>
+    <li>
+        In other circumstances, an environment may not be performing suitably (e.g. Processing availability or stability)
+        and it is wise to go back to basics to conduct a thorough Infrastructure test.
+    </li>
+</ul>
+<p>
+    Tests may be conducted as part of ongoing Performance analysis of an environment in cooperation with Capacity Planning
+    and Performance Management.
+</p>
+<p>
+    Infrastructure testing, when performed as an integral part of critical application development, should verify the
+    underlying structure to ensure the applications will perform as specified and according to expectations (service
+    level).
+</p>
+<p>
+    Infrastructure testing supplies the knowledge upon which critical business decisions may be made – to decentralize, to
+    expand, to change development standards, to outsource, etc.
+</p>
+<p>
+    Testing the infrastructure provides value by ensuring that the environment will support the business processes and
+    thereby decrease downtime, maintain credibility, improve productivity, prevent unauthorized access to data.&nbsp; A
+    company that is not ‘open for business’ will quickly lose clients and revenue.
+</p>
+<h3>
+    5&nbsp;What Makes Infrastructure Testing Unique?
+</h3>
+<p>
+    From an application developer’s perspective, the engagement model may be different from the full life-cycle-testing
+    model in some respects.&nbsp; Here are a few key differences:
+</p>
+<h5>
+    Environment is the test target
+</h5>
+<p>
+    A major difference between Infrastructure testing and testing an application system is that the Infrastructure exists
+    (that is, what you are testing).&nbsp; In application development testing, you may specify the infrastructure you want,
+    build it, and then test the application.&nbsp; In Infrastructure testing, the environment is the target of your testing
+    and up to a point, no changes to that environment are made to facilitate the tests.&nbsp; Nonetheless, once you go past
+    Environment tests of an infrastructure, some adjustments to system software, such as turning on transaction tracking,
+    may be needed to complete the Infrastructure test.&nbsp;
+</p>
+<h5>
+    Multiple Environments Requiring Tests
+</h5>
+<p>
+    A typical organization includes multiple test environments to support the full development of an application system.
+    For example, the enterprise typically creates, at a minimum, a development environment, and a QA environment prior to
+    migrating to a production environment, which may by modified or upgraded itself.&nbsp;&nbsp; For that reason, a series
+    of test levels (system verification, system test, acceptance test plus others as needed) will be planned and executed
+    on each environment.&nbsp; The tests are conducted in the same manner on each environment with the exception that more
+    critical environments may include additional test types such as performance tests or security tests to ensure the
+    infrastructure has the required capacity, and integrity to enable the application to be safely implemented.
+</p>
+<h5>
+    Environments under Constant Change
+</h5>
+<p>
+    It is highly likely, due to today’s rapid development demands, that environments are installed and implemented in
+    logical groups of components to coincide with the application build delivery schedule.&nbsp; This represents an
+    additional challenge on the Infrastructure tester who may have to iterate through tests conducted previously on an
+    environment, as new hardware and software are added.&nbsp; Not only does this represent a potential for repeat testing
+    but also there may be crucial timing issues.&nbsp; Testing of infrastructure and application builds may occur during a
+    time period after which either application or environment may undergo additional change.
+</p>
+<h5>
+    Concept of ‘Tracks’
+</h5>
+<p>
+    A track is a work effort to deliver components of the infrastructure, typically in support of e-commerce
+    applications.&nbsp; These components can be common functions used by many applications (security, content management,
+    and directory services), or they can be facilities (such as physical systems and architecture.)&nbsp; Tracks are
+    usually planned in such a manner as to coincide with application ‘Builds’ from Development and frequently in a
+    scheduled delivery cycle such as in 90-day intervals.
+</p>
+<p>
+    The following chart illustrates, from an application developer’s perspective, some of the issues associated with the
+    interdependence of application and track release schedules.&nbsp; In this situation, tracks are being scheduled for
+    release one-per-period, perhaps quarterly, and the content of each track must be coordinated such that it satisfies the
+    need for development without holding up structural growth.
+</p><img height="386" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/concept_of_tracks.GIF" width="646" /><br />
+<br />
+<br />
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <td>
+                Application development phase
+            </td>
+            <td>
+                Development begins with only an understanding of the function to be provided by the track releases.&nbsp;
+                For example, an application developer may know that an authentication function will be provided, but he may
+                not have the actual function available at that time.&nbsp; Development begins with stubs or other
+                utilities. 
+                <p>
+                    In the illustration, Application 1 requires Track A release 1 and Track B release 1. Track components
+                    are under way and application development is beginning even though the track releases are not
+                    developed.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Application test phase&nbsp;
+            </td>
+            <td>
+                <p>
+                    Application testing begins before track development is complete.&nbsp; Note, however, that system and
+                    acceptance testing cannot be completed until the required track releases are available.&nbsp;
+                </p>
+                <p>
+                    In the illustration, part way through Period 2, Track A release 1 and Track B release 1 are available
+                    and application system tests may begin. The track releases cannot go into production until they are
+                    tested with all applications affected by those releases.
+                </p>
+                <p>
+                    Development of the later releases of the tracks can proceed in parallel, improving time to market.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Application Release
+            </td>
+            <td>
+                The application is released when acceptance testing is complete.&nbsp; Later releases of the tracks used by
+                that application might have to be tested with the application depending on business risk. 
+                <p>
+                    In the illustration, part way through Period 3, Track A release 2 and Track B release 2 will be tested
+                    with the now-implemented Application 1.0 before they are promoted into production.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<p>
+    Just as in application development process, the track release process includes points in the process for business risk
+    assessment, Quality Assurance, and determination of the levels of testing that will be performed.
+</p>
+<p>
+    There is a need for flexibility in dealing with interdependencies of application and track releases.&nbsp; The time
+    pressures of deploying e-commerce applications results in a need for very close cooperation.&nbsp; For example, there
+    may be a need to negotiate the content of releases because of the complex interdependencies to keep to agreed
+    schedules.
+</p>
+<p>
+    Building flexibility into the process will allow an overlap of application development and test with track releases.
+    Integrating testing into the release process will allow many tests to be run in parallel, improving time to market.
+    Aligning the test process with the release process will require Quality Assurance involvement from the beginning of the
+    design and will result in more realistic schedules.
+</p>
+<h3>
+    6&nbsp;What Unique Tasks Should You Expect to Encounter in the Infrastructure Testing Engagement Model?
+</h3>
+<h5>
+    Test Strategy Vs Master Test Plan
+</h5>
+<p>
+    Depending upon the complexity and scope of the Infrastructure test, there may not be a need to develop a Master Test
+    Plan.&nbsp; If conducting an Environment test on a single environment, for example, a Test Strategy will suffice.&nbsp;
+</p>
+<p>
+    A master test plan is recommended under the following conditions:&nbsp;
+</p>
+<ul>
+    <li>
+        Multiple levels of testing are to be performed, such as testing on multiple environments<br />
+    </li>
+    <li>
+        Testing has to be coordinated with various application builds, in which case the application testing will require a
+        master test plan anyway.&nbsp; In this case, one master test plan should include schedules for both Infrastructure
+        and application test levels.
+    </li>
+</ul>
+<h5>
+    A new test level – Environment Test
+</h5>
+<p>
+    As shown in the diagram in section 4.0, an Environment Test is conducted on the Infrastructure without the use of
+    business applications.&nbsp; In general, the purpose of an Environment test is to validate the system and system
+    software and perform a system test.&nbsp; From an application developer’s perspective, an ‘Environment Test’ combines
+    the testing levels of Unit test, Integration test and System Test.
+</p>
+<p>
+    <strong>Unit testing</strong> in the context of an infrastructure test means that the servers and their operating
+    systems are verified to be at the correct levels and the network connections are allowing the servers to communicate
+    properly.
+</p>
+<p>
+    <strong>Integration testing</strong> in the context of an infrastructure test means that the vendor software and
+    services installed on the servers are verified to be at the correct levels and that their installation verification
+    procedures and simple utilities indicate that they are properly installed.
+</p>
+<p>
+    <strong>System testing</strong> in the context of an infrastructure test means that the environment will be tested with
+    an application driver that will exercise the functions of the system together as defined in the infrastructure use case
+    scenarios.&nbsp;
+</p>
+<h5>
+    Flexible Testing Levels based on risk, and client needs.&nbsp;
+</h5>
+<p>
+    One testing approach, following an Environment test, would be to conduct an acceptance test and the engagement would
+    end.&nbsp; However, since risk mitigation is limited without introducing application systems, further test levels are
+    recommended.
+</p>
+<p>
+    Unless Infrastructure Testing is integrated with other test engagements (e.g. Full Life Cycle test, e-business
+    testing), Infrastructure test plans should consider a Systems Integration test, and Operability test to ensure the
+    infrastructure adequately supports the critical systems being developed for the enterprise.
+</p>
+<h5>
+    Specialized Testing
+</h5>
+<p>
+    As shown in the diagram in section 4, ‘specialized’ testing such as Performance testing is planned separately but for
+    the purposes of this EM, is appended and performed with a Systems Integration test.&nbsp; Each specialized test should
+    have its own execution plan.&nbsp;&nbsp; The results of all such tests are reported in the Systems Integration Test
+    Report.
+</p>
+<p>
+    Examples of specialized testing are:
+</p>
+<ul>
+    <li>
+        Security testing<br />
+    </li>
+    <li>
+        Performance testing, or variations such as Stress, Volume, or Scalability<br />
+    </li>
+    <li>
+        Business Continuity Testing (Backup & Recovery,&nbsp; Restore and Restart, Disaster Recovery)<br />
+    </li>
+    <li>
+        Operability test<br />
+    </li>
+    <li>
+        Availability or Durability test
+    </li>
+</ul>
+<h3>
+    7&nbsp;Some Practical Suggestions for Approaching an Infrastructure Test
+</h3>
+<h5>
+    Location and role of specialized testing
+</h5>
+<p>
+    Security, Performance, Stress, Business Recovery, Scalability, Availability are all general names for testing which
+    require expertise and specialized planning.&nbsp; Each may be conducted over the life of the Infrastructure test or may
+    be isolated to very specific time periods or may be directed at specific parts of the environment.&nbsp; Expertise
+    should be obtained prior to beginning any engagement in which such testing is a client requirement.
+</p>
+<h5>
+    Baseline material to be collected
+</h5>
+<p>
+    Prior to beginning any part of an Infrastructure test, existing material should be collected.&nbsp; There may a wealth
+    of information already available in the forms of Architecture documents, or even baseline Performance data.&nbsp; Each
+    of these work products may be valuable or may be useless, depending upon whether they are current or represent the
+    Infrastructure in its current configuration.&nbsp; The validity of these documents should be validated.&nbsp; This is a
+    useful exercise to conduct even if the material does not prove to be completely valid as it provides a useful
+    historical perspective.&nbsp; Nonetheless, as validation can be a lengthy process, a realistic assessment is usually
+    necessary to evaluate whether to collect new baseline material or rely on existing documents.
+</p>
+<h5>
+    Tools&nbsp;
+</h5>
+<p>
+    Obviously a large number of tools exist to assist with capturing and reporting results of an Infrastructure test.&nbsp;
+    In most cases, the use of tools will be restricted due to budget considerations, client preferences or simply the time
+    to obtain and install the software.&nbsp; Keep in mind when acquiring new tools or resurrecting old ones, to allow for
+    time to research and obtain the right version of the product.&nbsp;&nbsp; Research the proper installation technique,
+    train the users of the tool so that they can properly interpret results and test the tool so that it operates according
+    to the supplier’ specifications and the user’s expectations.&nbsp; Finally, be cognizant that tools themselves may
+    impact the results of the test.
+</p>
+<p>
+    Although tool selection may have to be delayed until the complete details of the test plan are known it is recommended,
+    for all the above reasons, the tools be implemented and set up on the environment they will be used to test, as early
+    in the test cycle as possible.
+</p>
+<p>
+    In addition to using features and services supplied by the operating system or by System software such as CICS or DB2,
+    some of the more common tools used in Infrastructure testing include the following.
+</p>
+<ul>
+    <li>
+        Load runner, Win Runner, and Test Director marketed by Mercury Interactive, with which IBM Procurement has a
+        negotiated contract.&nbsp; These products are used for Load, Stress, Performance and Availability testing<br />
+    </li>
+    <li>
+        Silk Performer marketed by Seque, with which IBM Procurement has a negotiated contract.<br />
+    </li>
+    <li>
+        Rational (SQA) Robot, PerformanceStudio, and SiteLoad by Rational Software, with which IBM Procurement has a
+        negotiated contract.<br />
+    </li>
+    <li>
+        SET, and TPNS provided by IBM<br />
+    </li>
+    <li>
+        Optimal Application Expert (now called EcoScope) marketed by Compuware<br />
+    </li>
+    <li>
+        Network and Systems tools from Candle, W&G
+    </li>
+</ul>
+<h5>
+    Risk Assessment
+</h5>
+<p>
+    Infrastructure testing may be directed at a small portion of a critical environment or be focussed on several
+    environments in a broad scale.&nbsp; Testing the Infrastructure can also be repetitive as changes are made to improve
+    tuning, capacity or performance.&nbsp;&nbsp;&nbsp; Regardless of the scale of the test, there will be significant
+    trade-offs.&nbsp; Be aware of the Risks, document them, and develop mitigation strategies.&nbsp; Present them to the
+    client sponsor so that enlightened decisions may be made.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

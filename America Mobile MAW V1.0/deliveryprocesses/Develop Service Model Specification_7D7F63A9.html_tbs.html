@@ -1,0 +1,779 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Activity: Develop Service Model Specification</title>
+<meta name="uma.type" content="Activity">
+<meta name="uma.name" content="Develop Service Model Specification">
+<meta name="uma.presentationName" content="Develop Service Model Specification">
+<meta name="element_type" content="workflow_detail">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_H7vN8VloEeSXn5H3SMR4qw&path=_H7vN8VloEeSXn5H3SMR4qw,_IDliYFloEeSXn5H3SMR4qw,_IEPCqFloEeSXn5H3SMR4qw,_IEPCqlloEeSXn5H3SMR4qw,_IEVJS1loEeSXn5H3SMR4qw';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_IEVJS1loEeSXn5H3SMR4qw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Activity: Develop Service Model Specification</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/activity.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Perform SOMA Service Specification (SS) to define the dependencies, composition, service policies and rules, service operations, service context, messages, non-functional requirements, context aware attributes and decisions (including management of state within a service).</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../America Mobile MAW V1.0/deliveryprocesses/Develop Service Model Specification_7D7F63A9.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WBS" href="./../../America Mobile MAW V1.0/deliveryprocesses/Develop Service Model Specification_7D7F63A9.html_wbs.html"><span style="white-space:nowrap;">Work Breakdown Structure</span></a></td><td width="1"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Team Allocation</span></td><td width="21"><img src="./../../images/tab_middle-a_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WPBS" href="./../../America Mobile MAW V1.0/deliveryprocesses/Develop Service Model Specification_7D7F63A9.html_wpbs.html"><span style="white-space:nowrap;">Work Product Usage</span></a></td><td width="21"><img src="./../../images/tab_end-i.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="4"><img src="./../../images/shim.gif" alt="" title="" height="2"></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="3"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Team Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Team Breakdown", summary: "Team Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["model_info", "Model Info"],
+["teams", "Team"],
+["type", "Type"],
+["is_planned", "Planned"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_optional", "Optional"]],
+rows: [
+
+{id: "9f339830", parentId: "", relPath: ",_IEao0lloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "application_architect", title: "Application Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/application_architect_E247FAA1.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6afde41c", parentId: "9f339830", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "component_model", title: "Component Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/component_model_F48F831D.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ea9a4638", parentId: "9f339830", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "leverage_existing_assets", title: "Leverage Existing Assets (Service Specification)", url: "./../../America Mobile MAW V1.0/deliveryprocesses/leverage_existing_assets_E911067B.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "63ae0792", parentId: "", relPath: ",_IEVwZlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "application_developer", title: "Application Developer", url: "./../../America Mobile MAW V1.0/deliveryprocesses/application_developer_9B95EBAA.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "4bd2e38f", parentId: "63ae0792", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assign_service_to_service_components", title: "Assign Services to Service Components", url: "./../../America Mobile MAW V1.0/deliveryprocesses/assign_service_to_service_components_FB588EF7.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "cdf77f07", parentId: "63ae0792", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "associate_bus_rules_policies_with_svc_ops", title: "Associate Business Rules and Policies with Service Operations", url: "./../../America Mobile MAW V1.0/deliveryprocesses/associate_bus_rules_policies_with_svc_ops_2D9656D4.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "211be74f", parentId: "63ae0792", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assoicate_use_cases_with_service_operations", title: "Associate Use Cases with Service Operations", url: "./../../America Mobile MAW V1.0/deliveryprocesses/assoicate_use_cases_with_service_operations_A4925DFC.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7cf09957", parentId: "63ae0792", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "create_service_context_diagram", title: "Create Service Context Diagram", url: "./../../America Mobile MAW V1.0/deliveryprocesses/create_service_context_diagram_54A95127.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "20046b27", parentId: "63ae0792", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_service_operations", title: "Define Service Operations", url: "./../../America Mobile MAW V1.0/deliveryprocesses/define_service_operations_A25EF784.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "9b55a3a7", parentId: "63ae0792", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "document_state_management_decisions", title: "Document State Management Decisions", url: "./../../America Mobile MAW V1.0/deliveryprocesses/document_state_management_decisions_E23B2C6F.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1b915505", parentId: "63ae0792", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_input_output_error_msg_for_svc_ops", title: "Specify Input, Output and Error Messages for Service Operations", url: "./../../America Mobile MAW V1.0/deliveryprocesses/specify_input_output_error_msg_for_svc_ops_B6BA1B12.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8a491611", parentId: "", relPath: ",_IEao3FloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "business_analyst", title: "Business Analyst", url: "./../../America Mobile MAW V1.0/deliveryprocesses/business_analyst_36C6ACD8.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6e2e0a93", parentId: "8a491611", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "associate_bus_rules_policies_with_svc_ops", title: "Associate Business Rules and Policies with Service Operations", url: "./../../America Mobile MAW V1.0/deliveryprocesses/associate_bus_rules_policies_with_svc_ops_2D9656D4.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a04d6e5b", parentId: "8a491611", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "model_service_composition_and_flow", title: "Model Service Composition and Flows", url: "./../../America Mobile MAW V1.0/deliveryprocesses/model_service_composition_and_flow_D44594A4.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d261023", parentId: "8a491611", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_context_aware_service_specification", title: "Specify Context-Aware Service Specification", url: "./../../America Mobile MAW V1.0/deliveryprocesses/specify_context_aware_service_specification_A6CD0E8E.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "70a185c1", parentId: "", relPath: ",_pcI9YGnNEeSdxcAgtnf5og", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Integration Lead", title: "Development Lead", url: "./../../America Mobile MAW V1.0/deliveryprocesses/Integration Lead_DCB3D13.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6db901d7", parentId: "", relPath: ",_IEao0VloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "information_architect", title: "Information Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/information_architect_F3AEE68B.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d9126c12", parentId: "6db901d7", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "data_model", title: "Data Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/data_model_B840C8AA.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "96ff3c64", parentId: "6db901d7", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "document_state_management_decisions", title: "Document State Management Decisions", url: "./../../America Mobile MAW V1.0/deliveryprocesses/document_state_management_decisions_E23B2C6F.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1144b63e", parentId: "6db901d7", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "leverage_existing_assets", title: "Leverage Existing Assets (Service Specification)", url: "./../../America Mobile MAW V1.0/deliveryprocesses/leverage_existing_assets_E911067B.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "5e691c2c", parentId: "6db901d7", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "map_svc_op_params_to_canonical_msg_model", title: "Map Service Operation Parameters to Canonical Message Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/map_svc_op_params_to_canonical_msg_model_DDCD1565.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e5ac41de", parentId: "6db901d7", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_context_aware_service_specification", title: "Specify Context-Aware Service Specification", url: "./../../America Mobile MAW V1.0/deliveryprocesses/specify_context_aware_service_specification_A6CD0E8E.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "63275bd8", parentId: "6db901d7", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_input_output_error_msg_for_svc_ops", title: "Specify Input, Output and Error Messages for Service Operations", url: "./../../America Mobile MAW V1.0/deliveryprocesses/specify_input_output_error_msg_for_svc_ops_B6BA1B12.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d8177d46", parentId: "", relPath: ",_IEVwVlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "infrastructure_architect", title: "Infrastructure Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/infrastructure_architect_894E632E.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d9ceb004", parentId: "d8177d46", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_nfr_for_svc_and_svc_ops", title: "Specify Non-functional Requirements for Service and Service Operations", url: "./../../America Mobile MAW V1.0/deliveryprocesses/specify_nfr_for_svc_and_svc_ops_9AB54F18.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "5b2e0260", parentId: "", relPath: ",_IEbP4VloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "integration_architect", title: "Integration Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/integration_architect_5F66F07.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "52ee9634", parentId: "5b2e0260", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "leverage_existing_assets", title: "Leverage Existing Assets (Service Specification)", url: "./../../America Mobile MAW V1.0/deliveryprocesses/leverage_existing_assets_E911067B.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c9f8f1c7", parentId: "", relPath: ",_IEVwV1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "security_privacy_consultant", title: "Security and Privacy Consultant", url: "./../../America Mobile MAW V1.0/deliveryprocesses/security_privacy_consultant_F22838F3.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ca5df055", parentId: "c9f8f1c7", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_nfr_for_svc_and_svc_ops", title: "Specify Non-functional Requirements for Service and Service Operations", url: "./../../America Mobile MAW V1.0/deliveryprocesses/specify_nfr_for_svc_and_svc_ops_9AB54F18.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "379936ab", parentId: "", relPath: ",_IEYzqFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "soa_architect", title: "SOA Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/soa_architect_6B5EF0AD.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "77c5291b", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "business_function_system_matrix", title: "Business Function / System Matrix", url: "./../../America Mobile MAW V1.0/deliveryprocesses/business_function_system_matrix_FB3B285.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "314aa0cd", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "goal_service_model", title: "Goal Service Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/goal_service_model_75FCD0BD.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "882b0f21", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "service_model", title: "Service Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/service_model_6495E4D3.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e6faef11", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "variations_model", title: "Variations Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/variations_model_A00402B4.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "20765439", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "candidate_asset_list", title: "Candidate Asset List", url: "./../../America Mobile MAW V1.0/deliveryprocesses/candidate_asset_list_4B21D066.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "b2c02426", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "service_specification", title: "Service Specification", url: "./../../America Mobile MAW V1.0/deliveryprocesses/service_specification_98D776C3.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1f19f25c", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assign_service_to_service_components", title: "Assign Services to Service Components", url: "./../../America Mobile MAW V1.0/deliveryprocesses/assign_service_to_service_components_FB588EF7.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "5c483b60", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "leverage_existing_assets", title: "Leverage Existing Assets (Service Specification)", url: "./../../America Mobile MAW V1.0/deliveryprocesses/leverage_existing_assets_E911067B.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ffa21fe4", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "associate_bus_rules_policies_with_svc_ops", title: "Associate Business Rules and Policies with Service Operations", url: "./../../America Mobile MAW V1.0/deliveryprocesses/associate_bus_rules_policies_with_svc_ops_2D9656D4.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "88e093de", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assoicate_use_cases_with_service_operations", title: "Associate Use Cases with Service Operations", url: "./../../America Mobile MAW V1.0/deliveryprocesses/assoicate_use_cases_with_service_operations_A4925DFC.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "9001638", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "create_service_context_diagram", title: "Create Service Context Diagram", url: "./../../America Mobile MAW V1.0/deliveryprocesses/create_service_context_diagram_54A95127.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "85f80ff4", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_service_interface_messaging_style", title: "Define Service Interface Messaging Style", url: "./../../America Mobile MAW V1.0/deliveryprocesses/define_service_interface_messaging_style_3FDDDF50.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "47ee894", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_service_message_exchange_pattern", title: "Define Service Message Exchange Pattern", url: "./../../America Mobile MAW V1.0/deliveryprocesses/define_service_message_exchange_pattern_1272276C.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7344c122", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_service_operations", title: "Define Service Operations", url: "./../../America Mobile MAW V1.0/deliveryprocesses/define_service_operations_A25EF784.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "fca220f6", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "document_state_management_decisions", title: "Document State Management Decisions", url: "./../../America Mobile MAW V1.0/deliveryprocesses/document_state_management_decisions_E23B2C6F.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8b0ec682", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "identify_events_with_service", title: "Identify Events Associated With Service", url: "./../../America Mobile MAW V1.0/deliveryprocesses/identify_events_with_service_41648CE8.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ee83ab8", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "map_svc_op_params_to_canonical_msg_model", title: "Map Service Operation Parameters to Canonical Message Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/map_svc_op_params_to_canonical_msg_model_DDCD1565.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2eaf3918", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "model_service_composition_and_flow", title: "Model Service Composition and Flows", url: "./../../America Mobile MAW V1.0/deliveryprocesses/model_service_composition_and_flow_D44594A4.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a259ae02", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "model_service_dependencies", title: "Model Service Dependencies", url: "./../../America Mobile MAW V1.0/deliveryprocesses/model_service_dependencies_A6D9DCC0.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "12807ae8", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_context_aware_service_specification", title: "Specify Context-Aware Service Specification", url: "./../../America Mobile MAW V1.0/deliveryprocesses/specify_context_aware_service_specification_A6CD0E8E.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "85917d12", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_input_output_error_msg_for_svc_ops", title: "Specify Input, Output and Error Messages for Service Operations", url: "./../../America Mobile MAW V1.0/deliveryprocesses/specify_input_output_error_msg_for_svc_ops_B6BA1B12.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a84c770", parentId: "379936ab", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_nfr_for_svc_and_svc_ops", title: "Specify Non-functional Requirements for Service and Service Operations", url: "./../../America Mobile MAW V1.0/deliveryprocesses/specify_nfr_for_svc_and_svc_ops_9AB54F18.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "822a2596", parentId: "", relPath: ",_IEVwX1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "soa_developer", title: "SOA Developer", url: "./../../America Mobile MAW V1.0/deliveryprocesses/soa_developer_7B4BFD31.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "839ae2ca", parentId: "822a2596", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_service_message_exchange_pattern", title: "Define Service Message Exchange Pattern", url: "./../../America Mobile MAW V1.0/deliveryprocesses/define_service_message_exchange_pattern_1272276C.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "17454b9", parentId: "", relPath: ",_IEbP4FloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "software_architect", title: "Software Architect", url: "./../../America Mobile MAW V1.0/deliveryprocesses/software_architect_FB588EF7.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a8e67e7d", parentId: "17454b9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "leverage_existing_assets", title: "Leverage Existing Assets (Service Specification)", url: "./../../America Mobile MAW V1.0/deliveryprocesses/leverage_existing_assets_E911067B.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "28a1cc73", parentId: "", relPath: ",_IEVwY1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "software_designer", title: "Software Designer", url: "./../../America Mobile MAW V1.0/deliveryprocesses/software_designer_3FDDDF50.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "4281bf49", parentId: "28a1cc73", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "service_dependencies", title: "Service Dependencies", url: "./../../America Mobile MAW V1.0/deliveryprocesses/service_dependencies_6B6BBEDF.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "b8eccb97", parentId: "28a1cc73", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "service_specification", title: "Service Specification", url: "./../../America Mobile MAW V1.0/deliveryprocesses/service_specification_C4BC810F.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "948db875", parentId: "28a1cc73", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "associate_bus_rules_policies_with_svc_ops", title: "Associate Business Rules and Policies with Service Operations", url: "./../../America Mobile MAW V1.0/deliveryprocesses/associate_bus_rules_policies_with_svc_ops_2D9656D4.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "eb0dbab7", parentId: "28a1cc73", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assoicate_use_cases_with_service_operations", title: "Associate Use Cases with Service Operations", url: "./../../America Mobile MAW V1.0/deliveryprocesses/assoicate_use_cases_with_service_operations_A4925DFC.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "463952a6", parentId: "28a1cc73", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "create_service_context_diagram", title: "Create Service Context Diagram", url: "./../../America Mobile MAW V1.0/deliveryprocesses/create_service_context_diagram_54A95127.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "eae5ce30", parentId: "28a1cc73", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_service_interface_messaging_style", title: "Define Service Interface Messaging Style", url: "./../../America Mobile MAW V1.0/deliveryprocesses/define_service_interface_messaging_style_3FDDDF50.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "44080056", parentId: "28a1cc73", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_service_message_exchange_pattern", title: "Define Service Message Exchange Pattern", url: "./../../America Mobile MAW V1.0/deliveryprocesses/define_service_message_exchange_pattern_1272276C.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e7705f32", parentId: "28a1cc73", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_service_operations", title: "Define Service Operations", url: "./../../America Mobile MAW V1.0/deliveryprocesses/define_service_operations_A25EF784.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "539fe6e2", parentId: "28a1cc73", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "document_state_management_decisions", title: "Document State Management Decisions", url: "./../../America Mobile MAW V1.0/deliveryprocesses/document_state_management_decisions_E23B2C6F.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "89088076", parentId: "28a1cc73", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "identify_events_with_service", title: "Identify Events Associated With Service", url: "./../../America Mobile MAW V1.0/deliveryprocesses/identify_events_with_service_41648CE8.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "425a79a", parentId: "28a1cc73", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "map_svc_op_params_to_canonical_msg_model", title: "Map Service Operation Parameters to Canonical Message Model", url: "./../../America Mobile MAW V1.0/deliveryprocesses/map_svc_op_params_to_canonical_msg_model_DDCD1565.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a50f97f0", parentId: "28a1cc73", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "model_service_composition_and_flow", title: "Model Service Composition and Flows", url: "./../../America Mobile MAW V1.0/deliveryprocesses/model_service_composition_and_flow_D44594A4.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1f21006e", parentId: "28a1cc73", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_context_aware_service_specification", title: "Specify Context-Aware Service Specification", url: "./../../America Mobile MAW V1.0/deliveryprocesses/specify_context_aware_service_specification_A6CD0E8E.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a1378464", parentId: "28a1cc73", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_input_output_error_msg_for_svc_ops", title: "Specify Input, Output and Error Messages for Service Operations", url: "./../../America Mobile MAW V1.0/deliveryprocesses/specify_input_output_error_msg_for_svc_ops_B6BA1B12.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "f87ee3f2", parentId: "28a1cc73", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_nfr_for_svc_and_svc_ops", title: "Specify Non-functional Requirements for Service and Service Operations", url: "./../../America Mobile MAW V1.0/deliveryprocesses/specify_nfr_for_svc_and_svc_ops_9AB54F18.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e96cd6a", parentId: "", relPath: ",_IgEIcGnOEeSdxcAgtnf5og", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "", prefix: "", name: "Software Designer", title: "Software Designer", url: "./../../America Mobile MAW V1.0/deliveryprocesses/Software Designer_57CA6E9.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "f1a4da4e", parentId: "", relPath: ",_cpFsMGnOEeSdxcAgtnf5og", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "Software Designer", title: "Software Designer", url: "./../../America Mobile MAW V1.0/deliveryprocesses/Software Designer_E17EADF7.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1103ba74", parentId: "f1a4da4e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "service_dependencies", title: "Service Dependencies", url: "./../../America Mobile MAW V1.0/deliveryprocesses/service_dependencies_6B6BBEDF.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "314aa0de", parentId: "f1a4da4e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "model_service_dependencies", title: "Model Service Dependencies", url: "./../../America Mobile MAW V1.0/deliveryprocesses/model_service_dependencies_A6D9DCC0.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

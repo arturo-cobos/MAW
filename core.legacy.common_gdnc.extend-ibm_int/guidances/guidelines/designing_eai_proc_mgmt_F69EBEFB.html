@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Designing Enterprise Application Integration Process Management</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="designing_eai_proc_mgmt">
+<meta name="uma.presentationName" content="Designing Enterprise Application Integration Process Management">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb909058580A1A604685256BF4006D9F6D"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb909058580A1A604685256BF4006D9F6D"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Designing Enterprise Application Integration Process Management</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    This technique provides an approach to design the process management capabilities within a defined EAI subsystem. This
+    design, as depicted in Figure 1, below, is performed after the physical architecture, and system design for the EAI
+    subsystem is established, meaning:
+</p>
+<ul>
+    <li>
+        Functional partitioning to EAI products and components is complete
+    </li>
+    <li>
+        EAI subsystem standards are established, including inter-component communications and interfaces to customer
+        infrastructure services
+    </li>
+    <li>
+        Allocation of performance, capacity and availability budgets to EAI products and components is complete.
+    </li>
+</ul>
+<p>
+    Since the facilities of EAI packaged products vary widely, it is not feasible to completely address product extensions
+    or custom component needs for a process manager within the scope of a general design technique. As a result, the
+    primary focus for this technique is to establish the specification details for process management that are independent
+    of process manager implementation. In addition, the technique addresses design tooling considerations for process
+    management.
+</p>
+<p>
+    There is a preferred order to the design analysis for process management due to the control and system state
+    interactions:
+</p>
+<ul>
+    <li>
+        Complete EAI process decomposition
+    </li>
+    <li>
+        Select the approaches to business transaction handling
+    </li>
+    <li>
+        Extend the processes to include recovery handling
+    </li>
+    <li>
+        Extend the processes to include solution recovery handling
+    </li>
+    <li>
+        Identify & specify manual procedures.
+    </li>
+</ul>
+<p>
+    Note: EAI Attributes Blueprint is a requirements deliverable for EAI engagements.
+</p>
+<p>
+    <b>Figure 1 - EAI Process Management Design is one of 7 core EAI techniques</b><br />
+</p><br />
+<br />
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td width="95%">
+                <a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/processmanagementdesign.jpg" target="_blank"><img                 src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/processmanagementdesign.jpg" width="450" border="1" /></a>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<p>
+    <b>Definitions</b><br />
+    <br />
+    An EAI subsystem is responsible for providing the necessary integration conduits, including proper business semantics,
+    and business process linkage, to enable the assembly of a defined business system, composed of
+</p>
+<ul>
+    <li>
+        Application packages
+    </li>
+    <li>
+        Legacy custom applications
+    </li>
+    <li>
+        Application components
+    </li>
+    <li>
+        Existing client infrastructure services
+    </li>
+    <li>
+        External business partner systems
+    </li>
+    <li>
+        Externalized business unit systems of the same enterprise
+    </li>
+    <li>
+        Includes standard content and representation of solution business entities
+    </li>
+</ul>
+<p>
+    At the highest level (prior to package introduction), an EAI subsystem is composed of just a few components:
+</p>
+<ul>
+    <li>
+        Process Management
+    </li>
+    <li>
+        Brokering
+    </li>
+    <li>
+        Adapters
+    </li>
+    <li>
+        Common Services
+    </li>
+    <li>
+        Custom Components
+    </li>
+</ul>
+<p>
+    In general, process management services are implemented in both the process management and adapter components. As a
+    result, adapter component architects and designers, as well as process management component architects and designers
+    should read this technique.
+</p>
+<p>
+    It is important during the design process to cleanly partition the Business Process Modeling / Management (BPM) and EAI
+    process management design issues. This technique addresses only EAI process management. It assumes that BPM design for
+    the system is complete and consistent. EAI process management is ONLY concerned with the closure of process activity
+    between the end points that provide the core of the system’s business functionality.
+</p>
+<p>
+    <b>Example EAI Problem</b>
+</p>
+<p>
+    The example EAI problem referenced throughout the rest of this document can be found in Appendix A: EAI Example Problem
+    Background.
+</p>
+<p>
+    <b>Document Structure</b>
+</p>
+<p>
+    The remainder of this document is organized around the core process management design areas to enable process
+    management services. Note that connection is a base facility that applies to all EAI subsystem components, and is
+    normally covered as a part of the EAI subsystem design.
+</p>
+<p>
+    <b>Context</b>
+</p>
+<p>
+    This document applies to all EAI subsystem application contexts, whether confined within a client enterprise, or
+    extended to include business partner enterprises. In addition, it applies whether the ultimate integration required is
+    data oriented in nature or includes business process logic.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

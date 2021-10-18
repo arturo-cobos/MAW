@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing Customized Software Image</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="customized_software_image_dev">
+<meta name="uma.presentationName" content="Developing Customized Software Image">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_9iLA8CuQEdyMqZ4XfzRBaQ"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_9iLA8CuQEdyMqZ4XfzRBaQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing Customized Software Image</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Migrated development approach from existing IBM Global Services Method work product.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/customized_software_image_7786568B.html" guid="mweb6349A9D512CC805E85256C6A00733A5C">Customized Software Image</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The creation of a customized software image may be the responsibility of the client, or created by IBM for the
+    client.&nbsp; In either case a Customized Software Image Configuration Checklist which specifies what should be
+    contained on the image, and what the configuration of the hardware is presumed to be, must have been created.&nbsp;
+    This list documents some basic image information as well as what is considered important by the client at the time of
+    image creation.&nbsp; This information may become important if changes to the image or equipment being deployed become
+    necessary during the deployment, and may determine if a change request is warranted. This information may have been
+    documented at various places in the project, but it is important that the PM determine that it has been documented
+    prior to deploying the image.
+</p>
+<p>
+    <strong>A Client Created Image</strong>
+</p>
+<p>
+    If the client is developing the image and will hand it over to IBM for deployment, the project team should validate the
+    image against the Configuration Checklist, and against testing criteria established to mirror the real world
+    deployment.&nbsp; Usually this involves creating a test lab that closely resembles the configuration center, or the
+    client site, and loading the image upon representative models of the equipment being deployed.&nbsp; Detailed testing
+    criteria must be developed, scripted, and performed before any image should be deployed to the field.&nbsp; The client
+    should sign off on the image and its validity against the configuration checklist.
+</p>
+<p>
+    <strong>An IBM Project Team Created Image</strong>
+</p>
+<p>
+    If the IBM Project Team will be responsible for creation of the image, the Configuration Checklist should be filled out
+    and signed off by the client prior to image creation.&nbsp; This list is then used to gather all applicable software
+    (often supplied by the client).
+</p>
+<p>
+    Once the software has been gathered, a representative piece of equipment is employed as the base machine and all
+    software is loaded upon it.&nbsp; Client configurations, as specified upon the configuration checklist, are
+    performed.&nbsp; These configurations can include, but are not limited to:
+</p>
+<ul>
+    <li>
+        What user rights/privileges should be included on the image.<br />
+    </li>
+    <li>
+        Communications protocols.<br />
+    </li>
+    <li>
+        Encryption levels/requirements.<br />
+    </li>
+    <li>
+        Firewall and Antivirus settings.<br />
+    </li>
+    <li>
+        What icons should appear on the desktop.<br />
+    </li>
+    <li>
+        Internet/Intranet configurations.<br />
+    </li>
+    <li>
+        Any other relevant issues, settings, or policies that are to be deployed via the image.<br />
+    </li>
+</ul>
+<p>
+    Once the software is loaded and configured, it is often necessary to remove user specific information that was
+    necessary to achieve the load.&nbsp; This may be contained in a number of places, depending on the process of loading
+    the machines and the software employed.&nbsp; This information is usually limited to a user name and password, a
+    machine identification number, and a dated load session file.&nbsp; These items (and any others) are removed and/or
+    replaced with generic information.&nbsp; It is also often necessary to reset the user rights to those appropriate to
+    the end users.
+</p>
+<p>
+    An image file is then created via a software product (e.g. Symantec Ghost) and stored on portable or transferable
+    medium such as a Compact Disc or a Server.
+</p>
+<p>
+    Once the image is in the proper format and stored on the appropriate medium, it is tested against the project
+    established test criteria.&nbsp; If the image passes the test criteria and validation against the configuration
+    checklist it is presented to the client for acceptance.
+</p>
+<p>
+    Depending on the deployment method, multiple copies of the image are often created for use by the Integration Center
+    and the Deployment team.&nbsp;&nbsp; At least one copy is kept at the project office for the creation of more copies or
+    for troubleshooting of deployment issues.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

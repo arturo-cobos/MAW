@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Designing for Security</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="designing_for_security">
+<meta name="uma.presentationName" content="Designing for Security">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb73B5A7EAD324B9C58025666B004E79B4"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb73B5A7EAD324B9C58025666B004E79B4"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Designing for Security</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1&nbsp;Introduction
+</h3>
+<p>
+    Security must be an integral part of any IBM engagement. In this era of increasing attacks on corporate networks and
+    the emphasis on trust our customers expect IBM to develop sites that will meet their security and privacy needs.
+    Failure to do so can result in losses to the client and to IBM. Poor security in delivered systems can negatively
+    impact the client’s and IBM’s public image, cause embarrassment, loss of revenue/business, loss of customers, and/or
+    result in legal implications.
+</p>This Security technique paper describes, to engagement managers, the approach to be used to ensure that: 
+<ol>
+    <li>
+        IT related security risks that the client will face upon deployment of the IT solution under design are documented
+        properly.
+    </li>
+    <li>
+        The client has an opportunity to select a set of recommendations documented by IBM IT security professionals that
+        will guide the design, integration and operation of the solution.
+    </li>
+    <li>
+        The client will sign-off as to his/her understanding of the risks associated with deploying and managing the
+        solution under design, given the operating environment, the security threats, the cost of implementation, impact on
+        quality of service, the deployed countermeasures and the residual risks.
+    </li>
+</ol>Security is a critical consideration in every Information Technology consulting, design and integration engagement
+conducted by IBM Global Services personnel. Failure to adequately factor the risks and consequences of security threats,
+especially in e-business solutions, can result in losses to the client and can negatively impact IBM’s public image, cause
+embarrassment, loss of revenue/business, loss of customers, and/or result in legal implications to IBM. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>Security should be addressed during the initial phases of IT solution design whenever possible. Adding security
+components and countermeasures after a design is finalized is not a sound approach because of the expense involved, and
+because point application of security is less effective than is integrated security. 
+<p>
+    Security must be designed into the application from the beginning. Attempts to add it after a design is finalized, or
+    worse yet, implemented, are extremely expensive, ineffective or both. Decisions about the amount of acceptable risk in
+    the final implementation are business decisions that should be made by the client with appropriate inputs on the
+    potential results provided by the IBM team. Designing effective security strategies involves complex decisions based on
+    hundreds of technical and process oriented choices. A security professional should be contacted and included in every
+    engagement - there are over 600 worldwide.
+</p>
+<p>
+    The objective of this technique is to ensure that a design satisfies security requirements.&nbsp; The technique is used
+    throughout the solution design, development, and deployment stages.&nbsp; It describes the methods to be employed,
+    issues to be considered, and how to approach the design and validation of security characteristics.&nbsp; It is
+    applicable to all systems.
+</p>
+<p>
+    The graphic below provides an overview of the methodology used by IBM Global Services personnel who have been trained
+    in IT Security analysis and design.
+</p>
+<p>
+    <img height="518" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/designingforsecurityfig1.JPG" width="689" />&nbsp;
+</p>
+<p>
+    Figure 1.&nbsp; MASS Overview Diagram
+</p>
+<p>
+    As the design evolves throughout a project, it is common for different parts of it to be at different levels of
+    abstraction (and detail), and the technique should be applied flexibly to reflect this.
+</p>
+<p>
+    As part of using this technique, overall security requirements for the system will be captured in the business
+    requirements.&nbsp; It is important to identify the business drivers of the security and privacy implemented in the
+    final solution plus the security architectural principles. This provides a way of documenting the risk acceptance
+    decisions of the business managers.
+</p>
+<p>
+    The sequencing of security analysis and design in relation to other work on the solution varies according to project
+    circumstances.&nbsp; There are often tradeoffs with other objectives and requirements; for example, delivering high
+    security may compromise a need for high performance.&nbsp; The final decisions for these tradeoffs need to lie with the
+    client with appropriate support from the IBM team.
+</p>
+<p>
+    The activities and tasks performed in support of this technique require the extensive use of intellectual capital only
+    available to IBM trained security consultants and architects.&nbsp; It is important that these individuals be included
+    in the project from its inception.
+</p>
+<p>
+    This technique is based on IBM’s proprietary Method for Architecting Secure Solutions (MASS).&nbsp; MASS is firmly
+    based on ISO-15408 Common Criteria, an internationally recognized standard for security assessment and design.
+</p>
+<h3>
+    2&nbsp;Context
+</h3>
+<p>
+    &lt;REPLACE THIS TEXT with specific information that explains the conditions or situations that it applies to.&gt;
+</p>
+<h3>
+    3&nbsp;Steps
+</h3>
+<h4>
+    Project Definition - assist with security assurance elements
+</h4>
+<p>
+    The Security Architect or Consultant will identify the security portions of the engagement model and provide the
+    template for inclusion into the overall project work breakdown structure.&nbsp; They will also work with the business
+    consultants to identify any statutory requirements for security and privacy in the application.
+</p>
+<h4>
+    A. Requirements gathering –
+</h4>
+<p>
+    The security and privacy to be incorporated within the application must be based on firm business requirements of the
+    client.&nbsp; The Security Consultant will assist the Business Consultants in identifying these requirements.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <h5>
+        1.&nbsp;Business & IT context & environment, security policy, etc.
+    </h5>
+    <p>
+        There are many items that will impact the security and privacy decisions.&nbsp; Among these are the business
+        context of the application, the IT environment of the client and the proposed end-users, the security architectural
+        principles and existing corporate security policies.&nbsp; A balance between the risk, cost and quality of service
+        needs to be considered. This information will be collected and organized following the British Standard 7799, also
+        called the Code of Practice for Information Security Management.
+    </p>
+    <h5>
+        2.&nbsp;Actors, roles, business processes, use cases –
+    </h5>
+    <p>
+        Identifying the various actors, their roles, how they interact with the business process and developing use cases
+        for them is the next iteration of capturing the requirements.&nbsp; The Security Consultant will identify where
+        security implications exist with the normal flow as well as identify the need for the security specific actors,
+        processes, and use cases.
+    </p>
+    <h5>
+        3.&nbsp;Assets & their owners
+    </h5>
+    <p>
+        The business assets and their owners must be identified, and the asset valued in accordance with the impact of its
+        exposure, modification, or loss.&nbsp; This is a critically important process, as its results will be used to
+        support almost all further security decisions.
+    </p>
+    <h5>
+        4.&nbsp;Risk Management – Initial countermeasures
+    </h5>
+    <p>
+        An initial concept of the appropriate countermeasures is suggested very early on in the engagement.&nbsp; This
+        concept is normally based on apriori knowledge of the type of application being developed, the client’s industry,
+        and work performed on similar sites.&nbsp; This basic concept is then validated/modified during the requirements
+        gathering stages.&nbsp; The risk counter measures, their associated costs are validated against the related impact
+        of the desire quality of service. The basis of a Risk Assessment is depicted in Figure 2.<br />
+        &nbsp;<br />
+        <img height="387" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/designingforsecurityfig2.JPG" width="268" />
+    </p>
+    <p>
+        Figure 2. Components within a Risk Assessment
+    </p>
+</blockquote>
+<h4>
+    B. Derive Security Design Objectives from requirements
+</h4>
+<p>
+    After the initial requirements have been gathered they are distilled into the seven security design objectives defined
+    in MASS.&nbsp; These objectives can be summarized as:
+</p>
+<ul>
+    <li>
+        Deploy and manage trusted credentials and Identification and Authentication protocols<br />
+    </li>
+    <li>
+        Control access to stored information consistent with roles, responsibilities and privacy policies<br />
+    </li>
+    <li>
+        Control access to, and use of, systems and processes consistent with roles and responsibilities<br />
+    </li>
+    <li>
+        Protect information stored, or in transit, consistent with information classification, control and flow
+        policies<br />
+    </li>
+    <li>
+        Assure the correct and reliable operation of components & services<br />
+    </li>
+    <li>
+        Defend against attacks<br />
+    </li>
+    <li>
+        Defend against fraud
+    </li>
+</ul>
+<p>
+    These objectives are then validated with the client.
+</p>
+<h4>
+    C. Derive Security Domains, put onto Architecture Overview diagram
+</h4>
+<p>
+    Security Domains are used to layer protections and to separate the business assets and functions into domains
+    appropriate to the protections required.&nbsp; There are five defined domains in the basic MASS architecture model;
+    Uncontrolled, Controlled, Restricted, Secured, and External Controlled. The conduit between the Security Domains can
+    also be defined, Trusted, Untrusted and Controlled. The identification of these domains, their definitions, and the
+    controls required to transit the boundaries is another key security function.
+</p>
+<h4>
+    D. Derive Security Subsystems, map requirements to them & place in Security Domains
+</h4>
+<p>
+    MASS defines five security subsystems; Access Control, Information Flow Control, Audit, Integrity, and Trusted
+    Credentials. These subsystems are now mapped to the various security domains identified in the previous step.&nbsp;
+    Each subsystem may show up in more than one domain and each domain will contain more than one subsystem.
+</p>
+<h4>
+    E. Derive component Models of Security Subsystems (i.e. create component architecture for each subsystem)
+</h4>
+<p>
+    Each of the defined security subsystems is composed of a number of predefined components.&nbsp; These components are
+    conceptual in nature and do not map directly to security products.&nbsp; They express a business requirement for a set
+    of functionality at a specific location in the design.&nbsp; They identify capabilities to support both normal and
+    anomalous activities. These components are used to incorporate security into the overall design of the application at
+    the component architecture level to support the business requirements and processes.
+</p>
+<p>
+    This level of the design should be articulated with a diagram with enough textual description that explains the
+    following features of the design:
+</p>
+<ul>
+    <li>
+        Pre-existing environment<br />
+    </li>
+    <li>
+        Policy / Threat / Compliance assumptions and requirements<br />
+    </li>
+    <li>
+        Network Information Systems Infrastructure for all domains<br />
+    </li>
+    <li>
+        Credential System requirements by domain by network device and end user systems<br />
+    </li>
+    <li>
+        Flow control Requirements by domain and between domains<br />
+    </li>
+    <li>
+        Domain boundary control<br />
+    </li>
+    <li>
+        Domain flow control<br />
+        Security Audit and Solution Integrity functions as required by policy and compliance directive, or as security
+        countermeasures
+    </li>
+</ul>
+<h4>
+    F: Derive the use cases for the security operations of the application/network
+</h4>
+<p>
+    The required security use cases will vary based on the needs of the application.&nbsp; At a minimum they should
+    include:
+</p>
+<ul>
+    <li>
+        Registering users<br />
+    </li>
+    <li>
+        Authenticating users<br />
+    </li>
+    <li>
+        Validating access to critical processes and information assets<br />
+    </li>
+    <li>
+        Audit of critical processes
+    </li>
+</ul>
+<h4>
+    G. Derive operational Models of Security Subsystems (i.e. create operational architecture for each subsystem)
+</h4>
+<p>
+    The operational model includes the initial look at potential physical implementations of the various components.&nbsp;
+    At this point the security components will be instantiated in the various products selected.&nbsp; Tradeoffs between
+    performance, quality of service and security will be made.&nbsp; These tradeoffs must be identified, assessed against
+    the security requirements and appropriate countermeasures developed. The operational procedures are defined based on
+    product selection, policies and operational processes. Input is provided into infrastructure and networking designs.
+</p>
+<h4>
+    H. Revise Risk Assessment based on anomalous flow, derive countermeasures and design countermeasures into component
+    model / operational model
+</h4>
+<p>
+    After the initial iteration of the design the Security Consultant and Architect will validate it from an anomalous flow
+    view.&nbsp; This is the “What happens if” analysis of the design.&nbsp; How is the design affected by out of bounds
+    inputs, by individuals or processes entering or executing out of sequence, by attacks against the underlying
+    infrastructure, etc.&nbsp; Any potential vulnerabilities are assessed for their impact to the business assets, then the
+    countermeasures incorporated in the design are reviewed where appropriate.&nbsp; These are all risk-based decisions
+    that should be approved by the client with appropriate support from the IBM development team.
+</p>
+<h4>
+    I. Review & iterate
+</h4>
+<p>
+    This technique is utilized at each of the steps in the application design and development.&nbsp; At each step the
+    process gets more detailed.&nbsp;
+</p>
+<p>
+    Document all of the decisions made.&nbsp; Cross-reference them against the business requirements and the risk model
+    developed during the early phases.&nbsp; Be sure to get the client to approve all of the decisions made that impact the
+    security of the application and the business assets.
+</p>
+<h4>
+    Ongoing: Assurance Tasks
+</h4>
+<p>
+    As the design is being worked the system test plan is also being developed.&nbsp; The Security Consultant provides
+    inputs into this plan in the areas of testing the security specific portions of the design and in testing the security
+    of the other portions of the design.&nbsp; These tests provide the requisite assurance that the final implementation
+    meets the client’s stated security and privacy needs.&nbsp; It is the final tie of the completed work back to the
+    original requirements.&nbsp; The test team augmented by security specialist will perform the security testing.&nbsp;
+    IBM Ethical Hackers from the Security & Privacy Services group should perform a final penetration test of the
+    pre-production system. The security architecture is augmented to the Enterprise Architecture to maintain its vitality
+    and integrated into infrastructure, networking and application changes.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

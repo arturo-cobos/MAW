@@ -1,0 +1,2918 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Package Extension Specifications</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="package_extension_spec">
+<meta name="uma.presentationName" content="Package Extension Specifications">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_xrzLsEQBEdyKRcVRCznYRg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Package Extension Specifications</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/package_extension_specs_B2A0F833.html" guid="mwebAF10FF5AFDC8E6348525688500517223">Package Extension Specifications</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><div>
+    <table border="1">
+        <tbody>
+            <tr>
+                <td valign="top" width="463">
+                    <br />
+                    <u>Enhancement Specification</u> (Unique Ref. Number):
+                </td>
+                <td valign="top" width="161">
+                    <br />
+                    EDI _ OUT _ 001
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div>
+    <br />
+</div>
+<div>
+    <table border="1">
+        <tbody>
+            <tr>
+                <td valign="top" width="228">
+                    <br />
+                    Program Title
+                </td>
+                <td valign="top" width="396">
+                    <br />
+                    RECEIVE SALES ORDERS FROM A TRADING PARTNER AND WILL THEN RETURN INVOICES VIA EDI
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="228">
+                    <br />
+                    Program Number
+                </td>
+                <td valign="top" width="396">
+                    <br />
+                    N/A
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="228">
+                    <br />
+                    Script Reference
+                </td>
+                <td valign="top" width="396">
+                    <br />
+                    N/A
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="228">
+                    <br />
+                    Application Team Contact
+                </td>
+                <td valign="top" width="396">
+                    <br />
+                    NAME REQUIRED
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="228">
+                    <br />
+                    Specification Author
+                </td>
+                <td valign="top" width="396">
+                    <br />
+                    NAME REQUIRED
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="228">
+                    <br />
+                    Programmer
+                </td>
+                <td valign="top" width="396">
+                    <br />
+                    NAME REQUIRED
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="228">
+                    <br />
+                    Estimated Number of Person Days
+                </td>
+                <td valign="top" width="396">
+                    <br />
+                    20
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div>
+    <br />
+    <b>Program Description</b>:<br />
+    CUSTOMER 36 one of the company’s major trading partners sends Sales Orders by Fax. The company batches Sales Invoices
+    and mails them once weekly to CUSTOMER 36.<br />
+    Please attach additional page(s) as required.<br />
+</div>
+<div>
+    <b>Enhancement Requirements:</b><br />
+    CUSTOMER 36 insists on being able to send Sales Orders to the company and receive invoices via EDI. The company is
+    obliged to comply with these demands due to the magnitude of business received from CUSTOMER 36. To achieve this the
+    following enhancement is required:
+</div>
+<ul>
+    <li>
+        <div>
+            The company will receive Sales Orders from a trading partner and will then return Invoices.
+        </div>
+    </li>
+    <li>
+        <div>
+            The company has agreed with the trading partner to use the TRADACOMS standard.
+        </div>
+    </li>
+    <li>
+        <div>
+            The company has selected Sterling Gentran translation software.
+        </div>
+    </li>
+    <li>
+        <div>
+            The company, along with the EDI software vendor ( Sterling), will perform the technical EDI TRADACOMS message
+            translations required by the Gentran Software.
+        </div>
+    </li>
+    <li>
+        <div>
+            The files passed, inbound and outbound, between the SAP application and the translator will be ‘flat files’ and
+            will require the relevant directories and files to be set up by The company System Administrators.
+        </div>
+    </li>
+</ul>
+<div>
+    Although SAP has standard data extraction EDI processes these may not take into account the trading.<br />
+</div>
+<div>
+    <b>EDI Configuration:</b>
+</div>
+<h5>
+    Port definition
+</h5>
+<div>
+    Transaction WEDI -&gt; IDoc -&gt; Port definition.<br />
+    <br />
+    The parameters are set from the next screen:<br />
+    Either create new Port by selecting Port-&gt;create<br />
+    Or select existing Port by double clicking on filename.<br />
+    <br />
+    The Command file is used to enter the path and name of the EDI system script. The Outbound file is the path to the
+    outbound directory of the application server. The directory will be accessible from the SAP and EDI subsystem. The file
+    name is generated by using the function module: ‘EDI_PATH_CREATE_USERNAME_DT_TM’.<br />
+    The Inbound file is used to specify the input directory. This will be the same as the outbound directory. The status
+    file is simply the path and name of the file used for status information.<br />
+</div>
+<div>
+    <b>Output determination:</b><br />
+</div>
+<div>
+    <b>Invoice</b><br />
+    The billing condition records are set using transaction VV31. The example below shows the entry for the customer 36 for
+    output type RD00:<br />
+    This ensures that invoices for customer 36 are output via EDI (medium type 6).<br />
+</div>
+<div>
+    <b>Partner profile set up for each trading partner:</b><br />
+</div>
+<div>
+    <b>Sales order</b><br />
+    Transaction WE20. Inbound ORDERS message type parameters:<br />
+</div>
+<div>
+    <b>Invoice</b><br />
+    Transaction WE20. Outbound INVOIC message type parameters:<br />
+    Message control. Output type RD00:<br />
+</div>
+<div>
+    <b>General configuration</b><br />
+    Activate event coupling for IDOC inbound: Using IMG (SPRO)-&gt;Cross-application components -&gt; IDOC interface / EDI
+    -&gt; IDOC interface / basis -&gt;Activate event coupling for IDOC inbound.<br />
+    Assign program to output type: Using IMG (SPRO)-&gt;Sales & distribution -&gt; Basic functions -&gt; Output -&gt;
+    Output determination -&gt; Process output and forms -&gt; Assign layout sets and programs to the correct output type
+    (RD00) for EDI medium 6.<br />
+    Ensure that the account at customer (KNVV-EIKTO) on the customer master record is populated. This field is used by the
+    customer (receiver) to identify the sender (SAP).<br />
+    Create customer-material info record to set up a link between the SAP product code and the customer’s product code.
+    (VD51).<br />
+    Link sold-to with the internal partner, i.e. shipped-to and with the external customer number. (VOED).<br />
+    When there is no sales organisation, distribution channel & division in the IDOC, these can be set up in
+    transaction VOED.<br />
+</div>
+<div>
+    <b>Authorizations</b><br />
+    In order for the EDI subsystem to have access to SAP and EDI functionality, an EDI user needs to be set up as a
+    background user with the following authorization objects:<br />
+</div>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <div>
+        B_ALE_RECV,<br />
+        S_OC_SEND,<br />
+        S_OC_TCD,<br />
+        S_IDOCCTRL.
+    </div>
+</blockquote>
+<div dir="ltr">
+    NOTE: these objects are only a guideline and will only allow access to basic IDOC functions.<br />
+</div>
+<div>
+    <b>Map IDOCS to EDI message</b><br />
+    Map the data between the IDOC and the EDI message for each IDOC and EDI message type combination. An in depth gap
+    analysis of the maps will identify data required in the IDOC that is not in the EDI message and vice versa. The
+    solution to the gaps identified may result in the specification of user exits. (See section 3.2.3).<br />
+</div>
+<div>
+    <b>Order map</b><br />
+    This Orders example shows the mapping exercise performed by the client implementation staff, some information is still
+    required and is identified by question (?) marks.
+</div><br clear="all" />
+<div>
+    <table border="1">
+        <tbody>
+            <tr>
+                <td valign="top" width="152" colspan="2">
+                    <br />
+                    Tradacoms Order
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    Mandatory
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="152" colspan="2">
+                    <br />
+                    OLD - Order Line Details
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                    Data Element
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    Component
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Data Definition
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    EDI Format
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    Data Source
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    SAP Field
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    Data Conversion
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                    Notes
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                    OLD
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Order Line Details
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    SEQA
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    First Level Sequence Number
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n4
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                    Not Used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    SPRO
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Supplier's Product Number
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    EAN-13 Number for traded unit
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n13
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    SAP
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    E1EDP19-IDTNR
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                    E1EDP19-QUALF = '003'
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Supplier's Code for traded unit
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an30
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    SAP
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    E1EDP19-IDTNR
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                    E1EDP19-QUALF = '002'
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Dun-14 Code for the traded unit
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n14
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    SACU
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Supplier's EAN for Consumer Unit
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n13
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    CPRO
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Customer's Product Number
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Customer's Own Brand EAN No.
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n15
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    SAP
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    E1EDP19-IDTNR
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                    E1EDP19-QUALF = '001'
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Customer's Item Code
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an30
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                    Not Used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    UNOR
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Unit of Ordering
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Consumer Units in Traded Units
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n4
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                    Not Used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Ordering Measure
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n5.3
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                    Not Used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Measure Indicator
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an6
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                    Not Used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    OQTY
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Order Quantity
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    No. of traded units in Delivery
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n15
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    SAP
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    E1EDP01-MENGE
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Total Measure of Delivery
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n10.3
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    SAP
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    ?
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Measure Indicator
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an6
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    SAP
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    ?
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    OUCT
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Ordering Unit Cost
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Cost Price
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n10.4
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                    Not used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Measure Indicator
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n6
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                    Not used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    PIND
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Special Price Indicator
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an4
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                    Not used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    TFIN
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    To Follow Indicator
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    a1
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                    Not used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    TDES
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Traded Unit Description
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Traded Unit Desc. Line 1
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an40
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    SAP
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    ?
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Traded Unit Desc. Line 2
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an40
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                    Not used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    SCRF
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Specification Contract References
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Specification Number
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an30
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                    Not used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Contract Number
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an30
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="150" colspan="2">
+                    <br />
+                    Not used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="152" colspan="2">
+                    <br />
+                    Tradacoms Invoice
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    Mandatory
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="152" colspan="2">
+                    <br />
+                    ILD - Invoice Line Details
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                    Data Element
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    Component
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Data Definition
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    EDI Format
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    Data Source
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    SAP Field
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                    Data Conversion
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Notes
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                    ILD
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Invoice Line Details
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    SEQA
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    First Level Sequence Number
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n10
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    Gentran
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Generated by Gentran
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    SEQB
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Second Level Sequence Number
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n10
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    Gentran
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Generated by Gentran
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    SPRO
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Supplier's Product Number
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    EAN-13 Number for traded unit
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n13
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    SAP
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    E1EDP19-IDTNR
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    When E1EDP19-QUALF = '003'
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Supplier's Code for traded unit
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an30
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    SAP
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    E1EDP19-IDTNR
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    When E1EDP19-QUALF = '002'
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Dun-14 Code for the traded unit
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n14
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Not Used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    SACU
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Supplier's EAN for Customer Unit
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n13
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    ?
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Is this required?
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    CPRO
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Customer's Product Number
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Customer's Own Brand EAN No.
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n15
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Not used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Customer's Item Code
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an30
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    SAP
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    E1EDP19-IDTNR
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    When E1EDP19-QUALF = '001'
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    UNOR
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Unit of Ordering
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Consumer Units in Traded Units
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n15
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Do we require this? Always 1?
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Ordering Measure
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n10.3
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Not used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Measure Indicator
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an6
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Not used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    QYT1
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Quantity Invoiced
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    No. of traded units in Invoiced
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n15
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    SAP
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    E1EDP01-MENGE
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Total Measure Invoiced
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n10.3
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    E1EDP01-MENGE
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Measure Indicator
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an6
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    E1EDP01-MENEE
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    AUCT
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Unit Cost Price (excl VAT)
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Cost Price (ex VAT)
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n5.4
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    SAP
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    E1EDP01-VPREI
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Need user exit to achieve this
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Measure Indicator
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an6
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Not used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    LEXC
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Extended Line Cost (ex VAT)
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n7.4
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    SAP
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    E1EDP01-NETWR
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Need user exit to achieve this
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    VATC
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    VAT Rate Category Code
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an1
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    SAP
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    E1EDP04-MWSKZ
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Convert to tradacom codes in Gentran
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    VATP
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    VAT Rate Percentage
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n3.3
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    SAP
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    E1EDP04-MSATZ
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    MIXI
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Mixed rate VAT rate product ind.
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an1
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Not used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    CRLI
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Credit Line Ind.
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an4
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Not Used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    TDES
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Traded Unit Description
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Traded Unit Description Line 1
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an40
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                    SAP
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    E1EDP19-KTEXT
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    When E1EDP19-QUALF = '002'
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Traded Unit Description Line 2
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an40
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Not used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    SPRI
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Selling Price
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Manufacturers Rec. selling price
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n5.3
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Not Used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Marked Price
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n5.3
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Not Used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    SRSP
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Statutory Retail Selling Price
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n5.4
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Not Used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    BUCT
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Unit Cost Price
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n7.4
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Not Used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    DSCV
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Discount Value
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n5.4
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Not Used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    DSCP
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Discount Percentage
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n3.3
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Not Used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    SUBA
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Subsidy Amount
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n8.2
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Not Used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    PIND
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Special Price Indicator
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an4
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Not Used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    IGPI
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Item Group Identifiers
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    n5.4
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Not Used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    CSDI
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    Cash Settlement Identifier
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an1
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Not Used
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="56">
+                    <br />
+                </td>
+                <td valign="top" width="96">
+                    <br />
+                    TSUP
+                </td>
+                <td valign="top" width="216">
+                    <br />
+                    VAT - Type of supply
+                </td>
+                <td valign="top" width="78">
+                    <br />
+                    an1
+                </td>
+                <td valign="top" width="54">
+                    <br />
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="108" colspan="2">
+                    <br />
+                </td>
+                <td valign="top" width="138">
+                    <br />
+                    Not Used
+                </td>
+            </tr>
+            <tr height="0">
+                <td width="52">
+                </td>
+                <td width="86">
+                </td>
+                <td width="177">
+                </td>
+                <td width="72">
+                </td>
+                <td width="51">
+                </td>
+                <td width="101">
+                </td>
+                <td width="86">
+                </td>
+                <td width="9">
+                </td>
+                <td width="115">
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+    <b>Gap analysis</b>
+</div>
+<p>
+    Split/Mixed Rate VAT Details are required by a specific trading partner. For example, two ingredients of a product may
+    have two different VAT rates (Chocolate biscuit where the chocolate is classed as confectionery but the biscuit is
+    not). According to the above map, it has been identified that SAP must provide the information held in the two fields
+    AUCT & LEXC. It is therefore necessary to provide the following extensions:<br />
+    The standard IDOC INVOIC01 segment E1EDP01 must be extended to include the fields AUCT & LEXC (see Sections 3.3.2
+    & 3.3.3).<br />
+    Additional coding to be done in a user exit to fill these fields and to insert a segment for mixed VAT (see Sections
+    3.3.2 & 3.3.3).<br />
+</p>
+<p>
+    <b>Processing Special Requirements</b><br />
+</p>
+<p>
+    <b>Create a Project</b><br />
+    Transaction CMOD Enter Project Name.<br />
+    Create a Project Select SAP enhancements Option<br />
+    If SAP Enhancement Names are known the enter into screen fields<br />
+    Or use the down arrow field selection to list Enhancements.<br />
+    After selection activate the Project on the first CMOD screen.<br />
+</p>
+<p>
+    <b>Identify Fields and Segments</b><br />
+    During the SAP-To-Be and GAP analysis processes the following requirements were identified:
+</p>
+<ul>
+    <li>
+        <div>
+            Mixed Rate VAT is not available in standard SAP extraction.
+        </div>
+    </li>
+    <li>
+        <div>
+            The customer requires that the TRADACOMS Standard fields LEXC & AUCT are to be used to hold mixed rate VAT
+            information.
+        </div>
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        - LEXC - Extended line value excluding VAT.<br />
+        - AUCT - Unit Cost value excluding VAT.
+    </p>
+</blockquote>
+<ul>
+    <li>
+        <div>
+            The SAP tax segment is E1EDP04 so the required fields need to be added to this segment. E1EDP04 is a child
+            segment of the E1EDP01 segment.
+        </div>
+    </li>
+    <li>
+        <div>
+            Standard SAP segments <b>must not</b> be changed therefore the E1EDP01 segment must be extended to include the
+            new fields.
+        </div>
+    </li>
+</ul><br />
+<b>Extend IDOC E1EDP04 and add Required Fields</b> 
+<table border="1">
+    <tbody>
+        <tr>
+            <td valign="top" width="199">
+                <br />
+                Transaction WE31
+            </td>
+            <td valign="top" width="439">
+                <br />
+                Create new EDI Segment Type Z1EDP04 & Segment
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="199">
+                <br />
+                Def/Maintain Segment: SegmentType
+            </td>
+            <td valign="top" width="439">
+                <br />
+                Z2EDP04. Add new fields ZLEXC & ZAUCT or mixed VAT information.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="199">
+                <br />
+                Transaction WE30: Develop IDOC Types: Initial Screen.
+            </td>
+            <td valign="top" width="439">
+                <br />
+                Create new IDOC extension type Z1INVXTand link E1EDP04 & Z1EDP04 segment types to it, also link IDOC
+                type INVOIC01
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="199">
+                <br />
+                Transaction WE80: Review relationships
+            </td>
+            <td valign="top" width="439">
+                <br />
+                Review relationships between Basic IDOC & IDOC types. Check entries have been made for Z1INVXT &
+                INVOIC01
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="199">
+                <br />
+                <b>Transaction WE81: Create Logical Message</b>
+            </td>
+            <td valign="top" width="439">
+                <br />
+                <b>Create Logical Message Z1INLM for the addition of new fields</b>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="199">
+                <br />
+                Transaction WE82: Message Type/Extension Type Link
+            </td>
+            <td valign="top" width="439">
+                <br />
+                Ensure Z1INLM, INVOIC01 & Z1INVXT are linked
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="199">
+                <br />
+                <b>Transaction WEDI: Partner Profile</b>
+            </td>
+            <td valign="top" width="439">
+                <br />
+                <b>Create Partner Profile entries for new Message Types & IDOC types Z1INLM & Z1INVTX</b>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<b>Code USER-EXIT To Process Mixed Rate VAT</b> <br />
+A new segment Z1EDP04 has been added to E1EDP04 to hold two new fields: 
+<ul>
+    <li>
+        <div>
+            ZLEXC (extended line cost excl. VAT) &
+        </div>
+    </li>
+    <li>
+        <div>
+            ZAUCT (Unit cost price excl. VAT).
+        </div>
+    </li>
+</ul><b>User exit ZXEDFU02:</b> <br />
+Check that the program has reached the creation of the E1EDP01 segment – item level. This check is required because the
+values of LEXC & AUCT need to be stored when processing a standard VAT item (A1) or a zero-rated item (A0). In these
+cases the Z1EDP04 extension is not used and the LEXC and AUCT fields are stored in the E1EDP01 segment: 
+<ul>
+    <li>
+        <div>
+            E1EDP01-NETWR = LEXC.
+        </div>
+    </li>
+    <li>
+        <div>
+            E1EDP01-VPREI = AUCT.
+        </div>
+    </li>
+</ul>Sterling Software will need to check the first E1EDP04 segment field E1EDP04-MWSKZ: 
+<ul>
+    <li>
+        <div>
+            If it is = ‘A1’ or ‘A0’, the LEXC & AUCT are to be found in the E1EDP01 fields (NETWR & VPREI).
+        </div>
+    </li>
+    <li>
+        <div>
+            If E1EDP04-MWSKZ = ‘A’ (i.e. mixed), the LEXC & AUCT values are to be found in the extended segment Z1EDP04
+            which is a child segment of E1EDP04.
+        </div>
+    </li>
+    <li>
+        <div>
+            If the program has reached the creation of the <b>E1EDP04</b> segment – tax.
+        </div>
+    </li>
+</ul>
+<p>
+    Check if the item is for mixed rate VAT – check the condition table KOMV and if the key KSCHL = ‘ZM01’ then the item is
+    mixed rate.<br />
+</p>
+<p>
+    <b>Note:</b> This example is specific to the company because they identify Mixed Rate VAT items by condition type =
+    ‘ZM01’. Other companies may identify mixed rate VAT using different criteria. If ‘ZM01’ is not found, the user exit
+    stops and standard SAP processing creates E1EDP04 segments for either standard (A1) or zero rated (A0) items.<br />
+</p>
+<p>
+    <b>Workflow</b><br />
+    When errors occur in IDoc processing, a group of people can be informed via the SAP inbox. The first stage is to set up
+    an organizational unit, create jobs/position and then assign user id’s to the positions. The easiest way to do this is
+    to use transaction SWLD to get to the workflow main screen and then select Definition tools -&gt; Organizational plan
+    -&gt; Change (transaction PPOM). Enter the organizational unit (50000500 – SAP Team) and then select Change. Hit Staff
+    assignments. The position <i>EDI administration</i> has been created and the user WALTONM assigned.<br />
+</p>
+<p>
+    The next step involves assigning the appropriate tasks to the position. Click on the Task profile button and expand out
+    the light blue job <i>EDI administration</i>. Two tasks have been assigned: <i>Error handling for payment advice
+    note</i> and <i>ORDERS input error</i>. To view the full list of tasks that are available use transaction SWLD, hit the
+    <i>tasks</i> button, enter TS in the task type and F4 the task field.<br />
+</p>
+<p>
+    Before workflow can be used to pass the EDI errors to the appropriate inbox, it must be customized. This is done from
+    SWLD, Utilities -&gt; Consistency test -&gt; Customizing (transaction SWU3).<br />
+</p>
+<p>
+    Hitting the <i>AutoCustomize</i> button will carry out all the basic customizing required. Hit the Test RFC button to
+    test the RFC connection. If this fails then select the RFC destination line (3<sup>rd</sup> one down) and then select
+    the Create logical destination for tRFC line. This allows the user WF-BATCH to be set up. This is a mandatory user
+    required by workflow. It is a dialog user and the password is set to ‘workflow’.<br />
+</p>
+<p>
+    <b>Testing the workflow configuration</b><br />
+    This is carried out by clicking on the <i>Verif.Workflow</i> button. This generates a workitem and sends it to your
+    inbox. Click on the inbox symbol. Execute the ‘First step in workflow verification’ item by double clicking on the tick
+    and then click on the ‘Execute background step immediately’ button at the top. This will send two further notification
+    items into your office inbox.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

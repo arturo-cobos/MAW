@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Activity: Handling Exceptions</title>
+<meta name="uma.type" content="Activity">
+<meta name="uma.name" content="handling_exceptions">
+<meta name="uma.presentationName" content="Handling Exceptions">
+<meta name="element_type" content="workflow_detail">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_VrobQYi8Ed6cxeftKauSbA&path=_VrobQYi8Ed6cxeftKauSbA,_eUrtYbT-Ed6F9-K5RMhxuA,_gQXW9bT-Ed6F9-K5RMhxuA';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, defaultQueryStr, false, true, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div id="page-guid" value="_gQXW9bT-Ed6F9-K5RMhxuA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Activity: Handling Exceptions</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/activity.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The activities in this group are intended to resolve exceptions that will occur during the life of the project. By definition, these activities respond to unplanned project events and therefore cannot be scheduled in advance.</td>
+</tr>
+<tr>
+<td valign="top">Extends: <a href="./../../practice.mgmt.opal_std_pm.base-ibm_int/capabilitypatterns/handling_exceptions_899E7D1.html" guid="_-M3UYSBoEd6OP_DioLLOtQ">Handling Exceptions</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="10" class="activeTab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="activeTab">Description</td><td width="21"><img src="./../../images/tab_middle-a_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WBS" href="./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/handling_exceptions_676CAA2E.html_wbs.html"><span style="white-space:nowrap;">Work Breakdown Structure</span></a></td><td width="1"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_TBS" href="./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/handling_exceptions_676CAA2E.html_tbs.html"><span style="white-space:nowrap;">Team Allocation</span></a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WPBS" href="./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/handling_exceptions_676CAA2E.html_wpbs.html"><span style="white-space:nowrap;">Work Product Usage</span></a></td><td width="21"><img src="./../../images/tab_end-i.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="2" class="activeTab"><img src="./../../images/shim.gif" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="2"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">To resolve the different types of exceptions or other unplanned events that may occur during the life of a project and
+address these various types of events in order to keep the project under control.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Parent Activities</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.mgmt.slot.extend-ibm_lic/capabilitypatterns/handling_exceptions_slot_CCAB5766.html" guid="_88JSUZ95EdyCs_dYY_lnfQ">Handling Exceptions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The key outputs of this activity group are the Issue Documents, Risk Occurrence Document, Compliance Incident Document,
+    Change Request, Action Control Document and their related logs plus any necessary updates to project schedules and
+    plans.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Properties</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0" title="Properties" summary="Properties">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row" id="property_Event Driven" abbr="Event Driven">Event Driven</th><td class="sectionTableCell" align="left" headers="property_Event Driven"><img width="20" height="15" alt="" title="" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row" id="property_Multiple Occurrences" abbr="Multiple Occurrences">Multiple Occurrences</th><td class="sectionTableCell" align="left" headers="property_Multiple Occurrences"><img width="20" height="15" alt="" title="" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row" id="property_Ongoing" abbr="Ongoing">Ongoing</th><td class="sectionTableCell" align="left" headers="property_Ongoing"><img width="20" height="15" alt="" title="" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row" id="property_Optional" abbr="Optional">Optional</th><td class="sectionTableCell" align="left" headers="property_Optional"><img width="20" height="15" alt="" title="" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row" id="property_Planned" abbr="Planned">Planned</th><td class="sectionTableCell" align="left" headers="property_Planned"><img width="20" height="15" alt="Yes" title="Yes" src="./../../images/true.gif"></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row" id="property_Repeatable" abbr="Repeatable">Repeatable</th><td class="sectionTableCell" align="left" headers="property_Repeatable"><img width="20" height="15" alt="" title="" src="./../../images/indent.gif"></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Reference OPAL Procedures:
+</p>
+<ul>
+    <li>
+        <a href="http://opal.ibm.com/home/practice.mgmt.opal.hand_except.extend-ibm_int/capabilitypatterns/issue_management_procedure_int_D4D27E25.html" target="_blank">Issue Management Procedure (IMSP620)</a>
+    </li>
+    <li>
+        <a href="http://opal.ibm.com/home/practice.mgmt.opal.hand_except.extend-ibm_int/capabilitypatterns/action_management_procedure_int_5C1795BC.html" target="_blank">Action Management Procedure (IMSP605)</a>
+    </li>
+    <li>
+        <a href="http://opal.ibm.com/home/practice.mgmt.opal.hand_delv.extend-ibm_int/capabilitypatterns/defect_management_procedure_int_3B1F838D.html" target="_blank">Defect Management Procedure (IMSP520)</a>
+    </li>
+    <li>
+        <a href="http://opal.ibm.com/home/practice.mgmt.opal.hand_except.extend-ibm_int/capabilitypatterns/root_cause_analysis_procedure_int_D160DA46.html" target="_blank">Root Cause Analysis Procedure (IMSP525)</a>
+    </li>
+    <li>
+        <a href="http://opal.ibm.com/home/practice.mgmt.opal.hand_except.extend-ibm_int/capabilitypatterns/compliance_incident_procedure_int_7B3221EE.html" target="_blank">Compliance Incident Procedure (IMSP615)</a>
+    </li>
+    <li>
+        <a href="http://opal.ibm.com/home/practice.mgmt.opal.work_mgmt.extend-ibm_int/capabilitypatterns/service_request_backlog_management_procedure_int_534DF25F.html" target="_blank">Key Decisions Procedure (IMSP445)</a>
+    </li>
+    <li>
+        <a href="http://opal.ibm.com/home/practice.mgmt.opal.hand_except.extend-ibm_int/capabilitypatterns/change_management_procedure_int_977902C.html" target="_blank">Change Management Procedure (IMSP610)</a>
+    </li>
+    <li>
+        <a href="http://opal.ibm.com/home/practice.mgmt.opal.hand_delv.extend-ibm_int/capabilitypatterns/deliverables_release_and_acceptance_procedure_int_D385F7D6.html" target="_blank">Deliverables Release and Acceptance Procedure (IMSP540)</a>
+    </li>
+    <li>
+        <a href="http://opal.ibm.com/home/practice.mgmt.opal.hand_except.extend-ibm_int/capabilitypatterns/continuous_risk_management_procedure_int_B740EE9A.html" target="_blank">Continuous Risk Management Procedure (IMSP600)</a>
+    </li>
+</ul>
+<p>
+    Refer to the OPAL Common External Links for the following guidance:
+</p>
+<ul>
+    <li>
+        Data Security & Privacy&nbsp;- GBS Good Practices for Data Security & Privacy
+    </li>
+    <li>
+        Data Security & Privacy&nbsp;- GBS Guidelines and Standards for Data Security & Privacy
+    </li>
+    <li>
+        IGSDF&nbsp;- Application Services (AS) Business Controls KCOs
+    </li>
+</ul>
+<p>
+    <strong>Supported Business Controls&nbsp;- Key Controls over Operations (KCOs)</strong><br />
+    The following table references supported Application Services (AS) Business Control KCOs.<br />
+    <br />
+</p>
+<table style="MARGIN: auto auto auto 4.65pt; WIDTH: 492pt; BORDER-COLLAPSE: collapse" class="NormalTable" border="0" cellspacing="0" cellpadding="0" width="656">
+    <tbody>
+        <tr style="HEIGHT: 15.75pt">
+            <td             style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 241pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.75pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0in"              valign="bottom" width="321" nowrap="nowrap">
+                <p style="TEXT-ALIGN: center; MARGIN: 0in 0in 0pt" class="Normal" align="center">
+                    <b><span style="FONT-FAMILY: Arial"><font size="3">Business Controls KCO&nbsp;</font></span></b>
+                </p>
+            </td>
+            <td             style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #e0dfe3; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; WIDTH: 251pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.75pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0in; windowtext:"              valign="bottom" width="335" nowrap="nowrap">
+                <p style="TEXT-ALIGN: center; MARGIN: 0in 0in 0pt" class="Normal" align="center">
+                    <b><span style="FONT-FAMILY: Arial"><font size="3">Evidence (Work Product)&nbsp;</font></span></b>
+                </p>
+            </td>
+        </tr>
+        <tr style="HEIGHT: 76.5pt">
+            <td             style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 241pt; PADDING-RIGHT: 5.4pt; HEIGHT: 76.5pt; BORDER-TOP: #e0dfe3; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0in; windowtext:"              valign="top" width="321">
+                <p style="MARGIN: 0in 0in 0pt" class="Normal">
+                    <span style="FONT-FAMILY: Arial; FONT-SIZE: 10pt"><strong>KCO-806:</strong><br />
+                    Risk and Issue Management - Reduce the impact of risks or issues within and organization or project by
+                    identifying, analyzing, reporting and managing issues and risks on a continuous basis.</span>
+                </p>
+            </td>
+            <td             style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #e0dfe3; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 251pt; PADDING-RIGHT: 5.4pt; HEIGHT: 76.5pt; BORDER-TOP: #e0dfe3; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0in; windowtext:"              valign="top" width="335">
+                <ol>
+                    <li>
+                        <div style="TEXT-INDENT: -0.25in; MARGIN: 0in 0in 0pt 0.25in; tab-stops: list .25in"                         class="Normal">
+                            <span style="FONT-FAMILY: Arial; FONT-SIZE: 10pt"><span><span                             style="FONT: 7pt 'Times New Roman'"><font size="2" face="Arial">Risk Management
+                            Plan</font></span></span></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="TEXT-INDENT: -0.25in; MARGIN: 0in 0in 0pt 0.25in; tab-stops: list .25in"                         class="Normal">
+                            <span style="FONT-FAMILY: Arial; FONT-SIZE: 10pt"><span><span                             style="FONT: 7pt 'Times New Roman'"><font size="2" face="Arial">Issue Management
+                            Plan</font></span></span></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="TEXT-INDENT: -0.25in; MARGIN: 0in 0in 0pt 0.25in; tab-stops: list .25in"                         class="Normal">
+                            <font face="Arial"><font size="2"><span style="FONT-FAMILY: Arial; FONT-SIZE: 10pt"><span><span                             style="FONT: 7pt 'Times New Roman'"><font size="2" face="Arial">Compliance with documented risk
+                            & issue management procedures (i.e. OPAL - Continuous Risk Management Procedure (IMSP600)
+                            and Issue Management Procedure (IMSP620)</font>&nbsp;&nbsp;&nbsp;</span></span></span> <span                             style="FONT-FAMILY: Arial; FONT-SIZE: 10pt">&nbsp;</span></font></font>
+                        </div>
+                    </li>
+                </ol>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

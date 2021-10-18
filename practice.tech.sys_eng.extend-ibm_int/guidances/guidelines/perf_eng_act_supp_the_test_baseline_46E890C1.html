@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Performance Engineering Activities Supporting the Test Baseline</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="perf_eng_act_supp_the_test_baseline">
+<meta name="uma.presentationName" content="Performance Engineering Activities Supporting the Test Baseline">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mwebA9D6828CD9974353852572AC006EB5FB"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebA9D6828CD9974353852572AC006EB5FB"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Performance Engineering Activities Supporting the Test Baseline</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The Test Readiness Review (TRR) ensures that test plans and test cases fully support the requirements for the system being tested, after which a baseline is established for both future reference and change control. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.sys_eng.extend-ibm_int/tasks/perform_test_readiness_review_96D8039D.html" guid="mweb093C356700000113D4B3030587783AAA">Perform the Test Readiness Review</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    In an Enterprise SE&A project, the Test Baseline encompasses the test plans and supporting documentation for the
+    system described in the preceding baselines.
+</p>
+<p>
+    <b>Figure 1 – Test Baseline in SE Capability Pattern</b>
+</p>
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td width="95%">
+                <a href="./../../../practice.tech.sys_eng.extend-ibm_int/guidances/guidelines/resources/PEActivitiesSupportingtheTestBaselinepic1.JPG" target="_blank"></a><img height="552"                 alt="" src="./../../../practice.tech.sys_eng.extend-ibm_int/guidances/guidelines/resources/PEActivitiesSupportingtheTestBaselinepic1.JPG" width="652" />&nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    In the SE Capability Pattern, a number of work products are developed before it is time to review the Test Baseline, as
+    shown below.
+</p>
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td width="95%">
+                <a href="./../../../practice.tech.sys_eng.extend-ibm_int/guidances/guidelines/resources/PEActivitiesSupportingtheTestBaselinepic1a.JPG" target="_blank"><img                 style="WIDTH: 668px; HEIGHT: 396px" height="280"                 src="./../../../practice.tech.sys_eng.extend-ibm_int/guidances/guidelines/resources/PEActivitiesSupportingtheTestBaselinepic1a.JPG" width="450" border="1" /></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    The performance engineering team has a vested interest in ensuring that the performance and capacity aspects of the
+    test plan are well-conceived and focused on addressing the key performance requirements and the areas of greatest
+    performance risk. Deliverables which are deemed deficient from a performance and capacity standpoint may lead to the
+    entry of a defect, which is then taken into account during the TRR Scorecard process.
+</p>
+<p>
+    At this time, the PE team should have access to results from the development/implementation team which should give an
+    idea whether the system is likely to have trouble meeting its performance requirements. Based on this knowledge, the PE
+    team should advise management on whether performance-related test entry criteria (if any) have been met and whether the
+    test effort should proceed. The testing phase also offers a good opportunity to exercise live monitoring and
+    performance management tools and procedures, which the PE team should coordinate with the appropriate test and
+    production support teams.
+</p>
+<p>
+    This technique paper should be used as a guidance on applying PE activities and techniques in support of the TRR.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

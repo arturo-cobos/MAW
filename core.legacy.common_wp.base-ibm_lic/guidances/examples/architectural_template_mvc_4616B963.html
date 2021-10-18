@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Architectural Template for MVC</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="architectural_template_mvc">
+<meta name="uma.presentationName" content="Architectural Template for MVC">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_aHorMCVfEdyakqTCvnPBsA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Architectural Template for MVC</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The following example is based on excerpts from the MVC Architectural Template as documented on a project. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/architectural_template_EBD3A673.html" guid="mweb85C7CEEC6BEC284B8525688200573750">Architectural Template</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <strong>Free format text describing the purpose of the MVC pattern</strong>
+</p>
+<p>
+    The Model View Controller (MVC) design pattern is very well suited to applications that consist mainly of interactions
+    via the Graphical User Interface (GUI) with model objects. The design pattern aims to organize the components of the
+    application into one of the three following distinct layers, each corresponding to a limited and precisely specified
+    area of responsibility:
+</p>
+<ul>
+    <li>
+        Model layer
+    </li>
+    <li>
+        View layer
+    </li>
+    <li>
+        Controller layer
+    </li>
+</ul>
+<p>
+    The resulting architecture isolates the Model layer from the View layer so as to render the former independent of the
+    latter. The communication or binding between the two is enabled and controlled by the controller. This approach lends
+    itself naturally to a parallel development effort. The general principle of the allowed interactions in the system is
+    outlined in the figure below.<br />
+    <br />
+    <img height="124" alt="" src="./../../../core.legacy.common_wp.base-ibm_lic/guidances/examples/resources/architectural_template_01.JPG" width="345" /><br />
+    <b>Figure 1. The Allowed Interactions Between the MVC Layers</b> <b>An informal picture of the layering derived from
+    the MVC pattern</b>
+</p>
+<p>
+    <br />
+    <img height="124" alt="" src="./../../../core.legacy.common_wp.base-ibm_lic/guidances/examples/resources/architectural_template_02.JPG" width="180" /><br />
+    <b>Figure 2. The MVC Layers</b>
+</p>
+<p>
+    <br />
+    The Model layer contains all the model objects with which the user interacts through the GUI. These objects need not be
+    aware of their actual representation on screen. This approach enables developers to build up a set of business objects
+    (i.e., classes representing objects from the business environment) that can be easily reused in different applications.
+</p>
+<p>
+    <br />
+    <b>A class diagram related to the MVC framework</b><br />
+    <br />
+    <img height="248" alt="" src="./../../../core.legacy.common_wp.base-ibm_lic/guidances/examples/resources/architectural_template_03.JPG" width="331" /><br />
+    <b>Figure 3. Class Diagram of the MVC Base Classes</b>
+</p>
+<p>
+    <br />
+    <b>An interaction diagram related to the MVC framework</b><br />
+    The following interaction diagram represents the collaboration between the base classes of the MVC-framework during the
+    creation of a new View.<br />
+</p>
+<p>
+    <img height="469" alt="An Interaction Between the MVC Base Classes " src="./../../../core.legacy.common_wp.base-ibm_lic/guidances/examples/resources/architectural_template_04.JPG"     width="550" />
+</p>
+<p>
+    <b>Figure 4. An Interaction Between the MVC Base Classes</b>
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

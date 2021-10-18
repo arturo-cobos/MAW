@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing Process Definition</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="process_definition_dev">
+<meta name="uma.presentationName" content="Developing Process Definition">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_WbCI4GUhEdyqa4JQxRaNsw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_WbCI4GUhEdyqa4JQxRaNsw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing Process Definition</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Migrated development approach from existing IBM Global Services Method work product.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/process_definition_ED5D6306.html" guid="mweb90A72CE84E00D5CE852568850054D682">Process Definition</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The approach to develop the Process Flow Definition work product varies and depends on the objectives of the engagement
+    and the required client deliverables. Typically, the definition and description of processes begins with the
+    construction of a static view of the process (process identification or inventory). This may provide a process
+    structure to identify the critical process areas, highlight the complex processes that need further definition for
+    clarity and understanding and identify the scope of the business process under analysis. This is a scoping issue and is
+    project dependent.
+</p>
+<p>
+    <strong>Developing the Process Flow:</strong>
+</p>
+<ul>
+    <li>
+        Identify a process area from the process identification work product.
+    </li>
+    <li>
+        Identify the triggering event associated to this process from the business events work product.
+    </li>
+    <li>
+        Determine the performers. The level of a performer will depend on the process category.&nbsp; The performer may be
+        an organizational unit, functional unit, individual, a set of skills, or a system that performs the activities or
+        processes to which it is assigned.
+    </li>
+    <li>
+        Begin placing the activities in the appropriate performer row on the process map. New performer roles may need to
+        be created if the activity cannot be assigned to a single one.
+    </li>
+    <li>
+        A control symbol must be used, if there is a point where the process may branch, or take more than one path.&nbsp;
+        The control symbol will determine if all paths will be followed (in the case of an “AND” or Multithread), or if
+        some choice must occur (in the case of an “OR” or Choice Box).&nbsp; In many cases, the Choice Box may cause the
+        process to return to an earlier point for rework.&nbsp; This condition will be denoted with a Rework and Restart
+        symbol.
+    </li>
+    <li>
+        Flow lines indicate the flow of work and are the trigger that allows the next activity to begin.&nbsp; When
+        multiple flow lines enter an activity, it is assumed that the first trigger to reach that activity will enable
+        it.&nbsp; A wait construct must be used to synchronize the process if an activity must either wait to begin or wait
+        to complete.&nbsp; The number within the wait construct indicates the number of inputs required.&nbsp; In some
+        cases, this number may be a variable such as “N”.
+    </li>
+    <li>
+        Relative time should flow left to right on the diagram, with the exception of a rework (revert). If activities
+        occur simultaneously within the performer role line, use a Multithread to define the threads of work.
+    </li>
+    <li>
+        Depending on your situation, you can annotate the processes with the following information to further detail the
+        interactions:
+    </li>
+    <li style="list-style: none">
+        <ul>
+            <li>
+                Annotate timings to show the amount of time necessary to complete each process.
+            </li>
+            <li>
+                Show performance measures or goals for individual processes. This is particularly useful for the future
+                process flow.
+            </li>
+            <li>
+                Differentiate automated and manual process activities.
+            </li>
+            <li>
+                Note problems and bottlenecks. This is particularly useful when the process map is used to record current
+                processing flow.
+            </li>
+            <li>
+                Note those processes that represent leverage points or competitive advantage, offering the greatest
+                potential for improved performance.
+            </li>
+        </ul>
+    </li>
+    <li>
+        When the process model is defined be sure to update the related work products
+    </li>
+    <li style="list-style: none">
+        <ul>
+            <li>
+                When the future state process has been developed, the roles will have to be mapped back to jobs.&nbsp; At
+                this time, the job role work product may need to be updated as well.
+            </li>
+            <li>
+                Depending on the engagement model and purpose, many other work products will use this as the basis for
+                analysis and detail requirements definition.
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    <strong>Refining the Process Flow for Package Implementation</strong>
+</p>
+<p>
+    Additional detail in the operational view, and definition of the transactional view should also be modeled when
+    implementing an application package, or when linking to application development activity is relevant.&nbsp; It is
+    important to be able to explicitly communicate the design to all affected parties including the end users, project
+    team, and partnering implementation resources.
+</p>
+<ul>
+    <li>
+        If the business process flow does not exist, it is still possible to start the process definition at this detailed
+        level.&nbsp; If implementing a package, a reference model or industry template for the application may already
+        exist.
+    </li>
+    <li>
+        Identify all activities that are to be performed using the application package, and replace these with transaction
+        activities that map to the application.&nbsp; Identify the application references and note them in the proper
+        fields.&nbsp; When mapping the activities to the application the process may need to change to accommodate the
+        package.
+    </li>
+    <li>
+        Walk through the process flow and at each transaction activity, bring up the designated reference point in the
+        application and validate that the activity can be performed.
+    </li>
+    <li>
+        If additional configuration, customization, or coding is required at any point note this as a requirement.&nbsp; If
+        this requirement is an interface or API to another application or system, this should correlate to a Use Case
+        Model, and/or a detailed description of the requirement.
+    </li>
+    <li>
+        Often, a system performer will be required at this detailed level.
+    </li>
+</ul>
+<p>
+    <strong>Information Gathering</strong>
+</p>
+<p>
+    Workshops with project team members and domain experts (persons who actually work in the environment being modeled) are
+    an effective way to gather information and build the model interactively as the workshop progresses.&nbsp;
+    Alternatively, information-gathering sessions can be effective if there is quick turn-around of the evolving model in
+    subsequent reviews.
+</p>
+<p>
+    Some other excellent sources of information are:
+</p>
+<ul>
+    <li>
+        Information obtained from interviews, meetings and workshops
+    </li>
+    <li>
+        Direct observation of the process
+    </li>
+    <li>
+        Procedure manuals and other documentation from the business process.&nbsp; (Treat with skepticism if people who are
+        not performing the activities wrote them as they may reflect desired procedures rather than actual practice.) But
+        the process flows could also be future state (as mentioned in the description so then there is no problem)
+    </li>
+    <li>
+        Administration and operational support documentation.
+    </li>
+    <li>
+        Existing IC or templates, such as the Industry Based Templates for CRM package solutions. (put source in Reference
+        chapter)
+    </li>
+    <li>
+        Classified business terms containing key verbs and/or nouns (objects) extracted from business sources. These verbs,
+        with their accompanying objects, can plug right into the process-modeling framework, to provide a first-cut process
+        model.
+    </li>
+    <li>
+        Other work products
+    </li>
+    <li style="list-style: none">
+        <ul>
+            <li>
+                Process Identification identifies business processes
+            </li>
+            <li>
+                Business Events identifies the external and internal events that are the initiating stimuli of&nbsp;
+                processes/sub-processes.&nbsp; Also consider such initiating Business Events as emergencies or security
+                threats or those associated with the Life Cycle of a use (eg issue access, use access, remove access).
+                These provide useful starting points.
+            </li>
+        </ul>
+    </li>
+    <li>
+        Current client process models and various instances if they exist
+    </li>
+    <li>
+        Relevant standard industry models
+    </li>
+</ul>
+<p>
+    Whatever the source of the information, the approach to building the process model can be “top-down” (processes to
+    sub-processes to activities) or “bottom-up” (understanding activities then identifying related
+    sub-processes/processes).&nbsp; Also, it may be appropriate to understand the flow/relationships and customer
+    interactions of the processes and sub-processes within scope then assess the importance, performance, maturity, etc.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

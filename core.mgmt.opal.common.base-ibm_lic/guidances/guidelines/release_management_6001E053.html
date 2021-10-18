@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Release Management</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="release_management">
+<meta name="uma.presentationName" content="Release Management">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "LWWCM_e591b34854301bf"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="LWWCM_e591b34854301bf"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Release Management</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Use this guideline to manage the packaging of work items into logical groupings for a one-time release into the target environment, such as testing or production. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.mgmt.opal_full_pm.base-ibm_int/tasks/expand_delivery_process_plans_imsp391_28A6731D.html" guid="_HoF-8JbQEd2OpZ0IcbqXmw">Expand delivery process plans (IMSP391)</a>
+</li>
+<li>
+<a href="./../../../practice.mgmt.opal_full_pm.base-ibm_int/tasks/outline_any_addl_plans_required_p491_96E91011.html" guid="_nGRqsJrOEd2E6tXqLwpe4Q">Outline any additional plans required (IMSP491)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h2>
+    Purpose
+</h2><br />
+<b>Use this guideline to:</b> <br />
+Manage the packaging of work items into logical groupings for a one-time release into the target environment, such as
+testing or production. <br />
+<strong>Target audience:</strong> <br />
+Project Managers, Technical Team Leaders, Test Team Leaders, Project Team Members, Developers, Testers & Client.<br />
+<hr />
+<h2>
+    Scope
+</h2><br />
+<b>This guideline applies to:</b> <br />
+All projects.<br />
+<hr />
+<h2>
+    Overview
+</h2><strong>This guideline includes:</strong> 
+<ul>
+    <li>
+        Verifying Completion of Construction for the Release
+    </li>
+    <li>
+        Designing, Building and Configuring the Release
+    </li>
+    <li>
+        Preparing Test Environment and Planning Migration
+    </li>
+    <li>
+        Migrating to Test Environment for Integrated Testing
+    </li>
+    <li>
+        Verifying Completion of Integrated Testing for the Release
+    </li>
+    <li>
+        Promoting to Production Environment
+    </li>
+    <li>
+        Confirming Changes in Production Environment and Notifying Client
+    </li>
+</ul>
+<hr />
+<h2>
+    Details
+</h2>
+<h2>
+    1. Verifying Completion of Construction for the Release
+</h2><br />
+A planned release consists of all new or changed software and hardware required to implement the approved changes. The
+<b><i>release plan</i></b> includes all of the release details, including the completion criteria. <br />
+At predetermined times, the Technical Team Leader verifies the completion of the construction for the release, based on the
+category and definition of the release. Releases are categorized, based on the following: 
+<ul>
+    <li>
+        Work involved in construction: 
+        <ul>
+            <li>
+                <b>Major software releases</b>: Consists of major units of new functionality, some of which may make the
+                preceding problem fixes redundant.
+            </li>
+            <li>
+                <b>Minor software releases</b>: Consists of minor enhancements or fixes, some of which may make the
+                preceding emergency fixes redundant.
+            </li>
+            <li>
+                <b>Emergency software or hardware fixes</b>: Consists of corrections to a small number of known problems.
+            </li>
+        </ul>
+    </li>
+    <li>
+        Components included in the release: 
+        <ul>
+            <li>
+                <b>Full Application Release</b>: All application components are released together for implementation,
+                irrespective of whether they underwent a change since the previous release. Such releases ensure the whole
+                application (changed and unchanged components) is built, tested, distributed and implemented together.
+            </li>
+            <li>
+                <b>Partial Application Release</b>: Only those application components that have actually changed or are new
+                since the last release are released.
+            </li>
+            <li>
+                <b>Integrated Package Release</b>: All changes across application domains are grouped together and released
+                as a 'package'. Such releases are especially useful where the changes to a system or an application may
+                require changes to other systems or applications. Since these changes are made together, they are included
+                in the same package for release.
+            </li>
+        </ul>
+    </li>
+</ul><br />
+The Technical Team Leader checks the following to verify the construction planned for the release is complete: 
+<ul>
+    <li>
+        The work is constructed as per the <b><i>service request</i></b> or <b><i>project plan for macro
+        design</i></b>/<b><i>project plan for micro design</i></b>.
+    </li>
+    <li>
+        The work is unit tested in the Construction Environment.
+    </li>
+    <li>
+        The <b><i>data migration plan</i></b> is created for migrating the work from the construction environment to the
+        test or production environment.
+    </li>
+    <li>
+        The <b><i>release plan</i></b> is updated appropriately.
+    </li>
+</ul>
+<h2>
+    2. Designing, Building and Configuring the Release
+</h2><br />
+After the Technical Team Leader verifies the construction for the release is complete, all the software and/or hardware
+components, which comprise the release, are required to be assembled in a controlled manner to ensure a reproducible
+process. <br />
+For software, the standard approach is to receive the new or changed source code from the Developers and generate the
+executables using controlled procedures on dedicated build hardware. This process is called Build Management and is one of
+the core activities in Release Management. Build management becomes the responsibility of Release Management from the final
+release entry date onwards. <br />
+The instructions to build or to assemble a release are considered part of the definition of the release. It is quite common
+to write scripts to automate the installation of systems and application software onto servers and workstations. Depending
+on the implementation plan, this can be performed in advance (for example, if hardware is being replaced) or can be
+performed directly in the production environment. <br />
+The Technical Team Leader plans and documents the procedure for building software releases by reusing standard procedures,
+wherever possible. A configuration of a particular release of software and hardware may be based upon a set of available
+components, some of which may be developed in-house and others bought in. <br />
+All software, parameters, test data, run-time software, and any other software, which is required for the release, are
+placed under configuration management control. A complete record of the build results is logged so that a build can be
+repeated, if necessary. <br />
+Design, build, and configuration of the release are done based on the <b><i>release plan</i></b> of the project. The
+outputs of this activity are assembled into the <b><i>physical packaging</i></b> and may include the following: 
+<ul>
+    <li>
+        Detailed release assembly and build instructions, including the exact sequence of operations.
+    </li>
+    <li>
+        Purchase orders, licenses and warranties for third-party software and hardware.
+    </li>
+    <li>
+        Automated installation scripts and associated <b><i>detailed test plan</i></b>(s).
+    </li>
+    <li>
+        Master copies of the installation media and installation instructions.
+    </li>
+    <li>
+        Back-out procedures to document the actions to be taken to restore the service to rollout a release fail, either
+        partially or totally.
+    </li>
+    <li>
+        Updated <b><i>data migration plan</i></b>(s).
+    </li>
+</ul>
+<h2>
+    3. Preparing Test Environment and Planning Migration
+</h2><br />
+The Test Team Leader prepares the test environment for upcoming migrations from the construction environment to the test
+environment on an ongoing basis, as necessary. <br />
+Upon receiving notification from the Technical Team Leader regarding completion of the build for the release, the Test Team
+Leader creates the appropriate <b><i>data migration plan</i></b> based on the approved <b><i>service request</i></b>
+identifying the following: 
+<ul>
+    <li>
+        Delivery package and migration category such as daily, weekly or on-request migration.
+    </li>
+    <li>
+        Release information, type of transport (manual or automated), source construction environment, and all target
+        environments and dates.
+    </li>
+</ul><br />
+The Test Team Leader reviews the <b><i>data</i></b> <b><i>migration plan</i></b> with the relevant stakeholders, obtaining
+any necessary approvals. 
+<h2>
+    4. Migrating to Test Environment for Integrated Testing
+</h2><br />
+Release Management includes integrated testing of multiple changes at once for early detection of cross-process conflicts
+and to minimize system disruption. The Test Team Leader performs the following: 
+<ul>
+    <li>
+        Migrates all the work from the construction to the prepared test environment to facilitate commencement of
+        integrated testing using either a manual or automated transport mechanism.
+    </li>
+    <li>
+        Updates the appropriate <b><i>data</i></b> <b><i>migration plan</i></b> with details including the date of
+        migration to the testing environment.
+    </li>
+</ul>
+<h2>
+    5. Verifying Completion of Integrated Testing for the Release
+</h2><br />
+The Test Team Leader checks the following to verify testing is completed for the planned release: 
+<ul>
+    <li>
+        Integrated testing is complete in the test environment and results are documented in the appropriate <b><i>test
+        report</i></b>.
+    </li>
+    <li>
+        Regression testing is complete in the test environment and results are documented in the appropriate
+        <em><strong>test report.</strong></em>
+    </li>
+    <li>
+        Critical process testing is complete in the test environment and results are documented in the appropriate
+        <b><i>test report</i></b>.
+    </li>
+    <li>
+        Client acceptance testing is complete in the test environment and results are documented in the appropriate
+        <b><i>test report</i></b>.
+    </li>
+    <li>
+        The Test Team Leader notifies the Technical Team Leader of the successful completion of the testing effort.
+    </li>
+</ul>
+<h2>
+    6. Promoting to Production Environment
+</h2><br />
+After receiving the notification from the Test Team Leader regarding the completion of testing for the release, the
+Technical Team Leader performs the following: 
+<ul>
+    <li>
+        Migrates all the work from the construction to the production environment using the management approved manual or
+        automated transport mechanism. Automated transport systems require close monitoring of migrations to prevent
+        incomplete code from migrating.
+    </li>
+    <li>
+        Updates the <b><i>data</i></b> <b><i>migration plan</i></b> with all of the pertinent details, including the final
+        date of migration to the production environment.
+    </li>
+</ul>
+<h2>
+    7. Confirming Changes in Production Environment and Notifying Client
+</h2><br />
+After promoting the work from the construction to the production environment, the Technical Team Leader performs the
+following: 
+<ul>
+    <li>
+        Reviews the production changes to confirm all required changes have been successfully migrated into the production
+        environment.
+    </li>
+    <li>
+        Notifies the stakeholders of the successful move into the production environment of the approved changes.
+    </li>
+    <li>
+        Closes the <b><i>service request</i></b>, if applicable.
+    </li>
+</ul>
+<hr />
+<h2>
+    Appendices
+</h2><br />
+There are none 
+<hr />
+<h2>
+    Document Control
+</h2>
+<h4>
+    Version History
+</h4>
+<table>
+    <tbody>
+        <tr>
+            <th>
+                Ver
+            </th>
+            <th>
+                Date
+            </th>
+            <th>
+                Author
+            </th>
+            <th>
+                Comments
+            </th>
+        </tr>
+        <tr>
+            <td>
+                1.0
+            </td>
+            <td>
+                11/18/05
+            </td>
+            <td>
+                Content Team
+            </td>
+            <td>
+                Initial version for Release 10.0
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1.1
+            </td>
+            <td>
+                05/10/07
+            </td>
+            <td>
+                Content Team
+            </td>
+            <td>
+                Release 12.0 Early Adopter Release: Migrated the asset to new authoring environment
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1.2
+            </td>
+            <td>
+                08/17/07
+            </td>
+            <td>
+                Content Team
+            </td>
+            <td>
+                Release 12.1: Initial Licensed Version. Requirement PI-000024.MNT-582405 Removed Guideline IDs from the
+                asset.
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.mgmt.opal.common.base-ibm_lic/guidances/guidelines/project_control_book_5865F82F.html" guid="LWWCM_e5f1784bed7fee0">Project Control Book</a>
+</li>
+<li>
+<a href="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/guidelines/proj_tailoring_E46CD53B.html" guid="ILWWCM_e57663460b19005"> Project Tailoring (Internal)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

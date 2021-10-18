@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Task: Specify Input, Output and Error Messages for Service Operations</title>
+<meta name="uma.type" content="Task">
+<meta name="uma.name" content="specify_input_output_error_msg_for_svc_ops">
+<meta name="uma.presentationName" content="Specify Input, Output and Error Messages for Service Operations">
+<meta name="uma.category" content="Discipline:tech_arch:Technical Architecture">
+<meta name="element_type" content="activity">
+<meta name="filetype" content="description">
+<meta name="role" content="Software Designer">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_b18RK0ihEd-_ZOv5_X5BYQ", "_sfs_UGptEeSdxcAgtnf5og", "_01GXYEOGEduXIri7BAc1Jg"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_kpou0CmJEd65FoKJYXtPqg", "_vLdhkLUuEdyZzqoEHUdEQA", "_dRLFwLjdEdyRlZ7knXIZ8w", "_01GXYEOGEduXIri7BAc1Jg"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', true, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div id="page-guid" value="_01GXYEOGEduXIri7BAc1Jg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Task: Specify Input, Output and Error Messages for Service Operations</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/task.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Specify input, output, error/fault messages for each of the operations of a service. Use common message format to specify the messages.</td>
+</tr>
+<tr>
+<td>Disciplines: <a href="./../../core.default.cat_def.base-ibm_lic/disciplines/tech_arch_AE23524A.html" guid="_dRLFwLjdEdyRlZ7knXIZ8w">Technical Architecture</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    To define the messages for input, output and faults for your operations on the service. Specify the its parameters
+    (input and output) and the definition of the fault message of the service operations. The purpose of operational
+    messages is to provide necessary data for a service to be invoked (in case of input message) or carry the output
+    provided by a service after the service is executed.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Primary Performer:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/software_designer_D18DC3B2.html" guid="_PaVbABjREduDY9xFzEM2Fg">Software Designer</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Additional Performers:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/application_developer_8573F536.html" guid="mwebD57DF23536B141F78625655F0004B2CA">Application Developer</a>
+</li>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/information_architect_C80144F0.html" guid="mwebE17B2E5F8993A528852567D80050659C">Information Architect</a>
+</li>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/roles/soa_architect_868D1C78.html" guid="_6a6fsMATEd2tiPGdefU3zg">SOA Architect</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Inputs</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Mandatory:
+								</span>
+<ul>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/workproducts/service_model_AA7DDA59.html" guid="_fxbwIBmHEdqx_IUyKxxtEg">Service Model</a>
+</li>
+</ul>
+<ul></ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Optional:
+								</span>
+<ul></ul>
+<ul>
+<li>
+<a href="./../../core.tech.slot.base/workproducts/technical_design_slot_84295A08.html" guid="_IcQOUEqdEdyi3_jfs__bIQ">[Technical Design]</a>
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/component_design_B36D4DDD.html" guid="_dXRwkIfDEdyrHMpF6xBNiQ">Component Design</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/database_trans_desc_D8976B63.html" guid="mweb618E9D383D17810F852568820061D9D6">Database Transaction Descriptions</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/data_migration_specification_B4ADA350.html" guid="mweb22D39A44D3A01C698525688200617C95">Data Migration Specification</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/data_model_201FD2D8.html" guid="mweb92DDF88B152881D585256885005042A1">Data Model</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/physical_database_design_B38821A2.html" guid="mweb67A87EB3268559088525688500520A8B">Physical Database Design</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/ui_design_specs_B76BB729.html" guid="mweb0B1E8765356F61EF852568850061F05A">User Interface Design Specifications</a>
+</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Outputs</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/workproducts/service_specification_3B8A4E6E.html" guid="_umgOsJ6vEd261rSlziDYzQ">Service Specification</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Uses enterprise message format as input for defining the message format for the service operation signature. Operation
+    messages are information sent between two services for information exchange. Messages between communicating services
+    are a critical part of a SOA. These include not only the input and output messages of a given service invocation but
+    also the internal message format to be used within the enterprise as the flow of information passes through the layers
+    of the application architecture.
+</p>
+<p>
+    Create the specifications for the operations on the service. Service operation specification assumes the definition of
+    the input and output messages, the specification of the faults and any other syntactic information that may be
+    associated with the definition of a service operation. Look for verbs and actions while analyzing the use cases or the
+    functional requirements. Verbs usually map to service operations. Analyze the use cases and or functional requirements
+    to identify what are the parameters that may be associated with the service operation. Analysis of the entire use case
+    list provides an exhaustive list of all the parameters that will be used in the scope of the transformation.<br />
+    <br />
+    Operation messages are specified to provide necessary input for service invocation or to capture and carry forward
+    outputs from a service.<br />
+    As services include input and output messages, this task focuses on:<br />
+    Identification and specification of the format and content of input and output messages of a service, its relation to
+    the underlying data models, the internal common message format and considerations and decisions on how to map each of
+    these messages to another .<br />
+    The specification of messages for the service model should take into consideration perspectives from enterprise
+    architecture/application architecture, data architecture and integration architecture. This includes:<br />
+</p>
+<ul>
+    <li>
+        Message standards defined at an enterprise or application level
+    </li>
+    <li>
+        Appropriate meta or data model that are part of a data architecture
+    </li>
+    <li>
+        Message transformation standards that are part of an integration architecture.<br />
+    </li>
+</ul>
+<p>
+    During specification, it is important to understand an organization’s standards, if available, in each of the 3 areas
+    of architecture. Message specifications and data models are closely tied. The data model consists of underlying
+    entities and their relationships, a subset of which may be sent out as part of an output message and received as an
+    input from an incoming message. Thus the mapping between the message formats and the underlying data model or data
+    architecture is a key architectural consideration. In some cases, patterns and their implementation such as the
+    Enterprise Service Bus may handle the transformation (and routing) of messages. In many cases, we may need an explicit
+    handler to transform messages from and to data models.<br />
+    <br />
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

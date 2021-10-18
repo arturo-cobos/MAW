@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Evaluation &amp; Selection Framework</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="evaluation_selection_framework">
+<meta name="uma.presentationName" content="Evaluation &amp; Selection Framework">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mwebA046175070852F3185256B060049D14B"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebA046175070852F3185256B060049D14B"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Evaluation &amp; Selection Framework</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1&nbsp;Description
+</h3>
+<p>
+    The Evaluation and Selection Framework Technique Paper, shows how to define a single set of selection criteria,
+    processes and defined roles and responsibilities, for the evaluation and selection of components and packages, as part
+    of the Decision Model Work Product. Many organizations have multiple processes and define individual evaluation and
+    selection criteria as required, often at the solution design or package selection stage. However, having a single,
+    enterprise-level framework, built around previously defined principles that underpin the business goals and objectives,
+    eliminates duplication of effort, allows rational, objective criteria to be defined and provides for more consistent
+    decision making over time.
+</p>
+<p>
+    The technique provides a framework within which design and acquisition decisions can be effectively made and
+    communicated. Once this evaluation and selection framework has been defined, the Decision Model WP can then be used to
+    make decisions regarding the fit of a specific product to a specific business need (for example, using the CAD
+    Infrastructure Product Selection technique paper, or the PSI Product Selection capability pattern). It can also be used
+    for the selection of a potential standard, or even a less structured decision for which criteria might need to be
+    developed.
+</p>
+<p>
+    Evaluation and selection activities can and do occur at many levels within an organization. At solution design time,
+    this enterprise-level framework is used in many ways:
+</p>
+<ul>
+    <li>
+        To guide the documentation of component requirements, alternative solutions and the rationale for making a
+        particular selection. For example in the ‘Evaluate Infrastructure Products’ task of the Custom Application
+        Development (CAD) Engagement Model<br />
+    </li>
+    <li>
+        As a basis for eliminating the majority of candidate solutions with documented cause. For example in the ‘Select
+        Infrastructure Products’ task of the Custom Application Development (CAD) Engagement Model<br />
+    </li>
+    <li>
+        As the basis, for making a final decision on the best alternative option to select. Also in the ‘Select
+        Infrastructure Products’ task of the Custom Application Development (CAD) Engagement Model.
+    </li>
+</ul>
+<h3>
+    2&nbsp;Context
+</h3>
+<p>
+    Within the IGS Method, there are several work products that provide inputs to these evaluation and selection activities
+    and others that do detailed component selection. The purpose of this technique is not to replace or duplicate these
+    work products, but to define the overall framework within which these detailed component evaluation and selection
+    activities can occur.
+</p>
+<p>
+    The overall objective is to allow architectural components, standards, products, and services to be evaluated and
+    selected based on rational, objective criteria, which reflect the overall business needs, rather than the requirements
+    of a single solution. This increases the chances of identifying shared functions and the same solution being chosen for
+    similar functional requirements by different decision makers.
+</p>
+<p>
+    The diagram below shows the key relationships between some of the work products involved and the typical execution of a
+    CAD, Security, Network or other design level project, where detailed product and component selection occurs. Each
+    relationship is numbered and the description of these is included, to help clarify and position where and how this
+    technique is used.
+</p>
+<p>
+    <img height="325" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/evaluation_selection_frameworkfig1.JPG" width="483" />
+</p>
+<p>
+    <br />
+    &nbsp;<br />
+    <strong>Principles, Policies & Guidelines:</strong> Principles provide the underlying rules for making design and
+    component/product select decisions. They must also be tied directly back to the business capabilities and be seen to
+    help implement the business strategy. Principles are a key input to the Decision Model WP (1) and the Architectural
+    Decisions WP (4). The Principles, Policies and Guidelines are also a key input to the Enterprise Technology Framework,
+    where they will help to drive the shape and feel of the architectures overall and influence the components and
+    reference architectures it includes (2). Principles will also underpin how the enterprise-level architectures are
+    managed (5)
+</p>
+<p>
+    <strong>Decision Model:</strong> Defines the overall processes, roles and responsibilities (at an enterprise level) for
+    how components, products, packages and suppliers will be selected. Defines generic evaluation and selection criteria.
+    Provides the rules for <strong>how</strong> products and components will be selected at a project level. It is this
+    Evaluation and Selection Framework TP that focuses on defining these component parts of the Decision Model. The
+    Decision Model provides a key input to all Solution level projects where component and design decisions need to be made
+    (7). It is also integrated with the Architecture Management Framework, which ensures that the processes, roles and
+    responsibilities defined in the Decision Model are adhered to (6).
+</p>
+<p>
+    <strong>Enterprise Technology Framework:</strong> Defines the overall framework of technology components required by an
+    enterprise. Documents all the functional and non-functional requirements of each technology/infrastructure component.
+    Documents the various implementations of each technology component allowed in the enterprise. Documents selected
+    products and standard components. All component parts of each chosen reference model (e.g. ESS templates, Patterns for
+    e-business) will exist in the Enterprise Technology Framework (ETF) - so each reference architecture and it's chosen
+    implementations will be a subset of /instance of the ETF. For example, the Component Model (WP) for a Customer Service
+    System will be a subset/instance of how various components defined in the ETF will be implemented, to support Customer
+    Service. The Enterprise Technology Framework will implement the Principles (2) and the contents will evolve and be
+    managed over time by the Architecture Management Framework (11).
+</p>
+<p>
+    <strong>Architecture Management Framework:</strong> Defines the processes, roles and responsibilities for managing an
+    enterprise-level architecture over time, as new systems and solutions are developed and implemented. Defines the rules
+    and guidelines for when new products and components can be selected.<br />
+    It:
+</p>
+<ul>
+    <li>
+        ensures development projects conform to the principles and use chosen/standard components and products (conformance
+        process)<br />
+    </li>
+    <li>
+        defines when and how non-conformance is allowed (non-conformance process)<br />
+    </li>
+    <li>
+        allows the enterprise-level architecture to be updated and changed over time, as business and IT requirements and
+        capabilities change (vitality and change processes)<br />
+    </li>
+    <li>
+        provides a framework for communicating changes (communications process)
+    </li>
+</ul>
+<p>
+    Management decisions are captured in the Architectural Decisions WP (12).
+</p>
+<p>
+    <strong>Architectural Decisions:</strong> Document all decisions taken during a development or architecture-based
+    project, including (but not limited to) product selection decisions, component design decisions,
+    conformance/non-conformance decisions, with reasons why, plus appropriate management signoffs.
+</p>
+<p>
+    <strong>Individual Projects (CAD, Security, N/W, SM, etc.):</strong> implement a subset of the desired function
+    required by the business.
+</p>
+<ul>
+    <li>
+        will use chosen, pre-selected standards, products, packages, reference architectures etc. where they exist. Project
+        teams will reference several work product outputs, including the Enterprise Technology Framework to understand what
+        these are (8)<br />
+    </li>
+    <li>
+        where no standard/pre-selection exists, or what exists is not appropriate for requirements, they will evaluate and
+        select specific products, packages or components, using given guidelines/prescribed processes, etc., to provide the
+        desired function. The process for agreeing selections which don’t conform to the enterprise-level architectures,
+        are defined in the Architecture Management Framework (9). The Decision Model will provide the evaluation and
+        selection process and criteria (7) and the component and design decisions made will be captured in the
+        Architectural Decisions WP (10).
+    </li>
+</ul>
+<p>
+    As new design and component decisions are made and new standards, etc. are agreed, the Enterprise Technology Framework
+    will be updated (8).
+</p>
+<h3>
+    3&nbsp;Steps
+</h3>
+<p>
+    This technique has four main steps:
+</p>
+<ul>
+    <li>
+        Understand existing evaluation and selection framework<br />
+    </li>
+    <li>
+        Define evaluation criteria<br />
+        <ul>
+            <li>
+                Develop documentation guidelines
+            </li>
+            <li>
+                Select appropriate sample criteria and categories
+            </li>
+            <li>
+                Define evaluation criteria categories
+            </li>
+            <li>
+                Define global evaluation criteria<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        Define evaluation process 
+        <ul>
+            <li>
+                Prepare 'strawman' evaluation process
+            </li>
+            <li>
+                Define scoring technique<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        Document and agree evaluation and selection framework
+    </li>
+</ul>
+<h4>
+    Step 1 – Understand existing evaluation and selection framework
+</h4>
+<p>
+    Using the team's understanding of the current IT environment and processes, document the existing processes, roles and
+    responsibilities involved in product, component and package evaluation and selection.
+</p>
+<ul>
+    <li>
+        This step is often most sensibly done in a workshop environment with all the key stakeholders. Using the samples
+        attached to this TP as a starting point, work through the key roles and responsibilities in the IT/IS department
+        relating to the evaluation and selection of components, products, suppliers, packages etc.
+    </li>
+    <li>
+        Note that the IT Process Model also provides an excellent framework for these tasks. Often you will find that
+        multiple people believe they have responsibility for the same area, whilst for others the ownership and acceptance
+        of responsibility may be sadly lacking.
+    </li>
+</ul>
+<p>
+    Working in this way highlights overlaps and issues, which will be input to the subsequent definition of transition
+    initiatives to implement a common evaluation and selection framework, as part of an overall enterprise-wide decision
+    model.
+</p>
+<h4>
+    Step 2 -&nbsp; Define Evaluation Criteria
+</h4>
+<p>
+    The purpose of this step is to define the general evaluation criteria and categories, which can be used for making
+    decisions regarding components, standards, and products.&nbsp; These general criteria will be customized and made more
+    specific, as each evaluation team prepares to make design and component selection decisions, using the process outlined
+    in the following step.
+</p>
+<p>
+    Both the evaluation process and criteria can be effectively defined as workshop activities.&nbsp; Some consultants have
+    found it useful to define categories of evaluation criteria such as Business Function, Vendor, Performance Criteria and
+    Architecture Compliance to provide a framework for discussing and defining the criteria.
+</p>
+<p>
+    Working as a team, use the sample criteria or a tailored straw man, as a basis for defining the global level
+    criteria.&nbsp; Note: It is very easy at this stage, to spend a lot of time refining to too low a level of detail –
+    remember you’re not doing any detailed evaluation & selection yet – there are other work products, which are used
+    for this more detailed level.
+</p>
+<p>
+    <strong>Develop Documentation Guidelines:</strong> In order for the evaluation criteria to be most effective they must
+    be well communicated.&nbsp; You should develop a documentation template, which will work with your client.&nbsp; We
+    suggest you use the sample criteria and processes attached to this TP as a starting point.
+</p>
+<p>
+    <strong>Select Appropriate Sample Criteria and Categories</strong>: Based on the types of architecture being developed,
+    select appropriate categories for criteria and a starter set for each, from the samples.&nbsp;&nbsp; Consider giving
+    these criteria, as part of an associated discussion paper, to the project team prior to the workshop.
+</p>
+<p>
+    <strong>Define Evaluation Criteria Categories:</strong> Beginning with the selected samples or "straw man", agree on
+    the evaluation criteria categories as a team.&nbsp; Remember to choose categories, which will apply across all types of
+    decisions.
+</p>
+<p>
+    <strong>Define Global Evaluation Criteria:</strong> Define the overall set of evaluation criteria.&nbsp; Remember that
+    the individual criteria within each category may differ for each of the decision types being considered.&nbsp; For
+    example, Vendor Criteria for standards selection might include the number of vendors with products conforming to the
+    standard, while for a product selection decision it would be the number of products offered by a vendor which conform
+    to the corporate standard.
+</p>
+<h4>
+    Step 3 – Define Evaluation Process
+</h4>
+<p>
+    Develop the process by which the evaluation criteria will be used to make business and technology decisions. This step
+    defines the processes that will be used to evaluate and select architecture components as well as other business and
+    technical decisions.&nbsp; This step can be accomplished either in a workshop, or a series of team meetings.
+</p>
+<p>
+    <strong>Prepare Straw Man Evaluation Process:</strong> The IBM Consultants should develop a sample or "straw man"
+    process for decision-making.&nbsp; This will normally involve defining a process for customizing and agreeing weighting
+    criteria, scoring alternatives and selecting an alternative.&nbsp; The client sample evaluation processes and criteria
+    attached to this TP, has some useful guidance.
+</p>
+<p>
+    <strong>Note</strong>: In general, each specific evaluation and selection decision (at the project/design level) will
+    require a review of the overall evaluation criteria and weightings, defined in the previous step.&nbsp; The values of
+    these weightings and criteria will likely vary, depending on the intended usage of the component and functional
+    requirements.&nbsp; For example, a server database and personal database could have significantly different
+    availability, performance, integrity, security and vendor support requirements.&nbsp; This step of reviewing and
+    tailoring the criteria and weights should be included in the overall evaluation process.
+</p>
+<p>
+    <strong>Define Scoring Technique:</strong> Using the "straw man" process developed above, have the team focus on the
+    scoring technique.&nbsp; If a weighting scheme is part of the process, a discussion of who should set the weights and
+    whether or not the evaluation team should be aware of the weights is usually worthwhile.
+</p>
+<p>
+    <strong>Note:</strong> Some would argue that the evaluation team should not set the weights, or even know what they
+    are, to avoid the natural tendency to drive the answer towards a favored solution.&nbsp; This is exactly why we
+    advocate defining the evaluation criteria and their overall weightings here, before they can be influenced, by the
+    developing architecture models and selected reference architectures.<br />
+    For example: A component decision needs to be made on Databases.&nbsp; Product support may be a key evaluation
+    criteria, however the weighting could be different, dependent on whether it was for mission critical or personal
+    database applications.
+</p>
+<p>
+    Another approach to evaluating components is to classify all criteria as "essential", " important", or "nice to
+    have".&nbsp; No combination of "important" criteria can be more significant than any one "essential" criterion and no
+    combination of "nice to have" criteria can be more significant than any one "important" criterion.&nbsp; This scheme
+    forces the evaluation team to define what is really significant to the decision.&nbsp; While this can be quite
+    difficult, it will allow the team to make a decision based on essential requirements, using the important and nice to
+    have items, only for tie-breakers.
+</p>
+<h4>
+    Step 4 - Document and agree Evaluation and Selection Framework
+</h4>
+<p>
+    Document the evaluation and selection criteria and processes defined above and agree with sponsor and stakeholders.
+    Once these have agreed they should become an integral part of existing processes within the IT organization.
+</p>
+<h3>
+    4&nbsp;Tools
+</h3>
+<p>
+    •&nbsp;Use word processing tools, for example, MS Word, for textual documents defining processes, roles and
+    responsibilities and evaluation and selection criteria<br />
+    •&nbsp;Use VISIO (or similar) for Process flow diagrams (also used for communication)<br />
+    •&nbsp;Use spreadsheets/tables during evaluation and selection activities to capture findings.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/examples/new_tech_prod_svc_eval_94FBB2A7.html" guid="_dlR0IMldEdy6mMMvM1ApSA">New Technology (Product/Service) Evaluation</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

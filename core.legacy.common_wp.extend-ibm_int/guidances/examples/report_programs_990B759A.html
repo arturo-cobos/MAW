@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Report Programs</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="report_programs">
+<meta name="uma.presentationName" content="Report Programs">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_wGG-AES2EdyDPKg15sK9ZA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Report Programs</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The following example was taken from the help text of Lotus Approach. It illustrates how query files are used to access information in databases. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/report_programs_CD7DF2D8.html" guid="mweb9431D5152BF68CD6852568850059807B">Report Programs</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Query files allow you to quickly connect to a server and gain access to specific information in either SQL or non-SQL
+    databases (such as dBASE, FoxPro, and Paradox).<br />
+</p>
+<p>
+    File extension: .QRY<br />
+</p>
+<p>
+    Create or edit a query file using any text editor. These are the commands you can use:<br />
+</p>
+<p>
+    Type=Oracle or SQLServer or DB2-MDI or Notes or ODBC type<br />
+</p>
+<p>
+    Network=protocol letter (for Oracle SQL*NET1.x only)<br />
+</p>
+<p>
+    Path=name of the database server<br />
+</p>
+<p>
+    User=your name<br />
+</p>
+<p>
+    Password=your password<br />
+</p>
+<p>
+    Database=name of the database (for SQL Server only)<br />
+</p>
+<p>
+    Select valid SELECT statement<br />
+</p>
+<p>
+    The commands for a query file are case-insensitive. They can appear in any order with the exception of the SELECT
+    statement, which must be the last command. All of the commands except for Type and Select are optional. If the query
+    file does not contain enough log-on information, a Connect dialog box appears when you open the file so that you can
+    fill in the remaining information. If you include spaces or non-alphanumeric characters in a parameter, the parameter
+    must be enclosed in double quotation marks (" ").<br />
+</p>
+<p>
+    This is an example of an Oracle query file:<br />
+</p>
+<p>
+    Type=Oracle<br />
+</p>
+<p>
+    Network=X (for Oracle SQL*NET1.x only)<br />
+</p>
+<p>
+    Path=ORASRV<br />
+</p>
+<p>
+    User=Rich<br />
+</p>
+<p>
+    Password=sequoia<br />
+</p>
+<p>
+    Select Name,Address,City From Employee<br />
+</p>
+<p>
+    This is an example of a dBASE query file:<br />
+</p>
+<p>
+    Type=dBASE<br />
+</p>
+<p>
+    Select firstname, lastname from "c:\temp\emp.dbf"
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

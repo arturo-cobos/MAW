@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing Program Module Invocation Model</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="prog_module_invoc_model_dev">
+<meta name="uma.presentationName" content="Developing Program Module Invocation Model">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_uy4rUESlEdyDPKg15sK9ZA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_uy4rUESlEdyDPKg15sK9ZA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing Program Module Invocation Model</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Migrated development approach from existing IBM Global Services Method work product.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/prog_module_invoc_model_50BDCE38.html" guid="mwebE1324C9B36B2D4488525688500556619">Program Module Invocation Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">The steps involving the transformation of the information in a functional model to a Program Module Invocation Model are
+inherently iterative. They are structured design. 
+<ul>
+    <li>
+        <div>
+            Identify the major transaction processing modules. These modules will be placed near the top of the call
+            structure. Transaction Analysis is a design strategy by which the structure of a system is derived from a study
+            of the transactions that the system must process. At the highest levels of the functional model, the major
+            processes often relate to major system interactions with external actors. Make each of the major
+            transaction-oriented processes a module invoked near the root of the call hierarchy. These modules allow the
+            system to be partitioned into more tractable units of design. The design effort can then be pursued by separate
+            teams, each working within its partition of the system.
+        </div>
+    </li>
+    <li>
+        <div>
+            Identify the data processing modules. Transform Analysis is a design strategy in which the structure of the
+            system is derived from the flow of data through a system and the transformations that occur to that data. The
+            data flow diagrams (DFDs) under the main transaction-oriented processes provide the main vehicle for factoring
+            the remaining system.
+        </div>
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        - Starting at the top of the DFD hierarchy, identify the central transform for each diagram. The central transform
+        represents the most basic or essential piece of work performed by the processes of that DFD. The central
+        transform’s action may be comprised of one or more processes near the center of the data flow in the DFD.
+        Frequently on DFDs, processes acting as sources or links for off-page data flows play a data formatting role. When
+        these are conceptually removed, what remains is an indication of the central transform’s action. The central
+        transform is promoted to be the highest, or controlling, module in this piece of the call hierarchy.<br />
+        - Once the controlling module is identified, it is named to describe the action of the entire set of modules below
+        it. Its data interface must be designed to support the transient data needs of its subordinate modules. The
+        subordinate modules are identified using the processes of the DFD as a starting point. Detailed processing is
+        removed from the controlling module and placed in the subordinate ones, moving invocation logic towards the root,
+        and algorithmic implementation towards the leaves of the call tree. The subordinate modules are descriptively
+        named, and their interfaces are made to support the transient data needs of their subordinates.
+    </p>
+</blockquote>
+<ul>
+    <li>
+        <div>
+            Study the entire module structure for characteristics of good design.
+        </div>
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        - Where redundancy occurs, either in one module or among several, factor it out into its own module.<br />
+        - Study the fan-out (the number of immediate subordinates a module has) of the modules in the hierarchy. Try to
+        limit this number to no more than seven. Modules with excessive fan-out should be factored.<br />
+        - Study the fan-in (the number of modules that invoke a particular module) of the modules in a hierarchy. A high
+        fan-in number often indicates a high level or reuse; however, make sure that such modules are cohesive and their
+        interfaces are identical across invocations.<br />
+        - Assess the cohesion of each module. The components of a module are associated with each other by virtue of their
+        co-location in the module. In a well-designed module, this co-location is based on some functional association,
+        i.e., the module is cohesive. Some examples of justifiable component association include combination to perform a
+        particular task, combination because the invocation sequence is common, and combination because all the components
+        share a data interface. Modules with low cohesion should be factored.<br />
+        - Assess the coupling between modules. Coupling is the degree of dependence one module has on another. Higher
+        coupling increases the ripple effect of errors and changes in a system. Minimal, obvious, appropriately structured
+        data interfaces between modules minimize coupling. Global data and program execution jumps to share code increase
+        coupling to inappropriate levels.
+    </p>
+</blockquote></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

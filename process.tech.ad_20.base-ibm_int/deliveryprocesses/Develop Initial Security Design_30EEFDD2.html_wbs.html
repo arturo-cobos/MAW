@@ -1,0 +1,688 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Activity: Develop Initial Security Design</title>
+<meta name="uma.type" content="Activity">
+<meta name="uma.name" content="Develop Initial Security Design">
+<meta name="uma.presentationName" content="Develop Initial Security Design">
+<meta name="element_type" content="workflow_detail">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_g91Ka9uSEd-uj6_0XU4muw&path=_g91Ka9uSEd-uj6_0XU4muw,_G5o5Ld0jEd-Yr79L5-CRdw,_G5yp5t0jEd-Yr79L5-CRdw,_G5yqWN0jEd-Yr79L5-CRdw,_G5yqc90jEd-Yr79L5-CRdw';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_G5yqc90jEd-Yr79L5-CRdw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Activity: Develop Initial Security Design</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/activity.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The designing of the specific solution begins, the security framework is molded and shaped.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="10" class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/Develop Initial Security Design_30EEFDD2.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Work Breakdown Structure</span></td><td width="1"><img src="./../../images/tab_middle-a_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_TBS" href="./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/Develop Initial Security Design_30EEFDD2.html_tbs.html"><span style="white-space:nowrap;">Team Allocation</span></a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WPBS" href="./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/Develop Initial Security Design_30EEFDD2.html_wpbs.html"><span style="white-space:nowrap;">Work Product Usage</span></a></td><td width="21"><img src="./../../images/tab_end-i.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="2"><img src="./../../images/shim.gif" height="2" alt="" title=""></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="5"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Work Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Work Breakdown", summary: "Work Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["steps", "Steps"],
+["id", "Index"],
+["predecessors", "Predecessors"],
+["model_info", "Model Info"],
+["type", "Type"],
+["is_planned", "Planned"],
+["is_repeatable", "Repeatable"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_ongoing", "Ongoing"],
+["is_event_driven", "Event Driven"],
+["is_optional", "Optional"],
+["teams", "Team"]],
+rows: [
+		
+{id: "682b482", parentId: "", relPath: ",_G5yqbt0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "169", prefix: "", name: "refine_security_req_and_comp", title: "Refine Security Requirements and Components", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/refine_security_req_and_comp_38345EE.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7f8be55a", parentId: "682b482", relPath: ",_G5yqbt0jEd-Yr79L5-CRdw,_G5yqdt0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_privacy_consultant", title: "Security and Privacy Consultant", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_privacy_consultant_8CA70A2C.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "36ae3adb", parentId: "682b482", relPath: ",_G5yqbt0jEd-Yr79L5-CRdw,_G5yqf90jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "use_case_model", title: "Use-Case Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/use_case_model_7EA4A42F.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "39d3d0cd", parentId: "682b482", relPath: ",_G5yqbt0jEd-Yr79L5-CRdw,_G5yqct0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/architectural_decisions_C815280D.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ea131bfb", parentId: "682b482", relPath: ",_G5yqbt0jEd-Yr79L5-CRdw,_rCCZlfP8Ed-v2O3NnRmrFw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "nonfunctional_requirements", title: "Non-Functional Requirements", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/nonfunctional_requirements_EF8BAE43.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "371e313f", parentId: "682b482", relPath: ",_G5yqbt0jEd-Yr79L5-CRdw,_G5yqet0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "operational_model", title: "Operational Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/operational_model_5138EC4B.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "dfb848ad", parentId: "682b482", relPath: ",_G5yqbt0jEd-Yr79L5-CRdw,_G5yqft0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_privacy_rqmts", title: "Security and Privacy Requirements", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_privacy_rqmts_15CACE6A.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "76936d73", parentId: "682b482", relPath: ",_G5yqbt0jEd-Yr79L5-CRdw,_G5yqad0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_architecture", title: "Security Architecture", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_architecture_345383BF.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "cb99d359", parentId: "682b482", relPath: ",_G5yqbt0jEd-Yr79L5-CRdw,_G5yqft0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_privacy_rqmts", title: "Security and Privacy Requirements", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_privacy_rqmts_15CACE6A.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "57f32b3e", parentId: "", relPath: ",_G5yqfN0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "170", prefix: "", name: "map_design_objectives_to_subsystems", title: "Map Design Objectives to Subsystems", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/map_design_objectives_to_subsystems_1C93DA44.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "69a0ff40", parentId: "57f32b3e", relPath: ",_G5yqfN0jEd-Yr79L5-CRdw,_G5yqdt0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_privacy_consultant", title: "Security and Privacy Consultant", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_privacy_consultant_8CA70A2C.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "cb9e7e6", parentId: "57f32b3e", relPath: ",_G5yqfN0jEd-Yr79L5-CRdw,_G5yqct0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/architectural_decisions_C815280D.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "9cc57b02", parentId: "57f32b3e", relPath: ",_G5yqfN0jEd-Yr79L5-CRdw,_G5yqdN0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "principles_policies_guidelines", title: "Principles - Policies and Guidelines", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/principles_policies_guidelines_93701606.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "3ce12190", parentId: "57f32b3e", relPath: ",_G5yqfN0jEd-Yr79L5-CRdw,_G5yqad0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_architecture", title: "Security Architecture", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_architecture_345383BF.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "23f3e286", parentId: "57f32b3e", relPath: ",_G5yqfN0jEd-Yr79L5-CRdw,_G5yqcN0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_architecture_principles", title: "Security Architecture Principles", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_architecture_principles_CEDE33E7.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e38ecc65", parentId: "57f32b3e", relPath: ",_G5yqfN0jEd-Yr79L5-CRdw,_G5yqad0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_architecture", title: "Security Architecture", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_architecture_345383BF.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "4040428d", parentId: "", relPath: ",_G5yqa90jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "171", prefix: "", name: "map_assets_and_actor_groups_to_zones", title: "Map Assets and Actor Groups to Zones", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/map_assets_and_actor_groups_to_zones_A7CB3994.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "61d2cf03", parentId: "4040428d", relPath: ",_G5yqa90jEd-Yr79L5-CRdw,_G5yqdt0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_privacy_consultant", title: "Security and Privacy Consultant", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_privacy_consultant_8CA70A2C.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "c9bb5cbd", parentId: "4040428d", relPath: ",_G5yqa90jEd-Yr79L5-CRdw,_G5yqct0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/architectural_decisions_C815280D.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1d1b0167", parentId: "4040428d", relPath: ",_G5yqa90jEd-Yr79L5-CRdw,_G5yqdN0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "principles_policies_guidelines", title: "Principles - Policies and Guidelines", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/principles_policies_guidelines_93701606.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "690cc09", parentId: "4040428d", relPath: ",_G5yqa90jEd-Yr79L5-CRdw,_G5yqad0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_architecture", title: "Security Architecture", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_architecture_345383BF.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "8ddd553d", parentId: "4040428d", relPath: ",_G5yqa90jEd-Yr79L5-CRdw,_G5yqcN0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_architecture_principles", title: "Security Architecture Principles", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_architecture_principles_CEDE33E7.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ed31a3ef", parentId: "4040428d", relPath: ",_G5yqa90jEd-Yr79L5-CRdw,_G5yqad0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_architecture", title: "Security Architecture", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_architecture_345383BF.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "6d6f4c77", parentId: "", relPath: ",_G5yqeN0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "172", prefix: "", name: "map_security_zones_to_client_env", title: "Map Security Zones to Client Environment", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/map_security_zones_to_client_env_5801F825.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "87ebd1b8", parentId: "6d6f4c77", relPath: ",_G5yqeN0jEd-Yr79L5-CRdw,_G5yqdt0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_privacy_consultant", title: "Security and Privacy Consultant", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_privacy_consultant_8CA70A2C.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "dc9c961a", parentId: "6d6f4c77", relPath: ",_G5yqeN0jEd-Yr79L5-CRdw,_G5yqet0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "operational_model", title: "Operational Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/operational_model_5138EC4B.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "c4e3480c", parentId: "6d6f4c77", relPath: ",_G5yqeN0jEd-Yr79L5-CRdw,_G5yqe90jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_specification_slot", title: "[Technical Specification]", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/technical_specification_slot_BA12C210.html", 
+	predecessors: "", info: "Optional Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "49871c34", parentId: "6d6f4c77", relPath: ",_G5yqeN0jEd-Yr79L5-CRdw,_G5yqct0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/architectural_decisions_C815280D.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "9641f118", parentId: "6d6f4c77", relPath: ",_G5yqeN0jEd-Yr79L5-CRdw,_G5yqaN0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "component_model", title: "Component Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/component_model_45BA6FA9.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "36c2f90a", parentId: "6d6f4c77", relPath: ",_G5yqeN0jEd-Yr79L5-CRdw,_G5yqad0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_architecture", title: "Security Architecture", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_architecture_345383BF.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ecf945e6", parentId: "6d6f4c77", relPath: ",_G5yqeN0jEd-Yr79L5-CRdw,_G5yqet0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "operational_model", title: "Operational Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/operational_model_5138EC4B.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "29838b9b", parentId: "", relPath: ",_G5yqfd0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "173", prefix: "", name: "map_subsystems_to_nodes", title: "Map Subsystems to Nodes", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/map_subsystems_to_nodes_B2CEE5A.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "c0fac76f", parentId: "29838b9b", relPath: ",_G5yqfd0jEd-Yr79L5-CRdw,_G5yqdt0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_privacy_consultant", title: "Security and Privacy Consultant", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_privacy_consultant_8CA70A2C.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7174007b", parentId: "29838b9b", relPath: ",_G5yqfd0jEd-Yr79L5-CRdw,_G5yqaN0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "component_model", title: "Component Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/component_model_45BA6FA9.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "6ce84255", parentId: "29838b9b", relPath: ",_G5yqfd0jEd-Yr79L5-CRdw,_G5yqet0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "operational_model", title: "Operational Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/operational_model_5138EC4B.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e1253487", parentId: "29838b9b", relPath: ",_G5yqfd0jEd-Yr79L5-CRdw,_G5yqct0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/architectural_decisions_C815280D.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "126492ff", parentId: "29838b9b", relPath: ",_G5yqfd0jEd-Yr79L5-CRdw,_G5yqad0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_architecture", title: "Security Architecture", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_architecture_345383BF.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7b1fd8b0", parentId: "29838b9b", relPath: ",_G5yqfd0jEd-Yr79L5-CRdw,_G5yqet0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "operational_model", title: "Operational Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/operational_model_5138EC4B.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d5143e74", parentId: "", relPath: ",_G5yqat0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "174", prefix: "", name: "map_nodes_to_security_zones", title: "Map Nodes to Security Zones", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/map_nodes_to_security_zones_3EF163CF.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7dc8f510", parentId: "d5143e74", relPath: ",_G5yqat0jEd-Yr79L5-CRdw,_G5yqdt0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_privacy_consultant", title: "Security and Privacy Consultant", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_privacy_consultant_8CA70A2C.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d6212a1a", parentId: "d5143e74", relPath: ",_G5yqat0jEd-Yr79L5-CRdw,_G5yqet0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "operational_model", title: "Operational Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/operational_model_5138EC4B.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "4fbc5cdc", parentId: "d5143e74", relPath: ",_G5yqat0jEd-Yr79L5-CRdw,_G5yqct0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/architectural_decisions_C815280D.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e9781958", parentId: "d5143e74", relPath: ",_G5yqat0jEd-Yr79L5-CRdw,_G5yqad0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_architecture", title: "Security Architecture", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_architecture_345383BF.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "37568f3a", parentId: "d5143e74", relPath: ",_G5yqat0jEd-Yr79L5-CRdw,_G5yqet0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "operational_model", title: "Operational Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/operational_model_5138EC4B.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "f690645e", parentId: "", relPath: ",_G5yqcd0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "175", prefix: "", name: "valid_path_walk_design_consistent_assure", title: "Validate Pathway/ Walkthrough/ Design Consistency Assurance", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/valid_path_walk_design_consistent_assure_BD7747FD.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "971bb287", parentId: "f690645e", relPath: ",_G5yqcd0jEd-Yr79L5-CRdw,_G5yqdt0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_privacy_consultant", title: "Security and Privacy Consultant", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_privacy_consultant_8CA70A2C.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "11bb78e9", parentId: "f690645e", relPath: ",_G5yqcd0jEd-Yr79L5-CRdw,_G5yqet0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "operational_model", title: "Operational Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/operational_model_5138EC4B.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d4cb6eed", parentId: "f690645e", relPath: ",_G5yqcd0jEd-Yr79L5-CRdw,_G5yqet0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "operational_model", title: "Operational Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/operational_model_5138EC4B.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "213e3e71", parentId: "", relPath: ",_G5yqd90jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "176", prefix: "", name: "incorporate_security_testint", title: "Incorporate Security in Testing", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/incorporate_security_testint_F580DFF1.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "caf22c07", parentId: "213e3e71", relPath: ",_G5yqd90jEd-Yr79L5-CRdw,_G5yqdt0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_privacy_consultant", title: "Security and Privacy Consultant", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_privacy_consultant_8CA70A2C.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "efabc5bd", parentId: "213e3e71", relPath: ",_G5yqd90jEd-Yr79L5-CRdw,_G5yqed0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "test_strategy", title: "Test Strategy", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/test_strategy_469B0C3B.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "4058ea84", parentId: "213e3e71", relPath: ",_G5yqd90jEd-Yr79L5-CRdw,_G5yqct0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/architectural_decisions_C815280D.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "590d68b0", parentId: "213e3e71", relPath: ",_G5yqd90jEd-Yr79L5-CRdw,_G5yqbN0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "business_event_list", title: "Business Event List", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/business_event_list_A4C51C8.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7613b724", parentId: "213e3e71", relPath: ",_G5yqd90jEd-Yr79L5-CRdw,_G5yqb90jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "master_test_plan", title: "Master Test Plan", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/master_test_plan_6C5D1BB3.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d67980", parentId: "213e3e71", relPath: ",_G5yqd90jEd-Yr79L5-CRdw,_G5yqet0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "operational_model", title: "Operational Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/operational_model_5138EC4B.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "dfb64724", parentId: "213e3e71", relPath: ",_G5yqd90jEd-Yr79L5-CRdw,_G5yqft0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_privacy_rqmts", title: "Security and Privacy Requirements", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_privacy_rqmts_15CACE6A.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "2ac1817a", parentId: "213e3e71", relPath: ",_G5yqd90jEd-Yr79L5-CRdw,_G5yqad0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_architecture", title: "Security Architecture", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_architecture_345383BF.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "3c8c3c2", parentId: "213e3e71", relPath: ",_G5yqd90jEd-Yr79L5-CRdw,_G5yqf90jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "use_case_model", title: "Use-Case Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/use_case_model_7EA4A42F.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "4edcd76d", parentId: "213e3e71", relPath: ",_G5yqd90jEd-Yr79L5-CRdw,_G5yqed0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "test_strategy", title: "Test Strategy", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/test_strategy_469B0C3B.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "aa9d2e1d", parentId: "", relPath: ",_G5yqbd0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "177", prefix: "", name: "perform_risk_assurance", title: "Perform Risk Assurance", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/perform_risk_assurance_F8E565DE.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d83eeb41", parentId: "aa9d2e1d", relPath: ",_G5yqbd0jEd-Yr79L5-CRdw,_G5yqdt0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_privacy_consultant", title: "Security and Privacy Consultant", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_privacy_consultant_8CA70A2C.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1a201945", parentId: "aa9d2e1d", relPath: ",_G5yqbd0jEd-Yr79L5-CRdw,_G5yqet0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "operational_model", title: "Operational Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/operational_model_5138EC4B.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "67bc6649", parentId: "aa9d2e1d", relPath: ",_G5yqbd0jEd-Yr79L5-CRdw,_G5yqct0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/architectural_decisions_C815280D.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "9fd652bf", parentId: "aa9d2e1d", relPath: ",_G5yqbd0jEd-Yr79L5-CRdw,_G5yqad0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_architecture", title: "Security Architecture", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_architecture_345383BF.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "fbeb367b", parentId: "aa9d2e1d", relPath: ",_G5yqbd0jEd-Yr79L5-CRdw,_G5yqet0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "operational_model", title: "Operational Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/operational_model_5138EC4B.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

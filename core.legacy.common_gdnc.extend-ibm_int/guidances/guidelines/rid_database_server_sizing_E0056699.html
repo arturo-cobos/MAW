@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: RID Database Server Sizing (RDBMS)</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="rid_database_server_sizing">
+<meta name="uma.presentationName" content="RID Database Server Sizing (RDBMS)">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mwebA296C2E4D05B212385256A69004B4CBD"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebA296C2E4D05B212385256A69004B4CBD"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: RID Database Server Sizing (RDBMS)</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline provides the general concepts for sizing database systems generically across multiple platforms. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    There are a few widely used Relational Database Management Systems (RDBMS) such as DB2 UDB, Oracle, Sybase, and
+    Informix. Although they have the same goal, their implementations are quite different. This TP provides a generic
+    approach to sizing a database server and then points to tools specific to each.
+</p>
+<h3>
+    1&nbsp;Steps
+</h3>
+<p>
+    The following sections address the considerations when sizing for a database server.
+</p>
+<ul>
+    <li>
+        Starting Point for Sizing RDBMS
+    </li>
+    <li>
+        RDBMS Utilization
+    </li>
+    <li>
+        Sizing RDBMS – Formulas
+    </li>
+    <li>
+        Example Sizing Scenario
+    </li>
+    <li>
+        Additional Tools
+    </li>
+</ul>
+<h3>
+    2&nbsp;Starting Point for Sizing RDBMS
+</h3>
+<p>
+    The real problem of sizing RDBMS is accuracy. Initial sizing is a prediction based on few or no facts. Ideally, you
+    should understand the following when sizing an RDBMS server:
+</p>
+<ul>
+    <li>
+        Complexity of the transactions
+    </li>
+    <li>
+        Transaction rate
+    </li>
+    <li>
+        Read / write ratio
+    </li>
+    <li>
+        Number of concurrent connections
+    </li>
+    <li>
+        Number of concurrent transactions
+    </li>
+    <li>
+        Sizes of the largest table
+    </li>
+    <li>
+        Performance objectives 
+        <ul>
+            <li>
+                &nbsp;Throughput
+            </li>
+            <li>
+                &nbsp;Maintenance windows such as backup, re-org, load
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    In the following sections we are going to cover the general rules based on the results of experience in system sizing,
+    benchmarks, and performance tuning.
+</p>
+<h3>
+    3&nbsp;RDBMS utilization
+</h3>
+<p>
+    These utilization figures are the results of benchmarks and monitoring well balance and high performance production
+    systems.
+</p>
+<p>
+    <img height="294" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/rdbms_table1.JPG" width="598" /><br />
+</p>
+<p>
+    <strong>-Network:</strong>
+</p>
+<p>
+    30 percent of theoretical network bandwidth stops collisions on an Ethernet type network from becoming a problem, which
+    reduces throughput. Token ring type networks can be driven to 60 percent with no drop in throughput.
+</p>
+<p>
+    <strong>- Paging Space:</strong>
+</p>
+<p>
+    If your system is small and has many users, we recommend three times memory. If your system is large, some systems go
+    below this size because lots of memory is used for the RDBMS cache and it therefore does not need paging space.
+</p>
+<h3>
+    4&nbsp;Sizing RDBMS
+</h3>
+<p>
+    The following formulas work best for UNIX based platforms.&nbsp; If sizing on NT or W2K use the platform specific tool
+    in the tools section.
+</p>
+<p>
+    <strong>Sizing memory</strong>
+</p>
+<p>
+    To size the amount of memory required, the number of concurrent users and the query workload characteristics should be
+    considered. More users require more memory. Large DSS style scan queries may not require as much because no amount of
+    memory can contain the huge volumes of data. Smaller and indexed based complex queries can make use of more memory to
+    cache data.
+</p>
+<p>
+    If you do not have any information such as the number of concurrent users and the query workload characteristics,
+    memory can very roughly be sized as five percent of the raw data size plus OS requirements and 32 MB for RDBMS
+    processes.
+</p>
+<p>
+    If you have the necessary information, the following a formula that can be used to compute necessary memory more
+    accurately:
+</p>
+<p>
+    <strong>Add all of the following:</strong>
+</p>
+<p>
+    <strong>+Memory required for OS</strong>
+</p>
+<p>
+    <strong>+ RDBMS_code</strong>
+</p>
+<p>
+    <strong>+ RDMBS_data_cache</strong>
+</p>
+<p>
+    <strong>+ (Users * Application_Resident_Set)</strong>
+</p>
+<p>
+    <strong>+ Filesystem Cache</strong>
+</p>
+<p>
+    <em>See the following descriptions for the formula.&nbsp; An example of using this formula is shown later in this
+    document.</em>
+</p>
+<p>
+    <strong>- OS: Start with the memory required for the operating system.&nbsp; (Example: AIX requires 64MB)</strong>
+</p>
+<p>
+    <strong>- RDBMS_code: Add how much memory the actual code will require.&nbsp; (Recommend at least 32 MB)</strong>
+</p>
+<p>
+    <strong>- Application Resident Set:</strong>
+</p>
+<p>
+    This is the code and data of the application that each user needs to run. The resident set refers to the fact that a
+    paging system does not need to have the entire program in memory to run and usually only a proportion of the
+    application is required.&nbsp; If the exact application resident set is unavailable, the following is a starting point:
+</p>
+<ul>
+    <li>
+        We recommend for a simple application coded, for example, in an efficient development language such as C to use 2
+        MB per user.
+    </li>
+    <li>
+        We recommend for a more complex application with a lot of functions or written in a modern 4GL environment to use 6
+        MB for each user.
+    </li>
+</ul>
+<p>
+    <strong>-RDBMS data cache</strong>
+</p>
+<p>
+    If the RDBMS data is held in file systems, a large file system cache is required. If the RDBMS data is held in raw
+    disks such as VSD, then the file system size can be reduced in favor of more RDBMS cache. Rules of thumb are:
+</p>
+<ul>
+    <li>
+        A minimum of 32 MB is required for the combined caches.&nbsp;
+    </li>
+    <li>
+        For an OLTP application a good starting point would be to use five percent for data disk size (means raw data size
+        plus header of RDBMS, 5 - 10 percent is recommended as a rule of thumb) for the RDBMS data cache.
+    </li>
+</ul>
+<p>
+    For setting the size of the RDBMS cache in practice production the following is used:
+</p>
+<ul>
+    <li>
+        Start point if you have no information is half of memory for the RDBMS cache.
+    </li>
+    <li>
+        In OLTP systems the cache is often higher, such as 70 percent of memory, to ensure the most often used tables and
+        rows are always in memory.
+    </li>
+    <li>
+        In many complex CPU heavy applications and Business Intelligence (BI) or DSS workloads use less memory, such as 30
+        percent of memory, for the RDBMS cache if they effectively have to read large proportions of the database to answer
+        SQL statements.
+    </li>
+</ul>
+<p>
+    <strong>-File system cache</strong>
+</p>
+<p>
+    The file system cache is used by the operating system to save copies of recently used disk locks. It avoids disk I/O
+    for performance. Even if the RDBMS uses raw devices (including Oracle on SP using the VSD raw devices), the system
+    needs some file system cache. When the RDBMS uses the file system cache, a balance must be made between RDBMS cache and
+    filesystem cache (in the ratio 3 to 1). The combined size will be similar to the RDBMS cache size for raw device
+    databases.
+</p>
+<p>
+    <strong>Sizing Processor</strong>
+</p>
+<p>
+    There is no generic approach to sizing processor(s).&nbsp; To determine this you should study benchmarks specific to
+    the hardware platform you are running.&nbsp; It is, however, considerably easier to decide on processing power now that
+    you have estimated how much memory you will require.&nbsp; IBM benchmarks can be found at <a href="http://www.spec.org/">http://www.spec.org/</a>
+</p>
+<p>
+    <strong>Sizing Disk Space</strong>
+</p>
+<p>
+    The disk space can be very roughly sized via following raw data to disk space ratios as a rule of thumb. If you do not
+    have any information, use 1: 3 raw data to disk space ratio.
+</p>
+<ul>
+    <li>
+        OLTP Ratio 1 : 3 to 1 : 4
+    </li>
+    <li>
+        DSS Ratio 1 : 4 to 1 : 5
+    </li>
+    <li>
+        Data Warehouse Ratio 1 : 5 to 1 : 7
+    </li>
+</ul>
+<p>
+    For example, your raw data size was 300 GB on a DSS environment, 1.2 TB - 1.5 TB non-mirrored or 2.4 TB - 3.0 TB
+    mirrored disk space is required.
+</p>
+<p>
+    The prime RDBMS data parts of any RDBMS are:
+</p>
+<ol>
+    <li>
+        Data: User data are contained.
+    </li>
+    <li>
+        Index: This is almost the same size as data.
+    </li>
+    <li>
+        Tmp/sort: This is used for creating indexes and sorting temporary tables during SQL statements, which can be larger
+        than the largest table in the database.
+    </li>
+</ol>
+<p>
+    You should add the RDBMS header for each part mentioned above. It can be roughly estimated from raw data size plus the
+    header of RDBMS; 10 percent is recommended as a rule of thumb.
+</p>
+<p>
+    <strong>Sizing the Number of Disks</strong>
+</p>
+<p>
+    This will depend greatly on the disk drives available for the system you are sizing.&nbsp; You should decide which disk
+    drive is good for your system based on database size and considering I/O requirements. Many small disks increase the
+    I/O throughput but require extra adapters and PCI bus slots. Larger disks are generally less expensive per GB of
+    storage.
+</p>
+<h3>
+    5&nbsp;Sizing Example
+</h3>
+<p>
+    We are going to size the database system for an imaginary corporation Corporation.com. Some of the information below is
+    only necessary to compute processing power, which is not done in the example.&nbsp; The assumed transactions of
+    Corporation.com are:
+</p>
+<ol>
+    <li>
+        Peak Time: 10:00 - 11:00 = 1 hour = 3600 seconds
+    </li>
+    <li>
+        Transaction type: Typical simple application without complex queries
+    </li>
+    <li>
+        The number of users 
+        <ul>
+            <li>
+                - Light = 2000
+            </li>
+            <li>
+                - Medium = 50
+            </li>
+            <li>
+                - Heavy = 5
+            </li>
+        </ul>
+    </li>
+    <li>
+        The number of transaction per user in the peak period
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                - Light = 120 transactions / user
+            </li>
+            <li>
+                - Medium = 60 transactions / user
+            </li>
+            <li>
+                - Heavy = 15 transactions / user
+            </li>
+        </ul>
+    </li>
+    <li>
+        CPU seconds per transaction on a 1 Rel.OLTP machine
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                - Light = 1
+            </li>
+            <li>
+                - Medium = 3
+            </li>
+            <li>
+                - Heavy = 15
+            </li>
+        </ul>
+    </li>
+    <li>
+        Maximum CPU utilization: 60 percent
+    </li>
+    <li>
+        Raw data size: 100 GB
+    </li>
+</ol>
+<p>
+    <strong>Step 1: Sizing memory</strong>
+</p>
+<p>
+    We can calculate the amount of memory using the formula mentioned above in the&nbsp; “Sizing memory” portion. We assume
+    the RDBMS is based on raw devices, and application resident set size is 4 MB.&nbsp; We are also assuming AIX for OS
+    requirements.
+</p>
+<p>
+    Memory = AIX
+</p>
+<p>
+    + RDBMS_code
+</p>
+<p>
+    + RDBMS_data_cache
+</p>
+<p>
+    + (User * Application_Resident_Set)
+</p>
+<p>
+    + Filesystem_Cache
+</p>
+<p>
+    = 64 required for AIX
+</p>
+<p>
+    + 32  standard amount required for RDBMS_data_cache
+</p>
+<p>
+    + (100 * 0.05 * 1024)  Variable amt required (Five percent of Raw data size plus header of RDBMS)
+</p>
+<p>
+    + (2000 + 50 + 5) * 4  Number of users multiplied by application resident size (4MB)
+</p>
+<p>
+    + 32  File system cache
+</p>
+<p>
+    = 13468 MB = 13.5 GB
+</p>
+<p>
+    <strong>Step Two: Sizing Disk</strong>
+</p>
+<p>
+    We assume the RDBMS header is 10 percent of raw data size. The application of Corporation.com is a typical OLTP
+    application. So, we can use 1: 3 ratio, but in this case we consider the RDBMS header and we assume the ratio of Data:
+    Index: Tmp / Sort = 1: 1: 1. The total size of data is estimated as follows:
+</p>
+<ul>
+    <li>
+        RDBMS Data = 100 GB + 10 percent = 110 GB
+    </li>
+    <li>
+        RDBMS Index = 100 GB + 10 percent = 110 GB
+    </li>
+    <li>
+        RDBMS Tmp / Sort = 100 GB + 10 percent = 110 GB
+    </li>
+</ul>
+<p>
+    Therefore, the total size of data is 330 GB. You should consider the disks for AIX, paging space, and RDBMS log. We
+    recommend one disk for each.<br />
+</p>
+<p>
+    <strong>Step Three: Sizing the number of disks</strong>
+</p>
+<p>
+    The application of Corporation.com is a typical OLTP application, so 10 – 20 small disks for each CPU are recommended.
+    We chose 9.1 GB SSA disks. We decide to use mirroring of AIX LVM for disk protection.
+</p>
+<ul>
+    <li>
+        Data: 110 GB / 8.75 * 2 mirror = 26 disks
+    </li>
+    <li>
+        Index: 110 GB / 8.75 * 2 mirror = 26 disks
+    </li>
+    <li>
+        Tmp / sort: 110 GB / 8.75 * 2 mirror = 26 disks
+    </li>
+    <li>
+        1 RDBMS log * 2 mirror = 2 disks per node
+    </li>
+</ul>
+<p>
+    Moreover, four 9.1 GB SCSI internal disks are needed for AIX and paging space using LVM mirroring.
+</p>
+<p>
+    <strong>Step Four: Sizing Processor</strong>
+</p>
+<p>
+    Study appropriate benchmarks, and make a selection taking into account the amount of RAM you determined and any other
+    factors you have available such as complexity of transactions, number of users during peak time, maximum CPU
+    utilization, and so forth.
+</p>
+<p>
+    <strong>Step Five: Configure System</strong>
+</p>
+<ul>
+    <li>
+        Memory: 13.5 GB
+    </li>
+    <li>
+        Disk space: 330 GB plus disk protection
+    </li>
+    <li>
+        Number of disks: 80 disks for data and log, 4 disks for AIX and paging space
+    </li>
+</ul>
+<p>
+    <strong>Additional Tools</strong>
+</p>
+<p>
+    <strong>DB2 UDB for OS/390 Estimator</strong>
+</p>
+<p>
+    DB2 Estimator is an easy-to-use, stand-alone tool for estimating the performance of DB2 for OS/390 Versions 5, 6, and 7
+    applications.&nbsp; It can be run online or downloaded for mobile use.&nbsp; The URL:&nbsp; <a href="http://www-4.ibm.com/software/data/db2/os390/estimate/">http://www-4.ibm.com/software/data/db2/os390/estimate/</a>
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

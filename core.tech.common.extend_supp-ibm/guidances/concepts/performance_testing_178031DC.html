@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: Performance Testing</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="performance_testing">
+<meta name="uma.presentationName" content="Performance Testing">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4Y8RdEdyD76CYS6Ta7A", "_ovaQEHODEdyur-UVVhx-aQ"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_ovaQEHODEdyur-UVVhx-aQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: Performance Testing</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Performance testing is a class of tests implemented and executed to characterize and evaluate the performance-related characteristics of the target-of-test, such as the timing profiles, execution flow, response times, and operational reliability and limits. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp-ibm/workproducts/workload_def_spec_840F4A8.html" guid="_Ls0OIHOEEdyur-UVVhx-aQ">Workload Specification</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Performance testing is a class of tests implemented and executed to characterize and evaluate the performance-related
+    characteristics of the target-of-test, such as the timing profiles, execution flow, response times, and operational
+    reliability and limits. Different types of performance tests, each focused on a different test objective, are
+    implemented throughout the software development lifecycle (SDLC).
+</p>
+<p>
+    Early in the architecture iterations, performance tests are focused on identifying and eliminating
+    architectural-related performance bottlenecks. In the construction iterations, additional types of performance tests
+    are implemented and executed to fine-tune the software and environment (optimizing response time and resources), and to
+    verify that the applications and system acceptably handle high load and stress conditions, such as a large numbers of
+    transactions, clients, and/or volumes of data.
+</p>
+<p>
+    The following types of tests are included in Performance Testing:
+</p>
+<ul>
+    <li>
+        <b>Benchmark testing:</b> Compares the performance of new or unknown target-of-test to a known reference standard,
+        such as existing software or measurements.
+    </li>
+    <li>
+        <b>Contention</b> <b>test:</b> Verifies the target-of-test can acceptably handle multiple actor demands on the same
+        resource (data records, memory, and so forth).
+    </li>
+    <li>
+        <b>Performance profiling:</b> Verifies the acceptability of the target-of-test's performance behavior using varying
+        configurations while the operational conditions remain constant.
+    </li>
+    <li>
+        <b>Load testing:</b> Verifies the acceptability of the target-of-test's performance behavior under varying
+        operational conditions (such as number of users, number of transactions, and so on) while the configuration remains
+        constant.
+    </li>
+    <li>
+        <b>Stress testing:</b> Verifies the acceptability of the target-of-test's performance behavior when abnormal or
+        extreme conditions are encountered, such as diminished resources or an extremely high number of users.
+    </li>
+</ul>
+<p>
+    Performance evaluation is normally performed in conjunction with the <i>User representative</i> and is done from a
+    multileveled approach.
+</p>
+<ul>
+    <li>
+        The first level of performance analysis involves evaluating the results for a single actor or use-case instance and
+        comparing the results across several test executions; for example, capturing the performance behavior of a single
+        actor performing a single use case without any other activity on the target-of-test and comparing the results with
+        several other test executions of the same actor or use case. This first-level analysis can help identify trends
+        that could indicate contention among system resources, which may affect the validity of the conclusions drawn from
+        other performance test results.
+    </li>
+    <li>
+        A second level of analysis examines the summary statistics and actual data values for specific actor or use-case
+        execution, and the target-of-test's performance behavior. Summary statistics include standard deviations and
+        percentile distributions for the response times, which provide an indication of the variability in system responses
+        as seen by individual actors.
+    </li>
+    <li>
+        A third level of analysis can help in understanding the causes and significance of performance problems. This
+        detailed analysis takes the low-level data and uses statistical methods to help testers draw correct conclusions
+        from the data. Detailed analysis provides objective and quantitative criteria for making decisions, but it's more
+        time consuming and requires a basic understanding of statistics.
+    </li>
+</ul>
+<p>
+    Detailed analysis uses the concept of <i>statistical significance</i> to help understand when differences in
+    performance behavior are real or due to some random event associated with collecting the test data. The idea is that,
+    on a fundamental level, there is randomness associated with any event. Statistical testing determines whether there is
+    a systematic difference that can't be explained by random events.<br />
+    <br />
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Artifact: Program Module Invocation Model
+			(APP 113)
+		</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="prog_module_invoc_model">
+<meta name="uma.presentationName" content="Program Module Invocation Model">
+<meta name="uma.category" content="@Type:@Name:@DisplayName">
+<meta name="uma.category" content="WorkProductType:specification:Specification">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_vrCfoa6CEdyI4IDvQ60EJA", "_ht3agO3tEdugFZ65awqtDw", "_b91gIO3uEdugFZ65awqtDw", "mwebE1324C9B36B2D4488525688500556619"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_HcVQwMRfEdyD76CYS6Ta7A", "_13NR8KxcEdyf7rzERpP8vA", "mwebE1324C9B36B2D4488525688500556619"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_WCR4YMRdEdyD76CYS6Ta7A", "mwebE1324C9B36B2D4488525688500556619"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebE1324C9B36B2D4488525688500556619"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Artifact: Program Module Invocation Model
+			(APP 113)
+		</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/artifact.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The Program Module Invocation Model work product describes the calling hierarchy of the application by mapping the operations of a functional model onto modules that are invoked in program code. </td>
+</tr>
+<tr>
+<td>Domains: <a href="./../../core.default.cat_def.base-ibm_lic/domains/design_CC4B44C4.html" guid="_b91gIO3uEdugFZ65awqtDw">Design</a>
+<br>Work Product Kinds: <a href="./../../core.default.cat_def.base-ibm_lic/workproducttypes/specification_362AFF86.html" guid="_13NR8KxcEdyf7rzERpP8vA">Specification</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">The purpose of the Program Module Invocation Model is to map the processes of a functional model onto an invocation
+hierarchy that can be efficiently implemented as called functions in a programming language. This mapping is necessary to
+implement the system in a structured programming language.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Main Description</th><td class="sectionTableCell"><p>
+    The Program Module Invocation Model describes the application call tree, the transient data passed between invoked
+    modules, and, depending on the particular notation used, the timing dependencies between modules.&nbsp;&nbsp;&nbsp;
+</p>
+<p>
+    The Program Module Invocation Model, when documented by structure charts, is horizontally partitioned. Each diagram
+    contains a tree of modules and is connected to other diagrams by "off-page" connectors. There is a single root module,
+    which branches out in a tree structure of invoked nodes until the leaf nodes are reached. The modules of the model are
+    connected by bi-directional data, and are invoked roughly starting at the root and moving through the tree from left to
+    right. Additional notation allows more precise calling sequences to be specified. While a functional model A functional
+    model, when documented by data flow diagrams (DFDs), is top-down partitioned, with each diagram containing a network of
+    processes. Each process in a diagram may be documented in greater detail by another DFD. Semantically, processes are
+    peer to all others. The processes are connected to other diagram elements by unidirectional data flows. Processes
+    execute in an undefined order, as soon as data appears on the data flow. is an abstraction of the business processes
+    that the system is to perform, the Invocation Model is an abstraction of the system’s implementation.
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Notation</th><td class="sectionTableCell"><p>
+    The Program Module Invocation Model is normally represented as a set of structure charts. Each chart is a tree with the
+    root node at the top. Leaf nodes and off-page connectors to other charts occur near the bottom. The entire set of
+    charts combines to a single root node, the entry point to the program.
+</p>
+<ul>
+    <li>
+        The nodes are boxes representing the software modules. Modules closer to the root invoke modules closer to the
+        leaves. Boxes with an extra vertical line at each side represent predefined modules.
+    </li>
+    <li>
+        Modules are connected by lines indicating invocations. Data and control passing across invocation interfaces are
+        indicated by arrows whose base is an empty or solid circle, respectively.
+    </li>
+    <li>
+        The arrows are labeled with a name descriptive of their parameters. A module with connections below it to other
+        modules indicates an invocation sequence with the lower left-hand module being invoked first.
+    </li>
+    <li>
+        A small diamond at the bottom edge of the invoking module with connectors emanating from it indicates that
+        selection logic determines which of the lower modules are invoked.
+    </li>
+    <li>
+        A small circular arrow grouping one or more connectors indicates that that the associated group of lower modules is
+        being invoked iteratively.
+    </li>
+    <li>
+        Each module in the Program Module Invocation Model is documented in the data dictionary as a Module Specification.
+    </li>
+    <li>
+        The data and control connections are also documented in the interface sections of the Module Specifications.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Templates</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/templates/prog_module_invoc_model_1030116F.html" guid="_meIuQESiEdyDPKg15sK9ZA">Program Module Invocation Model</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/guidances/examples/prog_module_invoc_model_A5C6BD24.html" guid="_vPc2EESmEdyDPKg15sK9ZA">Program Module Invocation Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">This is a job best accomplished by a team of a few experienced developers.&nbsp; Given that interfaces will be unstable at
+this point in the design, team-based work is best.&nbsp; The design activities for this output will require multiple
+iteration.&nbsp; The approach will be to work from the top level of the data flow diagrams down, starting with the main
+initiation processes of the application.&nbsp; The design team should work in an environment where the structure chart can
+be pieced together as it is developed and easily rearranged.&nbsp; A large conference room with clear wall space, on which
+the charts can be pieced together, works well for this type of task.<br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Tailoring</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Impact of not having</th><td class="sectionTableCell"><p>
+    Not having the Program Module Invocation Model requires that the design be performed by the programmers, most probably
+    at implementation time. When pursuing this approach, experienced programmers/designers are necessary to ensure that a
+    well-formed system is developed from the functional model. In addition, high-level module interfaces have to be
+    established early to allow independent teams to develop in parallel. In any event, the risks to quality program
+    structure and properly documented data interfaces remain high.
+</p>
+<p>
+    An alternative to a formal Program Module Invocation Model, but one that reduces the risks cited above, is to build an
+    informal model out of index cards positioned on a large surface. The index cards can be arranged in the tree structure,
+    module names and specifications can be documented, and transient data interfaces can be documented. The design team’s
+    decisions can be easily displayed, weighed, modified, and disseminated to the development teams.
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Reasons for not needing</th><td class="sectionTableCell">Small projects with simple calling hierarchies do not need a formal structured design step. A project that is
+architecturally a graphical user interface (GUI) front-end to a database will frequently not need a formal structured
+design step, particularly if the GUI was built with a visual tool. An object-oriented system project does not need a
+Program Module Invocation Diagram because the call hierarchies inside a well-designed object are small. Inter-object
+invocations are designed with object interaction diagrams.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Checklists</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/checklists/prog_module_invoc_model_valver_1E62DA3F.html" guid="_9AqOEESkEdyDPKg15sK9ZA">Program Module Invocation Model Validation and Verification</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/guidelines/prog_module_invoc_model_dev_F6E520AC.html" guid="_uy4rUESlEdyDPKg15sK9ZA">Developing Program Module Invocation Model</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Supporting Materials</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/guidances/supportingmaterials/prog_module_specs_ref_4B7A6BB2.html" guid="_KQ7JQESwEdyDPKg15sK9ZA">References: Program Module Specifications</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Estimation Considerations</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/estimationconsiderations/prog_module_invoc_model_legacy_1C17AE02.html" guid="mweb370781871643519221">Program Module Invocation Model (Legacy)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

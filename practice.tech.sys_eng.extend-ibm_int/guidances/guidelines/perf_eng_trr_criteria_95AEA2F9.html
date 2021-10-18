@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Performance Engineering TRR Criteria Checklist</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="perf_eng_trr_criteria">
+<meta name="uma.presentationName" content="Performance Engineering TRR Criteria Checklist">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb284215DBFB54F191852572BC00668390"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb284215DBFB54F191852572BC00668390"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Performance Engineering TRR Criteria Checklist</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The Test Readiness Review (TRR) ensures that test plans and test cases fully support the requirements for the system being tested, after which a baseline is established for both future reference and change control. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.sys_eng.extend-ibm_int/tasks/perform_test_readiness_review_96D8039D.html" guid="mweb093C356700000113D4B3030587783AAA">Perform the Test Readiness Review</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1 Description
+</h3>
+<p>
+    In an Enterprise SE&A project, the Test Baseline encompasses the test plans and supporting documentation for the
+    system described in the preceding baselines.
+</p>
+<p>
+    This technique paper contains the checklists which the PE team uses during the TRR to ensure that the PE goals and
+    objectives have been adhered to during the Test Readiness Phase, It is important that the performance and capacity
+    aspects of the test plan are well-conceived and focused on addressing the key performance requirements and the areas of
+    greatest performance risk. Deliverables, which are deemed deficient from a performance and capacity standpoint, may
+    lead to the entry of a defect, which is then taken into account during the TRR Scorecard process.
+</p>
+<h3>
+    2 Usage Context
+</h3>
+<p>
+    This technique paper should be used as guidance while conducting a Test Readiness Review in an enterprise SE&A
+    project.
+</p>
+<h3>
+    3 Content
+</h3>
+<p>
+    The following PE specific items should be verified during TRR:
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        <strong>TRR Preparation</strong>
+    </p>
+    <ul>
+        <li>
+            PE work products / deliverables from earlier phases are revisited based on any new information from
+            development&nbsp;
+        </li>
+        <li style="LIST-STYLE-TYPE: none">
+            <ul>
+                <li>
+                    Performance estimates&nbsp;
+                </li>
+                <li>
+                    Performance models&nbsp;
+                </li>
+                <li>
+                    Resulting performance reports (SLCA, Operational Model updates, sizing)&nbsp;
+                </li>
+            </ul>
+        </li>
+        <li>
+            Key performance risks areas in developed solution were evaluated using selected estimation / modeling
+            techniques&nbsp;
+        </li>
+        <li>
+            Results of estimation forwarded to appropriate areas (e.g. development, test team, etc.)&nbsp;
+        </li>
+        <li>
+            Component baseline materials reviewed by PE team, especially&nbsp;
+        </li>
+        <li style="LIST-STYLE-TYPE: none">
+            <ul>
+                <li>
+                    Test plans and cases&nbsp;
+                </li>
+                <li>
+                    RTVM
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p>
+        <strong>TRR Performance Questions</strong>
+    </p>
+    <ul>
+        <li>
+            Is the performance test set up so that it can assess the solution against the business and technical
+            volumetrics, the SLRs and the capacity plan?&nbsp;
+        </li>
+        <li>
+            Have business volumetrics changed? If so, does the test plan take into account the latest information?&nbsp;
+        </li>
+        <li>
+            Has the prior estimation/modeling work identified areas of performance risk that the performance testing will
+            address? Will the performance test team be sharing their results so that existing models can be calibrated
+            against actual results?&nbsp;
+        </li>
+        <li>
+            Do the development team findings show any areas of performance risk that the performance test should be
+            attentive to?&nbsp;
+        </li>
+        <li>
+            Is the performance test team prepared to engage the appropriate analysis and tuning skills should they be
+            needed during the test?&nbsp;
+        </li>
+        <li>
+            Are all performance test deliverables (test strategy, test plan, test cases, test environment) ready to go?
+        </li>
+        <li>
+            Are the development and systems support teams ready to support the test effort and respond to performance
+            problems should they be found?&nbsp;
+        </li>
+        <li>
+            Will the performance test team be rehearsing the live monitoring and performance/capacity management tools and
+            processes that will be used by the production support team?&nbsp;
+        </li>
+        <li>
+            Has the performance risk been reassessed since the CDR and are those risks being adequately addressed?&nbsp;
+        </li>
+        <li>
+            Will the performance-centric items satisfy the applicable TRR scorecard criteria, i.e.&nbsp;
+        </li>
+        <li style="LIST-STYLE-TYPE: none">
+            <ul>
+                <li>
+                    <b>Test Planning</b>&nbsp;
+                </li>
+                <li style="LIST-STYLE-TYPE: none">
+                    <ul>
+                        <li>
+                            Test scope, objectives and assumptions have been documented, reviewed by stakeholders and
+                            agreed upon.&nbsp;
+                        </li>
+                        <li>
+                            Test entrance and exit criteria has been documented, reviewed by stakeholders and agreed
+                            upon.&nbsp;
+                        </li>
+                        <li>
+                            Test automation strategy has been defined.&nbsp;
+                        </li>
+                        <li>
+                            Problem/defect management procedures, including turnaround time by severity, have been
+                            established and agreed upon.&nbsp;
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Requirements Traceability Matrix [RTVM]</b>&nbsp;
+                </li>
+                <li style="LIST-STYLE-TYPE: none">
+                    <ul>
+                        <li>
+                            All requirements that will be tested are included in the RTVM.&nbsp;
+                        </li>
+                        <li>
+                            Test types and methods to be performed for each requirement are documented.&nbsp;
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Application Readiness Verification</b>&nbsp;
+                </li>
+                <li style="LIST-STYLE-TYPE: none">
+                    <ul>
+                        <li>
+                            All applications/components to be tested meet test entrance criteria.&nbsp;
+                        </li>
+                        <li>
+                            Results from previous testing have been reported and are available (i.e. unit, integration
+                            testing).
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p>
+        <strong>TRR Actions</strong>
+    </p>
+    <ul>
+        <li>
+            TRR issues are raised for concerns which may affect TRR scorecard findings.
+        </li>
+    </ul>
+</blockquote></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

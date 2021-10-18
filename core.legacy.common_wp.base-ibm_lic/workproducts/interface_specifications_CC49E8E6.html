@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Artifact: Interface Specifications
+			(APP 030)
+		</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="interface_specifications">
+<meta name="uma.presentationName" content="Interface Specifications">
+<meta name="uma.category" content="@Type:@Name:@DisplayName">
+<meta name="uma.category" content="WorkProductType:specification:Specification">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_ic10YD1DEd6fVa8fv3BibQ", "_sgIdIGptEeSdxcAgtnf5og", "mweb17B93F218009313585256885004F7E6F"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_vrCfoa6CEdyI4IDvQ60EJA", "_ht3agO3tEdugFZ65awqtDw", "_YNVC8O3uEdugFZ65awqtDw", "mweb17B93F218009313585256885004F7E6F"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_HcVQwMRfEdyD76CYS6Ta7A", "_13NR8KxcEdyf7rzERpP8vA", "mweb17B93F218009313585256885004F7E6F"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_WCR4YMRdEdyD76CYS6Ta7A", "mweb17B93F218009313585256885004F7E6F"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb17B93F218009313585256885004F7E6F"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Artifact: Interface Specifications
+			(APP 030)
+		</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/artifact.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This artifact describes the interfaces between the various programs that comprise an application as well as between that application and external systems. </td>
+</tr>
+<tr>
+<td>Domains: <a href="./../../core.default.cat_def.base-ibm_lic/domains/requirements_9AE2114A.html" guid="_YNVC8O3uEdugFZ65awqtDw">Requirements</a>
+<br>Work Product Kinds: <a href="./../../core.default.cat_def.base-ibm_lic/workproducttypes/specification_362AFF86.html" guid="_13NR8KxcEdyf7rzERpP8vA">Specification</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The primary purposes of this work product are to:
+</p>
+<ul>
+    <li>
+        Ensure that the programs comprising an application operate together as required
+    </li>
+    <li>
+        Document the specifications for each internal and external interface according to the specified standards
+    </li>
+    <li>
+        Provide the development teams with the details to develop the interfaces
+    </li>
+</ul>
+<p>
+    The work product is also used to:
+</p>
+<ul>
+    <li>
+        Provide a consistent communications vehicle among the development teams that have responsibility for developing the
+        various programs comprising the&nbsp;application
+    </li>
+    <li>
+        Stabilize and publish the system’s interfaces
+    </li>
+    <li>
+        Act as documentation for the system
+    </li>
+    <li>
+        Develop unit test cases
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Parent Deliverables</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../practice.tech.sys_eng.base-ibm_lic/workproducts/component_reqs_spec_197_2203FD2B.html" guid="mweb077AE52EF99C45D885256D10007B6C92">Component Requirements Specifications</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_delv.extend-ibm_int/workproducts/requirements_specification_314_F0A17CE2.html" guid="mweb1BF6B6E6A1DCF02E8825702A00534EA0">Requirements Specification</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.base-ibm_lic/workproducts/sys_req_spec_201_CA019DEB.html" guid="mweb80F599CD352666B285256DC600795800">System Requirements Specification</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Responsible:
+								</span></td><td class="sectionTableCell"><span class="sectionTableCellHeading">Modified By:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/application_developer_8573F536.html" guid="mwebD57DF23536B141F78625655F0004B2CA">Application Developer</a>
+</li>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/systems_eng_pro_3670F084.html" guid="mweb73C3E4C06821DB1E85256D170044BDE1">Systems Engineering Professional</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Tasks</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Input To:
+								</span></td><td class="sectionTableCell"><span class="sectionTableCellHeading">Output From:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/assemble_component_req_specification_FC70DD7D.html" guid="mweb093C356700000113D4B1BB5889B6FF22">Assemble Component Requirements Specification</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/assemble_system_req_document_8F086931.html" guid="mweb093C356700000113D4ADB73C918A4C25">Assemble System Requirements Document</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/establish_service_comp_baseline_F00A3CB9.html" guid="_T9aMgA_eEd2HCIWhc32BdA">Establish Service Component Baseline</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/transform_analysis_to_design_A29D812C.html" guid="_ZTX_AEgsEduZT5ac5raeSg">Transform Analysis To Design</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Main Description</th><td class="sectionTableCell"><p>
+    The work product documents the specifications required to develop each <a class="elementLink" href="./../../core.tech.common.extend-ibm/guidances/termdefinitions/interface_358224C3.html" guid="_U1luMESCEd2eKeXZgLpnkQ">interface</a>:
+</p>
+<ul>
+    <li>
+        Within the application.
+    </li>
+    <li>
+        Between the application and external systems.
+    </li>
+</ul>
+<p>
+    The work product also documents:
+</p>
+<ul>
+    <li>
+        The format and use of any intermediary file used in transferring information across these interfaces
+    </li>
+    <li>
+        How each interface will be unit tested
+    </li>
+    <li>
+        How security will be maintained for each interface
+    </li>
+</ul>
+<p>
+    In essence, <b>Interface Specifications</b> gather together in one place all the information necessary for developing
+    and unit testing internal and external interfaces related to the application. They are particularly important:
+</p>
+<ul>
+    <li>
+        In large or complex projects where several teams may be developing different parts of an application
+    </li>
+    <li>
+        When the specifications are written by one team and the interfaces are developed by others
+    </li>
+</ul>
+<p>
+    <b>Note</b>: The focus of <b>Interface Specifications</b> is on program to program interfaces rather than user to
+    application interfaces.
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Brief Outline</th><td class="sectionTableCell"><p>
+    Interface Specifications are text documents that contain the following information for each interface to be
+    implemented:
+</p>
+<ul>
+    <li>
+        <div>
+            <b>Descriptive Name:</b> a name defining the interface to be specified
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Interface Definition</b>: a description of the interface including what information and entities are passed
+            across it, semantic meanings, structures peculiar to this particular interface, intermediary files, and error
+            handing mechanisms
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Pre-Conditions</b>: a detailed description of such items as global data requirements, hardware and software
+            requirements (including memory), operating system requirements, API’s, database views used, and the system
+            state prior to invocation
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Post-Conditions</b>: a description of the interface after a information transfer has been completed
+            including the state of the system and the possible error handling conditions and their effects
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Tracability</b>: identifying the&nbsp;requirements implemented by the interface
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Functional Specifications</b>: a description of the logic of the interface including details of any data
+            transformations, database transaction definitions, signals, and error conditions
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Performance Requirements</b>: a description of any execution time or invocation frequency requirements that
+            must be considered while developing the interface
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Testing Considerations</b>: a description of the unit testing required to verify that the interface performs
+            as expected including boundary conditions
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Security Considerations</b>: a description of the security requirements for each interface
+        </div>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/guidances/examples/interface_specifications_312C62F5.html" guid="_1mkAQDm9Edyq7q3pb7lBeQ">Interface Specifications</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><ul>
+    <li>
+        <div>
+            Once the specification has been approved, it should be placed under strict change control. Changes to
+            specifications can cause significant effects in the project, particularly in schedule and cost estimates.
+        </div>
+    </li>
+    <li>
+        <div>
+            The level of detail for the interface specifications should suit the project, its staff, and the application.
+            Project size, schedule, cost, staff turnover, designer and programmer experience with both the application and
+            the implementation language, program complexity, and level of formality required by the contract all affect how
+            interfaces are specified.
+        </div>
+    </li>
+    <li>
+        <div>
+            Review the interface from both directions. Ensure that the information requirements across an interface are
+            satisfied. That is, ensure that all the information sent across and interface is used and that all information
+            required is available.
+        </div>
+    </li>
+    <li>
+        <div>
+            Ensure that the interfaces support of the logic of the application, external systems, and business processes.
+        </div>
+    </li>
+    <li>
+        <div>
+            The interface specifications form part of the basis for the test plans for the application. The testing
+            considerations should be well documented so that verification can be completed as thoroughly and expeditiously
+            as possible.
+        </div>
+    </li>
+    <li>
+        <div>
+            While interfaces are boundaries between functional units, they also possess boundaries within themselves. These
+            boundaries are the edge conditions between success and failure, the latter meaning that an error condition has
+            occurred. It is essential to test the boundary conditions of the interfaces to ensure that they are correctly
+            interpreted. This, in turn, means that error handling must be well defined so that a robust application is
+            delivered.
+        </div>
+    </li>
+    <li>
+        <div>
+            Ensure that performance and security testing is included in the application test plans.
+        </div>
+    </li>
+    <li>
+        <div>
+            Consult the sponsor to ensure that the business processes to be used by the intended application are supported
+            by the interface specifications. In other words, does the information flowing across the interfaces support the
+            intended business processes?
+        </div>
+    </li>
+    <li>
+        <div>
+            While it is important to stabilize interfaces as early as possible to allow separate teams to work
+            independently, the interface specifications’ level of detail should match the needs of the project. It should
+            tell the programmer what he/she needs to know, not what he/she already knows. The designer’s judgement must be
+            applied here. Sometimes the details of an algorithm must be specified; more often a simple, short text
+            description of what the interface is supposed to accomplish is appropriate.
+        </div>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Tailoring</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Impact of not having</th><td class="sectionTableCell"><p>
+    Not producing this work product presents several risks:
+</p>
+<ul>
+    <li>
+        The project may fail
+    </li>
+    <li>
+        The application may not function as expected
+    </li>
+    <li>
+        Information passing between constituent programs of the application or between the&nbsp;application and external
+        systems may be corrupted or lost
+    </li>
+    <li>
+        The teams developing the constituent parts of the application may not know what information is passed across the
+        interfaces and may make erroneous assumptions
+    </li>
+    <li>
+        Schedules and costs may be exposed due to the possibility of having to rework the interfaces
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Reasons for not needing</th><td class="sectionTableCell"><ul>
+    <li>
+        There may be no internal or external interfaces to develop
+    </li>
+    <li>
+        The interfaces may be standard or have been specified already through other activities
+    </li>
+    <li>
+        External interface diagrams, detailed requirements documents, or use cases may already exist. These, supplemented
+        by reference to APIs, may be sufficient to document external interfaces
+    </li>
+</ul>
+<p>
+    If standard interfaces are used or if the interfaces are described by means other than the <b>Interface
+    Specifications</b>, the project team must be informed of the nature and location of these entities.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Checklists</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/guidances/checklists/interface_specifications_valver_3C594796.html" guid="_rzCfcDm3Edyq7q3pb7lBeQ">Interface Specifications Validation and Verification</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/guidelines/interface_specifications_dev_96871B76.html" guid="_EMKmcDm4Edyq7q3pb7lBeQ">Developing Interface Specifications</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Supporting Materials</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/guidances/supportingmaterials/interface_specifications_ref_BCBB018D.html" guid="_p3cx8Dm2Edyq7q3pb7lBeQ">References: Interface Specifications</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Estimation Considerations</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/estimationconsiderations/interface_specifications_legacy_FA73D4CF.html" guid="mweb370790524305556407">Interface Specifications (Legacy)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

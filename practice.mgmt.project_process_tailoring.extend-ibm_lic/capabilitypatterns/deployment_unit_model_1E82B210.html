@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Work Product Descriptor (Artifact): Deployment Unit Model</title>
+<meta name="uma.type" content="WorkProductDescriptor">
+<meta name="uma.name" content="deployment_unit_model">
+<meta name="uma.presentationName" content="Deployment Unit Model">
+<meta name="element_type" content="WorkProductDescriptor">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=mwebBA1C4012C89ABD7385256ABD0068F71F&path=mwebBA1C4012C89ABD7385256ABD0068F71F,_-kpysam1Edysx6u9_XuSgw,_27-rQTtEEd6m2IOqBKkH6w,_rz7ecWptEeSdxcAgtnf5og';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, defaultQueryStr, false, true, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>WorkProductDescriptor<div id="page-guid" value="_rz7ecWptEeSdxcAgtnf5og"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Work Product Descriptor (Artifact): Deployment Unit Model</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/workdes_lg_dgm32.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This artifact describes the placement of application components (including data produced by those components) on to nodes of an IT system and their interdependencies.  </td>
+</tr>
+<tr>
+<td>Based on Method Work Product: <a href="./../../core.tech.common.extend-ibm_lic/workproducts/deployment_unit_model_6EA973D.html" guid="_pu0XUDDXEdyz_pzDMsV8FQ">Deployment Unit Model</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="30%"><span class="sectionTableCellHeading">Responsible:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.mgmt.project_process_tailoring.extend-ibm_lic/capabilitypatterns/technical_solution_architect_D38AA7EC.html" guid="_OMg8oZjfEd-CdqXZDMCMaA">Technical Solution Architect</a>
+</li>
+</ul>
+</td><td class="sectionTableCell" colspan="2"><span class="sectionTableCellHeading">Modified By:
+								</span></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Deployment Units allow for the aggregation of components that have similar service level requirements. The Deployment
+    Units contained in the Deployment Unit Model are defined separately in the Deployment Unit Specification artifact.
+</p>
+<p>
+    In order for an operational model to achieve the solution's functional and non-functional requirements, it is
+    invariably necessary to locate:
+</p>
+<ul>
+    <li>
+        The various aspects of each component in different locations.&nbsp; For example, the data aspects of a component
+        may be held centrally, while its execution takes place on a workstation and its executables are stored on a
+        departmental file server.
+    </li>
+    <li>
+        A particular aspect of a component in multiple locations and/or location types.&nbsp; For example: (a) under normal
+        circumstances a component may execute on a server, but in the event of network failure the same component may be
+        required to execute on the workstation, or (b)&nbsp; the primary copy of a component's data may be held on a
+        central server, but an operational copy – or replica is available on the workstation.
+    </li>
+</ul>
+<p>
+    As a common element linking the component and operational models, placement of the DU's often highlights other needs
+    that must be considered such as;
+</p>
+<ul>
+    <li>
+        Components may need to be separated by zone boundaries to address risk management concerns e.g., highly trusted
+        components may be separated from low trust level components or separation may be required to address the Privacy
+        implications of storing specified data together.
+    </li>
+    <li>
+        Deployment units for flow control may be required to secure data flows separated across different zones.&nbsp;
+    </li>
+    <li>
+        Different deployment units may also be needed for different trust environments to fullfill the functional security
+        requirements within the different trust environments.
+    </li>
+    <li>
+        System Management zones of responsibility may dictate that certain components may need to be placed on specific
+        nodes to be managed to a defined SLA.
+    </li>
+</ul>
+<p>
+    Generally, these placements decisions relate to all application and technical components and are achieved through the
+    proper placement of the DU's. Therefore for any given solution there may be many DU relationships and interactions to
+    be documented within this artifact.
+</p><p/><p>
+    <br />
+    &nbsp;
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Properties</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row" id="property_Optional" abbr="Optional">Optional</th><td class="sectionTableCell" align="left" headers="property_Optional"><img width="20" height="15" alt="" title="" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row" id="property_Planned" abbr="Planned">Planned</th><td class="sectionTableCell" align="left" headers="property_Planned"><img width="20" height="15" alt="" title="" src="./../../images/indent.gif"></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Templates</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/guidances/templates/component_to_du_mapping_formal_9D77D2F8.html" guid="_FK9AoPnsEdyRSrojMjQ7Vg">Component to Deployment Unit Mapping (formal)</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/guidances/examples/component_to_du_ mapping_F7615035.html" guid="_YhxWQPnqEdyRSrojMjQ7Vg">Component to Deployment Unit Mapping</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/guidances/examples/du_to_du_interaction_requirements_148F66D9.html" guid="_ISmjgPnrEdyRSrojMjQ7Vg">Deployment Unit to Deployment Unit Interation Requirements</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/guidances/examples/du_to_du_mapping_7DC6285D.html" guid="_qh9v0PnrEdyRSrojMjQ7Vg">Deployment Unit to Deployment Unit Mapping</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><ul>
+    <li>
+        Deployment Units (DU's) once defined, are placed onto nodes in order to determine the non-functional requirements
+        that node must support. Those nodes are located in locations which are separated by borders.
+    </li>
+    <li>
+        This is a simple yet important concept to understand when developing the DU's. Where as DU's represent the non
+        functional requirements of the various aspects of a component, there will be a need for the DU's of a component to
+        communicate. If those DU's are placed on different nodes in different locations, the communication requirements
+        will define the NFR's of the network connection between those nodes and locations.
+    </li>
+    <li>
+        The identified communication requirements can then be used to validate that the current network can support the
+        required communications or identify potential gaps in the current network design.
+    </li>
+    <li>
+        System Management requirements can also be identified at a DU level which will translate into physical requirements
+        that may impact the solution’s physical design and implementation<br />
+    </li>
+</ul><p/><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/guidances/guidelines/deployment_unit_model_E61699A7.html" guid="_IMggsDeaEdyFMtjeREc5MQ">Deployment Unit Model</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Tool Mentors</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_int/guidances/toolmentors/umf_starter_kit_rsa_34F16DC1.html" guid="_hRCeUKG7EeC3iM5oSOc9wg">UMF Starter Kit for RSA [LINK]</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+					contentPage.onload();
+					contentPage.processPage.fixDescriptorLinks();
+				</script>
+</html>

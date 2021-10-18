@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing Solution Recovery Strategy</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="solution_recovery_strategy_dev">
+<meta name="uma.presentationName" content="Developing Solution Recovery Strategy">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_Tb2QQDNjEdyMzoJu5tJlmg"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_Tb2QQDNjEdyMzoJu5tJlmg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing Solution Recovery Strategy</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Migrated development approach from existing IBM Global Services Method work product.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/solution_recovery_strategy_A59D60A5.html" guid="mweb42B290122CF1E41785256BC10061D864">Solution Recovery Strategy</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><strong>1. Document Recoverable Solution States & Supporting Application Information States</strong> <br />
+Document the application information states that define each valid, recoverable business state for each business process of
+interest in the solution. <br />
+<strong>2. Define Solution Recovery States</strong> <br />
+Examine the relationship between applications and business processes, and the individual business states within each
+business process. Identify the recovered end point states for each recoverable solution state, and for each end point
+within each process. There are often several states that an end point can occupy within the confines of a business process
+solution state. <br />
+<strong>3. Define End Point Recovery Base State</strong> <br />
+Define the minimum information content and currency state for each end point to support recovery of any of the solution
+business processes. This may involve end point information not directly related to every recoverable business process, but
+necessary to place the end point in a stable operating condition. AN example is populating order history in an order entry
+application, prior to recovery of the order entry process. The history is not used directly during order entry, but
+supports status queries also handled through the application. <br />
+<strong>4. Define Recovery Sequence</strong> <br />
+There are two recovery sequences that must defined for each end point failure. The first is the order of business process
+recovery. There are cases where one business process depends directly upon the results of another. An example is the need
+to reconstruct a detailed manufacturing plan prior to restarting manufacturing execution. <br />
+The second recovery sequence is the order of end point recovery within each business process. An example of this is the
+recovery of a partner information mastering application, and the using applications for that partner information. It is
+necessary for the information master to be recovered before queries against the information can be allowed. <br />
+<strong>5. Detail Recovery Requirements</strong> <br />
+Capture in a use case description, at a conceptual level, any end point or business process specific constraints that need
+to be accommodated in the recovery process. These often include end point access constraints. <br />
+<strong>6. Define End Point Instrumentation Requirements</strong> <br />
+End points vary dramatically in their ability to provide introspection to their operational states, as defined by the state
+of the information they manage. It is essential that these states be made available externally to facilitate managed
+recovery of the end point, and the associated business processes. Each end point must have its facilities, and limitations
+with respect to internal information state visibility documented, so that appropriate instrumentation can be included in
+the recovery implementation. When the end point is a business partner’s systems, or another business unit’s systems, these
+requirements can ultimately be reflected in the trading partner agreement for the partner or unit.</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

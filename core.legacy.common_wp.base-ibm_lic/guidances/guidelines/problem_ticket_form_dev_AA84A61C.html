@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing the Problem Ticket Form</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="problem_ticket_form_dev">
+<meta name="uma.presentationName" content="Developing the Problem Ticket Form">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_8QOD8DA9EdyMBeZCVbDB5w"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_8QOD8DA9EdyMBeZCVbDB5w"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing the Problem Ticket Form</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Migrated development approach from existing IBM Global Services Method work product.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/problem_ticket_form_CDEF45D5.html" guid="mwebA9739106F0B3DF668525688500529F0F">Problem Ticket Form</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    This work product is a multi part form that is completed at various stages of the problem lifecycle.<br />
+</p>
+<p>
+    1. When a problem is first reported to the helpdesk the Problem ID is allocated in accordance with the problem
+    management system procedures. The Caller information, the General Information and the Recording Information are
+    completed. In many IBM sites and helpdesks an automated problem management tracking system may be used in which case
+    the Recording Information may be completed automatically.<br />
+    2. The Update Summary Information is partly completed by the helpdesk. The assignee details are entered, the status and
+    current severity are also completed and the date and time of alteration is completed. With an automatic system the date
+    and time will be entered by the system.<br />
+    3. The assignee group is responsible for completing the remainder of the Update Summary Information. This includes the
+    resolver group name, resolver name, telephone number, and date and time accepted. The resolver will complete the cause
+    code, fix change number and century-21 flag, if the error is a result of a Year 2000 change.<br />
+    4. The Resolution Information is completed by following the instructions provided in Resolution Actions section given
+    below.<br />
+    5. When the resolver has completed all the work necessary to fix the problem the helpdesk is informed and the Closure
+    Information is completed.<br />
+    6. At any time the user can add additional information to the user Information field.<br />
+</p>
+<h4>
+    Resolution Actions<br />
+</h4>
+<p>
+    <b>Performing Immediate Action</b><br />
+</p>
+<p>
+    The Problem Resolution is initiated almost as soon as the developer takes ownership of the emergency fix when it is
+    used to document the problem impact. After completing the Change/Problem /Date/Time information the Application
+    Developer gathers information to assist in determining where the error occurred and documents the resolution in this
+    work product to keep a record of all significant information, this will include a brief description of the
+    problem.<br />
+</p>
+<p>
+    The resolution section is next updated once the Developer has decided upon the changes that have to be made to resolve
+    the emergency. In effect this acts as the documented design of solution.<br />
+</p>
+<p>
+    This work product is next used to record information whilst completing the following tasks:
+</p>
+<ul>
+    <li>
+        <div>
+            Make System Change Components – Updated to reflect the component changes.
+        </div>
+    </li>
+    <li>
+        <div>
+            Test Changes – Record test results
+        </div>
+    </li>
+    <li>
+        <div>
+            Implemented Changes – Record details of who was contacted to assist in implementing changes, times, etc.
+        </div>
+    </li>
+    <li>
+        <div>
+            Arrange Production Run/System Restarts - Record details of whom were contacted to assist in implementing
+            changes, times, etc.
+        </div>
+    </li>
+</ul>
+<p>
+    The work product is then used to record the results from production output and to update it to say who was contacted,
+    and any other information that may be necessary for follow-on action to be taken.<br />
+</p>
+<p>
+    <b>Performing Follow-on Action</b><br />
+</p>
+<p>
+    To perform any follow-on action the developer will need to review the solution section of this work product to
+    understand the problem. It can then be used to assess the effectiveness of the emergency fix and to record identified
+    Job Log errors, Output errors, and System Data errors.<br />
+</p>
+<p>
+    The work product is then updated when identifying the problem cause. This involves a more thorough investigation of the
+    problem than was possible whilst the immediate fix was being implemented. As a result it will be possible to determine
+    if any other changes to the system are required and if they are then the work product should be updated to say what
+    they are.<br />
+</p>
+<p>
+    Finally during this activity, potential data recovery action should be identified, and if there is any, then what it is
+    should be recorded.<br />
+</p>
+<p>
+    The work product is next used to notify appropriate organisations of any follow-on action during the following tasks:
+</p>
+<ul>
+    <li>
+        <div>
+            Where the need for a Change Requirement has been identified and is either a separate problem within the current
+            system or from another one, then the Developer raises a new Problem Ticket Form.
+        </div>
+    </li>
+    <li>
+        <div>
+            When the original problem has been identified as being a separate problem within the current system or being
+            from another one, then the developer should raise a new Problem Ticket Form.
+        </div>
+    </li>
+    <li>
+        <div>
+            When creating appropriate communication, the details of who was contacted in the course of resolving the Fix
+            and other information necessary for retrospective action to be taken should be recorded.
+        </div>
+    </li>
+</ul>
+<p>
+    In order to provide a permanent fix for the problem and ensure that the system runs as it is supposed to, a number of
+    tasks have to be completed.<br />
+</p>
+<p>
+    Initially the Problem Ticket Form is used when confirming the scope of the project or work to be undertaken, developing
+    a work plan and assigning appropriate resources and assets, when it is:
+</p>
+<ul>
+    <li>
+        <div>
+            Reviewed to confirm the nature of the problem and what follow on work is required.
+        </div>
+    </li>
+    <li>
+        <div>
+            Used as an input to enable a work plan to be produced.
+        </div>
+    </li>
+</ul>
+<p>
+    The problem is then recreated, reviewed, and the cause of the problem is identified. An assessment of the defects is
+    carried out and an impact analysis statement is produced.
+</p>
+<p>
+    Any temporary programs that were written to assist in these tasks are then removed from the system. The Problem Ticket
+    Form is used to both provide and record information associated with this work as defined below:
+</p>
+<ul>
+    <li>
+        <div>
+            The description of the problem contained within the Problem Ticket Form is used to enable the developer to try
+            to recreate the original problem. Any steps or extra resources used are recorded in the Problem Ticket Form.
+        </div>
+    </li>
+    <li>
+        <div>
+            The problem cause recorded in the Problem Ticket Form is reviewed and verified. If the cause is not that
+            recorded then the Problem Ticket Form is updated to reflect this.
+        </div>
+    </li>
+    <li>
+        <div>
+            The emergency fix developer will have recorded the impact of the problem on the system, other systems, and work
+            in progress in the Problem Ticket Form. This is reviewed and the Problem Ticket Form is updated accordingly.
+        </div>
+    </li>
+    <li>
+        <div>
+            The Problem Ticket Form will contain information as to the nature of the problem and what was done about it.
+            The developer will check to ensure that there is a problem that does require corrective maintenance. If it does
+            not, then a service request is submitted to Program Management for further action.
+        </div>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

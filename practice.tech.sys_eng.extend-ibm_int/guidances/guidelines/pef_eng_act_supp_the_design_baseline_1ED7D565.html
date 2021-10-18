@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Performance Engineering Activities Supporting the Design Baseline</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="pef_eng_act_supp_the_design_baseline">
+<meta name="uma.presentationName" content="Performance Engineering Activities Supporting the Design Baseline">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb3C8702FCB307956D852572BC00668280"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb3C8702FCB307956D852572BC00668280"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Performance Engineering Activities Supporting the Design Baseline</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The Critical Design Review (CDR) ensures that the collection of component designs appropriately implement the overall system design and supporting requirements, are well understood and are agreed to by all parties, after which a baseline is established for both future reference and change control. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.sys_eng.extend-ibm_int/tasks/perform_critical_design_review_3BD2F06D.html" guid="mweb093C356700000113D4B27DAC59012EBB">Perform the Critical Design Review</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1 Description
+</h3>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        In an Enterprise SE&A project, the Design Baseline contains the component design for the system described in
+        the Component Baseline.
+    </p>
+    <p>
+        <strong>Figure 1 – Design Baseline in SE Capability Pattern</strong>
+    </p>
+    <p>
+        <img height="519" alt="" src="./../../../practice.tech.sys_eng.extend-ibm_int/guidances/guidelines/resources/pef_eng_act_supp_the_design_baseline_img1.JPG" width="600" />
+    </p>
+    <p>
+        In the SE Capability Pattern, a number of work products are developed before it is time to review the Design
+        Baseline, as shown below.
+    </p>
+    <p>
+        <img style="WIDTH: 694px; HEIGHT: 428px" height="428" alt=""         src="./../../../practice.tech.sys_eng.extend-ibm_int/guidances/guidelines/resources/pef_eng_act_supp_the_design_baseline_img2.JPG" width="600" />
+    </p>
+    <p>
+        The performance engineering team has a vested interest in ensuring that the performance and capacity aspects of the
+        component design are well-conceived and capable of meeting requirements. This will prove helpful to the later
+        SE&A baselines as the components are implemented, tested and deployed, which will in turn enhance the
+        likelihood that the overall project will satisfy the customer’s requirements. Deliverables which are deemed
+        deficient from a performance and capacity standpoint may lead to the entry of a defect, which is then taken into
+        account during the CDR Scorecard process.
+    </p>
+    <p>
+        At this time, the performance and capacity requirements should be thoroughly understood, and the PE team should
+        have made sufficient progress on volumetric, estimation and modeling work to have a strong grasp on the greatest
+        areas of performance risk. The PE team should use this knowledge to guide the efforts of the
+        development/implementation and test teams in their performance risk mitigation efforts (e.g. profiling, detailed
+        modeling, performance budgeting and measurement, performance testing). The PE team should also be establishing
+        contact with the appropriate operations and performance/capacity management personnel, if they have not already, to
+        discuss matters such as service levels, performance / capacity planning and management for the production
+        environment.
+    </p>
+</blockquote>
+<h3 dir="ltr">
+    2 Usage Context
+</h3>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p dir="ltr">
+        This technique paper should be used as guidance on applying PE activities and techniques in support of the Design
+        Baseline Phase.
+    </p>
+</blockquote>
+<h3 dir="ltr">
+    3 Content
+</h3>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p dir="ltr">
+        <strong>Organizing the PE Effort during the Design Baseline Phase<br />
+        </strong>During this stage of the project, the PE team is typically concerned with activities such as the
+        following.
+    </p>
+    <ul dir="ltr">
+        <li>
+            <div>
+                <b>Continued execution of the PE plan</b> – This involves both the direct activities of the performance
+                engineering team and the supporting activities of other teams (design, development, test, delivery /
+                operations, etc.)
+            </div>
+        </li>
+        <li>
+            <div>
+                <b>Performance / capacity assessment of the component architecture</b> – Since design information is now
+                available about the components which make up the system, this should make it possible to more accurately
+                assess the solution’s performance and capacity along with any associated risks and issues.
+            </div>
+        </li>
+        <li>
+            <div>
+                <b>Additional preparation for production deployment</b> – In addition to refining capacity sizing,
+                operational concerns such as live monitoring and capacity management will need to be considered.
+            </div>
+        </li>
+    </ul>
+    <p dir="ltr">
+        <strong>Risk and Performance Management Focus during the Design Baseline Phase</strong><br />
+        It is possible that there will be continued attention to volumetrics, estimating, modeling and sizing efforts that
+        were started during earlier baseline phases. However, the overall focus will shift during the design baseline phase
+        from planning and predicting to designing and delivering. From a systems engineering perspective, the design
+        baseline and the accompanying Critical Design Review (CDR) will be the last opportunity to prevent defects before
+        test. For the PE team, participation in design reviews will become increasingly important, both to ensure that
+        “design for performance” practices are being followed and to gain the understanding of the emerging solution that
+        will be needed when the test phase starts.
+    </p>
+    <p dir="ltr">
+        <strong>Preparing for Production during the Design Baseline Phase</strong><br />
+        During the design baseline phase, additional information may allow us to refine (or do for the first time) some of
+        the production readiness tasks described earlier: sizing and planning for capacity, developing of Service Level
+        Requirements (SLRs), and updating the sizing information for the Physical Operational Model (POM).
+    </p>
+    <p dir="ltr">
+        Now may also be a time to begin thinking about <i>live monitoring and capacity management</i> procedures. For
+        example:
+    </p>
+    <ul dir="ltr">
+        <li>
+            <div>
+                What tools will be used to measure performance and system resource utilization?
+            </div>
+        </li>
+        <li>
+            <div>
+                Will some kind of automated reporting be required?
+            </div>
+        </li>
+        <li>
+            <div>
+                Is some level of automation required to alert the operations teams when there is a performance problem?
+            </div>
+        </li>
+        <li>
+            <div>
+                Do the SLRs require some level of enabling of “on demand” features, such as orchestration and provisioning,
+                to respond to variations in workload or system resource availability?
+            </div>
+        </li>
+    </ul>
+    <p dir="ltr">
+        Do the live monitoring and capacity management procedures proposed require any special attention during development
+        and test?
+    </p>
+    <p dir="ltr">
+        <strong>Estimating Design Baseline Performance</strong><br />
+        During the design baseline phase, additional information may allow us to refine (or do for the first time) some of
+        the estimation and modeling tasks described earlier. In addition to this refinement, it is also now possible to do
+        focused modeling and prototyping on areas of particular concern. For example, if the design team is considering two
+        ways of implementing a certain performance-critical feature, can both alternatives be modeled or prototyped for the
+        purposes of comparison? While the PE team continues to have responsibility for assessing the overall performance of
+        the solution, focused estimating / modeling efforts can add value as well.
+    </p>
+    <p dir="ltr">
+        <strong>Interacting with the Development Team during the Design Baseline Phase</strong><br />
+        During the component design phase, PE efforts will continue to move to a lower level, sometimes referred to as
+        <i>unit performance design</i>. Detailed design techniques, database schema, SQL joins, Java garbage collection and
+        so on are just a few examples of areas where the development team will be having to manage the trade-offs between
+        ease of development, maintainability, performance, recoverability and so on.
+    </p>
+    <p dir="ltr">
+        While the PE team is clearly not in a position to mandate every decision that every developer makes at this stage,
+        the PE team should nevertheless make it clear that performance requirements, like functional requirements, must be
+        adhered to by the final solution. If <i>tracking application performance</i> through the design, development and
+        test can be made an accepted part of the process, then the PE and development teams can treat performance as a
+        shared goal rather than an arbitrary edict.
+    </p>
+    <p dir="ltr">
+        <strong>Interacting with the Test Team during the Design Baseline Phase</strong><br />
+        If it has not been done already, the PE team should be involved in the review of the performance test strategy and
+        plan. It may be appropriate for the PE team to assist in planning for specific <i>performance test scenarios</i> to
+        ensure coverage of the performance requirements, service level requirements, live monitoring requirements and major
+        performance risk areas. The RTVM may be revisited to ensure that the requirements validation methods for
+        performance (e.g. modeling versus testing) are still appropriate.
+    </p>
+    <p dir="ltr">
+        <strong>Participating in the Critical Design Review (CDR)</strong><br />
+        The following excerpt from the Preliminary Review scorecard denotes the PDR criteria which apply to performance
+        matters.
+    </p><br dir="ltr" />
+    <br />
+    <table style="WIDTH: 561px; HEIGHT: 167px" cellspacing="2" cellpadding="2" width="561" border="1">
+        <tbody>
+            <tr>
+                <td>
+                    <p>
+                        <strong>2. Component Design and Test</strong>
+                    </p>
+                    <p>
+                        <b>2.2 Completeness with the test plans and traceability to acceptance criteria and end-to-end
+                        functionality agreed to by the testing team</b>
+                    </p>
+                    <p>
+                        <b>3.</b> <b>Service</b> <b>Delivery</b> <b>Center</b> <b>(SDC) / Managed Operations and Delivery
+                        Organization</b>
+                    </p>
+                    <p>
+                        <b>3.1 Agreement with regard to production infrastructure, its capacity and projections</b>
+                    </p>
+                    <p>
+                        <b>3.2 Agreement with regard to availability and disaster recovery approach and projections</b>
+                    </p>
+                    <p>
+                        <b>4. System Testing</b>
+                    </p>
+                    <p>
+                        <b>4.1 Test plans traceable to system/component requirements and acceptance criteria</b>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+    <br />
+    <p dir="ltr">
+        Below are some examples of questions that the PE team can be asking above and beyond the standard CDR scorecard
+        criteria.
+    </p>
+    <ul dir="ltr">
+        <li>
+            <div>
+                Are both system and component technical volumetrics being maintained?
+            </div>
+        </li>
+        <li>
+            <div>
+                Have business volumetrics changed? Will they change our technical volumetrics, sizing, ability to meet SLRs
+                or other performance-critical assumptions?&nbsp;
+            </div>
+        </li>
+        <li>
+            <div>
+                Has the technology research been completed and incorporated into the estimation/modeling activities?
+            </div>
+        </li>
+        <li>
+            <div>
+                What results are available for the system and component performance estimation and modeling activities done
+                to date?&nbsp;
+            </div>
+        </li>
+        <li>
+            <div>
+                Has the capacity plan been updated to take into account the system and component estimation/modeling done
+                so far?&nbsp;
+            </div>
+        </li>
+        <li>
+            <div>
+                Do the component designs reflect adequate attention to performance considerations?&nbsp;
+            </div>
+        </li>
+        <li>
+            <div>
+                Do the component developers have the tools and techniques they need to address module performance during
+                code and unit test?&nbsp;
+            </div>
+        </li>
+        <li>
+            <div>
+                How does the development team plan to track progress against their performance goals?&nbsp;
+            </div>
+        </li>
+        <li>
+            <div>
+                Has a performance test plan been defined?&nbsp;
+            </div>
+        </li>
+        <li>
+            <div>
+                Will the performance test environment be ready and available by the time performance testing is scheduled
+                to start?&nbsp;
+            </div>
+        </li>
+        <li>
+            <div>
+                Has the performance risk been reassessed since the PDR?
+            </div>
+        </li>
+    </ul>
+</blockquote></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

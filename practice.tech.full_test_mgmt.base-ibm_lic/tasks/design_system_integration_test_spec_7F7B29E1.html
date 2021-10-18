@@ -1,0 +1,614 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Task: Design the System Integration Test Specification</title>
+<meta name="uma.type" content="Task">
+<meta name="uma.name" content="design_system_integration_test_spec">
+<meta name="uma.presentationName" content="Design the System Integration Test Specification">
+<meta name="uma.category" content="Discipline:tech_test:Technical Testing">
+<meta name="element_type" content="activity">
+<meta name="filetype" content="description">
+<meta name="role" content="Test Specialist">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_2MqpYGeSEd6Yrd44J2HAGg", "_sdxssGptEeSdxcAgtnf5og", "_yJQLwFmcEd-RLsfIF0kO2g"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_kpou0CmJEd65FoKJYXtPqg", "_vLdhkLUuEdyZzqoEHUdEQA", "_H0dQkLUvEdyZzqoEHUdEQA", "_yJQLwFmcEd-RLsfIF0kO2g"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', true, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div id="page-guid" value="_yJQLwFmcEd-RLsfIF0kO2g"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Task: Design the System Integration Test Specification</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/task.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Design system integration test specifications.</td>
+</tr>
+<tr>
+<td>Disciplines: <a href="./../../core.default.cat_def.base-ibm_lic/disciplines/tech_test_65BE95A1.html" guid="_H0dQkLUvEdyZzqoEHUdEQA">Technical Testing</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">To ensure all systems integration tests are well thought-out, and use tools and techniques suited to the tasks at hand and
+based on the test plans.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Primary Performer:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/test_specialist_EBC2F1A0.html" guid="mweb70BAB7D6643F3326852568D8004A6107">Test Specialist</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Additional Performers:
+								</span></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Inputs</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Mandatory:
+								</span>
+<ul></ul>
+<ul>
+<li>
+<a href="./../../core.tech.slot.base/workproducts/technical_architecture_slot_FF074CDD.html" guid="_8OD-cLPTEduocbW-TPTq7A">[Technical Architecture]</a>
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/architectural_decisions_3059F4D3.html" guid="mweb4BA812D47EEFD0A3852568820057215A">Architectural Decisions</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/architecture_overview_7BDD690F.html" guid="mweb3072ED040425425485256882005791A4">Architecture Overview</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/component_model_333A932.html" guid="mweb0BBA8C7269610775852568B3006C3ACF">Component Model</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/deployment_unit_model_6EA973D.html" guid="_pu0XUDDXEdyz_pzDMsV8FQ">Deployment Unit Model</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/infrastructure_gap_analysis_E82D9579.html" guid="mwebF0BDC03F4792DD3F8525688200764D6B">Infrastructure Gap Analysis</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/operational_model_5CE9CFC9.html" guid="mwebD1869C2CAF6E9991852568A4004FA5D9">Operational Model</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/performance_model_1704530C.html" guid="mweb74B5132A0F22A078852568CE006C3E50">Performance Model</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/ref_arch_fit_gap_analysis_505D71D5.html" guid="mwebCB8ECB58A8362ADD852568850059188E">Reference Architecture Fit Gap Analysis</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/security_architecture_E622835F.html" guid="mweb370C564F69E6DC6285256886005E1ADC">Security Architecture</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/technical_proof_of_concept_CEDA4198.html" guid="mwebDADCD71C49E3EA6485256885005CD538">Technical Proof of Concept</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/viability_assessment_5EE7A3B5.html" guid="mweb25893FBE05A65D6E852568850063E2A4">Viability Assessment</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="./../../core.tech.slot.base/workproducts/technical_specification_slot_2812F7EF.html" guid="_i3vkoLS-EduDY8LNbMCDBA">[Technical Specification]</a>
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/actor_9763FAED.html" guid="_HEk1cIfBEdyrHMpF6xBNiQ">Actor</a>
+</li>
+<li>
+<a href="./../../core.gen.common.extend-ibm_lic/workproducts/glossary_89F5200E.html" guid="mweb25D71B984252DE148525688200718F97">Glossary</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/nonfunctional_requirements_67C22734.html" guid="mwebA79F29E86DD9BD38852568850050F6EA">Non-Functional Requirements</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/security_privacy_rqmts_E3A7FCD.html" guid="mwebE99026780237383C85256886005DF211">Security and Privacy Requirements</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/standards_115B354E.html" guid="mwebC7C232F275394E6685256885005BB813">Standards</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/workproducts/storyboard_1A92B5B7.html" guid="_kumgAHUvEd2KwLyf6ks5lg">Storyboard</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/technical_environment_D0E8F7C5.html" guid="mweb7BEEAAEC8091A5F08525688200609192">Technical Environment</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/usability_requirements_6519A1CE.html" guid="mweb045FEED42E3B0342852568850060BD26">Usability Requirements</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/use_case_C510FD14.html" guid="_6VNxcIfBEdyrHMpF6xBNiQ">Use Case</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/use_case_model_A80F05C7.html" guid="mwebED77EA705636E0878525688500610AD7">Use-Case Model</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/user_profiles_92115672.html" guid="mweb59C733A5090372CD8525688500626189">User Profiles</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/user_story_98CAF165.html" guid="mweb40A426642BE0EDCA8525688500627A4D">User Story</a>
+</li>
+</ul>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Optional:
+								</span>
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/master_test_plan_316F37F1.html" guid="mweb6453F1B420F775748525688500505CDC">Master Test Plan</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/systems_int_test_plan_A81910A9.html" guid="mwebFCB182413368F0DB852569A5004B0907">Systems Integration Test Plan</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/test_specification_E0A1A8C5.html" guid="mwebCE3B2E307A951B9485256885005D8027">Test Specification</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Outputs</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/test_case_87487533.html" guid="_AkB1IEwQEd6CNsUreFNCVw">Test Case</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/test_data_45DFDAB6.html" guid="_DaazcEwQEd6CNsUreFNCVw">Test Data</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/test_env_config_C1CB0041.html" guid="mweb91E917F13D7C5F4A85256885005D0D33">Test Environment Configuration</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/test_script_29AE464B.html" guid="_B37F8EwQEd6CNsUreFNCVw">Test Script</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/test_specification_E0A1A8C5.html" guid="mwebCE3B2E307A951B9485256885005D8027">Test Specification</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Select appropriate tools and processes to assist in developing and executing the tests, and capture, analyze and report
+    on the results. Design the tests that will exercise the business functions and the technical functions test in the
+    context of the requirements and the test plan. Identify data synchronization requirements and transactions necessary to
+    cross the application interfaces and provide specified complexity. Document the test specification and review it with
+    stakeholders.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Steps</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="sectionTableSingleCell">
+<div class="stepHeading">Select testing techniques and tools for system integration testing</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    Select the different testing tools and techniques to improve the effectiveness and the efficiency of the test. The
+    tools selected must focus on achieving the test objectives and the overall testing strategy. The identification of the
+    purchasing, implementation and training requirements associated with the different options.<br />
+    <br />
+    All the techniques listed above are industry standard techniques. Education on some of the white and black box
+    techniques can be found in the TPM Overview and TPM Workshop course.<br />
+    <br />
+    <b><u>System Integration Test:</u></b><br />
+    <br />
+    Tools to support the System Integration Test include:
+</p>
+<ul>
+    <li>
+        Simulation tools: simulation of large numbers of terminals (this is limited by capability of the operating system
+        to support concurrent processes) 
+        <ul>
+            <li>
+                The ability to increase or decrease progressively the number of terminals on-line
+            </li>
+            <li>
+                The ability to record and play back multiple operator sessions
+            </li>
+            <li>
+                The ability to duplicate tests across large numbers of terminals
+            </li>
+            <li>
+                The ability to control remotely tests running on each terminal
+            </li>
+            <li>
+                The ability to synchronize precisely the tests on each terminal (to test concurrent access, for example)
+            </li>
+            <li>
+                The ability to measure system response from the viewpoint of each terminal
+            </li>
+            <li>
+                The ability to read data from a central test data source
+            </li>
+            <li>
+                The ability to accumulate and analyze test results centrally
+            </li>
+        </ul>
+    </li>
+    <li>
+        Test automation
+    </li>
+    <li>
+        Test drivers 
+        <ul>
+            <li>
+                Provides for regression testing
+            </li>
+            <li>
+                Used for volume test to vary load statistically and dynamically
+            </li>
+            <li>
+                Ability to drive a large variety of system types, e.g., telephone call generators
+            </li>
+            <li>
+                Used to validate IT work performed (e.g., check the returned message content, preferably while the test is
+                executing and produce error messages when incorrect
+            </li>
+        </ul>
+    </li>
+    <li>
+        Data creation tools
+    </li>
+    <li>
+        Reporting tools 
+        <ul>
+            <li>
+                Automatically updates the test repository on completion of a test run - Gives you the option of updating
+                the repository - Lets you view selected results data in real-time
+            </li>
+            <li>
+                Generates statistical reports on performance ratings against various load conditions across the system
+            </li>
+            <li>
+                Generates reports of failures detected at each
+            </li>
+            <li>
+                Views test results that relate to each terminal on a summary screen
+            </li>
+            <li>
+                Provides graphical versions of statistical
+            </li>
+            <li>
+                Provides report customization and formatting
+            </li>
+        </ul>
+    </li>
+    <li>
+        Monitoring and analysis tools 
+        <ul>
+            <li>
+                Provides real-time and historical recording for later analysis
+            </li>
+            <li>
+                Provides format structures for recording the data
+            </li>
+            <li>
+                Assist in data reduction and statistical analysis - especially from volume tests where a log record may be
+                produced for every "transaction"
+            </li>
+        </ul>
+    </li>
+    <li>
+        Debugging tools 
+        <ul>
+            <li>
+                Assists in finding and correcting the cause of a fault or failure in an application
+            </li>
+        </ul>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Develop system integration test design</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Define and describe the actual test architecture, elements, approach, data and expected results. Test design uses the
+various functional and non-functional requirement documents along with the quality and test plans. It provides the complete
+set of test cases and all supporting detail to achieve the objectives documented in the detailed test plan. <br />
+<br />
+As a further refinement of the detailed test plan, it includes one or more of the following components: 
+<ul>
+    <li>
+        Test scenarios
+    </li>
+    <li>
+        Test matrices
+    </li>
+    <li>
+        Test conditions
+    </li>
+    <li>
+        Test cases
+    </li>
+    <li>
+        Test data
+    </li>
+    <li>
+        Test scripts
+    </li>
+</ul>
+<p>
+    Test cases must be designed for:
+</p>
+<ul>
+    <li>
+        Valid input/output conditions, based on test strategies and techniques specified in the test plan
+    </li>
+    <li>
+        Invalid and unexpected input/output conditions
+    </li>
+</ul>
+<p>
+    Some examples for structuring tests are by:
+</p>
+<ul>
+    <li>
+        Transaction flows
+    </li>
+    <li>
+        Process flows
+    </li>
+    <li>
+        Special conditions
+    </li>
+    <li>
+        Sections of the Requirements Definition.
+    </li>
+    <li>
+        The tests should aim to test:
+    </li>
+    <li>
+        Acceptance of all valid classes of system input
+    </li>
+    <li>
+        Rejection of all invalid classes of system input
+    </li>
+    <li>
+        All functions
+    </li>
+    <li>
+        All classes of system outputs
+    </li>
+    <li>
+        All effective states
+    </li>
+    <li>
+        All interfacing systems and procedures
+    </li>
+    <li>
+        All non-functional requirements such as required response times to user actions at screens, etc.
+    </li>
+</ul>The users and testers, utilizing the users ‘detailed business knowledge and testers’ technical expertise resulting in
+more comprehensive and effective tests, should develop these tests cooperatively. <br />
+<br />
+The requirements-based tests for the systems’ functionality should be developed first, followed by the technical tests such
+as performance, etc.<br />
+<br />
+In order to be able to assess if an output meets or exceeds a given expectation, the expectation must be stated in testable
+terms. This means that when the characteristics of an output under test are compared against the expected characteristics,
+they can be matched in a clear and unambiguous way. You would not request that the answer to a calculation of (1 + 4) is to
+be an appropriate amount. To be testable, you would specify the answer as a single value like 5 or as a range between 0 and
+10 if the exact answer were not known. If the result of the test were anything other than 5 or a number within the
+specified range, the test would unequivocally fail and you would record the variance. The example, of course, is trivial
+but it serves to illustrate the point.<br />
+<br />
+In short, the test design is to testing what application design is to development. As in application design, modularization
+to facilitate standardization and reuse is a goal. All testware (i.e. testing assets) has the potential for use in other
+test levels and, beyond the immediate project, in maintenance and regression testing of the tested product.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Analyze available data and build system integration test data</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    As part of the test planning process, the test data requirements are defined and set up. Test scripts must be created
+    containing both valid and invalid test data. This involves identifying data that will support the test, allow it to
+    execute as designed and provide meaningful output to measure against expected results.<br />
+    <br />
+    As part of this task, potential sources for test data are determined. The methods are identified to extract additional
+    or new data. Data from sources such as existing production and data from previous testing activities are examined to
+    determine the data required to perform this level of testing. Modifying existing data and supplementing them with
+    additional data as required build test data.<br />
+    <br />
+    The processes required to support the data are also defined. For example:
+</p>
+<ul>
+    <li>
+        How will data be built or extracted?
+    </li>
+    <li>
+        How often will it be backed up?
+    </li>
+    <li>
+        How, when and where will this data be maintained? By whom?
+    </li>
+</ul>Note: Re-use and recycling is key to reducing the effort to create test data, both for the extraction process and the
+data itself.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Identify system integration test environment requirements</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    Define both the necessary and desired properties of the test environment. Include enough information to plan for
+    establishing the environment but do not include a detailed specification of the environment itself - this should be
+    provided in the test specification document, which corresponds to this plan. This specification should include:
+</p>
+<ul>
+    <li>
+        Identification of the physical components, the communications, the system and middleware necessary.
+    </li>
+    <li>
+        The mode or state of usage (for example, standalone or dedicated to the discrete usage of the application alone).
+    </li>
+    <li>
+        Other software or supplies needed to support testing (e.g. specialized stationery).
+    </li>
+    <li>
+        Security and access requirements to the test area and equipment.
+    </li>
+    <li>
+        Test tools and utilities required.
+    </li>
+    <li>
+        Identify any other testing needs (publications, office space).
+    </li>
+    <li>
+        Additional software licences to cover test period usage.
+    </li>
+    <li>
+        Support resources and skills required to maintain the test environments.
+    </li>
+    <li>
+        Identify a source for any of the needs that are not currently available to the test group.
+    </li>
+    <li>
+        If any other projects are to make parallel usage of any of the above, reference it.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Document system integration test specification including performance test specifications</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    Document for the system integration test level, the test cases for each test condition or group of conditions that
+    will:
+</p>
+<ul>
+    <li>
+        Test the specifications for what the system must do.
+    </li>
+    <li>
+        Test the system the way it will be used.
+    </li>
+    <li>
+        Perform destructive testing.
+    </li>
+</ul>Note: Ensure that Regression Testing is considered for modules that are being enhanced, fixed or modified in any way.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Review the system integration test specification</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><ul>
+    <li>
+        Prepare for peer review of test cases
+    </li>
+    <li>
+        Perform peer review on the test cases
+    </li>
+    <li>
+        Ensure that&nbsp;the system integration test specifications clearly define and describe components
+    </li>
+    <li>
+        Ensure that the system integration test cases cover: 
+        <ul>
+            <li>
+                Valid input/output conditions.
+            </li>
+            <li>
+                Invalid and unexpected input/output conditions.
+            </li>
+        </ul>
+    </li>
+    <li>
+        Ensure that the following have been completed as required: 
+        <ul>
+            <li>
+                Test scenarios
+            </li>
+            <li>
+                Test matrices
+            </li>
+            <li>
+                Test conditions
+            </li>
+            <li>
+                Test cases
+            </li>
+            <li>
+                Test data
+            </li>
+            <li>
+                Test scripts
+            </li>
+        </ul>
+    </li>
+    <li>
+        Review and finalize the tools and techniques to be used in system integration Testing
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

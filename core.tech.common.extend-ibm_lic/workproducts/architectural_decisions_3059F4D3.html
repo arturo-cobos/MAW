@@ -1,0 +1,932 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Artifact: Architectural Decisions
+			(ART 0513)
+		</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="architectural_decisions">
+<meta name="uma.presentationName" content="Architectural Decisions">
+<meta name="uma.category" content="@Type:@Name:@DisplayName">
+<meta name="uma.category" content="WorkProductType:record:Record">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_40aPEFtaEd6bpPG1p_gnYA", "_scUUIGptEeSdxcAgtnf5og", "mweb4BA812D47EEFD0A3852568820057215A"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_RPIYdGHREd-KldBUmGFQ5g", "_sfeV0GptEeSdxcAgtnf5og", "mweb4BA812D47EEFD0A3852568820057215A"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_b18RK0ihEd-_ZOv5_X5BYQ", "_sfoG0GptEeSdxcAgtnf5og", "mweb4BA812D47EEFD0A3852568820057215A"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_poNNkGDfEd68aPhR7rIxlw", "_shWlIGptEeSdxcAgtnf5og", "mweb4BA812D47EEFD0A3852568820057215A"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_vrCfoa6CEdyI4IDvQ60EJA", "_eUAiwO3tEdugFZ65awqtDw", "_Nd56gO6sEdufeZW9BVSlgw", "mweb4BA812D47EEFD0A3852568820057215A"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_HcVQwMRfEdyD76CYS6Ta7A", "_13NR7qxcEdyf7rzERpP8vA", "mweb4BA812D47EEFD0A3852568820057215A"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_WCR4YMRdEdyD76CYS6Ta7A", "mweb4BA812D47EEFD0A3852568820057215A"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb4BA812D47EEFD0A3852568820057215A"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Artifact: Architectural Decisions
+			(ART 0513)
+		</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/artifact.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Documents key decisions about the architecture and the rationale behind those decisions. </td>
+</tr>
+<tr>
+<td>Domains: <a href="./../../core.default.cat_def.base-ibm_lic/domains/validation_A3668B3F.html" guid="_Nd56gO6sEdufeZW9BVSlgw">Validation</a>
+<br>Work Product Kinds: <a href="./../../core.default.cat_def.base-ibm_lic/workproducttypes/record_6AD0118D.html" guid="_13NR7qxcEdyf7rzERpP8vA">Record</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The purpose of this artifact is to:
+</p>
+<ul type="disc">
+    <li class="MsoNormal"     style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in">
+        <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Ensure there is a single, authoritative source for communicating
+        key decisions made about the architecture</span>
+    </li>
+    <li class="MsoNormal"     style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in">
+        <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Record the rationale and reasoning behind each decision</span>
+    </li>
+    <li class="MsoNormal"     style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in">
+        <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Maintain the overall architectural integrity of the solution by
+        ensuring all decisions are consistent with each other</span>
+    </li>
+    <li class="MsoNormal"     style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in">
+        <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Ensure the same issues are not addressed more than once because
+        the resolution was forgotten</span>
+    </li>
+</ul><p/><br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Parent Deliverables</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../core.tech.swd.common.extend-ibm_int/workproducts/architecture_model_0537_95518A2A.html" guid="_QqlhsX7tEd-Spt3EoYp3Bg">Architecture Model</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_delv.base-ibm_lic/workproducts/business_requirements_spec_228_D0AB649B.html" guid="mweb3C31B7BBD647F0CF85256DC60079668D">Business Requirements Specification</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/workproducts/tech_solutions_decision_232_9487B807.html" guid="mwebBD4C0B237C8107F485256DC600795994">Technical Solutions Decisions</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Fulfilled Slots</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../core.tech.slot.base/workproducts/technical_architecture_slot_FF074CDD.html" guid="_8OD-cLPTEduocbW-TPTq7A">[Technical Architecture]</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Responsible:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/technical_solution_architect_86C345D1.html" guid="mweb13E09E200176D42E052569F100647201">Technical Solution Architect</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Modified By:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/application_architect_43A26CDB.html" guid="mweb0181E0FE6AD970A4852567D8005056B5">Application Architect</a>
+</li>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/information_architect_C80144F0.html" guid="mwebE17B2E5F8993A528852567D80050659C">Information Architect</a>
+</li>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/security_privacy_consultant_E55F1611.html" guid="mwebD64FDE13952DD9F2852568C2001EECB3">Security and Privacy Consultant</a>
+</li>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/roles/soa_architect_868D1C78.html" guid="_6a6fsMATEd2tiPGdefU3zg">SOA Architect</a>
+</li>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/software_designer_D18DC3B2.html" guid="_PaVbABjREduDY9xFzEM2Fg">Software Designer</a>
+</li>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/technical_solution_architect_86C345D1.html" guid="mweb13E09E200176D42E052569F100647201">Technical Solution Architect</a>
+</li>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/user_experience_pro_18670E86.html" guid="mweb316F0B2F8D8023488625655F00049DBD">User Experience Professional</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Tasks</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Input To:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.soma.svc_refactor_ratl.base-ibm_lic/tasks/apply_service_litmus_tests_8E89769A.html" guid="_vtAOkF9FEdubOdeYqxrKOA">Apply Service Litmus Tests</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/complete_component_model_8CA2B02B.html" guid="_mQ_sgIo9Ed-ta-foczjBcA">Complete Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/complete_logical_component_model_28DBC837.html" guid="_j4gc0BAWEd2QWeRzIzQSNQ">Complete Logical Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/complete_physical_component_model_C7D8A293.html" guid="_fIhfoBAWEd2QWeRzIzQSNQ">Complete Physical Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/conduct_viability_assessment_AAFB4AB0.html" guid="_6eH7UDDZEdyz_pzDMsV8FQ">Conduct Viability Assessment</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/confirm_arch_overview_B2F04F34.html" guid="_hI9i8De1EdyjZfPoe205xw">Confirm Architecture Overview</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/define_comp_elements_using_cust _dev_scenario_B34F5640.html" guid="_MFpooJGcEd26aZHcRrXCQA">Define Component Elements Using Custom Development Scenarios</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/define_comp_elements_using_intg_dev_scenarios_E2636DF2.html" guid="_sfn1EJGmEd26aZHcRrXCQA">Define Component Elements Using Integration Development Scenarios</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/detail_logical_component_model_B7AE0DD3.html" guid="_ByOF0EN3Edy0bYSPkMeI5Q">Detail Logical Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/detail_physical_component_model_8DD3C4C.html" guid="_Y3OSgEN3Edy0bYSPkMeI5Q">Detail Physical Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_refactor_ratl.base-ibm_lic/tasks/determine_service_exposure_scope_DB8D8856.html" guid="_3X3uwFKIEdyIXbIf1HOwyg">Determine Service Exposure Scope</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/dev_arch_overview_2B486C7E.html" guid="_YiUHsDDaEdyz_pzDMsV8FQ">Develop Architecture Overview</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/dev_inter_diagams_for_cust_dev_scenarios_2879F4C9.html" guid="_Yf_NIJHCEd26aZHcRrXCQA">Develop Interaction Diagrams for Custom Development Scenarios</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/dev_inter_diagams_for_intg_dev_scenarios_1EC69F45.html" guid="_0jGdIJHDEd26aZHcRrXCQA">Develop Interaction Diagrams for Integration Development Scenarios</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/dev_tech_proof_of_concept_703DB22A.html" guid="_QJk7IDDaEdyz_pzDMsV8FQ">Develop Technical Proof of Concept</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.extend-ibm_lic/tasks/dev_tech_proof_of_concept_D658DC29.html" guid="__lOsgSjQEeCOoqqZ5M9x9Q">Develop Technical Proof of Concept</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/doc_arch_decisions_F3C7C693.html" guid="_UI-v8DDaEdyz_pzDMsV8FQ">Document Architectural Decisions</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.extend-ibm_lic/tasks/identify_common_interactions_807FDFEE.html" guid="__M68MIoJEd-ta-foczjBcA">Identify Common Interactions</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/identify_custom_development_scenarios_7D54A1DC.html" guid="_q5N1wJGXEd26aZHcRrXCQA">Identify Custom Development Scenarios</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/identify_key_usage_scenarios_of_svcs_for_tfe_1986BDB7.html" guid="_zBC9wCjREeCOoqqZ5M9x9Q">Identify Key Usage Scenarios of Services</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/make_architectural_decisions_FCD9BCA6.html" guid="_NxuuYKcxEd2pr7pb2_6dZA">Make Architectural Decisions</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/outline_high_level_component_model_10F7F97E.html" guid="_vyo8UIoFEd-ta-foczjBcA">Outline High Level Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/outline_logical_component_model_319510FA.html" guid="_tvWp4EN1Edy0bYSPkMeI5Q">Outline Logical Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/outline_physical_component_model_EDD266CE.html" guid="_h3a9IEN2Edy0bYSPkMeI5Q">Outline Physical Component Model</a>
+</li>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/tasks/realize_asset_customization_or_configuration_AF6227BF.html" guid="_Tc814G6GEdulmrMDVQ1f_Q">Realize Asset Customizations or Configurations</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/refine_comp_elements_in_ bus_mediaton_layer_D4C64459.html" guid="_7THckJG8Ed26aZHcRrXCQA">Refine Component Elements in Business Mediaton Layer</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/refine_comp_element_in_ intg_mediation_layer_39F8A5A4.html" guid="_oeD6wJG_Ed26aZHcRrXCQA">Refine Component Elements in Integration Mediaton Layer</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/refine_comp_element_in_svc_def_and_adap_layer_58928CCE.html" guid="_x27WUJG5Ed26aZHcRrXCQA">Refine Component Elements in Service Definition and Adaptation Layer</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/select_custom_development_patterns_21121D64.html" guid="_YvqtsJFbEd26aZHcRrXCQA">Select Custom Development Patterns</a>
+</li>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/tasks/specify_asset_customization_or_configuration_C17F3AE3.html" guid="_AyF4EE6vEducTpuJ1Jeydw">Specify Asset Customizations or Configurations</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/transform_completed_component_model_3B645446.html" guid="_S7A0YBArEd2JzakANm7Vow">Transform Completed Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/transform_detail_component_model_33B92C63.html" guid="_OT-EQEN5Edy0bYSPkMeI5Q">Transform Detail Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/transform_outline_component_model_4E9BF488.html" guid="_mfkiEEN4Edy0bYSPkMeI5Q">Transform Outline Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/validate_realization_decisions_897A8221.html" guid="_7znjAB_eEdqF5c1Hhhq2Uw">Validate Realization Decision</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/verify_logical_component_model_25835B88.html" guid="_yncvUEN3Edy0bYSPkMeI5Q">Verify Logical Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/verify_physical_component_model_EE7FC30F.html" guid="_Jz5n0EN4Edy0bYSPkMeI5Q">Verify Physical Component Model</a>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<a href="./../../process.tech.ad_20.base-ibm_int/tasks/assemble_architecture_model_deliverable_1A627555.html" guid="_W0_4tn7xEd-Spt3EoYp3Bg">Assemble Architecture Model Deliverable</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/assemble_business_req_specification_C0998B68.html" guid="mweb093C356700000113D4AB6B78E4E737CB">Assemble Business Requirements Specification</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/assemble_component_req_specification_FC70DD7D.html" guid="mweb093C356700000113D4B1BB5889B6FF22">Assemble Component Requirements Specification</a>
+</li>
+<li>
+<a href="./../../process.tech.ad_20.base-ibm_int/tasks/assemble_data_model_deliverable_397ED35C.html" guid="_Ri1icKGWEd-OCuS__-Z59g">Assemble Data Model Deliverable</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/assemble_system_req_document_8F086931.html" guid="mweb093C356700000113D4ADB73C918A4C25">Assemble System Requirements Document</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/assemble_tech_sol_decisions_doc_8CCCF863.html" guid="mweb093C356700000113D4ADA6FF5307B398">Assemble Technical Solutions Decisions Document</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/complete_the_pe_plan_F6072A34.html" guid="mweb093C356700000113D4AB9CF098647B01">Complete the PE Plan</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/consolidate_realization_decisions_3DF34BD2.html" guid="_mXJ28F7sEdur6fWrpBRDlw">Consolidate Realization Decisions</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/create_service_context_diagram_3A5FD1A4.html" guid="_Z71PoCmYEdyb7p_TLTXB6w">Create Service Context Diagram</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design_soma.addon-ibm_lic/tasks/define_common_messaging_standard_and_format_56016F43.html" guid="_puzPgJYVEd20ttcATDSVvQ">Define Common Messaging Standard and Format</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/develop_pe_strategy_711FCC4D.html" guid="mweb093C356700000113D4AAFD476743374F">Develop PE Strategy</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/develop_security_design_objectives_7A4B62C6.html" guid="mweb093C3567000001118B99D09DF10BCA17">Develop Security Design Objectives</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/establish_service_comp_baseline_F00A3CB9.html" guid="_T9aMgA_eEd2HCIWhc32BdA">Establish Service Component Baseline</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.extend-ibm_lic/tasks/identify_plan_req_proof_of_concept_54DEC057.html" guid="__lOsiCjQEeCOoqqZ5M9x9Q">Identify and Plan Required Proof-of-Concepts</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/identify_security_subsystems_D671282C.html" guid="mweb093C3567000001118B9A08F96A1B4A1C">Identify Security Subsystems</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/identify_sec_zones_and_trust_levels_A2E84296.html" guid="mweb093C3567000001118B99F5A412E944D5">Identify Security Zones and Trust Levels</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/incorporate_security_testint_697BF6D4.html" guid="mweb093C3567000001118B9A8FAEB3703CB4">Incorporate Security in Testing</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/map_assets_and_actor_groups_to_zones_7F5CAE26.html" guid="mweb093C3567000001118B9A36386C6067AA">Map Assets and Actor Groups to Zones</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/map_design_objectives_to_subsystems_263E60CD.html" guid="mweb093C3567000001118B9A2A37D0F91413">Map Design Objectives to Subsystems</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/map_nodes_to_security_zones_D117F480.html" guid="mweb093C3567000001118B9A7285E6CF6345">Map Nodes to Security Zones</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/map_security_processes_39C30353.html" guid="mweb093C3567000001118B99E0E68641D156">Map Security Processes</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/map_security_zones_to_client_env_7ECCC9C3.html" guid="mweb093C3567000001118B9A42508D64869E">Map Security Zones to Client Environment</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/map_subsystems_to_nodes_731BD343.html" guid="mweb093C3567000001118B9A5F1235B03A85">Map Subsystems to Nodes</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/monitor_impl_of_security_functions_79D210FB.html" guid="mweb093C3567000001118B9AB7D20F81397D">Monitor Implementation of Security Functions</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/monitor_implementation_of_security_functions_8BDC8A30.html" guid="mweb093C3567000001118B9B8A322AB2D6EE">Monitor Implementation of Security Functions</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/perform_anti_use_case_testing_26E3BB12.html" guid="mweb093C3567000001118B9AD71471E3EDFE">Perform Anti-Use Case Testing</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/perform_anti_use_case_testing_hacking_86F6CA2F.html" guid="mweb093C3567000001118B9BB2A9E986EDBA">Perform Anti-Use Case Testing (Hacking)</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/perform_code_review_for_sec_val_2D9A4DAB.html" guid="mweb093C3567000001118B9B95480F7C5E57">Perform Code Review for Security Validation</a>
+</li>
+<li>
+<a href="./../../process.tech.ad_20.base-ibm_int/tasks/perform_component_realization_r4sc_68625CC.html" guid="_oq4skEYFEeGV7ddwRxOIkA">Perform Component Realization (R4SC)</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/perform_final_ethical_hack_of_pre_prod_env_2AFC1C7F.html" guid="mweb093C3567000001118B9BEECDD2C42505">Perform Final Ethical Hack of Pre-Production Environment</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/perform_risk_assurance_B38A5DEE.html" guid="mweb093C3567000001118B9AA571EEE94170">Perform Risk Assurance</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/refine_security_req_and_comp_3BF5B4F6.html" guid="mweb093C3567000001118B9A198F23E86260">Refine Security Requirements and Components</a>
+</li>
+<li>
+<a href="./../../process.tech.ad_20.base-ibm_int/tasks/select_custom_development_patterns_scenarios_927EE214.html" guid="_LyjeEEX_EeG9M9V7DXsstg">Select Custom Development Patterns and Scenarios (R4SC)</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.extend-ibm_lic/tasks/select_infra_products_5D218F9C.html" guid="_-cq2wBDAEd2d6ZU3Wcr6fA">Select Infrastructure Products</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/start_pe_plan_C17DBE63.html" guid="mweb093C356700000113D4AB14122D694A39">Start PE Plan</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/test_for_security_requirements_38477C22.html" guid="mweb093C3567000001118B9BA37A3199FF5F">Test for Security Requirements</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/update_technical_sol_decisions_doc_162E1AB3.html" guid="mweb093C356700000113D4B1AC8E4B68D333">Update Technical Solution Decisions Document</a>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/apply_ooad_in_subsystem_scope_31D8DC2D.html" guid="_N98YMG55Ed-IT6JE-sh1PQ">Apply OOAD in Subsystem Scope</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/assign_service_to_service_components_FF37FDF4.html" guid="_I8Qt4B_XEdqF5c1Hhhq2Uw">Assign Services to Service Components</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design_soma.addon-ibm_lic/tasks/begin_data_mapping_acrossa_soa_layers_8D23E131.html" guid="_ExpbQO3LEduV8s10_kGWGg">Begin Data Mapping Across SOA Layers</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/conduct_variation_oriented_design_7090DB34.html" guid="_8zQeoF2OEduE1aXRcyVMBg">Conduct Variation Oriented Design</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design_soma.addon-ibm_lic/tasks/decide_on_buy_build_enhance_data_sources_46173A0E.html" guid="_vUNXYO3MEduV8s10_kGWGg">Decide on Buy or Build or Enhance Data Sources</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/decompose_svc_component_into_func_tech_comp_9DFD05A3.html" guid="_KSJFoF2PEduE1aXRcyVMBg">Decompose Service Components into Functional and Technical Components</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design_soma.addon-ibm_lic/tasks/define_common_messaging_standard_and_format_56016F43.html" guid="_puzPgJYVEd20ttcATDSVvQ">Define Common Messaging Standard and Format</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/define_component_attributes_8C7476F8.html" guid="_kScygEOIEduXIri7BAc1Jg">Define Component Attributes</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/define_component_diagram_9D4ED85C.html" guid="_2bK7MF2OEduE1aXRcyVMBg">Define Component Diagram</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/define_component_interface_F7626A68.html" guid="_RQVcQF2OEduE1aXRcyVMBg">Define Component Interface </a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/define_component_internal_flow_5BBD8598.html" guid="_poTssF2OEduE1aXRcyVMBg">Define Component Internal Flow</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/define_events_C338D598.html" guid="_cOrZIF2OEduE1aXRcyVMBg">Define Events</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/define_subsystem_dependencies_DA2033E6.html" guid="_syBaMF2PEduE1aXRcyVMBg">Define Subsystem Dependencies</a>
+</li>
+<li>
+<a href="./../../practice.gen.deployment_mgmt_soma.addon-ibm_lic/tasks/deploy_services_install_soa_components_178A4C0A.html" guid="_0e3osFSdEdueYbvaLyDcJQ">Deploy Services and Install SOA Components</a>
+</li>
+<li>
+<a href="./../../practice.tech.full_test_mgmt.base-ibm_lic/tasks/design_integration_test_spec_4600EE0.html" guid="_B5Ko8FmXEd-RLsfIF0kO2g">Design the Integration Test Specification</a>
+</li>
+<li>
+<a href="./../../practice.tech.full_test_mgmt.base-ibm_lic/tasks/design_operability_test_spec_2D7ED8D9.html" guid="_qNfTQFmVEd-RLsfIF0kO2g">Design the Operability Test Specification</a>
+</li>
+<li>
+<a href="./../../practice.tech.basic_perf_support.base-ibm_lic/tasks/design_performance_test_spec_F4E3E690.html" guid="_S6DuQJNXEd-wc5FR4y4chg">Design the Performance Test Specification</a>
+</li>
+<li>
+<a href="./../../practice.tech.full_test_mgmt.base-ibm_lic/tasks/design_system_integration_test_spec_7F7B29E1.html" guid="_yJQLwFmcEd-RLsfIF0kO2g">Design the System Integration Test Specification</a>
+</li>
+<li>
+<a href="./../../practice.tech.full_test_mgmt.base-ibm_lic/tasks/design_system_test_spec_236EBF2E.html" guid="_bBgNEFmcEd-RLsfIF0kO2g">Design the System Test Specification</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design.base-ibm/tasks/detail_logical_data_model_2C3DDB31.html" guid="_FDafkAo5Edygr55FhBZqVw">Detail Logical Data Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/detail_logical_operational_model_9CC78E2D.html" guid="_80rE0AruEdy5ib8CxgclIA">Detail Logical Operational Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/detail_soa_soln_stack_layer_qos_layer_FC9C5F8B.html" guid="_1kCsUF72Edur6fWrpBRDlw">Detail SOA Solution Stack Layer (Quality of Service)</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_design.base-ibm/tasks/develop_component_design_7988C23B.html" guid="__h4FcAo_EdyQC7HwSt7FXA">Develop Component Design</a>
+</li>
+<li>
+<a href="./../../practice.tech.basic_perf_support.base-ibm_lic/tasks/develop_performance_model_39E79CA1.html" guid="_teXgkDeNEdyxh-AUiHClFg">Develop Performance Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design.base-ibm/tasks/develop_physical_database_design_3AB5F1C6.html" guid="_7CyLUAo8Edygr55FhBZqVw">Develop Physical Database Design</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/dev_ref_arch_fit_gap_analysis_B17633EF.html" guid="_A0MFgDDaEdyz_pzDMsV8FQ">Develop Reference Architecture Fit-Gap Analysis</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/enable_existing_components_as_services_9E64AFBE.html" guid="_OkCu4DLWEdyFnoUWgrp-xw">Enable Existing Components As Services</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/identify_service_components_D12C18DE.html" guid="_irvtwF2PEduE1aXRcyVMBg">Identify Service Components</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/implement_functional_component_8AD51EC7.html" guid="_yi3RMDLXEdyFnoUWgrp-xw">Implement Functional Component</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/implement_service_component_7D360024.html" guid="_AhvcUDLXEdyFnoUWgrp-xw">Implement Service Component</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/implement_technical_component_781A25F8.html" guid="_e3QCMDLXEdyFnoUWgrp-xw">Implement Technical Component</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/make_realization_decisions_7174DBC6.html" guid="_9HZXAEOBEduXIri7BAc1Jg">Make Realization Decisions</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design.base-ibm/tasks/outline_logical_data_model_AD31F6F5.html" guid="_8eAI8Ao4Edygr55FhBZqVw">Outline Logical Data Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.full_test_mgmt.base-ibm_lic/tasks/plan_integration_test_FDEB2986.html" guid="_i8fVYFmWEd-RLsfIF0kO2g">Plan Integration Testing</a>
+</li>
+<li>
+<a href="./../../practice.tech.basic_perf_support.base-ibm_lic/tasks/plan_perf_test_417E22B.html" guid="_UG-MSJaXEd-fxIZ08Di-Jg">Plan Performance Testing</a>
+</li>
+<li>
+<a href="./../../practice.tech.full_test_mgmt.base-ibm_lic/tasks/plan_system_integration_test_AB78D1D5.html" guid="_weSewFmcEd-RLsfIF0kO2g">Plan System Integration Testing</a>
+</li>
+<li>
+<a href="./../../practice.tech.full_test_mgmt.base-ibm_lic/tasks/plan_sys_test_4C4A3A87.html" guid="_ZaWpEFmcEd-RLsfIF0kO2g">Plan System Testing</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/realize_functions_of_unexposed_services_C94EDE9A.html" guid="_AegFoDLYEdyFnoUWgrp-xw">Realize Functionality for Unexposed Services</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/refactor_exiting_components_7947B32E.html" guid="_tcOkADLWEdyFnoUWgrp-xw">Refactor Existing Components</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/review_viability_assessment_5F99538F.html" guid="_vZ6sIDGLEdyoN6uzw6xFqQ">Review Viability Assessment</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design_soma.addon-ibm_lic/tasks/select_information_service_pattern_5D7D09E7.html" guid="_K7TzoEE6EdyXD8cemHsDrA">Select Information Service Pattern</a>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<a href="./../../practice.mgmt.manage_tech_env.base-ibm_lic/tasks/acquire_development_products_1EB67313.html" guid="_jodMoIW1Ed6eRN4Jq00Nbw">Acquire Development Products</a>
+</li>
+<li>
+<a href="./../../practice.tech.assess_tech_impact.base-ibm_lic/tasks/analyze_baseline_12BC15FD.html" guid="_HEy2EBC0Ed2d6ZU3Wcr6fA">Analyze Baseline</a>
+</li>
+<li>
+<a href="./../../practice.tech.assess_tech_impact.base-ibm_lic/tasks/analyze_impact_proposed_solution_B444527F.html" guid="_H5nvnkRAEdy0e9h1zdJ_TA">Analyze Overall Impact of Proposed Solution</a>
+</li>
+<li>
+<a href="./../../practice.gen.deployment_mgmt.base-ibm/tasks/assemble_deployment_packages_AC572130.html" guid="_jwd2OCilEd-pq9tGZ00Zeg">Assemble Deployment Packages</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.extend-ibm_lic/tasks/dev_svc_level_charac_model_837FF540.html" guid="_qyPRQDDZEdyz_pzDMsV8FQ">Assess Service Level Characteristics</a>
+</li>
+<li>
+<a href="./../../practice.mgmt.manage_tech_env.base-ibm_lic/tasks/build_development_infrastructure_77DAD65E.html" guid="_ymuYMIW0Ed6eRN4Jq00Nbw">Build Development Infrastructure</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev.base-ibm_lic/tasks/define_build_procedures_7FB1C929.html" guid="_H5UN_URAEdy0e9h1zdJ_TA">Define Build Procedures</a>
+</li>
+<li>
+<a href="./../../practice.mgmt.release_mgmt.base-ibm_lic/tasks/define_goals_for_the_build_cycles_BD5F31AE.html" guid="_mrluAH7dEd-Spt3EoYp3Bg">Define Goals for the Build Cycles</a>
+</li>
+<li>
+<a href="./../../practice.gen.deployment_mgmt.base-ibm/tasks/detail_deployment_plan_84EADECA.html" guid="_Dc1EwINnEd6ZssFTs4b4Eg">Detail Deployment Plan</a>
+</li>
+<li>
+<a href="./../../practice.gen.deployment_mgmt.base-ibm/tasks/detail_system_management_plan_E3A12E0.html" guid="_L0rggINnEd6ZssFTs4b4Eg">Detail System Management Plan</a>
+</li>
+<li>
+<a href="./../../practice.mgmt.release_mgmt.base-ibm_lic/tasks/detail_release_plan_5FCBCAF5.html" guid="_H5w5xURAEdy0e9h1zdJ_TA">Detail the Release Plan</a>
+</li>
+<li>
+<a href="./../../practice.tech.basic_perf_support.base-ibm_lic/tasks/dev_atomic_charac_9CE25D2A.html" guid="_EnJ3MDGSEdyU_cHE_KgUww">Develop Atomic Characteristics</a>
+</li>
+<li>
+<a href="./../../practice.tech.basic_perf_support.base-ibm_lic/tasks/dev_bus_tech_event_map_C75B3D50.html" guid="_XH-RkDGTEdyU_cHE_KgUww">Develop Business Technical Event Map</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev.base-ibm_lic/tasks/develop_coding_guidelines_92878C49.html" guid="_H5UNz0RAEdy0e9h1zdJ_TA">Develop Coding Guidelines</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design.extend-ibm_lic/tasks/develop_conceptual_data_model_BC40C974.html" guid="_9pe18Fq9Ed6NVp6oO7pJwg">Develop Conceptual Data Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design.extend-ibm_lic/tasks/develop_db_trans_desc_42F09CBB.html" guid="_kQrOQCojEd6XSu3by8hfTQ">Develop Database Transaction Descriptions</a>
+</li>
+<li>
+<a href="./../../practice.bus.assess_bus_impact.base-ibm_lic/tasks/dev_it_org_skills_gap_analysis_D51117F2.html" guid="_H5UOGERAEdy0e9h1zdJ_TA">Develop IT Organization Skills Gap Analysis</a>
+</li>
+<li>
+<a href="./../../practice.bus.assess_bus_impact.base-ibm_lic/tasks/dev_it_readiness_assess_7B1A44BC.html" guid="_H5UNlURAEdy0e9h1zdJ_TA">Develop IT Readiness Assessment</a>
+</li>
+<li>
+<a href="./../../practice.tech.assess_tech_impact.base-ibm_lic/tasks/develop_turnover_to_maint_materials_2A211434.html" guid="_nVX1cNhvEd-rBrSb-ReEDw">Develop Turnover to Maintenance Materials</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_design.extend-ibm_lic/tasks/establish_comp_analysis_design_guidelines_3433AD29.html" guid="__HI4wHYyEd6JYPdh7bgNrw">Establish Component Analysis and Design Guidelines</a>
+</li>
+<li>
+<a href="./../../process.tech.ad_20.base-ibm_int/tasks/establish_comp_analysis_design_guidelines_ECA168BB.html" guid="_OKvZEMaUEd-HC9x-2UD0eQ">Establish Component Analysis and Design Guidelines</a>
+</li>
+<li>
+<a href="./../../practice.mgmt.manage_tech_env.base-ibm_lic/tasks/establish_development_facility_FAFCC608.html" guid="_nq_1AIW1Ed6eRN4Jq00Nbw">Establish Development Facility</a>
+</li>
+<li>
+<a href="./../../practice.mgmt.release_mgmt.base-ibm_lic/tasks/evaluate_build_cycle_results_20E56A71.html" guid="__ZhmMIW9Ed6u16JzuIDfVA">Evaluate Build Cycle Results</a>
+</li>
+<li>
+<a href="./../../practice.mgmt.release_mgmt.base-ibm_lic/tasks/evaluate_programming_cycle_results_2B834A81.html" guid="__ZhmMYW9Ed6u16JzuIDfVA">Evaluate Programming Cycle Results</a>
+</li>
+<li>
+<a href="./../../practice.mgmt.project_process_tailoring.extend-ibm_lic/tasks/identify_reusable_assets_72D52C92.html" guid="_og1tkFRBEd64grhYMmcjDQ">Identify Reusable Assets (Asset Consumption)</a>
+</li>
+<li>
+<a href="./../../practice.tech.full_test_mgmt.base-ibm_lic/tasks/identify_test_ideas_D84E3C14.html" guid="_ueyiMGhXEd6DOe4zUjni_Q">Identify Test Ideas</a>
+</li>
+<li>
+<a href="./../../practice.gen.deployment_mgmt.base-ibm/tasks/outline_system_management_plan_18D7F2F0.html" guid="_L0rggYNnEd6ZssFTs4b4Eg">Outline System Management Plan</a>
+</li>
+<li>
+<a href="./../../practice.mgmt.release_mgmt.base-ibm_lic/tasks/outline_release_plan_E44ED0BC.html" guid="_cxz2MIW7Ed6u16JzuIDfVA">Outline the Release Plan</a>
+</li>
+<li>
+<a href="./../../practice.mgmt.release_mgmt.base-ibm_lic/tasks/refine_goals_for_the_build_cycles_8B4D4B25.html" guid="_frhLQH7iEd-Spt3EoYp3Bg">Refine Goals for the Build Cycles</a>
+</li>
+<li>
+<a href="./../../practice.mgmt.release_mgmt.base-ibm_lic/tasks/refine_goals_for_the_program_cycle_9F83F94.html" guid="_kvq9QIW-Ed6u16JzuIDfVA">Refine Goals for the Programming Cycle</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev.base-ibm_lic/tasks/revise_build_procedures_23C67E71.html" guid="_dvjj8H7ZEd-Spt3EoYp3Bg">Revise Build Procedures</a>
+</li>
+<li>
+<a href="./../../practice.gen.deployment_mgmt.base-ibm/tasks/specify_deployment_packaging_68EE29D9.html" guid="_tvllYHlwEd-Nfb-IE3I5eQ">Specify Deployment Packaging</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/update_system_comp_arch_doc_AC64A07D.html" guid="mweb093C356700000113D4B1E6C3859499FE">Update System/Component Architecture Document</a>
+</li>
+<li>
+<a href="./../../practice.tech.user_exp_design.base-ibm_lic/tasks/update_ui_guidelines_FB7E2CCF.html" guid="_B3YNMBE8Ed2AyYsy_uyuKg">Update User Interface Guidelines</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Output From:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.soma.svc_refactor_ratl.base-ibm_lic/tasks/adapt_service_litmus_test_and_exposure_scope_D73060CE.html" guid="_Pgz2oIlEEduThcf0jMbTBw">Adapt Service Litmus Test and Exposure Scope</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/assign_service_integration_mechanism_F66F2851.html" guid="_GOUNEJ8qEd2vcreD_1VFaA">Assign Service Integration Mechanism</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/consolidate_realization_decisions_3DF34BD2.html" guid="_mXJ28F7sEdur6fWrpBRDlw">Consolidate Realization Decisions</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design_soma.addon-ibm_lic/tasks/decide_on_buy_build_enhance_data_sources_46173A0E.html" guid="_vUNXYO3MEduV8s10_kGWGg">Decide on Buy or Build or Enhance Data Sources</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design_soma.addon-ibm_lic/tasks/define_common_messaging_standard_and_format_56016F43.html" guid="_puzPgJYVEd20ttcATDSVvQ">Define Common Messaging Standard and Format</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/define_comp_elements_using_cust _dev_scenario_B34F5640.html" guid="_MFpooJGcEd26aZHcRrXCQA">Define Component Elements Using Custom Development Scenarios</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/define_comp_elements_using_intg_dev_scenarios_E2636DF2.html" guid="_sfn1EJGmEd26aZHcRrXCQA">Define Component Elements Using Integration Development Scenarios</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/define_service_interface_messaging_style_C9E8472.html" guid="_i49GIJYiEd20ttcATDSVvQ">Define Service Interface Messaging Style</a>
+</li>
+<li>
+<a href="./../../practice.tech.user_exp_design.base-ibm_lic/tasks/define_ui_architecture_CFE12503.html" guid="_H5d-00RAEdy0e9h1zdJ_TA">Define User Interface Architecture</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/dev_inter_diagams_for_cust_dev_scenarios_2879F4C9.html" guid="_Yf_NIJHCEd26aZHcRrXCQA">Develop Interaction Diagrams for Custom Development Scenarios</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/dev_inter_diagams_for_intg_dev_scenarios_1EC69F45.html" guid="_0jGdIJHDEd26aZHcRrXCQA">Develop Interaction Diagrams for Integration Development Scenarios</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/develop_security_design_objectives_7A4B62C6.html" guid="mweb093C3567000001118B99D09DF10BCA17">Develop Security Design Objectives</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/develop_security_principles_A79C3DDB.html" guid="mweb093C3567000001118B99C6C23A148101">Develop Security Principles</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/doc_arch_decisions_F3C7C693.html" guid="_UI-v8DDaEdyz_pzDMsV8FQ">Document Architectural Decisions</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/document_state_management_decisions_FABC683E.html" guid="_2w8DwF_nEduhbPCAnI7o2Q">Document State Management Decisions</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/identify_custom_development_scenarios_7D54A1DC.html" guid="_q5N1wJGXEd26aZHcRrXCQA">Identify Custom Development Scenarios</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/make_architectural_decisions_FCD9BCA6.html" guid="_NxuuYKcxEd2pr7pb2_6dZA">Make Architectural Decisions</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/make_realization_decisions_7174DBC6.html" guid="_9HZXAEOBEduXIri7BAc1Jg">Make Realization Decisions</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/map_assets_and_actor_groups_to_zones_7F5CAE26.html" guid="mweb093C3567000001118B9A36386C6067AA">Map Assets and Actor Groups to Zones</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/map_design_objectives_to_subsystems_263E60CD.html" guid="mweb093C3567000001118B9A2A37D0F91413">Map Design Objectives to Subsystems</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/map_nodes_to_security_zones_D117F480.html" guid="mweb093C3567000001118B9A7285E6CF6345">Map Nodes to Security Zones</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/map_security_zones_to_client_env_7ECCC9C3.html" guid="mweb093C3567000001118B9A42508D64869E">Map Security Zones to Client Environment</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/map_subsystems_to_nodes_731BD343.html" guid="mweb093C3567000001118B9A5F1235B03A85">Map Subsystems to Nodes</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/monitor_impl_of_security_functions_79D210FB.html" guid="mweb093C3567000001118B9AB7D20F81397D">Monitor Implementation of Security Functions</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/perform_anti_use_case_testing_26E3BB12.html" guid="mweb093C3567000001118B9AD71471E3EDFE">Perform Anti-Use Case Testing</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/perform_risk_assurance_B38A5DEE.html" guid="mweb093C3567000001118B9AA571EEE94170">Perform Risk Assurance</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/refine_comp_elements_in_ bus_mediaton_layer_D4C64459.html" guid="_7THckJG8Ed26aZHcRrXCQA">Refine Component Elements in Business Mediaton Layer</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/refine_comp_element_in_ intg_mediation_layer_39F8A5A4.html" guid="_oeD6wJG_Ed26aZHcRrXCQA">Refine Component Elements in Integration Mediaton Layer</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/refine_comp_element_in_svc_def_and_adap_layer_58928CCE.html" guid="_x27WUJG5Ed26aZHcRrXCQA">Refine Component Elements in Service Definition and Adaptation Layer</a>
+</li>
+<li>
+<a href="./../../practice.tech.secure_sol.base-ibm_int/tasks/refine_security_req_and_comp_3BF5B4F6.html" guid="mweb093C3567000001118B9A198F23E86260">Refine Security Requirements and Components</a>
+</li>
+<li>
+<a href="./../../practice.tech.user_exp_design.base-ibm_lic/tasks/refine_ui_architecture_C26522D.html" guid="_H5w50ERAEdy0e9h1zdJ_TA">Refine User Interface Architecture</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/select_custom_development_patterns_21121D64.html" guid="_YvqtsJFbEd26aZHcRrXCQA">Select Custom Development Patterns</a>
+</li>
+<li>
+<a href="./../../process.tech.ad_20.base-ibm_int/tasks/select_custom_development_patterns_scenarios_927EE214.html" guid="_LyjeEEX_EeG9M9V7DXsstg">Select Custom Development Patterns and Scenarios (R4SC)</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design_soma.addon-ibm_lic/tasks/select_information_service_pattern_5D7D09E7.html" guid="_K7TzoEE6EdyXD8cemHsDrA">Select Information Service Pattern</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.extend-ibm_lic/tasks/select_infra_products_5D218F9C.html" guid="_-cq2wBDAEd2d6ZU3Wcr6fA">Select Infrastructure Products</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/select_patterns_B1E055E4.html" guid="_rviNABUEEd2JfYwFlWguXQ">Select Patterns</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/validate_realization_decisions_897A8221.html" guid="_7znjAB_eEdqF5c1Hhhq2Uw">Validate Realization Decision</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Main Description</th><td class="sectionTableCell"><p>
+    This artifact documents key architectural decisions and the rationale behind those decisions.
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Brief Outline</th><td class="sectionTableCell"><p class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+    The Architectural Decisions artifact contains the following sections:&nbsp;<br />
+    &nbsp;
+</p>
+<ul>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+            <strong>Summary and Status</strong> - summarizes all decisions and their status
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+            <strong>Architecturally Significant Requirements</strong> - lists requirements that must be implemented to
+            realize the architecture
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+            <strong>Architectural Constraints</strong> - lists any constraints on the way developers must build the system
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+            <strong>Reusable Assets</strong> - lists any potentially reusable assets; notes whether each asset is to be
+            used as-is, enhanced, or not used; cites reasons for each decision
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+            <strong>Architectural Mechanisms</strong> - lists the architectural mechanisms and describes the current state
+            of each one
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+            <strong>General Findings and Recommendations</strong> - lists any other decisions
+        </div>
+    </li>
+</ul>
+<p>
+    Capture the following information for each architectural decision:<br />
+    <br />
+</p>
+<ul>
+    <li>
+        <strong>Problem</strong> - What is being decided or the issue that is being addressed.
+    </li>
+    <li>
+        <strong>Assumptions</strong> - What is believed to be true about the context of the problem.
+    </li>
+    <li>
+        <strong>Motivation</strong> - Why this decision is important.
+    </li>
+    <li>
+        <strong>Alternatives</strong> - A list of options considered and explanations.
+    </li>
+    <li>
+        <strong>Decision</strong> - The decision taken, possibly with references to related artifacts.
+    </li>
+    <li>
+        <strong>Justification</strong> - Why the decision was made together with reference to any supporting principles and
+        explanations of deviations from compliance.<br />
+    </li>
+</ul><p/><br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Templates</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/templates/architectual_decisions_formal_C8324FAA.html" guid="_JMIQADetEdyrF6K2SkiByg">Architectural Decisions (formal)</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/examples/architectural_decisions_2664E7E2.html" guid="_5pNfQDetEdyrF6K2SkiByg">Architectural Decisions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Some important considerations for making and implementing architectural decisions:<br />
+</p>
+<ul>
+    <li>
+        Make sure the process for making decisions has the right level of sponsorship necessary to enforce those decisions
+    </li>
+    <li>
+        Make architecturally significant decisions early and be sure to validate high risk decisions using an executable
+        architecture
+    </li>
+    <li>
+        Review and update architectural decisions as development progresses and update this artifact so it reflects any
+        changes to your decisions
+    </li>
+    <li>
+        It is not necessary to document every minute decision you make when developing the architecture; focus on those
+        that are controversial or are based on reasoning that is not obvious<br />
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Tailoring</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Impact of not having</th><td class="sectionTableCell"><p>
+    If architectural decisions are not recorded, one or more of the following problems may arise:<br />
+</p>
+<ul>
+    <li>
+        Different parties may make decisions more than once, and the decision may be different each time
+    </li>
+    <li>
+        You may have difficulty getting closure on controversial decisions due to unclear rationale
+    </li>
+    <li>
+        Decisions may be inconsistent or contradict other decisions
+    </li>
+    <li>
+        New people on the project may take longer to understand the architecture<br />
+    </li>
+</ul><p/><p>
+    <br />
+    &nbsp;
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Reasons for not needing</th><td class="sectionTableCell"><p>
+    When an architecture is under development, there are virtually no reasons not to record architectural decisions. This
+    artifact is not needed if the decisions have been captured elsewhere, but be sure you have captured the additional
+    information such as rationale and options considered.
+</p><p/><br /></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Representation Options</th><td class="sectionTableCell"><p>
+    You may simply document Architectural Decisions as free format text with headings like problem, alternatives,
+    resolution, and justification.&nbsp;A tabular format in a document or spreadsheet is an effective way to organize
+    Architectural Decisions. A more sophisticated option is to use databases, collaboration tools, or requirements
+    management tools.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Checklists</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/checklists/architectural_decisions_8E0A246E.html" guid="_Dj7t4DesEdyrF6K2SkiByg">Architectural Decisions</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Estimation Considerations</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/estimationconsiderations/architectural_decisions_BCB88E5D.html" guid="_qMfIADesEdyrF6K2SkiByg">Architectural Decisions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

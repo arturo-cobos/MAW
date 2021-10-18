@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Artifact: Document Class Definitions
+			(APP 103)
+		</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="document_class_def">
+<meta name="uma.presentationName" content="Document Class Definitions">
+<meta name="uma.category" content="@Type:@Name:@DisplayName">
+<meta name="uma.category" content="WorkProductType:specification:Specification">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_vrCfoa6CEdyI4IDvQ60EJA", "_ht3agO3tEdugFZ65awqtDw", "_b91gIO3uEdugFZ65awqtDw", "mweb75183624B95C2B1C8525688200628CD0"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_HcVQwMRfEdyD76CYS6Ta7A", "_13NR8KxcEdyf7rzERpP8vA", "mweb75183624B95C2B1C8525688200628CD0"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_WCR4YMRdEdyD76CYS6Ta7A", "mweb75183624B95C2B1C8525688200628CD0"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb75183624B95C2B1C8525688200628CD0"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Artifact: Document Class Definitions
+			(APP 103)
+		</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/artifact.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The Document Class Definitions work product contains the information gathered and the design decisions made about the project-specific set of document classes. </td>
+</tr>
+<tr>
+<td>Domains: <a href="./../../core.default.cat_def.base-ibm_lic/domains/design_CC4B44C4.html" guid="_b91gIO3uEdugFZ65awqtDw">Design</a>
+<br>Work Product Kinds: <a href="./../../core.default.cat_def.base-ibm_lic/workproducttypes/specification_362AFF86.html" guid="_13NR8KxcEdyf7rzERpP8vA">Specification</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">The purpose of this work product is to provide the information needed to make design decisions about the document
+information stored or used in the system. By providing a consistent format that includes all the document classes
+implemented in the system, it will be easier to make consistent design decisions and to communicate those decisions to
+other members of the implementation team. It will also provide documentation for subsequent phases of the project when the
+analyst may have moved on to other projects or other tasks on the same project.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Main Description</th><td class="sectionTableCell"><p>
+    The Document Class Definitions work product contains the information gathered and the design decisions made about the
+    project-specific set of document classes. Document classes do not define just classes of documents, although some
+    classes will represent documents. In fact, document classes are defined down to the lowest level of granularity that is
+    needed to support the requirements of the project. In most cases, this level of granularity is lower than the level of
+    a ‘document’. Typically, most document classes are combined to define a hierarchy that comprises a ‘document’. This
+    work product also includes relationships between document classes. For example, some document classes are used to
+    describe documents or further describe other document classes; these document classes are typically
+    attributes.&nbsp;&nbsp;&nbsp;<br />
+</p>
+<p>
+    These document classes may be instantiated in SGML/XML designs, in document management system attributes, as database
+    tables or columns or they may not be represented in the final design at all, depending on the needs of the system, the
+    costs of supporting a specific class, etc.&nbsp;&nbsp;&nbsp;<br />
+</p>
+<p>
+    This work product usually takes the form of a document where the different sections describe the document classes. See
+    the Notation section of this work product description for details of the information captured as well as for a template
+    to be used.
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Brief Outline</th><td class="sectionTableCell"><p>
+    The following sections define the fields that are used to maintain the design data for each document class. See the <a class="elementLink" href="./../../core.legacy.common_wp.extend-ibm_int/guidances/guidelines/document_class_def_detail_out_19A1472F.html" guid="_q7Cn4EMNEd2GWqpvAUKRsQ">Document Class Definitions Detailed Outline</a> to see how this information is
+    maintained and presented.<br />
+</p>
+<h4>
+    1. Identifying Information
+</h4>
+<ul>
+    <li>
+        <strong>Source Details</strong>
+    </li>
+    <li>
+        <b>Class Details</b>
+    </li>
+    <li>
+        <b>Implementation-Specific Information</b>
+    </li>
+</ul>
+<h4>
+    2. Management and Tracking Information
+</h4>
+<p>
+    This information could be supported by a document management system.
+</p>
+<h4>
+    3. Document Class Definition Template
+</h4>
+<p>
+    Document Class Title Like ‘Customer Name’ Identifying Information.
+</p>
+<ul>
+    <li>
+        <b>Source Details</b>
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        If there is more than one source for information or examples, then the references and examples from that reference
+        should be grouped together.
+    </p>
+</blockquote>
+<ul>
+    <li>
+        <b>Class Details</b>
+    </li>
+    <li>
+        <b>Implementation-Specific Information</b>
+    </li>
+</ul>
+<h4>
+    4. Management and Tracking Information
+</h4>
+<p>
+    This information could be supported by a document management system.
+</p>
+<ul>
+    <li>
+        <b>Design Decisions</b>
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        This section contains documentation of document class level design decisions. These are design decisions that do
+        not significantly affect other classes or system components. This section provides a place for recording the
+        rationale behind the decision-making process. An example might be why an RDB field was used for a specific document
+        class rather than a document management system attribute or SGML element. Not all such decisions would be
+        documented here, just the significant decisions where there was significant discussion or disagreement that should
+        be captured.
+    </p>
+</blockquote></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/examples/doc_class_def_cuecard_A2F3E782.html" guid="_toMnUDajEdyV3oLDiz9lvQ">Document Class Definitions - Cue Card</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/examples/doc_class_def_gloss_79CBD482.html" guid="_0L8ywDakEdyV3oLDiz9lvQ">Document Class Definitions - Gloss Definition</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Be sure to remember that the process of analyzing information, while superficially similar to object analysis for
+    building object-oriented software systems, is different with a focus on hierarchical instance structure and information
+    content and much less emphasis on methods and the ’is-a-kind-of’ relationships between the classes.
+</p>When document analysis is complete, the requirements of the system should be reviewed to verify that the information
+needed to implement the functions of the system has been identified and accounted for.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Tailoring</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Impact of not having</th><td class="sectionTableCell"><p>
+    Design decisions will not be as well informed or consistent. It will be difficult to track, and in some cases, to
+    understand why design decisions were made. The documentation of the project will be incomplete and it will be more
+    difficult for new members of the team to understand the design of the information without constant consultation with
+    the SGML and other analysts who did the document class design.
+</p>
+<p>
+    Without this work product, the project team should count on extra time to revisit design decisions (possibly multiple
+    times) as well as to rework designs based on false assumptions about the document classes.
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Reasons for not needing</th><td class="sectionTableCell">If document analysis does not need to be performed, then this work product is not needed; otherwise this work product
+should not be omitted.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/guidelines/document_class_def_dev_F3D37D35.html" guid="_4ihcUDaiEdyV3oLDiz9lvQ">Developing Document Class Definitions</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/guidelines/document_analysis_methodology_64CDD37F.html" guid="mweb3B5523DAC7F4BA61852567FD0064A1AC">Document Analysis Methodology</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/guidelines/document_class_def_detail_out_19A1472F.html" guid="_q7Cn4EMNEd2GWqpvAUKRsQ">Document Class Definitions Detailed Outline</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Supporting Materials</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/supportingmaterials/document_class_def_ref_27B4C613.html" guid="_xVCXYDahEdyV3oLDiz9lvQ">References: Document Class Definitions</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Estimation Considerations</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/estimationconsiderations/document_class_def_legacy_9C26D0C3.html" guid="mweb370790428587963567">Document Class Definitions (Legacy)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

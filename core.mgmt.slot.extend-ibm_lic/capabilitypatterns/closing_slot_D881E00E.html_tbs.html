@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Capability Pattern: Closing</title>
+<meta name="uma.type" content="CapabilityPattern">
+<meta name="uma.name" content="closing_slot">
+<meta name="uma.presentationName" content="Closing">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_pT-Y4Z95EdyCs_dYY_lnfQ&path=_pT-Y4Z95EdyCs_dYY_lnfQ';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_pT-Y4Z95EdyCs_dYY_lnfQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Capability Pattern: Closing</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/capabilitypattern.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Perform the necessary tasks to properly close out a project phase or the project itself.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../core.mgmt.slot.extend-ibm_lic/capabilitypatterns/closing_slot_D881E00E.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WBS" href="./../../core.mgmt.slot.extend-ibm_lic/capabilitypatterns/closing_slot_D881E00E.html_wbs.html"><span style="white-space:nowrap;">Work Breakdown Structure</span></a></td><td width="1"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Team Allocation</span></td><td width="21"><img src="./../../images/tab_middle-a_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WPBS" href="./../../core.mgmt.slot.extend-ibm_lic/capabilitypatterns/closing_slot_D881E00E.html_wpbs.html"><span style="white-space:nowrap;">Work Product Usage</span></a></td><td width="21"><img src="./../../images/tab_end-i.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="4"><img src="./../../images/shim.gif" alt="" title="" height="2"></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="3"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Team Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Team Breakdown", summary: "Team Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["model_info", "Model Info"],
+["teams", "Team"],
+["type", "Type"],
+["is_planned", "Planned"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_optional", "Optional"]],
+rows: [
+
+{id: "1fa74622", parentId: "", relPath: ",_020drLT-Ed6F9-K5RMhxuA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "project_manager", title: "Project Manager", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/project_manager_106B942C.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "bcbd0cc2", parentId: "1fa74622", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "conditions_satisfaction", title: "Conditions of Satisfaction", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/conditions_satisfaction_ECBD1FC6.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1ff65982", parentId: "1fa74622", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "delivery_process_archived", title: "Delivery Process Archived", url: "./../../practice.mgmt.project_process_tailoring.extend-ibm_lic/capabilitypatterns/delivery_process_archived_4EE97E4D.html", 
+	predecessors: "", info: "Modifies", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "eeaf8df", parentId: "1fa74622", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "event_log", title: "Event Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/event_log_D711115D.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "52168767", parentId: "1fa74622", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "final_accept_supplier", title: "Final acceptance for supplier", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/final_accept_supplier_2661EA0.html", 
+	predecessors: "", info: "Modifies", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "70f1c773", parentId: "1fa74622", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "final_accept_sponsor", title: "Final Acceptance from Sponsor", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/final_accept_sponsor_13CD0A8A.html", 
+	predecessors: "", info: "Modifies", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c575d2c7", parentId: "1fa74622", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "lessons_learned", title: "Lessons Learned", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/lessons_learned_39922991.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c0145a03", parentId: "1fa74622", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "operational_schedule", title: "Operational Schedule", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/operational_schedule_3A0BADDB.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8a934fb", parentId: "1fa74622", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "process_methods_tools_profile", title: "Process, Methods and Tools Profile", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/process_methods_tools_profile_AB0FCA35.html", 
+	predecessors: "", info: "Modifies", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6c087b95", parentId: "1fa74622", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "pcb_closed", title: "Project Control Book Closed", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/pcb_closed_D4FD764B.html", 
+	predecessors: "", info: "Modifies", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e321a9ff", parentId: "1fa74622", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "proj_evaluation_report", title: "Project Evaluation Report", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/proj_evaluation_report_6034D59B.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ab7b5dc9", parentId: "1fa74622", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "proj_mgmt_schedule", title: "Project Management Schedule", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/proj_mgmt_schedule_9BA2F37C.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a5e186fd", parentId: "1fa74622", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "proj_status_report", title: "Project Status Report", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/proj_status_report_F75AFFD6.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "dc825e39", parentId: "1fa74622", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "supplier_evaluation_report", title: "Supplier Evaluation Report", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/supplier_evaluation_report_D03FEB0.html", 
+	predecessors: "", info: "Modifies", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6f6473e7", parentId: "1fa74622", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "archive_engagement", title: "Archive Engagement", url: "./../../practice.mgmt.project_process_tailoring.extend-ibm_lic/capabilitypatterns/archive_engagement_8A579C2E.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "bafc0f21", parentId: "1fa74622", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assess_compl_commit_imsp240_imsp711", title: "Assess completion of mutual commitments (IMSP240 and IMSP711)", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/assess_compl_commit_imsp240_imsp711_24C6B7BA.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ff700703", parentId: "1fa74622", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "close_agreement_contract_imsp240_imsp711", title: "Close agreement/contract (IMSP240 and IMSP711)", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/close_agreement_contract_imsp240_imsp711_6E373B98.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "489b97e5", parentId: "1fa74622", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "close_proj_archive_records_imsp240", title: "Close out project and archive records (IMSP240)", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/close_proj_archive_records_imsp240_CE346A71.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "b156136d", parentId: "1fa74622", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "release_resources_p240_p711", title: "Release Resources (IMSP240 & IMSP711)", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/release_resources_p240_p711_D7FAE3F0.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ed30fb41", parentId: "1fa74622", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "harvest_know_data_reuse_asset_p240_p711", title: "Harvest knowledge data and reusable assets (IMSP240 and IMSP711)", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/harvest_know_data_reuse_asset_p240_p711_3A72C623.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6cb12e58", parentId: "", relPath: ",_020dprT-Ed6F9-K5RMhxuA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "project_team_member", title: "Project Team member", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/project_team_member_807EC414.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "48ebd844", parentId: "6cb12e58", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "est_report", title: "Estimation Report", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/est_report_B14F01E5.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "67d52fd2", parentId: "6cb12e58", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "lessons_learned", title: "Lessons Learned", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/lessons_learned_39922991.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a2a45900", parentId: "6cb12e58", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "harvest_know_data_reuse_asset_p240_p711", title: "Harvest knowledge data and reusable assets (IMSP240 and IMSP711)", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/harvest_know_data_reuse_asset_p240_p711_3A72C623.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e947b086", parentId: "6cb12e58", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "release_resources_p240_p711", title: "Release Resources (IMSP240 & IMSP711)", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/release_resources_p240_p711_D7FAE3F0.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7048ad5a", parentId: "", relPath: ",_LT7dgBD5Ed-vko97VzAqPw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "relationship_owner", title: "Relationship Owner", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/relationship_owner_A071EA25.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "81e869da", parentId: "7048ad5a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assess_compl_commit_imsp240_imsp711", title: "Assess completion of mutual commitments (IMSP240 and IMSP711)", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/assess_compl_commit_imsp240_imsp711_24C6B7BA.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "792ce6f2", parentId: "7048ad5a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "close_agreement_contract_imsp240_imsp711", title: "Close agreement/contract (IMSP240 and IMSP711)", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/close_agreement_contract_imsp240_imsp711_6E373B98.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "f7cba1ea", parentId: "", relPath: ",_020dnLT-Ed6F9-K5RMhxuA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "sponsor", title: "Sponsor", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/sponsor_FE240BB0.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "f9c578e4", parentId: "f7cba1ea", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assess_compl_commit_imsp240_imsp711", title: "Assess completion of mutual commitments (IMSP240 and IMSP711)", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/assess_compl_commit_imsp240_imsp711_24C6B7BA.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ffa3a06", parentId: "f7cba1ea", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "close_agreement_contract_imsp240_imsp711", title: "Close agreement/contract (IMSP240 and IMSP711)", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/close_agreement_contract_imsp240_imsp711_6E373B98.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

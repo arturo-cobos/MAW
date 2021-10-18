@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Deliverable: Technical Solutions Decisions
+			(DCD 232)
+		</title>
+<meta name="uma.type" content="Deliverable">
+<meta name="uma.name" content="tech_solutions_decision_232">
+<meta name="uma.presentationName" content="Technical Solutions Decisions">
+<meta name="element_type" content="artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_ic10YD1DEd6fVa8fv3BibQ", "_sgIdIGptEeSdxcAgtnf5og", "mwebBD4C0B237C8107F485256DC600795994"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_WCR4YcRdEdyD76CYS6Ta7A", "mwebBD4C0B237C8107F485256DC600795994"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebBD4C0B237C8107F485256DC600795994"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Deliverable: Technical Solutions Decisions
+			(DCD 232)
+		</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/deliverable.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The Technical Solution Decisions document records important decisions about any aspect of the Technical Solution including the structure of the system, the provision and allocation of function, the contextual fitness of the system and adherence to standards.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">A project solution is understood partly through the record of the important decisions made during its development. A
+well-documented solution includes its own justification and evaluation criteria. The justification and evaluation criteria
+may be recorded alongside the decision or, at least in part, by reference to more generally applicable principles, policies
+and guidelines, which are found in other work products or in external references. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>There are no reasons for not documenting system solution decisions. However on a simple system, there may be few
+that are worth recording. All the significant decisions may be adequately documented in other work products or
+deliverables. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>Any important decisions that were made to create the technical solution should be include: 
+<ul>
+    <li>
+        major architectural decisions
+    </li>
+    <li>
+        major requirements decisions
+    </li>
+    <li>
+        make / buy / reuse analysis
+    </li>
+    <li>
+        trade studies
+    </li>
+</ul>
+<p>
+    The purpose of having a Technical Solution Decisions document is to:
+</p>
+<ul>
+    <li>
+        Provide a single place to find important solution decisions
+    </li>
+    <li>
+        Make explicit the rationale and justification of solution
+    </li>
+    <li>
+        Preserve design integrity in the provision of functionality and its allocation to system components
+    </li>
+    <li>
+        Ensure that the system is extensible and can support an evolving system
+    </li>
+    <li>
+        Provide a reference of documented decisions for new people who join the project
+    </li>
+    <li>
+        Avoid unnecessary reconsideration of the same issues
+    </li>
+    <li>
+        Provide the infrastructure to elaborate decision models in the future
+    </li>
+    <li>
+        Be part of a repository of decisions that can be used as a reference for the future (asset reuse)
+    </li>
+</ul>
+<p>
+    The Technical Solution Decisions template records:
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp; 1) the decisions to be made (with assumptions, motivations); and
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp; 2) the decision made or alternative selected (with justification, implication, and related
+    documentation).
+</p>
+<p>
+    The Justification of a Decision template records:
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp; 1) Decisions drivers; and
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp; 2) Alternatives considered.
+</p>
+<p>
+    The Technical Solution Decisions document includes architecture as well as other technical decisions made through the
+    course of the project. The Technical Solution Decisions document defines the rationale, priorities, assumptions,
+    motivation, justification, and implications of the decision.
+</p>
+<p>
+    The Systems Engineer should use the Technical Solution Decisions template to record the decision to be made and the
+    final decision made (alternative selected) and should use the Justification template to record the justification and
+    details of the decision made (decision drivers and alternatives considered). If the Systems Engineer wishes to record
+    the project's Technical Solution Decisions in another format, that is fine, but the decisions, the drivers, and the
+    alternatives should be recorded and kept as part of the project's technical solution materials.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Responsible:
+								</span></td><td class="sectionTableCell"><span class="sectionTableCellHeading">Modified By:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/infrastructure_architect_1578FFE0.html" guid="mwebBD14B77ED1325BE4852567D800507451">Infrastructure Architect</a>
+</li>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/systems_eng_pro_3670F084.html" guid="mweb73C3E4C06821DB1E85256D170044BDE1">Systems Engineering Professional</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Tasks</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Input To:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/update_technical_sol_decisions_doc_162E1AB3.html" guid="mweb093C356700000113D4B1AC8E4B68D333">Update Technical Solution Decisions Document</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Output From:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/assemble_tech_sol_decisions_doc_8CCCF863.html" guid="mweb093C356700000113D4ADA6FF5307B398">Assemble Technical Solutions Decisions Document</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/update_technical_sol_decisions_doc_162E1AB3.html" guid="mweb093C356700000113D4B1AC8E4B68D333">Update Technical Solution Decisions Document</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Templates</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/guidances/templates/technical_solutions_decisions_A4BB398E.html" guid="_zkTQAKcKEdy_Ycb9vtUAhg">Technical Solutions Decisions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Deliverable Properties</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Deliverable Parts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/architectural_decisions_3059F4D3.html" guid="mweb4BA812D47EEFD0A3852568820057215A">Architectural Decisions</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/candidate_asset_list_7C5C60C0.html" guid="mweb3E0FDFC6B1A9A0F885256882005AF563">Candidate Asset List</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/current_solution_eval_67995A34.html" guid="mwebF2DD2EFDE50580C8852568820060F0D2">Current Solution Evaluation</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/decision_model_ECE844F1.html" guid="mwebF8645B35A6E3CCAF852568820061F035">Decision Model</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/infrastructure_gap_analysis_E82D9579.html" guid="mwebF0BDC03F4792DD3F8525688200764D6B">Infrastructure Gap Analysis</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/prequalify_vendor_analysis_F35FB081.html" guid="mweb10887050F4B8AB5F852568850052450D">Pre-Qualification Vendor Analysis</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/ref_arch_fit_gap_analysis_505D71D5.html" guid="mwebCB8ECB58A8362ADD852568850059188E">Reference Architecture Fit Gap Analysis</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/rfi_8C0058A6.html" guid="mwebB8A23302C55D7449852568850059E313">Request for Information</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/rfp_6C40C72C.html" guid="mweb54D988C7E82333B885256885005A04AE">Request for Proposal</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/slc_model_CC623B4A.html" guid="mweb9CB4D059B708B98485256885005AD0C3">Service Level Characteristic Model</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/technology_scan_26F5F7F7.html" guid="mwebD649B2134861145085256885005CEDCA">Technology Scan</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/viability_assessment_5EE7A3B5.html" guid="mweb25893FBE05A65D6E852568850063E2A4">Viability Assessment</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Packaging Instructions</th><td class="sectionTableCell"><p>
+    Technical Solution Decisions are documented throughout the project life cycle as the decisions are made.
+</p>
+<p>
+    Technical Solution Decisions can be documented very simply in the electronic equivalent of a logbook. A Notes database
+    is a very suitable technology. Each decision can be described in a free format style in which headings like problem
+    statement, resolution, alternatives, justification are typical but not mandatory.
+</p>
+<p>
+    Provided are Excel spreadsheet templates that can be used to record the decisions.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Estimation Considerations</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/guidances/estimationconsiderations/technical_solutions_decisions_legacy_6087A618.html" guid="_VVRQIKcLEdy_Ycb9vtUAhg">Technical Solutions Decisions (Legacy)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

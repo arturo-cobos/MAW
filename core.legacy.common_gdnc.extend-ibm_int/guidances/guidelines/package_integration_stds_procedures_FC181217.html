@@ -1,0 +1,693 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Package Integration Standards and Procedures</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="package_integration_stds_procedures">
+<meta name="uma.presentationName" content="Package Integration Standards and Procedures">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mwebEEE306EA7759FE14852568B800639ADA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebEEE306EA7759FE14852568B800639ADA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Package Integration Standards and Procedures</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Introduction
+</h3>
+<p>
+    This Technique Paper covers:
+</p>The Client strategy regarding whether standards are to be applied to and whether quality control mechanisms are to be
+in place to validate the development of: 
+<ul>
+    <li>
+        Package Extensions - to what extent are enhancements to the standard package allowed, what is the process for
+        inclusion or exclusion of modifications to the standard package or already developed and accepted programs and
+        configuration.
+    </li>
+    <li>
+        Reports - to what extent may standard reports be changed, or reports developed, and how will report development
+        requirements be processed.
+    </li>
+    <li>
+        Interfaces - what is the process (and criteria) for ‘inventing’ interface development requirements.
+    </li>
+    <li>
+        Data Conversion programs - what is the process for identifying and processing data conversion requirements.
+    </li>
+</ul>The development and configuration process to be used, including: 
+<ul>
+    <li>
+        An identification and selection of the development tools.
+    </li>
+    <li>
+        High level decision on where to document the content and media that should be utilized for documenting
+        modifications to or configuration of the package.
+    </li>
+    <li>
+        High level environment strategy, e.g., the decision(s) on which environments will be available and for what, e.g.,
+        Development system, Configuration/Integration system, Quality Assurance system, Training system, and Production
+        system.
+    </li>
+    <li>
+        Security Management Strategy indicating the naming convention to be used for the Security Profile groups.
+    </li>
+    <li>
+        Completed "High Level Security Profile Matrix per Department" indicating the initial number of security profiles
+        expected per department.
+    </li>
+    <li>
+        Review the "Change Control Strategy" and decide how this will be used within the project.
+    </li>
+</ul>
+<h3>
+    General Guidance
+</h3>
+<p>
+    The purpose of this paper is to:
+</p>
+<ul>
+    <li>
+        Document the project strategy regarding development requirements and how these are processed, what level of
+        approval is needed for each type of development (package extensions, reports, interfaces and data conversions).
+    </li>
+    <li>
+        Identify and document the development tools that will be used.
+    </li>
+    <li>
+        Document the decision on which environments will be available and their use.
+    </li>
+    <li>
+        Document the security management strategy
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Naming conventions to be used.
+            </li>
+            <li>
+                The high-level security profiles, giving an indication of the number of security profiles to be implemented
+                and thereby the work effort expected.
+            </li>
+        </ul>
+    </li>
+    <li>
+        Identify how the change in scope will be controlled.
+    </li>
+</ul>
+<p>
+    Without strategic decisions relating to development, configuration and documentation, there will be no continuity in
+    the techniques adopted by either the technical or non-technical resources on the project. This could result in an
+    uncontrolled development or configuration.
+</p>
+<p>
+    The security management will be considered very late, if at all, resulting in no plans being in place when needed with
+    a high probability of the security profiles not being in place at go-live.
+</p>
+<p>
+    The scope can change without any management control and can affect the project time scale.
+</p>
+<h3>
+    Development Approach
+</h3>
+<p>
+    Input
+</p>
+<ul>
+    <li>
+        The "Change Control Strategy" white paper
+    </li>
+    <li>
+        The "Environment Strategy" white paper
+    </li>
+</ul>
+<p>
+    Output
+</p>
+<ul>
+    <li>
+        The strategy covering which environments will be available and for what.
+    </li>
+    <li>
+        The "Security Management Strategy" and the approved "High Level Security Profiles Matrix per Department" developed
+        per department.
+    </li>
+    <li>
+        The Change Request Procedure for changes to the approved development requirements or configuration, including the
+        "Change Request" form and the "Change Request Log" form.
+    </li>
+    <li>
+        The "High Level Package Integration Standards & Procedures" white paper.
+    </li>
+</ul>
+<p>
+    &nbsp;<img height="322" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/PIStds_Proc_Fig1.JPG" width="600" /><br />
+    &nbsp;<img height="347" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/PIStds_Proc_Fig2.JPG" width="600" />
+</p>
+<p>
+    In order to develop the appropriate standards, the following tasks are performed:
+</p>
+<ul>
+    <li>
+        Review the Change Request Procedure, including the forms.
+    </li>
+    <li>
+        Review the development standards and recommendations from the Package Vendor, the Client considerations and
+        recommendations from the Implementation Partner.
+    </li>
+    <li>
+        Define and document the Development Tools and Procedures.
+    </li>
+    <li>
+        Review the configuration standards and recommendations from the Package Vendor and Client considerations, and the
+        recommendations from the Implementation Partner.
+    </li>
+    <li>
+        Define and document the Configuration Standards and Procedures.
+    </li>
+    <li>
+        Define the Environments that will be used.
+    </li>
+    <li>
+        Hold workshop and train on package security management.
+    </li>
+    <li>
+        Develop Security Management Strategy (naming conventions for security profiles and a matrix per department showing
+        security profiles against job roles).
+    </li>
+    <li>
+        Complete the security matrices per department.
+    </li>
+    <li>
+        Obtain Client approval.
+    </li>
+</ul>
+<p>
+    A validation of the initial Security Profiles will be done in the "Detailed Future Justifications" Work Product where
+    the individual profiles will be signed off by the Client to be implemented.
+</p>
+<p>
+    It is essential to start the Client thinking about security profiles at an early stage. To help in the development of
+    the security profile groups, list the functions to be performed by each job role and group these into security profile
+    groups with common access needs.
+</p>
+<h3>
+    Example
+</h3>
+<p>
+    The following is an example for a SAP implementation:
+</p>
+<h4>
+    Document Control
+</h4>
+<p>
+    Distribution List:
+</p>
+<p>
+    Client Project Manager, Technical Project Manager, Application Consultants, Application Development Consultants, Basis
+    Consultants, and Customer Project Members.
+</p>
+<p>
+    <strong><u>Revision History</u></strong>
+</p><br />
+<br />
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <th id="" scope="col" abbr="">
+                Rev
+            </th>
+            <th id="" scope="col" abbr="">
+                Date
+            </th>
+            <th id="" scope="col" abbr="">
+                Comments
+            </th>
+            <th id="" scope="col" abbr="">
+                Owner
+            </th>
+        </tr>
+        <tr>
+            <td>
+                1
+            </td>
+            <td>
+                xx/xx/xx
+            </td>
+            <td>
+                Document Created.
+            </td>
+            <td>
+                X XXXXX
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<h4>
+    SAP Installation for (Client).
+</h4>
+<p>
+    <strong>Server:</strong>&nbsp;Development / Production
+</p>
+<p>
+    <strong>Operating System:</strong>&nbsp;OS/400 Version 4 Release 3
+</p>
+<p>
+    <strong>Database:</strong>&nbsp;DB2
+</p>
+<p>
+    <strong>SAP Release:</strong>&nbsp;40B
+</p>
+<p>
+    <strong>Host name:</strong>&nbsp;leasap1
+</p>
+<p>
+    <strong>IP Address:</strong>&nbsp;196.175.209.50
+</p>
+<p>
+    <strong>System ID/Instance:</strong> &nbsp;DEV/00&nbsp;QAS/10&nbsp;
+</p>
+<p>
+    <strong>Hardware Vendor:</strong>&nbsp;IBM
+</p>
+<p>
+    <strong>Model:</strong>&nbsp;AS/400 9406-S30
+</p>
+<p>
+    <strong>Processor:</strong>&nbsp;2257
+</p>
+<p>
+    <strong>Memory:</strong>&nbsp;1.5GB
+</p>
+<p>
+    <strong>Hardware Supplier:</strong>&nbsp;IBM
+</p>
+<p>
+    <strong>SAP Installation Date:</strong> &nbsp;XX/XX/XX
+</p>
+<p>
+    <strong><u>File system setup</u></strong>
+</p><br />
+<br />
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <td>
+                <strong><font size="3">ASP</font></strong>
+            </td>
+            <td>
+                <strong><font size="3">Contents</font></strong>
+            </td>
+            <td>
+                <strong><font size="3">Size</font></strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ASP 1
+            </td>
+            <td>
+                <p>
+                    OS/400
+                </p>
+                <p>
+                    SAP R/3 Kernel<br />
+                </p>
+                <p>
+                    DB2/400 Kernel<br />
+                </p>
+                <p>
+                    Database
+                </p>
+            </td>
+            <td>
+                60 GB<br />
+                (approx.)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ASP 2
+            </td>
+            <td>
+                Journal Receivers (500 MB)&nbsp;
+            </td>
+            <td>
+                4 GB
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<h4>
+    Client Configuration
+</h4>
+<h4>
+    A.&nbsp;Recommendation
+</h4>
+<p>
+    <strong>Implementation of three tier system landscape</strong>
+</p>
+<p>
+    Due to the nature of the project i.e. the modules that are to be implemented and the fact that this is not a multi-site
+    installation, it is recommended that a three tier system landscape be introduced i.e. DEV -&gt; QAS -&gt; PRD.
+</p>
+<p>
+    The Development and Quality assurance instances will be installed on the first AS/400 system and the Production
+    instance will be created on a new system to be acquired later in the project.
+</p><br />
+<br />
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <th id="" scope="col" abbr="">
+                SID
+            </th>
+            <th id="" scope="col" abbr="">
+                Instance
+            </th>
+            <th id="" scope="col" abbr="">
+                Client
+            </th>
+            <th id="" scope="col" abbr="">
+                Client Description
+            </th>
+            <th id="" scope="col" abbr="">
+                Status
+            </th>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                DEV
+            </th>
+            <td>
+                00
+            </td>
+            <td>
+                <p>
+                    200
+                </p>
+                <p>
+                    210
+                </p>
+                <p>
+                    220
+                </p>
+                <p>
+                    250
+                </p>
+            </td>
+            <td>
+                <p>
+                    Configuration
+                </p>
+                <p>
+                    Sand Pit
+                </p>
+                <p>
+                    Unit Test
+                </p>
+                <p>
+                    Data Load
+                </p>
+            </td>
+            <td>
+                <p>
+                    Existing
+                </p>
+                <p>
+                    Existing
+                </p>
+                <p>
+                    Existing
+                </p>
+                <p>
+                    Existing
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                QAS
+            </th>
+            <td>
+                10
+            </td>
+            <td>
+                300
+            </td>
+            <td>
+                Quality Assurance Test
+            </td>
+            <td>
+                Existing
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+            </th>
+            <td>
+            </td>
+            <td>
+                310
+            </td>
+            <td>
+                Training
+            </td>
+            <td>
+                To be created as required
+            </td>
+        </tr>
+        <tr>
+            <th id="" scope="row" abbr="">
+                PRD
+            </th>
+            <td>
+                00
+            </td>
+            <td>
+                400
+            </td>
+            <td>
+                Production
+            </td>
+            <td>
+                To be created as required
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<h4>
+    B.&nbsp;Client Strategy
+</h4>
+<p>
+    <strong>Development</strong>
+</p>
+<p>
+    <strong>200&nbsp; Configuration</strong>
+</p>
+<p>
+    (Customizing allowed, Automatic recording, Client Independent changes allowed)
+</p>
+<p>
+    Client 200 has been created as a copy of standard SAP client 001 with customizing settings only, i.e. no data and no
+    user masters. Client independent customizing changes will be allowed in this client only with transports created for
+    importing to other systems. Its client dependent customizing data will always be changed manually, using automatic
+    recording to create transports for importing into other clients/systems. No transports into client 200 would be
+    allowed. This client should never be used for testing and should not contain any master or transaction data. New
+    programs and SAP scripts would be created in client 200 and these would be made available to all other clients. Access
+    to this client will be limited to people responsible for customizing and developers only.
+</p>
+<p>
+    <strong>210&nbsp; Sand pit</strong>
+</p>
+<p>
+    (Customizing allowed, No recording, No client independent changes allowed)
+</p>
+<p>
+    Client 200 is to be a copy of client 200 once a satisfactory level of configuration has been achieved. It is to be used
+    to test out possible configuration settings that once approved would be re-created manually in client 200. This client
+    will be available to the whole project team for prototyping purposes.
+</p>
+<p>
+    Clients 220, 250, 300, 310 would be copies of client 200 once a satisfactory level of customizing had been completed.
+    New customizing data would be transported into these clients from 200 as and when necessary. Therefore, changes would
+    not be allowed within these clients.
+</p>
+<p>
+    <strong>220&nbsp; Unit Test</strong>
+</p>
+<p>
+    (No changes allowed)
+</p>
+<p>
+    This client would be used to provide a place for programmers to test development effort in a reasonably stable
+    environment. Data would be created manually in most cases.
+</p>
+<p>
+    <strong>250 &nbsp;Data Load</strong>
+</p>
+<p>
+    (No changes allowed)
+</p>
+<p>
+    This client would be used to test the data load programs and procedures. Once these were approved they could be used to
+    populate the configuration test client with more representative data.<br />
+</p>
+<h4>
+    C.&nbsp;Quality Assurance
+</h4>
+<p>
+    <strong>300 &nbsp;Configuration Test</strong>
+</p>
+<p>
+    (No changes allowed)
+</p>
+<p>
+    This client would be the system test client. Data would be entered manually or via the data load programs once
+    approved. This client will be used exclusively to prove that the proposed changes to the production client are
+    acceptable to the business.
+</p>
+<p>
+    <strong>310 &nbsp;Training Master</strong>
+</p>
+<p>
+    (No changes allowed)
+</p>
+<p>
+    The training client should be established once the major elements of the configuration have been put in place. It
+    should include the user masters and starting data required to provide a meaningful training environment. Once set up
+    this client should be saved outside of SAP (exported) and refreshed as necessary (imported) for the start of the next
+    training session.
+</p>
+<h4>
+    D.&nbsp;Production
+</h4>
+<p>
+    <strong>400 &nbsp;Production</strong>
+</p>
+<p>
+    (No changes allowed)
+</p>
+<p>
+    The production client will be a copy of client 200 with no data or user masters once the customizing is at the relevant
+    stage. Once established there should be no way of changing customizing or data dictionary objects other by transporting
+    them from client 200.
+</p>
+<p>
+    <strong>410&nbsp; Pre-Production</strong>
+</p>
+<p>
+    (No changes allowed)
+</p>
+<p>
+    This client will be used purely for stress and volume tests in the Production environment. It will be created and
+    refreshed in an identical manner to client 400. Once go-live has been achieved this client will be deleted.
+</p>
+<h3>
+    Proposed Landscape
+</h3><br />
+<p>
+    &nbsp;<img height="359" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/PIStds_Proc_Fig3.JPG" width="600" />
+</p>
+<p>
+    The SAP R/3 Landscape will consist of three instances, therefore configuration and unit testing is carried out in
+    development and system testing in quality assurance.
+</p>
+<p>
+    The Sand Pit client 210 is a play area for prototyping, walkthrough training etc. Test data in this client will be
+    compiled for prototyping purposes. This client is to be copied from client 200 once a satisfactory level of
+    configuration has been achieved. Once a particular feature of customizing has been agreed upon, it will be re-created
+    manually in client 200 which will remain free of any transaction or master data. Customizing data will be transported
+    from client 200 to 220 where it can be thoroughly unit tested. When the unit testing has proved successful, the
+    transport requests can then be released and transported to clients 250, 300 and 310 for integration testing. All of
+    these clients can be refreshed with a copy of the master configuration client 200 as and when required.
+</p>
+<p>
+    The data load client 250 is used to develop and test data loads.
+</p>
+<p>
+    The training client 310 will be included in transports and these will be imported as a matter of course until training
+    begins when imports will be carried out on the authorization of the training manager/coordinator.
+</p>
+<p>
+    Client 400 will in essence not be required until the data load or creation of user masters begins immediately prior to
+    go live. So this client can be created (or re-created) at that time as a copy of client 200. Once the system is live,
+    transports are used to protect data within the production client. When the testing of any configuration change has
+    proved to be successful, the transport request can then be imported into client 400 and 410 (if it still exists) in the
+    production environment. Client 410 will be used to finally prove data loads and final testing (e.g. volume/stress
+    tests) prior to go live.
+</p>
+<p>
+    All clients are kept aligned using the TMS (Transport Management System).
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

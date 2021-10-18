@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing the Database Transaction Descriptions</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="database_trans_desc_dev">
+<meta name="uma.presentationName" content="Developing the Database Transaction Descriptions">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_pwsfQDW8EdyXOdc_6y3sLA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_pwsfQDW8EdyXOdc_6y3sLA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing the Database Transaction Descriptions</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Migrated development approach from existing IBM Global Services Method work product.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/database_trans_desc_D8976B63.html" guid="mweb618E9D383D17810F852568820061D9D6">Database Transaction Descriptions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">Use the following development approach: 
+<div style="margin-left: 2em; MARGIN-RIGHT: 0px" dir="ltr">
+    <ul>
+        <li>
+            <div>
+                Review the business requirements and process models to determine what business events affect the data.
+            </div>
+        </li>
+        <li>
+            <div>
+                Review the logical data model to determine which entities and attributes are accessed and which
+                associations are affected as a result of the business events.
+            </div>
+        </li>
+        <li>
+            <div>
+                Group individual accesses of a business event into transactions.
+            </div>
+        </li>
+        <li style="list-style: none">
+            <ul dir="ltr" style="MARGIN-RIGHT: 0px">
+                <li>
+                    Assign a name to and describe each transaction. The description should be no longer than a few
+                    sentences. The goal of this activity is to describe <i>what</i> the transaction accomplishes not how it
+                    is accomplished. The description should be understandable by end users (i.e., should not include
+                    technical jargon). The transaction names and descriptions provide end users and MIS staff with a means
+                    to distinguish one transaction from another.&nbsp;
+                </li>
+                <li>
+                    Document the average and peak frequency of each transaction (i.e., transaction volume statistics). The
+                    frequency information should include the rate and period involved (e.g., 100 times per hour). The
+                    transaction volume statistics provide critical input to physical database design. In physical database
+                    design, the logical data structures are mapped to the physical constructs of the target DBMS. The
+                    database designer chooses which physical constructs to use based on the performance requirements and
+                    the transaction volume statistics of the transactions.&nbsp;
+                </li>
+                <li>
+                    Document the performance requirements of each transaction (i.e., in what timeframe must the execution
+                    of one instance of the transaction complete?). The transaction performance requirements are an input to
+                    physical database design. One objective of physical database design is to choose the physical
+                    constructs from among the various options provided by the target DBMS such that all transactions meet
+                    or exceed their transaction performance requirements. Hence, these requirements must be defined prior
+                    to beginning physical database design.&nbsp;
+                </li>
+                <li>
+                    Rank each transaction in terms of execution priority (i.e., how important is it for this transaction to
+                    meet or exceed its performance requirements?). This can be accomplished, for example, by assigning the
+                    priority of 1 (very high) to 10 (very low) to each transaction. One objective of physical database
+                    design is to ensure that each transaction meets or exceeds its performance requirements. This objective
+                    cannot be accomplished all at once for all transactions as a group; the transactions must be evaluated
+                    one at a time. This ranking provides the basis for the sequence in which transactions are evaluated. In
+                    addition, tailoring the physical database design to one transaction so it executes quicker sometimes
+                    negatively affects the performance of other transactions. This ranking also provides the basis for any
+                    transaction arbitration scheme.
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

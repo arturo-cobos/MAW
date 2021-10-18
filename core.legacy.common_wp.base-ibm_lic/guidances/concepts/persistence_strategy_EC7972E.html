@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: Persistence Strategy</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="persistence_strategy">
+<meta name="uma.presentationName" content="Persistence Strategy">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4Y8RdEdyD76CYS6Ta7A", "_nhb5cEZ0Ed6TL55Aq-4j1w"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_nhb5cEZ0Ed6TL55Aq-4j1w"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: Persistence Strategy</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Persistence strategy describes how a project is to manage persistent objects.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/architectural_template_EBD3A673.html" guid="mweb85C7CEEC6BEC284B8525688200573750">Architectural Template</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    An object is said to be persistent when its lifetime extends beyond the lifetime of the program that creates it.
+    Persistence is of particular concern to those building object-oriented systems for two reasons:
+</p>
+<ul>
+    <li>
+        Objects in languages such as Smalltalk are not memory-resident and must be preserved
+    </li>
+    <li>
+        While object attributes (data) are conceptually encapsulated, in fact they are often kept in a relational database
+    </li>
+</ul>
+<p>
+    There are many approaches to making an object persistent. We can generally divide the back-end technology for
+    persistence into three categories:
+</p>
+<ul>
+    <li>
+        The <b>Flatten Object Approach</b> flattens the in-memory representation of objects into byte streams so they can
+        be stored on external storage devices, such as disks. When we retrieve these byte streams, they are converted back
+        into the in-memory representation of objects for applications to use. Since this conversion is typically not
+        trivial, many people develop classes to do this conversion. The Persistence Framework of SOM Objects Toolkit is an
+        example of this approach.
+    </li>
+    <li>
+        The <b>Direct Object Approach</b> stores and retrieves objects directly. This approach uses mapping to maintain the
+        objects’ in-memory representation on external storage devices. This approach is sometimes referred to as
+        single-level storage mechanism. This approach requires some kind of pointer swizzling to preserve the in-memory
+        address of objects. There are no explicit operations for storing and retrieving the objects. Since persistent
+        object access is transparent to the application, it does not have to know about object retrieval. This approach is
+        taken by some OODB vendors, including the ObjectStore from ODI.
+    </li>
+    <li>
+        The <b>Object-RDB Mapping Approach</b> maintains mapping between objects and relational tables. In the simplest
+        terms, an object class can be mapped to one relational table. Many database vendors offer schema mapping tools to
+        facilitate this mapping. It is relatively straightforward when there is no class hierarchy involved in the mapping.
+        IBM's Database Access Class Library of VisualAge C++ and VisualAge as well as ODI's DB Connect are examples of this
+        approach.
+    </li>
+</ul>
+<p>
+    Each approach has its strengths and weaknesses. Selecting the right approach requires careful examination of the
+    requirements. Look for requirements to access relational data and performance criteria for accessing objects. In
+    addition to studies and analyses, this subject is a good candidate for prototype work.<br />
+    <br />
+    The strength of the Flatten Object Approach is that, conceptually, it is relatively simple and straightforward. It can
+    be implemented with regular file systems. The disadvantage of this approach is that it may not be the most efficient
+    way of handling persistent objects. Most likely, this approach is not suitable for a large-scale project without a
+    significant amount of work on the part of the designer.<br />
+    <br />
+    Generally speaking, the Direct Object Approach is the most efficient way of handling persistent objects. From the
+    programming perspective, it is simpler as well since there is no explicit object storing or retrieving operation. The
+    application is not burdened with managing the in-memory persistent objects. Some advantages of an OODBMS are:
+</p>
+<ul>
+    <li>
+        It is object-based. Each object in the database has a unique system-generated identity that is data and location
+        independent.
+    </li>
+    <li>
+        It supports storage of complex data types and objects such as collections, sets, lists of objects, and user-defined
+        data types; it also supports inheritance and aggregation.
+    </li>
+    <li>
+        An OODBMS also supports encapsulation and may support versioning. Unfortunately, OODBMS technology is not as mature
+        as RDBMS technology. There may be few experienced people to support the development team.
+    </li>
+</ul>
+<p>
+    Use the Object-RDB Mapping Approach when data are already stored in relational databases, such as DB2, and the new
+    object-oriented applications must access that data. This approach has several advantages:
+</p>
+<ul>
+    <li>
+        It allows an object-oriented application to access data created and accessed by non-OO programs.
+    </li>
+    <li>
+        Relational database technology is well established, reasonably mature, and standardized so many people are familiar
+        and comfortable with this technology.
+    </li>
+    <li>
+        Relational database technology is especially strong in the areas of query and security, where the other two
+        approaches are weak.
+    </li>
+</ul>
+<p>
+    The Object-RDB Mapping Approach is the likely choice for organizations already committed to a particular relational
+    database management system. However, the Object-RDB Mapping Approach is not without difficulties. For example, object
+    identity is a different concept from relational identity. Two rows in a relational table are the same if they have the
+    same values. By contrast, two distinct objects can perfectly well have the same values. (OO languages even have two
+    operators for equality to distinguish identity from equal values.) The difficulties manifest themselves, for example,
+    in handling a polymorphic operation that applies to several classes in a hierarchy. Each implementation of the
+    operation may need different data from different tables, but this should clearly be hidden by encapsulation from the
+    client code that uses the operation. This encapsulation can be difficult to achieve without excessive effort or
+    significant loss of efficiency. It may also be difficult to completely reconstruct from relational tables an object
+    with all the correct references to other objects.<br />
+    <br />
+    The three approaches discussed above deal with the back-end technology for persistence. In addition to the back-end
+    technology, there is also the front-end technology to consider. In general, there are two front-end methods for making
+    objects persistent in a program:
+</p>
+<ul>
+    <li>
+        The first is based on a persistence class. A class obtains the persistence capability by inheriting it from a
+        persistence class. All objects of a persistence class become persistent objects.
+    </li>
+    <li>
+        The second way of making objects persistent is to make the persistence decision at the time of object creation. By
+        invoking a special method, you create a persistent object instead of a transient object, that is, one that is not
+        persistent. With this approach, objects belonging to the same class may or may not be persistent.
+    </li>
+</ul>
+<p>
+    There are several standards related to object persistence. SQL3, with some object extensions, is the relational
+    database standard. In the area of OODBMS, there is the ODMG-93 from the ODMG consortium. In addition, OMG's persistence
+    services and other related OMG services may affect your choice of which persistent mechanism to use for the project.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

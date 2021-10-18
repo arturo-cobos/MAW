@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Task: Develop Deployment Unit Model</title>
+<meta name="uma.type" content="Task">
+<meta name="uma.name" content="dev_deployment_unit_model">
+<meta name="uma.presentationName" content="Develop Deployment Unit Model">
+<meta name="uma.category" content="Discipline:tech_arch:Technical Architecture">
+<meta name="element_type" content="activity">
+<meta name="filetype" content="description">
+<meta name="role" content="Technical Solution Architect">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_40aPEFtaEd6bpPG1p_gnYA", "_scYlkGptEeSdxcAgtnf5og", "_opkKADDYEdyz_pzDMsV8FQ"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_kpou0CmJEd65FoKJYXtPqg", "_vLdhkLUuEdyZzqoEHUdEQA", "_dRLFwLjdEdyRlZ7knXIZ8w", "_opkKADDYEdyz_pzDMsV8FQ"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', true, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div id="page-guid" value="_opkKADDYEdyz_pzDMsV8FQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Task: Develop Deployment Unit Model</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/task.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This task describes the steps involved in creating a Deployment Unit Model</td>
+</tr>
+<tr>
+<td>Disciplines: <a href="./../../core.default.cat_def.base-ibm_lic/disciplines/tech_arch_AE23524A.html" guid="_dRLFwLjdEdyRlZ7knXIZ8w">Technical Architecture</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The purpose of this artifact is to identify the tasks involved in the creation of the Deployment Unit Model.
+</p>
+<p>
+    The DU Model:
+</p>
+<ul>
+    <li>
+        facilitates the construction of the operational model (OM), by representing the placement of the various aspects of
+        the solution’s components, as represented by the various DU’s, across the OM.
+    </li>
+    <li>
+        provides a comprehensive view of a solution’s deployment units, the relationship of each DU to one or more
+        components and the DU to DU interactions.<br />
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Primary Performer:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/technical_solution_architect_86C345D1.html" guid="mweb13E09E200176D42E052569F100647201">Technical Solution Architect</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Additional Performers:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/infrastructure_architect_1578FFE0.html" guid="mwebBD14B77ED1325BE4852567D800507451">Infrastructure Architect</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Inputs</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Mandatory:
+								</span>
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/component_model_333A932.html" guid="mweb0BBA8C7269610775852568B3006C3ACF">Component Model</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/deployment_unit_spec_BC114B08.html" guid="_spO6ADDXEdyz_pzDMsV8FQ">Deployment Unit Specification</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/location_model_F19CE741.html" guid="_vYBbgDDXEdyz_pzDMsV8FQ">Location Model</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/node_model_A7902E3B.html" guid="_xi5-sDDXEdyz_pzDMsV8FQ">Node Model</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="./../../core.tech.slot.base/workproducts/technical_specification_slot_2812F7EF.html" guid="_i3vkoLS-EduDY8LNbMCDBA">[Technical Specification]</a>
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/actor_9763FAED.html" guid="_HEk1cIfBEdyrHMpF6xBNiQ">Actor</a>
+</li>
+<li>
+<a href="./../../core.gen.common.extend-ibm_lic/workproducts/glossary_89F5200E.html" guid="mweb25D71B984252DE148525688200718F97">Glossary</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/nonfunctional_requirements_67C22734.html" guid="mwebA79F29E86DD9BD38852568850050F6EA">Non-Functional Requirements</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/security_privacy_rqmts_E3A7FCD.html" guid="mwebE99026780237383C85256886005DF211">Security and Privacy Requirements</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/standards_115B354E.html" guid="mwebC7C232F275394E6685256885005BB813">Standards</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/workproducts/storyboard_1A92B5B7.html" guid="_kumgAHUvEd2KwLyf6ks5lg">Storyboard</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/technical_environment_D0E8F7C5.html" guid="mweb7BEEAAEC8091A5F08525688200609192">Technical Environment</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/usability_requirements_6519A1CE.html" guid="mweb045FEED42E3B0342852568850060BD26">Usability Requirements</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/use_case_C510FD14.html" guid="_6VNxcIfBEdyrHMpF6xBNiQ">Use Case</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/use_case_model_A80F05C7.html" guid="mwebED77EA705636E0878525688500610AD7">Use-Case Model</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/user_profiles_92115672.html" guid="mweb59C733A5090372CD8525688500626189">User Profiles</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/user_story_98CAF165.html" guid="mweb40A426642BE0EDCA8525688500627A4D">User Story</a>
+</li>
+</ul>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Optional:
+								</span>
+<ul>
+<li>None</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Outputs</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/deployment_unit_model_6EA973D.html" guid="_pu0XUDDXEdyz_pzDMsV8FQ">Deployment Unit Model</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The development of the Deployment Unit Model begins during the development of the Logical Operational Model to include
+    the application and technical nodes and DU’s. It is possible that nodes may be added during the transformation of the
+    Logical Operational Model to the Physical Operational Model (POM). In this case the Deployment Unit Model must be
+    updated to include the changes introduced during the POM.
+</p>
+<p>
+    Note that the identification and definition of the solution's Deployment Units are describes in the Deployment Unit
+    specification artifact and a key input artifact for the creation of the Deployment Unit Model.
+</p>
+<p>
+    In all cases, regardless of when nodes or DU’s are added, deleted, split, merged or modified in any way, the Deployment
+    Unit Model must be updated to reflect those changes.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Steps</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="sectionTableSingleCell">
+<div class="stepHeading">During the creation of the Logical Operational Model:</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><ol>
+    <li style="MARGIN-LEFT: 4em">
+        Use the Node Model artifact to identify the nodes involved in the solution. This should include both those in-scope
+        and those external to the solution that have a direct linkage to the in scope nodes.
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 4em">
+            Add the nodes identified to the DU to DU Interaction Requirements template and the DU to DU Mapping template.
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 4em">
+            For each application DU defined in the Deployment Unit Specification artifact, associate the DU to the
+            application component on the Component to DU template.
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 4em">
+            Once the initial set of application level DUs are defined, they are then ready for placement on the operational
+            model. This placement may, in turn, cause a further refinement of the application level DUs (and possibly a
+            re-factoring of the associated application component model) in order to achieve a balanced approach to the
+            non-functional requirements. See Guideline section below.
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 4em">
+            Add each Deployment Unit to the DU to DU Interaction Requirements template and to the DU to DU Mapping
+            template, associating the DU to the node it was placed on.
+        </div>
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                <div style="MARGIN-LEFT: 4em">
+                    Once the application level DUs have been placed, it is usually necessary to identify and place the
+                    underlying technical DUs that will be required to ensure the solution works and meets it’s
+                    non-functional requirements. These technical specified DUs will be associated with the technical
+                    component models identified/developed later in this process.
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 4em">
+            Using the completed Deployment Unit Specification artifacts for the application component DU’s, capture the non
+            functional requirements associated with each of the DU to DU interactions on the DU to DU interaction
+            requirements template.
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 4em">
+            Add the required technical nodes to the Component to DU Mapping template and the DU to DU Interaction
+            Requirements template
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 4em">
+            Add the DU’s associated to those technical nodes to the Component to DU Mapping template and the DU to DU
+            Interaction Requirements template
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 4em">
+            Using the completed Deployment Unit Specification artifacts for the technical component DU’s, capture the non
+            functional requirements associated with each of the DU to DU interactions on the DU to DU Interaction
+            Requirements template
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 4em">
+            Analyze the Deployment Unit relationships. The relationships between the Deployment Units identified is largely
+            dependent on the corresponding relationships between the components in the application’s component model.
+            Validate that component dependencies and interactions are supported by the placement decisions made.
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 4em">
+            Review the candidate DUs and their relationships. Now that you have established a first pass at the candidate
+            deployment units and their relationships, stand back and review the information and how you have structured it.
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 4em">
+            Identify "Hot-spot" DUs and inter-DU relationships.
+        </div>
+    </li>
+</ol></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">During the creation of the Physical Operational Model:</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    The technologies, products and code that will implement the components represented by these specified DUs must be
+    identified , together with a definition of the resource requirements required.
+</p>
+<p>
+    This physical level information will be developed in concert with the component selection and system configuration
+    activities associated with the development of the physical level of the operational and component models.
+</p></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The development approach follows, largely, a CM to OM direction.&nbsp; However, the definition and elaboration of DUs
+    can affect the application level component model in various ways.&nbsp; For example:
+</p>
+<ul>
+    <li>
+        It may have been appropriate to partition (or split) some aspect of a component over different Deployment
+        Units.&nbsp; This separation may suggest:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                That the CM may be too coarse grained to work effectively in the IT solution – requiring a change to the
+                component model
+            </li>
+            <li>
+                Or that the separation can achieved by controlling the execution of different functions of one component in
+                different locations, or by limiting the data used by the component to a particular subset in each place
+                (and therefore allowing you to leave the CM as is)?
+            </li>
+        </ul>
+    </li>
+    <li>
+        An aspect of several components has been combined (grouped) into one Deployment Unit.&nbsp; Does this grouping
+        suggest:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                That the involved components can be combined into one – requiring a change in the component model?
+            </li>
+            <li>
+                Or is the separation important for code development or some other reason, meaning that the implementation
+                will be of multiple components into one library file, or maybe multiple executables in one location (and
+                therefore leaving the CM as is)?
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    New components can be identified, either because components have been allocated to different nodes (e.g., introducing
+    messaging and communication components) or because non-functional requirements cannot be met by the nodes and
+    connections of the OM alone (e.g. the need for message “store and forward” mechanisms in the event of a network server
+    failure).<br />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/guidances/guidelines/deployment_unit_model_E61699A7.html" guid="_IMggsDeaEdyFMtjeREc5MQ">Deployment Unit Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

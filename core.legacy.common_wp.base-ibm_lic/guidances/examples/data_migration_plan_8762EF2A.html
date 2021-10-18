@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Data Migration Plan</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="data_migration_plan">
+<meta name="uma.presentationName" content="Data Migration Plan">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_HU3ocDW1EdyXOdc_6y3sLA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Data Migration Plan</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/data_migration_plan_F06C995B.html" guid="mwebDFECFDE6B757374A852568820061938D">Data Migration Plan</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Data Migration Plan
+</h3>
+<p>
+    <strong>Introduction</strong><br />
+     Textual discussion describing the breadth of the data migration issues for this system development effort. A high
+    level description of the schedule and potential resources required to accomplish the migration is also presented.<br />
+</p>
+<p>
+    <strong>Assumptions</strong><br />
+     A bullet list of assumptions developed for this migration is presented here.<br />
+</p>
+<ul>
+    <li>
+        Data extract, cleansing, transformation and validation will take place in the legacy system environment(s) and will
+        be presented to the target system.<br />
+    </li>
+    <li>
+        No reporting of errors will be provided.<br />
+    </li>
+    <li>
+        Development effort required for the legacy systems is not included here.<br />
+    </li>
+</ul>
+<p>
+    <strong>Required Data Transfers</strong>
+</p>
+<table border="1">
+    <tbody>
+        <tr>
+            <td valign="top" width="43">
+                <br />
+                 <strong>Seq. No.</strong> 
+            </td>
+            <td valign="top" width="78">
+                <br />
+                 <b>Source System</b> 
+            </td>
+            <td valign="top" width="96">
+                <br />
+                 <b>Source Data Reference</b> 
+            </td>
+            <td valign="top" width="96">
+                <br />
+                 <b>Target System</b> 
+            </td>
+            <td valign="top" width="86">
+                <br />
+                 <b>Target Data Reference</b> 
+            </td>
+            <td valign="top" width="88">
+                <br />
+                 <b>Conversion / Interface</b> 
+            </td>
+            <td valign="top" width="144">
+                <br />
+                 <b>Timing Constraints</b> 
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="43">
+                <br />
+                 1
+            </td>
+            <td valign="top" width="78">
+                <br />
+                 Marketing
+            </td>
+            <td valign="top" width="96">
+                <br />
+                 Customer Reference Database
+            </td>
+            <td valign="top" width="96">
+                <br />
+                 Data Warehouse
+            </td>
+            <td valign="top" width="86">
+                <br />
+                 Customer Profile Database
+            </td>
+            <td valign="top" width="88">
+                <br />
+                 Conversion
+            </td>
+            <td valign="top" width="144">
+                <br />
+                 This data transfer must be completed before the Product Database is loaded.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="43">
+                <br />
+                 2
+            </td>
+            <td valign="top" width="78">
+                <br />
+                 Marketing
+            </td>
+            <td valign="top" width="96">
+                <br />
+                 Customer Reference Database
+            </td>
+            <td valign="top" width="96">
+                <br />
+                 Data Warehouse
+            </td>
+            <td valign="top" width="86">
+                <br />
+                 Customer Profile Database
+            </td>
+            <td valign="top" width="88">
+                <br />
+                 Interface
+            </td>
+            <td valign="top" width="144">
+                <br />
+                 This process will be used to provide updates to the database after initial load.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="43">
+                <br />
+                 3
+            </td>
+            <td valign="top" width="78">
+                <br />
+                 Sales
+            </td>
+            <td valign="top" width="96">
+                <br />
+                 Products Sold Database
+            </td>
+            <td valign="top" width="96">
+                <br />
+                 Data Warehouse
+            </td>
+            <td valign="top" width="86">
+                <br />
+                 Product Database
+            </td>
+            <td valign="top" width="88">
+                <br />
+                 Conversion
+            </td>
+            <td valign="top" width="144">
+                <br />
+                 Customer Profile Database will be used to enforce referential integrity.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="43">
+                <br />
+                 4
+            </td>
+            <td valign="top" width="78">
+                <br />
+                 Sales
+            </td>
+            <td valign="top" width="96">
+                <br />
+                 Products Sold Database
+            </td>
+            <td valign="top" width="96">
+                <br />
+                 Data Warehouse
+            </td>
+            <td valign="top" width="86">
+                <br />
+                 Product Database
+            </td>
+            <td valign="top" width="88">
+                <br />
+                 Interface
+            </td>
+            <td valign="top" width="144">
+                <br />
+                 This process will be used to provide updates to the database after initial load.
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <br />
+     <strong>Processing Details for Each Data Transfer</strong><br />
+     Each data transfer itemized in Section Three is expanded into the details shown here for the first data
+    transfer.<br />
+</p>
+<p>
+    <b>Data Transfer Number 1 – Customer Reference Database to Customer Profile Database (Conversion)</b><br />
+     <i><u>Data Extract</u></i> - How will the data be extracted from the source data reference?<br />
+     <i><u>Data Cleansing</u></i> – What must be done to the source data to cleanse it?<br />
+     <i><u>Data Transformation</u></i> - What actions need to be performed on the source data to transform it into the
+    required target data?<br />
+     <i><u>Data Validation</u></i> - Describe process for validating the source data.<br />
+     <i><u>Data Load / Update</u></i> – How will data be prepared for loading / updating the database, file, table?<br />
+     <i><u>Data Error Detection and Correction</u></i> – What processes will be necessary to manage the quality of the
+    data?<br />
+</p>
+<p>
+    <strong>Data Migration Schedule</strong><br />
+     This section consists of a Gantt chart(s) supplemented by narrative describing the sequence and duration of all the
+    data transfers. The intent is to convey to the client the magnitude and scope of the data migration requirements for
+    this system.<br />
+</p>
+<p>
+    <strong>Summary</strong><br />
+     This section summarizes the data requirements for the system. A recap of the processes, resources and technologies
+    required to accomplish all of the data transfers is presented here.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

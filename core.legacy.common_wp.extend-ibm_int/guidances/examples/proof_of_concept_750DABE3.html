@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Proof of Concept</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="proof_of_concept">
+<meta name="uma.presentationName" content="Proof of Concept">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_erNkgGHuEdy1gaewIsmNrQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Proof of Concept</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/proof_of_concept_3DB7C721.html" guid="mweb020C6D1776419AEA852568850058CE9F">Proof of Concept</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <strong><u>Overview section:</u></strong>
+</p>
+<p>
+    <strong>Proof of Concept:</strong> Plan Production, Produce Product
+</p>
+<p>
+    <strong>Objective:<br />
+    </strong> To test the hypothesis that processes relying on cell manufacturing techniques, and the related changes to
+    production planning, will produce superior inventory turns, lower inventory investment, and shorten lead times - while
+    not increasing the cost of manufacturing.&nbsp; The test will prove that the logistics of the planning process - timing
+    of data, production of the plans, re-layout of the manufacturing floor - are worth the investment and are achievable in
+    a production environment.
+</p>
+<p>
+    <strong>Scope:<br />
+    </strong> The test included a single product, the four-inch gate valve, and a single production facility.&nbsp; This
+    product has nine parts in its bill of materials, from both inside and outside the company.&nbsp; The test will simulate
+    the changing of the manufacturing techniques (from large batch to cell), and the associated changes in lot sizes and
+    lead times.&nbsp; The results will allow us to measure any improvements in inventory carrying costs and direct
+    manufacturing costs.
+</p>
+<p>
+    The product being used has similar attributes to 60% of the products in production at the time of this writing. While
+    each product (or group of products) will require some industrial engineering of their bill of material, routing,
+    lead-time, etc., the results of the simulation can be used to do a preliminary assessment of the potential improvements
+    for these products as well.
+</p>
+<p>
+    Our other products do not match the attributes of the product being simulated.&nbsp; For these products, we would
+    recommend either an additional simulation activity, or continuing the current manufacturing style.
+</p>
+<p>
+    <strong>Techniques:</strong>
+</p>
+<p>
+    The simulation was planned and executed using an automated tool, IBM ARIS Toolset. The following are some details from
+    the test.&nbsp; Detailed parameter settings and data used can be found in appendix A. One product was modeled:
+</p>
+<ul>
+    <li>
+        Nine parts were set up, all with order point mechanisms
+    </li>
+    <li>
+        Order points were set to trigger when a function of safety stock and daily consumption rate (multiplied by lead
+        time) was hit
+    </li>
+    <li>
+        Work-in-progress queues were set to 100 (cell manufacturing)
+    </li>
+    <li>
+        Finished product lot sizes were set to 1200 (reduced because of shorter lead times)
+    </li>
+</ul>
+<p>
+    <strong>Results:</strong>
+</p>
+<div style="margin-left: 2em">
+    <ul>
+        <li>
+            Inventory turns went from 2.3 to 21
+        </li>
+        <li>
+            Customer orders were always filled from stock (no back-orders)
+        </li>
+        <li>
+            Lot size reduced from 8000 to 1200
+        </li>
+    </ul>
+</div>
+<p>
+    <strong>Execution Schedule:</strong><br />
+     See project master plan.
+</p>
+<p>
+    <strong>Summary:</strong>
+</p>
+<p>
+    <strong>Conclusions:</strong>
+</p>
+<ul>
+    <li>
+        The cell manufacturing style can produce the benefits suggested by preliminary analysis,
+    </li>
+    <li>
+        The planning process (order point triggering manufacturing orders based on warehouse inventory levels) can be
+        achieved within the allowable time window,
+    </li>
+    <li>
+        A plant floor re-layout, assumed by the test, will need to be in place before the full benefits of the approach can
+        be accomplished.
+    </li>
+</ul>
+<p>
+    <strong>Actions:</strong>
+</p>
+<ul>
+    <li>
+        Plan a project to re-engineer the bills, routes and lead times of the products.
+    </li>
+    <li>
+        Plan a project to redesign the plant floor layout.
+    </li>
+    <li>
+        Synchronize these efforts with the new computer system implementation.<br />
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

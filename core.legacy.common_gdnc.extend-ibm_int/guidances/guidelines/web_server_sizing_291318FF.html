@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Web Server Sizing</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="web_server_sizing">
+<meta name="uma.presentationName" content="Web Server Sizing">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb9C24F8ECF1819AD885256A69004B7007"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb9C24F8ECF1819AD885256A69004B7007"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Web Server Sizing</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This technique paper (TP) provides information for a Web Server, such as IBM HTTP server.  The TP will discuss what the practitioner needs to know and what questions must be asked of the customer in order to properly size a web server.  It will also offer tools and formulas to aid the practitioner in this process</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1&nbsp;Steps
+</h3>
+<p>
+    The following sections address the considerations when sizing a box for a Web Server.
+</p>
+<ul>
+    <li>
+        Factors to Consider
+    </li>
+    <li>
+        General Considerations
+    </li>
+    <li>
+        Sizing the Web Server – Formulas and Tools
+    </li>
+    <li>
+        Additional Specific Tools
+    </li>
+</ul>
+<h4>
+    1.1&nbsp; Factors to Consider
+</h4>
+<p>
+    As a starting point the practitioner should ask the client the following questions:
+</p>
+<ul>
+    <li>
+        Is this web server going to be an Internet or Intranet server?
+    </li>
+    <li>
+        What is the potential demand for access to this site?
+    </li>
+    <li>
+        What is the speed of your connection to the inter/intranet?
+    </li>
+    <li>
+        How many pages will you be serving?
+    </li>
+    <li>
+        What is the average file size of pages you are serving?
+    </li>
+    <li>
+        Will the Web server be generating data for access?
+    </li>
+</ul>
+<p>
+    <strong>Internet</strong>
+</p>
+<p>
+    Sizing a Web server for the Internet can be a very difficult task. The Internet includes millions of interconnected
+    individuals who are navigating from one Web server to the next in search of information that has value to them.
+    Sometimes it is very hard to estimate how popular a site may become. Usually, for initial implementation the Web server
+    machine is chosen based on certain maximum accepted connections at an acceptable response time. Later, based on the
+    average statistical log, the system can be expanded according to the growing usage. Therefore, if the growth factor is
+    going to be considered, then upgrade ability and scalability of the Web server machine should be considered.
+</p>
+<p>
+    <strong>Intranet</strong>
+</p>
+<p>
+    Intranets are private nets that use the same standards and protocols as the public Internet. Intranets are rapidly
+    displacing internal Web sites as the new network-centric corporate computing platform. An Intranet Web site dissolves
+    all departmental, geographic, and technical boundaries by creating a universal way to connect people to people and
+    people to information.
+</p>
+<p>
+    Sizing a Web server for an Intranet is considerably easier than sizing one for the Internet. The total number of
+    potential users can be determined more accurately by using the total number of employees in the relevant department or
+    the entire company.
+</p>
+<p>
+    <strong>Bandwidth</strong>
+</p>
+<p>
+    In working with a customer to size the Web solution, it is important to understand the implications of the speed of the
+    networking connection to the Web server. More often than not, many potential Web content providers are very focused on
+    the vague 'hits per day' quantity. The level of traffic that a particular Web server can support will be dependent on
+    the server type, the content accessed on the server and the speed of the connection of the server to the Intra/Internet
+    environment.
+</p>
+<p>
+    An Internet service provider will deliver a connection of defined speed, three of these most common speeds are: ISDN
+    (128kb/s), T1 (1.544Mb/s), and T3 (45Mb/s). For an Intranet environment, common LAN speeds are 10Mb/s (over Ethernet)
+    and 100Mb/s (over fast Ethernet or FDDI).<br />
+    As the average Web transaction size increases, the maximum number of transactions decreases. Sites that plan on being
+    mostly text based will have average transactions sizes around 1-5 kB, most well-designed sites with a mix of text and
+    graphics intended for access by modem users are in the 10kB per transaction size and sites with a substantial portion
+    of multimedia content can exceed 100kB per transaction.
+</p>
+<p>
+    <strong>Content Type</strong>
+</p>
+<p>
+    The physical size of the Web content is important in looking at the resources required for a server, indicating the
+    necessary data storage requirements. Additionally, when the content on the Web server is dynamically generated,
+    substantial processing resources may be required. Dynamic content on a Web site can be generated in many ways, from a
+    simple counter that displays the number of hits that a page has received, to a system that uses analysis of user clicks
+    to tailor the information (and advertisements in some cases) that the user sees at the site. To gain some insight into
+    the impact of simple content generation on performance, we will discuss results from WebStone-1.1 dynamic workload
+    models.
+</p>
+<p>
+    <strong>Number of clients</strong>
+</p>
+<p>
+    The number of simultaneous users of a site is very challenging to characterize. Unlike other types of client/server
+    architectures, the weight of an individual client on the Web server is quite small and short-lived. Connections to a
+    Web server are traditionally stateless sessions that begin with an open from the client, a request for data, the server
+    reply with data, and the session close. Depending on the speed of the network connection, the size of the data
+    requested and the server load, this session can last from tenths to tens of seconds.
+</p>
+<h4>
+    1.2&nbsp; General Considerations
+</h4>
+<p>
+    We strongly recommend creating a cluster of machines. Large web sites workload patterns are characterized by bursts of
+    activity.&nbsp; Such ‘business’ means that planning for average volumes is ineffective.&nbsp;<br />
+    You should prepare for unpredictable growth and the ability to have solutions ready for unknown problems. Planning
+    clustered web servers is a good solution.&nbsp; For the Web server, the main technique for growth path is to add more
+    machines. It is therefore appropriate to start with the expectation of more than one Web server with a dispatcher in
+    front, such as the IBM SecureWay Network Dispatcher. Adding more machines then becomes painless and no disruptive.
+</p>
+<h4>
+    1.3&nbsp; Sizing the Web Server
+</h4>
+<p>
+    <strong>Step 1: Estimate The Workload</strong>
+</p>
+<p>
+    After taking into account all of the above considerations and asking the appropriate questions, you may begin to
+    estimate the workload as below.&nbsp; In order to complete the following sizing activity, you will need to know the
+    following.
+</p>
+<ul>
+    <li>
+        <em>Peak hit rate (HR)-</em>The expected number of hits per hour to the server at peak. A hit is a request for a
+        file (not a web page) to a web server. A file contains information such as text or an image. A web page is composed
+        of one or more files. On average, a web page contains ten files. In other words, a request for a page could result
+        in ten hits.
+    </li>
+    <li>
+        <em>Average file size (FS)-</em>An average size of a file based on an average web page. A web page consists of
+        multiple files with various contents such as text and images. The size of each file is based on its content. For
+        example, a logo image is 47 KB to 68 KB, HTML is 6 KB to 800 KB, GIF is 8 KB to 1 MB, JPEG is 37 KB to 800 KB. If
+        you have no information, use 4 KB.
+    </li>
+    <li>
+        <em>Complexity of dynamically generated pages (CF)-</em>Dynamic content usually refers to the execution of a
+        sequence of instructions on the web-server to convert / format information from a data store system into HTML so
+        that it can be viewed with a web browser. Generally, rendering dynamic content to a browser requires significantly
+        more processing power than static content from a filesystem. Define how many times resources needed compared to
+        that for generating static pages. The CF of CGI is at least 15 and the CF of API is at least 2, but it depends on
+        your application, so there is no recommendation.&nbsp; Also note that Java Servlets and JSPs are considerably less
+        complex than CGI.
+    </li>
+    <li>
+        <em>Percent of Dynamically Generated Pages (DR)-</em>We are observing that dynamically generated pages ratio is
+        between 0 and 90 percent.
+    </li>
+    <li>
+        <em>Size of disk space of contents (DS)-</em>The amount of disk space on the local web server required to house the
+        content that is to reside on that web server.
+    </li>
+</ul>
+<p>
+    <strong>Sizing Processor</strong>
+</p>
+<p>
+    Once you have determined all of the above variables you need to calculate the Adjusted Hit Rate (AHR) with the
+    following formula.
+</p>
+<p>
+    <strong>AHR = HR * (1 – DR) + HR * DR * CF</strong>
+</p>
+<p>
+    HR = the number of hits
+</p>
+<p>
+    DR = the ratio of dynamically generated pages.&nbsp; (Example: 60% = 0.6)
+</p>
+<p>
+    CF = the complexity factor of dynamically generated pages
+</p>
+<p>
+    (see above descriptions)
+</p><br />
+<br />
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <th id="" scope="col" abbr="">
+                Type
+            </th>
+            <th id="" scope="col" abbr="">
+                MB
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Kernel
+            </td>
+            <td>
+                77
+            </td>
+        </tr>
+        <tr>
+            <td>
+                CDE (Admin)
+            </td>
+            <td>
+                48
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Libraries
+            </td>
+            <td>
+                35
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Streams
+            </td>
+            <td>
+                10
+            </td>
+        </tr>
+        <tr>
+            <td>
+                System
+            </td>
+            <td>
+                10
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Total</strong>
+            </td>
+            <td>
+                <strong>180</strong>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<p>
+    With most servers you can select the appropriate model by using the AHR.&nbsp; However, you should not select one large
+    model that can support your AHR, as you need to prepare for unpredictable growth as discussed in the “General
+    Considerations” section.
+</p>
+<p>
+    <strong>Sizing Memory</strong>
+</p>
+<p>
+    First there are base memory requirements for a web server simply based on the kernel and library memory
+    requirements.&nbsp; Research shows the following are reasonable estimates of the base memory requirements.
+</p>
+<p>
+    The following formula can be used to compute suggested memory for the WebServer.
+</p>
+<p>
+    <strong>Memory = 180 + (max_child * 1.0MB) + application + OS + file_cache</strong>
+</p>
+<p>
+    Max_child = the number of maximum child processes
+</p>
+<p>
+    Application = the amount of memory which your applications need
+</p>
+<p>
+    OS = the amount of memory required by the operating system
+</p>
+<p>
+    File_cache = the amount of memory for the file cache.&nbsp; At least 32 MB is recommended.
+</p>
+<p>
+    <strong>Sizing the Disk</strong>
+</p>
+<p>
+    You need to have enough drive space for your OS, document tree, and log files. In most cases 2GB total is sufficient.
+</p>
+<p>
+    <strong>Sizing Bandwidth</strong>
+</p>
+<p>
+    As discussed in he above section, bandwidth plays a major role in the performance of the web server.&nbsp; The
+    following chart <u>shows the relationship between the speed of the network, the average request size and the maximum
+    theoretical 'hits per second'.&nbsp; If you have the opportunity to make bandwidth suggestions, use the following chart
+    as a guide.</u>
+</p>
+<p>
+    <img height="285" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/web_server_sizing_fig1.JPG" width="490" />
+</p>
+<h4>
+    1.4&nbsp; Additional Tools
+</h4>
+<p>
+    HTTP Server on AS/400 Tool
+</p>
+<p>
+    If sizing an AS/400, IBM has provided an invaluable tool to aid you in this process.&nbsp; The IBM Workload Estimator
+    is an easy to use sizing tool that can be run on-line or be downloaded to your PC for mobile use.&nbsp; It will size a
+    machine for several popular workloads that as AS/400 would be expected to support including the IBM HTTP server.
+</p>
+<p>
+    IIS on Netfinity / x series Tool
+</p>
+<p>
+    Using this site will provide you with a best estimate of the xSeries or Netfinity system required to run either
+    Microsoft Internet Information Server 4.0 or Microsoft Internet Information Services 5.0.
+</p>
+<p>
+    IIS or Apache on Compaq Tool
+</p>
+<p>
+    If using a Compaq machine, they offer sizing tools as well.
+</p>
+<p>
+    <strong>iPlanet Web Server</strong>
+</p>
+<p>
+    If the client plans to use iPlanet as the web server, Netscape has created a great informational site worth checking
+    out.&nbsp; The site offers tuning, sizing, and scaling instruction tailored specifically to the iPlanet Web
+    Server.&nbsp;
+</p>
+<p>
+    <strong>Microsoft IIS</strong>
+</p>
+<p>
+    If using Microsoft Internet Information Server, the following site offers more detail specific to IIS.
+</p>
+<p>
+    <strong>Closing Considerations</strong>
+</p>
+<p>
+    Remember that these formulas provide only an estimate.&nbsp; The practitioner who chooses to use these techniques does
+    so at his or her own risk.&nbsp; The above formulas are recommendations concluded from IBM test results.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

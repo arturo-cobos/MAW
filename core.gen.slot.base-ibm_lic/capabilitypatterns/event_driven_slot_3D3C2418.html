@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Capability Pattern: Event Driven Activities</title>
+<meta name="uma.type" content="CapabilityPattern">
+<meta name="uma.name" content="event_driven_slot">
+<meta name="uma.presentationName" content="Event Driven Activities">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_1rb1UV4LEd-Jtvq3Ttc2pQ&path=_1rb1UV4LEd-Jtvq3Ttc2pQ';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_1rb1UV4LEd-Jtvq3Ttc2pQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Capability Pattern: Event Driven Activities</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/capabilitypattern.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This covers any unplanned or event driven (non-project management) activities that will occur during the course of the project.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="10" class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../core.gen.slot.base-ibm_lic/capabilitypatterns/event_driven_slot_3D3C2418.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Work Breakdown Structure</span></td><td width="1"><img src="./../../images/tab_middle-a_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_TBS" href="./../../core.gen.slot.base-ibm_lic/capabilitypatterns/event_driven_slot_3D3C2418.html_tbs.html"><span style="white-space:nowrap;">Team Allocation</span></a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WPBS" href="./../../core.gen.slot.base-ibm_lic/capabilitypatterns/event_driven_slot_3D3C2418.html_wpbs.html"><span style="white-space:nowrap;">Work Product Usage</span></a></td><td width="21"><img src="./../../images/tab_end-i.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="2"><img src="./../../images/shim.gif" height="2" alt="" title=""></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="5"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Work Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Work Breakdown", summary: "Work Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["steps", "Steps"],
+["id", "Index"],
+["predecessors", "Predecessors"],
+["model_info", "Model Info"],
+["type", "Type"],
+["is_planned", "Planned"],
+["is_repeatable", "Repeatable"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_ongoing", "Ongoing"],
+["is_event_driven", "Event Driven"],
+["is_optional", "Optional"],
+["teams", "Team"]],
+rows: [
+		
+{id: "2664bc01", parentId: "", relPath: ",_cJnZUYYKEd-El7EMWwFLlQ", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "1", prefix: "", name: "Perform Configuration Management", title: "Perform Configuration Management", url: "./../../practice.mgmt.chng_ctrl_config_mgmt.base-ibm_lic/capabilitypatterns/Perform Configuration Management_BDB295D.html", 
+	predecessors: "", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "true", eventDriven: "true", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "na",
+	steps: []},
+	
+		
+		
+{id: "ae200e99", parentId: "2664bc01", relPath: ",_cJnZUYYKEd-El7EMWwFLlQ,_Jo0dAIYdEd-lFZcOwO6eUQ", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "2", prefix: "", name: "create_development_workspace", title: "Create Development Workspace", url: "./../../practice.mgmt.chng_ctrl_config_mgmt.base-ibm_lic/capabilitypatterns/create_development_workspace_86A2FB4C.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "true", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "74c6b975", parentId: "ae200e99", relPath: ",_cJnZUYYKEd-El7EMWwFLlQ,_Jo0dAIYdEd-lFZcOwO6eUQ,_FnU9gYYdEd-lFZcOwO6eUQ", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "any_role", title: "Any Role", url: "./../../practice.mgmt.chng_ctrl_config_mgmt.base-ibm_lic/capabilitypatterns/any_role_86FE1C49.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d6eb46e3", parentId: "ae200e99", relPath: ",_cJnZUYYKEd-El7EMWwFLlQ,_Jo0dAIYdEd-lFZcOwO6eUQ,_GI29QIYdEd-lFZcOwO6eUQ", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "systems_management_specialist", title: "Systems Management Specialist", url: "./../../practice.mgmt.chng_ctrl_config_mgmt.base-ibm_lic/capabilitypatterns/systems_management_specialist_A120BD8C.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "55c66241", parentId: "ae200e99", relPath: ",_cJnZUYYKEd-El7EMWwFLlQ,_Jo0dAIYdEd-lFZcOwO6eUQ,_csnuUFumEeCnz5runPGtgA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "config_mgmt_plan", title: "Configuration Management Plan", url: "./../../practice.mgmt.chng_ctrl_config_mgmt.base-ibm_lic/capabilitypatterns/config_mgmt_plan_AF5BF171.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "8e660ec5", parentId: "ae200e99", relPath: ",_cJnZUYYKEd-El7EMWwFLlQ,_Jo0dAIYdEd-lFZcOwO6eUQ,_K0bpoIYfEd-lFZcOwO6eUQ", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "workspace_created", title: "Workspace Created", url: "./../../practice.mgmt.chng_ctrl_config_mgmt.base-ibm_lic/capabilitypatterns/workspace_created_DB0A34DA.html", 
+	predecessors: "", info: "Output", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "398412e2", parentId: "2664bc01", relPath: ",_cJnZUYYKEd-El7EMWwFLlQ,_FnU9gIYdEd-lFZcOwO6eUQ", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "3", prefix: "", name: "change_deliver_config_items", title: "Change and Deliver Configuration Items", url: "./../../practice.mgmt.chng_ctrl_config_mgmt.base-ibm_lic/capabilitypatterns/change_deliver_config_items_7C603C39.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "true", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true]},
+	
+		
+		
+{id: "64760cfa", parentId: "398412e2", relPath: ",_cJnZUYYKEd-El7EMWwFLlQ,_FnU9gIYdEd-lFZcOwO6eUQ,_FnU9gYYdEd-lFZcOwO6eUQ", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "any_role", title: "Any Role", url: "./../../practice.mgmt.chng_ctrl_config_mgmt.base-ibm_lic/capabilitypatterns/any_role_86FE1C49.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "a2622e44", parentId: "398412e2", relPath: ",_cJnZUYYKEd-El7EMWwFLlQ,_FnU9gIYdEd-lFZcOwO6eUQ,_csnuUFumEeCnz5runPGtgA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "config_mgmt_plan", title: "Configuration Management Plan", url: "./../../practice.mgmt.chng_ctrl_config_mgmt.base-ibm_lic/capabilitypatterns/config_mgmt_plan_AF5BF171.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "4e727eda", parentId: "398412e2", relPath: ",_cJnZUYYKEd-El7EMWwFLlQ,_FnU9gIYdEd-lFZcOwO6eUQ,_FnU9goYdEd-lFZcOwO6eUQ", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "config_mgmt_performed", title: "Configuration Management Performed", url: "./../../practice.mgmt.chng_ctrl_config_mgmt.base-ibm_lic/capabilitypatterns/config_mgmt_performed_7597305F.html", 
+	predecessors: "", info: "Output", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "8d49e31a", parentId: "2664bc01", relPath: ",_cJnZUYYKEd-El7EMWwFLlQ,_GItMQIYdEd-lFZcOwO6eUQ", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "4", prefix: "", name: "manage_configuration_baselines_releases", title: "Manage Configuration Baselines and Releases", url: "./../../practice.mgmt.chng_ctrl_config_mgmt.base-ibm_lic/capabilitypatterns/manage_configuration_baselines_releases_6A29A51E.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "true", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true]},
+	
+		
+		
+{id: "b50a89be", parentId: "8d49e31a", relPath: ",_cJnZUYYKEd-El7EMWwFLlQ,_GItMQIYdEd-lFZcOwO6eUQ,_GI29QIYdEd-lFZcOwO6eUQ", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "systems_management_specialist", title: "Systems Management Specialist", url: "./../../practice.mgmt.chng_ctrl_config_mgmt.base-ibm_lic/capabilitypatterns/systems_management_specialist_A120BD8C.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "446e929b", parentId: "8d49e31a", relPath: ",_cJnZUYYKEd-El7EMWwFLlQ,_GItMQIYdEd-lFZcOwO6eUQ,_csnuUFumEeCnz5runPGtgA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "config_mgmt_plan", title: "Configuration Management Plan", url: "./../../practice.mgmt.chng_ctrl_config_mgmt.base-ibm_lic/capabilitypatterns/config_mgmt_plan_AF5BF171.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d02efc1b", parentId: "8d49e31a", relPath: ",_cJnZUYYKEd-El7EMWwFLlQ,_GItMQIYdEd-lFZcOwO6eUQ,_FnU9goYdEd-lFZcOwO6eUQ", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "config_mgmt_performed", title: "Configuration Management Performed", url: "./../../practice.mgmt.chng_ctrl_config_mgmt.base-ibm_lic/capabilitypatterns/config_mgmt_performed_7597305F.html", 
+	predecessors: "", info: "Output", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e2788e0b", parentId: "2664bc01", relPath: ",_cJnZUYYKEd-El7EMWwFLlQ,_GoTSUIYdEd-lFZcOwO6eUQ", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "5", prefix: "", name: "monitor_report_config_status", title: "Monitor and Report on Configuration Status", url: "./../../practice.mgmt.chng_ctrl_config_mgmt.base-ibm_lic/capabilitypatterns/monitor_report_config_status_38E91D66.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "true", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true]},
+	
+		
+		
+{id: "93849901", parentId: "e2788e0b", relPath: ",_cJnZUYYKEd-El7EMWwFLlQ,_GoTSUIYdEd-lFZcOwO6eUQ,_GI29QIYdEd-lFZcOwO6eUQ", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "systems_management_specialist", title: "Systems Management Specialist", url: "./../../practice.mgmt.chng_ctrl_config_mgmt.base-ibm_lic/capabilitypatterns/systems_management_specialist_A120BD8C.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "686a4f8d", parentId: "e2788e0b", relPath: ",_cJnZUYYKEd-El7EMWwFLlQ,_GoTSUIYdEd-lFZcOwO6eUQ,_poblcZCrEd-Fp6oRTtMsRw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "configuration_audit_findings", title: "Configuration Audit Findings", url: "./../../practice.mgmt.chng_ctrl_config_mgmt.base-ibm_lic/capabilitypatterns/configuration_audit_findings_8B9FC75A.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "984d0659", parentId: "", relPath: ",_ZF5EoJnJEd-Z49aHvYKyMg", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "6", prefix: "", name: "provide_support_for_dev_env", title: "Provide Support for the Development Environment", url: "./../../practice.mgmt.manage_tech_env.base-ibm_lic/capabilitypatterns/provide_support_for_dev_env_8758B055.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "true", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "850b3c9c", parentId: "984d0659", relPath: ",_ZF5EoJnJEd-Z49aHvYKyMg,_ZF5EoZnJEd-Z49aHvYKyMg", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "systems_administrator", title: "Systems Administrator", url: "./../../practice.mgmt.manage_tech_env.base-ibm_lic/capabilitypatterns/systems_administrator_91F69065.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "c6d03b9c", parentId: "984d0659", relPath: ",_ZF5EoJnJEd-Z49aHvYKyMg,_WVGNkJqxEd-xtK3oZbpDfg", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "development_team_supported", title: "Development Team Supported", url: "./../../practice.mgmt.manage_tech_env.base-ibm_lic/capabilitypatterns/development_team_supported_20EDB305.html", 
+	predecessors: "", info: "Output", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

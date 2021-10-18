@@ -1,0 +1,487 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Specifying Work Profiles and Performance Measurements</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="spec_work_profiles">
+<meta name="uma.presentationName" content="Specifying Work Profiles and Performance Measurements">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_XyqTAMUwEdyJCceLNDhCjA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_XyqTAMUwEdyJCceLNDhCjA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Specifying Work Profiles and Performance Measurements</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline explains how to  identify the variables that affect system's performance and how to measure their effect.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp-ibm/workproducts/workload_def_spec_840F4A8.html" guid="_Ls0OIHOEEdyur-UVVhx-aQ">Workload Specification</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Overview
+</h3>
+<p>
+    Software quality is assessed along different dimensions, including reliability, function, and performance.&nbsp;You
+    have&nbsp;to identify and define the different variables that affect or influence an application or system's
+    performance and the measures required to assess performance. The workload profiles represent candidates for conditions
+    to be simulated against the Target Test Items under one or more Test Environment Configurations. Different roles in the
+    organization need this kind of information for different purposes:
+</p>
+<ul>
+    <li>
+        the <b>test analyst:</b> to identify test ideas and define test cases for different tests
+    </li>
+    <li>
+        the <b>test designer:</b> to define an appropriate test approach and identify testability needs for the different
+        tests
+    </li>
+    <li>
+        the <b>tester:</b> to better understand the goals of the test to implement, execute and analyze its execution
+        properly
+    </li>
+    <li>
+        the <b>user representative:</b> to assess the appropriateness of the workload, and the tests required to
+        effectively assess the systems behavior against that workload&nbsp;profiles
+    </li>
+</ul>
+<p>
+    The captured information focuses on characteristics and attributes in the following primary areas:
+</p>
+<ul>
+    <li>
+        Use-Case Scenarios to be executed and evaluated during the tests
+    </li>
+    <li>
+        Actors to be simulated / emulated during the tests
+    </li>
+    <li>
+        Workload profile - representing the number and type of simultaneous actor instances, use-case scenarios executed by
+        those actor instances, and on-line responses or throughput associated with each use-case scenario.
+    </li>
+    <li>
+        Test Environment Configuration (actual, simulated or emulated) to be used in executing and evaluating the tests
+    </li>
+</ul>
+<p>
+    Tests should be considered to measure and evaluate the characteristics and behaviors of the target-of-test when
+    functioning under different workloads. Successfully designing, implementing, and executing these tests requires
+    identifying both realistic and exceptional data for these workload profiles.
+</p>
+<h3>
+    <a id="Use Cases and Use Case Attributes" name="Use Cases and Use Case Attributes">Use Cases and Use Case
+    Attributes</a>
+</h3>
+<p>
+    Two aspects of use cases are considered for selection of scenarios for this type of testing:
+</p>
+<ul>
+    <li>
+        Critical Use Cases&nbsp;contain the key use-case scenarios to be measured and evaluated in the tests
+    </li>
+    <li>
+        Significant Use&nbsp;Cases&nbsp;contain use-case scenarios that may impact the behavior of the critical use-case
+        scenarios
+    </li>
+</ul>
+<h4>
+    <a id="Critical Use Cases" name="Critical Use Cases">Critical Use Cases</a>
+</h4>
+<p>
+    Not all use-case scenarios being implemented in the target-of-test may be needed for these tests. Critical use cases
+    contain those use-case scenarios that will be the focus of the test - that is their behaviors will be measured and
+    evaluated.
+</p>
+<p>
+    To identify the critical use cases, identify those use-case scenarios that meet one or more of the following criteria:
+</p>
+<ul>
+    <li>
+        require measurement and assessment based on workload profile
+    </li>
+    <li>
+        are executed frequently by one or more end-users (actor instances)
+    </li>
+    <li>
+        that represent a high percentage of system use
+    </li>
+    <li>
+        that consume significant system resources
+    </li>
+</ul>
+<p>
+    List the critical use-case scanners for inclusion in the test. As theses are being identified, the use case flow of
+    events should be reviewed. Begin to identify the specific sequence of events between the actor (type) and system when
+    the use-case scenario is executed.
+</p>
+<p>
+    Additionally, identify (or verify) the following information:
+</p>
+<ul>
+    <li>
+        Preconditions for the use cases, such as the state of the data (what data should / should not exist) and the state
+        of the target-of-test
+    </li>
+    <li>
+        Data that may be constant (the same) or must differ from one use-case scenario to the next
+    </li>
+    <li>
+        Relationship between the use case and other use cases, such as the sequence in which the use cases must be
+        performed.
+    </li>
+    <li>
+        The frequency of execution of the use-case scenario, including characteristics such as the number of simultaneous
+        instances of the use case and the percent of the total load each scenario places on the system.
+    </li>
+</ul>
+<h4>
+    <a id="Significant Use Cases" name="Significant Use Cases">Significant Use Cases</a>
+</h4>
+<p>
+    Unlike critical use-case scenarios, which are the primary focus of the test, significant use-case scenarios are those
+    that may impact the performance behaviors of critical use-case scenarios. Significant use-case scenarios include those
+    that meet one or more of the following criteria:
+</p>
+<ul>
+    <li>
+        they must be executed before or after executing a critical use case (a dependent precondition or postcondition)
+    </li>
+    <li>
+        they are executed frequently by one or more actor instances
+    </li>
+    <li>
+        they represent a high percentage of system use
+    </li>
+    <li>
+        they require significant system resources
+    </li>
+    <li>
+        they will be executed routinely on the deployed system while critical use-case scenarios are executed, such as
+        e-mail or background printing
+    </li>
+</ul>
+<p>
+    As the significant use-case scenarios are being identified and listed, review the use case flow of events and
+    additional information as done above for the critical use-case scenarios.
+</p>
+<h3>
+    <a id="Actors and Actor Attributes" name="Actors and Actor Attributes">Actors and Actor Attributes</a>
+</h3>
+<p>
+    Successful performance tests requires identifying not just the actors executing the critical and significant use-case
+    scenarios, but must also simulate / emulate actor behavior. That is, one instance of an actor may interact with the
+    target-of-test differently (take longer to respond to prompts, enter different data values, etc.) while executing the
+    same use-case scenario as another instance of that actor. Consider the simple use cases below:
+</p>
+<p align="center">
+    <img height="226" alt="Diagram described in caption." src="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/resources/tstcs002.gif" width="354" />
+</p>
+<p class="picturetext">
+    Actors and use cases in an ATM machine.
+</p>
+<p>
+    The first instance of the "Customer" actor executing a use-case scenario might be an experienced ATM user, while
+    another instance of the "Customer" actor may be inexperienced at ATM use. The experienced Customer quickly navigates
+    through the ATM user-interface and spends little time reading each prompt, instead, pressing the buttons by rote. The
+    inexperienced Customer however, reads each prompt and takes extra time to interpret the information before responding.
+    Realistic workload profiles reflect this difference to ensure accurate assessment of the behaviors of the
+    target-of-test.
+</p>
+<p>
+    Begin by identifying the actors for each use-case scenario identified above. Then identify the different actor profiles
+    that may execute each use-case scenario. In the ATM example above, we may have the following actor stereotypes:
+</p>
+<ul>
+    <li>
+        Experienced ATM user
+    </li>
+    <li>
+        Inexperienced ATM user
+    </li>
+    <li>
+        ATM user's account is "inside" the ATM's bank network (user's account is with bank owning ATM)
+    </li>
+    <li>
+        ATM user's account is outside the ATM's bank network (competing bank)
+    </li>
+</ul>
+<p>
+    For each actor profile, identify the different attributes and their values such as:
+</p>
+<ul>
+    <li>
+        Think time - the period of time it takes for an actor to respond to a target-of-test's individual prompts
+    </li>
+    <li>
+        Typing rate - the rate at which the actor interacts with the interface
+    </li>
+    <li>
+        Request Pace - the rate at which the actor makes requests of the target-of-test
+    </li>
+    <li>
+        Repeat factor - the number of times a use case or request is repeated in sequence
+    </li>
+    <li>
+        Interaction method - the method of interaction used by the actor, such as using the keyboard to enter in values,
+        tabbing to a field, using accelerator keys, etc., or using the mouse to "point and click", "cut and paste", etc.
+    </li>
+</ul>
+<p>
+    Additionally, for each actor profile identify their workload profile, specifying all the use-case scenarios they
+    execute, and the percentage of time or proportion of effort spent by the actor executing these scenarios. Identifying
+    this information is used in identifying and creating a realistic load (see Load and Load Attributes below).
+</p>
+<h3>
+    <a id="System Attributes and Variables" name="System Attributes and Variables">System Attributes and Variables</a>
+</h3>
+<p>
+    The specific attributes and variables of the Test Environment Configuration that uniquely identify the environment must
+    also be identified, as these attributes also impact the measurement and evaluation of behavior. These attributes
+    include:
+</p>
+<ul>
+    <li>
+        The physical hardware (CPU speed, memory, disk caching, etc.)
+    </li>
+    <li>
+        The deployment architecture (number of servers, distribution of processing, etc.)
+    </li>
+    <li>
+        The network attributes
+    </li>
+    <li>
+        Other software (and use cases) that may be installed and executed simultaneously to the target-of-test
+    </li>
+</ul>
+<p>
+    Identify and list the system attributes and variables that are to be considered for inclusion in the tests. This
+    information may be obtained from several sources, including: Vision or Software Architecture documents, or Stakeholder
+    requests.
+</p>
+<h3>
+    <a id="Workload Profiles" name="Workload Profiles">Workload Profiles</a>
+</h3>
+<p>
+    As stated previously, workload is an important factor that impacts the behavior of a target-of-test. Accurately
+    identifying the workload profile that will be used to evaluate the targets behavior is critical. Typically, test that
+    involve workload are executed several times using different workload profiles, each representing a variation of the
+    attributes described below:
+</p>
+<ul>
+    <li>
+        The number of simultaneous actor instances interacting with the target-of-test
+    </li>
+    <li>
+        The profile of the actors interacting with the target-of-test
+    </li>
+    <li>
+        The use-case scenarios executed by each actor instance
+    </li>
+    <li>
+        The frequency of each critical use-case scenarios executed and how often it is repeated
+    </li>
+</ul>
+<p>
+    For each workload profile used to evaluate the performance of the target-of-test, identify the values for each of the
+    above variables. The values used for each variable in the different loads may be derived by observing or interviewing
+    actors or, from the Business Use-Case Model&nbsp; if one is available. It is common for one or more of the following
+    workload profiles to be defined:
+</p>
+<ul>
+    <li>
+        Optimal - a workload profile that reflects the best possible deployment conditions, such as a minimal number of
+        actor instances interacting with the system, executing only the critical use-case scenarios, with minimal
+        additional software and workload executing during the test.
+    </li>
+    <li>
+        Average (AKA Normal) - a workload profile that reflects the anticipated or actual average usage conditions.
+    </li>
+    <li>
+        Instantaneous Peak - a workload profile that reflects anticipated or actual instantaneous heavy usage conditions,
+        that occur for short periods during normal operation.
+    </li>
+    <li>
+        Peak - a workload profile that reflects anticipated or actual heavy usage conditions, such as a maximum number of
+        actor instances, executing high volumes of use-case scenarios, with much additional software and workload executing
+        during the test.
+    </li>
+</ul>
+<p>
+    When workload testing includes Stress Testing, several additional loads should be identified, each targeting specific
+    aspects of the system in abnormal or unexpected states beyond the expected normal capacity of the deployed system.
+</p>
+<h3>
+    <a id="Performance Measurements and Criteria" name="Performance Measurements and Criteria">Performance Measurements and
+    Criteria</a>
+</h3>
+<p>
+    Successful workload testing can only be achieved if the tests are measured and the workload behaviors evaluated. In
+    identifying workload measurements and criteria, the following factors should be considered:
+</p>
+<ul>
+    <li>
+        What measurements are to be made?
+    </li>
+    <li>
+        Where / what are the critical measurement points in the target-of-test / use-case execution.
+    </li>
+    <li>
+        What are the criteria to be used for determining acceptable performance behavior?
+    </li>
+</ul>
+<h4>
+    Performance Measurements
+</h4>
+<p>
+    There are many different measurements that can be made during test execution. Identify the significant measurements to
+    be made and justify why they are the most significant measurements.
+</p>
+<p>
+    Listed below are the more common performance behaviors monitored or captured:
+</p>
+<ul>
+    <li>
+        Test script state or status - a graphical depiction of the current state, status, or progress of the test execution
+    </li>
+    <li>
+        Response time / Throughput - measurement (or calculation) of response times or throughput (usually stated as
+        transactions per second).
+    </li>
+    <li>
+        <font color="#000000">Traces - capturing the messages / conversations between the actor (test script) and the
+        target-of-test, or the dataflow and / or process flow during execution.</font>&nbsp;&nbsp;
+    </li>
+</ul>
+<h4>
+    Critical Performance Measurement Points
+</h4>
+<p>
+    In the Use Cases and Use Case Attributes section above, it was noted that not all use cases and their scenarios are
+    executed for performance testing. Similarly, not all performance measures are made for each executed use-case scenario.
+    Typically only specific use-case scenarios are targeted for measurement, or there may be a specific sequence of events
+    within a specific use-case scenario that will be measured to assess the performance behavior. Care should be taken to
+    select the most significant starting and ending "points" for the measuring the performance behaviors. The most
+    significant ones are typically those the most visible sequences of events or those that we can affect directly through
+    changes to the software or hardware.
+</p>
+<p align="left">
+    For example, in the ATM - Cash Withdraw use case identified above, we may measure the performance characteristics of
+    the entire use-case instance, from the point where the Actor initiates the withdrawal, to the point in which the use
+    case is terminated - that is, the Actor receives their bank card and the ATM is now ready to accept another card, as
+    shown by the black "Total Elapsed Time" line in the diagram below:
+</p>
+<p align="center">
+    <img height="514" alt="Diagram is described in the content." src="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/resources/md_wlmd1.gif" width="384" />
+</p>
+<p align="left">
+    Notice, however, there are many sequences of events that contribute to the total elapsed time, some that we may have
+    control over (such as read card information, verify card type, initiate communication with bank system, etc., items B,
+    D, and E above), but other sequences, we have not control over (such as the actor entering their PIN or reading the
+    prompts before entering their withdrawal amount, items A, C, and F). In the above example, in addition to measuring the
+    total elapsed time, we would measure the response times for sequences B, D, and E, since these events are the most
+    visible response times to the actor (and we may affect them via the software / hardware for deployment).
+</p>
+<h4>
+    Performance Measurement Criteria
+</h4>
+<p>
+    Once the critical performance measures and measurement points have been identified, review the performance criteria.
+    Performance criteria are usually stated in Supplemental Specifications. If necessary revise the criteria.
+</p>
+<p>
+    Here are some criteria that are often used for performance measurement:
+</p>
+<ul>
+    <li>
+        response time (AKA on-line response)
+    </li>
+    <li>
+        throughput rate
+    </li>
+    <li>
+        response percentiles
+    </li>
+</ul>
+<p>
+    On-line response time, measured in seconds, or transaction throughput rate, measured by the number of transactions (or
+    messages) processed is the main criteria.
+</p>
+<p>
+    For example, using the Cash Withdraw use case, the criteria is stated as "events B, D, and E (see diagram above) must
+    each occur in under 3 seconds (for a combined total of 9 seconds)". If during testing, we note that that any one of the
+    events identified as B, D, or E takes longer than the stated 3 second criteria, we would note a failure.
+</p>
+<p>
+    Percentile measurements are combined with the response times and / or throughput rates and are used to "statistically
+    ignore" measurements that are outside of the stated criteria. For example, the performance criteria for the use case
+    was now states "for the 90th percentile, events B, D, and E must each occur in under 3 seconds ...". During test
+    execution, if we measure 90 percent of all performance measurements occur within the stated criteria, no failures are
+    noted.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

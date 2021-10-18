@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Assessing e-business Infrastructure against Leading Practices</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="assessing_ebus_infra_lead_prac">
+<meta name="uma.presentationName" content="Assessing e-business Infrastructure against Leading Practices">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mwebE2BB90FBC3083E0585256BB30069B8E9"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebE2BB90FBC3083E0585256BB30069B8E9"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Assessing e-business Infrastructure against Leading Practices</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1&nbsp;Description
+</h3>
+<p>
+    This paper describes a technique for assessing an existing n-tiered e-business infrastructure by comparing it to
+    established leading practices. This assessment will be completed through the use of a matrix containing infrastructure
+    design guiding principles and associated business impacts, and by examining the corresponding attributes of the
+    client’s existing e-business infrastructure.
+</p>The guiding principles are best of breed design points or leading practices for e-business infrastructure design. They
+include design considerations for redundancy, scalability, and potential performance bottlenecks. These leading design
+practices provide a benchmark against which the client’s existing infrastructure can be compared. The assessment
+conclusions are developed by identifying where the client’s infrastructure or design practices deviate from the leading
+practices and by determining the impact of those deviations. The existing infrastructure may also be compared against the
+underlying n-tiered reference architecture to identify any significant differences in the functionality provided or in the
+placement and distribution of function and data. 
+<p>
+    The guiding principles matrix and reference architecture are to be used as a reference for the overall assessment and
+    are not intended to be used as the sole data-gathering tool. They should be utilized as part of the entire assessment
+    process providing high level guidance for critical design points across an n-tiered environment. They will augment
+    interview questions and help to segment the infrastructure into logical tiers for assessment.
+</p>
+<h3>
+    2&nbsp;Context
+</h3>
+<p>
+    This assessment technique can be applied as part of an e-business infrastructure assessment engagement or at the
+    beginning of a larger e-business design engagement in order to understand the potential infrastructure issues that may
+    need to be addressed by the design.&nbsp;
+</p>
+<p>
+    This technique is focused on the assessment of e-business technical infrastructure.&nbsp; In many instances it will be
+    conducted as part of a broader assessment of the client’s e-business readiness, so will be performed in parallel with a
+    corresponding assessment of the client’s e-business infrastructure management processes and organization.&nbsp;&nbsp;
+</p>
+<p>
+    The guiding principles or leading design practices are derived from the four-tiered e-business infrastructure reference
+    design generally used in conjunction with the Rapid Infrastructure Design engagement model.&nbsp; However, this
+    technique is also applicable in many other circumstances where an existing e-business technical infrastructure needs to
+    be assessed.
+</p>
+<p>
+    This paper provides a rapid e-business infrastructure assessment technique by which the engagement team can quickly
+    compare the current infrastructure against the best practices design points in each tier.&nbsp; There are several
+    reasons why this technique was developed:
+</p>
+<ul>
+    <li>
+        The typical e-business infrastructure assessment is typically very short in duration (4-6 weeks maximum) and
+        performed by a small team.&nbsp; Many e-business clients need recommendations provided quickly to deploy tactical
+        fixes within the environment.&nbsp; Because of this, the guiding principles were created to highlight common high
+        availability design points that engagement teams can reference and thereby provide “quick hits”, or recommendations
+        that can be easily deployed having a high impact on reliability.<br />
+    </li>
+    <li>
+        The use of these leading practices and guiding principles also provides a common starting point and reference
+        architecture for architects with various levels of e-business experience.&nbsp; It also assists in segmenting the
+        client infrastructure into logical tiers, which facilitates the assessment process.
+    </li>
+</ul>
+<p>
+    Lastly, it helps to provide a more objective assessment approach that will help improve the consistency of e-business
+    infrastructure assessment.&nbsp; By doing so, it reduces the experience required to perform an initial assessment,
+    reduces the dependency on highly skilled individuals to perform the assessment, and helps eliminate some of the
+    subjectivity inherent in less structured assessment techniques.
+</p>
+<h3>
+    3&nbsp;Steps
+</h3>
+<h4>
+    3.1&nbsp; Review Statement of Work
+</h4>
+<p>
+    The first step is to review the SOW to ensure the infrastructure matrix is a fit for the engagement being executed
+    based on the hours in the contract, the resources, and the detail required by the client.&nbsp;
+</p>
+<ul>
+    <li>
+        Do the guiding principles cover the detail required by the SOW?&nbsp; The client may be looking for very specific
+        design issues based on past problems that may not be covered by the guiding principles.&nbsp; The key is to
+        understand the level of detail required by the client and the additional assessment questions required.&nbsp;
+        Again, this guide is meant to be a reference providing a platform for additional data gathering and segmenting the
+        environment into logical tiers.&nbsp;<br />
+    </li>
+    <li>
+        Is there enough time to execute this?&nbsp; For a 4-tiered environment the engagement team may need to interview a
+        wide variety of client staff members varying from the telecommunications groups, security, database, and legacy
+        systems.&nbsp; If the data is to be gathered via interviews be sure to accommodate this in the engagement-planning
+        phase by adding more hours into the timeline.&nbsp;&nbsp;&nbsp;&nbsp;<br />
+    </li>
+    <li>
+        Do the guiding principles contain too much detail relevant to a client’s low complexity e-business?&nbsp; If this
+        is the case simply use guiding principles that apply to the components within the infrastructure.&nbsp; Again, the
+        key is to be able to reference the client’s existing network versus best practice design principles.&nbsp;<br />
+    </li>
+    <li>
+        Validate the location and elements of the current environment to be assessed.&nbsp; Ensure the SOW is clear in
+        defining the location of the infrastructure and it’s demarcation points.&nbsp; For example, if the client has links
+        to other web sites or systems across a WAN, this needs to be known ahead of time and appropriately scoped since
+        this will have a direct impact on the time and effort required.
+    </li>
+</ul>
+<h4>
+    3.2&nbsp; Validate the Team Skills
+</h4>
+<p>
+    As with any engagement it is important that the team members understand the overall purpose or reason for using the
+    guiding principles matrices.&nbsp; It’s just as important that they are familiar with the design points across the
+    various tiers and have the skills to quickly compare them to the client environment.
+</p>
+<p>
+    All practitioners should have credibility within the organization to perform the assessment; the team must avoid
+    sending "whoever is free" for data gathering activities.&nbsp; The impact statements and recommendations will obviously
+    depend on their experience.&nbsp; Since many of these e-business assessments are by nature short in duration ranging
+    from 4-6 weeks, there is minimal time for follow-up interviews if not adequately executed the first time.
+</p>
+<p>
+    Even though these engagements are short and performed with small teams of 3-4 practitioners, interviews are typically
+    performed pairs.&nbsp; This balances skills and background ensuring that as much relevant information can be gathered
+    efficiently while keeping the interview within the scope of the engagement.
+</p>
+<h4>
+    3.3&nbsp; Select Data Gathering Technique
+</h4>
+<p>
+    Assessments can be facilitated in a number of ways - via interviews, questionnaires, workshops or a combination
+    thereof.&nbsp; Decide which is appropriate, based upon the scope, time available and assessment objectives.&nbsp; The
+    use of the best practices design points is meant to add consistency, provide a logical segmented assessment technique
+    and augment the regular assessment approaches.
+</p>
+<ul>
+    <li>
+        Due to the breadth of infrastructure covered in the guiding principles, one to two workshops should be executed
+        with client staff that can provide a high level overview of the architecture, end-to-end.&nbsp; Then move on to
+        interviews for more detailed data gathering.
+    </li>
+</ul>
+<h4>
+    3.4&nbsp; Map Client Infrastructure to the Four Tier Reference Model
+</h4>
+<p>
+    The infrastructure design guiding principles matrices are based on a four-tiered conceptual model.&nbsp; Most clients,
+    however, clients will have an n–tiered rather than a four- tiered e-business infrastructure.&nbsp; Because of this, the
+    practitioners on the team will need to be technically adept enough to recognize this and evaluate where the various
+    components in a client environment ‘should’ reside according to the guiding principles.&nbsp; Then assess these
+    components versus that tier i.e. the tier the component should reside in.
+</p>
+<p>
+    For example, the guiding principles dictate that no databases or application servers should reside in Tier I or
+    II.&nbsp; In the event that the client has these types of servers in Tier II, two things should happen:
+</p>
+<ul>
+    <li>
+        This does not meet best practices in Tier II and should be documented in the provided area within the Tier II
+        section.<br />
+        Continue to assess the Database and Application servers versus the best of breed design points in Tier III.&nbsp;
+        Tier III is where these servers should reside according the conceptual model.
+    </li>
+</ul>
+<h4>
+    3.5&nbsp; Assess the Client Infrastructure versus the Leading Design Practices
+</h4>
+<p>
+    For each of the four tiers in the reference architecture:
+</p>
+<ul>
+    <li>
+        Review each of the listed best of breed design points and business benefits.<br />
+    </li>
+    <li>
+        Document the corresponding attributes of the client infrastructure, noting both where the current design complies
+        with and where it deviates from the recommended practice.
+    </li>
+</ul>
+<p>
+    For each design point, review the client’s conformance or non-conformance and document the implications and identify
+    any actions required to address significant exposure.
+</p>
+<h4>
+    3.6&nbsp; Prepare the Assessment Report
+</h4>
+<p>
+    Once the analysis has been completed for all aspects of all tiers, review the consolidated set of design implications
+    and develop an integrated set of conclusions about the current infrastructure and any resulting recommendations and
+    priorities for improvement actions.
+</p>
+<h3>
+    4&nbsp;Tools
+</h3>
+<p>
+    For ease of maintenance the leading practices for e-business infrastructure design are documented separately to this
+    technique paper.&nbsp; Refer to the attached files:
+</p>
+<ul>
+    <li>
+        e-business Infrastructure Assessment Leading Practices Template.doc<br />
+    </li>
+    <li>
+        e-business Infrastructure Assessment Leading Practices Example.doc
+    </li>
+</ul>
+<p>
+    Copies of these files should be found as attached as references to this technique paper.&nbsp; Alternatively, copies
+    may be found on ICM AssetWeb in the e-Transformation database, and embedded within the Rapid Infrastructure Design
+    engagement model.
+</p>
+<h3>
+    5&nbsp;Examples
+</h3>
+<h4>
+    5.1&nbsp; Assessment Matrix Example
+</h4>
+<p>
+    Below is an example of part of the assessment matrix for ease of maintenance, the leading practices for e-business
+    infrastructures are documented outside this technique paper.
+</p>
+<p>
+    <img height="256" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/assessing_ebus_infra_against_leading_practices_fig1.JPG" width="685" />
+</p>
+<p>
+    <br />
+    <strong>Best Practices e-business Infrastructure Guiding Principles/Design Points</strong>
+</p>
+<ul>
+    <li>
+        Components are configured for hot fail-over<br />
+    </li>
+    <li>
+        ISP Connections, routers and firewalls are redundant<br />
+    </li>
+    <li>
+        Additional routers and firewalls can be added to scale capacity
+    </li>
+</ul>
+<p>
+    Routers can be upgraded to support additional processing
+</p>
+<p>
+    <img height="363" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/assessing_ebus_infra_against_leading_practices_fig2.JPG" width="620" />&nbsp;
+</p>
+<h4>
+    5.2&nbsp; Final Report Example
+</h4>
+<p>
+    The example below shows how information captured in the assessment matrix can be readily incorporated into the client
+    deliverable.&nbsp; For added clarity those areas of the client infrastructure that do not meet a specific design point
+    are documented in red while those areas that do meet best practice are documented in green text.
+</p>
+<p>
+    <img height="418" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/assessing_ebus_infra_against_leading_practices_fig3.JPG" width="545" />&nbsp;
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/examples/ebus_infra_assess_lp_B5D323EB.html" guid="_KrWMsMiMEdyR2PoKIUdueg">e-business Infrastructure Assessment vs. Leading Practices</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Supporting Materials</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/supportingmaterials/ebus_infra_assess_lp_template_57C06616.html" guid="mweb037386660868055503">e-business Infrastructure Assessment vs. Leading Practices - Template</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

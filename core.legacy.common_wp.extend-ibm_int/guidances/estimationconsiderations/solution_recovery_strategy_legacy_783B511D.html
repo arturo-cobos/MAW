@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Estimation Considerations: Solution Recovery Strategy (Legacy)</title>
+<meta name="uma.type" content="EstimationConsiderations">
+<meta name="uma.name" content="solution_recovery_strategy_legacy">
+<meta name="uma.presentationName" content="Solution Recovery Strategy (Legacy)">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb037411719236111100"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Estimation Considerations: Solution Recovery Strategy (Legacy)</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/estimationconsiderations.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/solution_recovery_strategy_A59D60A5.html" guid="mweb42B290122CF1E41785256BC10061D864">Solution Recovery Strategy</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    This work should be undertaken as a core element of integrated solution design. The valid solution states should
+    already be under development, if not complete, when this work product is constructed. Similarly, the information states
+    of each end point that define these solution states should also be known.
+</p>
+<p>
+    Assuming that these conditions exist, the core of the intellectual effort consists of making the right selections for
+    the recoverable business states, and for the end point information recovered states that support them. The remaining
+    effort is in documenting the details of these decisions.
+</p>
+<p>
+    To make a precise estimate, you should calculate the number of function points analyzed as a function of end points
+    exercised by each business process and the number of associated recoverable states for each process.&nbsp;
+</p>
+<p>
+    &nbsp;<img height="33" alt="equation" src="./../../../core.legacy.common_wp.extend-ibm_int/guidances/estimationconsiderations/resources/equation.gif" width="232" />
+</p>
+<p>
+    where:
+</p>
+<ul>
+    <li>
+        FP is the number of estimated function points
+    </li>
+    <li>
+        BP<sub>T</sub> is the total number of recoverable business processes
+    </li>
+    <li>
+        EP<sub>T</sub> is the total number of end points under consideration
+    </li>
+    <li>
+        RS<sub>I</sub> is the number of recoverable states in Business ProcessI
+    </li>
+    <li>
+        EP<sub>I</sub> is the number of end points exercised by Business ProcessI
+    </li>
+</ul>
+<p>
+    Allocate 2 hours per function point analyzed.
+</p>
+<p>
+    As an example,&nbsp;if 5 end points are involved, and there are 2 recoverable states possible, this yields an estimate
+    of 32 hours to construct a strategy confined to that single business process.
+</p>
+<p>
+    If the number of recoverable states are not yet known for each process, then group the processes by complexity and
+    assume the following recoverable state values:
+</p>
+<ul>
+    <li>
+        Simple = 1 to 2 recoverable states
+    </li>
+    <li>
+        Complex = 3 to 5 recoverable states
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

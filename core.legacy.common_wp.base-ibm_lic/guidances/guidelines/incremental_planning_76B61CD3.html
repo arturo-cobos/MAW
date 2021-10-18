@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Incremental Planning</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="incremental_planning">
+<meta name="uma.presentationName" content="Incremental Planning">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb3146F8D8714E5B0E80256683005731AD"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb3146F8D8714E5B0E80256683005731AD"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Incremental Planning</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Incremental development (also variously called iterative or spiral development) the important management checkpoints have working software among their deliverables. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.mgmt.release_mgmt.base-ibm_lic/tasks/define_goals_for_the_build_cycles_BD5F31AE.html" guid="_mrluAH7dEd-Spt3EoYp3Bg">Define Goals for the Build Cycles</a>
+</li>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/guidances/guidelines/increment_goals_dev_8488BBD.html" guid="_aOMpEEGhEdygjO91BAtfFw">Developing Increment Goals</a>
+</li>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/increment_goals_17B9133D.html" guid="mweb702341765F4CAA068525688200727DA7">Increment Goals</a>
+</li>
+<li>
+<a href="./../../../practice.mgmt.release_mgmt.base-ibm_lic/tasks/refine_goals_for_the_build_cycles_8B4D4B25.html" guid="_frhLQH7iEd-Spt3EoYp3Bg">Refine Goals for the Build Cycles</a>
+</li>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/release_plan_E009AE46.html" guid="mweb19295656B387884685256885005957A8">Release Plan</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1&nbsp;Introduction
+</h3>
+<p>
+    Working software gives a really reliable indication of progress. There is little scope for error or over-optimism.
+</p>
+<p>
+    Decisions about what should be included in each increment, that is in each programming cycle, each Build cycle, and if
+    appropriate each Release cycle, are consequently very important. On the one hand we want to make quick and visible
+    progress on important parts of the system. On the other we want to ensure that the project is built on good
+    foundations, that we do not just create the illusion of progress, and that we build first those parts that make the
+    overall project go fastest.
+</p>
+<p>
+    Incremental planning is about the choice of what to build in each programming cycle, build cycle and release.
+</p>
+<p>
+    There is a fundamental tradeoff between the short and the long term, between:
+</p>
+<ul>
+    <li>
+        Building the easiest, most valuable functionality (biggest bang for the buck), and
+    </li>
+    <li>
+        Building a base for the harder functionality and the harder nonfunctional requirements that demand more
+        infrastructure and more components (mitigating risk).
+    </li>
+</ul>
+<p>
+    The right balance depends on the circumstances of the project. Sometimes it is necessary to deliver or at least
+    demonstrate valuable functionality to help justify the project. Sometimes the clear priority is to build a solid
+    long-term base. It is almost always necessary to do some of each.
+</p>
+<p>
+    Incremental planning is done top down. First the contents of a release cycle are defined, at least in outline. Then as
+    each release cycle starts, the number and goals of the build cycles are defined, and then as each build cycle starts
+    the number and goals of the programming cycles.
+</p>
+<p>
+    A release (unlike a build cycle) has to be useful to some users, so functionality plays a bigger role. We give no
+    further guidance here except to note the following:
+</p>
+<ul>
+    <li>
+        Sometimes the date some functionality has to be delivered is more important than the exact contents of a release.
+        In this case, plan a fall back position and define the early build cycles so that they establish the fall back.
+    </li>
+    <li>
+        Especially when under pressure, consider the needs of different categories of user separately. The three
+        requirements with the highest priorities may be for different users. Yet supplying all three may not really satisfy
+        anyone. Each needs their top priority plus some other lesser items. It may be better to gear a release to a single
+        category of users.
+    </li>
+</ul>
+<p>
+    Assuming the first release is defined, or there is only one release, here is a simple procedure, which gives some
+    guidance in choosing what to build first. The first three steps can be done in parallel.
+</p>
+<h3>
+    2&nbsp;Steps
+</h3>
+<h4>
+    2.1&nbsp; Risk Mitigation
+</h4>
+<ul>
+    <li>
+        List and prioritize the risks on the release (or the project if there is only one release).
+    </li>
+    <li>
+        For each risk, identify what could be built that would mitigate the risk.
+    </li>
+    <li>
+        In each case, identify prerequisite components.&nbsp; For example, suppose risk A would be completely removed if X
+        could be built and demonstrated.&nbsp; But perhaps X cannot work unless Y and Z are in place.
+    </li>
+</ul>
+<h4>
+    2.2&nbsp; Early Desirable Functionality
+</h4>
+<ul>
+    <li>
+        List and prioritize desirable early functionality.&nbsp; (What would look good at the management review?&nbsp;
+        Which use cases? Which nonfunctional requirements?)
+    </li>
+    <li>
+        For each item, identify prerequisite components.
+    </li>
+</ul>
+<h4>
+    2.3&nbsp; Team Learning
+</h4>
+<ul>
+    <li>
+        List and prioritize the gaps between the experience of the project team (both individually and as a group) and the
+        needs of the project.
+    </li>
+    <li>
+        For each gap, identify what could be built early to close the gap.
+    </li>
+</ul>
+<p>
+    (Even if everyone in the team is experienced they may not have worked together before.&nbsp; It can be valuable to go
+    through a small build cycle simply to practice working together as a team and to familiarize everyone with the
+    development procedures.)
+</p>
+<h4>
+    2.4&nbsp; Choose the Increment Goals
+</h4>
+<ul>
+    <li>
+        Establish what it is possible to build early.
+    </li>
+    <li>
+        Taking the possibly conflicting priorities in points 1-3 into account, choose the goals for the first build cycle.
+    </li>
+    <li>
+        Try to meet several goals with each component.&nbsp; For example, it is very rare to build a component solely to
+        close a gap in the experience of the team.&nbsp; Almost always this is a contributing factor in the choice of a
+        component that has some other value.&nbsp; Or it may result in an extension to the definition of a component that
+        has some other justification.
+    </li>
+</ul>
+<p>
+    Projects vary in the precision with which they can specify later build cycles.&nbsp; In some the requirements are
+    deliberately left open and this has an obvious effect on the goals of later build cycles.&nbsp; In others, the
+    requirements are defined early and put under change control.&nbsp; The number and goals of the build cycles can be
+    determined with fair precision.
+</p>
+<p>
+    Full incremental planning depends on the architecture of the system.&nbsp; Only when the structure of the system is
+    reasonably understood can detailed dependencies be understood and a sensible progression through successive subsystems
+    be proposed.&nbsp; The architecture also influences whether it is more sensible to:
+</p>
+<ul>
+    <li>
+        Build breadth first, establishing skeleton versions of all the subsystems and then elaborating each in successive
+        build cycles, or
+    </li>
+    <li>
+        To progress by successively adding more or less complete subsystems.
+    </li>
+</ul>
+<p>
+    Both are possible within the managerial framework defined by the delivery process.&nbsp; The architecture also
+    determines how and to what extent large pieces of work can be done in parallel.&nbsp; Generally though, given knowledge
+    of the architecture and the relative importance of the functionality, an obvious order of construction suggests itself.
+</p>
+<p>
+    At all levels it is valuable to characterize the goals of an increment by a few short phrases, as well as giving more
+    detailed references to use cases, nonfunctional requirements, subsystems, and error reports. The phrases help
+    stakeholders and developers alike to grasp the essential goals of the increment.&nbsp; For example:
+</p>
+<ul>
+    <li>
+        Make the read-only data connection to the (legacy) customer information system.
+    </li>
+    <li>
+        Add a printing subsystem, so that complete invoices can be printed.
+    </li>
+    <li>
+        Extend the claims subsystem so that it covers health claims.
+    </li>
+    <li>
+        Build one use case end-to-end.
+    </li>
+    <li>
+        Fix all errors reported up to end January.
+    </li>
+</ul>
+<p>
+    Sometimes the short phrases sum up the real target of the increment more honestly than a more detailed document.
+</p>
+<p>
+    Finally, ensure that the goals of build cycles and programming cycles are completed. Incremental development means we
+    finish building part of the system, and then finish building another part.&nbsp; It does not mean leaving everything
+    half finished.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

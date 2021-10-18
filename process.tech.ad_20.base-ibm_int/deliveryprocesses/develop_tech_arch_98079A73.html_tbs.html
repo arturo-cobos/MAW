@@ -1,0 +1,1816 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Activity: Develop Technical Architecture</title>
+<meta name="uma.type" content="Activity">
+<meta name="uma.name" content="develop_tech_arch">
+<meta name="uma.presentationName" content="Develop Technical Architecture">
+<meta name="element_type" content="workflow_detail">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_g91Ka9uSEd-uj6_0XU4muw&path=_g91Ka9uSEd-uj6_0XU4muw,_G5o5Ld0jEd-Yr79L5-CRdw,_G5yp5t0jEd-Yr79L5-CRdw,_G5yqWN0jEd-Yr79L5-CRdw';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_G5yqWN0jEd-Yr79L5-CRdw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Activity: Develop Technical Architecture</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/activity.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Develop the overall solution architecture for all releases.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/develop_tech_arch_98079A73.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WBS" href="./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/develop_tech_arch_98079A73.html_wbs.html"><span style="white-space:nowrap;">Work Breakdown Structure</span></a></td><td width="1"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Team Allocation</span></td><td width="21"><img src="./../../images/tab_middle-a_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WPBS" href="./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/develop_tech_arch_98079A73.html_wpbs.html"><span style="white-space:nowrap;">Work Product Usage</span></a></td><td width="21"><img src="./../../images/tab_end-i.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="4"><img src="./../../images/shim.gif" alt="" title="" height="2"></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="3"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Team Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Team Breakdown", summary: "Team Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["model_info", "Model Info"],
+["teams", "Team"],
+["type", "Type"],
+["is_planned", "Planned"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_optional", "Optional"]],
+rows: [
+
+{id: "c672a991", parentId: "", relPath: ",_G57z590jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "application_architect", title: "Application Architect", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/application_architect_61FC878B.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "93dee5b2", parentId: "c672a991", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "component_model", title: "Component Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/component_model_EDA43524.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d1ed79d6", parentId: "c672a991", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "component_specification", title: "Component Specification", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/component_specification_B0FA426E.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6669663e", parentId: "c672a991", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/architectural_decisions_DDA4605E.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a681602c", parentId: "c672a991", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "component_model", title: "Component Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/component_model_D42AB5A8.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "71dc1d08", parentId: "c672a991", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "detail_logical_component_model", title: "Detail Logical Component Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/detail_logical_component_model_CB24EC8.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "99860e54", parentId: "c672a991", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "detail_physical_component_model", title: "Detail Physical Component Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/detail_physical_component_model_F5D341DF.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "51faff56", parentId: "c672a991", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "select_custom_development_patterns_scenarios", title: "Select Custom Development Patterns and Scenarios (R4SC)", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/select_custom_development_patterns_scenarios_B7F5ADE9.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "dc244ef2", parentId: "c672a991", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assemble_architecture_model_deliverable", title: "Assemble Architecture Model Deliverable", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/assemble_architecture_model_deliverable_DEF434F6.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7700256c", parentId: "c672a991", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "conduct_viability_assessment", title: "Conduct Viability Assessment", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/conduct_viability_assessment_4D86761A.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "902c1edf", parentId: "c672a991", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "dev_tech_proof_of_concept", title: "Develop Technical Proof of Concept", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/dev_tech_proof_of_concept_D19486FD.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e45a0d51", parentId: "c672a991", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "doc_arch_decisions", title: "Document Architectural Decisions", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/doc_arch_decisions_12185839.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "4c695a91", parentId: "c672a991", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "leverage_existing_assets", title: "Leverage Existing Assets (Component Analysis)", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/leverage_existing_assets_F36D44DF.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6e9d77c1", parentId: "c672a991", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "detail_non_functional_requirements", title: "Refine Non-Functional Requirements", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/detail_non_functional_requirements_51F66F2C.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "5749a29", parentId: "c672a991", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "select_infra_products", title: "Select Infrastructure Products", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/select_infra_products_380A6B9A.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "3a7edbdb", parentId: "", relPath: ",_G57z790jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "application_developer", title: "Application Developer", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/application_developer_EB204BC9.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7ab3cef7", parentId: "3a7edbdb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "component_model", title: "Component Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/component_model_D42AB5A8.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1523360c", parentId: "3a7edbdb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "apply_ooad_in_subsystem_scope", title: "Apply OOAD in Component Scope", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/apply_ooad_in_subsystem_scope_9C211DB4.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "df72fe6c", parentId: "3a7edbdb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assign_service_to_service_components", title: "Assign Services to Service Components", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/assign_service_to_service_components_3490CFA7.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "5b47572a", parentId: "3a7edbdb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "associate_bus_rules_policies_with_svc_ops", title: "Associate Business Rules and Policies with Service Operations", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/associate_bus_rules_policies_with_svc_ops_EA24C154.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "beed134e", parentId: "3a7edbdb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assoicate_use_cases_with_service_operations", title: "Associate Use Cases with Service Operations", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/assoicate_use_cases_with_service_operations_2E73EACC.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2e853802", parentId: "3a7edbdb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "create_service_context_diagram", title: "Create Service Context Diagram", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/create_service_context_diagram_4CA5D988.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "aca51f68", parentId: "3a7edbdb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "decompose_svc_component_into_func_tech_comp", title: "Decompose Service Components into Functional and Technical Components", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/decompose_svc_component_into_func_tech_comp_B1361B24.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "f2afacd4", parentId: "3a7edbdb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_service_operations", title: "Define Service Operations", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/define_service_operations_890F81DE.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8d2a6e96", parentId: "3a7edbdb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "document_state_management_decisions", title: "Document State Management Decisions", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/document_state_management_decisions_37DA67B1.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "3cdd8ec", parentId: "3a7edbdb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "identify_service_components", title: "Identify Service Components", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/identify_service_components_36ABCDDC.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "3e9fbef0", parentId: "3a7edbdb", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_input_output_error_msg_for_svc_ops", title: "Specify Input, Output and Error Messages for Service Operations", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/specify_input_output_error_msg_for_svc_ops_3911CADC.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "be585023", parentId: "", relPath: ",_jgNpUgSDEeCqyYNePbcNgg", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "business_analyst", title: "Business Analyst", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/business_analyst_617AA763.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c51f92c3", parentId: "be585023", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "adapt_service_litmus_test_and_exposure_scope", title: "Adapt Service Litmus Test and Exposure Scope", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/adapt_service_litmus_test_and_exposure_scope_7A8B3BB9.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "4a6a2703", parentId: "be585023", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "apply_service_litmus_tests", title: "Apply Service Litmus Tests", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/apply_service_litmus_tests_F53C4BB1.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7ad1f537", parentId: "be585023", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "associate_bus_rules_policies_with_svc_ops", title: "Associate Business Rules and Policies with Service Operations", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/associate_bus_rules_policies_with_svc_ops_EA24C154.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "f4a6b301", parentId: "be585023", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "model_service_composition_and_flow", title: "Model Service Composition and Flows", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/model_service_composition_and_flow_2249472B.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "57b1e7ed", parentId: "be585023", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "obtain_stakeholder_commitment_sign_off", title: "Obtain Stakeholder Commitment and Sign Off", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/obtain_stakeholder_commitment_sign_off_73C22FDF.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "b1b59233", parentId: "be585023", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rationalize_service_model", title: "Rationalize Service Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/rationalize_service_model_7E600FEF.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "f66deb6f", parentId: "be585023", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "refactor_and_refine_svc_hier_and_portfolio", title: "Refactor and Refine Service Portfolio and Hierarchy", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/refactor_and_refine_svc_hier_and_portfolio_3773756C.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "870e3d4b", parentId: "be585023", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "review_service_granularity", title: "Review Service Granularity", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/review_service_granularity_3F1D1DD8.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c0351566", parentId: "be585023", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_context_aware_service_specification", title: "Specify Context-Aware Service Specification", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/specify_context_aware_service_specification_82467604.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "3381326e", parentId: "", relPath: ",_jgNpUwSDEeCqyYNePbcNgg", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "business_area_expert", title: "Business Area Expert", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/business_area_expert_6C188773.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "31883e26", parentId: "3381326e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "obtain_stakeholder_commitment_sign_off", title: "Obtain Stakeholder Commitment and Sign Off", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/obtain_stakeholder_commitment_sign_off_73C22FDF.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ce18ed5e", parentId: "3381326e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rationalize_service_model", title: "Rationalize Service Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/rationalize_service_model_7E600FEF.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "fc41b496", parentId: "", relPath: ",_G5yqk90jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "data_specialist", title: "Data Specialist", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/data_specialist_557E0ECA.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1f71863e", parentId: "fc41b496", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "apply_ooad_in_subsystem_scope", title: "Apply OOAD in Component Scope", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/apply_ooad_in_subsystem_scope_9C211DB4.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "5925496e", parentId: "", relPath: ",_G57z5d0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "information_architect", title: "Information Architect", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/information_architect_EE84D1B6.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e12061e8", parentId: "5925496e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "data_model", title: "Data Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/data_model_6FFEED88.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6a1d7731", parentId: "5925496e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "dev_tech_proof_of_concept", title: "Develop Technical Proof of Concept", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/dev_tech_proof_of_concept_D19486FD.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a0093103", parentId: "5925496e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "document_state_management_decisions", title: "Document State Management Decisions", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/document_state_management_decisions_37DA67B1.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1c1fb29f", parentId: "5925496e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "leverage_existing_assets", title: "Leverage Existing Assets (Component Analysis)", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/leverage_existing_assets_F36D44DF.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "9ab4a2c1", parentId: "5925496e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "map_svc_op_params_to_canonical_msg_model", title: "Map Service Operation Parameters to Canonical Message Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/map_svc_op_params_to_canonical_msg_model_8813F769.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6abcc69", parentId: "5925496e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "select_infra_products", title: "Select Infrastructure Products", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/select_infra_products_380A6B9A.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "825fa977", parentId: "5925496e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_context_aware_service_specification", title: "Specify Context-Aware Service Specification", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/specify_context_aware_service_specification_82467604.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1abcb33", parentId: "5925496e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_input_output_error_msg_for_svc_ops", title: "Specify Input, Output and Error Messages for Service Operations", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/specify_input_output_error_msg_for_svc_ops_3911CADC.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "daef76dd", parentId: "", relPath: ",_G570DN0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "infrastructure_architect", title: "Infrastructure Architect", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/infrastructure_architect_1137BBA7.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "9374d064", parentId: "daef76dd", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assemble_architecture_model_deliverable", title: "Assemble Architecture Model Deliverable", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/assemble_architecture_model_deliverable_DEF434F6.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1cd10338", parentId: "daef76dd", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "dev_svc_level_charac_model", title: "Assess Service Level Characteristics", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/dev_svc_level_charac_model_86A0AE89.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "4c2b82f0", parentId: "daef76dd", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "conduct_viability_assessment", title: "Conduct Viability Assessment", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/conduct_viability_assessment_4D86761A.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "9bafefe4", parentId: "daef76dd", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "detail_logical_operational_model", title: "Detail Logical Operational Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/detail_logical_operational_model_2544E1F2.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "14409100", parentId: "daef76dd", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "detail_physical_operational_model", title: "Detail Physical Operational Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/detail_physical_operational_model_E7D0DBE2.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "64d0bc9a", parentId: "daef76dd", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "dev_atomic_charac", title: "Develop Atomic Characteristics", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/dev_atomic_charac_CFBED079.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c95980b4", parentId: "daef76dd", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "dev_bus_tech_event_map", title: "Develop Business Technical Event Map", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/dev_bus_tech_event_map_CC5A4A8C.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "256690c4", parentId: "daef76dd", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "dev_deployment_unit_model", title: "Develop Deployment Unit Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/dev_deployment_unit_model_7378897B.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "94759bb2", parentId: "daef76dd", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "develop_performance_model", title: "Develop Performance Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/develop_performance_model_638074C7.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "24bb8400", parentId: "daef76dd", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "dev_tech_proof_of_concept", title: "Develop Technical Proof of Concept", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/dev_tech_proof_of_concept_D19486FD.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "b857881e", parentId: "daef76dd", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "doc_arch_decisions", title: "Document Architectural Decisions", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/doc_arch_decisions_12185839.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d30110bc", parentId: "daef76dd", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "detail_non_functional_requirements", title: "Refine Non-Functional Requirements", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/detail_non_functional_requirements_51F66F2C.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2970c303", parentId: "daef76dd", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "select_infra_products", title: "Select Infrastructure Products", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/select_infra_products_380A6B9A.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "91a899ab", parentId: "daef76dd", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_nfr_for_svc_and_svc_ops", title: "Specify Non-functional Requirements for Service and Service Operations", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/specify_nfr_for_svc_and_svc_ops_C462B1DC.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "175315a3", parentId: "", relPath: ",_87OQcIDMEeCRsZDtd-WpeA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "integration_architect", title: "Integration Architect", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/integration_architect_F8A83673.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "de21f2d5", parentId: "175315a3", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "leverage_existing_assets", title: "Leverage Existing Assets (Service Specification)", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/leverage_existing_assets_FFEBBDA0.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7f64bce3", parentId: "", relPath: ",_G570At0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "security_privacy_consultant", title: "Security and Privacy Consultant", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_privacy_consultant_BCB90970.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "12b72bca", parentId: "7f64bce3", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "operational_model", title: "Operational Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/operational_model_5138EC4B.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "5b3b326a", parentId: "7f64bce3", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_privacy_rqmts", title: "Security and Privacy Requirements", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_privacy_rqmts_15CACE6A.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "207e71e8", parentId: "7f64bce3", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "security_architecture", title: "Security Architecture", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/security_architecture_345383BF.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "69134ce0", parentId: "7f64bce3", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "test_strategy", title: "Test Strategy", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/test_strategy_469B0C3B.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ee7c6a24", parentId: "7f64bce3", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "incorporate_security_testint", title: "Incorporate Security in Testing", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/incorporate_security_testint_F580DFF1.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2f040baa", parentId: "7f64bce3", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "map_assets_and_actor_groups_to_zones", title: "Map Assets and Actor Groups to Zones", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/map_assets_and_actor_groups_to_zones_A7CB3994.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a4f04466", parentId: "7f64bce3", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "map_design_objectives_to_subsystems", title: "Map Design Objectives to Subsystems", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/map_design_objectives_to_subsystems_1C93DA44.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ca01d0a4", parentId: "7f64bce3", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "map_nodes_to_security_zones", title: "Map Nodes to Security Zones", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/map_nodes_to_security_zones_3EF163CF.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "56b99d72", parentId: "7f64bce3", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "map_security_zones_to_client_env", title: "Map Security Zones to Client Environment", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/map_security_zones_to_client_env_5801F825.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "860605a8", parentId: "7f64bce3", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "map_subsystems_to_nodes", title: "Map Subsystems to Nodes", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/map_subsystems_to_nodes_B2CEE5A.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1809600c", parentId: "7f64bce3", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "perform_risk_assurance", title: "Perform Risk Assurance", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/perform_risk_assurance_F8E565DE.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "45cb360a", parentId: "7f64bce3", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "refine_security_req_and_comp", title: "Refine Security Requirements and Components", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/refine_security_req_and_comp_38345EE.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "9e02253a", parentId: "7f64bce3", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "valid_path_walk_design_consistent_assure", title: "Validate Pathway/ Walkthrough/ Design Consistency Assurance", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/valid_path_walk_design_consistent_assure_BD7747FD.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "5223b1a0", parentId: "7f64bce3", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_nfr_for_svc_and_svc_ops", title: "Specify Non-functional Requirements for Service and Service Operations", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/specify_nfr_for_svc_and_svc_ops_C462B1DC.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8d29a903", parentId: "", relPath: ",_jgNpVwSDEeCqyYNePbcNgg", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "soa_architect", title: "SOA Architect", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/soa_architect_30AA6992.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ebfbc7", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "business_function_system_matrix", title: "Business Function / System Matrix", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/business_function_system_matrix_A0CF2B59.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2abb81e1", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "functional_areas_description", title: "Functional Areas Description", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/functional_areas_description_FC05578B.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "69d5d4ab", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "goal_service_model", title: "Goal Service Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/goal_service_model_F167777B.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "bd5aa905", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "service_model", title: "Service Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/service_model_C09739AA.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "5104c4a4", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "variations_model", title: "Variations Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/variations_model_268E69AA.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "86808c90", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "approval_to_proceed", title: "Approval to Proceed", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/approval_to_proceed_B5F9599A.html", 
+	predecessors: "", info: "Modifies", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d18f8962", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "candidate_asset_list", title: "Candidate Asset List", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/candidate_asset_list_D8D8C34D.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "20bb1c9e", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "component_model", title: "Component Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/component_model_D42AB5A8.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "83551a1c", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "service_model", title: "Service Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/service_model_C09739AA.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c0e4daae", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "service_portfolio", title: "Service Portfolio", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/service_portfolio_85291BC9.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ebe61948", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "service_specification", title: "Service Specification", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/service_specification_8B231CF0.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c3e59f48", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "adapt_service_litmus_test_and_exposure_scope", title: "Adapt Service Litmus Test and Exposure Scope", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/adapt_service_litmus_test_and_exposure_scope_7A8B3BB9.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2e5236b8", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "apply_service_litmus_tests", title: "Apply Service Litmus Tests", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/apply_service_litmus_tests_F53C4BB1.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "88721002", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assign_service_to_service_components", title: "Assign Services to Service Components", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/assign_service_to_service_components_3490CFA7.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "fcd80332", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "decompose_svc_component_into_func_tech_comp", title: "Decompose Service Components into Functional and Technical Components", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/decompose_svc_component_into_func_tech_comp_B1361B24.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "9bff0348", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_subsystem_dependencies", title: "Define Component Dependencies", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/define_subsystem_dependencies_F98D389.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c7d7ef2c", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "determine_service_exposure_scope", title: "Determine Service Exposure Scope", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/determine_service_exposure_scope_B9CE2DD0.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "53a02c58", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "identify_service_components", title: "Identify Service Components", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/identify_service_components_36ABCDDC.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "87fd0746", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "leverage_existing_assets", title: "Leverage Existing Assets (Component Analysis)", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/leverage_existing_assets_F36D44DF.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "21fbb24c", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "obtain_stakeholder_commitment_sign_off", title: "Obtain Stakeholder Commitment and Sign Off", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/obtain_stakeholder_commitment_sign_off_73C22FDF.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "52fcf340", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rationalize_service_model", title: "Rationalize Service Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/rationalize_service_model_7E600FEF.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "cd96fa26", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "refactor_and_refine_svc_hier_and_portfolio", title: "Refactor and Refine Service Portfolio and Hierarchy", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/refactor_and_refine_svc_hier_and_portfolio_3773756C.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6e8f01fe", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "review_service_granularity", title: "Review Service Granularity", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/review_service_granularity_3F1D1DD8.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "9358a157", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "apply_ooad_in_subsystem_scope", title: "Apply OOAD in Component Scope", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/apply_ooad_in_subsystem_scope_9C211DB4.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "427dfaf", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "associate_bus_rules_policies_with_svc_ops", title: "Associate Business Rules and Policies with Service Operations", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/associate_bus_rules_policies_with_svc_ops_EA24C154.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d0722c2d", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assoicate_use_cases_with_service_operations", title: "Associate Use Cases with Service Operations", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/assoicate_use_cases_with_service_operations_2E73EACC.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "54178f07", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "create_service_context_diagram", title: "Create Service Context Diagram", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/create_service_context_diagram_4CA5D988.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d5062553", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_service_interface_messaging_style", title: "Define Service Interface Messaging Style", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/define_service_interface_messaging_style_AFB22DE8.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2f9b0759", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_service_message_exchange_pattern", title: "Define Service Message Exchange Pattern", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/define_service_message_exchange_pattern_3B3EED9E.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "af4580f7", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_service_operations", title: "Define Service Operations", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/define_service_operations_890F81DE.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "291073eb", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "document_state_management_decisions", title: "Document State Management Decisions", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/document_state_management_decisions_37DA67B1.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "bb73b607", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "identify_events_with_service", title: "Identify Events Associated With Service", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/identify_events_with_service_9D6AA56C.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "67424513", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "map_svc_op_params_to_canonical_msg_model", title: "Map Service Operation Parameters to Canonical Message Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/map_svc_op_params_to_canonical_msg_model_8813F769.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d705c4c5", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "model_service_composition_and_flow", title: "Model Service Composition and Flows", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/model_service_composition_and_flow_2249472B.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7298ccd9", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "model_service_dependencies", title: "Model Service Dependencies", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/model_service_dependencies_9392740B.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "960ff23f", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_context_aware_service_specification", title: "Specify Context-Aware Service Specification", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/specify_context_aware_service_specification_82467604.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1a059579", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_input_output_error_msg_for_svc_ops", title: "Specify Input, Output and Error Messages for Service Operations", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/specify_input_output_error_msg_for_svc_ops_3911CADC.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "b2cc2723", parentId: "8d29a903", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_nfr_for_svc_and_svc_ops", title: "Specify Non-functional Requirements for Service and Service Operations", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/specify_nfr_for_svc_and_svc_ops_C462B1DC.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2fc420df", parentId: "", relPath: ",_G570EN0jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "soa_developer", title: "SOA Developer", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/soa_developer_D5C99DC6.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1f284f59", parentId: "2fc420df", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_service_message_exchange_pattern", title: "Define Service Message Exchange Pattern", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/define_service_message_exchange_pattern_3B3EED9E.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "64985e88", parentId: "", relPath: ",_ptlW4YDMEeCRsZDtd-WpeA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "software_architect", title: "Software Architect", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/software_architect_698478A0.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "52a60c26", parentId: "64985e88", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "leverage_existing_assets", title: "Leverage Existing Assets (Service Specification)", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/leverage_existing_assets_FFEBBDA0.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "eb609a7e", parentId: "", relPath: ",_qCl9kIDMEeCRsZDtd-WpeA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "software_designer", title: "Software Designer", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/software_designer_9D857589.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "65d207ba", parentId: "eb609a7e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "service_dependencies", title: "Service Dependencies", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/service_dependencies_B2361743.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "68d0bca2", parentId: "eb609a7e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "service_specification", title: "Service Specification", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/service_specification_814AEB8F.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "73a22d00", parentId: "eb609a7e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "associate_bus_rules_policies_with_svc_ops", title: "Associate Business Rules and Policies with Service Operations", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/associate_bus_rules_policies_with_svc_ops_EA24C154.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "3fde61fc", parentId: "eb609a7e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assoicate_use_cases_with_service_operations", title: "Associate Use Cases with Service Operations", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/assoicate_use_cases_with_service_operations_2E73EACC.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "9a734402", parentId: "eb609a7e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "create_service_context_diagram", title: "Create Service Context Diagram", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/create_service_context_diagram_4CA5D988.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "192e2dfe", parentId: "eb609a7e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_service_interface_messaging_style", title: "Define Service Interface Messaging Style", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/define_service_interface_messaging_style_AFB22DE8.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "9977f6de", parentId: "eb609a7e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_service_message_exchange_pattern", title: "Define Service Message Exchange Pattern", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/define_service_message_exchange_pattern_3B3EED9E.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "191458fd", parentId: "eb609a7e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_service_operations", title: "Define Service Operations", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/define_service_operations_890F81DE.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "dce9981d", parentId: "eb609a7e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "document_state_management_decisions", title: "Document State Management Decisions", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/document_state_management_decisions_37DA67B1.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "eac8fbfd", parentId: "eb609a7e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "identify_events_with_service", title: "Identify Events Associated With Service", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/identify_events_with_service_9D6AA56C.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c14607e3", parentId: "eb609a7e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "map_svc_op_params_to_canonical_msg_model", title: "Map Service Operation Parameters to Canonical Message Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/map_svc_op_params_to_canonical_msg_model_8813F769.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6778c8f9", parentId: "eb609a7e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "model_service_composition_and_flow", title: "Model Service Composition and Flows", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/model_service_composition_and_flow_2249472B.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "67a8cefb", parentId: "eb609a7e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "model_service_dependencies", title: "Model Service Dependencies", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/model_service_dependencies_9392740B.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "dfd6cb89", parentId: "eb609a7e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_context_aware_service_specification", title: "Specify Context-Aware Service Specification", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/specify_context_aware_service_specification_82467604.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "628c9ec1", parentId: "eb609a7e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_input_output_error_msg_for_svc_ops", title: "Specify Input, Output and Error Messages for Service Operations", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/specify_input_output_error_msg_for_svc_ops_3911CADC.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d8dd0be1", parentId: "eb609a7e", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "specify_nfr_for_svc_and_svc_ops", title: "Specify Non-functional Requirements for Service and Service Operations", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/specify_nfr_for_svc_and_svc_ops_C462B1DC.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "677524f3", parentId: "", relPath: ",_jgNpWgSDEeCqyYNePbcNgg", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "stakeholder", title: "Stakeholder", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/stakeholder_EA9E6BA1.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "86482e7d", parentId: "677524f3", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "adapt_service_litmus_test_and_exposure_scope", title: "Adapt Service Litmus Test and Exposure Scope", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/adapt_service_litmus_test_and_exposure_scope_7A8B3BB9.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2054f105", parentId: "677524f3", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "obtain_stakeholder_commitment_sign_off", title: "Obtain Stakeholder Commitment and Sign Off", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/obtain_stakeholder_commitment_sign_off_73C22FDF.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "5164497b", parentId: "677524f3", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rationalize_service_model", title: "Rationalize Service Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/rationalize_service_model_7E600FEF.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "24901073", parentId: "", relPath: ",_G5yqH90jEd-Yr79L5-CRdw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "technical_solution_architect", title: "Technical Solution Architect", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/technical_solution_architect_758C248D.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "89a977a", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/architectural_decisions_70F4A020.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "51e6a40c", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architecture_overview", title: "Architecture Overview", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/architecture_overview_D14430E7.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8cd1fc3e", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "atomic_characteristics", title: "Atomic Characteristics", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/atomic_characteristics_AEE6A75C.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d920c912", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "business_technical_event_map", title: "Business Technical Event Map", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/business_technical_event_map_EC68604F.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "12b8d89c", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "deployment_unit_model", title: "Deployment Unit Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/deployment_unit_model_6894483B.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6afd33f", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "deployment_unit_spec", title: "Deployment Unit Specification", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/deployment_unit_spec_A402661C.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "4dfc44dd", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "location_model", title: "Location Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/location_model_AEA0462C.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a03ae859", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "node_model", title: "Node Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/node_model_6133007.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e5eeb03d", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "operational_model", title: "Operational Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/operational_model_CCACAC7A.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2c1780dd", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "ref_arch_fit_gap_analysis", title: "Reference Architecture Fit Gap Analysis", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/ref_arch_fit_gap_analysis_5C997C92.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "68b7b1cd", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "slc_model", title: "Service Level Characteristic Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/slc_model_1CB63849.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d6b6b169", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "viability_assessment", title: "Viability Assessment", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/viability_assessment_FC472C7.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d4df65d1", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "zone_model", title: "Zone Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/zone_model_9D395A42.html", 
+	predecessors: "", info: "Responsible For", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7cbcd1f9", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "analysis_design_guidelines", title: "Analysis and Design Guidelines", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/analysis_design_guidelines_55D070B8.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c4dca435", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architectural_decisions", title: "Architectural Decisions", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/architectural_decisions_70F4A020.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "da9dd35", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "architecture_model_0537", title: "Architecture Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/architecture_model_0537_8B3832F6.html", 
+	predecessors: "", info: "Modifies", type: "Deliverable Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a0d0d897", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "atomic_characteristics", title: "Atomic Characteristics", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/atomic_characteristics_9EEE92A8.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e1201c15", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "business_technical_event_map", title: "Business Technical Event Map", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/business_technical_event_map_9450B298.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "f680d3f3", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "decision_model", title: "Decision Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/decision_model_7459260D.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "49db61c7", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "deployment_unit_model", title: "Deployment Unit Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/deployment_unit_model_9848C7C5.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "b07b8627", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "nonfunctional_requirements", title: "Non-Functional Requirements", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/nonfunctional_requirements_EF8BAE43.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "19a6bdbf", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "operational_model", title: "Operational Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/operational_model_CCACAC7A.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "56fe2049", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "performance_model", title: "Performance Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/performance_model_6A4980A1.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a330be18", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "slc_model", title: "Service Level Characteristic Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/slc_model_1CB63849.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ed17cd40", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_proof_of_concept", title: "Technical Proof of Concept", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/technical_proof_of_concept_DBC0AEF0.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "28901086", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "viability_assessment", title: "Viability Assessment", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/viability_assessment_FC472C7.html", 
+	predecessors: "", info: "Modifies", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2abb8654", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assemble_architecture_model_deliverable", title: "Assemble Architecture Model Deliverable", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/assemble_architecture_model_deliverable_DEF434F6.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "bafbf078", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "dev_svc_level_charac_model", title: "Assess Service Level Characteristics", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/dev_svc_level_charac_model_86A0AE89.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "de742a56", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assess_results_tech_proof_of_concept", title: "Assess the Results of the Technical Proof-of-Concept", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/assess_results_tech_proof_of_concept_D0AF8083.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7e19fdfe", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "conduct_viability_assessment", title: "Conduct Viability Assessment", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/conduct_viability_assessment_4D86761A.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "9395d068", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "detail_logical_operational_model", title: "Detail Logical Operational Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/detail_logical_operational_model_2544E1F2.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "3365ea96", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "detail_physical_operational_model", title: "Detail Physical Operational Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/detail_physical_operational_model_E7D0DBE2.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "2cecd426", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "dev_atomic_charac", title: "Develop Atomic Characteristics", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/dev_atomic_charac_CFBED079.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8d96de08", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "dev_bus_tech_event_map", title: "Develop Business Technical Event Map", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/dev_bus_tech_event_map_CC5A4A8C.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "cb0b9c96", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "dev_deployment_unit_model", title: "Develop Deployment Unit Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/dev_deployment_unit_model_7378897B.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "5896ca02", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "develop_performance_model", title: "Develop Performance Model", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/develop_performance_model_638074C7.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8fde82da", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "dev_tech_proof_of_concept", title: "Develop Technical Proof of Concept", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/dev_tech_proof_of_concept_D19486FD.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1e6a1440", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "doc_arch_decisions", title: "Document Architectural Decisions", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/doc_arch_decisions_12185839.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6197329e", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "establish_comp_analysis_design_guidelines", title: "Establish Component Analysis and Design Guidelines", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/establish_comp_analysis_design_guidelines_38EB082C.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "99c3206f", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "detail_non_functional_requirements", title: "Refine Non-Functional Requirements", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/detail_non_functional_requirements_51F66F2C.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "21789207", parentId: "24901073", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "select_infra_products", title: "Select Infrastructure Products", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/select_infra_products_380A6B9A.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "56fd5a9f", parentId: "", relPath: ",_rCCZkPP8Ed-v2O3NnRmrFw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "user_experience_pro", title: "User Experience Professional", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/user_experience_pro_3C60B80E.html", 
+	predecessors: "", info: "", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "759ac2f7", parentId: "56fd5a9f", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "detail_non_functional_requirements", title: "Refine Non-Functional Requirements", url: "./../../process.tech.ad_20.base-ibm_int/deliveryprocesses/detail_non_functional_requirements_51F66F2C.html", 
+	predecessors: "", info: "Performs as Additional", type: "Task Descriptor", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Validating Code</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="validating_code">
+<meta name="uma.presentationName" content="Validating Code">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_mLKKsD1iEd2FLME3E24j9Q"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_mLKKsD1iEd2FLME3E24j9Q"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Validating Code</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Brief overview of alternatices for validating coding as well as general items that should always be considered.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/data_migration_programs_947D234F.html" guid="mweb3B959C944E542F14852568820061A9DF">Data Migration Programs</a>
+</li>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/interface_programs_6BE2E601.html" guid="mweb281FECC045929ECC85256885004E74DE">Interface Programs</a>
+</li>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/package_extensions_B9A04579.html" guid="mwebC2622A1C6984A6DF85256885005198A7">Package Extensions</a>
+</li>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/report_programs_CD7DF2D8.html" guid="mweb9431D5152BF68CD6852568850059807B">Report Programs</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/source_files_EFC2C2F9.html" guid="mweb3A52A85C8665725C85256885005B699F">Source Files</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Verification of the code should not be completely left to unit testing. The source can be verified in ways such as:
+</p>
+<ul>
+    <li>
+        <div>
+            Syntax checking
+        </div>
+    </li>
+    <li>
+        <div>
+            Code reviews and walkthroughs
+        </div>
+    </li>
+    <li>
+        <div>
+            Mechanical verification of types and signatures that can detect errors early in the coding process
+        </div>
+    </li>
+    <li>
+        <div>
+            More formal methods, such as pre- and post-conditions and invariants, have a high payback, but come at a
+            substantial cost in complexity and comprehensibility
+        </div>
+    </li>
+    <li>
+        <div>
+            Probabilistic and white box analyses that can be used to focus testing on critical parts of the system
+        </div>
+    </li>
+    <li>
+        <div>
+            Black box testing used to test the code against the design and the requirements but is the least effective form
+            of verification
+        </div>
+    </li>
+    <li>
+        <div>
+            Use both valid and invalid data to test the programs and manual procedures to ensure that they behave in the
+            manner expected
+        </div>
+    </li>
+    <li>
+        <div>
+            Testing the error handling mechanisms, performance, and security features
+        </div>
+    </li>
+</ul>
+<p>
+    Code&nbsp;can be validated through code inspections based on the following criteria:
+</p>
+<ul>
+    <li>
+        The code must agree with the specifications.
+    </li>
+    <li>
+        <div>
+            The coding rules, standards, and procedures must have been observed.
+        </div>
+    </li>
+    <li>
+        <div>
+            The normal exception and error conditions must be processed correctly, including appropriate messages that are
+            meaningful to the end user.
+        </div>
+    </li>
+</ul>
+<p>
+    However the programs are created, they should be based on approved specifications defining the operations of the
+    program. They should use approved standards and procedures, such as coding standards and build procedures.
+</p>
+<p>
+    The code must accurately reflect specification changes that result from the projects change management mechanisms. It
+    should also be traceable back to specific requirement statements that should likewise be under change control.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

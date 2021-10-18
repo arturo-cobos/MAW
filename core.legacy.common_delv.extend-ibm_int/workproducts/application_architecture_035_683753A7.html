@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Deliverable: Application Architecture
+			(DCD 035)
+		</title>
+<meta name="uma.type" content="Deliverable">
+<meta name="uma.name" content="application_architecture_035">
+<meta name="uma.presentationName" content="Application Architecture">
+<meta name="element_type" content="artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_WCR4YcRdEdyD76CYS6Ta7A", "mwebCFD8FC19A89D271685256B09004714FC"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebCFD8FC19A89D271685256B09004714FC"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Deliverable: Application Architecture
+			(DCD 035)
+		</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/deliverable.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The Application Architecture deliverable can be produced to varying levels of detail and scope, dependant on the focus of the engagement, which produces it.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The content of this deliverable is used in several different ways:
+</p>
+<ul>
+    <li>
+        The application principle component is used to tie the content of the application architecture back, initially to
+        the previously defined business architecture and, finally to the desired business strategy, directions and
+        capabilities.
+    </li>
+    <li>
+        The application architecture components are used to clearly define an enterprise-level framework of application
+        functions, packages and solutions, which will ensure the desired processes, information, events and business
+        structure previously defined, are implemented effectively from a business perspective.
+    </li>
+    <li>
+        The chosen set of one or more ‘reference architectures’ will provide known, proven combinations of application
+        architecture components, which will improve the productivity of future design activities. They also drastically
+        improve the opportunities for implementing rationalized architectural components, which can be effectively reused.
+    </li>
+    <li>
+        These application architecture components in turn, will be subsequently used as a direct input to defining the
+        framework of data and technology/infrastructure (an IT Architecture) components that need to be implemented to
+        support the identified application functions, if the business is to achieve its desired strategy.
+    </li>
+</ul>
+<p>
+    Subsequent engagements/projects will take subsets of the business and application architecture deliverables, plus the
+    chosen reference architectures, as inputs to defining, designing and implementing specific solutions, for example, CRM,
+    ERP, e-Procurement, etc.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><ul>
+    <li>
+        At an enterprise-level (Conceptual Architecture as defined in the IBM Architecture Description Standard) - where
+        the focus is on understanding all the application functions which will need to be defined and implemented across
+        the enterprise. This includes documenting the inter-relationships and dependencies and opportunities for
+        standardization and sharing of components across various divisional and organizational groups - could include
+        future partners and joint ventures if required.
+    </li>
+    <li>
+        At a solution level (Conceptual and Functional Architectures as defined in the IBM Architecture Description
+        Standard) - where the focus is on understanding the application functions, inter-dependencies and sharing of
+        components possible for a given business area. Examples would include CRM, ERP and e-Procurement. A solution level
+        Application Architecture is a subset of the enterprise-level Application Architecture, often produced to a more
+        detailed level.
+    </li>
+</ul>
+<p>
+    This definition of both these levels has been included here for clarification.
+</p>
+<p>
+    In this DCD, we will focus on the Application Architecture deliverables produced at the enterprise level, as an output
+    from phase 4 of the Business Architecture - Quickstart engagement model.
+</p>
+<p>
+    This content of this deliverable should include:
+</p>
+<ul>
+    <li>
+        A reminder of the overall scope, objectives and deliverables of the engagement
+    </li>
+    <li>
+        An overview of the application principles, which will underpin all subsequent application design and package and IT
+        acquisition decisions. This includes a matrix of principles to desired capabilities.
+    </li>
+    <li>
+        A high-level application model showing the major ‘application groups’ defined their functional boundaries and the
+        relationship between the groupings. These application groups are linked back to the business architecture
+        components defined in the previous phase, to show how they support and implement the desired capabilities. The
+        degree, to which these application groups are decomposed will be governed by the time, resources and skills
+        available.
+    </li>
+    <li>
+        A chosen set of one or more ‘reference’ architectures, which will be used to guide application design, package
+        evaluation and solution implementation activities.
+    </li>
+    <li>
+        An overview of how this application architecture deliverable forms a key component part of an overall
+        enterprise-wide IT Architecture and feeds into subsequent IT Architecture definition activities (could be defined
+        using the IT Architecture - Quickstart engagement model)
+    </li>
+    <li>
+        A summary of any key issues relating to the above application architecture components, which need senior management
+        decisions and attention.
+    </li>
+    <li>
+        A mapping of the application groups to business goals and objectives
+    </li>
+</ul>
+<p>
+    The inputs used to provide the component parts of this Application Architecture deliverable include:
+</p>
+<ul class="noindent">
+    <li>
+        Outputs from the previous phases of the Business Architecture – Quickstart engagement model, namely the contents of
+        the Business Architecture Context DCD and the Business Architecture DCD
+    </li>
+    <li>
+        Any existing client application function models, data models, application design principles, reference
+        architectures or accepted design models.
+    </li>
+    <li>
+        IBM Reference Architectures and other IC assets - for example, default Industry application and data models. These
+        reference architectures and IC assets can be found in:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                IBM Patterns for e-Business website URL - <a href="http://www-106.ibm.com/software/developer/patterns/">http://www-106.ibm.com/software/developer/patterns/</a>
+            </li>
+            <li>
+                The IBM Enterprise Architecture (EA) Method database, which is available to EA trained practitioners –
+                provides a generic collection of application and data models from multiple industries
+            </li>
+            <li>
+                A database of sample principles, including application related ones, is attached to the Principles
+                Definition TP
+            </li>
+        </ul>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_delv.extend-ibm_int/guidances/examples/application_architecture_035_D84278D4.html" guid="_3f0jwDnEEdyn5oa3NKIipw">Application Architecture</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Deliverable Properties</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">External Description</th><td class="sectionTableCell"><p>
+    The above description and purpose statements provide a summary of suitable words for inclusion in any client documents.
+</p>
+<p>
+    Experience has shown that there is no single agreed industry definition of the content of an application architecture
+    (AA) - the following provides a generic definition of an AA at the enterprise level, which is useful as a base point
+    for discussing and agreeing the scope and content of business architecture definition activities within a specific
+    client engagement.
+</p>
+<p>
+    <strong>Description:</strong> An Application Architecture provides a classification of applications and the set of
+    rules, which govern how applications will interoperate, distribute function and share information across an
+    organization. It will normally be based on the business process/data model and will provide a framework that defines
+    the structure and design of the functional components of the business systems and their inter-relationship with each
+    other.
+</p>
+<p>
+    An Application Architecture would normally include the following:
+</p>
+<ul class="noindent">
+    <li>
+        Application design principles - these principles will act as fundamental rules and provide guidance for the
+        development of the application structure and the relationships between applications.
+    </li>
+    <li>
+        An application function model – highlights the key groupings of application function required by the business,
+        based on the previously defined business processes and activities. These application groups are linked back to the
+        business architecture components defined in the previous phase, to show how they support and implement the desired
+        capabilities. The level, to which these application groups are de-composed will be governed by the time, resources
+        and skills available.
+    </li>
+    <li>
+        Application computing standards and models - sets of rules that allow individual applications to communicate,
+        coexist, share data, and to be developed and enhanced without mutual disruption: - Rules for how applications will
+        communicate with each other, including application interface standards - Rules for how different applications will
+        coexist across one or more systems These models often come from reference architectures for example, the
+        Business-to-Business computing models specified in the IBM ‘Patterns for e-Business’.
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        Company strategy for the distribution of processes and function (not developed in this BAQ engagement model, but
+        additional guidance is available in the IT Architecture – Quickstart engagement model if required)
+    </li>
+    <li>
+        Catalog of current applications (for example by type/function, structure, application model, data organization,
+        processor type, storage and I/O requirements) – captured as part of the Current IT Environment WP.
+    </li>
+    <li>
+        List of major application initiatives including the optional definition of a target application or development
+        portfolio – part of the Business Architecture Transition Considerations DCD
+    </li>
+    <li>
+        Application Architecture transition issues (may be captured as part of Critical Issues, Opportunities and
+        Recommendations WP) – part of the Business Architecture Transition Considerations DCD.
+    </li>
+</ul>
+<p>
+    <strong>Purpose:</strong> An Application Architecture is a constituent part of an overall Enterprise Architecture. It
+    is used, along with the Data Architecture, to define the application and data functional components, which will meet
+    the business requirements and, which must be supported by the Technical Architecture, which underpins it. Note: see the
+    IT Architecture – Quickstart engagement model for further details on how to define the Data and Technical Architecture
+    components of an overall IT Architecture.<br />
+    <br />
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Deliverable Parts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.mgmt.wwpmm.common.base-ibm_lic/workproducts/agreement_290C745.html" guid="mweb576433DB5286A8FA852568A9007D2828">Agreement</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/application_function_model_92E5152A.html" guid="mwebA65B7D730F4E0340852568820056CCB7">Application Function Model</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/architecture_overview_7BDD690F.html" guid="mweb3072ED040425425485256882005791A4">Architecture Overview</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/crit_issues_opps_recomend_5470ADCB.html" guid="mweb89E198329B6321878525688200605CB3">Critical Issues Opportunities and Recommendations</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/principles_policies_guidelines_6A4D5AB9.html" guid="mweb9678B15A6EFFAF46852568850052836B">Principles - Policies and Guidelines</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/ref_arch_fit_gap_analysis_505D71D5.html" guid="mwebCB8ECB58A8362ADD852568850059188E">Reference Architecture Fit Gap Analysis</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Packaging Instructions</th><td class="sectionTableCell"><p>
+    The Application Architecture deliverable assembles the work product outputs into a format, which is suitable for the
+    client. The format typically includes two parts:
+</p>
+<ul class="noindent">
+    <li>
+        Specific entries in a database or web application – as defined and agreed as part of the Architecture Delivery
+        Environment – see the DCD for Architecture Management Framework for further details
+    </li>
+    <li>
+        Presentation material, which summarizes the content of each of the component parts.
+    </li>
+</ul>
+<p>
+    The content of the deliverable and its (associated) presentation material is used to educate and inform key client
+    business and IT stakeholders, at a more detailed level, of the future application environment, as known and defined so
+    far. This is to ensure that they are sufficiently knowledgeable, motivated and engaged in the subsequent development of
+    solutions to specific business problems or issues, for example, more detailed application design and package evaluation
+    and selection activities.
+</p>
+<p>
+    In practice, the key business users and IT stakeholders will have been heavily involved in developing the content of
+    this deliverable. The objective here is to summarize the material produced into a form, which is suitable for senior
+    client executives, to provide them with a clear perspective of the overall application environment required by the
+    business. In particular, the Application Principles that have been defined will have far reaching effects, in terms of
+    business and IT management and the way application component and package selection decisions will be made in future.
+    For example, it will probably no longer be the prerogative of individual divisions/divisional management to make
+    package selection decisions in isolation.
+</p>
+<p>
+    Combine the work product inputs/outputs using the following structure and guidance:
+</p>
+<ul class="noindent">
+    <li>
+        Use ENG 315 to provide an overview of the overall scope, objectives and deliverables of the engagement and remind
+        key stakeholders of the value of these activities.
+    </li>
+    <li>
+        Use a summary of the Business Architecture Context and Business Architecture deliverables produced in previous
+        phases to remind stakeholders of the work that has been completed so far. Confirm their understanding of what the
+        enterprise is and aspires to become, how it intends to achieve its goals and make the desired transition, and by
+        what means.
+    </li>
+    <li>
+        In particular, show how the key business processes and information flows produced using BUS 312 Process
+        Identification, ARC 307 Enterprise Information Model and APP 112 Process – Data Usage, in previous phases, have
+        been used as inputs to defining the Application Architecture components.
+    </li>
+    <li>
+        Use the application principles defined using ARC 309, and the matrix of principles to key capabilities, to
+        highlight both how these principles link back to and support, the previously agreed business directions and desired
+        capabilities. Show how they will be used to drive future business and IT acquisition and design decisions. Use
+        examples of their associated motivation and implication statements to demonstrate the impact of the decisions made
+        so far and to maintain the support of key stakeholders – many of these principles will raise cultural and
+        management style changes, which will inevitably challenge certain stakeholders – these issues are raised so they
+        can be addressed.
+    </li>
+    <li>
+        Use a combination of the models and diagrams produced using ARC 101 Architecture Overview Diagram and ARC 302
+        Application Function Model to show the main component parts of the application architecture and the linkages, flows
+        and interfaces between application groups. Emphasize how these outputs will be used to drive future IT and solution
+        rationalization activities.
+    </li>
+    <li>
+        Use the outputs from the ARC 102 Reference Architecture Fit –Gap Analysis to highlight the chosen reference
+        architectures. Identify any additional follow-on actions required to establish these reference architectures as
+        standard design ‘patterns’ for all future application design/development project activities.
+    </li>
+    <li>
+        Use the outputs from BUS 005 Critical Issues – Opportunities and Recommendations to focus on any major issues,
+        which have been highlighted by these application architecture definition activities. Highlight any assumptions made
+        which need to be validated by senior business and IT executives, or any key observations/insights which are already
+        apparent and which senior management need to start considering, in their day-to-day business management/decision
+        making activities.
+    </li>
+</ul>
+<p>
+    Summarize the results and detailed content of this deliverable in BUS 321 Executive Briefing Package, ready for
+    presentation to senior executives and key stakeholders.<br />
+    <br />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Estimation Considerations</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_delv.extend-ibm_int/guidances/estimationconsiderations/application_architecture_035_legacy_30EA72F9.html" guid="_6kAmIDnHEdyn5oa3NKIipw">Application Architecture (Legacy)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

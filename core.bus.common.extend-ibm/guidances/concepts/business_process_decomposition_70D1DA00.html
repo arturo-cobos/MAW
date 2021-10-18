@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: Business Process Decomposition</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="business_process_decomposition">
+<meta name="uma.presentationName" content="Business Process Decomposition">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4Y8RdEdyD76CYS6Ta7A", "_0XDGMEozEd6D_7XK49c0nw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_0XDGMEozEd6D_7XK49c0nw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: Business Process Decomposition</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">An approach which allows the refinement of business processes, to provide more details regarding the tasks and roles that are involved in realizing the process.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.bus.common.extend-ibm/guidances/guidelines/decomposing_business_processes_4B6C7EDB.html" guid="_5Mi1gEozEd6D_7XK49c0nw">Decomposing Business Processes</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Introduction
+</h3>
+<p>
+    <a class="elementLinkWithUserText" href="./../../../core.bus.common.extend-ibm/guidances/concepts/business_process_6DC80DFA.html" guid="_zjPQgIqmEd64Ytrb_zySHw">Business process</a> models are used for many purposes, including business
+    transformation and for&nbsp;identifying candidate services.&nbsp; High-level process models often suffice for business
+    transformation analysis, but much lower-level models -- driving down to the level of fairly fine-grained process steps
+    -- often are required for candidate service identification.
+</p>
+<p>
+    The following figure&nbsp;shows process decomposition into sub-processes and use cases. The notion of a sub-process is
+    a convenient construct used to denote further levels of refinement of a process, into its constituent parts
+    (sub-processes), recursively.&nbsp; Once decomposition into sub-processes reaches the point where further decomposition
+    would have us dealing with&nbsp;fine-grained user actions, we are at the level of leaf-level sub-processes and need to
+    stop.&nbsp; These leaf-level sub-processes are used to identify portions of the overall business process that are
+    amenable to automation.&nbsp; IT-level use-cases can then be defined which capture the goals of the actors which
+    interact with the IT infrastructure.
+</p>
+<p>
+    &nbsp; <img alt="" src="./../../../core.bus.common.extend-ibm/guidances/concepts/resources/bus_proc_decomp_2.gif" width="549" height="262" /><br />
+    &nbsp;
+</p>
+<p>
+    Candidate services can be identified at essentially every level of the decomposed business process.&nbsp; For example,
+    a service might be identified which a consumer would use to initiate an entire business process.&nbsp; More granular
+    services could be used to provide entry to each sub-process.&nbsp; Even lower-level candidate services could be mapped
+    to the leaf-level sub-processes, and perhaps to the IT use-cases, themselves.
+</p>
+<p>
+    <strong><font size="4">Business Process Models as Business Use Case Realizations</font></strong>
+</p>
+<p>
+    Business process models can be viewed as being equivalent to the realization of business use cases.&nbsp; So, business
+    use case refinement can be considered to be one aspect of business process decomposition.&nbsp; Consider the following
+    diagram:
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;<img alt="" src="./../../../core.bus.common.extend-ibm/guidances/concepts/resources/bus_proc_decomp_1a.gif" width="599"     height="494" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>
+    The lower-level, more detailed use cases are still use cases for the <em>same business system</em> as the high-level
+    use cases, that is they still represent a black-box view of the behavior of that business system. For each of these
+    levels of use-case, there is a corresponding realization, which we can describe as a business process.&nbsp; It is
+    possible therefore to regard this kind of analysis as&nbsp;one aspect&nbsp;of process decomposition.
+</p>
+<p>
+    <br />
+    &nbsp;
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.bus.common.extend-ibm/guidances/concepts/business_process_6DC80DFA.html" guid="_zjPQgIqmEd64Ytrb_zySHw">Business Process</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

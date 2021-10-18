@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing DFD Application Model</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="dfd_application_model_dev">
+<meta name="uma.presentationName" content="Developing DFD Application Model">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_PnFM0DaSEdyV3oLDiz9lvQ"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_PnFM0DaSEdyV3oLDiz9lvQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing DFD Application Model</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Migrated development approach from existing IBM Global Services Method work product.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/dfd_application_model_30B69F56.html" guid="mweb4B02A98FE711A9A0852569AB0056DADB">DFD Application Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    DFD modeling enables both developer and user to determine and understand what requirements and functions are actually
+    required by the application on a common basis of “concise and clear graphical representation”.<br />
+</p>
+<p>
+    As a result, this is an effective means for the management of development in terms of step-by-step analysis, study, and
+    evaluation of an application system.<br />
+</p>
+<p>
+    The system needs are a combination of two things: needs for certain desired information (logical aspect) and needs
+    related to the methods for implementation of that needs (physical aspect):<br />
+</p>
+<p>
+    System requirements = Logical aspect + Physical aspect.
+</p>
+<ul>
+    <li>
+        Logical requirements
+    </li>
+</ul>
+<p>
+    Definition of information required by an application for the accomplishment of its objectives.
+</p>
+<ul>
+    <li>
+        Physical requirements<br />
+    </li>
+    <li>
+        Devices to implement those objectives (such as, persons, organizations, locations, cycles, timing, media, means,
+        performance).
+    </li>
+</ul>
+<p>
+    The person in charge of development must organize and execute the work involved in requirements definition based on a
+    sufficient understanding of these two aspects while gaining an understanding of the user requirements.&nbsp;<br />
+    <img height="276" alt="DFD Logical and Physical Model" src="./../../../core.legacy.common_wp.extend-ibm_int/guidances/guidelines/resources/dfd_application_model_08.jpg"     width="567" /><br />
+    <b><u>Procedures for Drawing DFD-Application Model:</u></b>
+</p>
+<p>
+    1. Draw a context diagram<br />
+    <br clear="all" />
+    Draw a context diagram that clearly specifies the scope of analysis, while paying special attention to the input and
+    output data flows. The use of a context diagram is not a must, but it is helpful in clarifying the scope of the work
+    before starting DFD development.<br />
+</p>
+<p>
+    <img height="255" alt="Context Diagram" src="./../../../core.legacy.common_wp.extend-ibm_int/guidances/guidelines/resources/dfd_application_model_09.jpg" width="548" /><br />
+    <br />
+    <br />
+    2. Draw diagram 0
+</p>
+<p>
+    Diagram 0 is the highest-level DFD. It is used to present the overall data flow of the application. Diagram 0 consists
+    of several process boxes to describe whole applications processes, major data flow, data stores, and external entities.
+    By diagram 0, overall picture of the target application can be grasped.<br />
+    <br clear="all" />
+    <img height="419" alt="Diagram 0" src="./../../../core.legacy.common_wp.extend-ibm_int/guidances/guidelines/resources/dfd_application_model_10.jpg" width="548" /><br />
+    <br />
+    3. Explode each process of Diagram 0<br />
+    <br clear="all" />
+    Check the integrities between upper level DFD and lower level DFD, which means input and output data from or to the
+    external entities on the lower level diagram must be logically same as those of the upper level process.
+</p>
+<p>
+    &nbsp;<img height="519" alt="Exploded Diagram 0" src="./../../../core.legacy.common_wp.extend-ibm_int/guidances/guidelines/resources/dfd_application_model_11.jpg" width="544" /><br />
+    <br />
+    4. Further break down each process box sequentially. The number of breakdown levels depends on the objective.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        - When using the current physical model, break it down up to the level from which all the current application
+        forms, screens, files, and databases can be extracted.<br />
+        - When using the new logical model, break it down to the level from which all the data elements can be extracted
+        and the contents of the processes can be described.<br />
+        - When using the new physical model, break it down to the level from which the physical media can be shown, the
+        functional specifications can be described, and the capacity can be assessed.<br />
+        - Explode processes only up to the extent required.
+    </p>
+</blockquote>
+<p>
+    In external design, in the case of an on-line process, at least all the transactions and the panels (name) must be
+    extractable from the DFD. In the case of a batch process, breakdown has to be carried out to the EXEC level of the job.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        - The detail level (depth of hierarchy) of each process box can vary. The same level of breakdown need not be
+        applied in all cases.<br />
+    </p>
+</blockquote></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

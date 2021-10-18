@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing Test Specification</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="test_specification_dev">
+<meta name="uma.presentationName" content="Developing Test Specification">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_0oZC8C6oEdy_iuOvjthFMA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_0oZC8C6oEdy_iuOvjthFMA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing Test Specification</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Migrated development approach from existing IBM Global Services Method work product</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/test_specification_E0A1A8C5.html" guid="mwebCE3B2E307A951B9485256885005D8027">Test Specification</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <strong>Test Design Overview</strong><br />
+</p>
+<p>
+    <b>Steps</b><br />
+</p>
+<ol>
+    <li>
+        Identify the business and technical requirements. A requirement can often be put into an, "if then ," form. These
+        requirements may have already been documented in other project artifacts. If this is not the case, develop the
+        Functional Requirements and Structural Requirements test matrices.&nbsp;
+    </li>
+    <li>
+        Develop test scenarios by conducting facilitated sessions with the client. Categorize the priority of each test
+        scenario as high, medium, or low. This step may not be required if use cases are available.&nbsp;
+    </li>
+    <li>
+        Decompose a functional or non-functional requirement into function, and sub-functions. This step may not be
+        required if use cases are available. Note that it is not always possible to decompose structural requirements in
+        this fashion.&nbsp;
+    </li>
+    <li>
+        For each functional/sub-functional requirement, identify test conditions and outcomes, and document them using a
+        Test Conditions Matrix. Include both valid and invalid conditions. Note that this step may not be required if use
+        cases and use case scenarios are available, as the test conditions and termination outcomes have already been
+        identified and documented.&nbsp;
+    </li>
+    <li>
+        Validate the requirements, conditions, and outcomes with the client.&nbsp;
+    </li>
+    <li>
+        Group test conditions into test sets. Figure 1 illustrates how one function can be decomposed into several
+        conditions which, themselves, may appear in more than one test set. Document using a Test Sets Matrix.&nbsp;
+    </li>
+    <li>
+        Using a Test Conditions Coverage Matrix, identify all test conditions for the test set.<br />
+        <img height="509" alt="" src="./../../../core.tech.common.extend-ibm_int/guidances/guidelines/resources/test_spec_1.JPG" width="600" /><br />
+        <b>Figure 1.</b> Test Design Overview<br />
+    </li>
+</ol>
+<table border="1">
+    <tbody>
+        <tr>
+            <td valign="top" width="148">
+                <br />
+                Test Set Ref. #
+            </td>
+            <td valign="top" width="148">
+                <br />
+                Test Case 1
+            </td>
+            <td valign="top" width="148">
+                <br />
+                Test Case 2
+            </td>
+            <td valign="top" width="148">
+                <br />
+                Test Case 3
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="148">
+                <br />
+                Condition A
+            </td>
+            <td valign="top" width="148">
+                <br />
+                X
+            </td>
+            <td valign="top" width="148">
+                <br />
+            </td>
+            <td valign="top" width="148">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="148">
+                <br />
+                Condition B
+            </td>
+            <td valign="top" width="148">
+                <br />
+            </td>
+            <td valign="top" width="148">
+                <br />
+                X
+            </td>
+            <td valign="top" width="148">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="148">
+                <br />
+                Condition C
+            </td>
+            <td valign="top" width="148">
+                <br />
+                X
+            </td>
+            <td valign="top" width="148">
+                <br />
+            </td>
+            <td valign="top" width="148">
+                <br />
+                X
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="148">
+                <br />
+                Condition D
+            </td>
+            <td valign="top" width="148">
+                <br />
+            </td>
+            <td valign="top" width="148">
+                <br />
+            </td>
+            <td valign="top" width="148">
+                <br />
+                X
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <br />
+    <b>Figure 2.</b> Simplified Example of Test Conditions Coverage Matrix&nbsp;<br />
+    <br />
+</p>
+<p>
+    8. Develop test cases. Each test condition has one or more test cases. A test case may include one or more test
+    conditions. However, test cases should be as granular as possible if the test case constructor is to take full
+    advantage of the programming constructs afforded by scripting language of most capture/playback tools. A single test
+    case can be created and verified for correct operation. It can then be reused in many test scenarios by combining with
+    other test cases to demonstrate the full functionality required by the scenario. This will help insulate the test case
+    from the impact of changes.
+</p>
+<p>
+    9. Optionally simplify and consolidate the Test Conditions Coverage Matrix.
+</p>
+<ul>
+    <li>
+        <div>
+            Logically related test conditions (rows) can be grouped together.
+        </div>
+    </li>
+    <li>
+        <div>
+            Define prerequisites for the test cases (columns). Related test cases with the same prerequisites can be
+            grouped.
+        </div>
+    </li>
+    <li>
+        <div>
+            Related test cases where the result of one satisfies the prerequisite of the other can be grouped.
+        </div>
+    </li>
+    <li>
+        <div>
+            When grouping test cases, the prerequisites may need to be consolidated.
+        </div>
+    </li>
+</ul><br />
+<table border="1">
+    <tbody>
+        <tr>
+            <td valign="top" width="535">
+                <br />
+                Test Case 1 relates to matrix
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="535">
+                <br />
+                Prerequisites: details
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="535">
+                <br />
+                Test Script: details
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="535">
+                <br />
+                Expected Results: details
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+10. Document each test case using a Test Case Specification form. Write test cases clearly and with enough detail that
+anyone on the team can pick up and follow the test cases. 
+<ul>
+    <li>
+        <div>
+            Define the setup and environment considerations, test data, and pre-requisites for each test case. List all
+            assumptions.
+        </div>
+    </li>
+    <li>
+        <div>
+            Define and document expected results; i.e., the correct output of each test case.
+        </div>
+    </li>
+    <li>
+        <div>
+            Develop and document test script; i.e., the details of how each test case will be conducted.
+        </div>
+    </li>
+</ul><br />
+<br />
+11. Once all test conditions are identified, select those that should form part of a Regression test package. Assemble
+these test cases into a Regression Test Set.<br />
+<br />
+12. Document, catalogue and store all test specification assets. 
+<ul>
+    <li>
+        <div>
+            Use a logical numbering scheme so that every requirement can be traced to specific test cases or, in reverse,
+            an individual test case can be traced back to a specific test condition and requirement.
+        </div>
+    </li>
+    <li>
+        <div>
+            An illustrated depiction of all the functional and non-functional requirements and their decomposition is an
+            effective method of communicating to the team who is doing what, and where test conditions affect more than one
+            test case.
+        </div>
+    </li>
+    <li>
+        <div>
+            Software configuration management should be used to manage soft copy versions of all testware.
+        </div>
+    </li>
+</ul><br />
+<strong>Test Data</strong><br />
+<br />
+A standard set of data that can be used in all of the test cases should be defined before writing the test cases. For
+example, test data such as customer name and phone number, or user IDs, can be reused in numerous test cases.<br />
+As part of the test planning process, the test data requirements are defined and set up. For example:<br />
+<ul>
+    <li>
+        <div>
+            Will 100 records be copied from production databases to use as test data?
+        </div>
+    </li>
+    <li>
+        <div>
+            How will this data be backed up? How often?
+        </div>
+    </li>
+    <li>
+        <div>
+            When and where will this data be maintained?<br />
+            <br />
+            <strong><em>Steps<br />
+            </em></strong>1. Define test data required to test conditions.<br />
+            2. Use predetermined methods to extract test data to create test bed.<br />
+            3. Create new test data if necessary to assure adequate coverage.<br />
+            4. Document test data:
+        </div>
+    </li>
+    <li>
+        <div>
+            What is being tested.
+        </div>
+    </li>
+    <li>
+        <div>
+            How it is being tested (procedures etc.).
+        </div>
+    </li>
+    <li>
+        <div>
+            Where to find test data.
+        </div>
+    </li>
+    <li>
+        <div>
+            What are the procedures to re-run.
+        </div>
+    </li>
+    <li>
+        <div>
+            What are the expected results.<br />
+        </div>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

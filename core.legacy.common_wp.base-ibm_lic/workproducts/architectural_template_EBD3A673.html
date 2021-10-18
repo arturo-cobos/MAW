@@ -1,0 +1,533 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Artifact: Architectural Template
+			(ARC 107)
+		</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="architectural_template">
+<meta name="uma.presentationName" content="Architectural Template">
+<meta name="uma.category" content="@Type:@Name:@DisplayName">
+<meta name="uma.category" content="WorkProductType:model:Model">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_poNNkGDfEd68aPhR7rIxlw", "_shWlIGptEeSdxcAgtnf5og", "mweb85C7CEEC6BEC284B8525688200573750"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_vrCfoa6CEdyI4IDvQ60EJA", "_eUAiwO3tEdugFZ65awqtDw", "_4NDH4O3uEdugFZ65awqtDw", "mweb85C7CEEC6BEC284B8525688200573750"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_HcVQwMRfEdyD76CYS6Ta7A", "_13NR6qxcEdyf7rzERpP8vA", "mweb85C7CEEC6BEC284B8525688200573750"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_WCR4YMRdEdyD76CYS6Ta7A", "mweb85C7CEEC6BEC284B8525688200573750"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb85C7CEEC6BEC284B8525688200573750"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Artifact: Architectural Template
+			(ARC 107)
+		</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/artifact.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">An Architectural Template describes any common design approach that many developers need to know about, that is, one that cannot be localized to a single component or module. </td>
+</tr>
+<tr>
+<td>Domains: <a href="./../../core.default.cat_def.base-ibm_lic/domains/functional_D23965EA.html" guid="_4NDH4O3uEdugFZ65awqtDw">Functional</a>
+<br>Work Product Kinds: <a href="./../../core.default.cat_def.base-ibm_lic/workproducttypes/model_A63E2F6E.html" guid="_13NR6qxcEdyf7rzERpP8vA">Model</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The purpose of the Architectural Template work product is to:
+</p>
+<ul>
+    <li>
+        Ensure that architectural issues, such as transactions and persistence, are dealt with consistently across the
+        project.
+    </li>
+    <li>
+        Promote consistency across the project by ensuring that common problems have a single solution that everyone can
+        use.
+    </li>
+    <li>
+        Communicate chosen Architectural Templates to all developers.
+    </li>
+    <li>
+        Provide developers with all relevant information concerning the use of these Architectural Templates.
+    </li>
+    <li>
+        Increase the understanding of the intended system by reducing the complexity of its interactions to a set of
+        fundamental ones.
+    </li>
+    <li>
+        Provide input to the developers of any frameworks that underpin the Architectural Templates.
+    </li>
+    <li>
+        Avoid repetitive documentation of generic structures and interactions.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Parent Deliverables</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../core.tech.swd.common.extend-ibm_int/workproducts/architecture_model_0537_95518A2A.html" guid="_QqlhsX7tEd-Spt3EoYp3Bg">Architecture Model</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Responsible:
+								</span></td><td class="sectionTableCell"><span class="sectionTableCellHeading">Modified By:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/application_architect_43A26CDB.html" guid="mweb0181E0FE6AD970A4852567D8005056B5">Application Architect</a>
+</li>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/business_analyst_EC206B2D.html" guid="mwebE74212EEBE1B0690852567FB005D9540">Business Analyst</a>
+</li>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/information_architect_C80144F0.html" guid="mwebE17B2E5F8993A528852567D80050659C">Information Architect</a>
+</li>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/infrastructure_architect_1578FFE0.html" guid="mwebBD14B77ED1325BE4852567D800507451">Infrastructure Architect</a>
+</li>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/roles/soa_architect_868D1C78.html" guid="_6a6fsMATEd2tiPGdefU3zg">SOA Architect</a>
+</li>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/user_experience_pro_18670E86.html" guid="mweb316F0B2F8D8023488625655F00049DBD">User Experience Professional</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Tasks</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Input To:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.data_design_soma.addon-ibm_lic/tasks/develop_canonical_message_model_DC0C7F99.html" guid="_AxmgUA1TEdyt-OtHf-OS2Q">Develop Canonical Message Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design_soma.addon-ibm_lic/tasks/refine_canonical_message_model_D4F43EFF.html" guid="_R9_F8G8YEd-9z7-UXfcS-A">Refine Canonical Message Model</a>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/assemble_architecture_document_14069162.html" guid="mweb093C356700000113D4ADDE94F6442BD1">Assemble Architecture Document</a>
+</li>
+<li>
+<a href="./../../process.tech.ad_20.base-ibm_int/tasks/assemble_architecture_model_deliverable_1A627555.html" guid="_W0_4tn7xEd-Spt3EoYp3Bg">Assemble Architecture Model Deliverable</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/complete_the_pe_plan_F6072A34.html" guid="mweb093C356700000113D4AB9CF098647B01">Complete the PE Plan</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/develop_pe_strategy_711FCC4D.html" guid="mweb093C356700000113D4AAFD476743374F">Develop PE Strategy</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/start_pe_plan_C17DBE63.html" guid="mweb093C356700000113D4AB14122D694A39">Start PE Plan</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/update_system_comp_arch_doc_AC64A07D.html" guid="mweb093C356700000113D4B1E6C3859499FE">Update System/Component Architecture Document</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Output From:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/detail_soa_solution_stack_layer_1082625C.html" guid="_oXQEoFNLEdyq6ekMfKtD3A">Detail SOA Solution Stack Layer</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/detail_soa_soln_stack_layer_consumer_layer_73BBDBC0.html" guid="_yGZFQF7sEdur6fWrpBRDlw">Detail SOA Solution Stack Layer (Consumer)</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/detail_soa_soln_stack_layer_gov_layer_D5C2FB99.html" guid="_9qC3kGagEduQwpUk1Df3qw">Detail SOA Solution Stack Layer (Governance)</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/detail_soa_soln_stack_layer_info_layer_A4E8F412.html" guid="_bpyw0F72Edur6fWrpBRDlw">Detail SOA Solution Stack Layer (Information)</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/detail_soa_soln_stack_layer_intg_layer_CACB929E.html" guid="_MH4ssF73Edur6fWrpBRDlw">Detail SOA Solution Stack Layer (Integration)</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/detail_soa_soln_stack_layer_oper_layer_263FE0E9.html" guid="_T0l5sF73Edur6fWrpBRDlw">Detail SOA Solution Stack Layer (Operational)</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/detail_soa_soln_stack_layer_bus_proc_layer_A74795FD.html" guid="_hRhnoF7xEdur6fWrpBRDlw">Detail SOA Solution Stack Layer (Process)</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/detail_soa_soln_stack_layer_qos_layer_FC9C5F8B.html" guid="_1kCsUF72Edur6fWrpBRDlw">Detail SOA Solution Stack Layer (Quality of Service)</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/detail_soa_soln_stack_layer_service_layer_3FDC9537.html" guid="_lfIQgF7xEdur6fWrpBRDlw">Detail SOA Solution Stack Layer (Service)</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/detail_soa_soln_stack_layer_svc_comp_layer_F13B539E.html" guid="_ufNw8F7xEdur6fWrpBRDlw">Detail SOA Solution Stack Layer (Service Component)</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.extend-ibm_lic/tasks/identify_common_interactions_807FDFEE.html" guid="__M68MIoJEd-ta-foczjBcA">Identify Common Interactions</a>
+</li>
+<li>
+<a href="./../../practice.tech.user_exp_design.base-ibm_lic/tasks/refine_ui_architecture_C26522D.html" guid="_H5w50ERAEdy0e9h1zdJ_TA">Refine User Interface Architecture</a>
+</li>
+<li>
+<a href="./../../process.tech.ad_20.base-ibm_int/tasks/select_patterns_7B836E87.html" guid="_dPmBwMgoEd-dSNeu4O_tOg">Select Design Patterns</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/select_patterns_B1E055E4.html" guid="_rviNABUEEd2JfYwFlWguXQ">Select Patterns</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Main Description</th><td class="sectionTableCell"><p>
+    The Architectural Template work product documents the essential collaborations and behaviors that underlie solutions to
+    the typical problems (i.e., persistence, transactions, event notification, etc.) inherent in most projects of any size
+    and complexity. For each of these areas, a solution must be constructed or reused. These collaborations are
+    representative of those occurring in the system and can be used to structure all or part of the system.
+</p>
+<p>
+    An Architectural Template in a structured design consists of program modules or skeleton modules, interaction diagrams
+    and explanatory text. An Architectural Template in an object-oriented design consists of abstract use cases,
+    interaction diagrams, and class diagrams and may represent collaborations between components or collaborations between
+    objects.
+</p>
+<p>
+    Often an overview of the system, in the form of a layered diagram, can be derived from the classes that participate in
+    these typical collaborations.
+</p>
+<p>
+    Two important types of Architectural Template are transaction strategies and persistence strategies.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/guidances/examples/architectural_template_mvc_4616B963.html" guid="_aHorMCVfEdyakqTCvnPBsA">Architectural Template for MVC</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/examples/architectural_template_san_fran_289B523E.html" guid="_6tfmQCVjEdyakqTCvnPBsA">Architectural Template for San Francisco framework</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3 dir="ltr">
+    Possible Organizing Principles
+</h3>
+<p dir="ltr">
+    For many business-dependent Architectural Templates, inspiration can be found among the following organizing principles
+    (i.e., the basis of the definition of the stereotypical interaction):
+</p>
+<blockquote dir="ltr">
+    a) Layering (i.e., the emphasis is put on the differing levels of abstraction that exist in the system, lower layers
+    reflecting less abstract layers than higher ones. Any layer only provides services to its immediate higher layer and
+    only uses the services of its immediately subordinate layer). The following layers and responsibilities are common in
+    business systems: 
+    <ul>
+        <li>
+            <div>
+                Presentation Layer
+            </div>
+            <ul>
+                <li>
+                    <div>
+                        Displays data formatted for ease of use
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        Provides user interface “look and feel”
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        Manages all user interface issues, so the rest of the system isn't affected by user interface
+                        changes
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <div>
+                Application Layer
+            </div>
+            <ul>
+                <li>
+                    <div>
+                        Provides business objects and application logic to the user interface
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        Manages data so changes in communication or host services don’t break the user interface
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <div>
+                Data Layer
+            </div>
+            <ul>
+                <li>
+                    <div>
+                        Provides long-term central storage of business data
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        Shares data with legacy applications and batch process
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p dir="ltr">
+        b) Service based<br />
+        c) Domain centric (e.g., VisualBanker)<br />
+        d) Process centric (e.g., Use Case based)<br />
+        e) Workflow centric (e.g., P(rocedure)-T(ask)-A(ction), Sextet)
+    </p>
+</blockquote>
+<h3>
+    General Advice
+</h3>
+<p>
+    The development of Architectural Templates should take account of the following:
+</p>
+<ul>
+    <li>
+        Existing patterns (e.g., consult the literature about design patterns before inventing one).&nbsp; Compare the
+        Architectural Template with other projects and look for references, especially pattern libraries and relevant OMG
+        services (e.g., CORBA Transaction Service).
+    </li>
+    <li>
+        Important change cases for the system and their impact on the list of candidate Architectural Templates
+    </li>
+</ul>
+<p>
+    As the system evolves, it is very likely that either new or additional stereotypical behaviors will emerge. These
+    should then be fed back into new or existing Architectural Templates.
+</p>
+<p>
+    The chosen Architectural Templates will have an influence on the software components and their structure. An
+    Architectural Template may apply to both the business dependent (application) and business independent (technical or
+    infrastructural) parts of the software.
+</p>
+<p>
+    If the integration with a legacy system is required, verify theat your Architectural template allows for integration
+    with this legacy system.
+</p>
+<p>
+    In order to assess an Architectural Template, two kinds of prototypes are extremely helpful:
+</p>
+<ul>
+    <li>
+        One that measures performance. For this kind, set up a high number of transactions, execute them, and review
+        whether transaction rate requirements are met. Also evaluate the results against the requirements of the
+        Operational Model. Adjustments may have to be made there.
+    </li>
+    <li>
+        One that measures the ease of use for the application developer. For the second, implement a use case with a
+        nontrivial behavior (e.g., with nested transactions). Make sure that the use of the Architectural Template is easy
+        to understand for the application developer and no conflicts occur at execution time in a multi-user environment.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Tailoring</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Impact of not having</th><td class="sectionTableCell">Without this work product: 
+<ul>
+    <li>
+        Architectural Templates are implicit and undocumented.
+    </li>
+    <li>
+        Developers fail to understand and implement the intended architectural patterns.
+    </li>
+    <li>
+        Increased design complexity and defects result due to lack of architectural consistency.
+    </li>
+    <li>
+        Distributed systems with multiple users would end up inconsistent without a transaction strategy.
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Reasons for not needing</th><td class="sectionTableCell">This work product may not be needed when: 
+<ul>
+    <li>
+        The project is very small
+    </li>
+    <li>
+        A standard approach to an issue has already been developed
+    </li>
+    <li>
+        The development tool or environment has a built-in approach (e.g., persistent Smalltalk defines and implements a
+        persistence strategy)
+    </li>
+    <li>
+        The project does not deal with some issues (e.g., no updated persistent data)
+    </li>
+    <li>
+        An Architectural Template is derived without adaptations from a large asset, in which case the accompanying
+        documentation should be sufficient. In most cases, though, some customization will have to be made to the
+        frameworks, and these should be documented in an Architectural Template.
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Representation Options</th><td class="sectionTableCell"><p>
+    Architectural Templates are usually documented using one or more of the following:
+</p>
+<ul>
+    <li>
+        <b>Informal Picture:</b> A system can be depicted in an informal picture showing different abstraction layers. Such
+        a picture shows an overall partitioning of the system based on the components or classes that participate in the
+        collaboration (e.g., based on the MVC framework, we can define three layers: model, view, and controller
+        layer).<br />
+        Care should be taken, however, in interpreting these pictures. Adjoining layers do not necessarily exchange
+        information. The interactions between classes belonging to different layers can only be precisely understood from
+        accompanying interaction diagrams.
+    </li>
+    <li>
+        &nbsp;<b>Free Format Text:</b> A detailed textual description is very important to explain facts that cannot be
+        depicted. This includes rules and policies that define how key aspects are handled. For example, in the transaction
+        service, rules and policies include strategic decisions on subjects such as how to share objects in concurrent
+        transactions (see below), optimistic vs. pessimistic locking, long and nested transactions, etc.
+    </li>
+    <li>
+        &nbsp;<b>Class Diagrams:</b> Class diagrams may be drawn to show some of the most important classes and their
+        relationships. Note that this description is by no means complete. It only details the behavior of the
+        participating classes that are relevant for the collaborations at hand. The conventions for representing class
+        diagrams can be found in the UML notation documentation, available via <a href="http://www.uml.org/" target="_blank">http://www.uml.org/</a>
+    </li>
+    <li>
+        &nbsp;<b>Interaction Diagrams:</b> Interaction diagrams can be used to document the stereotypical interactions
+        between the main actors of the collaboration. For notation conventions, refer to the UML notation documentation,
+        available via <a href="http://www.uml.org/" target="_blank">http://www.uml.org/</a>
+    </li>
+    <li>
+        &nbsp;<b>Interface:</b> This section describes the interface of the service for the application programmer (i.e.,
+        the API).&nbsp;
+    </li>
+    <li>
+        &nbsp;<b>Source Code:</b> Source code can illustrate how the Architectural Template is used in practice, i.e.,
+        sample fragments of calls to the API.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/guidances/concepts/persistence_strategy_EC7972E.html" guid="_nhb5cEZ0Ed6TL55Aq-4j1w">Persistence Strategy</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/guidances/concepts/transaction_strategy_9941D893.html" guid="_iPoBkEZ0Ed6TL55Aq-4j1w">Transaction Strategy</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/guidelines/architectural_template_dev_1A62FFD9.html" guid="_93TaYCVkEdyakqTCvnPBsA">Developing Architectural Template</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Supporting Materials</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/guidances/supportingmaterials/architectural_template_ref_E28A565.html" guid="_q6CiUCVoEdyakqTCvnPBsA">References: Architectural Template</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Estimation Considerations</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/estimationconsiderations/architectural_template_legacy_B5979BC8.html" guid="mweb037092097766203701">Architectural Template (Legacy)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

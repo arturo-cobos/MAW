@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Practice: Service Refactoring and Rationalization</title>
+<meta name="uma.type" content="Practice">
+<meta name="uma.name" content="service_refactoring_rationalization">
+<meta name="uma.presentationName" content="Service Refactoring and Rationalization">
+<meta name="element_type" content="Practice">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_RPIYdGHREd-KldBUmGFQ5g"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_RPIYdGHREd-KldBUmGFQ5g"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Practice: Service Refactoring and Rationalization</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/practice.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This practice reviews the service model, re-factors and refines the service portfolio and service hierarchy, makes exposure decisions, and finally rationalizes the service model and its constituent parts based on the re-factoring and exposure decisions. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content References</th><td class="sectionTableCell">
+<ul>
+<li>
+<img src="./../../../images/roadmap.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_refactor_ratl.base-ibm_lic/guidances/roadmaps/how_to_adopt_9DE220E9.html" guid="_RPIYdWHREd-KldBUmGFQ5g">How to Adopt the Service Refactoring and Rationalization Practice</a>
+</li>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/concepts/service_orientation_397D305A.html" guid="_0AzTMGdFEd-j6-ZOl9DeCA">Service Orientation</a>
+</li>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/concepts/soma_8DC58C12.html" guid="_rr5B4BmFEdqx_IUyKxxtEg">Service-Oriented Modeling and Architecture (SOMA)</a>
+</li>
+</ul>
+<ul>
+<li>Work Products</li>
+<ul>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/architectural_decisions_3059F4D3.html" guid="mweb4BA812D47EEFD0A3852568820057215A">Architectural Decisions</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/workproducts/service_model_AA7DDA59.html" guid="_fxbwIBmHEdqx_IUyKxxtEg">Service Model</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/workproducts/service_portfolio_6751031D.html" guid="_tjjhkBmaEdqx_IUyKxxtEg">Service Portfolio</a>
+</li>
+<li>
+<img src="./../../../images/outcome.gif" height="16" width="16"><a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/approval_to_proceed_F2C3B0B4.html" guid="mwebBB89AE6E798C08F2852568F10077765A">Approval to Proceed</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>Tasks</li>
+<ul>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_refactor_ratl.base-ibm_lic/tasks/adapt_service_litmus_test_and_exposure_scope_D73060CE.html" guid="_Pgz2oIlEEduThcf0jMbTBw">Adapt Service Litmus Test and Exposure Scope</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_refactor_ratl.base-ibm_lic/tasks/apply_service_litmus_tests_8E89769A.html" guid="_vtAOkF9FEdubOdeYqxrKOA">Apply Service Litmus Tests</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_refactor_ratl.base-ibm_lic/tasks/determine_service_exposure_scope_DB8D8856.html" guid="_3X3uwFKIEdyIXbIf1HOwyg">Determine Service Exposure Scope</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_refactor_ratl.base-ibm_lic/tasks/obtain_stakeholder_commitment_sign_off_33D859A1.html" guid="_MI95AG3IEd-QEvUa7et6CA">Obtain Stakeholder Commitment and Sign Off</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_refactor_ratl.base-ibm_lic/tasks/rationalize_service_model_5F2E1757.html" guid="_vAzlAF9HEdubOdeYqxrKOA">Rationalize Service Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_refactor_ratl.base-ibm_lic/tasks/refactor_and_refine_svc_hier_and_portfolio_98CC582C.html" guid="_EqWBYF1oEduE1aXRcyVMBg">Refactor and Refine Service Portfolio and Hierarchy</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_refactor_ratl.base-ibm_lic/tasks/review_service_granularity_5C35CD5.html" guid="_6OyFcEmzEduxwIVIhJQ80A">Review Service Granularity</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/guidelines/service_litmus_test_DC3482F1.html" guid="_OXTesJJJEduJxeKdzdDhng">Service Litmus Test</a>
+</li>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_refactor_ratl.base-ibm_lic/guidances/guidelines/service_refactoring_and_rationalization_FC08B60.html" guid="_9ICuEJxVEd2etf0ILItSnQ">Service Refactoring and Rationalization</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell">To ensure continued alignment of the current service model with business goals and client priorities and objectives through
+review, rationalization and re-prioritization of services.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    It is not uncommon that a client engagement has a number of phases and sometimes, several Statement of Works (SOWs) or
+    Project Change Requests (PCRs). A lot can happen from one PCR to the next; the client’s management can change; they may
+    react to a threat or market opportunity; they may re-prioritize their objectives and in all these cases, funding may be
+    compromised or want to be redirected.
+</p>
+<p>
+    To be dedicated to every client’s success, means in this context, to be sure we are building the right service
+    portfolio for the client; that has the highest relevance to what they do, what their objectives are, and what they
+    aspire to achieve. Therefore, we need to periodically pause and review the service model as it stands: infant or mature
+    and validate its relevance from a client’s perspective.This process is called rationalizing the service model (or
+    portfolio). This review can lead to changes (called refactoring) in the service model due to a re-prioritization. Some
+    services will become more important; others will sink in priority. At any event, refactoring of this service model may
+    be required. Thus we have the Service Re-factoring and Rationalization (SRR) capability pattern. In Service
+    Re-factoring and Rationalization, we review the service model, re-factor and refine the service portfolio and service
+    hierarchy, make exposure decisions, and finally rationalize the service model and its constituent parts based on the
+    re-factoring and exposure decisions. In this capability pattern, we leverage another technique that is called the
+    Service Litmus Test (SLT). This test or series of criteria are customized for relevance to the client. Services are
+    tested against these criteria. The result is a re-factored service model.
+</p>
+<p>
+    This Service Refactoring and Rationalization is executed opportunistically in SOMA life cycle and at the beginning and
+    end of every phase. In SOMA, we progressively elaborate the service model and gain more insight about the services both
+    in terms of functional and qualitative aspects. The additional elaboration specified and insight gained in the SOMA
+    life cycle since previous execution of the capability pattern is considered as input during re-factoring and
+    rationalization.<br />
+    <br />
+    Having eliminated duplicate services during the rationalization and refactoring we are in a better position to conduct
+    SLTs as we have already eliminated some redundancy.
+</p>
+<p>
+    In SOMA, complimentary techniques are applied to identify candidate services and these complimentary techniques may
+    result in duplicate services thereby confirming the need and value of the service.<br />
+    <br />
+    In addition, overlapping or duplicate services are added in the service model in a typical engagement when multiple
+    teams are working on service identification and each team is focusing on a technique or specific areas of concern
+    within a technique. Teams may be unaware of the services identified by others.<br />
+    <br />
+    For example, when project scope includes multiple business process groups to analyze, typically a team of 1-2 business
+    analyst and architect work on Process Modeling and Decomposition focusing on a process group. This capability pattern
+    allows us to confirm the need and vale of a given service and to eliminate duplication and overlap in the service model
+    by re-factoring and refining it.<br />
+    <br />
+    All the services that are identified in SOMA are initially designated are “candidate services” representing a business
+    aligned capability and decisions on building, deploying and publishing (aka exposing) the services are postponed till
+    the execution of SRR. Although, in theory, any candidate service could be built, deployed, and published (aka exposed)
+    by exporting its interface as a service description but it may not be economical and practical (non-functional
+    requirements may be compromised) feasible to do so. In particular, the native decision to expose “all methods from all
+    classes” will result in an overwhelming and often unmanageable number of services leading to the “Service Proliferation
+    Syndrome”. Reviewing and ensuring the service granularity is essential to control this proliferation syndrome.<br />
+    <br />
+    Moreover, exposing all candidate services will be a daunting financial commitment for an enterprise because building
+    and managing the service life cycle includes additional cost and resources over and above just building the business
+    functionality encapsulated by the candidate service. Additionally, there is cost associated with every service in terms
+    of its governance and underlying infrastructure (its security, performance, maintenance, monitoring & management,
+    other SLAs). In SOMA, a set of gating criteria is introduced to select the service for exposure meaning for building,
+    deploying, and publishing for discovery by consumers.<br />
+    <br />
+</p>
+<h4>
+    Service Granularity
+</h4>
+<p>
+    Service granularity is essential characteristics of the Service Model. Services that are identified during
+    Identification represent business capabilities and placed in a service hierarchy in the Service Model if functional
+    areas are known and Service Hierarchy is already defined. If service hierarchy is not defined during the time of
+    identification of the services, then the services are placed in service hierarchy later when Functional Area Analysis
+    is conducted and functional areas are identified. Service Hierarchy in a Service Model represents service granularity.
+    As you we go deeper in the hierarchy, granularity of the services is finer grained. The hierarchical Service Model
+    provides a business oriented perspective of SOA representing a list of business capabilities organized and categorized
+    in a hierarchy and relationship among these business capabilities in the hierarchy. Service granularity helps in
+    transforming identification level Service Model representing business oriented perspective on SOA to specification
+    level Service Model representing IT concerns.
+</p><br />
+<h4>
+    Service Litmus Test (SLT)
+</h4>
+<p>
+    The set of gating criteria to select and filter a set of (candidate) services from the service portfolio for exposure
+    is called Service Litmus Tests. These Service Litmus Tests help decide whether to expose a service and most
+    importantly, whether to fund the creation of the service component that will provide the functionality of the service
+    as well as the maintenance, monitoring, security, performance and other service level agreements of the service. This
+    decision making process is referred to as the “Service Exposure Decisions”.<br />
+    <br />
+    On the one extreme, every business use case might be considered to be a candidate service. On the other, only a few
+    services are selected for exposure. Applying the SLT usually gives something in the middle: a manageable set of
+    services that the business wants to expose and that can later be used within compositions. The Service Litmus Test
+    metaphor is used to denote a set of tests, that when applied, will determine if a given service should be eligible for
+    exposure using a service description. These tests are employed together and help answer questions such as – “From the
+    list of candidate services, which ones should be exposed? And thus, which ones should we fund? Which ones have business
+    value?”<br />
+    <br />
+    We apply these tests at the beginning and end of every phase and opportunistically in SOMA to the list of candidate
+    services to rationalize on which of the candidate service may be exposed as services. These tests are applied first
+    time at the end of SOMA Identification phase. While doing so, being very early on in the SOMA life cycle there are
+    going to be certain litmus tests that may not be possible to be applied to the candidate services owing to the
+    non-availability of information that is commensurate with the requirements of the test. However, as and when we go
+    through the phases in SOMA life cycle we should expect to readdress the service litmus tests with the assumption that
+    more information is available in subsequent phases to execute more aspects of the litmus test. The additive
+    understanding of services that needs to be exposed will change as and when we get more information.
+</p>
+<p>
+    There are currently six universal Service Litmus Tests which collectively form the “gating criteria” for service
+    exposure.<br />
+    1. Business Alignment<br />
+    2. Composability<br />
+    3. Externalized Service Description<br />
+    4. Redundancy Elimination/Reusability<br />
+    5. Technical Feasibility<br />
+    6. Business Entity based Information Services<br />
+    <br />
+    <em><strong>SOMA Tip:</strong> In addition to this universal SLT, we may define project or client specific SLT for an
+    engagement to support the needs of the project or client.</em><br />
+    <br />
+    Each of Service Litmus Tests has set of questions which help decide whether a service passes the SLT. A negative
+    response to any of the questions under a SLT results in a candidate service failing the SLT. A candidate service must
+    pass all the universal and project or client specific SLT to be exposed. In certain cases, the client may override the
+    exposure decision made systematically by applying the SLT. In cases where client override the exposure decision we must
+    document the reason for the override by the client.<br />
+    <br />
+    <em><strong>SOMA Tip:</strong> Candidate services that do not meet the SLT and hence are no exposed will still have to
+    be implemented in some fashion as they are often required to fulfill business needs. They may be implemented as methods
+    on service components and will not require the generation of WSDL or other forms of service definitions; or they may be
+    used as non-exposable entities.</em>
+</p>
+<h4>
+    Service Exposure Assessment Toolkit (SEAT)
+</h4>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    Based on field experience, simple yes/no answer to SLT questions not always sufficient to make exposure decision. In
+    SOMA 3.2, we have devised a <strong><em>Service Exposure Assessment Toolkit (SEAT).</em></strong> This tool kit has key
+    three main components<br />
+    <br />
+    <strong>SLT Rating (SLTR)</strong> – The SLT Rating is the relative importance/priority that client/organization
+    assigns to a SLT. It indicates how important a given SLT is for the client. It is a relative ranking of SLTs; one SLT
+    is more important than the other. The recommended values for this rating are 1-5 where 1 = low priority, 3 = medium
+    priority, 5 = high priority.<br />
+    <br />
+    <strong>Scoring Table</strong> – Field experience shows that simply answering yes or not to a SLT question is not
+    workable and that we need a scale to answer these questions. In SOMA 3.2, we have defined a scoring mechanism for
+    answers to the questions similar to Analytic Rubrics used for making assessments in the industry. We have defined when
+    to score 0 – 5 in the Scoring Table for each of the questions for the SLTs. The Scoring Table provides guidance how to
+    answer the questions in a scale of 0-5 and can be adapted to meet client’s need.<br />
+    <br />
+    <strong>Service Rating (SR)</strong> – The Service Rating is the assessed applicability of the given SLT to a service.
+    It indicates how to assess a service as satisfying the SLT. It is determined based on the answers and scoring given
+    against the recommended values are 0-5; 0 = no applicability, 1 = low applicability, 3 = medium applicability, 5 = high
+    applicability. It is calculated by taking average of the scores for each of the questions.<br />
+    <br />
+    <strong>Weighted Service Rating (WSR)</strong> – Weighted Service Rating is service rating weighted by SLT priority as
+    captured by SLT Rating (SLTR).<br />
+    <br />
+    <strong>Total Weighted Service Rating (TWSR)</strong> - Total Weighted Service Rating of a service is the sum of
+    Weighted Service Rating for all the SLTs.<br />
+    <br />
+    <strong>Service Rating Threshold</strong> – It is threshold used to filter services for exposure based on Total
+    Weighted Service Rating of the services. Any services having TWSR greater than the threshold are exposed. Best
+    practices on how determine the threshold using medians and standard deviation is documented later in this document.
+</p><br />
+<h4>
+    Service Exposure Scope
+</h4>
+<p>
+    Designation of service exposure is not adequate to specify who can use the service. In addition to service exposure
+    decision, we need to specify at what level of scope the service is being designed to be exposed. Service exposure scope
+    identifies the scope of the exposure for the (exposed) services. The exposure scope affects the non-functional
+    requirements e.g. security requirement of the services. The exposure scopes that are predefined in the method are:
+</p>
+<ol>
+    <li>
+        Division/Department: Services that are exposed to only a division or a department of an enterprise.
+    </li>
+    <li>
+        Line of Business: Services that are exposed to a line of business of an enterprise
+    </li>
+    <li>
+        Enterprise: Services that are exposed to enterprise.
+    </li>
+    <li>
+        Ecosystem: Services that are exposed to entire ecosystem including enterprises and their trading partners.<br />
+        <br />
+        <br />
+    </li>
+</ol></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

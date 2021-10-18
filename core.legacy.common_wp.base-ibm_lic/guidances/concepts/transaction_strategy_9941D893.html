@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: Transaction Strategy</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="transaction_strategy">
+<meta name="uma.presentationName" content="Transaction Strategy">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4Y8RdEdyD76CYS6Ta7A", "_iPoBkEZ0Ed6TL55Aq-4j1w"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_iPoBkEZ0Ed6TL55Aq-4j1w"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: Transaction Strategy</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">A transaction strategy is a description of how a project intends to ensure that the system will maintain a consistent state throughout the modifications applied to it. This can be achieved if transactions have the ACID properties (atomicity, consistency, isolation, and durability) and frequently involve locking.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/architectural_template_EBD3A673.html" guid="mweb85C7CEEC6BEC284B8525688200573750">Architectural Template</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Transactions are important to provide robustness and consistency in distributed systems and enable users at different
+    locations to work together in a coordinated fashion. In the event of a failure, any ongoing transactions are aborted,
+    and uncommitted modified objects are restored to a consistent state. In a distributed object environment, transaction
+    management may not be left to the database or to a conventional TP monitor, allowing for much finer-grained resource
+    control mechanisms than otherwise can be obtained.
+</p>
+<p>
+    Be aware that transactions in the object world might be different. Operations in an object-oriented system are run
+    against objects in main memory. Transactions, too, are dealing not primarily with a database, but with objects in main
+    memory. Keep in mind that data is not everything–processes are as important. In object-oriented systems, a transaction
+    service running against objects in main memory is preferable to an underlying database transaction mechanism. At the
+    end of a transaction–no matter if it is committed or aborted–the object stays in main memory.<br />
+    <br />
+    As one might expect, the unit of locking in an object-oriented system is the object – which would conform approximately
+    to a row in a table. (Note that this is taken here as an analogy. Not all relational DBMS support row-level locking,
+    and objects are always mapped onto a single row.)<br />
+    <br />
+    Follow standards as appropriate. As much as possible, make your transaction service compliant to a standard transaction
+    service, especially the CORBA Transaction Service. This offers flexibility for its implementation.<br />
+    <br />
+    The following areas might require special attention:
+</p>
+<ul>
+    <li>
+        <b>Nested transactions:</b> Nested transactions allow the application developer to start an “internal” transaction
+        while being already involved in an “external” transaction. In this way the granularity of a process can be
+        increased, since it is possible to roll back single finer-grained “internal” transactions within a larger-grained
+        “external” transaction.
+    </li>
+    <li>
+        <b>Long running transactions:</b> Long running transactions are transactions that span several user sessions. That
+        means a transaction is started in one session and terminated in another. It may even happen that during a long
+        running transaction, an object that is checked out may be deleted by another transaction. Long running transactions
+        are necessary, e.g., for mobile clients who download some objects from the server, change them while disconnected,
+        and upload them again to the server.
+    </li>
+    <li>
+        <b>Two-Phase Commit protocol in distributed environments:</b> Operations in a distributed environment (assuming
+        there are multiple resource managers) can take place in different processes running on different computers and with
+        different resources (databases, file systems). This makes the successful completion of a transaction dependent on
+        the successful completion of each single operation in the distributed system. The mechanism used in cases like this
+        is the Two-Phase Commit protocol. As its name suggests, a transaction’s commit has two phases: In Phase 1, all
+        participating resources are “prepared.” Each resource must vote whether the transaction should be committed or
+        rolled back. If all resources are able to commit, in Phase 2 the “commit” command is sent to all of them. If one or
+        more resources are not able to commit, the transaction service sends a “rollback” to all participating resources.
+        By using a Two-Phase Commit scheme, a transaction service can ensure that data impacted during a transaction in a
+        distributed environment remains in a consistent state.
+    </li>
+    <li>
+        <b>Integration with legacy systems and other parts of the application:</b> Whenever, a transaction in a newly
+        developed system requires mapping onto one or more legacy transactions, multiple problems can arise: 
+        <ul>
+            <li>
+                The 2-phase commit protocol may not be supported by all legacy systems
+            </li>
+            <li>
+                The mapping between new and existing transactions needs to be resolved.
+            </li>
+        </ul>
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        The first problem can sometimes be remedied by persisting the actual modifications that have to be executed (so
+        they can be retried if appropriate) or by executing compensating transactions in the case of failures.
+    </p>
+</blockquote></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,784 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Artifact: Data Model
+			(ART 0519)
+		</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="data_model">
+<meta name="uma.presentationName" content="Data Model">
+<meta name="uma.category" content="@Type:@Name:@DisplayName">
+<meta name="uma.category" content="WorkProductType:model:Model">
+<meta name="uma.category" content="WorkProductType:model:Model">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_g7dOElkjEd-2jM_g0_AeAA", "_sbYgAGptEeSdxcAgtnf5og", "mweb92DDF88B152881D585256885005042A1"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_Y3ixcFq4Ed6NVp6oO7pJwg", "_sc9NUGptEeSdxcAgtnf5og", "mweb92DDF88B152881D585256885005042A1"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_ic10YD1DEd6fVa8fv3BibQ", "_sgIdIGptEeSdxcAgtnf5og", "mweb92DDF88B152881D585256885005042A1"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_vrCfoa6CEdyI4IDvQ60EJA", "_ht3agO3tEdugFZ65awqtDw", "_VCOY4O3uEdugFZ65awqtDw", "mweb92DDF88B152881D585256885005042A1"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_HcVQwMRfEdyD76CYS6Ta7A", "_13NR6qxcEdyf7rzERpP8vA", "mweb92DDF88B152881D585256885005042A1"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_HcVQwMRfEdyD76CYS6Ta7A", "_13NR8KxcEdyf7rzERpP8vA", "mweb92DDF88B152881D585256885005042A1"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_WCR4YMRdEdyD76CYS6Ta7A", "mweb92DDF88B152881D585256885005042A1"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb92DDF88B152881D585256885005042A1"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Artifact: Data Model
+			(ART 0519)
+		</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/artifact.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This artifact describes logical entities, attributes identifying and describing those entities, and the relationships between them.</td>
+</tr>
+<tr>
+<td>Domains: <a href="./../../core.default.cat_def.base-ibm_lic/domains/data_C1AE5663.html" guid="_VCOY4O3uEdugFZ65awqtDw">Data</a>
+<br>Work Product Kinds: <a href="./../../core.default.cat_def.base-ibm_lic/workproducttypes/model_A63E2F6E.html" guid="_13NR6qxcEdyf7rzERpP8vA">Model</a>,&nbsp;<a href="./../../core.default.cat_def.base-ibm_lic/workproducttypes/specification_362AFF86.html" guid="_13NR8KxcEdyf7rzERpP8vA">Specification</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    It serves the following purposes:
+</p>
+<ul>
+    <li>
+        Promotes understanding and communication between stakeholders and the database modeler
+    </li>
+    <li>
+        Provides an implementation-free set of requirements as input to physical database design
+    </li>
+    <li>
+        Validates the data stores and flows in a functional model against the analysis of data storage and processing needs
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Parent Deliverables</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../core.legacy.common_delv.extend-ibm_int/workproducts/application_model_089_684BF71E.html" guid="mweb9731CB0C33907A2785256B1B006F5391">Application Model</a>
+</li>
+<li>
+<a href="./../../core.tech.swd.common.extend-ibm_int/workproducts/architecture_model_0537_95518A2A.html" guid="_QqlhsX7tEd-Spt3EoYp3Bg">Architecture Model</a>
+</li>
+<li>
+<a href="./../../core.tech.swd.common.extend-ibm_int/workproducts/business_model_0538_83EA9E40.html" guid="_Qqlhsn7tEd-Spt3EoYp3Bg">Business Model</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_delv.base-ibm_lic/workproducts/changed_requirements_delv_115_879F2A55.html" guid="mwebF296867D1AF4C74C85256B1B00715436">Changed Requirements Deliverable</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.base-ibm_lic/workproducts/component_reqs_spec_197_2203FD2B.html" guid="mweb077AE52EF99C45D885256D10007B6C92">Component Requirements Specifications</a>
+</li>
+<li>
+<a href="./../../core.tech.agile.common.base-ibm_lic/workproducts/design_deliverable_0516_5DE9AD2A.html" guid="_exjzELbIEd2Wf9rPlpBvTA">Design Deliverable</a>
+</li>
+<li>
+<a href="./../../core.tech.agile.common.base-ibm_lic/workproducts/launch_package_0517_2C10F40C.html" guid="_5gRrQNvREd2sNqMYCIjYig">Launch Package</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.base-ibm_lic/workproducts/sys_comp_arch_231_EA99AB21.html" guid="mweb57034FE3ECA7114D85256DC600795B23">System/Component Architecture</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.base-ibm_lic/workproducts/sys_test_arch_229_152A47F4.html" guid="mwebC2FA7061789A8D5B85256DC600795A31">System Test Architecture</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Fulfilled Slots</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../core.tech.slot.base/workproducts/technical_design_slot_84295A08.html" guid="_IcQOUEqdEdyi3_jfs__bIQ">[Technical Design]</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Contained Artifacts</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/data_dictionary.lic_13BCFA54.html" guid="_fZ2eEF5uEeCCRbI5tBo_4g">Data Dictionary</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Responsible:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/information_architect_C80144F0.html" guid="mwebE17B2E5F8993A528852567D80050659C">Information Architect</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Modified By:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/business_analyst_EC206B2D.html" guid="mwebE74212EEBE1B0690852567FB005D9540">Business Analyst</a>
+</li>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/information_architect_C80144F0.html" guid="mwebE17B2E5F8993A528852567D80050659C">Information Architect</a>
+</li>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/roles/soa_architect_868D1C78.html" guid="_6a6fsMATEd2tiPGdefU3zg">SOA Architect</a>
+</li>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/systems_eng_pro_3670F084.html" guid="mweb73C3E4C06821DB1E85256D170044BDE1">Systems Engineering Professional</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Tasks</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Input To:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.data_design_soma.addon-ibm_lic/tasks/begin_data_mapping_acrossa_soa_layers_8D23E131.html" guid="_ExpbQO3LEduV8s10_kGWGg">Begin Data Mapping Across SOA Layers</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design_soma.addon-ibm_lic/tasks/decide_on_buy_build_enhance_data_sources_46173A0E.html" guid="_vUNXYO3MEduV8s10_kGWGg">Decide on Buy or Build or Enhance Data Sources</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/detail_soa_soln_stack_layer_info_layer_A4E8F412.html" guid="_bpyw0F72Edur6fWrpBRDlw">Detail SOA Solution Stack Layer (Information)</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design_soma.addon-ibm_lic/tasks/develop_canonical_message_model_DC0C7F99.html" guid="_AxmgUA1TEdyt-OtHf-OS2Q">Develop Canonical Message Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design.extend-ibm_lic/tasks/develop_conceptual_data_model_BC40C974.html" guid="_9pe18Fq9Ed6NVp6oO7pJwg">Develop Conceptual Data Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design.extend-ibm_lic/tasks/develop_db_trans_desc_42F09CBB.html" guid="_kQrOQCojEd6XSu3by8hfTQ">Develop Database Transaction Descriptions</a>
+</li>
+<li>
+<a href="./../../process.tech.ad_20.base-ibm_int/tasks/identify_cand_svcs_based_on_iam_1F379E97.html" guid="_F4AQEMgDEd-jTd-_EKew2Q">Identify Candidate Services based on Data Model</a>
+</li>
+<li>
+<a href="./../../practice.bus.bela.base-ibm_lic/tasks/identify_data_access_policies_10CB809A.html" guid="_gp3wgGNwEd-g1-yYTChI1Q">Identify Data Access Policies</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design_soma.addon-ibm_lic/tasks/identify_data_quality_concerns_80A98C8A.html" guid="_GEjOkO3AEduV8s10_kGWGg">Identify Data Quality Concerns</a>
+</li>
+<li>
+<a href="./../../practice.bus.bela.base-ibm_lic/tasks/map_bus_rules_to_bus_entity_state_trans_EC497F19.html" guid="_vI9lkKdBEd2pr7pb2_6dZA">Map Business Rules to Business Entity State Transition</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design_soma.addon-ibm_lic/tasks/refine_canonical_message_model_D4F43EFF.html" guid="_R9_F8G8YEd-9z7-UXfcS-A">Refine Canonical Message Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design_soma.addon-ibm_lic/tasks/select_information_service_pattern_5D7D09E7.html" guid="_K7TzoEE6EdyXD8cemHsDrA">Select Information Service Pattern</a>
+</li>
+<li>
+<a href="./../../practice.bus.bela.base-ibm_lic/tasks/update_conceptual_data_model_based_on_bela_1EAEB83E.html" guid="_Aa_9gJ7QEd2HZ8yzPpvHuw">Update Conceptual Data Model based on BELA</a>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/assemble_architecture_document_14069162.html" guid="mweb093C356700000113D4ADDE94F6442BD1">Assemble Architecture Document</a>
+</li>
+<li>
+<a href="./../../process.tech.ad_20.base-ibm_int/tasks/assemble_architecture_model_deliverable_1A627555.html" guid="_W0_4tn7xEd-Spt3EoYp3Bg">Assemble Architecture Model Deliverable</a>
+</li>
+<li>
+<a href="./../../process.tech.ad_20.base-ibm_int/tasks/assemble_business_model_deliverable_AA4F456D.html" guid="_W0_4vH7xEd-Spt3EoYp3Bg">Assemble Business Model Deliverable</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/assemble_component_req_specification_FC70DD7D.html" guid="mweb093C356700000113D4B1BB5889B6FF22">Assemble Component Requirements Specification</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/assemble_system_req_document_8F086931.html" guid="mweb093C356700000113D4ADB73C918A4C25">Assemble System Requirements Document</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/assemble_system_test_arch_doc_C147456D.html" guid="mweb093C356700000113D4B20921D337699B">Assemble System Test Architecture document</a>
+</li>
+<li>
+<a href="./../../practice.bus.bela.base-ibm_lic/tasks/create_update_be_lifecycle_information_models_FD102C8A.html" guid="_MHRCIHKlEd-EH9T_jpxQJw">Create or Update Business Entity Lifecycle and Information Models</a>
+</li>
+<li>
+<a href="./../../practice.bus.bela.base-ibm_lic/tasks/derive_refine_future_state_proc_maps_be_15E4DC89.html" guid="_ap_EsHKlEd-EH9T_jpxQJw">Derive or Refine Future State Process Maps with BE Lifecycle Models</a>
+</li>
+<li>
+<a href="./../../practice.bus.bela.base-ibm_lic/tasks/identify_bus_entities_partition_info_domain_A6ECA3D3.html" guid="_CkUFMHKlEd-EH9T_jpxQJw">Identify Business Entities and Partition Information Domain</a>
+</li>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/tasks/leverage_existing_assets_17C59591.html" guid="_sg-8kDNXEd2tn7BsqK0UKA">Leverage Existing Assets</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/perform_critical_design_review_cleanup_841C7FF5.html" guid="mweb093C356700000113D4B29F3A1CD25A19">Perform Critical Design Review Cleanup</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/perform_critical_design_review_3BD2F06D.html" guid="mweb093C356700000113D4B27DAC59012EBB">Perform the Critical Design Review</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/prepare_for_critical_design_review_D9D0BA24.html" guid="mweb093C356700000113D4B25A8538DAE679">Prepare for Critical Design Review</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/update_system_comp_arch_doc_AC64A07D.html" guid="mweb093C356700000113D4B1E6C3859499FE">Update System/Component Architecture Document</a>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/complete_component_model_8CA2B02B.html" guid="_mQ_sgIo9Ed-ta-foczjBcA">Complete Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/complete_logical_component_model_28DBC837.html" guid="_j4gc0BAWEd2QWeRzIzQSNQ">Complete Logical Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/complete_physical_component_model_C7D8A293.html" guid="_fIhfoBAWEd2QWeRzIzQSNQ">Complete Physical Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/define_component_attributes_8C7476F8.html" guid="_kScygEOIEduXIri7BAc1Jg">Define Component Attributes</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/define_component_diagram_9D4ED85C.html" guid="_2bK7MF2OEduE1aXRcyVMBg">Define Component Diagram</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/define_component_interface_F7626A68.html" guid="_RQVcQF2OEduE1aXRcyVMBg">Define Component Interface </a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/define_component_internal_flow_5BBD8598.html" guid="_poTssF2OEduE1aXRcyVMBg">Define Component Internal Flow</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/detail_logical_component_model_B7AE0DD3.html" guid="_ByOF0EN3Edy0bYSPkMeI5Q">Detail Logical Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/detail_physical_component_model_8DD3C4C.html" guid="_Y3OSgEN3Edy0bYSPkMeI5Q">Detail Physical Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design.extend-ibm_lic/tasks/develop_conceptual_data_model_BC40C974.html" guid="_9pe18Fq9Ed6NVp6oO7pJwg">Develop Conceptual Data Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/dev_ref_arch_fit_gap_analysis_B17633EF.html" guid="_A0MFgDDaEdyz_pzDMsV8FQ">Develop Reference Architecture Fit-Gap Analysis</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/enable_existing_components_as_services_9E64AFBE.html" guid="_OkCu4DLWEdyFnoUWgrp-xw">Enable Existing Components As Services</a>
+</li>
+<li>
+<a href="./../../practice.mgmt.release_mgmt.base-ibm_lic/tasks/evaluate_build_cycle_results_20E56A71.html" guid="__ZhmMIW9Ed6u16JzuIDfVA">Evaluate Build Cycle Results</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.extend-ibm_lic/tasks/identify_common_interactions_807FDFEE.html" guid="__M68MIoJEd-ta-foczjBcA">Identify Common Interactions</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/implement_functional_component_8AD51EC7.html" guid="_yi3RMDLXEdyFnoUWgrp-xw">Implement Functional Component</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/implement_service_component_7D360024.html" guid="_AhvcUDLXEdyFnoUWgrp-xw">Implement Service Component</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/implement_technical_component_781A25F8.html" guid="_e3QCMDLXEdyFnoUWgrp-xw">Implement Technical Component</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/outline_high_level_component_model_10F7F97E.html" guid="_vyo8UIoFEd-ta-foczjBcA">Outline High Level Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/outline_logical_component_model_319510FA.html" guid="_tvWp4EN1Edy0bYSPkMeI5Q">Outline Logical Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.full_test_mgmt.base-ibm_lic/tasks/plan_integration_test_FDEB2986.html" guid="_i8fVYFmWEd-RLsfIF0kO2g">Plan Integration Testing</a>
+</li>
+<li>
+<a href="./../../practice.tech.basic_perf_support.base-ibm_lic/tasks/plan_perf_test_417E22B.html" guid="_UG-MSJaXEd-fxIZ08Di-Jg">Plan Performance Testing</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/realize_functions_of_unexposed_services_C94EDE9A.html" guid="_AegFoDLYEdyFnoUWgrp-xw">Realize Functionality for Unexposed Services</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/refactor_exiting_components_7947B32E.html" guid="_tcOkADLWEdyFnoUWgrp-xw">Refactor Existing Components</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/transform_completed_component_model_3B645446.html" guid="_S7A0YBArEd2JzakANm7Vow">Transform Completed Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/transform_detail_component_model_33B92C63.html" guid="_OT-EQEN5Edy0bYSPkMeI5Q">Transform Detail Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/transform_outline_component_model_4E9BF488.html" guid="_mfkiEEN4Edy0bYSPkMeI5Q">Transform Outline Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/verify_logical_component_model_25835B88.html" guid="_yncvUEN3Edy0bYSPkMeI5Q">Verify Logical Component Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/verify_physical_component_model_EE7FC30F.html" guid="_Jz5n0EN4Edy0bYSPkMeI5Q">Verify Physical Component Model</a>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<a href="./../../practice.tech.assess_tech_impact.base-ibm_lic/tasks/analyze_baseline_12BC15FD.html" guid="_HEy2EBC0Ed2d6ZU3Wcr6fA">Analyze Baseline</a>
+</li>
+<li>
+<a href="./../../practice.tech.assess_tech_impact.base-ibm_lic/tasks/analyze_impact_proposed_solution_B444527F.html" guid="_H5nvnkRAEdy0e9h1zdJ_TA">Analyze Overall Impact of Proposed Solution</a>
+</li>
+<li>
+<a href="./../../practice.gen.deployment_mgmt.base-ibm/tasks/assemble_deployment_packages_AC572130.html" guid="_jwd2OCilEd-pq9tGZ00Zeg">Assemble Deployment Packages</a>
+</li>
+<li>
+<a href="./../../practice.mgmt.manage_tech_env.base-ibm_lic/tasks/build_development_infrastructure_77DAD65E.html" guid="_ymuYMIW0Ed6eRN4Jq00Nbw">Build Development Infrastructure</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/conduct_variation_oriented_design_7090DB34.html" guid="_8zQeoF2OEduE1aXRcyVMBg">Conduct Variation Oriented Design</a>
+</li>
+<li>
+<a href="./../../practice.mgmt.release_mgmt.base-ibm_lic/tasks/detail_release_plan_5FCBCAF5.html" guid="_H5w5xURAEdy0e9h1zdJ_TA">Detail the Release Plan</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev.base-ibm_lic/tasks/develop_coding_guidelines_92878C49.html" guid="_H5UNz0RAEdy0e9h1zdJ_TA">Develop Coding Guidelines</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design.base-ibm/tasks/develop_data_migration_specs_665DA8D2.html" guid="_2XUcMAoEEdylK4Y6kXK2hQ">Develop Data Migration Specifications</a>
+</li>
+<li>
+<a href="./../../practice.tech.assess_tech_impact.base-ibm_lic/tasks/develop_turnover_to_maint_materials_2A211434.html" guid="_nVX1cNhvEd-rBrSb-ReEDw">Develop Turnover to Maintenance Materials</a>
+</li>
+<li>
+<a href="./../../practice.tech.software_dev.base-ibm_lic/tasks/develop_unit_test_design_792D2517.html" guid="_1I0ksIW4Ed6eRN4Jq00Nbw">Develop Unit Test Design</a>
+</li>
+<li>
+<a href="./../../practice.tech.user_exp_design.base-ibm_lic/tasks/develop_user_experience_vision_78ECBDD6.html" guid="_H5nv7kRAEdy0e9h1zdJ_TA">Develop User Experience Vision</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/document_state_management_decisions_FABC683E.html" guid="_2w8DwF_nEduhbPCAnI7o2Q">Document State Management Decisions</a>
+</li>
+<li>
+<a href="./../../practice.gen.deployment_mgmt.base-ibm/tasks/initialize_system_data_sources_5C6771D1.html" guid="_UNtoAYNnEd6ZssFTs4b4Eg">Initialize System Data Sources</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/map_svc_op_params_to_canonical_msg_model_6B5B0AB5.html" guid="_-z_f4IVlEdunzas35luIdQ">Map Service Operation Parameters to Canonical Message Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.base-ibm/tasks/outline_physical_component_model_EDD266CE.html" guid="_h3a9IEN2Edy0bYSPkMeI5Q">Outline Physical Component Model</a>
+</li>
+<li>
+<a href="./../../practice.mgmt.release_mgmt.base-ibm_lic/tasks/refine_goals_for_the_program_cycle_9F83F94.html" guid="_kvq9QIW-Ed6u16JzuIDfVA">Refine Goals for the Programming Cycle</a>
+</li>
+<li>
+<a href="./../../practice.tech.assess_tech_impact.base-ibm_lic/tasks/revise_impact_analysis_FFCE9C1C.html" guid="_H5w5qURAEdy0e9h1zdJ_TA">Revise Impact Analysis</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch.extend-ibm_lic/tasks/select_infra_products_5D218F9C.html" guid="_-cq2wBDAEd2d6ZU3Wcr6fA">Select Infrastructure Products</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/specify_input_output_error_msg_for_svc_ops_92F69AB8.html" guid="_01GXYEOGEduXIri7BAc1Jg">Specify Input, Output and Error Messages for Service Operations</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Output From:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.bus.bela.base-ibm_lic/tasks/create_update_be_lifecycle_information_models_FD102C8A.html" guid="_MHRCIHKlEd-EH9T_jpxQJw">Create or Update Business Entity Lifecycle and Information Models</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design.base-ibm/tasks/detail_logical_data_model_2C3DDB31.html" guid="_FDafkAo5Edygr55FhBZqVw">Detail Logical Data Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/detail_soa_soln_stack_layer_info_layer_A4E8F412.html" guid="_bpyw0F72Edur6fWrpBRDlw">Detail SOA Solution Stack Layer (Information)</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design_soma.addon-ibm_lic/tasks/develop_canonical_message_model_DC0C7F99.html" guid="_AxmgUA1TEdyt-OtHf-OS2Q">Develop Canonical Message Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design.extend-ibm_lic/tasks/develop_conceptual_data_model_BC40C974.html" guid="_9pe18Fq9Ed6NVp6oO7pJwg">Develop Conceptual Data Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/establish_service_comp_baseline_F00A3CB9.html" guid="_T9aMgA_eEd2HCIWhc32BdA">Establish Service Component Baseline</a>
+</li>
+<li>
+<a href="./../../practice.bus.bela.base-ibm_lic/tasks/identify_bus_entities_partition_info_domain_A6ECA3D3.html" guid="_CkUFMHKlEd-EH9T_jpxQJw">Identify Business Entities and Partition Information Domain</a>
+</li>
+<li>
+<a href="./../../practice.bus.bela.base-ibm_lic/tasks/identify_data_access_policies_10CB809A.html" guid="_gp3wgGNwEd-g1-yYTChI1Q">Identify Data Access Policies</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design.base-ibm/tasks/outline_logical_data_model_AD31F6F5.html" guid="_8eAI8Ao4Edygr55FhBZqVw">Outline Logical Data Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.sys_eng.extend-ibm_int/tasks/perform_critical_design_review_cleanup_841C7FF5.html" guid="mweb093C356700000113D4B29F3A1CD25A19">Perform Critical Design Review Cleanup</a>
+</li>
+<li>
+<a href="./../../practice.tech.data_design_soma.addon-ibm_lic/tasks/refine_canonical_message_model_D4F43EFF.html" guid="_R9_F8G8YEd-9z7-UXfcS-A">Refine Canonical Message Model</a>
+</li>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/tasks/specify_asset_customization_or_configuration_C17F3AE3.html" guid="_AyF4EE6vEducTpuJ1Jeydw">Specify Asset Customizations or Configurations</a>
+</li>
+<li>
+<a href="./../../practice.bus.bela.base-ibm_lic/tasks/update_conceptual_data_model_based_on_bela_1EAEB83E.html" guid="_Aa_9gJ7QEd2HZ8yzPpvHuw">Update Conceptual Data Model based on BELA</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Main Description</th><td class="sectionTableCell"><p>
+    The figure below illustrates that a data model has an association to an overall logical data design that is obtained
+    via the progression of the data model through different states – entity relationship model, conceptual data model, and
+    logical data model.
+</p>
+<p>
+    <img height="300" alt="ERD - CDM - LDM transitions" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/ldm.gif" width="399" />
+</p>
+<p>
+    Though the above figure diagrammatically shows development of a logical data design as a cascading serious of steps,
+    the delineation between these steps is not that clear-cut.&nbsp; In reality, a logical data design expands, contracts,
+    and interplays across these data model states throughout the development.
+</p>
+<p>
+    <strong>Entity Relationship Model (ERM)</strong>
+</p>
+<p>
+    An ERM level of a logical data design presents a high-level view of the significant information of interest to the
+    business and establishes the foundation from which data design will progress.&nbsp; It depicts the significant business
+    notions and concepts associated with an application as entities, potentially some elaboration as to the important
+    business characteristics of those notions/concepts via the attributes listed for each entity, and the relationship
+    between these business notions/concepts in the form or data relationships.&nbsp;
+</p>
+<p>
+    <strong>Conceptual Data Model (CDM)</strong>
+</p>
+<p>
+    A CDM level of a logical data design depicts a high level statement of the main entities needed to support an
+    application, along with known (but not necessarily complete) listings of the attributes associated with the entities in
+    the data design.&nbsp; It is an expansion of the information conveyed in the ERM level of a logical data model as
+    usually discovered via top-down analysis.&nbsp; Development of a logical data design to a CDM level is closely
+    integrated with the development of&nbsp; an application's process models.
+</p>
+<p>
+    <strong>Logical Data Model (LDM)</strong>
+</p>
+<p>
+    A LDM is an implementation-independent data model and generally represents the final deliverable in the logical data
+    design efforts of a project.&nbsp; Using the CDM as input, it reflects the dynamic nature of the entities in the
+    logical data design and optimizes the entities in the data model toward ensuring each strongly and uniquely represents
+    a business notion.<br />
+    <br />
+    &nbsp;
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Brief Outline</th><td class="sectionTableCell"><p>
+    This artifact typically includes the following constructs:
+</p>
+<ul>
+    <li>
+        Entities
+    </li>
+    <li>
+        Attributes 
+        <ul>
+            <li>
+                Primary keys that can be used to uniquely identify entity occurrences
+            </li>
+            <li>
+                Foreign keys
+            </li>
+            <li>
+                Alternate keys
+            </li>
+            <li>
+                Data types
+            </li>
+            <li>
+                Valid values (domains)
+            </li>
+        </ul>
+    </li>
+    <li>
+        Relationships
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Notation</th><td class="sectionTableCell"><p>
+    There are three commonly used logical data modeling notations. While they all reflect common data modeling concepts,
+    each has its own graphical syntax briefly described below.&nbsp; For a more detailed description of these notations,
+    see the references.
+</p>
+<h4>
+    Information Engineering (IE)
+</h4>
+<ul>
+    <li>
+        Entities are represented by a box with the entity name placed inside.
+    </li>
+</ul>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img      alt="IE Entity" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/ie_entity.gif" width="127"     height="68" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<ul>
+    <li>
+        Attributes are handled differently according to the variation of IE used.&nbsp; They can be described outside of
+        the model in&nbsp;a separate document, or placed inside the entity box, with identifying attributes above a
+        horizontal line, and non-identifying attributes below it.
+    </li>
+</ul>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img alt="IE Entity with Attributes" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/ie_entity_with_attributes.gif" width="130" height="127" />
+</p>
+<ul>
+    <li>
+        Relationships are described by a line between two entities. Solid lines indicate an identifying relationship, while
+        dashed lines indicate a non-identifying relationship. Terminating symbols on each end describe optionality and
+        cardinality rules.
+    </li>
+</ul>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img     alt="IE Relationships" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/ie_relationships.gif" width="234"     height="86" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <img     alt="IE Multiplicity" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/ie_multiplicity.gif" width="162" height="92" />
+</p>
+<h4>
+    Integration Definition for Information Modeling (IDEF1X)
+</h4>
+<ul>
+    <li>
+        Entities are represented with square or round-cornered boxes. Round corners indicate dependence for identification
+        on another entity. Each entity is assigned a label which is placed above the box.
+    </li>
+</ul>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img alt="IDEF1X Entity" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/idef1x_ entity.gif" width="252" height="127" />
+</p>
+<ul>
+    <li>
+        To include attributes, entity boxes are divided with identifying attributes appearing above the line, and
+        non-identifying attributes below it.
+    </li>
+</ul>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img alt="IDEF1X Attributes" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/idef1x_attributes.gif" width="150" height="150" />
+</p>
+<ul>
+    <li>
+        Relationships between entities (connection relationships) are described with lines and terminating symbols. A solid
+        line indicates an identifying foreign key. Dashed lines indicate that it is non-identifying. There are a number of
+        terminating symbols that are combined to describe optionality and cardinality. These symbols cannot be interpreted
+        independently of each other. It is the combination that describes the rules.
+    </li>
+</ul>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img alt="IDEF1X Relationships" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/idef1x_relationships.gif" width="234"     height="151" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt="IDEF1X Multiplicity"     src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/idef1x_multiplicity.gif" width="162" height="151" />
+</p>
+<h4>
+    The Unified Modeling Language
+</h4>
+<ul>
+    <li>
+        Entities are represented by class boxes divided into three compartments.&nbsp;The top compartment contains the name
+        of the class (entity), the middle compartment contains its attributes, and when present, the bottom compartment
+        contains behavioral descriptions.
+    </li>
+</ul>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img      alt="UML Class with Attributes" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/uml_class_attributes.gif" width="115" height="118" />
+</p>
+<ul>
+    <li>
+        Relationships between entities are described with UML associations
+    </li>
+</ul>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img     alt="UML Relationships" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/uml_relationships.gif" width="252" height="92" />&nbsp;&nbsp; <img     alt="UML Multiplicity" src="./../../core.tech.common.extend_supp-ibm/workproducts/resources/uml_multiplicity.gif" width="229" height="108" />
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Selected Representation</th><td class="sectionTableCell"><p dir="ltr">
+    Rational Data Architect is used for developing the logical data model. Information Engineering (IE) notation is its
+    selected notation.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/examples/data_model_5DE26BDD.html" guid="_5lBksPn-EdyweOgcDsH_HA">Data Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><ul class="noindent">
+    <li>
+        Focus on staying within the boundaries of the solution under development.
+    </li>
+    <li>
+        Any existing data models should be used as a starting point.&nbsp; These models may be broad, enterprise models or
+        more specific application data models. If an existing model is used as a starting point, it should not be simply
+        accepted "as is." Instead, some time should be invested to ensure that it is of sufficient quality and that it
+        provides an accurate representation of business data requirements for the solution.
+    </li>
+    <li>
+        Draw from standard data model constructs in shaping and forming the logical data model as they can assist in
+        providing a good framework from which the data details of the solution being developed can be initially understood
+        and further refined.
+    </li>
+    <li>
+        Database refactoring can be difficult, so it is important to balance how much future design is included in your
+        data model versus what is left for later refactoring.
+    </li>
+    <li>
+        The later instance of the model are typically normalized to third normal form.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Tailoring</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Impact of not having</th><td class="sectionTableCell">Without this artifact, stored business information is captured solely by a functional model which describes where data
+stores are created and placed to serve the data needs of the functional processes. There is no unified view of all data,
+and data normalization is not possible. The physical database design can only be developed from a functional model, leaving
+data ambiguities and redundancies resulting from the lack of normalization.&nbsp; This leads to an inefficient physical
+database design which could be missing critical data or lead to inadvertent data duplication and inconsistency.</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Reasons for not needing</th><td class="sectionTableCell"><p>
+    Some reasons for not needing:
+</p>
+<ul>
+    <li>
+        The solution does not require a database.
+    </li>
+    <li>
+        The database is simple enough that no data models are needed
+    </li>
+    <li>
+        The database is simple enough that a physical database design can be based on the identified set of persistent
+        classes and their associations.
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Representation Options</th><td class="sectionTableCell"><p>
+    Informal data models can be created using whiteboards or drawing tools.&nbsp;However, if the model needs to be
+    maintained, a data modeling tool is advised.
+</p>
+<p>
+    When selecting which data modeling notation should be used, consider the following pros and cons:
+</p>
+<ul>
+    <li>
+        Information Engineering (IE) notation is a widely accepted standard for logical data models. Simple and concise, it
+        is very readable by even non-technical stakeholders. Some variations of this notation describe attributes in a
+        separate document rather than in the model itself.
+    </li>
+    <li>
+        Integration Definition for Information Modeling (IDEF1X) is a federal standard notation originally developed for
+        physical data modeling. It is very complex, and can result in models that are difficult to review with
+        stakeholders.
+    </li>
+    <li>
+        The Unified Modeling Language (UML) does not have explicit data modeling constructs as part of its notation. Class
+        diagrams are frequently used for logical data modeling.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Checklists</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/checklists/logical_data_model_4E501C0D.html" guid="_WVrRkAo5Edygr55FhBZqVw">Logical Data Model</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/guidelines/data_modeling_A146D94C.html" guid="_LNZVkAo5Edygr55FhBZqVw">Data Modeling</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Supporting Materials</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/supportingmaterials/data_modeling_ref_BF035330.html" guid="_MyncAPa_EdyXq55fyVQnqg">References: Data Modeling</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Estimation Considerations</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/estimationconsiderations/data_model_transaction_system_77A67835.html" guid="_bh-XUAo5Edygr55FhBZqVw">Data Model for a transaction based system</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Application Security Assessment</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="info_security_assmnt_app">
+<meta name="uma.presentationName" content="Application Security Assessment">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_YMmeMC3sEdyXXK0T9Bg2gA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Application Security Assessment</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/info_security_assmnt_D0EEEDDD.html" guid="mweb2934118CA5B91FFC85256886005D1FAC">Information Security Assessment</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <font size="2">Client is a new application that provides similar services to Internet users as those currently provided
+    to America Online users. The new application will have components that reside on one of Client's Web Servers (which is
+    protected by both inner and outer firewalls) and on the AIX systems in Client's back-end web complex (Consisting of a
+    new Internet Client and Generic Engine, EGI). In addition, changes to support system have been made to the GateKeeper,
+    the Sybase Security database and the Security Server (TTS) which run in production in the back-end web complex.
+    Solution will enable customers on the Internet to securely access the same back-end legacy systems currently available
+    through AOL, after appropriate registration and authentication information is provided. The new code is primarily
+    written in C++. The phase one functions to be provided are: member registration, login, account status, maintenance of
+    registration information, and award services, and customer service representative ("superuser") functions including the
+    ability to assume a member's id.</font>
+</p>
+<p>
+    <font size="2">The purpose of this project was to assess if client is "ready (sufficiently secure) to be launched" in
+    by performing a security review of the new application components, the associated development and administrative
+    processes, and the services (network, application operating system platforms, Security Data Base, and Security Server)
+    used by client in providing the Phase 1 functions to be supported.</font>
+</p>
+<p>
+    <font size="2">A detailed review of the security of the web complex is planned as an independent project led by Client
+    Internal Audit. Similarly, a detailed review of the back-end production systems, processes and applications was outside
+    the scope of this project.</font>
+</p>
+<p>
+    <font size="2"><b>A significant number of security concerns were found during the assessment. These are documented in
+    Appendix A. Most of the concerns were not specifically related to the new components and changed components in support
+    of client. IBM recommends that they all be addressed (see Chapter 3). However, IBM believes that the following three
+    (3) issues are most significant and should be addressed before officially launching solution into
+    production:</b></font>
+</p>
+<ul>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Add a user logoff function -</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Enforce Client Standard password rules -</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Fix four (4) code issues found in the front-end routines</font>
+        </div>
+    </li>
+</ul>
+<p>
+    <b><font size="3">Client Standards and Policies</font></b>
+</p>
+<ul>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Update standards for Internet applications –</font>
+        </div>
+    </li>
+</ul>
+<p>
+    <b><font size="3">Client Application</font></b>
+</p>
+<ul>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Consider simplifying some code -.</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Consider removing <i>cupcake</i> logic in Phase 2</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Add an enforcement check on the use of SSL -</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Complete the implementation of Information Security audit requirements</font>
+        </div>
+    </li>
+</ul>
+<p>
+    <b><font size="3">Cleint Development Processes</font></b>
+</p>
+<ul>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Add security-specific test scripts during formal testing -</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Include a security expert in the formal test process -</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Tighten access controls to Client beta test sites -</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Provide security test requirements to Beta Test team -</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Formally verify DES code -</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Add specific security requirements to the WWW 3rd Party Content Developer Standards and
+            Guidelines -.</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Add a code validation checkpoint to the development process -</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">A formal requirements process should always be used in the development process</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">A formal design review should be done -</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">A formal sensitive application process should be implemented for appropriate TTS code</font>
+        </div>
+    </li>
+</ul>
+<p>
+    <b><font size="3">Back-end AIX Platforms</font></b>
+</p>
+<ul>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Tighten the security controls on the AIX production systems -</font>
+        </div>
+    </li>
+</ul>
+<p>
+    <b><font size="3">Sybase Security Data Base</font></b>
+</p>
+<ul>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Tighten the security controls on the Sybase production systems</font>
+        </div>
+    </li>
+</ul>
+<p>
+    <b><font size="3">Network Security Controls</font></b>
+</p>
+<p>
+    <font size="2">Formalize controls for location of secure web pages –</font>
+</p>
+<p>
+    <b><font size="3">Back-end Processes</font></b>
+</p>
+<p>
+    <font size="2">Perform a formal security review of the back-end environment</font>
+</p>
+<ul>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Implement segregation of duties –</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Limit privileges of contractors –</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Formalize the processes to regularly review audit logs –</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Implement fraud detection capabilities consistent with those used on IMS –</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">User IDs should be easily traceable to individuals –</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Add security specific application test scripts in production –</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Use security specific AIX test tools in production</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Update the Change Management Process to tighten security controls</font>
+        </div>
+    </li>
+</ul>
+<p>
+    <b><font size="3">Positive Findings</font></b>
+</p>
+<p>
+    <b><font size="3">Concerns</font></b>
+</p>
+<ul>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Client Standards and Policies</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Client Application</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Client Development Processes</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Back-End AIX Platforms</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Sybase Security Data Base</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Network Security Controls</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Back-End Processes</font>
+        </div>
+    </li>
+</ul>
+<p>
+    <b><font size="3">Appendix B: Process Assessment using ISO/IEC 17799:2005</font></b>
+</p>
+<p>
+    <font size="2">The following subsections contain an informal assessment of the relevant (within the scope of this
+    project) controls contained in ISO/IEC 17799:2005: <i>A Code of Practice for Information Security.</i> In particular,
+    the following areas were considered in completing this assessment: The client development processes, the security
+    controls of selected back-end platforms, the security controls of the Sybase security data base, and selected back-end
+    processes (see Chapter 2, Assessment Methodology, for complete details).</font>
+</p>
+<ul>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Section 6: Computer and Network Management</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Section 7: System Access Control</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Section 8: System Development and Maintenance</font>
+        </div>
+    </li>
+</ul>
+<p>
+    <b><font size="3">Appendix C: Client Standards Assessment</font></b>
+</p>
+<p>
+    <b><font size="3">Appendix D: Modules Reviewed</font></b>
+</p>
+<p>
+    <b><font size="3">References</font></b>
+</p>
+<ul>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Client Documentation</font>
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-LEFT: 2em">
+            <font size="2">Other Documentation</font>
+        </div>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

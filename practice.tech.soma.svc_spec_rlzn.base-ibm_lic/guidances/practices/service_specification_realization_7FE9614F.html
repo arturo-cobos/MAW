@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Practice: Service Specification and Realization</title>
+<meta name="uma.type" content="Practice">
+<meta name="uma.name" content="service_specification_realization">
+<meta name="uma.presentationName" content="Service Specification and Realization">
+<meta name="element_type" content="Practice">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_b18RK0ihEd-_ZOv5_X5BYQ"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_b18RK0ihEd-_ZOv5_X5BYQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Practice: Service Specification and Realization</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/practice.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This practice defines the dependencies, composition, policies and rules, operations, context, messages, non-functional requirements, context aware attributes and decisions (including management of state) for services including their implementation.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content References</th><td class="sectionTableCell">
+<ul>
+<li>
+<img src="./../../../images/roadmap.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/guidances/roadmaps/how_to_adopt_E26A7983.html" guid="_b18RLEihEd-_ZOv5_X5BYQ">How to Adopt the Service Specification and Realization Practice</a>
+</li>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/concepts/service_orientation_397D305A.html" guid="_0AzTMGdFEd-j6-ZOl9DeCA">Service Orientation</a>
+</li>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/concepts/soma_8DC58C12.html" guid="_rr5B4BmFEdqx_IUyKxxtEg">Service-Oriented Modeling and Architecture (SOMA)</a>
+</li>
+</ul>
+<ul>
+<li>Work Products</li>
+<ul>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/architectural_decisions_3059F4D3.html" guid="mweb4BA812D47EEFD0A3852568820057215A">Architectural Decisions</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/candidate_asset_list_7C5C60C0.html" guid="mweb3E0FDFC6B1A9A0F885256882005AF563">Candidate Asset List</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/workproducts/service_model_AA7DDA59.html" guid="_fxbwIBmHEdqx_IUyKxxtEg">Service Model</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>Tasks</li>
+<ul>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/model_service_composition_and_flow_F86461BB.html" guid="_eRCw8F13EduE1aXRcyVMBg">Model Service Composition and Flows</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/model_service_dependencies_B50CC895.html" guid="_R4W9AF13EduE1aXRcyVMBg">Model Service Dependencies</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/identify_events_with_service_E5634B54.html" guid="_mpHPIF13EduE1aXRcyVMBg">Identify Events Associated With Service</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/associate_bus_rules_policies_with_svc_ops_6C10428B.html" guid="_-vEjYCmXEdyb7p_TLTXB6w">Associate Business Rules and Policies with Service Operations</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/assoicate_use_cases_with_service_operations_1448A63D.html" guid="_O1qEcF9NEduhbPCAnI7o2Q">Associate Use Cases with Service Operations</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/create_service_context_diagram_3A5FD1A4.html" guid="_Z71PoCmYEdyb7p_TLTXB6w">Create Service Context Diagram</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/define_service_interface_messaging_style_C9E8472.html" guid="_i49GIJYiEd20ttcATDSVvQ">Define Service Interface Messaging Style</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/define_service_message_exchange_pattern_25575E73.html" guid="_CDWbsJYaEd20ttcATDSVvQ">Define Service Message Exchange Pattern</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/define_service_operations_C27017FE.html" guid="_j1XcoEOCEduXIri7BAc1Jg">Define Service Operations</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/specify_input_output_error_msg_for_svc_ops_92F69AB8.html" guid="_01GXYEOGEduXIri7BAc1Jg">Specify Input, Output and Error Messages for Service Operations</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/map_svc_op_params_to_canonical_msg_model_6B5B0AB5.html" guid="_-z_f4IVlEdunzas35luIdQ">Map Service Operation Parameters to Canonical Message Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/specify_context_aware_service_specification_B32F9997.html" guid="_1rFawG3kEdulmrMDVQ1f_Q">Specify Context-Aware Service Specification</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/document_state_management_decisions_FABC683E.html" guid="_2w8DwF_nEduhbPCAnI7o2Q">Document State Management Decisions</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/specify_nfr_for_svc_and_svc_ops_129647EC.html" guid="_N_Z4YBBfEd2RQMQjayIJ9A">Specify Non-functional Requirements for Service and Service Operations</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/map_svc_op_msg_to_existing_sys_interface_C4F9BC77.html" guid="_-dKJsIVkEdunzas35luIdQ">Map Service Operation Message to Existing System Interfaces</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/assign_service_integration_mechanism_F66F2851.html" guid="_GOUNEJ8qEd2vcreD_1VFaA">Assign Service Integration Mechanism</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/guidelines/value_add_soma_and_soa_7FA5F579.html" guid="_rc970GdDEd-j6-ZOl9DeCA">Value Add of SOMA and SOA</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Inputs</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.bus.slot.base-ibm/workproducts/business_design_slot_E033C894.html" guid="_OIXJkBYREd2eavK0BKAMiA">[Business Design]</a>
+</li>
+<li>
+<a href="./../../../core.tech.slot.base/workproducts/technical_design_slot_84295A08.html" guid="_IcQOUEqdEdyi3_jfs__bIQ">[Technical Design]</a>
+</li>
+<li>
+<a href="./../../../core.tech.slot.base/workproducts/technical_specification_slot_2812F7EF.html" guid="_i3vkoLS-EduDY8LNbMCDBA">[Technical Specification]</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    The purpose of this practice is to further elaborate the Service Model and to specify services in terms of
+    dependencies, service operations, service messages, and non-functional requirement and to make realization decisions
+    regarding implementation of services.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    <font size="4"><strong><font size="3">Service Specifation</font></strong></font>
+</p>
+<p>
+    SOMA Service Specification (SS) defines the dependencies, composition, service policies and rules, service operations,
+    service context, service messages, non-functional requirements pertaining to services, context aware attributes and
+    decisions (including management of state within a service) for the services. This&nbsp;practice essentially updates the
+    remainder of the Service Model that was initially created during identification. Service Specification essentially
+    transforms an identification level Service Model representing business oriented perspective on SOA to a specification
+    level Service Model representing IT concerns.
+</p>
+<p>
+    Service granularity helps in transforming identification level Service Model representing business oriented perspective
+    on SOA to specification level Service Model representing IT concerns.
+</p>
+<h4>
+    <em><font size="2">Service Dependencies</font></em>
+</h4>
+<p>
+    The first step in Service Specification is to model the service dependencies.&nbsp; Service Dependencies has two kind
+    1) dependency on other services i.e. service (logical) dependency 2) dependency on existing databases and systems i.e.
+    physical dependencies.
+</p>
+<p>
+    There are two types of service dependencies, Functional dependency and Processing dependency.
+</p>
+<p>
+    Functional dependency is a tightly coupled dependency, where Processing dependency is a loosely coupled dependency. In
+    Functional dependency, a service requires the functionality of one or more services to fulfill its functionality.
+</p>
+<p>
+    Processing dependency has three sub-types. First, pre-condition dependency, where another service invocation must have
+    executed successfully before the current invocation can begin execution; Second, processing dependency, where another
+    service invocation is required to complete the successful execution of current service; and Third, post-condition
+    dependency, which appears in cases where a service requires another service invocation after its execution; for
+    example, to complete a business transaction.
+</p>
+<p>
+    In Service Specification, we also capture dependency of services on components and operational systems such as
+    databases, and so on.
+</p>
+<h4>
+    <em><font size="2">Service Composition and Flow</font></em>
+</h4>
+<p>
+    The next step in Service Specification is to model the service composition and flows. Services are composed to realize
+    business processes. This activity realizes the business processes through the choreography of services. There are two
+    types of service compositions. They are: First, macro-flow and second, micro-flow. A macro-flow is a type of
+    composition that denotes a long-running flow and is interruptible, meaning it contains one or more long-running,
+    interruptible tasks. Such service composition must be placed in the Process layer in SOA Reference Architectures. On
+    the other hand, a micro-flow is usually a short-running composition with a deterministic latency between the request
+    and the response and is non-interruptible. In micro-flow, a higher level composite service is created or composed out
+    of other services. A micro-flow service composition is placed both at the Service layer and the Process layer in the
+    SOA Reference Architecture. The type of composition determines the placement of the services in the proper layer in the
+    architecture stack.
+</p>
+<h4>
+    <em><font size="2">Service Operations</font></em>
+</h4>
+<p>
+    Recall Service Model is a hierarchical tree of services with parent-child relationship. As you we go deeper in the
+    hierarchy, granularity of the services is finer grained. We define service operations by specifying nodes in the
+    service hierarchy that will become service operations, Based on service granularity, usage scenarios and non functional
+    requirements service operations are identified.
+</p>
+<h4>
+    <em><font size="2">Service Messages</font></em>
+</h4>
+<p>
+    Messages between communicating services are a critical part of an SOA. This includes not only the input and output
+    messages of a given service invocation, but also the internal message format to be used within the enterprise as the
+    flow of information passes through the layers of the Solution Stack. In many cases, a common message format is
+    recommended. The specification of messages for the service model should take into consideration perspectives from
+    enterprise architecture, data architecture, and integration architecture. This includes message standards defined at an
+    enterprise or application level, appropriate meta model or data model that are part of a data architecture, and message
+    transformation standards that are part of an integration architecture. During the Specification phase in SOMA, it is
+    important to understand the standards established in an organization, if available, in each of the three areas of
+    architecture. Information Specification focuses on defining common message format and message model. In Service
+    Specification, while specifying service interfaces, we capture at least description of the messages associated with a
+    service and its operations and a set of message attributes. We specify message for service operations leveraging the
+    common message model that was developed as part of Information Specification. Common message model defines
+    structural&nbsp;of&nbsp;business entities such as Claim, Member, Account. We use these common definitions of the
+    business entities to define specific request and response messages for each of the service operations of a service.
+</p>
+<h4>
+    <em><font size="2">Non Functional Requirements for Services</font></em>
+</h4>
+<p>
+    SOA provides the opportunity to choose a service provider based not only on the functionality it provides, but also on
+    the Quality of Service it guarantees. One of the reasons for changing a service provider may often be the result of a
+    change in non-functional requirements, necessitating a new level of quality of service not currently supported by the
+    existing provider. It may also result from the degradation in quality of service expected by the service consumer. SOA
+    allows this agility at a lower cost, in general, than other architectural styles. Thus, it is very important to clearly
+    specify the non-functional requirements required by the consumer such as: cost of transaction, performance,
+    availability, security, and so on. While specifying service interface, we identify the non-functional requirements for
+    the desired quality of service. The non-functional requirements will be used to commit resources for service components
+    that offer the services and to fund the realization and maintenance of service components that will ensure the delivery
+    of the quality of service over time. Key architectural decisions must be made to ensure that the promised quality of
+    service based on the non-functional requirements is achieved.
+</p>
+<h4>
+    Service Realization
+</h4>
+<p>
+    Service Realization is the binding of a component and the services it provides to actual instances of implementation.
+    Example of such bindings are whether the service will be realized through a newly developed EJB that we will expose as
+    a Web Service or whether the service operations will be realized through the wrappering of a set of CICS transactions
+    after we have componentized the legacy system to be able to expose these CICS transactions and have separated out the
+    COBOL copybooks. We make such kind of Realization decisions as part of Service Realization in SOMA. In Service
+    Realization, we also decide what kind of interactions between layers of the architecture or the solution stack are
+    needed to realize the services. We also assign or designate service integration mechanisms to mediate, route, and
+    transform service requests between service consumers or requestors and service providers. Enterprise Service Bus, ESB,
+    is one example that fulfills this responsibility. This is a key enabler for SOA. In case where a service is realized by
+    legacy applications and systems, we map service operation messages to legacy system interface for those service
+    operations that are implemented by leveraging existing system interfaces. The parameters of the service operations are
+    mapped to the parameters of existing system interfaces.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

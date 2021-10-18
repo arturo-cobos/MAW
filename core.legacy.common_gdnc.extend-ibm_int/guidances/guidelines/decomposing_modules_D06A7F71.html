@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Decomposing Modules</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="decomposing_modules">
+<meta name="uma.presentationName" content="Decomposing Modules">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb0E964286C06057B1852569B2006A7409"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb0E964286C06057B1852569B2006A7409"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Decomposing Modules</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This technique explains methods of implementing optimum. The discussion revolves around module decomposition methods, including the Jackson method, that focus on data structures based on the concept of &quot;composite/structured design.&quot; </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <b>Composite/Structured Design</b>
+</p>
+<p>
+    "Structured Design" is a software structure design technique proposed by L. L. Constantine, G. J. Myers, and W. P.
+    Stevens (IBMers). It focuses on such techniques as data flow design, optimization of modularity, and structured charts.
+    This idea was later systematized as "Composite Design" by Myers and adopted in the Improved Programming Technologies
+    (IPT) of IBM as a module decomposition technique.
+</p>
+<p>
+    Composite design mainly addresses following points:
+</p>
+<ul>
+    <li>
+        Measurement of module decomposition quality
+    </li>
+    <li>
+        Module decomposition by composite analysis
+    </li>
+</ul>
+<p>
+    <b>Conditions for Creating Programs with a Long System Life</b>
+</p>
+<p>
+    The purpose of composite/structured design is to improve the reliability, maintainability, expandability, and
+    generality of systems and programs and modules, and to create high quality programs with a long system life.
+</p>
+<ul>
+    <li>
+        Immediate response to maintenance and expansion needs:
+    </li>
+    <li style="list-style: none">
+        <ul>
+            <li>
+                Optimization of modularity
+            </li>
+            <li>
+                Relationships between application functions and program modules
+            </li>
+            <li>
+                Module Strength -&gt; Maximize
+            </li>
+            <li>
+                Module Coupling -&gt; Minimize
+            </li>
+            <li>
+                Module size
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    Separation of core application logic from other functions
+</p>
+<p>
+    The core application logic is less than 30% of total logic (logically).
+</p>
+<ul>
+    <li>
+        Optimization of external specifications
+    </li>
+</ul>
+<p>
+    Documents (deliverables) work sequence, and description contents
+</p>
+<p>
+    Reusable code and program parts
+</p>
+<p>
+    <img height="176" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/pictureindecomposingmodules.jpg" width="432" />
+</p>
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td width="95%">
+                <p>
+                    <a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/pictureindecomposingmodules.jpg" target="_blank"></a>
+                </p>
+                <p>
+                    <a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/DecomposingModules.doc" target="_blank">DecomposingModules.doc</a>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

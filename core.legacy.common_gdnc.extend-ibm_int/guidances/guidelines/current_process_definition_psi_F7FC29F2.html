@@ -1,0 +1,880 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Current Process Definition (PSI)</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="current_process_definition_psi">
+<meta name="uma.presentationName" content="Current Process Definition (PSI)">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb039F64000BD97F8C85256B1A00722579"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb039F64000BD97F8C85256B1A00722579"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Current Process Definition (PSI)</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><div>
+    <strong>Introduction</strong>
+</div>
+<p>
+    This guideline supplements BUS 309 Process Definition work product and provides additional EAS information to consider
+    when completing this work product. This provides information for completing the current process decomposition and also
+    the process for detailed process documentation.
+</p>
+<p>
+    The detailed current descriptions provide the bases, or foundation, for the future descriptions. The BT Script is
+    constructed so the future description of each action is created in the same document as the current description using
+    the same format. Unless a major process improvement was identified from the current, the future description could be
+    almost the same as the current. Therefore work-steps and descriptions documented in the current can be copied to the
+    future.
+</p>
+<div>
+    <strong>Steps/Development Approach</strong>
+</div>
+<p>
+    <strong>1</strong> <strong>Current Process Decomposition</strong>
+</p>
+<p>
+    For each of the Business Domains identified within the scope of the project, identify the sub-process and within each
+    sub-process, define the actions required to complete the process.
+</p>
+<p>
+    Business domain decomposition is a logical, visual breakdown of the current, in-scope business domains and
+    sub-processes. Usually, the easiest way to divide the client's business into manageable units is to use a top-down
+    approach.
+</p>
+<p>
+    The <b>function</b> tree is used as a means of structuring business functions, where the lowest level is an action. It
+    is used to capture the current and future business requirements, and provides the basis for the choice of the
+    corresponding system functionality.
+</p>
+<p>
+    The <b>process</b> breakdown structure is defined by identifying the main business processes and then working top-down
+    to end up with the lowest level that is the action (action).
+</p>
+<p>
+    <b>Business Processes vs. Functions</b>
+</p>
+<p>
+    Not all package software implementation projects aim at extensive re-engineering of processes. Different competitive
+    environments, corporate culture, organizational structures, and, of course, customer requirements lead to different
+    implementation strategies. It is possible to distinguish between four implementation scenarios:
+</p>
+<p>
+    <img height="217" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/current_process_definition_1.JPG" width="478" /><br />
+    <br />
+    <b>Scenario 1A</b>&<b>B, Improve Performance</b>: Client's with intensive Business Re-engineering requirements
+</p>
+<p>
+    <b>Scenario 2A</b>,<b>B</b>&<b>C, Improve efficiency</b>: Client's with moderate BPR requirements
+</p>
+<p>
+    <b>Scenario 3A</b>&<b>B, Replace</b>: Customers with very function oriented requirements
+</p>
+<p>
+    <b>Scenario 3C, Replace: Customers</b> with a small budget, pre-configured system, and template implementation.
+</p>
+<p>
+    The type of customer described in the scenarios determines the approach towards conducting business process
+    re-engineering and process modeling. Modeling is certainly more thorough in projects that include re-engineering.
+    Business models for scenarios 3 tend to be less complex.
+</p>
+<p>
+    Scenarios 1 and 2 require the consultant to be concerned with processes, whereas scenarios 3 can be handled taking a
+    functional viewpoint. It is therefore very important to understand how a process can be distinguished from a function:
+</p>
+<ul>
+    <li>
+        A process can cross functional and departmental borders
+    </li>
+    <li>
+        A process almost always concerns more than one workplace
+    </li>
+    <li>
+        A process has a defined beginning and end
+    </li>
+    <li>
+        A process has input and output
+    </li>
+</ul>
+<p>
+    Some processes, especially in the financial area, are very output-oriented. They are driven by the information that is
+    to be provided, e.g., a report, and in most cases cannot be described the same way as processes in other areas.
+    Therefore, the term "output structure" is used when referring to these processes.
+</p>
+<p>
+    <b>Scenario 3: Identify and Describe the Business Functions</b>
+</p>
+<p>
+    This way of describing the business is normally used in the following situations:
+</p>
+<ul>
+    <li>
+        With customers who have very function orientated requirements
+    </li>
+    <li>
+        For business areas that are very functionally driven (i.e., finance)
+    </li>
+    <li>
+        For companies that have a small budget or are using a template for implementation
+    </li>
+</ul>
+<p>
+    As the first step, it is necessary to agree upon and describe the individual functional views of the client's business
+    as a basis for project work. A business functional view is a major group within the organization and includes such
+    views as:
+</p>
+<ul>
+    <li>
+        Inventory Management
+    </li>
+    <li>
+        Production Planning
+    </li>
+    <li>
+        Purchasing
+    </li>
+    <li>
+        Sales
+    </li>
+    <li>
+        Accounts Payable
+    </li>
+    <li>
+        General Ledger
+    </li>
+</ul>
+<p>
+    All project members and project management must agree upon the definition of the main business functions. Often the
+    first part of the project has already identified these major functional areas, as well as, the business processes that
+    cross them. This is done during the preparation phase in order to identify the scope of business functionality to be
+    implemented and the corresponding system areas.
+</p>
+<p>
+    Once the business functions are defined and agreed upon, a project team member is assigned responsibility for each main
+    view. In some cases, they are labeled Sub-Projects<i>.</i> Sometimes, an individual team may have responsibility for
+    more than one business function. For example, the Finance Sub-Project Leader may have responsibility for Accounts
+    Payable, Accounts Receivable, and General Ledger.
+</p>
+<p>
+    The business functions represent the major segments of the project. They are the basis for the Project Organization.
+</p>
+<p>
+    <b>Identify and Describe the Business Sub-functions</b>
+</p>
+<p>
+    The second step is to identify the function tree within each functional view. Each business function contains a number
+    of sub-functions. For example, within the business function Purchasing, there may be the sub-function Supplier
+    Selection and Maintenance of Orders. In order to do this IBM's sample list of functions can be used.
+</p>
+<p>
+    Using a 'top down' approach, each team member reviews and understands the functional view(s) assigned to him or her. If
+    the team member has the relevant business experience, the ideal would be for them to define the sub-processes within
+    the functional views and to create a Value Added Chain diagram or an EPC diagram.
+</p>
+<p>
+    The diagrams should show:
+</p>
+<ul>
+    <li>
+        The sequence of sub-processes to complete the business function
+    </li>
+    <li>
+        A brief description of the business process
+    </li>
+    <li>
+        Preceding and succeeding processes
+    </li>
+    <li>
+        Inputs, outputs, and interfaces (information and/or documents)
+    </li>
+    <li>
+        A responsibility matrix (who authorizes, executes, receives output, etc.)
+    </li>
+</ul>
+<p>
+    <b>Identify and Describe the Actions</b>
+</p>
+<p>
+    Every sub-process or function should be divided into actions. Actions can contain details of both normal and
+    exceptional variations. For example, the Creation of a Purchase Order for an <i>item</i> might be the main action where
+    the Creation of a Purchase Order for a <i>service</i>, might be a variation.
+</p>
+<p>
+    <b>Scenarios 1 and 2: Identify and Describe the Business Processes</b>
+</p>
+<p>
+    In the past, the focus was on verbal descriptions of a function- oriented view of the company. This, however, does not
+    provide an easily understandable and accessible description of Future requirements. Furthermore, the present focus on
+    cross-functional business processes is not supported by the traditional function-oriented view of the company.
+</p>
+<p>
+    First, agree on and describe the individual business process views of the client's business as a basis for the project
+    work. A business process view is:
+</p>
+<p>
+    <img style="WIDTH: 599px; HEIGHT: 362px" height="362" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/current_process_definition_2.JPG"     width="600" /><br />
+    <br />
+    Business processes include such views as:
+</p>
+<ul>
+    <li>
+        Fulfill customer orders
+    </li>
+    <li>
+        Market products and services
+    </li>
+    <li>
+        Procure goods and services
+    </li>
+    <li>
+        Manage materials
+    </li>
+    <li>
+        Manage financial services
+    </li>
+    <li>
+        Mange distribution and logistics
+    </li>
+    <li>
+        Provide customer services
+    </li>
+</ul>
+<p>
+    All project members and Project Management must agree upon the definition of the business processes. Often the first
+    part of the project has already identified business domains as well as business processes. This is done during the
+    preparation phase in order to identify the scope of the project.
+</p>
+<p>
+    Once the business processes are defined and agreed upon, a project team member should be assigned responsibility for
+    each business process. In some cases, they are labeled Sub-Projects<i>.</i> Sometimes, an individual team may have
+    responsibility for more than one business process. For example, the Finance Sub-Project Leader may have responsibility
+    for Manage cost accounting.
+</p>
+<p>
+    The business processes represent the major segments of the project. They are the basis of the Project Organization.
+</p>
+<p>
+    <b>Identify and Describe the Business Sub-processes</b>
+</p>
+<p>
+    The second step is to identify the process tree within each process view. Each business process contains a number of
+    sub-processes. For example, within the business process Manage Procurement of products and services, there will be the
+    sub-process manage Supplier Selection and Manage contracts.
+</p>
+<p>
+    Using a 'top down' approach, each team member should review and understand the process view(s) assigned to him or her.
+    If the team member has the relevant business experience, the ideal would be for them to define the sub-processes within
+    the process views and to create a Value Added Chain diagram or an EPC diagram.
+</p>
+<p>
+    The diagrams should show:
+</p>
+<ul>
+    <li>
+        The sequence of sub-processes to complete the business process
+    </li>
+    <li>
+        A brief description of the business process
+    </li>
+    <li>
+        Preceding and succeeding processes
+    </li>
+    <li>
+        Inputs, outputs, and interfaces (information and/or documents)
+    </li>
+    <li>
+        A responsibility matrix (who authorizes, executes, receives output, etc.)
+    </li>
+</ul>
+<p>
+    <b>Identify and Describe the Actions</b>
+</p>
+<p>
+    Every sub-process or function should be divided into actions. Actions can contain details about both normal and
+    exceptional variations. For example, the Creation of a Purchase Order for an <i>item</i> might be the main action where
+    the Creation of a Purchase Order for a <i>service</i>, might be a variation.
+</p>
+<p>
+    <strong>2</strong> <strong>Current Detailed Process Documentation</strong>
+</p>
+<p>
+    <strong>2.1.</strong> <strong>Overview</strong>
+</p>
+<p>
+    The <b>Business Transaction Folder</b> provides a complete vehicle for concurrent Business Process and Application
+    Design & Documentation, which flows through from the Business Assess Phase to the Implement Phase. This is a
+    powerful tool, which ensures that the design of Business Processes is based on the Application and that the Application
+    design is business driven and provides an understandable set of integrated business processes and system design
+    documentation. This is a major benefit in a project as complex as most system software implementations.
+</p>
+<p>
+    Within the Business Transaction Folder are three main <b>Scripting</b> documents that cover each stage of the project.
+</p>
+<p>
+    <b>BT Script</b>
+</p>
+<p>
+    Each script is created at the action level and contains, per action, the Current description, the Future descriptions,
+    and the Fit/Gap System Mapping.
+</p>
+<p>
+    <b>BT Configuration Script</b>
+</p>
+<p>
+    Each script is linked back to a corresponding Script and contains the detailed system set-up information. The
+    configuration scripts document how the system was built to fulfill the requirements defined in the Future portion of
+    Scripts.
+</p>
+<p>
+    <b>BT Unit Testing Script</b>
+</p>
+<p>
+    Each script is linked back to a corresponding Configuration Script and contains the system testing expectations and
+    results for the particular action and set-up. At this stage of the project, this testing is strictly action based and
+    completed to validate that each individual action is functioning as expected.
+</p>
+<p>
+    The following is a blank template of the BT Script and can be found in the Method Catalog.<br />
+    <br />
+    <strong>2.1.1.</strong> <strong>Current Descriptions</strong>
+</p>
+<p>
+    Together with 3 level Current Business Model the detailed documentation, of the level 3 (<b>actions)</b>, within a
+    <b>Business Transaction <i>Script</i></b> produces an end product known as the <b>Current Model</b>.
+</p>
+<p>
+    A BT Script contains the following three sections, or deliverables:
+</p>
+<ul>
+    <li>
+        Current Description
+    </li>
+    <li>
+        Future Description
+    </li>
+    <li>
+        System Fit/Gap Analysis
+    </li>
+</ul>
+<p>
+    The first section, and deliverable here, is the completion of the Current Description portion of the Script. The
+    Current descriptions should validate and clarify how the customer currently conducts business. It is important to know
+    where the company is coming from in order to accurately, and effectively, recommend process and business improvements
+    for the future.
+</p>
+<p>
+    <strong>2.1.2</strong> <strong>Prerequisite</strong>
+</p>
+<p>
+    Prior to beginning the detailed Current documentation, a functional or process decomposition (Current Business Model)
+    should have been completed and signed-off by the business.
+</p>
+<p>
+    There are multiple steps involved in identifying and breaking down the Current processes and functions into manageable
+    working units. The actual breakdown is often defined as a functional or process decomposition. The decompositions can
+    be completed in either a functional or process view. Both ways are acceptable and allow the business to obtain the
+    level of required detail.
+</p>
+<p>
+    <b>Level 4 Documentation</b>
+</p>
+<p>
+    Not all processes need a level 4 description. Only the following processes shall be documented at this level of detail.
+</p>
+<ul>
+    <li>
+        Complex business processes
+    </li>
+    <li>
+        Critical business processes
+    </li>
+    <li>
+        Processes where the re-design or re-engineering is expected to have high impact on the organization
+    </li>
+    <li>
+        Processes where gaps between Package and Future design are expected
+    </li>
+</ul>
+<p>
+    <strong>2.1.3</strong> <strong>Identifying the BT Scripts</strong>
+</p>
+<p>
+    After completing the decompositions where all of the actions have been identified, a BT Script is then created for each
+    <b>action</b> from the selected processes. Most BT Scripts will be created at the action level. However, there are some
+    cases where the script will be created at the sub-process or sub-function level. This will depend on the number and
+    uniqueness of actions within the sub-process.
+</p>
+<p>
+    Each action should be evaluated, at a high-level, to assess if there will be enough information to warrant script. This
+    is usually a first instinct judgment call by the project team member responsible for that area. The scripts will
+    fluctuate and change as the project progresses. There will be cases where some scripts are added because they were
+    forgotten or maybe a script is divided and made into two separate scripts.<br />
+    In any case, it should be remembered that this is a first pass and by no means finalized.
+</p>
+<p>
+    <strong>2.1.4</strong> <strong>Establish Numbering and File Naming Conventions for the Scripts</strong>
+</p>
+<p>
+    A file naming and script numbering system must be established and communicated to the project team. This must happen
+    before you actually begin creating the Scripts. Typically, the scripts are numbered based on process/functional area
+    and level of detail.
+</p>
+<p>
+    Each functional area or process is given a top-level number usually based on tens.
+</p>
+<ul>
+    <li>
+        Manage procurement of materials or services = 10
+    </li>
+    <li>
+        General Ledger = 20
+    </li>
+    <li>
+        Accounts Payable = 30
+    </li>
+    <li>
+        Accounts Receivable = 40
+    </li>
+</ul>
+<p>
+    Each sub-function/process below a Main Function/Process is also given a sequential number
+</p>
+<ul>
+    <li>
+        Accounts Receivable = 40
+    </li>
+    <li>
+        Master Records = 40.00
+    </li>
+    <li>
+        Document Entry = 40.10
+    </li>
+    <li>
+        Report = 40.20
+    </li>
+</ul>
+<p>
+    Lastly, each action under the sub-function/process is given a sequential number
+</p>
+<ul>
+    <li>
+        Accounts Receivable = 40
+    </li>
+    <li>
+        Master Records = 40.00
+    </li>
+    <li>
+        Create Customer Bank Accounts = 40.00.00
+    </li>
+    <li>
+        Change Customer Bank Account Inf. = 40.00.05
+    </li>
+    <li>
+        Display Customer Bank Account Inf. already created = 40.00.10
+    </li>
+</ul>
+<p>
+    These numbers are used as the individual script numbers to identify the level and area that a script belongs to. Often,
+    these numbers are also used as the file names for each document. This was mainly applicable when file names were
+    limited to eight characters. If the company is using a file storage system of software that enables extended file
+    names, a more descriptive file naming convention may be used.
+</p>
+<p>
+    Because the Script is just one of the BT Scripts used to obtain the end-to-end project and system information, these
+    script numbers should also be proceeded by the letter <b>P</b>. As the Business Transaction Folder is assembled, each
+    script will have an identifying first letter to distinguish it between a Process, Configuration, or Unit Testing
+    Script.
+</p>
+<p>
+    The following is a spreadsheet example of how the script numbering system is applied to the identified actions:
+</p>
+<table border="1">
+    <tbody>
+        <tr>
+            <td valign="top" width="151">
+                <br />
+            </td>
+            <td valign="top" width="434">
+                <br />
+            </td>
+            <td valign="top" width="181">
+                <br />
+                <b>Functional Area = Accounts Receivable (40)</b>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="151">
+                <br />
+                <b>Script #</b>
+            </td>
+            <td valign="top" width="434">
+                <br />
+                <b>Script Name</b>
+            </td>
+            <td valign="top" width="181">
+                <br />
+                <b>Script Owner</b>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="151">
+                <br />
+            </td>
+            <td valign="top" width="434">
+                <br />
+            </td>
+            <td valign="top" width="181">
+                <br />
+                <b>(00) Master Records</b>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="151">
+                <br />
+                P40.00.00
+            </td>
+            <td valign="top" width="434">
+                <br />
+                Create Customer Bank Accounts
+            </td>
+            <td valign="top" width="181">
+                <br />
+                Frank S.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="151">
+                <br />
+                P40.00.05
+            </td>
+            <td valign="top" width="434">
+                <br />
+                Change Customer Bank Account Inf.
+            </td>
+            <td valign="top" width="181">
+                <br />
+                Frank S.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="151">
+                <br />
+                P40.00.10
+            </td>
+            <td valign="top" width="434">
+                <br />
+                Display Customer Bank Account Inf. already created
+            </td>
+            <td valign="top" width="181">
+                <br />
+                Frank S.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="151">
+                <br />
+            </td>
+            <td valign="top" width="434">
+                <br />
+            </td>
+            <td valign="top" width="181">
+                <br />
+                <b>(10) Document Entry</b>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="151">
+                <br />
+                P40.10.00
+            </td>
+            <td valign="top" width="434">
+                <br />
+                Transfer Cash via credit memo through Intco's - G/L
+            </td>
+            <td valign="top" width="181">
+                <br />
+                Frank S.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="151">
+                <br />
+                P40.10.10
+            </td>
+            <td valign="top" width="434">
+                <br />
+                Perform W/Offs (per invoice) and Bad Debt W/Offs
+            </td>
+            <td valign="top" width="181">
+                <br />
+                Frank S.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="151">
+                <br />
+                P40.10.20
+            </td>
+            <td valign="top" width="434">
+                <br />
+                Apply Autocash
+            </td>
+            <td valign="top" width="181">
+                <br />
+                Frank S.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="151">
+                <br />
+                P40.10.25
+            </td>
+            <td valign="top" width="434">
+                <br />
+                Apply Cash Manually
+            </td>
+            <td valign="top" width="181">
+                <br />
+                Frank S.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="151">
+                <br />
+            </td>
+            <td valign="top" width="434">
+                <br />
+            </td>
+            <td valign="top" width="181">
+                <br />
+                <b>(20) Reporting</b>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="151">
+                <br />
+                P40.20.00
+            </td>
+            <td valign="top" width="434">
+                <br />
+                Plan / Forecast A/R & DSO
+            </td>
+            <td valign="top" width="181">
+                <br />
+                Frank S.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="151">
+                <br />
+                P40.20.05
+            </td>
+            <td valign="top" width="434">
+                <br />
+                Compare Plan to Forecast
+            </td>
+            <td valign="top" width="181">
+                <br />
+                Frank S.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="151">
+                <br />
+                P40.20.15
+            </td>
+            <td valign="top" width="434">
+                <br />
+                Analyze Document Changes
+            </td>
+            <td valign="top" width="181">
+                <br />
+                Frank S.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="151">
+                <br />
+                P40.20.10
+            </td>
+            <td valign="top" width="434">
+                <br />
+                Compare Plan / Forecast to Actuals
+            </td>
+            <td valign="top" width="181">
+                <br />
+                Frank S.
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <br />
+    <strong>2.1.5</strong> <strong>Create a First Pass of the Current Descriptions for all BT Scripts</strong>
+</p>
+<p>
+    In this step, the Current Description portion of the Script is complete. The script itself documents the detailed
+    worksteps required to carry out the action. The worksteps are the step-by-step activities that must take place in order
+    to complete the action.
+</p>
+<p>
+    The Client must provide the Current information. The approach for obtaining this information can vary depending upon
+    the project team members background, knowledge, and skills. Some project teams will contain members who have current
+    experience working in end-user departments and therefore they would be required to interview user representatives. This
+    will need to be assessed on and individual and project bases.
+</p>
+<p>
+    For each BT Script that was identified, the project team owner for each area should create a first pass of the script
+    entering as much as possible of the Current Information before interviewing the user representatives. This approach
+    will shorten the creation process, by providing the user representatives with a basis for validation and sign-off.
+</p>
+<p>
+    It may also be possible to gather information from procedural handbooks or system guides. However, care must be taken,
+    as this written information might not reflect the actual procedures followed, or may be out of date.
+</p>
+<p>
+    <strong>2.1.6</strong> <strong>Identify User Representatives and Schedule Interviews</strong>
+</p>
+<p>
+    Interviews should be conducted with user representatives in each business area. The interviews should be used as a
+    means to validate the Current descriptions and to obtain any information that is unknown to the project team member.
+</p>
+<p>
+    User representatives should be chosen with care and should be at a responsible level within the organization. A good
+    approach is to contact the department manager first to establish who should be interviewed. In some cases, it may be
+    sufficient to interview the department manager in order to obtain the necessary information.
+</p>
+<p>
+    You must always conduct at least one interview / review with an actual 'doer' to avoid or detect potential issues in
+    describing the Current situation and worksteps.
+</p>
+<p>
+    <strong>2.1.7</strong> <strong>Conduct User Representative Interviews</strong>
+</p>
+<p>
+    Again, the interviews should be used to validate business process functions, sub-business functions and actions. Use
+    the IBM standard Script template and guidelines (See Attachment A7).
+</p>
+<p>
+    The interview questions should seek to establish the following information:
+</p>
+<ul>
+    <li>
+        Confirmation of the actions and worksteps noted in the draft scripts
+    </li>
+    <li>
+        Information and document flows - source, destination, interfaces
+    </li>
+    <li>
+        Note volumes, averages and extremes, seasonally, variability, etc
+    </li>
+    <li>
+        Check whether actual processes follow the recommended procedures
+    </li>
+    <li>
+        Note any nonstandard or exceptional procedures
+    </li>
+    <li>
+        Note any problem areas, potential improvements and/or simplifications to the processes
+    </li>
+</ul>
+<p>
+    While carrying out the interviews, it may be easier to capture the information on blank paper rather than actually
+    trying to fill in the Script form. This will allow everything to be recorded for later consolidation and restructuring
+    in the Script.
+</p>
+<p>
+    <strong>2.1.8</strong> <strong>Complete and Finalize the Current Portion of the BT Scripts</strong>
+</p>
+<p>
+    After all interviews are completed, the project team members must complete the Current Information for each BT Script
+    allocated to them. They should add any new information and consolidate the information where appropriate.
+</p>
+<p>
+    It is recommended that team members be proficient in the use of word processing tools and the software that is being
+    used to document the BT Scripts. Otherwise, project management needs to arrange the appropriate training, and if
+    necessary, short-term secretarial help. All the Business Transaction Scripts should be collated and managed centrally.
+    Team members will be responsible for maintaining / updating their own scripts, but should also have display access to
+    all scripts allocated to other teams.
+</p>
+<p>
+    <strong>2.1.9</strong> <strong>Complete an Integration Matrix</strong>
+</p>
+<p>
+    An Integration Matrix is a detailed spreadsheet listing all of BT Scripts and ID numbers that are connected to each
+    script. When the Current descriptions are being completed, a field on the front of the script allows the script creator
+    to identify all scripts that are "integrated" or affected by the current script. By listing all of these in a matrix,
+    you can identify all of the integration points between the business processes.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Supporting Materials</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/supportingmaterials/std_bus_trans_script_tem_D0AB45A5.html" guid="mweb037242667962962900">Template: Standard Business Transaction Script</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

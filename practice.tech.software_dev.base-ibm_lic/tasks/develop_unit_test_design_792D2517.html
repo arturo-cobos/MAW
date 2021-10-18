@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Task: Develop Unit Test Design</title>
+<meta name="uma.type" content="Task">
+<meta name="uma.name" content="develop_unit_test_design">
+<meta name="uma.presentationName" content="Develop Unit Test Design">
+<meta name="uma.category" content="Discipline:tech_implementation:Technical Implementation">
+<meta name="element_type" content="activity">
+<meta name="filetype" content="description">
+<meta name="role" content="Application Developer">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_D3cBUINgEd6F3evYNLt-CQ", "_sf7BwGptEeSdxcAgtnf5og", "_1I0ksIW4Ed6eRN4Jq00Nbw"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_kpou0CmJEd65FoKJYXtPqg", "_vLdhkLUuEdyZzqoEHUdEQA", "_JQZDELUvEdyZzqoEHUdEQA", "_1I0ksIW4Ed6eRN4Jq00Nbw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', true, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div id="page-guid" value="_1I0ksIW4Ed6eRN4Jq00Nbw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Task: Develop Unit Test Design</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/task.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Implement one or more tests that enable the validation of the individual implementation elements through execution.</td>
+</tr>
+<tr>
+<td>Disciplines: <a href="./../../core.default.cat_def.base-ibm_lic/disciplines/tech_implementation_66E0C963.html" guid="_JQZDELUvEdyZzqoEHUdEQA">Technical Implementation</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">Prepare to validate an implementation element (e.g. an operation, a class, a stored procedure) through unit testing. The
+result is one or more new developer tests.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Parent Practices</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../practice.tech.software_dev.base-ibm_lic/guidances/practices/software_dev_E16FDA63.html" guid="_D3cBUINgEd6F3evYNLt-CQ">Software Development</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Primary Performer:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/application_developer_8573F536.html" guid="mwebD57DF23536B141F78625655F0004B2CA">Application Developer</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Additional Performers:
+								</span></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Inputs</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Mandatory:
+								</span>
+<ul>
+<li>None</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Optional:
+								</span>
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/master_test_plan_316F37F1.html" guid="mweb6453F1B420F775748525688500505CDC">Master Test Plan</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/source_files_EFC2C2F9.html" guid="mweb3A52A85C8665725C85256885005B699F">Source Files</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="./../../core.tech.slot.base/workproducts/technical_design_slot_84295A08.html" guid="_IcQOUEqdEdyi3_jfs__bIQ">[Technical Design]</a>
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/component_design_B36D4DDD.html" guid="_dXRwkIfDEdyrHMpF6xBNiQ">Component Design</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/database_trans_desc_D8976B63.html" guid="mweb618E9D383D17810F852568820061D9D6">Database Transaction Descriptions</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/data_migration_specification_B4ADA350.html" guid="mweb22D39A44D3A01C698525688200617C95">Data Migration Specification</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/data_model_201FD2D8.html" guid="mweb92DDF88B152881D585256885005042A1">Data Model</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/physical_database_design_B38821A2.html" guid="mweb67A87EB3268559088525688500520A8B">Physical Database Design</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/ui_design_specs_B76BB729.html" guid="mweb0B1E8765356F61EF852568850061F05A">User Interface Design Specifications</a>
+</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Outputs</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/developer_test_98F94272.html" guid="mwebFF3BCD6AF956005E852569A500489A8A">Developer Test</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Developer testing is different from other forms of testing in that it is based on the expected behavior of code units
+    rather than being directly based on the system requirements.
+</p>
+<p>
+    It is best to do this at a small scale, much smaller than the complete code base to be authored by a developer over the
+    course of an iteration. This can be done for one operation, one field added to a user interface, one stored procedure,
+    etc. As the code base is incrementally built, new tests will be authored and existing tests might be revisited to test
+    additional behavior.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Steps</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="sectionTableSingleCell">
+<div class="stepHeading">Refine scope and identify the test(s)</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    Select the increment of work to be tested and identify developer test(s)&nbsp;to verify that the software
+    implementation&nbsp;being developed behaves correctly. One source for the expected behavior for an implementation
+    element is the software design.
+</p>
+<p>
+    In identifying the&nbsp;tests or in any other part of this task, consider collaborating with a team member who is
+    well-versed in the issues of testing.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Write the test setup</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>To successfully run a test the system must be in a known state so that the correct behavior can be defined. Implement the
+setup logic that must be performed as part of the developer test.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Define the expected results</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    Define the expected results of each test so that it can be verified.
+</p>
+<p>
+    After a test runs, you need to be able to compare the results of running the test against what was expected to happen.
+    The test is successful when the actual results match the expected results.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Write the test logic</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Write the steps that perform the actual test(s).</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Define the test response</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Define the information the test(s) must produce to successfully indicate success or failure. Consider if a response of True
+or False is sufficient, or if a detailed message should be logged as well.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Write clean-up code</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Identify, and then implement, the steps to be followed in order to restore the environment to the original state for each
+test. The goal is to ensure that there are no side effects from running the tests.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Test the test</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    Verify that each developer test works correctly. To do this:
+</p>
+<ul>
+    <li>
+        Run the test(s), observe their behavior, and fix any defects in the tests.
+    </li>
+    <li>
+        Ensure that the expected results are defined properly and that they're being checked correctly.
+    </li>
+    <li>
+        Check the clean-up logic for each test.
+    </li>
+    <li>
+        Ensure that each developer test works within your test suite.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><ol>
+    <li>
+        Automate tests via a unit regression testing tool (for example, xUnit) so that tests may be run by developers
+        whenever they make changes to the code.
+    </li>
+    <li>
+        Test to the risk of the implementation element. For example, the more critical an element is, the more important it
+        is to test it thoroughly.
+    </li>
+    <li>
+        Pair with&nbsp;team members with testing skills&nbsp;in all steps of this task to gain insight on testing and
+        quality considerations.
+    </li>
+</ol></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp/guidances/concepts/developer_testing_FEBDAED6.html" guid="_ADwlAJRtEdyrdaw_xGakyw">Developer Testing</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp/guidances/guidelines/developer_testing_9974EA47.html" guid="_ByOd4O6pEduvoopEslG-4g">Developer Testing</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

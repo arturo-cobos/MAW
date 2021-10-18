@@ -1,0 +1,9 @@
+Error: CapabilityPattern:planning_slot: Error publishing process specific layout data
+java.lang.ClassCastException: org.eclipse.epf.library.edit.process.ComposedWPDescriptorWrapperItemProvider incompatible with org.eclipse.epf.library.edit.process.PBSActivityItemProvider$DeliverableWorkProductDescriptorItemProvider
+	at org.eclipse.epf.library.edit.process.PBSActivityItemProvider.getChildren(PBSActivityItemProvider.java:183)
+	at org.eclipse.epf.library.edit.process.publishing.WPBSProcessItemProvider.getChildren(WPBSProcessItemProvider.java:40)
+	at org.eclipse.epf.library.layout.elements.ActivityLayout.iterateProcessItem(ActivityLayout.java:1652)
+	at org.eclipse.epf.library.layout.elements.ActivityLayout.loadWPBSLayoutData(ActivityLayout.java:1628)
+	at org.eclipse.epf.library.layout.elements.ActivityLayout.loadLayoutData(ActivityLayout.java:1511)
+	at org.eclipse.epf.publishing.services.ConfigurationViewBuilder$1.run(ConfigurationViewBuilder.java:460)
+	at java.lang.Thread.run(Thread.java:736)

@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Deployment Unit Model</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="deployment_unit_model">
+<meta name="uma.presentationName" content="Deployment Unit Model">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_IMggsDeaEdyFMtjeREc5MQ"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_IMggsDeaEdyFMtjeREc5MQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Deployment Unit Model</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This artifact provides guidance for creating the Deployment Unit Model</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/deployment_unit_model_6EA973D.html" guid="_pu0XUDDXEdyz_pzDMsV8FQ">Deployment Unit Model</a>
+</li>
+<li>
+<a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/dev_deployment_unit_model_30834206.html" guid="_opkKADDYEdyz_pzDMsV8FQ">Develop Deployment Unit Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Different forces will be involved in the placement process, depending on the type of DU involved. For example:
+</p>
+<ul>
+    <li>
+        Presentation DUs must be located at the point of contact with the user.
+    </li>
+    <li>
+        Data DUs may be located so that they generate a minimal amount of data distribution and other systems management
+        requirements, or so that they maximise the performance and availability characteristics of the solution
+    </li>
+    <li>
+        Execution DUs may be located close to the data they access, other execution DUs with which they collaborate, or
+        close to the user – depending on the network traffic and systems management effects these options may present.
+    </li>
+</ul>
+<p>
+    Note that, if it transpires that all aspects of a component are co-located on the same node, then it is not good
+    practice to merge all DUs into one entity, since the non-functional characteristics of a PDU, EDU, and DDU are very
+    different, and must be separately handled in the OM development. Equally, if two or more DUs of the same type are
+    co-located on one node, great care must be taken when deciding to coalesce (merge) them into one DU.
+</p>
+<p>
+    Since the Deployment Unit Specification and Deployment Unit Model artifacts form the bridge between the functional and
+    operational aspects of architecture, it is vital to involve both the Operational and Functional IT Architects when
+    developing or modifying them.
+</p>
+<p>
+    <b><font size="4">Defining DU Relationships</font></b>
+</p>
+<p>
+    <b>Component to DU Relationships</b>
+</p>
+<p>
+    One convenient way of documenting the results of the Component to DU relationships may be via a matrix, relating the
+    list of application components to the DU types, for example:
+</p>
+<p>
+    <img height="266" alt="Component-DU Matrix" src="./../../../core.tech.common.extend-ibm_lic/guidances/guidelines/resources/component_du_matrix.gif" width="568" />&nbsp;
+</p>
+<p>
+    <b>Figure 1: Example Component-DU matrix</b>
+</p>
+<p>
+    It must be born in mind, however, that there may be circumstances in which the component/DU mapping cannot be
+    represented in a simple matrix such as this, particularly when there is significant component grouping, and the
+    component-DU mapping must therefore be documented DU type by DU type.
+</p>
+<p>
+    <b>DU to DU Relationships</b>
+</p>
+<p>
+    The separation into the three different aspects (Presentation, Execution, Data) means that there are additional
+    relationships between DU types.
+</p>
+<p>
+    There are four key DU oriented relationships to be understood in order to successfully deploy the DUs on the
+    Operational Model:
+</p>
+<ul>
+    <li>
+        Presentation to Data deployment units
+    </li>
+    <li>
+        Presentation to Execution deployment units
+    </li>
+    <li>
+        Execution to Data deployment units
+    </li>
+    <li>
+        Execution to Execution deployment units (‘uses/used by’)
+    </li>
+</ul>
+<p>
+    It is normal to document these relationships via DU – DU matrices, since matrices permit the documentation of
+    relationship’s characteristics in the intersecting cells.
+</p>
+<p>
+    As an understanding of these relationships is gained, remember that revisions may be induced in the candidate
+    deployment units.
+</p>
+<p>
+    Initially, you may decide to document the relationships between DUs as a simple "Yes/No". However the NFRs of the
+    relationship will be important, particularly the Service Level Characteristics of:
+</p>
+<ul>
+    <li>
+        Performance
+    </li>
+    <li>
+        Availability
+    </li>
+    <li>
+        Security
+    </li>
+</ul>
+<p>
+    These NFRs will be cascaded onto the characteristics of the nodes and connections in the Operational Model.
+</p>
+<p>
+    <b>Presentation to Data DU matrix</b>
+</p>
+<p>
+    This information is of particular value in defining the SCOPE of data DUs across the IT system, which aids in the Data
+    DU placement on the Operational Model.
+</p>
+<p>
+    Note that these PDU–DDU relationships do not represent "interactions" between the PDU and DDUs –these must be always be
+    achieved by component executions as represented by EDUs. However, the scope and other NFR data captured in this matrix
+    provide a very useful insight into the requirements of the solution.
+</p>
+<p>
+    Identify the presentation DUs that are linked in some way to each data deployment unit. For example:
+</p>
+<ul>
+    <li>
+        The D_Customer DDU is used by order clerks and accounts receivable clerks via the U_Clerk PDU
+    </li>
+    <li>
+        The D_Document DDU is used by the U_Secretary PDU
+    </li>
+    <li>
+        The D_Program DDU is used by the U_Programmer PDU
+    </li>
+    <li>
+        The D_Performance DDU is used by the U_Systems Monitoring PDU (a system interface)
+    </li>
+</ul>
+<p>
+    Many clients have a hierarchical business organization. Thus, at this point you may find useful to identify and
+    document the lowest organizational level which contains all the user groups who use a particular data deployment unit.
+    Similarly, you may want to document whether a user group from a single or multiple locations uses this data DU.
+</p>
+<p>
+    During this analysis you may discover that the characteristics of a DU-DU relationship are not clear. In these cases it
+    probably means the deployment units you had formed earlier were not quite right. Alter them in order to provide an
+    unambiguous result in the matrix’s cells.
+</p>
+<p style="MARGIN: 6pt 0in">
+    <img height="303" alt="PDU - DDU Characteristics Matrix" src="./../../../core.tech.common.extend-ibm_lic/guidances/guidelines/resources/pdu_ddu_characteristics_matrix.gif"     width="568" />&nbsp;
+</p>
+<p>
+    <b>Figure 2: Example PDU – DDU Characteristics Matrix</b>
+</p>
+<p>
+    This matrix relates the components’ presentation DUs (rows) with their data DUs (columns). Note that in this example,
+    only a very minimal amount of information on the relationship is documented.
+</p>
+<p>
+    <b>Presentation to Execution DU matrix</b>
+</p>
+<p>
+    Create a matrix which relates the interfaces used by the end users (ie presentation DUs) to the tasks they perform (as
+    represented by the candidate execution DUs).
+</p>
+<p>
+    Note that often many execution DUs do not provide direct support to a user, and therefore not a PDU. However, it is
+    quite possible (although not shown in the example here) for two or more EDUs to share a common PDU, as well as one EDU
+    to require two or more PDUs (as with E1 in the example)
+</p>
+<p>
+    During this analysis you may discover that the characteristics of a DU-DU relationship are not clear. In these cases it
+    probably means the deployment units you had formed earlier were not quite right. Alter them in order to provide an
+    unambiguous result in the matrix’s cells.
+</p>
+<p style="MARGIN: 6pt 0in">
+    <img height="246" alt="PDU-EDU Characteristics Matrix" src="./../../../core.tech.common.extend-ibm_lic/guidances/guidelines/resources/pdu_edu_characteristics_matrix.gif"     width="568" />&nbsp;
+</p>
+<p>
+    <b>Figure 3: Example PDU – EDU Characteristics Matrix</b>
+</p>
+<p>
+    This matrix relates the components’ presentation DUs (rows) with their execution DUs (columns). Note that in this
+    example, only a very minimal amount of information on the relationship is documented.
+</p>
+<p>
+    <b>Execution to Execution ("uses/used by") and Execution to Data DU matrices</b>
+</p>
+<p>
+    Both of these DU relationships (EDU-EDU and EDU-DDU) needs to be understood before any viable placement decisions can
+    be taken in the development of the Operational Model.
+</p>
+<p style="MARGIN: 6pt 0in">
+    <img height="292" alt="EDU - EDU Characteristics Matrix" src="./../../../core.tech.common.extend-ibm_lic/guidances/guidelines/resources/edu_edu_characteristics_matrix.gif"     width="568" />&nbsp;
+</p>
+<p>
+    <b>Figure 4: Example EDU – EDU Characteristics Matrix</b>
+</p>
+<p>
+    Note that in this example, only a very minimal amount of information on the relationship is documented.
+</p>
+<p>
+    Note that the diagonal on this matrix is empty. Given the current level of elaboration (i.e. ahead of any OM
+    development activities) this is valid. However, as placement decisions are taken it will be perfectly possible for
+    instances of the same EDU to interact (for example if the same EDU is placed in multiple branch offices, and there is a
+    requirement for peer-to-peer interactions).
+</p>
+<p style="MARGIN: 6pt 0in">
+    <img height="303" alt="EDU - EDU Characteristics matrix 2" src="./../../../core.tech.common.extend-ibm_lic/guidances/guidelines/resources/edu_edu_characteristics_matrix2.gif"     width="444" />&nbsp;
+</p>
+<p>
+    This matrix relates the components’ execution DUs (rows) with their data DUs (columns). Note that in this example, only
+    a very minimal amount of information on the relationship (the "CRUD" relationship) is documented.
+</p>
+<p>
+    Note that, although one specific component (i.e. EDU) controls the access to one or more sets of data (as represented
+    by one or more DDUs, this matrix can indicate a relationship with an EDU that does not own the DDU. As with the PDU-DDU
+    matrix, this should not therefore be taken to imply any direct interactions between the DUs – rather a specification of
+    requirement for access, which may (or may not) be restricted to the owning EDU.
+</p>
+<p>
+    <b><font size="4">Reviewing Candidate DUs and Their Relationships</font></b>
+</p>
+<ul>
+    <li>
+        Always seek a level of granularity compatible with the needs of the Operational Model’s development. You can always
+        refine the DUs (finer or coarser grained) as the development proceeds: 
+        <ul>
+            <li>
+                Avoid splitting if an appropriate refinement of NFRs can be negotiated. Just because part of a DU is small
+                and stable doe not automatically mean it must be separated from the remaining "volatile" data.
+            </li>
+            <li>
+                Avoid grouping together different sets of requirements at a high level if it creates a "fuzzy" set of
+                non-functional requirements for the DU.
+            </li>
+            <li>
+                The objective is to ensure deployment units are sufficiently granular to identify the key potential
+                infrastructure differentiation - yet are not too granular to create unnecessary work
+            </li>
+        </ul>
+    </li>
+    <li>
+        Is the overall feel of the DUs right? 
+        <ul>
+            <li>
+                If a relationship is not clear - then the deployment units are probably wrong.
+            </li>
+            <li>
+                If everything is related to everything - then the deployment units are probably wrong
+            </li>
+        </ul>
+    </li>
+    <li>
+        Deployment units in one project are not necessarily the same in another
+    </li>
+    <li>
+        Apply your own experience, judgment and common-sense
+    </li>
+    <li>
+        Ensure close co-ordination between the IT Architects responsible for the "components", "deployment units" and
+        "nodes", to ensure all needs are accomplished
+    </li>
+</ul>
+<p>
+    <strong>Identifing "Hot-spot" DUs and inter-DU relationships</strong>
+</p>
+<p>
+    By now, you will probably have a very large amount of non-functional requirements information associated with the
+    solution’s DUs. Moreover, it is probably going to be very difficult or very expensive – or both - to deliver on all of
+    these. For example, some performance requirements may not be compatible with some availability or security needs.
+</p>
+<p>
+    So it is important to identify where the "hot spots" are in the DU tables and matrices. What are the functional and
+    non-functional requirements that the IT system must deliver?<br />
+</p>
+<p style="MARGIN: 6pt 0in">
+    <img height="259" alt="Hot Spots in a DU-DU Characteristics Matrix" src="./../../../core.tech.common.extend-ibm_lic/guidances/guidelines/resources/hot_spots.gif"     width="573" />&nbsp;
+</p>
+<p>
+    <b>Figure 5: "Hot spots" in a DU-DU characteristics matrix</b>
+</p>
+<p>
+    As well as identifying these hot spots, it is probably a good idea to rank the requirements defined in the DU tables
+    and matrices. You may consider a sequential ranking (in which you identify the top requirements in some order), or you
+    might adopt a MoSCoW scheme: "Must", "Should", "Could" and Would."
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Realization Decisions</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="realization_decisions">
+<meta name="uma.presentationName" content="Realization Decisions">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_40aPEFtaEd6bpPG1p_gnYA", "_sct8wGptEeSdxcAgtnf5og", "_scvx8GptEeSdxcAgtnf5og", "_imQ8wG3ZEd-QEvUa7et6CA"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_imQ8wG3ZEd-QEvUa7et6CA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_imQ8wG3ZEd-QEvUa7et6CA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Realization Decisions</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Describes the realization decisions in SOMA.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Realization decisions are related to mapping of conceptual and logical architectural elements to their physical
+    implementations. These decisions comprise different aspect of services and service component realization such as the
+    technologies, the standards, the legacy system functionality that may be leveraged, etc. Existing decisions are
+    consolidated into realization groups to simplify the future implementation. In addition all decisions are validated
+    constantly.
+</p>
+<p>
+    The following table contains key architectural decisions which are usually needed to be made. It is important to
+    mention the scope and context of these decisions are dynamic and constantly changing.
+</p>
+<table title="" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <tbody>
+        <tr>
+            <th scope="col" abbr="">
+                <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                    <p>
+                        Architectural Decisions
+                    </p>
+                </blockquote>
+            </th>
+            <th scope="col" abbr="">
+                <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                    <p>
+                        Group&nbsp;
+                    </p>
+                </blockquote>
+            </th>
+            <th scope="col" abbr="">
+                <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                    <p>
+                        Problem Description
+                    </p>
+                </blockquote>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Creating channel-specific or channel-independent B2B communications between service requesters and
+                providers
+            </td>
+            <td>
+                B2B Communication
+            </td>
+            <td>
+                <ul>
+                    <li>
+                        Can business logic really be channel-logic?
+                    </li>
+                    <li>
+                        Where should validation logic be located?
+                    </li>
+                    <li>
+                        Where business rules should be executed?
+                    </li>
+                    <li>
+                        Can we prevent round-tripping and chatty interactions?
+                    </li>
+                    <li>
+                        Where should data filtering, masking, or transformation occur?
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Should we implement runtime service provisioning and allocation, and UDDI?
+            </td>
+            <td>
+                Service Discovery
+            </td>
+            <td>
+                <ul>
+                    <li>
+                        Should services really provisioned in a dynamic manner at runtime?
+                    </li>
+                    <li>
+                        Should we use UDDI, Service repository, or WebSphere Service Registry and Repository (WSRR)?
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                How we expose batch processes?
+            </td>
+            <td>
+                SOA Batch Processing
+            </td>
+            <td>
+                <ul>
+                    <li>
+                        How can SOA and batch processes be integrated together?
+                    </li>
+                    <li>
+                        In a SOA high availability solution, when do we run batch jobs?
+                    </li>
+                    <li>
+                        Do we run them against the primary data stores?
+                    </li>
+                    <li>
+                        How do we prevent contention?
+                    </li>
+                    <li>
+                        Do we re-use the same services that we have for online transaction processing?
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                How we implement error-handling?<br />
+            </td>
+            <td>
+                Error-Handling
+            </td>
+            <td>
+                <ul>
+                    <li>
+                        Where does error-handling sit in a composite business application environment?
+                    </li>
+                    <li>
+                        Where errors should be reported?
+                    </li>
+                    <li>
+                        How will the business context of an error be determined when many disparate services participate in
+                        a process?
+                    </li>
+                    <li>
+                        Should error-handling be centralized or decentralized?
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                How should we implement transaction support in SOA?
+            </td>
+            <td>
+                <p>
+                    Transaction Processing
+                </p>
+            </td>
+            <td>
+                <ul>
+                    <li>
+                        What does this mean in an SOA context?
+                    </li>
+                    <li>
+                        Should we rely on code, trusted database capabilities or Web Services (WS) Standards such as
+                        WS-Transaction or WS-Coordination?
+                    </li>
+                    <li>
+                        How can we best manage compensating transactions in a BPM world?
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                How we implement service security?
+            </td>
+            <td>
+                Security
+            </td>
+            <td>
+                <ul>
+                    <li>
+                        What assets need to be secure?
+                    </li>
+                    <li>
+                        How and where do we secure services?
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Implementing reporting in SOA solution
+            </td>
+            <td>
+                Reporting
+            </td>
+            <td>
+                <ul>
+                    <li>
+                        How will operational reporting work in an SOA solution?
+                    </li>
+                    <li>
+                        How should BI/MI be delivered?
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Implementing SOA solution instrumentation
+            </td>
+            <td>
+                Application Monitoring
+            </td>
+            <td>
+                <ul>
+                    <li>
+                        How will J2EE monitoring be implemented?
+                    </li>
+                    <li>
+                        Business Activity Monitoring
+                    </li>
+                    <li>
+                        SLA monitoring
+                    </li>
+                    <li>
+                        Usage data collection
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Implementing Legacy code Integration
+            </td>
+            <td>
+                Legacy Integration
+            </td>
+            <td>
+                <ul>
+                    <li>
+                        How can legacy apps be made to participate in a 24/7 SOA?
+                    </li>
+                    <li>
+                        What if they have batch windows?
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <h5>
+        Typical Realization Decisions&nbsp;in SOMA
+    </h5>
+</blockquote>
+<p>
+    To help in this process, the Realization Matrix template can be used to document decisions. A sample Realization Matrix
+    is shown below.
+</p>
+<p>
+    <img style="WIDTH: 696px; HEIGHT: 210px" height="175" alt="SOMA Rent-a-car Realization Matrix"     src="./../../../practice.tech.component_sys_arch_soma.addon-ibm_lic/guidances/guidelines/resources/Technique-Table19.gif" width="600" /> <a id="_Toc101699575" name="_Toc101699575"></a><a id="_Ref85855077" name="_Ref85855077"></a><a id="_Toc85473886" name="_Toc85473886"></a>&nbsp;
+</p>
+<p>
+    There are a number of alternatives to be considered relative to deciding how to realize services:
+</p>
+<ul>
+    <li>
+        <strong>Build vs. buy</strong>
+    </li>
+    <li>
+        <strong>Transformation</strong> uses a combination of techniques including business rules extraction to pull out a
+        segment of functionality to be used independently for the realization of the component's service.
+    </li>
+    <li>
+        <strong>Integration</strong> creates wrappers for legacy applications to access required functionality
+    </li>
+    <li>
+        <strong>Subscription</strong> is based on the availability of a publish-subscribe model (in a message-oriented
+        middleware context) in which a consumer subscribes to the services provided by the provide.<br />
+    </li>
+</ul>
+<p>
+    <strong>Tooling:</strong> The process of establishing realization decisions as well as architectural decisions overall
+    always has been more art than science. It heavily depends on someone's technical knowledge and experience more than
+    objective approach. In addition, many such decisions are project-specific and usually documented retrospectively.
+    Hence, it is hard to find tools or methodology for establishing realization decisions.
+</p>
+<p>
+    One of the known techniques is called QOC (Questions, Options, and Criteria). According to QOC we map each problem
+    statement (question) to a set of options each of which can provide a solution to the problem in question. Decision
+    criteria are associated with the options. Selecting an option can lead to a follow up question and process repeats
+    until a proper solution will be defined.<br />
+</p>
+<p>
+    QOC helps to organize architectural decision process; however, it does not eliminate subjectivity nor does it offer a
+    list of questions to be asked. However, a fully-automated tool in this case probably won't be very effective since an
+    architecture decision will always have a project-specific part as well as will always be subjective.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

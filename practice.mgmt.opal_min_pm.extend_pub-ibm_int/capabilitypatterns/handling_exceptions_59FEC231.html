@@ -1,0 +1,1276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Activity: Handling Exceptions</title>
+<meta name="uma.type" content="Activity">
+<meta name="uma.name" content="handling_exceptions">
+<meta name="uma.presentationName" content="Handling Exceptions">
+<meta name="element_type" content="workflow_detail">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_VrobQYi8Ed6cxeftKauSbA&path=_VrobQYi8Ed6cxeftKauSbA,_KlUqce0IEd--A6Ay9290CA';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_r2PjcNklEd6ol_kqeuqzcw", "_sehTkGptEeSdxcAgtnf5og", "_KlUqce0IEd--A6Ay9290CA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_KlUqce0IEd--A6Ay9290CA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Activity: Handling Exceptions</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/activity.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The activities in this group are intended to resolve exceptions that will occur during the life of the project. By definition, these activities respond to unplanned project events and therefore cannot be scheduled in advance.</td>
+</tr>
+<tr>
+<td valign="top">Extends: <a href="./../../practice.mgmt.opal_std_pm.base-ibm_int/capabilitypatterns/handling_exceptions_899E7D1.html" guid="_-M3UYSBoEd6OP_DioLLOtQ">Handling Exceptions</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="10" class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/handling_exceptions_59FEC231.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Work Breakdown Structure</span></td><td width="1"><img src="./../../images/tab_middle-a_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_TBS" href="./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/handling_exceptions_59FEC231.html_tbs.html"><span style="white-space:nowrap;">Team Allocation</span></a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WPBS" href="./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/handling_exceptions_59FEC231.html_wpbs.html"><span style="white-space:nowrap;">Work Product Usage</span></a></td><td width="21"><img src="./../../images/tab_end-i.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="2"><img src="./../../images/shim.gif" height="2" alt="" title=""></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="5"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Work Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Work Breakdown", summary: "Work Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["steps", "Steps"],
+["id", "Index"],
+["predecessors", "Predecessors"],
+["model_info", "Model Info"],
+["type", "Type"],
+["is_planned", "Planned"],
+["is_repeatable", "Repeatable"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_ongoing", "Ongoing"],
+["is_event_driven", "Event Driven"],
+["is_optional", "Optional"],
+["teams", "Team"]],
+rows: [
+		
+{id: "bc48f887", parentId: "", relPath: ",_V0c1UO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "112", prefix: "", name: "coll_poten_issues_and_mon_their_resol_p605", title: "Collect potential issues and monitor their resolution (IMSP605)", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/coll_poten_issues_and_mon_their_resol_p605_BF9213F4.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "b3c8c12", parentId: "bc48f887", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1Ue0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "project_manager", title: "Project Manager", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/project_manager_AE2B280A.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "aea5906", parentId: "bc48f887", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1Uu0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "any_role", title: "Any Role", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/any_role_B8C9081A.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e0eca290", parentId: "bc48f887", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "action_log", title: "Action Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_log_7D5AEA39.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e60d86ca", parentId: "e0eca290", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA,_V0c1We0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "action_control_doc", title: "Action Control Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_control_doc_374EEC48.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "f1e72ece", parentId: "bc48f887", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "event_log", title: "Event Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/event_log_CD9479F1.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "88443197", parentId: "f1e72ece", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1We0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "action_control_doc", title: "Action Control Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_control_doc_374EEC48.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7b28df6d", parentId: "f1e72ece", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:true, 
+	index: "", prefix: "", name: "action_log", title: "Action Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_log_7D5AEA39.html", 
+	predecessors: "", info: "Optional Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "c504d9b9", parentId: "7b28df6d", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA,_V0c1We0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "", prefix: "", name: "action_control_doc", title: "Action Control Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_control_doc_374EEC48.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "18420b89", parentId: "f1e72ece", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_Zs2qQ-0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:true, 
+	index: "", prefix: "", name: "change_log", title: "Change Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_log_7178A2A6.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "4de1d624", parentId: "18420b89", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_Zs2qQ-0IEd--A6Ay9290CA,_V0c1XO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "", prefix: "", name: "change_request", title: "Change Request", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_request_D47BA51.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "211a879e", parentId: "f1e72ece", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_Zs2qRO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "change_order", title: "Change Order", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_order_EC9A00E7.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "fd0ebc00", parentId: "f1e72ece", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1XO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "change_request", title: "Change Request", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_request_D47BA51.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "dd6c0a", parentId: "f1e72ece", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT5PEWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "contact_list", title: "Contact List", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/contact_list_1F25516.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1638aa3c", parentId: "f1e72ece", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT3Z4WptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "delivery_control_doc", title: "Delivery Control Documentation", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/delivery_control_doc_2DA675D3.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "82aad628", parentId: "f1e72ece", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT4A8WptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "findings_log", title: "Findings Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/findings_log_11EC48D5.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "f304876a", parentId: "f1e72ece", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1VO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "issue_document", title: "Issue Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_document_8423F613.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "950720eb", parentId: "f1e72ece", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1Ve0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:true, 
+	index: "", prefix: "", name: "issue_log", title: "Issue Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_log_72BD0A29.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "c7f46ba5", parentId: "950720eb", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1Ve0IEd--A6Ay9290CA,_V0c1VO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "", prefix: "", name: "issue_document", title: "Issue Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_document_8423F613.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1710ba5f", parentId: "f1e72ece", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT4oAWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "risk_definition", title: "Risk Definition", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/risk_definition_EFAACC9A.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e94bc4b5", parentId: "f1e72ece", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT52IWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "staff_list", title: "Staff List", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/staff_list_FA4268F4.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "84972a3f", parentId: "f1e72ece", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT6dMWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "staff_schedule", title: "Staff Schedule", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/staff_schedule_1F72DF81.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "38869c73", parentId: "bc48f887", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1Ve0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "issue_log", title: "Issue Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_log_72BD0A29.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "a2941655", parentId: "38869c73", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1Ve0IEd--A6Ay9290CA,_V0c1VO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "issue_document", title: "Issue Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_document_8423F613.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "aae27cb4", parentId: "bc48f887", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1U-0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "issue_mgmt_pln", title: "Issue Management Plan ", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_mgmt_pln_90297D2.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "3fa822", parentId: "bc48f887", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "action_log", title: "Action Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_log_7D5AEA39.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7bed415a", parentId: "3fa822", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA,_V0c1We0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "action_control_doc", title: "Action Control Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_control_doc_374EEC48.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "832be6b6", parentId: "bc48f887", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1XO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "change_request", title: "Change Request", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_request_D47BA51.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "eac38b6a", parentId: "bc48f887", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1Wu0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "compliance_incident_doc", title: "Compliance Incident Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/compliance_incident_doc_41ECCC58.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7c83f744", parentId: "bc48f887", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "event_log", title: "Event Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/event_log_CD9479F1.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e963354", parentId: "7c83f744", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1We0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "action_control_doc", title: "Action Control Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_control_doc_374EEC48.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d680fade", parentId: "7c83f744", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:true, 
+	index: "", prefix: "", name: "action_log", title: "Action Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_log_7D5AEA39.html", 
+	predecessors: "", info: "Optional Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ed312a16", parentId: "d680fade", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA,_V0c1We0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "", prefix: "", name: "action_control_doc", title: "Action Control Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_control_doc_374EEC48.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "41f5671e", parentId: "7c83f744", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_Zs2qQ-0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:true, 
+	index: "", prefix: "", name: "change_log", title: "Change Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_log_7178A2A6.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d60ff483", parentId: "41f5671e", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_Zs2qQ-0IEd--A6Ay9290CA,_V0c1XO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "", prefix: "", name: "change_request", title: "Change Request", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_request_D47BA51.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "2fe05797", parentId: "7c83f744", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_Zs2qRO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "change_order", title: "Change Order", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_order_EC9A00E7.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "bb2c1c5", parentId: "7c83f744", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1XO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "change_request", title: "Change Request", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_request_D47BA51.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "6870bf99", parentId: "7c83f744", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT5PEWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "contact_list", title: "Contact List", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/contact_list_1F25516.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "b8040e39", parentId: "7c83f744", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT3Z4WptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "delivery_control_doc", title: "Delivery Control Documentation", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/delivery_control_doc_2DA675D3.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "32fc05ad", parentId: "7c83f744", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT4A8WptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "findings_log", title: "Findings Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/findings_log_11EC48D5.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "b57d01dd", parentId: "7c83f744", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1VO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "issue_document", title: "Issue Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_document_8423F613.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "b56c861", parentId: "7c83f744", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1Ve0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:true, 
+	index: "", prefix: "", name: "issue_log", title: "Issue Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_log_72BD0A29.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "496ba05b", parentId: "b56c861", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1Ve0IEd--A6Ay9290CA,_V0c1VO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "", prefix: "", name: "issue_document", title: "Issue Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_document_8423F613.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "9c891c26", parentId: "7c83f744", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT4oAWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "risk_definition", title: "Risk Definition", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/risk_definition_EFAACC9A.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "f6868296", parentId: "7c83f744", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT52IWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "staff_list", title: "Staff List", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/staff_list_FA4268F4.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "6a7c83e0", parentId: "7c83f744", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT6dMWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "staff_schedule", title: "Staff Schedule", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/staff_schedule_1F72DF81.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "49f4574a", parentId: "bc48f887", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1WO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "risk_log", title: "Risk Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/risk_log_48B5D832.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "c9a49064", parentId: "49f4574a", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1WO0IEd--A6Ay9290CA,_qT4oAWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "risk_definition", title: "Risk Definition", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/risk_definition_EFAACC9A.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "fcef68d6", parentId: "bc48f887", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1Xe0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "root_cause_analysis", title: "Root Cause Analysis Record", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/root_cause_analysis_FBE0CE67.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "b348288c", parentId: "bc48f887", relPath: ",_V0c1UO0IEd--A6Ay9290CA,_V0c1W-0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "situation_analysis_doc", title: "Situation Analysis Documentation", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/situation_analysis_doc_92265C10.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "382c2e6b", parentId: "", relPath: ",_XxB2wO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "113", prefix: "", name: "analyze_critical_situations_imsp525", title: "Analyze critical situations (IMSP525)", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/analyze_critical_situations_imsp525_64D05D1A.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true]},
+	
+		
+		
+{id: "5c9524eb", parentId: "382c2e6b", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1Ue0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "project_manager", title: "Project Manager", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/project_manager_AE2B280A.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "67403899", parentId: "382c2e6b", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1Uu0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "any_role", title: "Any Role", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/any_role_B8C9081A.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d97349a3", parentId: "382c2e6b", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "action_log", title: "Action Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_log_7D5AEA39.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d64ee0b1", parentId: "d97349a3", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA,_V0c1We0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "action_control_doc", title: "Action Control Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_control_doc_374EEC48.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "45c045de", parentId: "382c2e6b", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "event_log", title: "Event Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/event_log_CD9479F1.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "89543870", parentId: "45c045de", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1We0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "action_control_doc", title: "Action Control Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_control_doc_374EEC48.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ebd71dc0", parentId: "45c045de", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:true, 
+	index: "", prefix: "", name: "action_log", title: "Action Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_log_7D5AEA39.html", 
+	predecessors: "", info: "Optional Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "676a17ca", parentId: "ebd71dc0", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA,_V0c1We0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "", prefix: "", name: "action_control_doc", title: "Action Control Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_control_doc_374EEC48.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "cb41ee20", parentId: "45c045de", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_Zs2qQ-0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:true, 
+	index: "", prefix: "", name: "change_log", title: "Change Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_log_7178A2A6.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1e3eee3c", parentId: "cb41ee20", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_Zs2qQ-0IEd--A6Ay9290CA,_V0c1XO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "", prefix: "", name: "change_request", title: "Change Request", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_request_D47BA51.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "726828ae", parentId: "45c045de", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_Zs2qRO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "change_order", title: "Change Order", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_order_EC9A00E7.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "cb75ff7c", parentId: "45c045de", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1XO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "change_request", title: "Change Request", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_request_D47BA51.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "3e604220", parentId: "45c045de", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT5PEWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "contact_list", title: "Contact List", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/contact_list_1F25516.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "41e4f5a0", parentId: "45c045de", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT3Z4WptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "delivery_control_doc", title: "Delivery Control Documentation", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/delivery_control_doc_2DA675D3.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "98db4f35", parentId: "45c045de", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT4A8WptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "findings_log", title: "Findings Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/findings_log_11EC48D5.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "c60946f", parentId: "45c045de", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1VO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "issue_document", title: "Issue Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_document_8423F613.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "48940bad", parentId: "45c045de", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1Ve0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:true, 
+	index: "", prefix: "", name: "issue_log", title: "Issue Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_log_72BD0A29.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "6388397b", parentId: "48940bad", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1Ve0IEd--A6Ay9290CA,_V0c1VO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "", prefix: "", name: "issue_document", title: "Issue Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_document_8423F613.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "b9eeeb13", parentId: "45c045de", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT4oAWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "risk_definition", title: "Risk Definition", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/risk_definition_EFAACC9A.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "2a00b3fb", parentId: "45c045de", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT52IWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "staff_list", title: "Staff List", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/staff_list_FA4268F4.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "3a492575", parentId: "45c045de", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT6dMWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "staff_schedule", title: "Staff Schedule", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/staff_schedule_1F72DF81.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "851276e7", parentId: "382c2e6b", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1Ve0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "issue_log", title: "Issue Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_log_72BD0A29.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "f2f0937e", parentId: "851276e7", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1Ve0IEd--A6Ay9290CA,_V0c1VO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "issue_document", title: "Issue Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_document_8423F613.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "87d7c24a", parentId: "382c2e6b", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1U-0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "issue_mgmt_pln", title: "Issue Management Plan ", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_mgmt_pln_90297D2.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ed7418b6", parentId: "382c2e6b", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "action_log", title: "Action Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_log_7D5AEA39.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "f8578a6c", parentId: "ed7418b6", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA,_V0c1We0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "action_control_doc", title: "Action Control Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_control_doc_374EEC48.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "5c025d66", parentId: "382c2e6b", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_XxB2we0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "meeting_documentation", title: "Meeting Documentation", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/meeting_documentation_53697130.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "70349976", parentId: "382c2e6b", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1Xe0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "root_cause_analysis", title: "Root Cause Analysis Record", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/root_cause_analysis_FBE0CE67.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "620bbec4", parentId: "382c2e6b", relPath: ",_XxB2wO0IEd--A6Ay9290CA,_V0c1W-0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "situation_analysis_doc", title: "Situation Analysis Documentation", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/situation_analysis_doc_92265C10.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "5abbe23a", parentId: "", relPath: ",_Zs2qQO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "114", prefix: "", name: "manage_chg_req_imsp610", title: "Manage change request (IMSP610)", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/manage_chg_req_imsp610_28081EC8.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "41a072d7", parentId: "5abbe23a", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_Zs2qQe0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "stakeholder", title: "Stakeholder", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/stakeholder_16A132DE.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "9a59bc99", parentId: "5abbe23a", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_V0c1Ue0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "project_manager", title: "Project Manager", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/project_manager_AE2B280A.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "c31036b5", parentId: "5abbe23a", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_Zs2qQu0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "agreement", title: "Agreement", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/agreement_213F12EE.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "811276d7", parentId: "5abbe23a", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_Zs2qQ-0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "change_log", title: "Change Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_log_7178A2A6.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "cdbf3439", parentId: "811276d7", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_Zs2qQ-0IEd--A6Ay9290CA,_V0c1XO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "change_request", title: "Change Request", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_request_D47BA51.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "4a5c5d13", parentId: "5abbe23a", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_Zs2qQu0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "agreement", title: "Agreement", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/agreement_213F12EE.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "6c152db1", parentId: "5abbe23a", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_Zs2qRO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "change_order", title: "Change Order", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_order_EC9A00E7.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "77f40512", parentId: "5abbe23a", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "event_log", title: "Event Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/event_log_CD9479F1.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "bfd32140", parentId: "77f40512", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1We0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "action_control_doc", title: "Action Control Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_control_doc_374EEC48.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1729627a", parentId: "77f40512", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:true, 
+	index: "", prefix: "", name: "action_log", title: "Action Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_log_7D5AEA39.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "67945e64", parentId: "1729627a", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA,_V0c1We0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "", prefix: "", name: "action_control_doc", title: "Action Control Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_control_doc_374EEC48.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "c64daa80", parentId: "77f40512", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_Zs2qQ-0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:true, 
+	index: "", prefix: "", name: "change_log", title: "Change Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_log_7178A2A6.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "244d082c", parentId: "c64daa80", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_Zs2qQ-0IEd--A6Ay9290CA,_V0c1XO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "", prefix: "", name: "change_request", title: "Change Request", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_request_D47BA51.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "766cdcd4", parentId: "77f40512", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_Zs2qRO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "change_order", title: "Change Order", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_order_EC9A00E7.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d265918c", parentId: "77f40512", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1XO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "change_request", title: "Change Request", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_request_D47BA51.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "23e616f5", parentId: "77f40512", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT5PEWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "contact_list", title: "Contact List", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/contact_list_1F25516.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "92ec2137", parentId: "77f40512", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT3Z4WptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "delivery_control_doc", title: "Delivery Control Documentation", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/delivery_control_doc_2DA675D3.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "a75575c7", parentId: "77f40512", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT4A8WptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "findings_log", title: "Findings Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/findings_log_11EC48D5.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "f1f480b3", parentId: "77f40512", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1VO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "issue_document", title: "Issue Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_document_8423F613.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "51d37901", parentId: "77f40512", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1Ve0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:true, 
+	index: "", prefix: "", name: "issue_log", title: "Issue Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_log_72BD0A29.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7f0e2367", parentId: "51d37901", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1Ve0IEd--A6Ay9290CA,_V0c1VO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "", prefix: "", name: "issue_document", title: "Issue Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_document_8423F613.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d02c043e", parentId: "77f40512", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT4oAWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "risk_definition", title: "Risk Definition", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/risk_definition_EFAACC9A.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d4bc7664", parentId: "77f40512", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT52IWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "staff_list", title: "Staff List", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/staff_list_FA4268F4.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "50863ea0", parentId: "77f40512", relPath: ",_Zs2qQO0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT6dMWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "staff_schedule", title: "Staff Schedule", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/staff_schedule_1F72DF81.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "2f9daef4", parentId: "", relPath: ",_aukl8O0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "115", prefix: "", name: "manage_progress_and_effect_of_actions_p605", title: "Manage progress and effectiveness of actions (IMSP605)", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/manage_progress_and_effect_of_actions_p605_4B57E17E.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "4fae9156", parentId: "2f9daef4", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1Ue0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "project_manager", title: "Project Manager", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/project_manager_AE2B280A.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "5141c167", parentId: "2f9daef4", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1Uu0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "any_role", title: "Any Role", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/any_role_B8C9081A.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "be92f2eb", parentId: "2f9daef4", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "action_log", title: "Action Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_log_7D5AEA39.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ccc3e719", parentId: "be92f2eb", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA,_V0c1We0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "action_control_doc", title: "Action Control Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_control_doc_374EEC48.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "476304d5", parentId: "2f9daef4", relPath: ",_aukl8O0IEd--A6Ay9290CA,_aukl8e0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "operational_schedule", title: "Operational Schedule", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/operational_schedule_39F0F594.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e4f55d8f", parentId: "2f9daef4", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "event_log", title: "Event Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/event_log_CD9479F1.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "89f968cb", parentId: "e4f55d8f", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1We0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "action_control_doc", title: "Action Control Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_control_doc_374EEC48.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e85e27db", parentId: "e4f55d8f", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:true, 
+	index: "", prefix: "", name: "action_log", title: "Action Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_log_7D5AEA39.html", 
+	predecessors: "", info: "Mandatory Input, Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "267e5a81", parentId: "e85e27db", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA,_V0c1We0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "", prefix: "", name: "action_control_doc", title: "Action Control Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_control_doc_374EEC48.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ccb8ef42", parentId: "e4f55d8f", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_Zs2qQ-0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:true, 
+	index: "", prefix: "", name: "change_log", title: "Change Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_log_7178A2A6.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1b0c6de0", parentId: "ccb8ef42", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_Zs2qQ-0IEd--A6Ay9290CA,_V0c1XO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "", prefix: "", name: "change_request", title: "Change Request", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_request_D47BA51.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "344dd720", parentId: "e4f55d8f", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_Zs2qRO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "change_order", title: "Change Order", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_order_EC9A00E7.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "80cc0150", parentId: "e4f55d8f", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1XO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "change_request", title: "Change Request", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/change_request_D47BA51.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "f2848b74", parentId: "e4f55d8f", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT5PEWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "contact_list", title: "Contact List", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/contact_list_1F25516.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ca5e836c", parentId: "e4f55d8f", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT3Z4WptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "delivery_control_doc", title: "Delivery Control Documentation", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/delivery_control_doc_2DA675D3.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "8738730e", parentId: "e4f55d8f", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT4A8WptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "findings_log", title: "Findings Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/findings_log_11EC48D5.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ccb96f1e", parentId: "e4f55d8f", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1VO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "issue_document", title: "Issue Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_document_8423F613.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "48a8ea", parentId: "e4f55d8f", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1Ve0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:true, 
+	index: "", prefix: "", name: "issue_log", title: "Issue Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_log_72BD0A29.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "5839ecba", parentId: "48a8ea", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_V0c1Ve0IEd--A6Ay9290CA,_V0c1VO0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 3, hasChildren:false, 
+	index: "", prefix: "", name: "issue_document", title: "Issue Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/issue_document_8423F613.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "a2a4e63d", parentId: "e4f55d8f", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT4oAWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "risk_definition", title: "Risk Definition", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/risk_definition_EFAACC9A.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "fa4459d7", parentId: "e4f55d8f", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT52IWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "staff_list", title: "Staff List", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/staff_list_FA4268F4.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "6dc99f11", parentId: "e4f55d8f", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1V-0IEd--A6Ay9290CA,_qT6dMWptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "staff_schedule", title: "Staff Schedule", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/staff_schedule_1F72DF81.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "716a8195", parentId: "2f9daef4", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "action_log", title: "Action Log", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_log_7D5AEA39.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e5c5e443", parentId: "716a8195", relPath: ",_aukl8O0IEd--A6Ay9290CA,_V0c1Vu0IEd--A6Ay9290CA,_V0c1We0IEd--A6Ay9290CA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "action_control_doc", title: "Action Control Document", url: "./../../practice.mgmt.opal_min_pm.extend_pub-ibm_int/capabilitypatterns/action_control_doc_374EEC48.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

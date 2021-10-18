@@ -1,0 +1,507 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tool Mentor: Create a Low Fidelity Storyboard Using IBM Rational Requirements Composer</title>
+<meta name="uma.type" content="ToolMentor">
+<meta name="uma.name" content="create_a_low_fidelity_storyboard_using_rrc">
+<meta name="uma.presentationName" content="Create a Low Fidelity Storyboard Using IBM Rational Requirements Composer">
+<meta name="uma.category" content="Tool:rational_requirements_composer:Rational Requirements Composer">
+<meta name="element_type" content="tool_mentor">
+<meta name="tool" content="Rational Requirements Composer">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_w1JD4B4jEd2bS8fFOQ7WWA", "_shH7oGptEeSdxcAgtnf5og", "_shM0IGptEeSdxcAgtnf5og", "__EcHIHU2Ed2KwLyf6ks5lg"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_4ghTYHu_Ed6TsOLr_oVa_g", "__EcHIHU2Ed2KwLyf6ks5lg"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_VTspMMRfEdyD76CYS6Ta7A", "_2o2r0HU_Ed2KwLyf6ks5lg", "__EcHIHU2Ed2KwLyf6ks5lg"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="__EcHIHU2Ed2KwLyf6ks5lg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Tool Mentor: Create a Low Fidelity Storyboard Using IBM Rational Requirements Composer</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/toolmentor.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Create simple low-fidelity storyboards for UI sketching to clarify and support requirements.</td>
+</tr>
+<tr>
+<td>Tool: <a href="./../../../core.default.tool_def.extend-ibm/tools/rational_requirements_composer_2ED5A2CA.html" guid="_2o2r0HU_Ed2KwLyf6ks5lg">Rational Requirements Composer</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.use_case_driven_dev.base/tasks/detail_use_case_scenarios_3DBC6A10.html" guid="_SL7N0LPdEduocbW-TPTq7A">Detail Use-Case Scenarios</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    This tool mentor describes creating a simple low-fidelity storyboard using IBM Rational Requirements Composer.
+    Low-fidelity storyboards are typically used for UI sketching as a way to help clarify and support requirements. They
+    are not meant to represent the actual GUI design. The Rational Requirements Composer has powerful storyboarding
+    capabilities that allow analysts to quickly create storyboards and link them to other requirements artifacts.<br />
+    <br />
+    In this example, a storyboard is being developed for an online CD shopping application. Unlike use cases, which
+    describe a complete usage of the system by an actor, a storyboard focuses on a very specific story of a persona
+    performing a single discrete action. In our storyboard example, our persona, Gordon MacIntyre, searches for and
+    purchases a Beethoven CD.
+</p>
+<h4>
+    Define Persona
+</h4>
+<p dir="ltr">
+    Define your persona, if you are using one. Personas can be useful for keeping your storyboards focused on a very
+    specific user context and user goal. Remember that storyboards are meant to complement your use cases, and are not a
+    replacement for them! Instead, a storyboard can be thought of as an instantiation of a use case flow – they illustrate
+    this flow in the context of the persona you have identified. Storyboards are a powerful technique to help describe
+    information that is best communicated graphically (such as usability, user experience, user interface standards and
+    other requirements).<br />
+    <br />
+    If you are not using use cases to document functional requirements, then storyboards become even more important for
+    identifying user context and scenarios.<br />
+    <br />
+    Rational Requirements Composer supports the creation and editing of rich text documents. In this example, we have used
+    a native rich text document to document our persona:
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <p>
+                <img alt="Persona Example" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/image002.jpg" />&nbsp;
+            </p>
+            <p>
+                <strong>Figure 1: Persona example</strong>
+            </p>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<h4>
+    Get Organized
+</h4>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    This is particularly important if you are planning to do a lot of storyboards. Take advantage of the subfolders to
+    Requirements Composer to manage and group common artifacts. Because personas, parts and sketches can be used on
+    multiple storyboards, it is best to have one central place for storing these, separate from the storyboards themselves.
+    For example, have a folder for parts, a folder for sketches, a folder for persona, and a set of folders to group
+    related storyboards. Meaningful names and titles will also help to keep you organized.<br />
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <p dir="ltr" style="MARGIN-RIGHT: 0px">
+                <img alt="example folder structure" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/example_folder_structure.JPG" /><br />
+                <strong>Figure 2 : Example folder structure</strong>
+            </p>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<h4>
+    Create Frame List.
+</h4>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    The frame list is the outline of a storyboard (analogous to use case steps), that helps us to visualize a feature, a
+    particular use case scenario, or a portion of the scenario. Remember that storyboards do not have branching or looping
+    logic; instead they are a straight-line path through one specific execution of the target system. Starting with the
+    frame list keeps the storyboard organized and helps to nail down the step-by-step outline before delving into the
+    details of each frame/sketch. Each frame in the list has a title and a description – a good description helps to flesh
+    out the usage scenario. At the very least, write down the title for each frame, and provide a few lines or bullet
+    points of additional description for any frames that are complex or still unclear. Spend enough time defining and
+    refining the frame list before you start developing the individual frames – it is best to get the story straight in
+    plan text before adding the images.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <p dir="ltr" style="MARGIN-RIGHT: 0px">
+                <img height="750" alt="refined frame list" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/refined_frame_list.JPG" width="408" /><br />
+                <strong>Figure 3 : Refined frame list</strong>
+            </p>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<h4>
+    Draw Frames
+</h4>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    At this stage, each item in the list has an empty frame associated with it. At this point, you can start drawing the
+    individual frames directly in the storyboard. The other approach to take is to start creating a catalog of sketches and
+    parts that can be reused in multiple frames and in multiple storyboards.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p dir="ltr" style="MARGIN-RIGHT: 0px">
+        <em>In Requirements Composer, a user interface sketch is mock-up of a software product's graphical user interface
+        at any one point in the application's operation. [Rational Requirements Composer v1.0, Help]<br />
+        <br />
+        In Requirements Composer, a user interface sketch part is a reusable set of user interface elements. You can use a
+        part to populate sketches, screen flows, and storyboards. Parts can contain a single element, such as a menu, or it
+        can include many elements that are aggregated in a container element, such as a panel or group. Reuse parts in
+        multiple user interface sketches, screen flows, and storyboard frames to create persistent user interface elements.
+        [Rational Requirements Composer v1.0, Help]</em>
+    </p>
+</blockquote>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    Parts can be extracted from frames or sketches at any time – even after the storyboard has been constructed. Therefore
+    it is important to keep your parts and sketches well-organized. The main advantage is reuse and change management – it
+    is far simpler to modify a single part and have that be automatically updated in all sketches and frames that use that
+    part, than to have to re-draw these UI elements in potentially dozens of storyboard frames.<br />
+    <br />
+    In this example, we have created parts for the common sidebar menu, page header, shopping cart, and CD listing item:
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <p dir="ltr" style="MARGIN-RIGHT: 0px">
+                <img alt="parts 1" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/parts_1.JPG" />
+            </p>
+            <p dir="ltr" style="MARGIN-RIGHT: 0px">
+                <img height="95" alt="parts 2" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/parts_2.JPG" width="835" />&nbsp;
+            </p>
+            <p dir="ltr" style="MARGIN-RIGHT: 0px">
+                <img alt="parts 3" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/parts_3.JPG" />
+            </p>
+            <p dir="ltr" style="MARGIN-RIGHT: 0px">
+                <img alt="parts 4" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/parts_4.JPG" />
+            </p>
+            <p dir="ltr" style="MARGIN-RIGHT: 0px">
+                <strong>Figure 4 : Parts</strong>
+            </p>
+        </blockquote>
+    </blockquote>
+</blockquote><br dir="ltr" style="MARGIN-RIGHT: 0px" />
+<br />
+<p style="MARGIN-RIGHT: 0px">
+    The example storyboard we will walk through has 16 frames, but is built off of 5 sketches.<br />
+    <br />
+    Refer to the Requirements Composer Help for detailed instructions on:
+</p>
+<ul>
+    <li>
+        <div style="MARGIN-RIGHT: 0px">
+            Creating a user interface sketch part
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-RIGHT: 0px">
+            Creating a user interface sketch
+        </div>
+    </li>
+</ul>
+<h4 style="MARGIN-RIGHT: 0px">
+    Populate Frames
+</h4>
+<p style="MARGIN-RIGHT: 0px">
+    Start populating your frames. Frame content can come from one of three places:<br />
+    1) UI elements can be directly drawn into the frame.<br />
+    2) A frame can inherit content from a sketch. Inheritance means that the frame is based on an existing sketch, and if
+    that sketch changes, then the frame will automatically be updated.<br />
+    3) A frame can inherit content from a previous or an earlier frame. This creates a dependency chain in your storyboard,
+    which helps to identify common frames.
+</p>
+<h5 style="MARGIN-RIGHT: 0px">
+    Frame 1
+</h5>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    The welcome page is a frame that was drawn directly into the storyboard. To create a standalone frame that is not based
+    on a sketch, double-click any frame at the bottom of the frame list and it will open in the editor. Remember that this
+    is the frame editor, and everything you do is part of this storyboard and not available for reuse in other storyboards.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <p style="MARGIN-RIGHT: 0px">
+                <img alt="welcome" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/welcome_page.JPG" />
+            </p>
+            <p style="MARGIN-RIGHT: 0px">
+                <strong>Figure 5 : Frame 1 - Welcome Page</strong>
+            </p>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<h5 style="MARGIN-RIGHT: 0px">
+    Frame 2
+</h5>
+<p style="MARGIN-RIGHT: 0px">
+    This frame is an example of a frame that inherits from a sketch. At this point in our storyboard, Gordon (our persona)
+    has navigated to the CD catalog page. Frame 2 shows the initial view of the CD catalog screen and was built from the CD
+    catalog sketch. To create this frame, do the following:
+</p>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    Select the "Create from an existing sketch" option in the blank frame.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <p style="MARGIN-RIGHT: 0px">
+                <img height="202" alt="creating from an existing sketch"                 src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/creating_from_an_existing_sketch.JPG" width="934" />&nbsp;
+            </p>
+            <p dir="ltr" style="MARGIN-RIGHT: 0px">
+                <strong>Figure 6 : Creating from an existing sketch</strong>
+            </p>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    Find your sketch in the list and click "OK". The frame is now populated with an instance of the sketch, that can be
+    edited without affecting the original sketch.
+</p>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    Edit the frame to add additional information and data as needed to help tell the story. In this example, we added some
+    data to the shopping cart area. In the original sketch, this area is labeled but not populated so that it can be reused
+    appropriately in any storyboard frame.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <p style="MARGIN-RIGHT: 0px">
+                <img height="589" alt="populated frame" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/populated_frame.JPG" width="835" />&nbsp;
+            </p>
+            <p style="MARGIN-RIGHT: 0px">
+                <strong>Figure 7 : Populated frame</strong>
+            </p>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<h5 style="MARGIN-RIGHT: 0px">
+    Frame 3
+</h5>
+<p style="MARGIN-RIGHT: 0px">
+    Gordon has entered "Beethoven" as the search criteria. Because this is still the same screen, we can base this frame
+    off of its predecessor and simply edit the data to describe this step of the story.
+</p>
+<p style="MARGIN-RIGHT: 0px">
+    Select the "Create from the previous frame" option in the blank frame. Since it is created from frame 2 (NOT from the
+    original sketch), it has all the frame 2 customizations on it (namely, the populated shopping cart).
+</p>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    Edit this frame to illustrate that Gordon is doing a search – enter "Beethoven" into the quick search text, and add a
+    descriptive callout.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <p style="MARGIN-RIGHT: 0px">
+                <img height="585" alt="entering search criteria" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/entering_search_criteria.JPG"                 width="830" />&nbsp;
+            </p>
+            <p style="MARGIN-RIGHT: 0px">
+                <strong>Figure 8: Frame 3 – entering search criteria</strong>
+            </p>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<h5 style="MARGIN-RIGHT: 0px">
+    Frames 4 and 5
+</h5>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    The system returns the search results and Gordon picks a CD to view. In these two frames, we continue building the
+    dependency chain that started at frame 2 (by choosing "Create from the previous frame") and simply edit frame 4 to
+    display the search results, and frame 5 to indicate that Gordon is picking a CD to view.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <p style="MARGIN-RIGHT: 0px">
+                <img height="589" alt="search results displayed" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/search_results_displayed.JPG"                 width="824" />&nbsp;
+            </p>
+            <p style="MARGIN-RIGHT: 0px">
+                <strong>Figure 9 : Frame 4 - search results are displayed</strong>
+            </p>
+            <p style="MARGIN-RIGHT: 0px">
+                <img alt="cd selected for viewing" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/cd_selected_for_viewing.JPG" />&nbsp;
+            </p>
+            <p style="MARGIN-RIGHT: 0px">
+                <strong>Figure 10 : Frame 5- a CD is selected for viewing</strong>
+            </p>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<h5 style="MARGIN-RIGHT: 0px">
+    Frames 6 and 7
+</h5>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    At this point in the story, we are displaying the details of a specific CD. Frame 6, then, is based off of a different
+    sketch called "CD Details". Although this sketch is different, you may notice that the sidebar menu looks exactly the
+    same. This is because it is a reusable part that is being shared on both sketches. Frame 7 shows Gordon adding this CD
+    to his cart, and is based off of frame 6. You'll notice that this has created a new dependency chain between frames 6
+    and 7.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <p style="MARGIN-RIGHT: 0px">
+                <img height="596" alt="view details" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/view_details.JPG" width="822" />
+            </p>
+            <p style="MARGIN-RIGHT: 0px">
+                <strong>Figure 11 : Frame 6 - view details of a CD</strong>
+            </p>
+            <p style="MARGIN-RIGHT: 0px">
+                <img height="283" alt="add cd to cart" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/add_cd_to_cart.JPG" width="546" />
+            </p>
+            <p style="MARGIN-RIGHT: 0px">
+                <strong>Figure 12: Frame 7 - Add CD to cart</strong>
+            </p>
+            <p style="MARGIN-RIGHT: 0px">
+                <img height="123" alt="dependency chain" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/dependency_chain.JPG" width="179" />
+            </p>
+            <p style="MARGIN-RIGHT: 0px">
+                <strong>Figure 13 : Dependency chain between frames 6 and 7</strong>
+            </p>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<h5 style="MARGIN-RIGHT: 0px">
+    Frame 8
+</h5>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    We have the system return to the catalog search results, and Gordon decides to complete his purchase by checking out.
+    This frame is based off of frame 5, and so continues the dependency chain, with the CD showing in the shopping cart.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <p style="MARGIN-RIGHT: 0px">
+                <img height="641" alt="crete from an earlier frame" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/create_from_earlier_frame.JPG"                 width="936" />
+            </p>
+            <p style="MARGIN-RIGHT: 0px">
+                <strong>Figure 14: Create from an earlier frame</strong>
+            </p>
+        </blockquote>
+        <p style="MARGIN-RIGHT: 0px">
+            <img height="600" alt="frame 8" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/frame_8.JPG" width="830" />
+        </p>
+        <p dir="ltr" style="MARGIN-RIGHT: 0px">
+            <strong>Figure 15 : Frame 8</strong>
+        </p>
+    </blockquote>
+</blockquote>
+<h5 style="MARGIN-RIGHT: 0px">
+    Frames 9 – 12
+</h5>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    At this point, a new dialogue begins for the checkout procedure. Frames 9-12 show Gordon entering his personal,
+    shipping, and contact information and are all based off a common sketch.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <p style="MARGIN-RIGHT: 0px">
+                <img height="100" alt="create from existing sketch" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/create_from_existing_sketch.JPG"                 width="928" />
+            </p>
+            <p dir="ltr" style="MARGIN-RIGHT: 0px">
+                <strong>Figure 16: Create from existing sketch</strong>
+            </p>
+            <p style="MARGIN-RIGHT: 0px">
+                <img height="616" alt="checkout process begins" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/checkout_process_begins.JPG"                 width="817" />
+            </p>
+            <p dir="ltr" style="MARGIN-RIGHT: 0px">
+                <strong>Figure 17: Frame 9, where the checkout process begins</strong>
+            </p>
+            <p style="MARGIN-RIGHT: 0px">
+                <img alt="dependency chain frames 9-12" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/dependency_chain_frames_9-12.JPG" />
+            </p>
+            <p style="MARGIN-RIGHT: 0px">
+                <strong>Figure 18: Dependency chain between frames 9-12</strong>
+            </p>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<h5 style="MARGIN-RIGHT: 0px">
+    Frames 13 and 14
+</h5>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    These frames represent an additional dialogue where Gordon enters his credit card information.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <p style="MARGIN-RIGHT: 0px">
+                <img height="581" alt="entering credit card info" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/entering_credit_card_info.JPG"                 width="821" />
+            </p>
+            <p style="MARGIN-RIGHT: 0px">
+                <strong>Figure 19: Frame 13 - entering credit card information</strong>
+            </p>
+            <p style="MARGIN-RIGHT: 0px">
+                <img height="446" alt="credit card info entered" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/credit_card_info_entered.JPG"                 width="537" />
+            </p>
+            <p style="MARGIN-RIGHT: 0px">
+                <strong>Figure 20: Frame 14 - credit card information has been entered</strong>
+            </p>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<h5 style="MARGIN-RIGHT: 0px">
+    Frame 15
+</h5>
+<p dir="ltr" style="MARGIN-RIGHT: 0px">
+    This is a standalone frame showing the order confirmation.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <p style="MARGIN-RIGHT: 0px">
+            <img height="581" alt="confirmation page" src="./../../../core.tech.common.extend_supp-ibm/guidances/toolmentors/resources/confirmation_page.JPG" width="799" />
+        </p>
+        <p style="MARGIN-RIGHT: 0px">
+            <strong>Figure 21: Frame 15 - confirmation page</strong>
+        </p>
+    </blockquote>
+</blockquote>
+<h5 style="MARGIN-RIGHT: 0px">
+    Frame 16
+</h5>
+<p style="MARGIN-RIGHT: 0px">
+    End of Story<br />
+    <br />
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

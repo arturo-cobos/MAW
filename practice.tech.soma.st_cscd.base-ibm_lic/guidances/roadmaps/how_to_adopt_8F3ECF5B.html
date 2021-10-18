@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Roadmap: How to Adopt Solution Template for Custom Service Component Dev(R4SC)</title>
+<meta name="uma.type" content="Roadmap">
+<meta name="uma.name" content="how_to_adopt">
+<meta name="uma.presentationName" content="How to Adopt Solution Template for Custom Service Component Dev(R4SC)">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_OXxs0GqkEd6kCPR0Evw_Og", "_NQGTEGqkEd6kCPR0Evw_Og"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZsRdEdyD76CYS6Ta7A", "_NQGTEGqkEd6kCPR0Evw_Og"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_NQGTEGqkEd6kCPR0Evw_Og"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Roadmap: How to Adopt Solution Template for Custom Service Component Dev(R4SC)</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/roadmap.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Today's client solutions are hybrid in nature composed of multiple solution types. Solution types composing the overall
+    solution varies from client engagement to engagement. Hence, prescriptive tasks, roles, work products and guidances
+    for&nbsp;each of the solution types&nbsp;are not included as part of a base delivery process in SOMA. SOMA base
+    delivery processes includes only common&nbsp;set of activities, tasks, roles, work products and guidance applicable
+    across all solution types. But&nbsp;we require an&nbsp;ability to select and incorporate additional activities, roles,
+    work products needed to support a set of solution types in a specific client solution into the base delivery process
+    during method adoption.<br />
+</p>
+<p>
+    SOMA&nbsp;has introduced&nbsp;the notion&nbsp;of <strong>Solution Template</strong> that enables method architecture to
+    facilitate method ddoption to support hybrid solutions. Solution Template externalizes concerns – tasks, work products,
+    roles, guidance – for a specific solution types from the base method/delivery process. Solution template modularizes
+    the method content and externalizes the variations from the commanility in the delivery process.
+</p>
+<p>
+    <em><font face="Comic Sans MS">" Solution Templates are context-specific pluggable extensions to a base WBS (or
+    Delivery Process) that are non-unitary (does not appear in one place in the delivery process in which it is plugged
+    in)."</font></em>
+</p>
+<p>
+    <strong>Solution Template</strong> has two parts
+</p>
+<ul>
+    <li>
+        Method content (activities, tasks, roles, work products) specific to solution type – externalizing from the base
+        delivery process
+    </li>
+    <li>
+        Placeholders in the base delivery process for various parts of the solution templates<br />
+    </li>
+</ul>
+<p>
+    A method exponent assembles the delivery process and solution templates depending on the&nbsp;project needs during
+    method adoption.&nbsp;During method adoption, the method exponent&nbsp;will&nbsp;executes the following steps:
+</p>
+<ul>
+    <li>
+        Select the base delivery process
+    </li>
+    <li>
+        Select a set of solution templates for corresponding to each of solution types involved in the overall client
+        solution
+    </li>
+    <li>
+        Assemble and tailor<br />
+    </li>
+</ul>
+<p>
+    In the latest release of SOMA, we have defined three delivery processes with placeholders for different solution
+    templates define in them. Three SOMA delivery processes are published:
+</p>
+<ol>
+    <li>
+        SOMA for Application Development (SOMA for AD)
+    </li>
+    <li>
+        SOMA Complete
+    </li>
+    <li>
+        SOMA Foundation
+    </li>
+</ol>
+<p>
+    Next release: Additional delivery processes such as SOMA Agile is in a draft state and will be released in future
+    release of SOMA. Current practitioner or projects needs can be fulfilled by contacting the SOMA team
+    (arsanjan@us.ibm.com) for the beta version of SOMA Agile.
+</p>
+<p>
+    In addition to the above delivery process, following solution templates are published:
+</p>
+<ol>
+    <li>
+        Solution Template for CBS Asset Construction
+    </li>
+    <li>
+        Solution Template for CBS Asset Consumption
+    </li>
+    <li>
+        Solution Template for Custom Service Component Development - based on Recipe for Service Component (R4SC)
+    </li>
+    <li>
+        Solution Template for Legacy Integration and Transformation
+    </li>
+    <li>
+        Solution Template for Package Application Integation
+    </li>
+</ol>
+<p>
+    In addition to above solution templates, two additional solution templates have been added to support the asset
+    intesive solution and CBS asset development initiatives within IBM.
+</p>
+<ul>
+    <li>
+        Solution Template for Asset Commercialization
+    </li>
+    <li>
+        Solution Template for Embedded Development for CBS Asset Construction.<br />
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing Data Flow Diagrams</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="developing_data_flow_diagrams">
+<meta name="uma.presentationName" content="Developing Data Flow Diagrams">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mwebE6D885C863B1A580852569AB0058EE83"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebE6D885C863B1A580852569AB0058EE83"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing Data Flow Diagrams</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">In analyzing and designing an application system, it is highly important to accurately define the requirements of the application system, to reflect them in the system, and to present the image of a new application system to end users at an early stage of development. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <b>Outline</b>
+</p>
+<p>
+    This is the key to a successful project. This is because the need to rework in a subsequent process can be minimized,
+    and because the productivity of development activities, and the quality and user satisfaction of the developed system
+    can be increased by this method. For this purpose, it is important to study the essential mechanisms of applications in
+    which data and process are complexly interrelated, understand data flows in the application and precisely identify and
+    define the application requirements.
+</p>
+<p>
+    A Data Flow Diagram (DFD) is a method by which an application system is analyzed and designed by regarding application
+    functions as means of obtaining desired information and determining what data are needed for attaining the purpose. The
+    process of understanding and analyzing a business and studying it based on the flow of data and then designing an
+    application system is a basic step of the Data-Oriented Approach (DOA). It is one of the important concepts of ADSG.
+</p>
+<p>
+    DFDs were developed by several people. Edward Yourdon (USA) proposed the way of describing application modeling in 1977
+    and Tom DeMarco spread the theory of structured analysis by proposing Structured Analysis and System Specification (SA)
+    in 1978. In 1979, Chris Gane and Trish Sarson proposed a practical method in the form of Structured System Analysis
+    (SSA).
+</p>
+<p>
+    DFDs have been employed widely since the 1980s. DFD, normalization and Entity-Relationship Diagrams (ERDs) are
+    important components of the Data-Oriented Approach.
+</p>
+<p>
+    <b>Characteristics</b>
+</p>
+<p>
+    The essential mechanisms and the information flow in an application in which data and processes are intricately
+    interrelated can be clarified by graphic representation<b>.</b>
+</p>
+<ul>
+    <li>
+        Data oriented description
+    </li>
+    <li>
+        Top-down approach (breakdown of the problem) 
+        <ul>
+            <li>
+                An application system can be described according to various degrees of explosion level
+            </li>
+        </ul>
+    </li>
+    <li>
+        Easy-to-understand notation for end users 
+        <ul>
+            <li>
+                Use of four kinds of simple symbols only
+            </li>
+        </ul>
+    </li>
+    <li>
+        Clear expression of I/O data
+    </li>
+    <li style="list-style: none">
+        <ul>
+            <li>
+                Expression is not confused by control signal flow
+            </li>
+            <li>
+                Manual work and mechanized work can be represented at the same time
+            </li>
+        </ul>
+    </li>
+    <li>
+        User needs can be structured and easily maintained.
+    </li>
+    <li>
+        Smooth connection to the work in succeeding phases
+    </li>
+    <li>
+        A phasing of requirements definition work can be easily defined
+    </li>
+</ul>
+<p>
+    <b>Aims</b>
+</p>
+<p>
+    In the Data Flow Diagram (DFD), an application system is portrayed as "a system made up of the output data which is the
+    objective of the application, the input data needed to obtain it and the transformation processing". Attention is
+    focused on the data flow, and the application system is concisely and clearly represented in graphical form. The aim of
+    this kind of graphic representation is to enable users and developers "to identify the essential requirements of he
+    application, thus enabling them to draw up the precise specifications".
+</p>
+<p>
+    In DFDs, analysis and design work are conducted sequentially by means of model explosion.
+</p>
+<p>
+    <img height="187" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/developingdataflowdiagramspicture.jpg" width="680" />&nbsp;
+</p>
+<p>
+    An application system is clearly classified into the following viewpoints for representation of the <b>logical
+    model</b> and <b>physical model:</b>
+</p>
+<ul>
+    <li>
+        Information needed by the application for the accomplishment of objectives (logical viewpoint)
+    </li>
+    <li>
+        Specific mechanisms for realization of logical viewpoint, such as individuals, organizations, locations, cycle,
+        timing, media, means, and performance (physical viewpoint)
+    </li>
+</ul>
+<p>
+    The aim is to be able to conduct analysis and design work without losing sight of the essential functions and
+    objectives of the application.
+</p>
+<p>
+    With the <b>current physical model,</b> one can investigate current applications and understand their problems, while
+    the <b>current logical model</b> can be used for understanding and analysis, and the <b>new logical model</b> can be
+    used to study the new application system, with the new <b>physical model</b>, operations and evaluation can be pursued
+    in a staged and accurate manner. Which model is used at the starting point for development depends on the
+    characteristics of the application system.
+</p>
+<p>
+    Guidelines for selection are described in a subsequent topic "Four DFD Models."
+</p>
+<p>
+    <a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/DevelopingDataFlowDiagrams.doc" target="_blank">DevelopingDataFlowDiagrams.doc</a>
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

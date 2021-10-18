@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Deployment Unit Specification Guideline</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="deployment_unit_specification">
+<meta name="uma.presentationName" content="Deployment Unit Specification Guideline">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_pfmWMDeTEdyFMtjeREc5MQ"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_pfmWMDeTEdyFMtjeREc5MQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Deployment Unit Specification Guideline</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This artifact provides guidance in the definition of a set of application oriented specified Deployment Units (DUs) using the Deployment Unit Specification Artifact.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/deployment_unit_spec_BC114B08.html" guid="_spO6ADDXEdyz_pzDMsV8FQ">Deployment Unit Specification</a>
+</li>
+<li>
+<a href="./../../../practice.tech.component_sys_arch.base-ibm/tasks/dev_deployment_unit_spec_5A5DF43.html" guid="_i7LAkDGYEdyU_cHE_KgUww">Develop Deployment Unit Specification</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Each component may be associated with multiple Deployment Units, one for each of the DU types (PDU, DDU, EDU IDU) each
+    representing different aspects of the component’s non functional requirements.&nbsp;
+</p>
+<p>
+    A Deployment Unit associates or references additional information with these different aspects of the components (e.g.,
+    resource requirements, service level requirements, and technical dependencies) that is either relevant or related to
+    their placement.
+</p>
+<p>
+    As the definition of the solution’s application level Deployment Units evolves throughout a project, it is common for
+    different DUs to be at different levels of accuracy, precision and detail, and the technique should be applied flexibly
+    to reflect this.
+</p>
+<p>
+    Although any component’s aspects can be represented by DUs, it is common – and helpful – to distinguish between those
+    associated with the target application, and those that relate to the underlying technical components.&nbsp; In general,
+    therefore:
+</p>
+<ul>
+    <li>
+        The DU Specification artifact usually only describes DUs associated with “application”, even after the component
+        model has been developed in order to describe how technical components will be used to support the application
+        level Component Model, or after the operational model has incorporated technical components (and therefore
+        technical DUs) into its nodes.
+    </li>
+    <li>
+        &nbsp;DU Specification artifacts associated with the underlying technical components are rarely created<br />
+        This reflects the usual case that IT Architects can usually cater for the specification of technical services and
+        their product implementations in both the Component Model (if necessary) and the Operational Model without the need
+        for the formal DU linkage between them.
+    </li>
+</ul>
+<p>
+    However, great care must be taken whenever these technical services are implemented in technologies new to the IT
+    Architect, or are being developed within the project.&nbsp; In these cases, it is strongly advised that these technical
+    components are treated in the same manner as application level components, with a detailed technical component model
+    and associated coverage in a DU Specification artifact.&nbsp; In these cases, it may even be appropriate to develop
+    several technical Component Model and DU Specification artifacts, each related to a particular technology being used in
+    the IT system.
+</p>
+<p>
+    During the development of each DU Specification the following guidance will assist with each of the tasks identified in
+    the Deployment Unit Task artifact.
+</p>
+<h4>
+    <br />
+    Identify Candidate Deployment Units
+</h4>
+<p>
+    During this step it may be helpful to focus on the CM’s relationship diagram, since this provides the most direct link
+    to the placement activities on the Operational Model (OM) relationship diagram.&nbsp; Also, consider the following when
+    assessing the need for each type of DU:
+</p>
+<ul>
+    <li>
+        Presentation DUs (PDUs):&nbsp; Each component that is responsible for supporting the link to each user or external
+        IT system will have one or more presentation aspects and therefore require one or more PDUs. While identifying
+        these PDUs, it may also be helpful to refer to the System Context Diagram, which defines the systems relationship
+        with all users and external IT Systems.
+    </li>
+    <li>
+        Execution DUs (EDUs):&nbsp; In a conventional IT system, all application level components will have an execution
+        aspect, and therefore will require an EDU.&nbsp; However, it may be that you can immediately (and implicitly)
+        identify different characteristics for some parts of a component’s execution – in which case it may be appropriate
+        to define several EDUs for this aspect of that component.
+    </li>
+    <li>
+        Data DUs (DDUs):&nbsp; Many (although often not all) components have responsibility for business oriented
+        data.&nbsp; Each of these will be represented by at least one DDU.&nbsp; However, as with a component’s EDU, it is
+        possible that you can immediately identify different characteristics for some parts of a component’s data – in
+        which case it may be appropriate to define several DDUs for this aspect of that component.
+    </li>
+    <li>
+        <br />
+        As you are working through this step, think about whether you want to identify names for the DUs – or whether you
+        simply want to identify their existence.&nbsp; Although names are important, it may be best to wait until a little
+        later in the technique, when more is known about the DUs, before naming them in a way that reflects their
+        purpose.<br />
+    </li>
+</ul>
+<h4>
+    Identify DU Characteristics
+</h4>
+<p>
+    It is almost always vital to explicitly identify each DU’s service level characteristics (SLCs).&nbsp; The detail
+    behind each of these SLCs will depend on the type of DU being described but, in general, it is helpful to document:
+</p>
+<ul>
+    <li>
+        “Numbers”.&nbsp; How big, how often, or how fast?
+    </li>
+    <li>
+        Volatility.&nbsp; How often does the DU or one of its attributes change?
+    </li>
+    <li>
+        Security.&nbsp; What levels of access control does the DU require?
+    </li>
+    <li>
+        Availability.&nbsp; How available does the DU need to be – both in terms of scheduled availability and unscheduled
+        unavailability?&nbsp; And in the event of a problem, what levels of degraded service will be acceptable for the DU?
+    </li>
+</ul>
+<p>
+    <br />
+    The detail behind each of these categories depends on the type of DU in question.&nbsp; So, for each type of DU in
+    turn, establish the NFRs for each DU defined in step 1.&nbsp; As you work, be particularly aware of the potential for:
+</p>
+<ul>
+    <li>
+        The separation or splitting of a component’s aspect into two or more parts .&nbsp; For example:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                It may be that the same component will be responsible for more than one system’s interface, such as a
+                system that needs to provide the same services to the same user, but via a hand held terminal as well as a
+                workstation.&nbsp; In this case, it may be helpful to separate these two sets of system’s interface
+                (presentation related) NFRs into separate PDUs.
+            </li>
+            <li>
+                It may be that some functions available from a component are resource intensive, while others generate a
+                lighter load.&nbsp; In this case, it may be helpful to separate these two parts into separate EDUs.
+            </li>
+            <li>
+                It may be that some parts of a component’s data aspect are very large, but quite stable, while other parts
+                are very volatile, but small.&nbsp; In this case, it may be helpful to separate these two parts into
+                separate DDUs<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        The aggregation or grouping of one aspect for two or more components, if it is clear at this point that this aspect
+        can always be treated as one thing operationally.&nbsp; Each aspect is aggregated independently, so that, for
+        example:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                If the system interface presented to a user or external system by a number of components is subject to the
+                same NFR's then this aspect of the involved components can be grouped into one PDU.
+            </li>
+            <li>
+                The execution of a component may be grouped into an EDU with a different set of components to that with
+                which its EDU is aggregated.
+            </li>
+            <li>
+                The large, stable parts of a component’s data aspect are grouped into a DDU with similar data aspects of
+                other components, while its small, volatile data parts are handled in a separate DDU.
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    In all cases, it may be that you don’t yet have quantitative information, and you may therefore be making qualitative
+    judgments or assumptions.&nbsp; As the project proceeds, so the metrics on the associated components should become more
+    firmly established and you can therefore document quantitative information for each DU.
+</p>
+<h5>
+    <br />
+    Presentation Deployment Units
+</h5>
+<p>
+    Presentation DUs represent the non-functional requirements of the interactions between the external interface (as used
+    by users or other external IT systems) and the application component.
+</p>
+<p>
+    <br />
+    Remember these NFRs are associated with the PDU, not the device supporting the PDU.&nbsp; It is likely that a device
+    will need to support multiple PDUs, in which case its presentational requirements will be determined by the entirety of
+    those of the supported PDUs.<br />
+    It can sometimes be difficult to establish that the target system actually has an interface with an external system,
+    when it appears at first glance to be with a real person.&nbsp; The key is to understand the system boundary, from both
+    an application and infrastructure perspective.&nbsp; For example, consider a “home shopping” system, which must
+    provide:
+</p>
+<ul>
+    <li>
+        An on-line service to private customers.&nbsp; At first glance, you may feel the PDU represents the interface with
+        the private customer him or herself.
+    </li>
+</ul>
+<p>
+    Actually, the system boundary will probably be where the HTML/HTTP messages leave/enter the Internet from the target
+    system and, therefore, this requires a PDU to an external system.
+</p>
+<ul>
+    <li>
+        An “off-line” service to corporate customers, who interact directly with a locally running “home-shopping”
+        application provided by the retailer.&nbsp;
+    </li>
+</ul>
+<p>
+    In this case, the PDU represents the interface between the user and the component(s) running on the corporate
+    customer’s PC – i.e. an interface to a real user, but only at the application level.
+</p>
+<ul>
+    <li>
+        A “call centre” based service, in which Call Centre Representatives (CSRs) interact with the home shopping
+        application on their workstation, while dealing with customers on the telephone.&nbsp;
+    </li>
+</ul>
+<p>
+    In this case, the PDU represents the NFRs of the interface between the CSR and the component(s) running on their
+    workstation – i.e. an interface to a real user, but at both the application and systems software / hardware levels.
+</p>
+<h5>
+    <br />
+    Human Users
+</h5>
+<p>
+    For human users, these non-functional requirements will probably include:
+</p>
+<ul>
+    <li>
+        The geographic location of the user interface, plus the number of users per location, plus how many locations there
+        are (i.e. how many instances of this PDU will the system have to support?)
+    </li>
+    <li>
+        The required scheduled availability, and permitted levels of unscheduled outages (for the interface as a whole)
+    </li>
+    <li>
+        &nbsp;The levels of access control (authentication) required
+    </li>
+    <li>
+        &nbsp;The level of IT skill the user has, as well as the level required by the new system
+    </li>
+    <li>
+        The availability (or otherwise) of systems management expertise locally available (either in the user or available
+        to the user)
+    </li>
+    <li>
+        &nbsp;Whether the user uses the system from a fixed location from a specific device, or whether they are mobile
+        (either using a specific or any device of the same type)
+    </li>
+    <li>
+        The nature and “form factor” of the device needed by the user – for example, is it is PC or PC-like interface, a
+        PDA, Hand held Terminal (HHT), phone, or a specialized device such as a till .
+    </li>
+</ul>
+<p>
+    And don’t forget that a printer or other “output only” device such as a display screen is also an external interface
+    used by human users!
+</p>
+<ul>
+    <li>
+        &nbsp;The need for any “specialized” input/output mechanisms, such as authentication devices, audio/visual outputs,
+        or bulk printing.
+    </li>
+</ul>
+<h5>
+    <br />
+    External Systems
+</h5>
+<p>
+    For external IT Systems, these requirements will probably include.
+</p>
+<ul>
+    <li>
+        The geographic location of the external IT system, plus the number of systems per location, plus how many locations
+        there are (i.e. how many instances of this PDU will the system have to support?)<br />
+        &nbsp;In some cases, such as with the internet, it may not be possible to determine the number of external IT
+        systems (browsers etc.) accessing the target system.&nbsp; In these cases, it is therefore necessary to understand
+        the overall nature and number of transactions that the system is receiving, split as necessary across the disparate
+        internet access points provided to the target system.
+    </li>
+    <li>
+        The required scheduled availability, and permitted levels of unscheduled outages for the interface
+    </li>
+    <li>
+        The levels of access control (authentication) required, and the need (or otherwise) for encryption of information
+        exchanged across the interface.
+    </li>
+    <li>
+        The volumes and frequency of data transfer between the external and target systems during the scheduled periods of
+        availability
+    </li>
+    <li>
+        Identification of the methods, processes, or protocols that will be used to exchange information – and whether
+        these exist in the current environment<br />
+        In most cases, it is appropriate to document the presentation DU characteristics in a table, such as the one
+        below.&nbsp; However, as necessary, it would also be advisable to supplement the table with textural descriptions:
+    </li>
+</ul>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img height="171" alt="Presentation DU Characteristics Table"     src="./../../../core.tech.common.extend-ibm_lic/guidances/guidelines/resources/presentation_du_characteristics_table.gif" width="573" />
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <strong>Figure 1:&nbsp; Example Presentation DU Characteristics Table</strong>
+</p>
+<h5>
+    Data Deployment Units
+</h5>
+<p>
+    The major NFRs to be determined for the data DUs are closely linked to the standard collection of Service Level
+    Characteristics.
+</p>
+<p>
+    <br />
+    <strong>Volumes.</strong>&nbsp; How much data is there likely to be associated with the component(s)?&nbsp; If there is
+    a “substantial” amount, then it may be difficult to distribute it - particularly if it is also volatile or in need of
+    being up-to-date
+</p>
+<p>
+    <strong>Volatility.&nbsp;</strong> How frequently do the data’s attributes change (across the full set of instances, or
+    “per instance”)?&nbsp; If it is “a lot” then this will influence the placement of the data deployment unit differently
+    than if it is “largely static or read only”.
+</p>
+<p>
+    <strong>Security.</strong>&nbsp; Does the data need to be protected from unauthorised access?&nbsp; This may be via
+    “line of business” processing, or directly through the interface of the (to be) selected storage manager.In addition to
+    security there is the separate issue of privacy.&nbsp; This generally relates to the location and manner of the data’s
+    storage.&nbsp; For example, some countries have introduced a Data Protection Act, which requires private data to be
+    held in the same country as the person to whom the data applies.
+</p>
+<p>
+    <strong>Availability.</strong>&nbsp; How available does the data need to be - and to whom?&nbsp; Does it need to have
+    the same levels of availability to all users, and at all times of the day?Data availability relates to scheduled
+    availability and unscheduled outages.&nbsp; In the event of an outage (scheduled or unscheduled) what levels of data
+    availability (and its other SLCs) must be provided?
+</p>
+<p>
+    <strong>Data currency.</strong>&nbsp; How old can the data be which is being used in the various business
+    processes?&nbsp; For example, in one situation, reading last night’s data or data from a few seconds ago may be equally
+    satisfactory.&nbsp; In other situations, such as a “guaranteed” electronic fund transfer application, the transaction
+    absolutely must be based on the data from the most recent transaction that affected that record.
+</p>
+<p>
+    This data currency characteristic will help the designer in at least two ways:
+</p>
+<ul>
+    <li>
+        He/she will understand when they do or don’t have the flexibility to choose whether to make the updates immediately
+        or queue them for update a few seconds, minutes, or hours later.&nbsp; This also becomes very important for
+        recovery planning.
+    </li>
+    <li>
+        He/she will know what frequency of refresh will be acceptable for distributed data that is required in the
+        solution, in order to overcome constraints (such as an unreliable network
+    </li>
+</ul>
+<p>
+    <strong>Operational Sequencing.</strong>&nbsp; This refers to cases where making changes to a data record has a strict
+    dependency on the outcome of a prior update.&nbsp; For example:
+</p>
+<ul>
+    <li>
+        Processing of an electronic fund transfer transaction MUST be based on the account balances resulting from the most
+        recent transaction which affected those accounts.&nbsp; (If this were not done, the system risks
+        accepting/rejecting a very large, guaranteed, funds transfer based on an invalid check for “sufficient funds”.)
+    </li>
+    <li>
+        In a case where two systems are trying to maintain synchronized data (for example, for backup or workload balancing
+        purposes), updates to database records must be made in the same sequence on the two systems.&nbsp; If this were not
+        done, the content of the two databases might not be identical.
+    </li>
+</ul>
+<p>
+    <br />
+    In most cases, it is appropriate to document the data DU characteristics in a table, such as the one below.&nbsp;
+    However, as necessary, it would also be advisable to supplement the table with textural descriptions:<br />
+    <strong><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img height="237" alt="Data DU Characteristics Table" src="./../../../core.tech.common.extend-ibm_lic/guidances/guidelines/resources/data_du-characteristics_table.gif"     width="568" /></strong>
+</p>
+<p>
+    <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Figure 2: &nbsp;Example Data DU Characteristics Table</strong>
+</p>
+<p>
+    <strong>Execution Deployment Units</strong>
+</p>
+<p>
+    <br />
+    The major NFRs to be determined for the execution DUs are closely linked to the standard collection of Service Level
+    Characteristics.&nbsp; For example, for each EDU:
+</p>
+<p>
+    <strong>Volumes.</strong>&nbsp; How many transactions per second must the system support, and with what response times
+    ?&nbsp; Or is throughput more important than response time?
+</p>
+<p>
+    <strong>Volatility.</strong>&nbsp; Are the functions (or other non-functional characteristics) of the EDU dependant on
+    some external factor (such as time of day, or an unexpected event)?&nbsp; Often, this volatility can be described in
+    terms of peak and average loads, with a common approach being to design for some pre-determined peak.
+</p>
+<p>
+    <strong>Security.</strong>&nbsp; What levels of authorization are required for access to this execution DU?
+</p>
+<p>
+    <strong>Availability.</strong>&nbsp; How available does the function need to be - and to whom?&nbsp; Does it need to
+    have the same levels of availability to all users, and at all times of the day?
+</p>
+<p>
+    Function availability relates to scheduled availability and unscheduled outages.&nbsp; In the event of an outage
+    (scheduled or unscheduled) what levels of functional availability (and its other SLCs) must be provided?&nbsp; Is it
+    acceptable for the function to be unavailable during these outages, or is some form of degraded function required?
+</p>
+<p>
+    In most cases, it is appropriate to document the execution DU characteristics in a table, such as the one below.&nbsp;
+    However, as necessary, it would also be advisable to supplement the table with textural descriptions:
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp; <img height="267" alt="Execution DU Characteristics Table"     src="./../../../core.tech.common.extend-ibm_lic/guidances/guidelines/resources/execution_du_characteristics_table.gif" width="568" /><br />
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Figure 3:</strong> <strong>Example Execution DU Characteristics
+    Table</strong>
+</p>
+<p>
+    <strong>Note:</strong> The DU Specification and DU Model artifacts could be impacted and require updating whenever
+    there is a change to the:
+</p>
+<ul>
+    <li>
+        &nbsp;Operational model
+    </li>
+    <li>
+        &nbsp;Component model
+    </li>
+    <li>
+        &nbsp;Non-functional Requirements
+    </li>
+</ul>
+<p>
+    <br />
+    Since the Deployment Unit Specification and Deployment Unit Model artifacts form the bridge between the functional and
+    operational aspects of architecture, it is vital to involve both the Operational and Functional IT Architects when
+    developing or modifying them.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,832 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Capability Pattern: Refine Solution Plans</title>
+<meta name="uma.type" content="CapabilityPattern">
+<meta name="uma.name" content="refine_solution_plans_slot">
+<meta name="uma.presentationName" content="Refine Solution Plans">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_snE2gWdCEd6UjYG2NBkr9g&path=_snE2gWdCEd6UjYG2NBkr9g';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_snE2gWdCEd6UjYG2NBkr9g"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Capability Pattern: Refine Solution Plans</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/capabilitypattern.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="10" class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../core.mgmt.slot.extend-ibm_lic/capabilitypatterns/refine_solution_plans_slot_96D8EFF7.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Work Breakdown Structure</span></td><td width="1"><img src="./../../images/tab_middle-a_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_TBS" href="./../../core.mgmt.slot.extend-ibm_lic/capabilitypatterns/refine_solution_plans_slot_96D8EFF7.html_tbs.html"><span style="white-space:nowrap;">Team Allocation</span></a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WPBS" href="./../../core.mgmt.slot.extend-ibm_lic/capabilitypatterns/refine_solution_plans_slot_96D8EFF7.html_wpbs.html"><span style="white-space:nowrap;">Work Product Usage</span></a></td><td width="21"><img src="./../../images/tab_end-i.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="2"><img src="./../../images/shim.gif" height="2" alt="" title=""></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="5"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Work Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Work Breakdown", summary: "Work Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["steps", "Steps"],
+["id", "Index"],
+["predecessors", "Predecessors"],
+["model_info", "Model Info"],
+["type", "Type"],
+["is_planned", "Planned"],
+["is_repeatable", "Repeatable"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_ongoing", "Ongoing"],
+["is_event_driven", "Event Driven"],
+["is_optional", "Optional"],
+["teams", "Team"]],
+rows: [
+		
+{id: "56161876", parentId: "", relPath: ",_gr2FEYVfEd-fir1eEnJ8HA", isSuppressed: "", indentSize: 0, hasChildren:false, 
+	index: "1", prefix: "", name: "plchldr_st_emb_dev_for_cbs_ass_constr_depl", title: "plchldr_st_emb_dev_for_cbs_ass_constr_depl", url: "./../../practice.gen.deployment_mgmt_soma.addon-ibm_lic/capabilitypatterns/plchldr_st_emb_dev_for_cbs_ass_constr_depl_8818D4A7.html", 
+	predecessors: "", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "extends",
+	steps: []},
+	
+		
+		
+{id: "a2e675b2", parentId: "", relPath: ",_MLeZQIW_Ed6u16JzuIDfVA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "2", prefix: "", name: "detail_release_plan", title: "Detail the Release Plan", url: "./../../practice.mgmt.release_mgmt.base-ibm_lic/capabilitypatterns/detail_release_plan_696F67E7.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7bc1b459", parentId: "a2e675b2", relPath: ",_MLeZQIW_Ed6u16JzuIDfVA,_MLeZQYW_Ed6u16JzuIDfVA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "project_manager", title: "Project Manager", url: "./../../practice.mgmt.release_mgmt.base-ibm_lic/capabilitypatterns/project_manager_740D47F7.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "dcf30e1f", parentId: "a2e675b2", relPath: ",_MLeZQIW_Ed6u16JzuIDfVA,_Rw7vYJCsEd-Fp6oRTtMsRw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_solution_architect", title: "Technical Solution Architect", url: "./../../practice.mgmt.release_mgmt.base-ibm_lic/capabilitypatterns/technical_solution_architect_EEBF1950.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "67506f16", parentId: "a2e675b2", relPath: ",_MLeZQIW_Ed6u16JzuIDfVA,_7si3EMPXEd6GacEC8EpHCA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "application_architect", title: "Application Architect", url: "./../../practice.mgmt.release_mgmt.base-ibm_lic/capabilitypatterns/application_architect_CA40B028.html", 
+	predecessors: "", info: "Assisted By", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "9c9825a6", parentId: "a2e675b2", relPath: ",_MLeZQIW_Ed6u16JzuIDfVA,_7si3EcPXEd6GacEC8EpHCA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "business_analyst", title: "Business Analyst", url: "./../../practice.mgmt.release_mgmt.base-ibm_lic/capabilitypatterns/business_analyst_B8D9C43E.html", 
+	predecessors: "", info: "Assisted By", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "4dd517f8", parentId: "a2e675b2", relPath: ",_MLeZQIW_Ed6u16JzuIDfVA,_7si3EsPXEd6GacEC8EpHCA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "infrastructure_architect", title: "Infrastructure Architect", url: "./../../practice.mgmt.release_mgmt.base-ibm_lic/capabilitypatterns/infrastructure_architect_C377A44E.html", 
+	predecessors: "", info: "Assisted By", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "812b4b16", parentId: "a2e675b2", relPath: ",_MLeZQIW_Ed6u16JzuIDfVA,_EvBnkFu4EeCE4_j9W41TzQ", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "business_requirements_slot", title: "[Business Requirements]", url: "./../../practice.mgmt.release_mgmt.base-ibm_lic/capabilitypatterns/business_requirements_slot_65611329.html", 
+	predecessors: "", info: "Optional Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e18b5901", parentId: "a2e675b2", relPath: ",_MLeZQIW_Ed6u16JzuIDfVA,_MLeZR4W_Ed6u16JzuIDfVA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "project_definition_and_scope_slot", title: "[Project Definition and Scope]", url: "./../../practice.mgmt.release_mgmt.base-ibm_lic/capabilitypatterns/project_definition_and_scope_slot_901213F1.html", 
+	predecessors: "", info: "Optional Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "51b950ed", parentId: "a2e675b2", relPath: ",_MLeZQIW_Ed6u16JzuIDfVA,_MLeZSIW_Ed6u16JzuIDfVA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "project_risk_slot", title: "[Project Risk]", url: "./../../practice.mgmt.release_mgmt.base-ibm_lic/capabilitypatterns/project_risk_slot_F2932C25.html", 
+	predecessors: "", info: "Optional Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "a4d2800d", parentId: "a2e675b2", relPath: ",_MLeZQIW_Ed6u16JzuIDfVA,_EvBnkVu4EeCE4_j9W41TzQ", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_approach_slot", title: "[Technical Approach]", url: "./../../practice.mgmt.release_mgmt.base-ibm_lic/capabilitypatterns/technical_approach_slot_6FFEF339.html", 
+	predecessors: "", info: "Optional Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "3ee70b7", parentId: "a2e675b2", relPath: ",_MLeZQIW_Ed6u16JzuIDfVA,_MLeZRoW_Ed6u16JzuIDfVA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "", prefix: "", name: "technical_architecture_slot", title: "[Technical Architecture]", url: "./../../practice.mgmt.release_mgmt.base-ibm_lic/capabilitypatterns/technical_architecture_slot_27383E2C.html", 
+	predecessors: "", info: "Optional Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "3862c6a9", parentId: "3ee70b7", relPath: ",_MLeZQIW_Ed6u16JzuIDfVA,_MLeZRoW_Ed6u16JzuIDfVA,_r6Qv8WptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "atomic_characteristics", title: "Atomic Characteristics", url: "./../../practice.mgmt.release_mgmt.base-ibm_lic/capabilitypatterns/atomic_characteristics_F020C40E.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "da5c7803", parentId: "3ee70b7", relPath: ",_MLeZQIW_Ed6u16JzuIDfVA,_MLeZRoW_Ed6u16JzuIDfVA,_r6QI4WptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "business_technical_event_map", title: "Business Technical Event Map", url: "./../../practice.mgmt.release_mgmt.base-ibm_lic/capabilitypatterns/business_technical_event_map_B6E60CA5.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "fd83fef", parentId: "3ee70b7", relPath: ",_MLeZQIW_Ed6u16JzuIDfVA,_MLeZRoW_Ed6u16JzuIDfVA,_r6Ph0WptEeSdxcAgtnf5og", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "slc_model", title: "Service Level Characteristic Model", url: "./../../practice.mgmt.release_mgmt.base-ibm_lic/capabilitypatterns/slc_model_A49E8429.html", 
+	predecessors: "", info: "", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "3a7e294d", parentId: "a2e675b2", relPath: ",_MLeZQIW_Ed6u16JzuIDfVA,_MLeZRYW_Ed6u16JzuIDfVA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_design_slot", title: "[Technical Design]", url: "./../../practice.mgmt.release_mgmt.base-ibm_lic/capabilitypatterns/technical_design_slot_389F2A16.html", 
+	predecessors: "", info: "Optional Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "9c68c8dd", parentId: "a2e675b2", relPath: ",_MLeZQIW_Ed6u16JzuIDfVA,_MLeZRIW_Ed6u16JzuIDfVA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_specification_slot", title: "[Technical Specification]", url: "./../../practice.mgmt.release_mgmt.base-ibm_lic/capabilitypatterns/technical_specification_slot_2E014A06.html", 
+	predecessors: "", info: "Optional Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "eceba71e", parentId: "a2e675b2", relPath: ",_MLeZQIW_Ed6u16JzuIDfVA,_MLeZSYW_Ed6u16JzuIDfVA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "release_plan", title: "Release Plan", url: "./../../practice.mgmt.release_mgmt.base-ibm_lic/capabilitypatterns/release_plan_FD310C35.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "42915c46", parentId: "", relPath: ",_pCuHsGd-Ed6Ij71mAkyZjA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "3", prefix: "", name: "update_accept_test_plan", title: "Update Acceptance Test Plan", url: "./../../practice.tech.acceptance_testing.base-ibm_lic/capabilitypatterns/update_accept_test_plan_F7F02DBF.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true]},
+	
+		
+		
+{id: "8bd7ef2c", parentId: "42915c46", relPath: ",_pCuHsGd-Ed6Ij71mAkyZjA,_KQwa8OEbEd-tbbpeLTBbYA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "test_architect", title: "Test Architect", url: "./../../practice.tech.acceptance_testing.base-ibm_lic/capabilitypatterns/test_architect_9A529FAE.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d7857594", parentId: "42915c46", relPath: ",_pCuHsGd-Ed6Ij71mAkyZjA,_KQwa8eEbEd-tbbpeLTBbYA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "test_specialist", title: "Test Specialist", url: "./../../practice.tech.acceptance_testing.base-ibm_lic/capabilitypatterns/test_specialist_88EBB3C4.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "76e9ea88", parentId: "42915c46", relPath: ",_pCuHsGd-Ed6Ij71mAkyZjA,_pCuHsWd-Ed6Ij71mAkyZjA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "user", title: "User", url: "./../../practice.tech.acceptance_testing.base-ibm_lic/capabilitypatterns/user_28E0DCF.html", 
+	predecessors: "", info: "Additional Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "b349e9c4", parentId: "42915c46", relPath: ",_pCuHsGd-Ed6Ij71mAkyZjA,_pCuHsmd-Ed6Ij71mAkyZjA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "acceptance_test_plan", title: "Acceptance Test Plan", url: "./../../practice.tech.acceptance_testing.base-ibm_lic/capabilitypatterns/acceptance_test_plan_F12721E5.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "29235701", parentId: "42915c46", relPath: ",_pCuHsGd-Ed6Ij71mAkyZjA,_pCuHsmd-Ed6Ij71mAkyZjA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "acceptance_test_plan", title: "Acceptance Test Plan", url: "./../../practice.tech.acceptance_testing.base-ibm_lic/capabilitypatterns/acceptance_test_plan_F12721E5.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "2ca3bdd5", parentId: "", relPath: ",_izBsQWdzEd6Ij71mAkyZjA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "4", prefix: "", name: "Collect Feedback on Testing", title: "Collect Feedback on Testing", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/Collect Feedback on Testing_5BC2561A.html", 
+	predecessors: "", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "na",
+	steps: []},
+	
+		
+		
+{id: "bfa64ab5", parentId: "2ca3bdd5", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,_jECbcHW8Ed-dhOtQFS6GCA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "5", prefix: "", name: "collect_test_measurements_data", title: "Collect Test Measurements Data", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/collect_test_measurements_data_D9D1E9D5.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true]},
+	
+		
+		
+{id: "233cc257", parentId: "bfa64ab5", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,_jECbcHW8Ed-dhOtQFS6GCA,_F4jFsWeOEd6Ij71mAkyZjA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "test_architect", title: "Test Architect", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/test_architect_75140E14.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "70041ee7", parentId: "bfa64ab5", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,_jECbcHW8Ed-dhOtQFS6GCA,__ECDwmdzEd6Ij71mAkyZjA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "test_findings", title: "Test Findings", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/test_findings_C078C0CF.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "16e7cdc1", parentId: "bfa64ab5", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,_jECbcHW8Ed-dhOtQFS6GCA,_jECbcXW8Ed-dhOtQFS6GCA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "test_measurements", title: "Test Measurements", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/test_measurements_E46FC9E5.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "4dfc3f67", parentId: "bfa64ab5", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,_jECbcHW8Ed-dhOtQFS6GCA,_jECbcXW8Ed-dhOtQFS6GCA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "test_measurements", title: "Test Measurements", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/test_measurements_E46FC9E5.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "cdda630d", parentId: "2ca3bdd5", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,_r5PhkHW8Ed-dhOtQFS6GCA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "6", prefix: "", name: "update_quaility_plan", title: "Update Quality Plan", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/update_quaility_plan_FE35A50E.html", 
+	predecessors: "5", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true]},
+	
+		
+		
+{id: "c575c730", parentId: "cdda630d", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,_r5PhkHW8Ed-dhOtQFS6GCA,_F4jFsWeOEd6Ij71mAkyZjA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "test_architect", title: "Test Architect", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/test_architect_75140E14.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "59860e5e", parentId: "cdda630d", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,_r5PhkHW8Ed-dhOtQFS6GCA,_r5PhkXW8Ed-dhOtQFS6GCA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "quality_plan_app_domain", title: "Quality Plan for Application Domain", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/quality_plan_app_domain_8D3851E.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "8ca2cefc", parentId: "cdda630d", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,_r5PhkHW8Ed-dhOtQFS6GCA,_r5PhkXW8Ed-dhOtQFS6GCA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "quality_plan_app_domain", title: "Quality Plan for Application Domain", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/quality_plan_app_domain_8D3851E.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "15adfbc4", parentId: "2ca3bdd5", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,_l3c-QHW8Ed-dhOtQFS6GCA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "7", prefix: "", name: "collect_test_proc_improve_data", title: "Collect Test Process Improvements Data", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/collect_test_proc_improve_data_91CEC4BE.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true]},
+	
+		
+		
+{id: "4b59c9b2", parentId: "15adfbc4", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,_l3c-QHW8Ed-dhOtQFS6GCA,_F4jFsWeOEd6Ij71mAkyZjA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "test_architect", title: "Test Architect", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/test_architect_75140E14.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "f2694ee8", parentId: "15adfbc4", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,_l3c-QHW8Ed-dhOtQFS6GCA,_l3c-QXW8Ed-dhOtQFS6GCA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "test_log", title: "Test Log", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/test_log_9C6CA4CE.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "2c4114cb", parentId: "15adfbc4", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,_l3c-QHW8Ed-dhOtQFS6GCA,_l3c-QnW8Ed-dhOtQFS6GCA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "lessons_learned", title: "Lessons Learned", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/lessons_learned_8B05B8E4.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d384ab5d", parentId: "2ca3bdd5", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,_nOLgoHW8Ed-dhOtQFS6GCA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "8", prefix: "", name: "conduct_causal_analysis", title: "Conduct Causal Analysis", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/conduct_causal_analysis_D1BD76EB.html", 
+	predecessors: "7", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true]},
+	
+		
+		
+{id: "e8a40487", parentId: "d384ab5d", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,_nOLgoHW8Ed-dhOtQFS6GCA,_nOLgoXW8Ed-dhOtQFS6GCA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "quality_analyst", title: "Quality Analyst", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/quality_analyst_DC5B56FB.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "26b61fab", parentId: "d384ab5d", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,_nOLgoHW8Ed-dhOtQFS6GCA,_l3c-QXW8Ed-dhOtQFS6GCA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "test_log", title: "Test Log", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/test_log_9C6CA4CE.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7cb061df", parentId: "d384ab5d", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,_nOLgoHW8Ed-dhOtQFS6GCA,_nOLgonW8Ed-dhOtQFS6GCA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "root_cause_analysis", title: "Root Cause Analysis Record", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/root_cause_analysis_CAF46B11.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "44fe849", parentId: "2ca3bdd5", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,__ECDwGdzEd6Ij71mAkyZjA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "9", prefix: "", name: "document_file_test_assets", title: "Document and File Test Assets", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/document_file_test_assets_C741CCA9.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true]},
+	
+		
+		
+{id: "314776dd", parentId: "44fe849", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,__ECDwGdzEd6Ij71mAkyZjA,_F4jFsGeOEd6Ij71mAkyZjA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "test_specialist", title: "Test Specialist", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/test_specialist_6A762E04.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "916d11fd", parentId: "44fe849", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,__ECDwGdzEd6Ij71mAkyZjA,__ECDwmdzEd6Ij71mAkyZjA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "test_findings", title: "Test Findings", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/test_findings_C078C0CF.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "eae8e804", parentId: "44fe849", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,__ECDwGdzEd6Ij71mAkyZjA,__ECDw2dzEd6Ij71mAkyZjA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "assets_harvested", title: "Assets Harvested", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/assets_harvested_29529694.html", 
+	predecessors: "", info: "Output", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "615d57d4", parentId: "2ca3bdd5", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,__2GZ4GdzEd6Ij71mAkyZjA", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "10", prefix: "", name: "handover_test_assets_to_maint", title: "Handover Test Assets to Maintenance", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/handover_test_assets_to_maint_B0E5260B.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true]},
+	
+		
+		
+{id: "b9ff8968", parentId: "615d57d4", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,__2GZ4GdzEd6Ij71mAkyZjA,_F4jFsWeOEd6Ij71mAkyZjA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "test_architect", title: "Test Architect", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/test_architect_75140E14.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "4a35630a", parentId: "615d57d4", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,__2GZ4GdzEd6Ij71mAkyZjA,__ECDwmdzEd6Ij71mAkyZjA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "test_findings", title: "Test Findings", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/test_findings_C078C0CF.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "a02b5892", parentId: "615d57d4", relPath: ",_izBsQWdzEd6Ij71mAkyZjA,__2GZ4GdzEd6Ij71mAkyZjA,__ECDwmdzEd6Ij71mAkyZjA", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "test_findings", title: "Test Findings", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/test_findings_C078C0CF.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "9c6bed0a", parentId: "", relPath: ",__lnJ4WR2Ed-cKYm16Ith4Q", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "11", prefix: "", name: "Update Test Plans", title: "Update Test Plans", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/Update Test Plans_B78C33B6.html", 
+	predecessors: "", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "na",
+	steps: []},
+	
+		
+		
+{id: "2ebb9df8", parentId: "9c6bed0a", relPath: ",__lnJ4WR2Ed-cKYm16Ith4Q,_B6LNgGR3Ed-cKYm16Ith4Q", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "12", prefix: "", name: "update_integ_test_plan", title: "Update the Integration Test Plan", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/update_integ_test_plan_BD9AEB41.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true]},
+	
+		
+		
+{id: "dcf7558d", parentId: "2ebb9df8", relPath: ",__lnJ4WR2Ed-cKYm16Ith4Q,_B6LNgGR3Ed-cKYm16Ith4Q,_B6LNhGR3Ed-cKYm16Ith4Q", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "application_developer", title: "Application Developer", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/application_developer_822CCD60.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d9595739", parentId: "2ebb9df8", relPath: ",__lnJ4WR2Ed-cKYm16Ith4Q,_B6LNgGR3Ed-cKYm16Ith4Q,_B6LNh2R3Ed-cKYm16Ith4Q", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "integration_test_plan", title: "Integration Test Plan", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/integration_test_plan_E43D974B.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "56da3cb", parentId: "2ebb9df8", relPath: ",__lnJ4WR2Ed-cKYm16Ith4Q,_B6LNgGR3Ed-cKYm16Ith4Q,_B6LNh2R3Ed-cKYm16Ith4Q", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "integration_test_plan", title: "Integration Test Plan", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/integration_test_plan_E43D974B.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "b18c0be3", parentId: "9c6bed0a", relPath: ",__lnJ4WR2Ed-cKYm16Ith4Q,_B6LNgmR3Ed-cKYm16Ith4Q", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "13", prefix: "", name: "update_sys_test_plan", title: "Update the System Test Plan", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/update_sys_test_plan_B6D1DF67.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true]},
+	
+		
+		
+{id: "998e5c7b", parentId: "b18c0be3", relPath: ",__lnJ4WR2Ed-cKYm16Ith4Q,_B6LNgmR3Ed-cKYm16Ith4Q,_B6LNhmR3Ed-cKYm16Ith4Q", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "test_architect", title: "Test Architect", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/test_architect_7B63C186.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1bd43dcd", parentId: "b18c0be3", relPath: ",__lnJ4WR2Ed-cKYm16Ith4Q,_B6LNgmR3Ed-cKYm16Ith4Q,_B6LNiWR3Ed-cKYm16Ith4Q", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "system_test_plan", title: "System Test Plan", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/system_test_plan_515C8F8F.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "6c3f39b7", parentId: "b18c0be3", relPath: ",__lnJ4WR2Ed-cKYm16Ith4Q,_B6LNgmR3Ed-cKYm16Ith4Q,_B6LNiWR3Ed-cKYm16Ith4Q", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "system_test_plan", title: "System Test Plan", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/system_test_plan_515C8F8F.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "1b1021b1", parentId: "9c6bed0a", relPath: ",__lnJ4WR2Ed-cKYm16Ith4Q,_B6LNg2R3Ed-cKYm16Ith4Q", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "14", prefix: "", name: "update_sys_int_test_plan", title: "Update the System Integration Test Plan", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/update_sys_int_test_plan_1FABB52C.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true]},
+	
+		
+		
+{id: "7253ddc", parentId: "1b1021b1", relPath: ",__lnJ4WR2Ed-cKYm16Ith4Q,_B6LNg2R3Ed-cKYm16Ith4Q,_B6LNhmR3Ed-cKYm16Ith4Q", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "test_architect", title: "Test Architect", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/test_architect_7B63C186.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "8cc6b928", parentId: "1b1021b1", relPath: ",__lnJ4WR2Ed-cKYm16Ith4Q,_B6LNg2R3Ed-cKYm16Ith4Q,_B6LNimR3Ed-cKYm16Ith4Q", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "systems_int_test_plan", title: "Systems Integration Test Plan", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/systems_int_test_plan_3FF5A3A5.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "2ac11794", parentId: "1b1021b1", relPath: ",__lnJ4WR2Ed-cKYm16Ith4Q,_B6LNg2R3Ed-cKYm16Ith4Q,_B6LNimR3Ed-cKYm16Ith4Q", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "systems_int_test_plan", title: "Systems Integration Test Plan", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/systems_int_test_plan_3FF5A3A5.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "610f2ba6", parentId: "9c6bed0a", relPath: ",__lnJ4WR2Ed-cKYm16Ith4Q,_B6LNgWR3Ed-cKYm16Ith4Q", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "15", prefix: "", name: "update_oper_test_plan", title: "Update the Operability Test Plan", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/update_oper_test_plan_C838CB51.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true]},
+	
+		
+		
+{id: "61b88b8e", parentId: "610f2ba6", relPath: ",__lnJ4WR2Ed-cKYm16Ith4Q,_B6LNgWR3Ed-cKYm16Ith4Q,_B6LNhmR3Ed-cKYm16Ith4Q", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "test_architect", title: "Test Architect", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/test_architect_7B63C186.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "f53be7a8", parentId: "610f2ba6", relPath: ",__lnJ4WR2Ed-cKYm16Ith4Q,_B6LNgWR3Ed-cKYm16Ith4Q,_B6LNiGR3Ed-cKYm16Ith4Q", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "operability_test_plan", title: "Operability Test Plan", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/operability_test_plan_46BEAF7F.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "51daf995", parentId: "610f2ba6", relPath: ",__lnJ4WR2Ed-cKYm16Ith4Q,_B6LNgWR3Ed-cKYm16Ith4Q,_B6LNiGR3Ed-cKYm16Ith4Q", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "", prefix: "", name: "operability_test_plan", title: "Operability Test Plan", url: "./../../practice.tech.full_test_mgmt.base-ibm_lic/capabilitypatterns/operability_test_plan_46BEAF7F.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "f0c4e7a3", parentId: "", relPath: ",_ZZl6cJkeEd-Up9uFNLFVDw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "16", prefix: "", name: "refine_usability_design_eval_plan", title: "Refine Usability Design and Evaluation Plan", url: "./../../practice.tech.user_exp_design.base-ibm_lic/capabilitypatterns/refine_usability_design_eval_plan_A03B700C.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "b59a8abd", parentId: "f0c4e7a3", relPath: ",_ZZl6cJkeEd-Up9uFNLFVDw,_ZZl6cZkeEd-Up9uFNLFVDw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "user_experience_pro", title: "User Experience Professional", url: "./../../practice.tech.user_exp_design.base-ibm_lic/capabilitypatterns/user_experience_pro_AAD9501C.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "44898adb", parentId: "f0c4e7a3", relPath: ",_ZZl6cJkeEd-Up9uFNLFVDw,_ZZl6fJkeEd-Up9uFNLFVDw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_approach_slot", title: "[Technical Approach]", url: "./../../practice.tech.user_exp_design.base-ibm_lic/capabilitypatterns/technical_approach_slot_EDF11669.html", 
+	predecessors: "", info: "Optional Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "86325ad7", parentId: "f0c4e7a3", relPath: ",_ZZl6cJkeEd-Up9uFNLFVDw,_ZZl6e5keEd-Up9uFNLFVDw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "technical_specification_slot", title: "[Technical Specification]", url: "./../../practice.tech.user_exp_design.base-ibm_lic/capabilitypatterns/technical_specification_slot_8B6FFE35.html", 
+	predecessors: "", info: "Optional Input", type: "Work Product Slot", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7c5573b", parentId: "f0c4e7a3", relPath: ",_ZZl6cJkeEd-Up9uFNLFVDw,_ZZl6cpkeEd-Up9uFNLFVDw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "current_solution_eval", title: "Current Solution Evaluation", url: "./../../practice.tech.user_exp_design.base-ibm_lic/capabilitypatterns/current_solution_eval_99726432.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "6580fc32", parentId: "f0c4e7a3", relPath: ",_ZZl6cJkeEd-Up9uFNLFVDw,_ZZl6c5keEd-Up9uFNLFVDw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "early_usability_eval", title: "Early Usability Evaluation", url: "./../../practice.tech.user_exp_design.base-ibm_lic/capabilitypatterns/early_usability_eval_24C39F7.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "bdf11394", parentId: "f0c4e7a3", relPath: ",_ZZl6cJkeEd-Up9uFNLFVDw,_ZZl6dpkeEd-Up9uFNLFVDw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rqmts_user_validation_report", title: "Requirements User Validation Report", url: "./../../practice.tech.user_exp_design.base-ibm_lic/capabilitypatterns/rqmts_user_validation_report_5E044651.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "4b9c7262", parentId: "f0c4e7a3", relPath: ",_ZZl6cJkeEd-Up9uFNLFVDw,_ZZl6dJkeEd-Up9uFNLFVDw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "usability_design_eval_plan", title: "Usability Design and Evaluation Plan", url: "./../../practice.tech.user_exp_design.base-ibm_lic/capabilitypatterns/usability_design_eval_plan_64CD522B.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "5c9a0146", parentId: "f0c4e7a3", relPath: ",_ZZl6cJkeEd-Up9uFNLFVDw,_ZZl6dZkeEd-Up9uFNLFVDw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "usability_requirements", title: "Usability Requirements", url: "./../../practice.tech.user_exp_design.base-ibm_lic/capabilitypatterns/usability_requirements_6F6B323B.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "c00c7638", parentId: "f0c4e7a3", relPath: ",_ZZl6cJkeEd-Up9uFNLFVDw,_ZZl6d5keEd-Up9uFNLFVDw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "ui_conceptual_model", title: "User Interface Conceptual Model", url: "./../../practice.tech.user_exp_design.base-ibm_lic/capabilitypatterns/ui_conceptual_model_C6DE1C16.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "6a923496", parentId: "f0c4e7a3", relPath: ",_ZZl6cJkeEd-Up9uFNLFVDw,_ZZl6eJkeEd-Up9uFNLFVDw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "ui_guidelines", title: "User Interface Guidelines", url: "./../../practice.tech.user_exp_design.base-ibm_lic/capabilitypatterns/ui_guidelines_295F344A.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "b7937f07", parentId: "f0c4e7a3", relPath: ",_ZZl6cJkeEd-Up9uFNLFVDw,_ZZl6eZkeEd-Up9uFNLFVDw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "ui_prototype", title: "User Interface Prototype", url: "./../../practice.tech.user_exp_design.base-ibm_lic/capabilitypatterns/ui_prototype_33FD145A.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "12644615", parentId: "f0c4e7a3", relPath: ",_ZZl6cJkeEd-Up9uFNLFVDw,_ZZl6epkeEd-Up9uFNLFVDw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "user_profiles", title: "User Profiles", url: "./../../practice.tech.user_exp_design.base-ibm_lic/capabilitypatterns/user_profiles_22962870.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "6c0a62a3", parentId: "f0c4e7a3", relPath: ",_ZZl6cJkeEd-Up9uFNLFVDw,_ZZl6dJkeEd-Up9uFNLFVDw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "usability_design_eval_plan", title: "Usability Design and Evaluation Plan", url: "./../../practice.tech.user_exp_design.base-ibm_lic/capabilitypatterns/usability_design_eval_plan_64CD522B.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

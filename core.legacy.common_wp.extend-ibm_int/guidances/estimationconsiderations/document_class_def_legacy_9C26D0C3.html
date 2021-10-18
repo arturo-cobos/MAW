@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Estimation Considerations: Document Class Definitions (Legacy)</title>
+<meta name="uma.type" content="EstimationConsiderations">
+<meta name="uma.name" content="document_class_def_legacy">
+<meta name="uma.presentationName" content="Document Class Definitions (Legacy)">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb370790428587963567"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Estimation Considerations: Document Class Definitions (Legacy)</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/estimationconsiderations.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/document_class_def_F0EA087.html" guid="mweb75183624B95C2B1C8525688200628CD0">Document Class Definitions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">The size of the task of document analysis is based on a number of factors that measure the complexity of the system and the
+data the system uses. The complexity of the system also affects the number of classes that must be defined to the system.
+Here are the key factors when assessing the complexity of the system. 
+<ul>
+    <li>
+        Complexity of the functional requirements may lead to more classes that identify information needed to support the
+        functions of the system.
+    </li>
+    <li>
+        Degree to which information will be reused in the system since reuse requires that the definitions be general and
+        flexible enough for each context in which they will be used.
+    </li>
+    <li>
+        Number of different document types to be considered with reuse of information classes between document types and
+        within document types in different contexts.
+    </li>
+    <li>
+        Types and number of systems or technologies used to maintain the source data (tagged source, document management
+        attributes, relational database).
+    </li>
+    <li>
+        Number of system outputs or processing options.
+    </li>
+    <li>
+        Requirements for compatibility with existing systems or applications.
+    </li>
+    <li>
+        Absence or existence of SGML DTD or other analysis.
+    </li>
+    <li>
+        Need to anticipate and provide for future use of the data.
+    </li>
+    <li>
+        Number of analysts required.
+    </li>
+</ul>These factors can lead to a wide range in the number of classes found during document analysis. We have seen
+applications that range from simple HTML-like applications that support a single output type and that have on the order of
+100 classes defined to very large applications with multiple, large document types sharing many classes and several output
+types that have more than 600 classes. The factors that lead to larger class counts are complex functional requirements
+that necessitate the definition of many different classes to support the functions; this includes sophisticated style
+specifications for printed output. Multiple output options also lead to higher class counts because information must often
+be differentiated more carefully for different handling in different output processes. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+            </td>
+        </tr>
+    </tbody>
+</table>The time required to complete each class definition gets larger with more complex systems. We have seen systems
+that required from less than .5 hours/class on small projects to up to 1 hour/class. These times include the document
+reviews, the data capture and report generation, the review and rework. The key factors that drive longer analysis time are
+reuse of classes in different document types and multiple system outputs generated from the same class. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+            </td>
+        </tr>
+    </tbody>
+</table>Analysis time can also be affected by the existence of industry standard or previous document analysis. If well
+done, these can dramatically reduce the amount of time needed. If poorly done and compatibility with this prior work is
+necessary, this can dramatically increase the amount of time needed. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+            </td>
+        </tr>
+    </tbody>
+</table>As usually, having more than one analyst will reduce productivity because of the time spent in communications.</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

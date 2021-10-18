@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing Test Measurements</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="test_measurements_dev">
+<meta name="uma.presentationName" content="Developing Test Measurements">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_J-dlgC3hEdyaEcK9a3Q7zQ"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_J-dlgC3hEdyaEcK9a3Q7zQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing Test Measurements</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Migrated development approach from existing IBM Global Services Method work product</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/test_measurements_53B8DE5E.html" guid="mweb6B4BB419DF4FBEA0852569A400730704">Test Measurements</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <b><i>Enterprise</i></b><b><i>Level Test Measurements:</i></b><br />
+    The organization should embark on a formal program (with committed executive sponsorship) to improve the effectiveness
+    and capability of its testing and quality management functions, firstly through an inward assessment and focus, and
+    secondly through benchmarking itself against companies in a similar demographic sector.<br />
+</p>
+<p>
+    One useful model for initiating this exercise is the Testing Maturity Model (aligned with the SEI Capability Maturity
+    Model) which may be used as a foundation by:
+</p>
+<ul>
+    <li>
+        <div>
+            an internal assessment team to identify the current testing capability state.
+        </div>
+    </li>
+    <li>
+        <div>
+            upper management to initiate a testing improvement program.
+        </div>
+    </li>
+    <li>
+        <div>
+            development teams to improve testing capability.
+        </div>
+    </li>
+    <li>
+        <div>
+            users and clients to define their role in the testing process.
+        </div>
+    </li>
+    <li>
+        <div>
+            Please refer to the publication “Developing a Testing Maturity Model” by Ilene Burnstein, Taratip Suwannasart,
+            and C.R. Carlson, from the lllinois Institute of Technology for further information on the TMM
+            (http://www.stsc.hill.af.mil/crosstalk/1996/aug/developi.asp).
+        </div>
+    </li>
+</ul>
+<ol>
+    <li>
+        Identify the CSFs that need to be achieved in order for the Testing and Quality Management organization to be
+        successful, e.g. in terms of ROI, effectiveness in ensuring defect-free deliverables for the enterprise,
+        competitiveness in Testing best practice compared to other organizations of similar demographic nature.&nbsp;
+    </li>
+    <li>
+        Through analysis of previous Test Measurements (if any), Test Results, Defect Log and Production Problem Logs,
+        identify the problematic areas that could be caused by inefficiencies in the testing process (e.g. using root cause
+        analysis).&nbsp;
+    </li>
+    <li>
+        Analyze the output from 2 and 3, and determine from Test Management and other stakeholders what information would
+        be helpful in meeting these CSFs and resolving the weaknesses in the testing cycle.&nbsp;
+    </li>
+    <li>
+        Analyze the Test Measurements in conjunction with metrics from the other domains to establish where the development
+        lifecycle processes could be improved and feed back to the owners of, e.g. project management or application
+        development domains.&nbsp;
+    </li>
+    <li>
+        Identify what statistics/metrics/measurements would contribute to making this information viable and accurate; and
+        how, when and by whom they should be collected during the testing process by the projects.&nbsp;
+    </li>
+    <li>
+        Create the Test Measurements policies, processes and guidelines to facilitate the collection, collating, analysis
+        and presentation of this information; and communicate it formally throughout the IT organization for
+        adoption.&nbsp;
+    </li>
+    <li>
+        As each testing project completes, gather the Test Measurements into the corporate repository and use it on an
+        enterprise level to provide information to the management of the Testing and Quality Management functions in order
+        that they can use this to improve the effectiveness and capability of the Testing organization.&nbsp;
+    </li>
+    <li>
+        The enterprise Test Measurements may also be used during the testing project by Test Management to monitor the
+        emerging trends and to flag any extraordinary exceptions which may bring specific risk to the project.&nbsp;
+    </li>
+    <li>
+        Select and procure a set of reporting/graphics tools that allows creation of procedures/macros that can be
+        automatically executed by both test management and the testing team to produce standard reports to encourage
+        consistency of presentation and familiarity with the Test Measurements&nbsp;
+    </li>
+    <li>
+        More information is also available in the Test Method Task “Analyze Overall Testing Effectiveness”.<br />
+    </li>
+</ol>
+<p>
+    <b><i>Project Level Test Measurements:</i></b>
+</p>
+<ul>
+    <li>
+        <div>
+            Consult the enterprise Test Measurements policy, processes and guidelines to establish which measurements
+            should be collected throughout the Testing project, when they should be collected and by whom. There may be a
+            list of mandatory vs. optional requirements specified.
+        </div>
+    </li>
+    <li>
+        <div>
+            Review the Testing Project list of Work Products, Activities and Tasks that have been selected for the project,
+            and identify where and by whom the Test Measurements may be created and documented.
+        </div>
+    </li>
+    <li>
+        <div>
+            Review any problematic areas (from the risk assessment and previous projects) and ensure that the Test
+            Measurements will cover the gathering of data to address these areas. If the cause or root of the problems
+            originate from other disciplines or domains, ensure that sufficient interface allows for correct action to be
+            taken, even if outside the test domain.
+        </div>
+    </li>
+    <li>
+        <div>
+            Review the CSFs defined by the organization and ensure that the Test Measurements will contribute to the
+            achieving of these CSFs or CSFs specific to this project
+        </div>
+    </li>
+    <li>
+        <div>
+            Review the enterprise Test Measurements that already exist and ensure that the measurements from this project
+            will contribute to, be consistent with and easily merge with the corporate information
+        </div>
+    </li>
+    <li>
+        <div>
+            Ensure that the activities to collect, collate, analyze and use the Test Measurements are included and
+            scheduled as a vital component of the Test Project during project planning and satisfy 1-4 above.
+        </div>
+    </li>
+    <li>
+        <div>
+            Use the sample Measurements Section Table of Contents in Section 6 (Example) as a checklist or prompt for
+            identifying types of Test Measurements to be produced.
+        </div>
+    </li>
+    <li>
+        <div>
+            The techniques for collecting the actual Test Measurements are documented in the Tasks related to the Testing
+            Activities and are not repeated here (to ensure consistency with the Test Method).
+        </div>
+    </li>
+    <li>
+        <div>
+            Using dummy metrics or metrics from previous projects, mock up a few “prototype” measurements, measurement
+            summaries and graphs to ensure that the right output can be derived once the metrics are collected.
+        </div>
+    </li>
+    <li>
+        <div>
+            Collect, collate, sort and store the raw Test Measurements in a relational database or corporate repository
+            where they may be indexed uniquely for easy reference, and preferably supported by relevant testing tools or
+            reporting tools (e.g. SAS).
+        </div>
+    </li>
+    <li>
+        <div>
+            Throughout the lifecycle of the testing project, however small or even if just one phase, refer
+            <u>continuously</u> to the Test Measurements in order to (1) monitor the progress/status of the project (2)
+            track achievement vs. the Quality objectives and (3) identify and rectify any testing weaknesses/issues
+            <u>before</u> the end of the project or phase
+        </div>
+    </li>
+    <li>
+        <div>
+            Any failure in meeting the project schedules or quality and testing objectives should be noted and escalated to
+            Test Management for further action.
+        </div>
+    </li>
+    <li>
+        <div>
+            Communicate the Test Measurements widely to all relevant stakeholders during the project so that any corrective
+            action, process improvements, may be understood and incorporated into the testing project plan.
+        </div>
+    </li>
+    <li>
+        <div>
+            At the end of the testing project, collate, organize and document clearly the Test Measurements for hand-over
+            to the Testing organization for trend analysis, management decision making on improving the testing process and
+            function and communication of lessons learned.
+        </div>
+    </li>
+    <li>
+        <div>
+            In addition, the Test Measurements must be transferred to the Application Maintenance team for enhancement and
+            updates during the life of the application. This will help them in estimating their testing effort in
+            Maintenance and also provide a foundation for their Defect and Quality management activities.
+        </div>
+    </li>
+    <li>
+        <div>
+            More information is available in the Test Method Task “Feedback Measurements Data”.
+        </div>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

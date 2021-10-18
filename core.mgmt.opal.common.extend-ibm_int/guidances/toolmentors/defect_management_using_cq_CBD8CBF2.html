@@ -1,0 +1,2317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tool Mentor: Defect Management Using Rational ClearQuest</title>
+<meta name="uma.type" content="ToolMentor">
+<meta name="uma.name" content="defect_management_using_cq">
+<meta name="uma.presentationName" content="Defect Management Using Rational ClearQuest">
+<meta name="uma.category" content="Tool:clearquest:Rational ClearQuest">
+<meta name="element_type" content="tool_mentor">
+<meta name="tool" content="Rational ClearQuest">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_4ghTYHu_Ed6TsOLr_oVa_g", "_TYLdwIuLEd2KmbnSoyDdFw"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_VTspMMRfEdyD76CYS6Ta7A", "_PWdI0HLhEd2OMZvHF7YFaQ", "_TYLdwIuLEd2KmbnSoyDdFw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_TYLdwIuLEd2KmbnSoyDdFw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Tool Mentor: Defect Management Using Rational ClearQuest</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/toolmentor.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This tool mentor provides guidance on how to perform Defect Management when using the OnDemand Process Asset Library (OPAL) and Rational ClearQuest.</td>
+</tr>
+<tr>
+<td>Tool: <a href="./../../../core.default.tool_def.extend-ibm/tools/clearquest_551DA9A8.html" guid="_PWdI0HLhEd2OMZvHF7YFaQ">Rational ClearQuest</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.mgmt.opal_full_pm.base-ibm_int/tasks/identify_raise_and_log_defect_imsp520_E4F74E11.html" guid="_QCFkIIaHEd2ytcaOq4b78Q">Identify, raise and log defect (IMSP520)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <strong>1 Purpose</strong>
+</p>
+<p>
+    This document provides guidance how IBM Rational ClearQuest is used to support Defect Management Procedure (IMSP520) in
+    accordance with the OnDemand Process Asset Library (OPAL). This document may serve as a template for creating a
+    tailored procedure or guideline.
+</p>
+<p>
+    The intent of this guidance is to provide sufficient direction on how IBM Rational ClearQuest is used on a project to
+    support Defect Management, so that there are no ambiguities about the process and the team training can be concise.
+</p>
+<p>
+    This document does not replace the procedure and does not cover all of the steps defined in the procedure. To fully
+    understand this document, it should be read in conjuntion with the procedure.
+</p>
+<p>
+    Refer to the procedure and the associated references described in OPAL for details on the tasks, steps and techniques
+    for performing this procedure. In particular, you should be aware that the procedure may contain additional steps that
+    take place outside of ClearQuest and are not duplicated here.
+</p>
+<p>
+    <strong>2 Scope</strong>
+</p>
+<p>
+    The guidance assumes a basic understanding of how to use IBM Rational ClearQuest and is not intended to be training
+    material. Detailed training on the use of IBM Rational ClearQuest can be found by selecting Education from the <a href="http://ams1.sby.ibm.com/igsdf/tools_mgmt.nsf/Content/RATSW_GetStart_Home"><u>GBS Rational Lifecycle Tools
+    Enablement</u></a> page.<br />
+    <br />
+    The process documented is dependant upon the use of the tailored ClearQuest Schema produced by the Global Services
+    Rational Adoption Program (GSRAP) team.
+</p>
+<p>
+    The current customized schema has the following characteristics:
+</p>
+<ul>
+    <li>
+        <div class="BodyText">
+            It was developed and tested using IBM Rational ClearQuest, ClearQuest Web v7.0.0 Label BALTIC_PATCH.D06.09.29
+        </div>
+    </li>
+    <li>
+        <div class="BodyText">
+            It does not provide automatic integration with Rational Portfolio Manager (RPM).
+        </div>
+    </li>
+    <li>
+        <div class="BodyText">
+            It does not provide automatic interface or integration with other tools or applications that an organization
+            may use in accordance with its measurement program to support quality goals at an organizational level.
+        </div>
+    </li>
+    <li>
+        <div class="BodyText">
+            It doesn't cover problem management, including emergency fixes, which are covered by separate procedures within
+            OPAL.
+        </div>
+    </li>
+</ul>
+<p class="BodyText">
+    <strong>3 Tool implementation of the OPAL Procedure</strong>
+</p>
+<p class="BodyText">
+    <em>3.1 The workflow (defect's lifecycle)</em>
+</p>
+<p class="BodyText">
+    The following state transition diagram shows the lifecycle of a defect within ClearQuest. States are shown by boxes;
+    Actions are shown by the connecting arrows. Each action (arrow) has a legend with the format <i>[ActionName, Role]</i>
+    where: <i>ActionName</i> is the name of the action and <i>Role</i> is the role with the permissions to execute the
+    action.<br />
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/CQ_Defect_DefectLifecycle.bmp" width="600" height="476" /><br />
+    <br />
+    <b><u>Reference</u></b>: PM = <b>P</b>roject <b>M</b>anager; O = Resolution <b>O</b>wner.<br />
+    <br />
+    The normal lifecycle of a defect is shown through the centre of the diagram from left to right: <b>Raised</b> through
+    <b>Closed</b>. Other states are exceptional.<br />
+    The following table defines each of these states.
+</p>
+<table class="TableGrid" border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td valign="top" width="158">
+                <p class="BodyText">
+                    <b>State</b>
+                </p>
+            </td>
+            <td valign="top" width="478">
+                <p class="BodyText">
+                    <b>Definition</b>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="158">
+                <p class="BodyText">
+                    <b>Raised</b>
+                </p>
+            </td>
+            <td valign="top" width="478">
+                <p class="BodyText">
+                    A defect is Raised if a Submitter has just identified and logged it into ClearQuest. No other action
+                    has taken place at this state.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="158">
+                <p class="BodyText">
+                    <b>Opened</b>
+                </p>
+            </td>
+            <td valign="top" width="478">
+                <p class="BodyText">
+                    A defect is Opened if it is considered as a valid defect and it is ready to be analyzed, so a
+                    Resolution Owner is assigned to work with it and proceed with its analysis.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="158">
+                <p class="BodyText">
+                    <b>Analyzed</b>
+                </p>
+            </td>
+            <td valign="top" width="478">
+                <p class="BodyText">
+                    A defect is Analyzed when the Resolution Owner has defined the schedules and planned actions required
+                    to solve the defect. The proposed solution is ready to be validated by the Project Manager.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="158">
+                <p class="BodyText">
+                    <b>Solution Approved</b>
+                </p>
+            </td>
+            <td valign="top" width="478">
+                <p class="BodyText">
+                    A defect is given a Solution Approved status when the Project Manager considers that the schedules and
+                    recommended actions defined by the Resolution Owner are appropriate; the defect's resolution is
+                    approved to be implemented.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="158">
+                <p class="BodyText">
+                    <b>Resolved</b>
+                </p>
+            </td>
+            <td valign="top" width="478">
+                <p class="BodyText">
+                    A defect is Resolved if the resolution of the defect is complete and it is ready for
+                    verification/validation.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="158">
+                <p class="BodyText">
+                    <b>Resolution Accepted</b>
+                </p>
+            </td>
+            <td valign="top" width="478">
+                <p class="BodyText">
+                    A defect is given a Resolution Accepted status if it passed the verification/validation process
+                    successfully.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="158">
+                <p class="BodyText">
+                    <b>Closed</b>
+                </p>
+            </td>
+            <td valign="top" width="478">
+                <p class="BodyText">
+                    A defect is Closed if it has been solved successfully and it no longer requires attention.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="158">
+                <p class="BodyText">
+                    <b>Cancelled</b>
+                </p>
+            </td>
+            <td valign="top" width="478">
+                <p class="BodyText">
+                    A defect is Cancelled if it should not be considered in any analysis after its submission.<br />
+                    <i><u>Note</u>: if a new defect has been raised the Submitter can cancel it to avoid any analysis
+                    probably because the defect was raised by error.</i>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="158">
+                <p class="BodyText">
+                    <b>Deferred</b>
+                </p>
+            </td>
+            <td valign="top" width="478">
+                <p class="BodyText">
+                    A defect is Deferred if it is out of scope for the current release(s). Defects in the Deferred state
+                    are held and reconsidered for future releases.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="158">
+                <p class="BodyText">
+                    <b>Duplicated</b>
+                </p>
+            </td>
+            <td valign="top" width="478">
+                <p class="BodyText">
+                    A defect is given a Duplicated status when exists another submitted defect that encompass some or all
+                    of the new defect's symptoms.<br />
+                    <i><u>Note</u>: When the defect is placed in the Duplicated state, the defect number it duplicates is
+                    recorded in the defect's record into ClearQuest.</i>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="158">
+                <p class="BodyText">
+                    <b>Rejected</b>
+                </p>
+            </td>
+            <td valign="top" width="478">
+                <p class="BodyText">
+                    A defect is Rejected if it is considered invalid.<br />
+                    <i><u>Note</u>: a rejection can occur for many reasons like:<br />
+                    - it is the result of a risk occurrence, change or issue<br />
+                    - it was caused by testing errors or omissions<br />
+                    - it was raised as the result of a user misunderstanding, etc.</i>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="158">
+                <p class="BodyText">
+                    <b>Revision Required</b>
+                </p>
+            </td>
+            <td valign="top" width="478">
+                <p class="BodyText">
+                    A defect is in Revision Required state if it has been returned to the Resolution Owner for further
+                    analysis/actions.<br />
+                    <i><u>Note</u>: a defect may require this kind of revision during analysis or solution
+                    implementation.</i>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <em>3.2 IBM Rational ClearQuest usage</em>
+</p>
+<p>
+    ClearQuest may be accessed either directly via the ClearQuest Client, or via the web interface ClearQuest Web. Due to
+    performance reasons the recommended interface -especially for hosted environments- is the ClearQuest Web, so all the
+    actions described in this document refer to this interface. If using the ClearQuest client similar actions are
+    available and a table mapping these actions between both interfaces is provided below.<br />
+    Once connected to ClearQuest, there are three kinds of action that may be performed to a defect- changes to the content
+    of the defect's fields, changes to the state of the defect (as shown in the diagram above), and the assigning of the
+    defect to a new owner. These actions are performed in the following ways.
+</p>
+<table class="TableGrid" border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td valign="top" width="213">
+                <p class="BodyText">
+                    <b>Action</b>
+                </p>
+            </td>
+            <td valign="top" width="213">
+                <p class="BodyText">
+                    <b>CQ Client</b>
+                </p>
+            </td>
+            <td valign="top" width="213">
+                <p class="BodyText">
+                    <b>CQ Web</b>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="213">
+                <p class="BodyText">
+                    Change the content of fields
+                </p>
+            </td>
+            <td valign="top" width="213">
+                <p class="BodyText">
+                    Select the defect you want to change.
+                </p>
+                <p class="BodyText">
+                    Select the Modify entry in the Actions button's submenu.
+                </p>
+                <p class="BodyText">
+                    Change the field values as required,
+                </p>
+                <p class="BodyText">
+                    Click on Apply to save the changes, or Revert to leave the defect unchanged.
+                </p>
+            </td>
+            <td valign="top" width="213">
+                <p class="BodyText">
+                    Select the defect you want to change.
+                </p>
+                <p class="BodyText">
+                    Click on the Modify button.
+                </p>
+                <p class="BodyText">
+                    <br />
+                    Change the field values as required,
+                </p>
+                <p class="BodyText">
+                    Click on Save to save the changes, or Cancel to leave the defect unchanged.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="213">
+                <p class="BodyText">
+                    Change the state of the defect
+                </p>
+            </td>
+            <td valign="top" width="213">
+                <p class="BodyText">
+                    Select the defect you want to change.
+                </p>
+                <p class="BodyText">
+                    Choose the appropriate new state in the Actions button's submenu.
+                </p>
+                <p class="BodyText">
+                    Change any fields as required (some state changes will make certain fields mandatory).
+                </p>
+                <p class="BodyText">
+                    Click on Apply to save the changes, or Revert to leave the defect unchanged.
+                </p>
+            </td>
+            <td valign="top" width="213">
+                <p class="BodyText">
+                    Select the defect you want to change.
+                </p>
+                <p class="BodyText">
+                    Choose the appropriate new state in the Change State button's submenu.
+                </p>
+                <p class="BodyText">
+                    Change any fields as required (some state changes will make certain fields mandatory).
+                </p>
+                <p class="BodyText">
+                    Click on Save to save the changes, or Cancel to leave the defect unchanged.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="213">
+                <p class="BodyText">
+                    Assign the defect to a new owner.
+                </p>
+            </td>
+            <td valign="top" width="213">
+                <p class="BodyText">
+                    Select the defect you want to change.
+                </p>
+                <p class="BodyText">
+                    Select the Modify entry in the Actions button's submenu.
+                </p>
+                <p class="BodyText">
+                    Change the Owner field value as required,
+                </p>
+                <p class="BodyText">
+                    Click on Apply to save the changes, or Revert to leave the defect unchanged.
+                </p>
+            </td>
+            <td valign="top" width="213">
+                <p class="BodyText">
+                    Select the defect you want to change.
+                </p>
+                <p class="BodyText">
+                    Click on the Modify button.
+                </p>
+                <p class="BodyText">
+                    <br />
+                    Change the Owner field value as required,
+                </p>
+                <p class="BodyText">
+                    Click on Save to save the changes, or Cancel to leave the defect unchanged.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    A detailed description of each field is contained in the field's help provided within ClearQuest.
+</p>
+<p>
+    Other kind of action that may be performed using ClearQuest and that will be very useful for you is to search the
+    defects' database (defects' log) using public or personal queries: the first ones -"public queries"- are available to
+    the whole team while the personal queries are private and available only for the creator. As you can write your own
+    queries you can search defects with specific criteria and create your own layout.<br />
+    In order to learn more about how to perform these actions and others related to ClearQuest, the solution has additional
+    documents and/or viewlets that will help you with this job.
+</p>
+<p>
+    <em>3.3 The Defect Form</em>
+</p>
+<p>
+    This section describes the fields included in the Defect form.
+</p>
+<table class="TableGrid" border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <strong>Field Name</strong>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    <strong>For tab where it is included</strong>
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    <strong>Description</strong>
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    <strong>Comments / Behavior</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Actions / Comments</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Analysis
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Actions to address the defect and/or any comments about the defect or its resolution. This information
+                    may be useful in trend analysis and root cause analysis.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Text, editable.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Actions / Comments Log</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Analysis
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Running log of any action / comments entered during the defect lifecycle.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Calculated field.<br />
+                    Automatically filled by ClearQuest.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Activity Found</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Problem Detail
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Activity during which the defect was found.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Listbox.<br />
+                    Values: <i>Peer Review, Unit Test, Function Test, System Test, Regression Test, Integration Test,
+                    Performance Test, Acceptance Test, Other</i>.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Actuals:<br />
+                    Duration (days)</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Resolution
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    The number of days between when defect was raised and when it was closed.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Calculated field.<br />
+                    Automatically filled by ClearQuest.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Actuals:<br />
+                    Effort (hours)</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Resolution
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Actual effort spent to fix the defect.<br class="BodyText" />
+                    <br />
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Editable.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Actuals:<br />
+                    Finish Date</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Resolution
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    The date the defect was resolved and development work ceased.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Editable.<br />
+                    Select using calendar button.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Actuals:<br />
+                    Start Date</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Resolution
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    The date work actually began on fixing the defect.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Editable.<br />
+                    Select using calendar button.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Application Name</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Overview
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Application name to which the defect relates to.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Listbox.<br />
+                    Values: existing applications created in ClearQuest using the Application form.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Date Raised</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Overview
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Date when the defect was raised in ClearQuest.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Calculated field.<br />
+                    Automatically filled with the current date by ClearQuest when the defect is raised.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Date Closed</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Resolution
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Date when the defect was closed in ClearQuest.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Calculated field.<br />
+                    Automatically filled by ClearQuest when a defect is closed.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Defect ID</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Overview
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Defect's unique identification in ClearQuest.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Calculated field.<br />
+                    Automatically filled by ClearQuest when the defect is raised.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Description</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Overview
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Detailed description of the defect.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Text, editable.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Duplicate Information:<br />
+                    Duplicate Of.</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Resolution
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Defect number (and link) to which the defect is a duplicate.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Calculated field.<br />
+                    Automatically filled by ClearQuest based on Duplicate actions.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Duplicate Information:<br />
+                    Duplicates</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Resolution
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    List of all the defects that relates due to duplication.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Calculated field.<br />
+                    Automatically filled by ClearQuest based on Duplicate actions.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Estimate Required?</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Analysis
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Indicate if the impact is complex or it is expected to have significant impact on project scope or
+                    other projects.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Radio buttons.<br />
+                    Values: <i>Yes, No</i>.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Estimate / Planned:<br />
+                    Effort (hours)</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Analysis
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Effort to fix the defect and determine the impact on the schedule, ensuring proper identification of
+                    the portions of the fix that constitutes a change versus those that represent nonconformity.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Editable.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Estimate / Planned:<br />
+                    Duration (days)</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Analysis
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    The expected timeframe from when the defect was first raised until it will be resolved and closed.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Calculated field.<br />
+                    Automatically filled by ClearQuest based on estimates.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Estimate / Planned:<br />
+                    Finish Date</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Analysis
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    The date that the defect is planned to be fixed.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Editable.<br />
+                    Select using calendar button.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Estimate / Planned:<br />
+                    Start Date</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Analysis
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    The date work is planned to start on fixing the defect.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Editable.<br />
+                    Select using calendar button.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Headline</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Overview
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Short, one-line, description of the defect. It should be concise but as descriptive as possible.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Text, editable.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Impact Assessment</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Analysis
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Areas affected by the defect / resolution. This includes subprojects, business functions within the
+                    application, work products, or code modules.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Text, editable.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Organization Unit</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Overview
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Name of the project organizational unit.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Calculated field.<br />
+                    Automatically filled by ClearQuest based on Project Name.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Originator</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Overview
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    The name of the person who actually identified and reported the defect.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Text, editable.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Owner</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Overview
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    User ID of the Resolution Owner who is the team member with the responsibility of resolving the defect.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Listbox.<br />
+                    Values: authorized users to access ClearQuest.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Phase Detected</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Problem Detail
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Lifecycle phase when the defect was discovered.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Listbox.<br />
+                    Values: <i>Project Management, Requirements, Design, Code, Test, Install, Maintain</i>.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Phase Injected</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Problem Detail
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Lifecycle phase when the defect first entered the work product.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Listbox.<br />
+                    Values: <i>Project Management, Requirements, Design, Code, Test, Install, Maintain.</i>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Planned Action</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Analysis
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Planned actions to address the defect; include skill and resources required to implement the fix.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Text, editable.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Priority</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Overview
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Level of priority of the defect.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Listbox.<br />
+                    Values: <i>High, Medium, Low.</i>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Process Root Cause</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Problem Detail
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    The code that best describes why the process or methodology being followed allowed the error to be
+                    injected.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Listbox.<br />
+                    Values: <i>Skills, Metrics, Pressure, Testing, Complexity, Requirements, Other</i>.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Project Manager</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Overview
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    ID of the Project Manager.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Listbox.<br />
+                    Values: authorized users to access ClearQuest.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Project Name</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Overview
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Project name to which the defect relates to.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Listbox.<br />
+                    Values: existing projects created in ClearQuest using the Project form.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Proposed Workaround</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Problem Detail
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Suggestions or proven methods for bypassing the defect.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Text, editable.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Record Updates</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Resolution
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Running log of the state transitions during the defect lifecycle.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Calculated field.<br />
+                    Automatically filled by ClearQuest.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Resolution Code</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Resolution
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Resolution code.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Listbox.<br />
+                    Values: <i>Fixed, Change, Issue, ByPass, Risk, Invalid, Fixed indirectly, Functions as designed, Fix in
+                    future release</i>.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Severity</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Overview
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Level of severity of the defect.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Listbox.<br />
+                    Values: <i>Critical, High, Medium, Low.</i>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Status</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Overview
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Status of the defect during its lifecycle.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Calculated field.<br />
+                    Automatically filled and changed by ClearQuest based on actions.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Steps to reproduce</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Problem Detail
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Detailed steps and information necessary to reproduce the defect.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Text, editable.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Submitter</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Overview
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    The person who raises the defect in ClearQuest; it corresponds with the user logged in.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Calculated field.<br />
+                    Automatically filled by ClearQuest with the ID of the user logged in.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Target date</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Overview
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Date targeted for resolution of defect. This date is not a guarantee of completion.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Editable.<br />
+                    Select using calendar button.<br />
+                    Mandatory when PM accepts the defect. Submitter can request a target date but the PM will review and
+                    identify the target date based on Submitter's input and the PM's understanding of the problem and
+                    additional defects in the queue or available cycles of the owners.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Type</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Problem Detail
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    Type of defect.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Listbox.<br />
+                    Values: <i>Data, Requirements, Compliance, Interface, Logic, Standards Compliance, Performance,
+                    Clarity, Product Assembly</i>.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="102">
+                <p class="BodyText">
+                    <b>Work Product Root Cause</b>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p class="BodyText">
+                    Problem Detail
+                </p>
+            </td>
+            <td valign="top" width="208">
+                <p class="BodyText">
+                    The code that best describes the technical root cause of the defect.
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="BodyText">
+                    Listbox.<br />
+                    Values: <i>Code, Data, Infrastructure, Methodology, Process, Rejected, Security, Test.</i>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <em>3.4 The queries</em>
+</p>
+<p>
+    The following table lists the public queries provided as part of the ClearQuest schema:
+</p>
+<table class="TableGrid" border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td valign="top" width="177">
+                <br />
+                <b>Query Name</b>
+            </td>
+            <td valign="top" width="452">
+                <br />
+                <b>Description</b>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="177">
+                <br />
+                Closed Defects by Period
+            </td>
+            <td valign="top" width="452">
+                <br />
+                A list of all the defects that were closed (state = Closed) during a specific period of timeand don't
+                require attention.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="177">
+                <br />
+                Defect Log (APP414)
+            </td>
+            <td valign="top" width="452">
+                <br />
+                A list of allthe defects regardless of status. It displays the attributes contained in the Defect Log (APP
+                414).
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="177">
+                <br />
+                DefectsApproved ForImplementation
+            </td>
+            <td valign="top" width="452">
+                <br />
+                A list of defects scheduled to be fixed (state = SolutionApproved). Basically those that are approved to be
+                implemented.<br />
+                Note that defects that have already been resolved or closed will not be visible in this query.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="177">
+                <br />
+                DefectsRequiringApproval
+            </td>
+            <td valign="top" width="452">
+                <br />
+                Defects which have been analyzed or resolved by the Resolution Owner and need to be approved by the Project
+                Manager.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="177">
+                <br />
+                My Open Defects
+            </td>
+            <td valign="top" width="452">
+                <br />
+                A list of all the defects where you are listed as the Project Manager or the Resolution Owner, and still
+                require attention.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="177">
+                <br />
+                New Defects by Period
+            </td>
+            <td valign="top" width="452">
+                <br />
+                A list of all the defects (regardless of current status) that were identified during a specific period of
+                time.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="177">
+                <br />
+                Open Defects
+            </td>
+            <td valign="top" width="452">
+                <br />
+                A list of open defects; these defects still require attention.
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <em>3.5 Evidence of Conformance to Defect Management Procedure</em>
+</p>
+<p>
+    This section describes the features built-in to the ClearQuest schema to provide evidence for conformance to the Defect
+    Management Procedure (IMSP520).
+</p>
+<p class="BodyText">
+    1. Each identified defect is represented by a defect record in ClearQuest.
+</p>
+<p class="BodyText">
+    2. The query Defect Log (APP414) contains the information in the Defect Log (APP 414) or in the Defect Management
+    Documentation (DCD 325). Using this query, it is not necessary to maintain a separate defect log as the query can be
+    run on demand.
+</p>
+<p class="BodyText">
+    3. Defect metrics can be collected from the individual defect records in ClearQuest or analyzed by building queries and
+    charts as required. This information can be exported for inclusion in a separate database (for example ESSBASE) if
+    required.<br class="BodyText" />
+    <br />
+</p>
+<p>
+    <em>3.6 Notifications</em>
+</p>
+<p>
+    The following table lists e-mail notifications that are sent as a defect moves to each state.<br />
+    <br />
+</p>
+<table class="TableGrid" border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    <strong>Name (Action)</strong>
+                </p>
+            </td>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    <b>Recipients</b>
+                </p>
+            </td>
+            <td valign="top" width="152">
+                <p class="BodyText">
+                    <b>E-mail Subject fields</b>
+                </p>
+            </td>
+            <td valign="top" width="166">
+                <p class="BodyText">
+                    <b>E-mail Body contents</b>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    <b>Accept recommended actions</b><br />
+                    (ApproveSolution)
+                </p>
+            </td>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    Resolution Owner
+                </p>
+            </td>
+            <td valign="top" width="152">
+                <p class="BodyText">
+                    Defect Number<br />
+                    State
+                </p>
+            </td>
+            <td valign="top" width="166">
+                <p class="BodyText">
+                    Headline<br />
+                    Description<br />
+                    Severity<br />
+                    Priority<br />
+                    Actions/Comments Log
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    <b>Accept resolution<br />
+                    </b>(AcceptResolution)
+                </p>
+            </td>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    Submitter, Project Manager
+                </p>
+            </td>
+            <td valign="top" width="152">
+                <p class="BodyText">
+                    Defect Number<br />
+                    State
+                </p>
+            </td>
+            <td valign="top" width="166">
+                <p class="BodyText">
+                    Headline<br />
+                    Description<br />
+                    Severity<br />
+                    Priority<br />
+                    Actions/Comments Log
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    <b>Analyze defect<br />
+                    </b>(Analyze)
+                </p>
+            </td>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    Project Manager
+                </p>
+            </td>
+            <td valign="top" width="152">
+                <p class="BodyText">
+                    Defect Number<br />
+                    State
+                </p>
+            </td>
+            <td valign="top" width="166">
+                <p class="BodyText">
+                    Headline<br />
+                    Description<br />
+                    Severity<br />
+                    Priority<br />
+                    Estimated Start date<br />
+                    Estimated Finish date<br />
+                    Estimated Effort<br />
+                    Planned actions<br />
+                    Impact assessment<br />
+                    Actions/Comments Log
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    <b>Assign defect<br />
+                    </b>(Assign)
+                </p>
+            </td>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    Resolution Owner
+                </p>
+            </td>
+            <td valign="top" width="152">
+                <p class="BodyText">
+                    Defect Number<br />
+                    State
+                </p>
+            </td>
+            <td valign="top" width="166">
+                <p class="BodyText">
+                    Headline<br />
+                    Description<br />
+                    Severity<br />
+                    Priority<br />
+                    Actions/Comments Log
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    <b>Close defect<br />
+                    </b>(Close)
+                </p>
+            </td>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    Submitter, Project Manager
+                </p>
+            </td>
+            <td valign="top" width="152">
+                <p class="BodyText">
+                    Defect Number<br />
+                    State
+                </p>
+            </td>
+            <td valign="top" width="166">
+                <p class="BodyText">
+                    Headline<br />
+                    Description<br />
+                    Severity<br />
+                    Priority<br />
+                    Resolution Code<br />
+                    Actions/Comments Log
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    <b>Resolve defect<br />
+                    </b>(Resolve)
+                </p>
+            </td>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    Project Manager
+                </p>
+            </td>
+            <td valign="top" width="152">
+                <p class="BodyText">
+                    Defect Number<br />
+                    State
+                </p>
+            </td>
+            <td valign="top" width="166">
+                <p class="BodyText">
+                    Headline<br />
+                    Description<br />
+                    Severity<br />
+                    Priority<br />
+                    Resolution Code<br />
+                    Actions/Comments Log
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    <b>Return defect to the Owner</b><br />
+                    (Revise)
+                </p>
+            </td>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    Resolution Owner
+                </p>
+            </td>
+            <td valign="top" width="152">
+                <p class="BodyText">
+                    Defect Number<br />
+                    State
+                </p>
+            </td>
+            <td valign="top" width="166">
+                <p class="BodyText">
+                    Headline<br />
+                    Description<br />
+                    Severity<br />
+                    Priority<br />
+                    Actions/Comments Log
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    <b>Set defect as Cancelled<br />
+                    </b>(Cancel)
+                </p>
+            </td>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    Submitter, Project Manager
+                </p>
+            </td>
+            <td valign="top" width="152">
+                <p class="BodyText">
+                    Defect Number<br />
+                    State
+                </p>
+            </td>
+            <td valign="top" width="166">
+                <p class="BodyText">
+                    Headline<br />
+                    Description<br />
+                    Severity<br />
+                    Actions/Comments Log
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    <b>Set defect as Deferred<br />
+                    </b>(Defer)
+                </p>
+            </td>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    Submitter, Project Manager
+                </p>
+            </td>
+            <td valign="top" width="152">
+                <p class="BodyText">
+                    Defect Number<br />
+                    State
+                </p>
+            </td>
+            <td valign="top" width="166">
+                <p class="BodyText">
+                    Headline<br />
+                    Description<br />
+                    Severity<br />
+                    Resolution Code<br />
+                    Actions/Comments Log
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    <b>Set defect as Rejected<br />
+                    </b>(Reject)
+                </p>
+            </td>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    Submitter, Project Manager
+                </p>
+            </td>
+            <td valign="top" width="152">
+                <p class="BodyText">
+                    Defect Number<br />
+                    State
+                </p>
+            </td>
+            <td valign="top" width="166">
+                <p class="BodyText">
+                    Headline<br />
+                    Description<br />
+                    Severity<br />
+                    Actions/Comments Log
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    <b>Submit defect<br />
+                    </b>(SUBMIT)
+                </p>
+            </td>
+            <td valign="top" width="159">
+                <p class="BodyText">
+                    Project Manager
+                </p>
+            </td>
+            <td valign="top" width="152">
+                <p class="BodyText">
+                    Defect Number<br />
+                    State
+                </p>
+            </td>
+            <td valign="top" width="166">
+                <p class="BodyText">
+                    Headline<br />
+                    Description<br />
+                    Severity
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <strong><u>Remember</u>: To have the e-mail notifications working on the system verify that:</strong>
+</p>
+<ol>
+    <li>
+        <div>
+            E-mail settings should be appropriate setup at the schema level (i.e.: SMTP server information, etc.).
+        </div>
+    </li>
+    <li>
+        <div>
+            All the users should have a valid e-mail address configured in their User Profile (they can verify and/or
+            modify it using the <b>User Profile</b> menu option at the top of the CQ web window).
+        </div>
+    </li>
+    <li>
+        <div>
+            The property "Active Rule" should be selected for all the e-mail rules defined.
+        </div>
+    </li>
+</ol>
+<h2>
+    Step <a>1 Identify, raise and log defect</a>
+</h2>
+<h3>
+    <a>1.1 Submit a defect</a><br />
+</h3><br />
+When a defect has been identified, a defect record must be raised in ClearQuest. This will be carried out by whoever finds
+the defect (henceforth, the Submitter). <br />
+Connect to ClearQuest Web, using the instructions supplied by the deployment team. Using the options at the top of the
+ClearQuest Web interface select <b>New:</b> <b>Defect</b> and click the <b>Go</b> button. A Defect submission form will be
+displayed. <br />
+<img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/CQ_Defect_DefectSubmissionForm.JPG" width="600" height="470" /> <br />
+<br />
+<br />
+ClearQuest will automatically fill some fields like <b>Defect ID</b>, <b>Date Raised</b>, <b>Originator (Submitter)</b> and
+<b>Status</b>. Fill in all mandatory fields and any optional fields that you feel may aid in resolution. After completing
+all the required fields, save the form. Now the defect is identified and logged in ClearQuest and its status is
+<b>Raised</b>. 
+<div>
+    <div>
+        <br />
+        <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/CQ_Defect_RaisedDefect.JPG" width="600" height="470" /><br />
+    </div>
+    <div>
+        The Project Manager will be sent an e-mail telling that a new defect has been raised.<br />
+        The decision regarding if the defect is valid or not is made in the following step.<br />
+    </div>
+    <div>
+        <a>1.2 Cancel a defect</a><br />
+        <br />
+        If after raising a new defect in ClearQuest the Submitter considers the defect should not be submitted he/she can
+        cancel it before the Project Manager makes any analysis on it. In ClearQuest select
+        <b>ChangeState.Cancel</b>.<br />
+        <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/CQ_Defect_OptionForCancellingDefect.JPG" width="600" height="470" /><br />
+        <br />
+        Optionally the reason or comments regarding this action can be added into the Actions/Comments field.
+    </div>
+    <div>
+        <br />
+        <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/CQ_Defect_AddingCommentsWhenCancelling.JPG" width="600" height="470" /><br />
+        <br />
+        <br />
+        Then the form should be saved. The defect's status is now <b>Cancelled.</b><br />
+        The Project Manager will be sent an e-mail telling that the defect has been cancelled.
+    </div>
+</div>
+<h2>
+    <a>Step 2 Accept defect and assign responsibility</a>
+</h2>Once a defect has been submitted, a decision must be made upon whether it is valid. 
+<h3>
+    <a>2.1 Set defect as Duplicate</a>
+</h3>
+<p>
+    If there is an existing (reported) defect that encompasses some or all of the new defect's symptoms, the Project
+    Manager marks the new defect as Duplicate. In ClearQuest select <b>Duplicate</b>. At this moment you will be asked to
+    "Enter the Entity Id".
+</p>
+<p>
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/CQ_Defect_SetDefectAsDuplicate.JPG" width="600" height="470" />&nbsp;<br />
+    <br />
+    Complete this field with the <b>Defect ID</b> value automatically set by ClearQuest to the defect to which the new one
+    relates to and click OK. Save the form after completing the defect's information with your desired comments in the
+    <b>Actions/Comments</b> field.<br />
+    The defect's status is now <b>Duplicate.</b><br />
+    Note that all defects which are in status <b>Raised</b> or <b>Deferred</b> can be set as duplicate at any time.
+</p>
+<h3>
+    <a>2.2 Set defect as Rejected (invalid defect)</a>
+</h3>A defect can be considered invalid for many reasons like: 
+<ul>
+    <li>
+        <div class="BodyText">
+            It is the result of a risk occurrence, change or issue.
+        </div>
+    </li>
+    <li>
+        <div class="BodyText">
+            It was caused by testing errors or omissions
+        </div>
+    </li>
+    <li>
+        <div class="BodyText">
+            It was raised as the result of a user misunderstanding, etc.
+        </div>
+    </li>
+</ul>
+<p class="BodyText">
+    If the defect is considered to be invalid it is rejected. In ClearQuest select <b>ChangeState.Reject</b> and complete
+    at least the following field:
+</p>
+<p class="BodyText">
+    <b>Resolution Code</b> -Use the following criteria:
+</p>
+<ul>
+    <li>
+        <div class="BodyText">
+            <b>Fixed</b>: the defect has been fixed (although not yet in production). Used when resolving a defect.
+        </div>
+    </li>
+    <li>
+        <div class="BodyText">
+            <b>Change</b>: the defect was introduced as the result of a change needed to amend the contractual obligations,
+            baselined project plans, or project requirements.
+        </div>
+    </li>
+    <li>
+        <div class="BodyText">
+            <b>Issue</b>: the defect was introduced as the result of an issue where the defect is an internal matter of
+            concern for the project.
+        </div>
+    </li>
+    <li>
+        <div class="BodyText">
+            <b>ByPass:</b> a workaround exists for the defect. Usually this resolution code is using when deferring a
+            defect because a workaround exists, and not when rejecting a defect.
+        </div>
+    </li>
+    <li>
+        <div class="BodyText">
+            <b>Risk</b>: the defect was introduced as the result of an occurrence of a risk already identified in the
+            project.
+        </div>
+    </li>
+    <li>
+        <div class="BodyText">
+            <b>Invalid</b>: the defect is invalid.
+        </div>
+    </li>
+    <li>
+        <div class="BodyText">
+            <b>Fixed indirectly</b>: the defect is/will be fixed as the result of fixing another existing defect.
+        </div>
+    </li>
+    <li>
+        <div class="BodyText">
+            <b>Functions as designed</b>: the application functions as designed.
+        </div>
+    </li>
+    <li>
+        <div class="BodyText">
+            <b>Fix in future release</b>: the defect will be fixed in a future release. Usually this resolution code is
+            using when deferring a defect, and not when rejecting a defect.
+        </div>
+    </li>
+</ul>
+<p class="BodyText">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/CQ_Defect_AddingResCodeWhenCancelling.JPG" width="600" height="470" /><br />
+    Save the form after completing the defect's information with your desired comments in the <b>Actions/Comments</b> field
+    explaining better the reason why the defect is being/ has been rejected.<br />
+    The defect's status is now <b>Rejected.</b><br />
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/CQ_Defect_RejectedDefect.JPG" width="600" height="470" /><br />
+    <br />
+    <br />
+    The Submitter and Project Manager will be sent an e-mail telling that the defect has been rejected.<br />
+    Note that all defects which are in status <b>Raised</b> or <b>Deferred</b> can be rejected at any time.
+</p>
+<h3>
+    <a>2.3 Set defect as Deferred</a>
+</h3>
+<p>
+    If the defect cannot be resolved at the moment the Project Manager can defer its resolution to a future release.<br />
+    In ClearQuest select <b>ChangeState.Defer</b> and complete the mandatory fields and any optional fields that you feel
+    may aid in future analysis/resolution. At this point the mandatory field is <b>Resolution Code</b> and, although
+    several values are allowed, probably the most suitable for this state will be <b>ByPass</b> or <b>Fix in future
+    release</b>.<br />
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/CQ_Defect_AddingResCodeWhenDeferring.JPG" width="600" height="470" />&nbsp;<br />
+    It is a good practice to complete other optional fields (like <b>Proposed workaround</b>, <b>Additional comments</b>,
+    actions comments or those related to estimates/planned dates and/or planned actions), in order to provide more
+    information for future analysis/resolution or to document why the decision of postponing the defect was taken.<br />
+    After completing the appropriate information save the form. The defect's status is now <b>Deferred</b>.<br />
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/CQ_Defect_DeferredDefect.JPG" width="600" height="470" />Step<br />
+    The Submitter and Project Manager will be sent an e-mail telling that the defect has been deferred.
+</p>
+<h3>
+    <a>2.4 Assign a defect</a>
+</h3>If the defect is valid, analyze the defect and determine who will work on it (the Resolution Owner). Once this has
+been decided, in ClearQuest select <b>ChangeState.Assign</b>, and complete all mandatory fields and any optional fields
+that you feel may aid in analysis/resolution. <br />
+<img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/CQ_Defect_AssigningDefect1.JPG" width="600" height="470" /> <br />
+<img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/CQ_Defect_AssigningDefect2.JPG" width="600" height="470" /> 
+<div>
+    <div id="ftn1">
+        <br />
+        After completing all the required fields, save the form.
+    </div>
+</div><br />
+The defect's status is now <b>Opened.</b> <br />
+The Resolution Owner will be sent an e-mail telling that a new defect was assigned to him/her. <br />
+Note that all valid defects which are in status <b>Raised</b> or <b>Deferred</b> should be assign at any time. 
+<h2>
+    Step 3 <a>Analyze the defect and record action for defect resolution</a>
+</h2>Analyze the defect's information to ensure that there is enough information to resolve the defect and that it can be
+resolved within the required timescale; also defines the schedules and planned actions required to solve the defect. <br />
+In the event that the Resolution Owner cannot implement all of the actions personally, the Resolution Owner assumes
+responsibility for enlisting others to implement the necessary actions. <br />
+<b>If the defect's information is insufficient</b> the Resolution Owner contacts the Project Manager, Submitter of the
+defect or any other stakeholder, as appropriate, for additional information. At this point both the Resolution Owner and
+the Project Manager are able to document the additional information using the <b>Modify</b> action. 
+<h3>
+    <a>3.1 Set defect as Duplicate</a>
+</h3>If the Resolution Owner finds an existing (reported) defect that encompass some or all of the new defect's symptoms,
+the defect is set as <b>Duplicate</b> following the same actions defined by the Project Manager is a previous section. 
+<h3>
+    <a>3.2 Set defect as Rejected (invalid defect)</a>
+</h3>If the Resolution Owner considers the defect is invalid, set it as <b>Rejected</b> following the same actions defined
+by the Project Manager in a previous section. 
+<h3>
+    <a>3.3 Analyze a defect</a>
+</h3>If the information of the defect is enough and the defect is confirmed -attempt to recreate the defect is necessary-
+determine the actions required to resolve the defect. If the defect's impact is complex or it is expected to have
+significant impact on project scope or on other projects, estimates are required. In ClearQuest select
+<b>ChangeState.Analyze</b>, and complete all mandatory fields and any optional fields that you feel may aid in resolution
+or it is important to document for future reference. <br />
+<img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/CQ_Defect_AnalyzingDefect.JPG" width="600" height="470" /> 
+<div>
+    Note that some fields in the <b>Estimate/Planned</b> section will become mandatory if <b>Estimate Required?</b> is set
+    to <b>Yes</b>.<br />
+    After completing all the required fields -or change them as appropriate if reviewing a defect previously analyzed-,
+    save the form.<br />
+    The defect's status is now <b>Analyzed.</b><br />
+    The Project Manager will be sent an e-mail telling that the defect has been analyzed.<br />
+    <u>Important</u>: This analysis could take some time; if you are analyzing a defect and don't have all the required
+    information for the mandatory fields you can register your partial information using <b>Modify</b> action by a
+    <b>Save</b>. When you are ready you should select <b>ChangeState.Analyze</b> to change the defect's status.<br />
+    Note that defects which are in status <b>Opened</b> or <b>Revision Required</b> should be analyzed at any time using
+    the steps described here.
+</div>
+<h2>
+    Step 4 <a>Review actions and decisions</a>
+</h2>All the defects analyzed by the Resolution Owners should be reviewed by the Project Manager in order to be approved
+and prioritized. 
+<h3>
+    <a>4.1 Return defect for further analysis</a>
+</h3>If the Project Manager considers that the recommended actions or estimates documented by the Resolution Owner are not
+appropriate, return the defect to the Resolution Owner for further analysis. In ClearQuest select
+<b>ChangeState.Revise</b>, complete all mandatory fields and describe why the defect requires further analysis including
+that in the <b>Actions/Comments</b> field. <br />
+<img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/CQ_Defect_ReturningForAnalysis.JPG" width="600" height="470" /> 
+<div>
+    <div id="ftn1">
+        <br />
+        After completing all the required fields, save the form.<br />
+        The defect's status is now <b>Revision Required.</b><br />
+        The Resolution Owner will be sent an e-mail telling that the defect requires further analysis. 
+        <h3>
+            <a>4.2 Accept recommended actions</a>
+        </h3>If the Project Manager considers that the recommended actions and estimates are appropriate, approve,
+        prioritize, schedule and assign the recommended action. In ClearQuest select <b>ChangeState.ApproveSolution</b>; if
+        desired complete the <b>Actions/Comments</b> field.<br />
+        <br />
+        <br />
+        <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/CQ_Defect_AcceptingActions.JPG" width="600" height="470" /><br />
+        <br />
+        After completing all the required fields, save the form.<br />
+        The defect's status is now <b>Solution Approved.</b><br />
+        The Resolution Owner will be sent an e-mail telling that the analysis was accepted.
+    </div>
+</div>
+<h2>
+    <a>Step 5 Resolve defect</a>
+</h2>
+<h3>
+    <a>5.1 Resolve</a>
+</h3><b>Primary role:</b> Resolution Owner carries out this step of the process. <br />
+The Resolution Owners may easily list all defects currently assigned to them by running the public query <b>My Open
+Defects</b>. <br />
+Once a defect's recommended actions and estimate has been approved by the Project Manager the Resolution Owner is able to
+start working on the required fix. These defects can be easily distinguished as they are in status <b>Solution
+Approved</b>. The defects in this status can be also found easily in the <b>DefectsApprovedForImplementation</b> query.
+<br />
+During resolution, record progress using <b>Modify</b> action and tracking information in the <b>Actions/Comments</b>
+field. When the work to correct the defect is complete, select <b>ChangeState.Resolve</b>, and complete all mandatory
+fields. <br />
+<img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/CQ_Defect_ResolvingDefect.JPG" width="600" height="470" /> 
+<div>
+    <div id="ftn1">
+        <br />
+        After completing all the required fields, save the form.<br />
+        The defect's status is now <b>Resolved.</b><br />
+        <br />
+        <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/CQ_Defect_ResolvedDefect.JPG" width="600" height="470" /><br />
+        <br />
+        The Project Manager will be sent an e-mail telling that the defect has been resolved.<br />
+        Note that defects which are in status <b>Solution Approve</b> or <b>Revision Required</b> should be resolved at any
+        time using the steps described here. 
+        <h3>
+            <a>5.2 Accept or Reject Resolution</a>
+        </h3><b>Primary role:</b> Project Manager carries out this step of the process (note that this step could be
+        carried out by a testing group if available).<br />
+        Once the defect was resolved by the Resolution Owner the fix should be tested to verify the defect is really fixed
+        as desired. 
+        <h4>
+            5.3 Accept resolution
+        </h4>If Project Manager accepts the resolution provided by the Resolution Owner the defect should be marked as
+        accepted. In ClearQuest select <b>ChangeState.AcceptResolution.</b><br />
+        <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/CQ_Defect_AcceptingResolution.JPG" width="600" height="470" /><br />
+        <br />
+        If necessary include actions/comments and save the form.<br />
+        The defect's status is now <b>Resolution Accepted</b>.<br />
+        <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/CQ_Defect_ResAcceptedDefect.JPG" width="600" height="470" /><br />
+        <br />
+        The Submitter and the Project Manager will be sent an e-mail. 
+        <h4>
+            5.4 Reject resolution
+        </h4>If Project Manager does not accept the resolution provided by the Resolution Owner the defect should be return
+        to de Resolution Owner as additional actions may need to be implemented in order to satisfactorily resolve the
+        defect. In ClearQuest select <b>ChangeState.Revise</b>, complete all mandatory fields and describe why the
+        resolution is being rejected including that in the <b>Actions/Comments</b> field. Then save the form.<br />
+        The defect's status is now <b>Revision Required</b>.<br />
+        The Resolution Owner will be sent an e-mail. 
+        <h3>
+            <a>5.5 Close the defect</a>
+        </h3><b>Primary role:</b> Project Manager carries out this step of the process.<br />
+        All the defects which resolution is accepted should be validated by the Submitter so the Project Manager can
+        finally close the defect. In ClearQuest select <b>ChangeState.Close</b>, complete all mandatory fields and include
+        any desired comment in the <b>Actions/Comments</b> field. 
+        <div>
+            <div id="ftn2">
+                <br />
+                <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/CQ_Defect_ClosingDefect.JPG" width="600" height="470" /><br />
+                <br />
+                <br />
+                <br />
+                <br />
+                Then save the form. ClearQuest will automatically complete the <b>Date Closed</b> field with the current
+                date.<br />
+                The defect's status is now <b>Closed</b>.<br />
+                The Submitter and Project Manager will be sent an e-mail.<br />
+                Note that only defects in status <b>Resolved</b> or <b>Resolution Accepted</b> can be closed.
+            </div>
+        </div>
+    </div>
+</div>
+<h2>
+    <a>Step 6 Track and manage outstanding defects to closure</a>
+</h2>There is a public query called <b>Open Defects</b> which may be run in order to list all defects that have not been
+closed yes. This query should be run periodically and the report should be reviewed for any defects that may not be
+receiving the appropriate attention. Escalation procedures may need to be used in order to address any such defects. <br />
+<h2>
+    <a>Step 7 Analyze and report defects</a>
+</h2>Run the query Defect Log (APP414) periodically to create the equivalent of the APP 414 Defect Log or DCD 325 Defect
+Management Documentation. <br />
+Analyze the report and update the defects with any appropriate action planned or taken. Using this query, it is not
+necessary to maintain a separate defect log as the query can be run on demand. <br />
+Other public queries are available to get the appropriate information in order to analyze and report defects. Additional
+queries and charts can be created on demand based on needs (refer to ClearQuest User's Guide for more information). Refer
+to the section 4 for more details.</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

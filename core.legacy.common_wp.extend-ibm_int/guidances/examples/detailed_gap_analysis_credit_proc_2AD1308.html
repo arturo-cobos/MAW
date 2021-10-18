@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Detailed Gap Analysis For Credit Process</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="detailed_gap_analysis_credit_proc">
+<meta name="uma.presentationName" content="Detailed Gap Analysis For Credit Process">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_GgEDIDaAEdyV3oLDiz9lvQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Detailed Gap Analysis For Credit Process</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This is an example showing the Credit Process Gap Analysis.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/detailed_gap_analysis_B92378CE.html" guid="mwebF03ED079C1E90D5485256882006252F9">Detailed Gap Analysis</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><b>Name:</b> Credit Process <br />
+<b>Identifier</b>: Perform Customer Credit Check <br />
+<b>Summary Results:</b> Medium <br />
+The main issue is inaccuracies in the credit position caused by delays in processing incoming payments and the policy of
+updating credit status only when orders are shipped. <br />
+<b>Detailed Results:</b> 
+<ul>
+    <li>
+        <div>
+            Compute available credit. (GAP)
+        </div>
+    </li>
+    <li>
+        <div>
+            Compute order value. (OK)
+        </div>
+    </li>
+    <li>
+        <div>
+            Bypass "A" rated customers. (OK)
+        </div>
+    </li>
+    <li>
+        <div>
+            Test order value vs. available credit. (OK)
+        </div>
+    </li>
+    <li>
+        <div>
+            Produce and route notification of credit rejection. (OK)
+        </div>
+    </li>
+    <li>
+        <div>
+            Release orders on credit hold. (OK)
+        </div>
+    </li>
+    <li>
+        <div>
+            Update orders-in-process value. (GAP)
+        </div>
+    </li>
+</ul>
+<b>Gap Analysis:</b> Compute available credit. The package uses data on the outstanding customer receivable that is updated
+nightly in a batch run. This will cause available credit to be understated by the amount of the unposted payment and could
+cause orders to go on hold unnecessarily. <br />
+<b>Gap Resolution Strategy:</b> Create a user exit to check for unposted payments when computing available credit. This is
+estimated to take 5 man/days of programming time. <br />
+<b>Security Implications</b>: None <br />
+<b>Gap Analysis:</b> Update orders-in-process value. The package only updates the consumed available credit once the order
+is shipped. Since orders might take seven to ten days to process, this creates exposure to overextending of credit. <br />
+<b>Gap Resolution Strategy:</b> Since this is an infrequent exception, we will change our credit limit review process to
+account for this, and see if lower overall credit limits will handle the problem. <br />
+<b>Security Implications</b>: Security profiles may have to be updated to allow the credit limit change to take place.</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

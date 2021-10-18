@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing Document Type Definition</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="document_type_def_dev">
+<meta name="uma.presentationName" content="Developing Document Type Definition">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_WqoG4DjpEdyNLNJ2hfbViA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_WqoG4DjpEdyNLNJ2hfbViA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing Document Type Definition</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Migrated development approach from existing IBM Global Services Method work product.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/document_type_def_B1282720.html" guid="mweb516106D4DCCCFFA0852568820062AA06">Document Type Definition</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Development of DTDs for XML/SGML applications requires thorough document analysis to insure success. A trained document
+    analyst should determine the Document Class Definitions before the actual DTD is coded.<br />
+</p>
+<p>
+    The simplest way to create the DTD from the Document Class Definitions is to use Near & Far Designer. This tool
+    allows you to create the element hierarchy structure and define the attributes for these elements without having to
+    know the SGML/XML DTD syntax. Near & Far also has a very robust report generation engine.
+</p>
+<p>
+    However, creating a DTD using Near & Far produces a different format than the one outlined above. Near & Far
+    separates the elements, attributes and entities differently. A DTD created using Near & Far is easiest to read
+    using Near & Far. The Near & Far DTD ASCII file may be difficult to read for XML/SGML novices. Also, the Near
+    & Far DTD ASCII file will require manual editing to include some of the required header information (e.g.,
+    Copyright statement).<br />
+</p>
+<p>
+    It is possible to create SGML/XML DTDs directly using a flat file editor. DTDs created using a flat file editor may be
+    easier to read and will have a more hierarchical appearance to a novice XML/SGML practitioner. To create a DTD using
+    just a flat file editor start with the Document Class Definitions. A high degree of XML/SGML experience is desirable
+    for this approach.<br />
+</p>
+<p>
+    The practitioner should make the approach decision based on their preferences and abilities however, in either case;
+    DTDs should be coded so that the following information is included and available. All of this information is found in
+    the Document Class Definitions description of the document types or information objects (the document type is an
+    information object).
+</p>
+<ul>
+    <li>
+        <div>
+            Copyright statement.
+        </div>
+    </li>
+    <li>
+        <div>
+            Security classification, generally, a confidential classification is inconsistent with any copyright notice.
+        </div>
+    </li>
+    <li>
+        <div>
+            Document type name, which matches the document element type.
+        </div>
+    </li>
+    <li>
+        <div>
+            Document type summary.
+        </div>
+    </li>
+    <li>
+        <div>
+            Applicability of the DTD, a short statement of when to use the DTD.
+        </div>
+    </li>
+    <li>
+        <div>
+            The public identifiers used to reference the DTD.
+        </div>
+    </li>
+    <li>
+        <div>
+            Document type version, including a parameter entity definition that allows subsequent declarations to define a
+            fixed attribute with the version so that processing systems may interrogate the version.
+        </div>
+    </li>
+    <li>
+        <div>
+            Document type change history.
+        </div>
+    </li>
+</ul>
+<p>
+    A DTD coding template has been provided in the Notation section above that shows how these fields may be attractively
+    and effectively coded.<br />
+</p>
+<p>
+    The implementation of the document management system objects and attributes is dependent upon the document management
+    system package chosen and the documentation for those systems should be consulted to determine the appropriate forms,
+    formats and procedures to be used.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

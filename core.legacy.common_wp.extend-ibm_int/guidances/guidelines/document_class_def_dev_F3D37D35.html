@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing Document Class Definitions</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="document_class_def_dev">
+<meta name="uma.presentationName" content="Developing Document Class Definitions">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_4ihcUDaiEdyV3oLDiz9lvQ"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_4ihcUDaiEdyV3oLDiz9lvQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing Document Class Definitions</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Migrated development approach from existing IBM Global Services Method work product.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/document_class_def_F0EA087.html" guid="mweb75183624B95C2B1C8525688200628CD0">Document Class Definitions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    On the surface, document classes may seem to be very similar to programming objects used in implementation of
+    object-oriented systems.&nbsp; In fact, the same type of thinking is used in the analysis: identification of classes of
+    objects, encapsulation, abstraction, sub-classing and finding other relationships between the classes.&nbsp; But in the
+    analysis of document classes, the emphasis is somewhat different.&nbsp; First of all, the analyst is examining
+    information and finding patterns and discrete and useful divisions within information.&nbsp; The classes may be quite
+    abstract, not the more tangible objects of a physical world that serve as the basis for object-oriented analysis when
+    designing a program.&nbsp; In evaluating the classes, the analyst is focusing on the hierarchical relationships, or
+    containment relationships, between instances of information classes rather than the ‘is-a-kind-of’ relationships that
+    are usually the focus of object-oriented analysis, although ‘is-a-kind-of’ relationships can be useful to know later
+    during implementation.&nbsp; The analyst is also focusing meta-information (information about information) that is
+    necessary to implement the system functionality.&nbsp; This meta-information may be inherited down the instance tree
+    rather than the class hierarchy.&nbsp; The analyst will want to capture information about how classes will be processed
+    to implement the function of the system but during the initial analysis, identification of the methods that specific
+    classes must support is not a priority.&nbsp; One of the objectives of a good document class design is that as
+    additional uses for the information are found, additional processing may be introduced without upsetting the design of
+    the information itself.&nbsp; The processes of abstraction and encapsulation, properly performed, will facilitate
+    this.&nbsp;
+</p>
+<p>
+    At a high level, document analysis is comprised of the following activities:
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        1. Examine the source material, the system requirements and other specifications.
+    </p>
+    <p>
+        2. Find and define document classes and their boundaries.
+    </p>
+    <p>
+        3. Build basic models of common structures in the data remembering the principles of abstraction and encapsulation.
+    </p>
+    <p>
+        4. Classify, group, and define the relationships between document classes.
+    </p><br />
+</blockquote></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

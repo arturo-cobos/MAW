@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Performance Testing</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="performance_testing">
+<meta name="uma.presentationName" content="Performance Testing">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mwebBF04605A82255EA1852567D800544A55"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebBF04605A82255EA1852567D800544A55"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Performance Testing</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This paper will provide practical techniques for performance testing. The discussion will cover performance testing on a conceptual level so that the ideas presented here can be utilized for all tests regardless of what is being tested; i.e., different hardware platforms, systems software, applications, and/or databases. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.full_test_mgmt.base-ibm_lic/tasks/define_test_env_rqmts_E6FD0B3.html" guid="mweb093C35670000010E60FDE0A625EC4FB1">Define Test Environment Requirements</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">Performance testing as described in this paper should be differentiated from other levels and types of testing. The
+techniques presented here are for performance tests that occur at a single point in time, normally at the end of the
+development life cycle; for example, after integration or acceptance testing. This kind of performance testing is different
+from what is sometimes called the "performance engineering" testing level that occurs throughout the entire life cycle of
+testing. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>In this paper, performance testing is defined as understanding how a specific IT system, such as hardware,
+application or database, will perform under specific conditions. It is different from other types of testing, such as
+stress testing, where a load is placed on the system to find breaking points or bottlenecks. It is also different from
+capacity or load testing, where the object is to see how much throughput a system is capable of handling. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>Performance testing is often similar, and sometimes overlaps, other types of testing, but is focused on
+understanding the performance of the system being tested, whether it is called a business, a piece of hardware, new
+software levels, a different database design or a larger workload. There are typically two desired results of a performance
+test. Understanding how a system performs is the first stage; improving that performance is often the second stage. This
+paper will concentrate only on the techniques surrounding the first stage of understanding performance. 
+<p>
+    This discussion follows the logical progression of steps through performance testing, as shown in the following
+    diagram. Each step in this process is tightly linked to the previous and/or following steps, and one goal of this
+    document is to show how this flow and interaction of steps is related and integral to a successful performance test.
+</p>
+<p>
+    <a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/performancetesting.doc" target="_blank">performancetesting.doc</a>
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Post Go Live Support Strategy</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="post_go_live_support_strategy">
+<meta name="uma.presentationName" content="Post Go Live Support Strategy">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb51E8D03360E3F902852568B80064F6ED"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb51E8D03360E3F902852568B80064F6ED"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Post Go Live Support Strategy</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3 dir="ltr" style="MARGIN-RIGHT: 0px">
+    <br />
+    Introduction
+</h3>
+<p>
+    This Technique Paper covers the definition and documentation of the Post Go-Live Package Support Strategy, listing the
+    activities required for implementation. This strategy can include the support during system upgrade, but also the
+    handling of business issues that were not solved before cut-over, i.e. it is an extension to the original
+    implementation engagement.
+</p>
+<p>
+    This work product is generic and aims to list all the activities that should be performed, there may be implementations
+    where some activities are not relevant, and may be excluded. The size of the project and the needs of the Client will
+    determine the duration of each task. These however should be determined very early on in the project.
+</p>
+<h3>
+    General Guidance
+</h3>
+<h4>
+    Purpose
+</h4>
+<p>
+    The purpose of this technique is to ensure that the Client has the ability to use and adapt to the system to meet their
+    changing needs and ensure day-to-day efficient running of the business.
+</p>
+<p>
+    This technique analyzes and documents the strategy for Post Go-Live package support: what the needs are, and what the
+    options are for using internal/external resources or a combination to cover the support.
+</p>
+<h4>
+    Impact of Not Using This Technique
+</h4>
+<p>
+    An analysis of the Client's post live support needs/requirements will not be done, and a package support strategy
+    cannot be put in place to cover these. This may influence the continued smooth running of the Client’s day-to-day
+    business.
+</p>
+<h4>
+    Reasons for Not Using This Technique
+</h4>
+<p>
+    This work product is not needed if the Client has a tailored support strategy in place already.
+</p>
+<h4>
+    Development Approach
+</h4>
+<p>
+    Input to this work product:
+</p>
+<ul>
+    <li>
+        The "Change Control Strategy" white paper.<br />
+    </li>
+    <li>
+        The "Environment Strategy" white paper.<br />
+    </li>
+    <li>
+        The "Change Request Log".
+    </li>
+</ul>
+<p>
+    Output from the work product:
+</p>
+<p>
+    The "Post Go-Live Support Strategy" white paper.
+</p>
+<p>
+    The following tasks are performed:
+</p>
+<ol>
+    <li>
+        Investigate the Post Go-Live Support requirements and options, using a Service Requirements Questionnaire.<br />
+    </li>
+    <li>
+        Determine the Client's resourcing requirements, e.g. external or internal, etc.<br />
+    </li>
+    <li>
+        Determine the Post Go-Live Support Strategy.
+    </li>
+</ol>
+<h3>
+    Post Live Support Strategy Options
+</h3>
+<p>
+    The following will first outline Package Support Strategy options showing the benefits and risks associated with each.
+    Secondly, in a very generic form the necessary steps to achieve the solution outlined. To ensure client satisfaction
+    each option must be discussed and researched thoroughly.
+</p>
+<p>
+    A number of options are open to a client to provide support in solving the following:
+</p>
+<ul>
+    <li>
+        Correct problems causing system downtime<br />
+    </li>
+    <li>
+        Correct problems causing slow response times<br />
+    </li>
+    <li>
+        Make additional changes or additions to the configuration tables<br />
+    </li>
+    <li>
+        Assisting users with problems or logging bugs<br />
+    </li>
+    <li>
+        Make the necessary adjustments to the system<br />
+    </li>
+    <li>
+        Smaller add-on projects, which had been considered as "nice to have" during the implementation project<br />
+    </li>
+    <li>
+        Expansions to the package solution<br />
+    </li>
+    <li>
+        Basis maintenance of the system<br />
+    </li>
+    <li>
+        Network maintenance and hardware faults
+    </li>
+</ul>
+<p>
+    The support options are:
+</p>
+<ol>
+    <li>
+        Local in-house Key User or Super User support<br />
+    </li>
+    <li>
+        Local package competence center<br />
+    </li>
+    <li>
+        Central package competence center<br />
+    </li>
+    <li>
+        Third party support&nbsp;<br />
+    </li>
+    <li>
+        A combination of Third Party support and Internal resource support
+    </li>
+</ol>
+<h4>
+    1.&nbsp;Local in-house Key User and Super User Support
+</h4>
+<p>
+    Package support provided by Key or Super Users situated within the business. Personnel should have been involved in the
+    initial implementation or have been subsequently trained in specific module functionality and configuration. Resources
+    in both application and technical areas would be required, splitting their work between Post Live support and their
+    normal tasks.
+</p>
+<p>
+    Benefits
+</p>
+<ul>
+    <li>
+        Low dependency on third parties<br />
+    </li>
+    <li>
+        Costs are kept in-house<br />
+    </li>
+    <li>
+        Key or Super Users will have knowledge of the business and business requirements.
+    </li>
+</ul>
+<p>
+    Risks
+</p>
+<ul>
+    <li>
+        Service levels difficult to define and manage due to demands of other duties.<br />
+    </li>
+    <li>
+        High costs associated with Package Training which is required in order to keep updated in the functionality of
+        future releases, staff turnover etc.<br />
+    </li>
+    <li>
+        Staff retention difficulties due to high demand for Package skills.<br />
+    </li>
+    <li>
+        Dependant on the number of sites, well thought out procedures for change management and authority will be required
+        to maintain control over the configuration.<br />
+    </li>
+    <li>
+        Package skills command high salaries.
+    </li>
+</ul>
+<h4>
+    2.&nbsp;Local package competence center
+</h4>
+<p>
+    This has many similarities to local key in-house user maintenance, but uses dedicated resources rather than people
+    within the business.
+</p>
+<p>
+    Benefits
+</p>
+<ul>
+    <li>
+        Good basis for skills retention and development<br />
+    </li>
+    <li>
+        Reduced demand on business resources during the implementation phase<br />
+    </li>
+    <li>
+        Low demand on business resources post go-live<br />
+    </li>
+    <li>
+        Service levels can be retained due to dedicated service. How these are measured and ensured through an internal
+        service needs to be considered
+    </li>
+</ul>
+<p>
+    Risks
+</p>
+<ul>
+    <li>
+        High costs associated with Package Training which is required in order to keep updated in the functionality of
+        future releases, staff turnover etc.<br />
+    </li>
+    <li>
+        Staff retention difficulties due to high demand for Package skills.<br />
+    </li>
+    <li>
+        Dependent on the number of sites, control over changes to be implemented on the system, may require strict
+        authority and procedural consideration in order to maintain control.<br />
+    </li>
+    <li>
+        Package skills command high salaries.
+    </li>
+</ul>
+<h4>
+    3.&nbsp;Central package competence center
+</h4>
+<p>
+    This is a dedicated resource giving support for all sites or regional areas of sites.
+</p>
+<p>
+    Benefits
+</p>
+<ul>
+    <li>
+        Centralized control<br />
+    </li>
+    <li>
+        Reduced overall costs
+    </li>
+</ul>
+<p>
+    Risks
+</p>
+<ul>
+    <li>
+        Dependent on the locality of the sites, Support may be required outside of the normal hours of business for the
+        Competency Center location.<br />
+    </li>
+    <li>
+        Resource consideration<br />
+    </li>
+    <li>
+        Cost implication of shift/ overtime<br />
+    </li>
+    <li>
+        Staff retention<br />
+    </li>
+    <li>
+        Language requirements making the combined skills of standard package and languages difficult to find and retain.
+    </li>
+</ul>
+<h4>
+    4.&nbsp;Third party support
+</h4>
+<p>
+    Benefits
+</p>
+<ul>
+    <li>
+        No in-house resource requirements<br />
+    </li>
+    <li>
+        No need to train and develop in-house skills<br />
+    </li>
+    <li>
+        Third party support can be either centralized or localized<br />
+    </li>
+    <li>
+        Minimizes issue of staff retention<br />
+    </li>
+    <li>
+        Contracted service levels<br />
+    </li>
+    <li>
+        Breadth of knowledge
+    </li>
+</ul>
+<p>
+    Risks
+</p>
+<ul>
+    <li>
+        Less control<br />
+    </li>
+    <li>
+        Loss of internal knowledge
+    </li>
+</ul>
+<h4>
+    5.&nbsp;Combination of Third Party Support and Internal Resource Support
+</h4>
+<p>
+    The balance between internal and external support should be determined by weighing up a number of factors e.g.:
+</p>
+<ul>
+    <li>
+        Is there sufficient internal Package knowledge<br />
+    </li>
+    <li>
+        Can the company compete with the external Package market<br />
+    </li>
+    <li>
+        What is the company focus: Business vs. Technical<br />
+    </li>
+    <li>
+        Can the company make internal support cost effective&nbsp;
+    </li>
+</ul>
+<p>
+    This combination can exist for many reasons:
+</p>
+<ul>
+    <li>
+        External support for back-up during holidays and sickness<br />
+    </li>
+    <li>
+        Internal support with expert external support
+    </li>
+    <li>
+        Super User internal support with external support for difficult issues and configuration requests.
+    </li>
+</ul>
+<p>
+    The benefits of, such a combination:
+</p>
+<ul>
+    <li>
+        Ability to keep a level of internal knowledge balanced with the risk of resource retention problems associated with
+        higher skilled Package personnel.<br />
+    </li>
+    <li>
+        Expert back-up available when staff shortages occur due to retention or sickness, etc.<br />
+    </li>
+    <li>
+        Expert back up in Disaster recovery situations and situations affecting the day-to-day running of the business.
+    </li>
+</ul>
+<p>
+    Based on an analysis of the above the company must make the appropriate decision/s.&nbsp; In order to assist decision
+    making, consider the following:
+</p>
+<ul>
+    <li>
+        Logistics Considerations 
+        <ul>
+            <li>
+                Single or multiple Language support.
+            </li>
+            <li>
+                Hours of Service
+            </li>
+            <li>
+                Localized, regional or Centralized Service<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        Contractual Considerations 
+        <ul>
+            <li>
+                Definition of the service
+            </li>
+            <li>
+                Response and resolution times
+            </li>
+            <li>
+                Pricing structure
+            </li>
+            <li>
+                Monitoring Mechanism
+            </li>
+            <li>
+                Performance Indicators
+            </li>
+            <li>
+                Service Levels<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        Technical Considerations 
+        <ul>
+            <li>
+                Package applications
+            </li>
+            <li>
+                Package Technical /Basis (on site or remote)
+            </li>
+            <li>
+                Operating Systems and Networks.
+            </li>
+        </ul>
+    </li>
+</ul>
+<h3>
+    Revision History
+</h3><br /></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

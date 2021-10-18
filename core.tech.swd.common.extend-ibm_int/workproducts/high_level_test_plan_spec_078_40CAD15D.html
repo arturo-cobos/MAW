@@ -1,0 +1,599 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Deliverable: High-Level Test Plan and Specifications
+			(DCD 078)
+		</title>
+<meta name="uma.type" content="Deliverable">
+<meta name="uma.name" content="high_level_test_plan_spec_078">
+<meta name="uma.presentationName" content="High-Level Test Plan and Specifications">
+<meta name="element_type" content="artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_WCR4YcRdEdyD76CYS6Ta7A", "mweb72CEA02BE5C75C6185256B1C007EAE96"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb72CEA02BE5C75C6185256B1C007EAE96"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Deliverable: High-Level Test Plan and Specifications
+			(DCD 078)
+		</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/deliverable.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This deliverable provides high level recommendations for the test architecture, elements, approach, data and expected results for testing the solution against its identified requirements. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">The purpose of this document is to provide a basis for mutual agreement as to the proper and sufficient test architecture,
+elements, approach, data and expected results for testing the solution against its defined requirements. High-level
+definitions of testing are established during the Macro Design phase and are further detailed as applies to each specific
+release of the solution as they undergo Micro Design.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">This deliverable&nbsp;extends and enhances the existing test strategies outlined earlier in the project. This deliverable
+is initially drafted in the Macro Design phase and further detailed during subsequent Release phases (Micro design, Build
+Cycle, and Deployment). 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>This document contains: 
+<ul>
+    <li>
+        The recommended testing plan to verify the solution satisfies its defined requirements as well as how that testing
+        will be structured to provide the basis for client acceptance of the solution.
+    </li>
+    <li>
+        The recommended testing plan for the solution defining the timing; functions to be tested; any early hardware,
+        software, and security environment requirements; and resource needs for the testing efforts.
+    </li>
+    <li>
+        Definition of the test scenarios, test matrices, test conditions, test cases, test data, test environments, and
+        test scripts as apply to each level of testing to be conducted.
+    </li>
+    <li>
+        &nbsp;Awalkthrough of anti-use cases to prepare for penetration tests and anomalous flows
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Deliverable Properties</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">External Description</th><td class="sectionTableCell">This deliverable serves to document the design and prioritization of the tests to be used in verifying that the solution’s
+objectives are met. It covers: 
+<ul>
+    <li>
+        Definitions for testing the solution. This includes refining the test strategy to include security, as well as
+        describing the test architecture, elements, approach, data, environment, and expected results for each test level
+        to be conducted.
+    </li>
+    <li>
+        Refinement of the Acceptance Test Plan developed per client specification and definition in Macro Design containing
+        an initial version of the test scenarios comprising the acceptance test. The plan will be detailed further in
+        subsequent phases. The acceptance testing and acceptance criteria will be based on the functional requirements (use
+        cases and scenarios), nonfunctional requirements, and usability requirements defined for the solution.
+    </li>
+    <li>
+        Development of anti-use cases to ensure the functionality developed does not leave security holes.
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Deliverable Parts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/acceptance_test_plan_6DF78315.html" guid="mweb395827756BD9DEB385256881007D1899">Acceptance Test Plan</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/developer_test_98F94272.html" guid="mwebFF3BCD6AF956005E852569A500489A8A">Developer Test</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/integration_test_plan_21E8993A.html" guid="mwebA11192362C10D30F852569A5004AFD5E">Integration Test Plan</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/master_test_plan_316F37F1.html" guid="mweb6453F1B420F775748525688500505CDC">Master Test Plan</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/operability_test_plan_400CBEBC.html" guid="mweb9FA778C07F7E6B27852569A50049F56A">Operability Test Plan</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/static_test_plan_550DA97C.html" guid="mweb2EF6971EE10694B085256885005BE509">Static Test Plan</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/systems_int_test_plan_A81910A9.html" guid="mwebFCB182413368F0DB852569A5004B0907">Systems Integration Test Plan</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/system_test_plan_42B8B657.html" guid="mweb4DFC53CE38522262852569A500487F61">System Test Plan</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/test_env_config_C1CB0041.html" guid="mweb91E917F13D7C5F4A85256885005D0D33">Test Environment Configuration</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/test_plan_78ADD84C.html" guid="mwebE50460DA02C666F78525688200626DB0">Test Plan</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/test_specification_E0A1A8C5.html" guid="mwebCE3B2E307A951B9485256885005D8027">Test Specification</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/usability_test_plan_780912D6.html" guid="mweb46FDC03E3B3755AF852568850060E33D">Usability Test Plan</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Packaging Instructions</th><td class="sectionTableCell">The following table outlines the various work products that contribute to the contents of this deliverable’s topics or
+sections. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>The work products identified for each testing level are defined at a high-level for all known releases during Macro
+Design. They are each more fully articulated for a specific release during Micro Design. They may each be revised, as
+needed, during the Build Cycle for a specific release. Modifications may also be made while developing one release that may
+apply to the solution as a whole or to its future releases. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>This deliverable is initially drafted in Macro Design in support of the solution as a whole and in preparation of
+the solution’s first release. At the conclusion of each release’s Micro Design phase, it is completed to the level its work
+products attain in support of that specific release. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>If an existing test environment is to be,used, it should be referenced and briefly overviewed as to its
+specifications, composition, and characteristics, along with any necessary modifications including security. These
+characteristics should be described for all the known solution releases during Macro design and more fully detailed as
+required per subsequent project phases. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>Note the levels of testing conducted for a solution and per each of its releases are dictated by the project scope;
+the complexity of the solution as a whole and as pertains to a specific release of the solution; and the solution’s
+requirements. Consequently, testing defined and conducted for the overall solution and per each of its releases may entail
+all or some of the testing levels listed in the table below and may for some projects be expanded to include those not
+listed, for example, Stress Testing. From this perspective all test levels listed in the table can be considered optional
+as their specific applicability varies per each project and its defined scope. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>Also note that the testing listed in this table is not for projects using a Rapid Application Development (RAD)
+approach. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td width="100%" colspan="5">
+                <table cellpadding="1" width="95%" border="1">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <b>Report Topic</b>
+                            </td>
+                            <td>
+                                <b>Work Product</b>
+                            </td>
+                            <td>
+                                <b>Instance</b>
+                            </td>
+                            <td>
+                                <b>Instance Completeness</b>
+                            </td>
+                            <td>
+                                <b>Base / Optional</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b><i>Section: Executive Overview / Introduction</i></b>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b><i>Section: Test Strategy and Approach</i></b>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Master Test Plan
+                            </td>
+                            <td>
+                                Master Test Plan
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                Base
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Static Test Plan
+                            </td>
+                            <td>
+                                Static Test Plan
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                Base
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Test Environment
+                            </td>
+                            <td>
+                                Test Environment
+                            </td>
+                            <td>
+                                As may generically apply to all testing levels and specifically to Static Testing
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                Base
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b><i>Section: Acceptance Test Plan & Specification</i></b>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Acceptance Testing
+                            </td>
+                            <td>
+                                Acceptance Test Plan
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                Base
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                Test Specification
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                Base
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                Test Environment
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                Base
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b><i>Section: Release Test Plans & Specifications</i></b>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i>The following is a template of the topics for each testing level to be performed. Please
+                                see the following table providing additional information regarding each typical testing
+                                level.</i>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                Detailed Test Plan
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                Base
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                Test Specification
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                Base
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                Test Environment
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                Base
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td width="100%" colspan="5">
+                <table cellpadding="1" width="95%" border="1">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <b><i>Release Testing</i></b> <b><i>Level Subsection</i></b>
+                            </td>
+                            <td>
+                                <b><i>Subsection Topic Instances</i></b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Development / Unit Testing
+                            </td>
+                            <td>
+                                One per each distinct unit/component of the solution to be developed
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Integration Testing
+                            </td>
+                            <td>
+                                One per each set of units/ components to be integrated for delivery as a distinct
+                                executable for the solution as well as one for each set of executables integrated for
+                                delivery of a distinct function of the solution
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Usability Testing
+                            </td>
+                            <td>
+                                As applies per the overarching usability requirements defined for the solution and as
+                                specifically applies to a solution release
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                System Testing
+                            </td>
+                            <td>
+                                As applies per each major system comprising the solution and specifically as applies to
+                                each system comprising a solution release
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Operability Testing
+                            </td>
+                            <td>
+                                As applies to the solution and specifically as applies to each system comprising a solution
+                                release
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Systems integration Testing
+                            </td>
+                            <td>
+                                As applies to the systems comprising a solution that must interact with one another and
+                                specifically as applies to each system comprising a solution release
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Penetration Testing
+                            </td>
+                            <td>
+                                One per each solution release in the Build cycle/Testing phase
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>The concept of completeness of a work product instance depends largely on whether the work product will be finished
+in this phase of the project, or iterated for additional work in later phases. If the work product is to be iterated later,
+it will only be partially complete at the end of this phase. Regardless of whether each work product instance is fully or
+partially completed at this time, the content of the work products should be fully included in the deliverable being
+produced. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>The final document will be delivered to the client in a reproducible format. The final report may also be delivered
+in hard copy format printed in a single, bound document.</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

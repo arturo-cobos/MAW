@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Practice: Software Development</title>
+<meta name="uma.type" content="Practice">
+<meta name="uma.name" content="software_dev">
+<meta name="uma.presentationName" content="Software Development">
+<meta name="element_type" content="Practice">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_D3cBUINgEd6F3evYNLt-CQ"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_D3cBUINgEd6F3evYNLt-CQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Practice: Software Development</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/practice.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This practice covers the implementation, build, and unit testing of a software solution.<p/>For SOMA this also includes the development of services, flows, messages, service components, functional and technical components.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content References</th><td class="sectionTableCell">
+<ul>
+<li>
+<img src="./../../../images/roadmap.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev.base-ibm_lic/guidances/roadmaps/how_to_adopt_9103D2F8.html" guid="_P4CFYINgEd6F3evYNLt-CQ">How to Adopt the Software Development practice</a>
+</li>
+</ul>
+<ul>
+<li>Key Concepts</li>
+<ul>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev.base-ibm_lic/guidances/concepts/software_integration_C0FA72D5.html" guid="_BMfcoME1EeG48cowbO49OA">Software Integration</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/concepts/service_orientation_397D305A.html" guid="_0AzTMGdFEd-j6-ZOl9DeCA">Service Orientation</a>
+</li>
+<li>
+<img src="./../../../images/concept.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/concepts/soma_8DC58C12.html" guid="_rr5B4BmFEdqx_IUyKxxtEg">Service-Oriented Modeling and Architecture (SOMA)</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>Work Products</li>
+<ul>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/build_FADD57B5.html" guid="mwebF9113618D6FEA03685256882006F7E1E">Build</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/build_procedures_75EDC659.html" guid="_j5Tx4FBKEeC-nZrGQNBVmA">Build Procedures</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/coding_guidelines_F8545F1E.html" guid="mwebFDE2F3370508352B85256882005F797D">Coding Guidelines</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/developer_test_98F94272.html" guid="mwebFF3BCD6AF956005E852569A500489A8A">Developer Test</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/source_files_EFC2C2F9.html" guid="mweb3A52A85C8665725C85256885005B699F">Source Files</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/test_log_BEB93BFD.html" guid="_Da0ikGE7EeC2hZk9_GMypg">Test Log</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>Tasks</li>
+<ul>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev.base-ibm_lic/tasks/write_source_code_8278B66E.html" guid="_ymuYMYW0Ed6eRN4Jq00Nbw">Write Source Code</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev.base-ibm_lic/tasks/conduct_unit_tests_verify_results_E54ED01.html" guid="_xDdR0IW4Ed6eRN4Jq00Nbw">Conduct Unit Tests and Verify Results</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev.base-ibm_lic/tasks/create_build_A871C513.html" guid="_79ZFQIW3Ed6eRN4Jq00Nbw">Create Build</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev.base-ibm_lic/tasks/define_build_procedures_7FB1C929.html" guid="_H5UN_URAEdy0e9h1zdJ_TA">Define Build Procedures</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev.base-ibm_lic/tasks/develop_coding_guidelines_92878C49.html" guid="_H5UNz0RAEdy0e9h1zdJ_TA">Develop Coding Guidelines</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev.base-ibm_lic/tasks/develop_unit_test_design_792D2517.html" guid="_1I0ksIW4Ed6eRN4Jq00Nbw">Develop Unit Test Design</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev.base-ibm_lic/tasks/review_source_code_82C3ED28.html" guid="_H5UNpERAEdy0e9h1zdJ_TA">Review Source Code</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev.base-ibm_lic/tasks/revise_build_procedures_23C67E71.html" guid="_dvjj8H7ZEd-Spt3EoYp3Bg">Revise Build Procedures</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/develop_bpel_70D7B6A2.html" guid="_5jHi0N5fEduygIC0u8KnAg">Develop BPEL </a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/develop_or_verify_xsd_for_service_interface_22541258.html" guid="_cgB68DINEdy-j7ZTNsMZCg">Develop or Verify XSD for Service Interfaces</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/develop_service_stubs_AD7CEC89.html" guid="_oJKHAPHfEduwurd-t5g8eQ">Develop Service Stubs</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/develop_wsdl_based_test_cases_DCA96461.html" guid="_kyBPQPHjEduwurd-t5g8eQ">Develop Test Cases to be Generated based on WSDL</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/develop_wsdl_for_service_interfaces_A54EE59B.html" guid="_V08GgDIOEdy-j7ZTNsMZCg">Develop WSDL for Service Interfaces</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/enable_existing_components_as_services_9E64AFBE.html" guid="_OkCu4DLWEdyFnoUWgrp-xw">Enable Existing Components As Services</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/implement_functional_component_8AD51EC7.html" guid="_yi3RMDLXEdyFnoUWgrp-xw">Implement Functional Component</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/implement_service_component_7D360024.html" guid="_AhvcUDLXEdyFnoUWgrp-xw">Implement Service Component</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/implement_technical_component_781A25F8.html" guid="_e3QCMDLXEdyFnoUWgrp-xw">Implement Technical Component</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/realize_functions_of_unexposed_services_C94EDE9A.html" guid="_AegFoDLYEdyFnoUWgrp-xw">Realize Functionality for Unexposed Services</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/refactor_exiting_components_7947B32E.html" guid="_tcOkADLWEdyFnoUWgrp-xw">Refactor Existing Components</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/specify_test_cases_for_choreography_C25A1503.html" guid="_N_LwoPHjEduwurd-t5g8eQ">Specify Test Cases for Service Choreography</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.software_dev_soma.addon-ibm_lic/tasks/specify_vuln_security_penetration_tests_5C0FBA37.html" guid="_w9npcPHjEduwurd-t5g8eQ">Specify Vulnerability Security Penetration Tests</a>
+</li>
+</ul>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Inputs</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.bus.slot.base-ibm/workproducts/business_design_slot_E033C894.html" guid="_OIXJkBYREd2eavK0BKAMiA">[Business Design]</a>
+</li>
+<li>
+<a href="./../../../core.gen.slot.base-ibm_lic/workproducts/technical_approach_slot_50CD1AB5.html" guid="_zy8JAIoFEd-TbpnqeEc_4g">[Technical Approach]</a>
+</li>
+<li>
+<a href="./../../../core.tech.slot.base/workproducts/technical_architecture_slot_FF074CDD.html" guid="_8OD-cLPTEduocbW-TPTq7A">[Technical Architecture]</a>
+</li>
+<li>
+<a href="./../../../core.tech.slot.base/workproducts/technical_design_slot_84295A08.html" guid="_IcQOUEqdEdyi3_jfs__bIQ">[Technical Design]</a>
+</li>
+<li>
+<a href="./../../../core.tech.slot.base/workproducts/technical_specification_slot_2812F7EF.html" guid="_i3vkoLS-EduDY8LNbMCDBA">[Technical Specification]</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell">The purpose of this practice is to turn software designs into running software. In the planning stage, the team creates
+coding guidelines and build procedures that define how the source code should be written and structured as well as
+the&nbsp;integration of the various subsystems (also referred to as components) that will be conducted&nbsp;to
+achieve&nbsp;progressively larger subsystems, which&nbsp;culminates into the final,&nbsp;integrated system.<p/><p>
+    To develop (implement) services, flow, messages, service components and the supporting functional and technical
+    components.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    We typically develop hybrid solutions for our clients today and these solutions are composed of part custom
+    development, part legacy integration, and part package application integration. Therefore, the implementation of a
+    solution in the new software development paradigm for building solutions and application based on&nbsp;service oriented
+    architecture, principles and best practices of service orientation must not only include programming and code
+    generation related business-as-usual activities but also include assembly and integration related activities. Moreover,
+    it must also includes activities to build services and related artifacts for service development.
+</p>
+<p>
+    Software&nbsp;Development may consist of:
+</p>
+<ul>
+    <li>
+        Custom application development of components and functionality
+    </li>
+    <li>
+        Configuration of existing packages and legacy systems
+    </li>
+    <li>
+        Modifications to legacy systems to support services (ie. Exposure of legacy system functionality)
+    </li>
+    <li>
+        Constructing and configuring&nbsp;composite business services
+    </li>
+</ul>
+<p>
+    The Softeare&nbsp;Development practice in SOMA encapsulates set of activities and tasks to implement services, their
+    composition and flows to build and support SOA. First, we develop or verify the necessary XML schema definition for
+    service message specification. Usually, a tool is used to develop or define XSDs for service message specification.
+    Then we develop WSDL for service interfaces. Again, a tool is leveraged to define the WSDL for the service interfaces.
+    Then we develop BPEL, or Business Process Execution Language, flow for service choreography supporting business
+    processes. Again, a tool is leveraged to define the BPEL flows.
+</p>
+<p>
+    Then we develop the components realizing the services, either by custom development or integrating with existing assets
+    and systems and applications and packaged applications. Then we implement functionalities supposed to be provided by
+    candidate services that failed service litmus test and were decided not to be exposed. These functionalities are
+    essential for the overall solution and hence needs to be developed and implemented.
+</p>
+<p>
+    Service realization is performed either by custom development or by integrating with existing asset, systems, and
+    applications and packaged applications. Recall that we make different kinds of realization decisions for realizing
+    services. Services may be realized by integrating with legacy systems and applications (i.e. <strong>Integrate
+    option</strong>), services may be realized by building from scratch (i.e. <strong>Build option</strong>)&nbsp;, and
+    services may be realized by transforming existing assets and components to enable them for service realization (i.e.
+    <strong>Transform option</strong>).&nbsp;SOA Development practice&nbsp;has set of activities and tasks to implement
+    these different kinds of realization decisions such as build versus integrated versus transform.&nbsp;
+</p>
+<p>
+    There are tasks in&nbsp;Software Development practice to&nbsp;enable existing components as services where we create
+    necessary wrappers, adapters, and other mechanism by which existing components can be integrated in realizing a service
+    and&nbsp;to implement services where services are realized by integrating with legacy systems and applications (i.e.
+    <strong>Integrate option</strong>).
+</p>
+<p>
+    Next, there are tasks to implement components where we generate, for example, using model driven transformation and/or
+    code components such as service components as realizes the services and associated functional and technical components.
+    These set of tasks&nbsp;allows implementation of services to be realized by building from scratch (i.e. <strong>Build
+    option</strong>)
+</p>
+<p>
+    The third set of&nbsp;tasks are there to refactor existing component where we refactor and refine one or more existing
+    components so that they can be transformed and enabled to participate in realizing a service. These tasks allows us to
+    implement services where realization decisions made was to transform existing assets and components (i.e.
+    <strong>Transform option</strong>)
+</p>
+<p>
+    So as you see,&nbsp;Software Development has a set of activities and tasks to allow us to implement services based on
+    different kinds of realization decisions such as build versus integrate versus transform.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

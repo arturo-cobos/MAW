@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Performance Engineering CDR Criteria Checklist</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="perf_eng_cdr_criteria">
+<meta name="uma.presentationName" content="Performance Engineering CDR Criteria Checklist">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mwebAEBCF91310C4A107852572BC0066825A"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebAEBCF91310C4A107852572BC0066825A"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Performance Engineering CDR Criteria Checklist</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The Critical Design Review (CDR) ensures that the collection of component designs appropriately implement the overall system design and supporting requirements, are well understood and are agreed to by all parties, after which a baseline is established for both future reference and change control. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.sys_eng.extend-ibm_int/tasks/perform_critical_design_review_3BD2F06D.html" guid="mweb093C356700000113D4B27DAC59012EBB">Perform the Critical Design Review</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1 Description
+</h3>
+<p>
+    In an Enterprise SE&A project, the Design Baseline contains the component design for the system described in the
+    Component Baseline.
+</p>
+<p>
+    This technique paper contains the checklists which the PE team uses during the CDR to ensure that the PE goals and
+    objectives have been adhered to during the Design Baseline Phase, It is important that the performance and capacity
+    aspects of the component design are well-conceived and capable of meeting requirements. This proves helpful to the
+    later SE&A baselines as the components are implemented, tested and deployed, which in turn enhances the likelihood
+    that the overall project will satisfy the customer’s requirements. Deliverables which are deemed deficient from a
+    performance and capacity standpoint may lead to the entry of a defect, which is then taken into account during the CDR
+    Scorecard process.
+</p>
+<h3>
+    2 Usage Context
+</h3>
+<p>
+    This technique paper should be used as guidance while conducting a Critical Design Review in an enterprise SE&A
+    project.
+</p>
+<h3>
+    3 Content
+</h3>
+<p>
+    The following PE specific items should be verified during CDR:
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        <strong>CDR Preparation</strong>
+    </p>
+    <ul>
+        <li>
+            PE work products / deliverables from PDR phase are revisited based on any new information&nbsp; 
+            <ul>
+                <li>
+                    Performance estimates&nbsp;
+                </li>
+                <li>
+                    Performance models&nbsp;
+                </li>
+                <li>
+                    Resulting performance reports (SLCA, Operational Model updates, sizings)&nbsp;
+                </li>
+            </ul>
+        </li>
+        <li>
+            Key performance risks areas in detail design were evaluated using selected estimation / modeling
+            techniques&nbsp;
+        </li>
+        <li>
+            Results of estimation forwarded to appropriate areas (e.g. design, development, etc.)&nbsp;
+        </li>
+        <li>
+            Design baseline materials reviewed by PE team, especially&nbsp; 
+            <ul>
+                <li>
+                    Test plans&nbsp;
+                </li>
+                <li>
+                    RTVM
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p>
+        <strong>CDR Performance Questions</strong>
+    </p>
+    <ul>
+        <li>
+            Are both system and component technical volumetrics being maintained?&nbsp;
+        </li>
+        <li>
+            Have business volumetrics changed? Will they change our technical volumetrics, sizing, ability to meet SLRs or
+            other performance-critical assumptions?&nbsp;
+        </li>
+        <li>
+            Has the technology research been completed and incorporated into the estimation/modeling activities?&nbsp;
+        </li>
+        <li>
+            What results are available for the system and component performance estimation and modeling activities done to
+            date?&nbsp;
+        </li>
+        <li>
+            Has the capacity plan been updated to take into account the system and component estimation/modeling done so
+            far?&nbsp;
+        </li>
+        <li>
+            Do the component designs reflect adequate attention to performance considerations?&nbsp;
+        </li>
+        <li>
+            Do the component developers have the tools and techniques they need to address module performance during code
+            and unit test?&nbsp;
+        </li>
+        <li>
+            How does the development team plan to track progress against their performance goals?&nbsp;
+        </li>
+        <li>
+            Has a performance test plan been defined?&nbsp;
+        </li>
+        <li>
+            Will the performance test environment be ready and available by the time performance testing is scheduled to
+            start?
+        </li>
+        <li>
+            Has the performance risk been reassessed since the PDR?&nbsp;
+        </li>
+        <li>
+            Will the performance-centric items satisfy the applicable CDR scorecard criteria, i.e. 
+            <ul>
+                <li>
+                    <b>Static Component Design and Test</b> 
+                    <ul>
+                        <li>
+                            Completeness with the test plans and traceability to acceptance criteria and end-to-end
+                            functionality agreed to by the testing team
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Service</b> <b>Delivery</b> <b>Center</b> <b>(SDC) / Managed Operations and Delivery
+                    Organization</b> 
+                    <ul>
+                        <li>
+                            Agreement with regard to production infrastructure, its capacity and projections
+                        </li>
+                        <li>
+                            Agreement with regard to availability and disaster recovery approach and projections
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>System Testing</strong> 
+                    <ul>
+                        <li>
+                            Test plans traceable to system/component requirements and acceptance criteria
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p>
+        <strong>CDR Actions</strong>
+    </p>
+    <ul>
+        <li>
+            CDR issues are raised for concerns which may affect CDR scorecard findings.
+        </li>
+        <li>
+            PE Strategy and Plan documents are updated as needed to reflect any new information coming out of the CDR, with
+            stakeholders being informed.
+        </li>
+    </ul>
+</blockquote></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

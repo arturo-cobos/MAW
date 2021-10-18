@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing Build Procedures</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="build_procedures_dev">
+<meta name="uma.presentationName" content="Developing Build Procedures">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_RcxiIDQsEdyqruDnPEMDVw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_RcxiIDQsEdyqruDnPEMDVw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing Build Procedures</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Migrated development approach from existing IBM Global Services Method work product.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/build_procedures_75EDC659.html" guid="_j5Tx4FBKEeC-nZrGQNBVmA">Build Procedures</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">The Build Procedures should be developed during project planning. <br />
+Build Procedures may need to take into account items or procedures such as: 
+<ul>
+    <li>
+        <div>
+            File structure.
+        </div>
+    </li>
+    <li>
+        <div>
+            Unrelated code (for example from different subsystems) going into one library makes the build processes
+            interdependent.
+        </div>
+    </li>
+    <li>
+        <div>
+            The installation process to be used (for example, it may impose limitations on size and structure).
+        </div>
+    </li>
+    <li>
+        <div>
+            The development environment.
+        </div>
+    </li>
+    <li>
+        <div>
+            The version control (configuration management) system.
+        </div>
+    </li>
+    <li>
+        <div>
+            How to get any runtime executables and third party software that is not a part of the product but is required
+            to run it.
+        </div>
+    </li>
+    <li>
+        <div>
+            How the deliverables are named.
+        </div>
+    </li>
+    <li>
+        <div>
+            How the corrective service process affects restrictions on structure and names.
+        </div>
+    </li>
+</ul>
+<p>
+    Usually, the hardest part is understanding the target environment, installation process, and the like. All these things
+    will almost never be known already from a previous project. Reading all the documents available about the new areas is
+    usually not feasible. The best starting point is to study projects that have worked in some of the new areas. After
+    these areas are understood, discussing the considerations, making the decisions, and writing them down will be
+    easier.<br />
+    To simplify the process, it is best to automate as much of the procedure as possible (for example, by building a
+    BUILDSYS.BAT).
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

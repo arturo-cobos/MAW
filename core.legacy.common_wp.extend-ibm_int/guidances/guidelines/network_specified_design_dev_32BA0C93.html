@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing Network Specified Design</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="network_specified_design_dev">
+<meta name="uma.presentationName" content="Developing Network Specified Design">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_GIEeQDaeEdyb5uUV3uCuyw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_GIEeQDaeEdyb5uUV3uCuyw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing Network Specified Design</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Migrated development approach from existing IBM Global Services Method work product</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/network_specified_design_FF36675D.html" guid="mwebCB84F2A59D4B02B3852568E2007B8272">Network Specified Design</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The first step in creating a Network Specified Design is to collect and review the already existing network strategy
+    and conceptual design outputs. The deliverables from these prior phases are used to create and validate the additional
+    detail of the Network Specified Design.
+</p>
+<p>
+    The second step is to add network functionality (i.e., routing, switching, servers, network management, etc.) to the
+    Network Conceptual Design depicting where the functionality will be performed via which node or component in the
+    network.
+</p>
+<p>
+    Specific elements could include:
+</p>
+<ul>
+    <li>
+        Network Specified Design validation criteria documented in node/connection profiles&nbsp;<br />
+    </li>
+    <li>
+        Network Specified Design topology diagrams and supporting textual descriptions&nbsp;<br />
+    </li>
+    <li>
+        Technical and non-technical advantages/disadvantages of the proposed Network Specified Design&nbsp;<br />
+    </li>
+    <li>
+        Description of the proposed network operations and network management<br />
+    </li>
+</ul>
+<p>
+    The third step is to design a local diagram for each location type as defined in the location profiles. For example,
+    start at a store, or factory, or distribution center before tackling the entire wide area network.
+</p>
+<p>
+    At each location type the following will need to be done:<br />
+</p>
+<ul>
+    <li>
+        Review user profiles and application profiles for network specific requirements – this will dictate certain node
+        and connection characteristics like protocols, availability, security, capacity, manageability, etc.<br />
+    </li>
+    <li>
+        Using personal background and experience with network node and connection types start constructing alternative
+        scenarios that will meet the requirements. For example, the common node type in individual locations used to
+        connect individual user nodes (i.e., PCs) is a hub. A common node type to connect to the Internet or WAN is a
+        router. A common connection type used to connect node type hub to node type user PC is a LAN – either Ethernet or
+        token-ring.<br />
+    </li>
+    <li>
+        Since many options exist at this stage of the design (based around client preference, certain standard or protocols
+        needing to be supported), it is best at this point to create anywhere from two to four alternative Conceptual
+        Network Design scenarios. Each of the alternate designs will have its own set of advantages and disadvantages, with
+        the recommended design most closely matching client business needs, IT Strategy, and network requirements and
+        strategy.<br />
+    </li>
+    <li>
+        All the alternative designs should meet the basic client business and network requirements. However, it is
+        recommended that these alternatives be discussed with the client network design and architecture team before the
+        designs are presented to client management in order to allow the client team to share their thoughts on which
+        design meets their needs the best. Assuming the client technical team and IBM technical team agree, the recommended
+        design will be posed to management, with the backup alternate designs ready to review in case questions
+        arise.<br />
+    </li>
+</ul>
+<p>
+    The fourth step is to connect the locations into an enterprise network (assuming the scope of the engagement is to
+    create both a ‘local’ as well as ‘wide area’ network). Similar steps as above need to happen in the creation of a wide
+    area Conceptual Network Design.
+</p>
+<ul>
+    <li>
+        Review to location to location profile information for details concerning how locations need to communicate.
+        Additionally, this is the point where the entire breadth of telecommunications traffic needs to be taken into
+        account. For example, most clients have voice, data, video, mobile communications, fax, and wireless networks. The
+        designer at this point needs to keep all of these networks in mind when designing an overall enterprise
+        network.<br />
+    </li>
+    <li>
+        Again, using personal background and experience with network node and connection types, the designer will start to
+        construct scenarios that meet the overall client business and technical requirements. Node types that exist at this
+        point include high-speed switches, multiplexers, and other typically very high-speed transmission devices.
+        Connection types can be various internetworking services such as T1 links, frame relay, or ATM.<br />
+    </li>
+    <li>
+        As above, alternate scenarios should be developed since there is typically ‘no right answer’. Pros and cons of each
+        alternate scenario should be developed, and a preliminary recommended Conceptual Network Design identified.<br />
+        The designs should all be reviewed with the client telecommunications technical team, and the recommended design
+        presented to client management.<br />
+    </li>
+</ul>
+<p>
+    The fifth step is to add network sizing. The design specifies recommendations on sizing and capacity of lines or links.
+    Many times this information can only be estimated using network data collection tools to determine the current network
+    capacity (current state), apply client growth projections, and apply a modeling tool to arrive at projections (future
+    state). At this point many design options may be evaluated against the client’s requirements.<br />
+</p>
+<p>
+    Specific elements could include:
+</p>
+<ul>
+    <li>
+        Network sizing (performance & capacity) data (historical/current and projected/future)&nbsp;<br />
+    </li>
+    <li>
+        Discussion of configuration fault impact (Capacity, Reliability, Availability, etc.)<br />
+    </li>
+    <li>
+        Potential risk factors in implementing the recommended specified design<br />
+    </li>
+    <li>
+        Technical reference information
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

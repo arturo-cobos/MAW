@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Activity: Implement project management system (IMSP391)</title>
+<meta name="uma.type" content="Activity">
+<meta name="uma.name" content="impl_project_mgmt_system_imsp391">
+<meta name="uma.presentationName" content="Implement project management system (IMSP391)">
+<meta name="element_type" content="workflow_detail">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_H7vN8VloEeSXn5H3SMR4qw&path=_H7vN8VloEeSXn5H3SMR4qw,_IBAIcFloEeSXn5H3SMR4qw,_H8O9MFloEeSXn5H3SMR4qw';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_H8O9MFloEeSXn5H3SMR4qw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Activity: Implement project management system (IMSP391)</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/activity.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This activity expands upon the summary project management system produced while planning the project and defines a detailed management system as the basis for managing the project. This includes defining or expanding upon various plans and documenting project specific procedures and standards.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="10" class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../America Mobile MAW V1.0/deliveryprocesses/impl_project_mgmt_system_imsp391_57FBC06E.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Work Breakdown Structure</span></td><td width="1"><img src="./../../images/tab_middle-a_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_TBS" href="./../../America Mobile MAW V1.0/deliveryprocesses/impl_project_mgmt_system_imsp391_57FBC06E.html_tbs.html"><span style="white-space:nowrap;">Team Allocation</span></a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WPBS" href="./../../America Mobile MAW V1.0/deliveryprocesses/impl_project_mgmt_system_imsp391_57FBC06E.html_wpbs.html"><span style="white-space:nowrap;">Work Product Usage</span></a></td><td width="21"><img src="./../../images/tab_end-i.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="2"><img src="./../../images/shim.gif" height="2" alt="" title=""></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="5"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Work Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Work Breakdown", summary: "Work Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["steps", "Steps"],
+["id", "Index"],
+["predecessors", "Predecessors"],
+["model_info", "Model Info"],
+["type", "Type"],
+["is_planned", "Planned"],
+["is_repeatable", "Repeatable"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_ongoing", "Ongoing"],
+["is_event_driven", "Event Driven"],
+["is_optional", "Optional"],
+["teams", "Team"]],
+rows: [
+		
+{id: "647cab2f", parentId: "", relPath: ",_H8O9MVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "11", prefix: "", name: "est_pm_system_p391", title: "Establish project management system (IMSP391)", url: "./../../America Mobile MAW V1.0/deliveryprocesses/est_pm_system_p391_6299A07E.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "4db500f2", parentId: "647cab2f", relPath: ",_H8O9MVloEeSXn5H3SMR4qw,_H8O9MlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "project_manager", title: "Project Manager", url: "./../../America Mobile MAW V1.0/deliveryprocesses/project_manager_5132B494.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "8241393c", parentId: "647cab2f", relPath: ",_H8O9MVloEeSXn5H3SMR4qw,_H8PkQlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "agreement", title: "Agreement", url: "./../../America Mobile MAW V1.0/deliveryprocesses/agreement_76632B21.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "d300c232", parentId: "647cab2f", relPath: ",_H8O9MVloEeSXn5H3SMR4qw,_H8PkQVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "deliverable_definition", title: "Deliverable Definition", url: "./../../America Mobile MAW V1.0/deliveryprocesses/deliverable_definition_87CA170B.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "22cb5a62", parentId: "647cab2f", relPath: ",_H8O9MVloEeSXn5H3SMR4qw,_H8PkQFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "operational_schedule", title: "Operational Schedule", url: "./../../America Mobile MAW V1.0/deliveryprocesses/operational_schedule_7D2C36FB.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "7e7adcbd", parentId: "647cab2f", relPath: ",_H8O9MVloEeSXn5H3SMR4qw,_H8O9M1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "proj_mgmt_sys_summary", title: "Project Management System Summary", url: "./../../America Mobile MAW V1.0/deliveryprocesses/proj_mgmt_sys_summary_BA0C8A59.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "b44bda5b", parentId: "647cab2f", relPath: ",_H8O9MVloEeSXn5H3SMR4qw,_H8PkRlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "comm_mgt_pln_org_p3_ctr", title: "Communications Management Plan (Organizational) for P3 CTR", url: "./../../America Mobile MAW V1.0/deliveryprocesses/comm_mgt_pln_org_p3_ctr_3AF50D40.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "4fa1d067", parentId: "647cab2f", relPath: ",_H8O9MVloEeSXn5H3SMR4qw,_H8PkR1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "organization_level_measurement_program", title: "Organization Level Measurement Program", url: "./../../America Mobile MAW V1.0/deliveryprocesses/organization_level_measurement_program_A3CEE305.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "8ea63803", parentId: "647cab2f", relPath: ",_H8O9MVloEeSXn5H3SMR4qw,_H8PkS1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "organizational_reference_document", title: "Organizational Reference Document", url: "./../../America Mobile MAW V1.0/deliveryprocesses/organizational_reference_document_6860C524.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e7164f65", parentId: "647cab2f", relPath: ",_H8O9MVloEeSXn5H3SMR4qw,_H8PkSlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "project_defined_process", title: "Project Defined Process", url: "./../../America Mobile MAW V1.0/deliveryprocesses/project_defined_process_FF86EF5F.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "372cbe43", parentId: "647cab2f", relPath: ",_H8O9MVloEeSXn5H3SMR4qw,_H8PkQ1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "proj_definition", title: "Project Definition", url: "./../../America Mobile MAW V1.0/deliveryprocesses/proj_definition_DF3D00E6.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "943f4923", parentId: "647cab2f", relPath: ",_H8O9MVloEeSXn5H3SMR4qw,_H8PkRFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "proj_procedures_desc", title: "Project Procedures Description", url: "./../../America Mobile MAW V1.0/deliveryprocesses/proj_procedures_desc_41BE191A.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "eb958a5d", parentId: "647cab2f", relPath: ",_H8O9MVloEeSXn5H3SMR4qw,_H8PkRVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "wbs", title: "Work Breakdown Structure (WBS)", url: "./../../America Mobile MAW V1.0/deliveryprocesses/wbs_4C5BF92A.html", 
+	predecessors: "", info: "Optional Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "411f1080", parentId: "647cab2f", relPath: ",_H8O9MVloEeSXn5H3SMR4qw,_H8O9M1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "proj_mgmt_sys_summary", title: "Project Management System Summary", url: "./../../America Mobile MAW V1.0/deliveryprocesses/proj_mgmt_sys_summary_BA0C8A59.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "9ecc9df6", parentId: "647cab2f", relPath: ",_H8O9MVloEeSXn5H3SMR4qw,_H8PkRFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "proj_procedures_desc", title: "Project Procedures Description", url: "./../../America Mobile MAW V1.0/deliveryprocesses/proj_procedures_desc_41BE191A.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "e06b994", parentId: "", relPath: ",_H8PkSVloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "12", prefix: "", name: "set_up_billing_time_rec_mech_p391", title: "Set up billing and time recording mechanisms (IMSP391)", url: "./../../America Mobile MAW V1.0/deliveryprocesses/set_up_billing_time_rec_mech_p391_10EDDB49.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "af3b21d2", parentId: "e06b994", relPath: ",_H8PkSVloEeSXn5H3SMR4qw,_H8O9MlloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "project_manager", title: "Project Manager", url: "./../../America Mobile MAW V1.0/deliveryprocesses/project_manager_5132B494.html", 
+	predecessors: "", info: "Primary Performer", type: "Role Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "23a417a8", parentId: "e06b994", relPath: ",_H8PkSVloEeSXn5H3SMR4qw,_H8O9M1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "proj_mgmt_sys_summary", title: "Project Management System Summary", url: "./../../America Mobile MAW V1.0/deliveryprocesses/proj_mgmt_sys_summary_BA0C8A59.html", 
+	predecessors: "", info: "Mandatory Input", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "5c37c0da", parentId: "e06b994", relPath: ",_H8PkSVloEeSXn5H3SMR4qw,_H8PkSFloEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "confirmed_time_recording_codes", title: "Confirmed Time Recording Codes ", url: "./../../America Mobile MAW V1.0/deliveryprocesses/confirmed_time_recording_codes_64FFB39.html", 
+	predecessors: "", info: "Output", type: "Outcome Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+		
+{id: "ba371e86", parentId: "e06b994", relPath: ",_H8PkSVloEeSXn5H3SMR4qw,_H8O9M1loEeSXn5H3SMR4qw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "proj_mgmt_sys_summary", title: "Project Management System Summary", url: "./../../America Mobile MAW V1.0/deliveryprocesses/proj_mgmt_sys_summary_BA0C8A59.html", 
+	predecessors: "", info: "Output", type: "Artifact Descriptor", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: []},
+	
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

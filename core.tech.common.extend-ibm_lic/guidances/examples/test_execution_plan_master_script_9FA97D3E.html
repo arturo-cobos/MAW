@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Test Execution Plan for Master Script</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="test_execution_plan_master_script">
+<meta name="uma.presentationName" content="Test Execution Plan for Master Script">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_whERYCusEdyiH_BFHRguzQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Test Execution Plan for Master Script</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/test_execution_plan_40CC18DC.html" guid="mweb05F01C330983D99E85256885005D2982">Test Execution Plan</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h1>
+    CALENDAR DATE: __________
+</h1>
+<br />
+<br />
+<h3>
+    EXCHANGE DATE: ___________
+</h3>
+<br />
+<h3>
+    ACTIVITY DAY: _________
+</h3>
+<h1>
+    Test Master Script:
+</h1>
+<h1>
+    Day 1 - N:
+</h1>
+<p>
+    <br />
+     1) Set Holiday file (Holiday file has been set – using production copy)<br />
+    <br />
+     <b>STEPS 2 – 9 will begin at 8 am</b><br />
+     2) Set Control file for day’s activity. The steps are as follows:<br />
+</p>
+<ul>
+    <li>
+        Check to see if file CICSEDUC.AOB.CTLFILE exists&nbsp;
+    </li>
+    <li>
+        If not, submit job CREATCTL from MIS.Y2KTEST.BASEJCL. Ensure that the dsn for the DD statement CTLFIL of the GO
+        step is CICSEDUC.AOB.CTLFILE&nbsp;
+    </li>
+    <li>
+        Submit job UPDTCTL from MIS.Y2KTEST.BASEJCL, however, before doing so ensure the exchange dates are properly set in
+        data set member ACTDAYxx (where xx is a number indicating the activity day) in PDS MIS.Y2KTEST.BASEINPT.<br />
+        <br />
+         - The dates within the ACTDAYxx member will be of the format dmm/dd/yy where d will have a value within the range
+        of 0 – 6 (0 = Sunday, 1 = Monday, 2 = Tuesday, 3 = Wednesday, 4 = Thursday, 5 = Friday, 6 = Saturday). mm = month,
+        dd = day, and yy = year. For example 107/26/99 is Monday the 26<sup>th</sup> of July 1999.<br />
+        <br />
+        <br />
+         - Make a copy of the create control file and update control file JCL. For example MIS.Y2KTEST.BASEOUTJ(CCFDAY1)
+        and MIS.Y2KTEST.BASEOUTJ(UCFDAY1). Use the commands PRT DATASET, PRT, and PRT CLOSE in SDSF. See Step # 24.
+    </li>
+</ul>
+<p>
+    3) Set Exchange date in CICSEDUC region – <b>SEE ATTACHED DETAILS.</b><br />
+</p>
+<ul>
+    <li>
+        Select E Extensions from Primary Menu
+    </li>
+</ul>
+<p>
+    <strong>Select Z Compuware Xpediter/Xchange</strong><br />
+     <strong>From Simulated Date Time Settings Panel enter CICSEDUC under Job Name along with the date to be tested, enter
+    H in first column to set date</strong><br />
+    <br />
+     4) Bring up CICSEDUC – (TSO option 6, Type in CICSEDUC. A message stating CICSEDUC has been submitted along with a job
+    number will display)<br />
+    <br />
+     5) Sign onto the CICSEDUC region via the CESN transaction (enter user id and password) and ensure we can get to the
+    main panel via the MISMC transaction. Note the date in the upper right hand corner. It should be the exchange date
+    which was set in Step # 3.<br />
+    <br />
+     6) Ensure printers IS31 and IS32 are released from CICSTEST. <b>CEMT I</b> <b>TE(IS3*)</b><br />
+    <br />
+     <b>7)</b> Check that printers IS31 and IS32 are set for PTCF and TPRT respectively, under ATI TRAN. <b>Do this via the
+    command DCT IS3*.</b><br />
+    <br />
+     <b>8)</b> Acquire IS31 and IS32 in CICSEDUC. Check status via the command <b>CEMT I</b> <b>TE (IS31) and CEMT I TE
+    (IS32</b>). <b>CEMT I</b> <b>TE (IS31) and CEMT I TE (IS32</b>).<br />
+    <br />
+    <br />
+     9) Verify that all interfaces are set for MVS, IDX, and Datagate. For MVS, within the CICSEDUC region enter the
+    transaction IMON <b>(SEE ATTACHED DETAILS).</b> The listener should be enabled (TCP/IP API LISTENER). <b>For IDX, once
+    logged on,</b><br />
+    <br />
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - select <b>10</b>.LHMY2K HPA<br />
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Then enter <b>2</b> for Enter Group<br />
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - enter <b>13</b> for Select Function<br />
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - enter <b>25</b> for Select Activity<br />
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - enter <b>7</b> for Select Activity<br />
+    <br />
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Disregard #1, however, for #’s 2 – 6, highlight and type ‘S’, this will then
+    display running for each<br />
+    <br />
+     The status for #4 will be started. For Datagate we will coordinate with Susanne Beeber to ensure the interfaces are
+    set/up between Datagate and the mainframe and Datagate and IDX.<br />
+     <b>*** For IDX when selecting 10.LHMY2K HPA, if the message “BED FILE PROBLEM” displays after entering 2 for Enter
+    Group, do the following:</b><br />
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <b>Go back to main menu and select 6.Bedfile Copy.</b><br />
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <b>Then select 10.LHMY2K HPA again and continue with the process. ***</b><br />
+    <br />
+     10) <b>At 9:15 am there will be a team meeting to review and validate night batch from previous day.</b> *** <b>If
+    there are problems, the following will be performed</b>:&nbsp;<br />
+</p>
+<ul>
+    <li>
+        Log problem via form in ntfs04\sysdev\yr2k\testing\meeting notes\Problem Log Sheet.DOC&nbsp;
+    </li>
+    <li>
+        Enter problem(s) into PTARS db.
+    </li>
+</ul>
+<p>
+    <strong>Results of the batch review will determine if we continue with the online activity for the day.</strong><br />
+    <br />
+     11) Set XCHANGE date for batch runs (see step # 3, <b>but enter $Y2K*</b> under Job Name <b>and H in first column to
+    set and hold the date</b>).<br />
+    <br />
+    <br />
+     12) Run MRT36D job for MRT in MIS.Y2KTEST.BASEJCL<br />
+     Set Exchange Date to Activity Day – 1.<br />
+     Save MRT36D to TSO data set: MIS.Y2KTEST.BASEOUTJ(MRT26Dx)<br />
+     X= Activity Day<br />
+    <br />
+     13) Backup of the day’s online activity, as well as, night batch updates. Run job BACKUPJ in MIS.Y2KTEST.BASEJCL,
+    however, ensure the last qualifier of the backup data set denotes the activity day. In addition, one of the qualifiers
+    should denote this is the backup immediately proceeding the run of the night batch. For example:
+    DBA.Y2KTEST.BASE.HMRNI0$.DAY0.NITEBTCH.<br />
+    <br />
+    <br />
+     14) Make a copy of the night batch BACKUP JCL. For example: MIS.Y2KTEST.BASEOUTJ(BBUDAY1). Use the commands PRT
+    DATASET, PRT, and PRT CLOSE.<br />
+    <br />
+    <br />
+    <br />
+     <b>15)</b> Start Test (Oversee and ensure the sequence of tasks for online activity - view newly developed, activity
+    days spread sheet).<br />
+    <br />
+    <br />
+     16) Ensure all of online is printed, each tester should get their own output, as well as, the output for fellow
+    testers when applicable.<br />
+    <br clear="all" />
+    <br />
+    <br />
+     <b>17)</b> <b>At 2:30 pm there will be a team meeting after online activity</b>. Determine if we should proceed with
+    the running of the night batch, based on the number of problems determined from the online activity. *** <b>If there
+    are problems, the following will be performed:</b><br />
+    <br />
+     Log problem via form in ntfs04\sysdev\yr2k\testing\meeting notes\Problem Log Sheet.DOC<br />
+     Enter problem(s) into PTARS db<br />
+     Collect and file test cases from the end of day’s activity.<br />
+    <br />
+     <strong>*** The following is performed if the go ahead is given for running the night batch:</strong><br />
+    <br />
+     18) Bring down CICSEDUC.<br />
+    <br />
+     <strong>Sign on to CICSEDUC via the CESN transaction</strong><br />
+     <strong>Issue the following transaction: CEMT P SHUT IMM</strong><br />
+     <strong>*** At this point as part of the shutdown GDG’s will be created</strong><br />
+    <br />
+     19) Append GDG’s to Pre-allocated Y2K TSO data sets with a header indicating the activity day (i.e. Day 0).<br />
+    <br />
+     <b>Copy/Append CICSEDUC.Y2KTEST.BASE.LAB.RECEIVE.G0001V00 to</b>
+</p>
+<p>
+    <em>MIS.Y2KTEST.BASEGDG.LAB.RECEIVE</em>
+</p>
+<p>
+    <strong>Copy/Append CICSEDUC.Y2KTEST.BASE.LAB.SEND.G0001V00 to</strong>
+</p>
+<p>
+    MIS.Y2KTEST.BASEGDG.LAB.SEND
+</p>
+<p>
+    <strong>Copy/Append CICSEDUC.Y2KTEST.BASE.ECG.RECEIVE.G0001V00 t<em>o</em></strong>
+</p>
+<p>
+    MIS.Y2KTEST.BASEGDG.ECG.RECEIVE
+</p>
+<p>
+    <strong>Copy/Append CICSEDUC.Y2KTEST.BASE.IDX.IDXR.GDG.G0001V00 to</strong>
+</p>
+<p>
+    MIS.Y2KTEST.BASEGDG.IDX.IDXR.GDG
+</p>
+<p>
+    <strong>Copy/Append CICSEDUC.Y2KTEST.BASE.PTH.RECEIVE.G0001V00 to</strong>
+</p>
+<p>
+    MIS.Y2KTEST.BASEGDG.PTH.RECEIVE
+</p>
+<p>
+    <strong>Copy/Append CICSEDUC.Y2KTEST.BASE.PTH.SEND.G0001V00 to</strong>
+</p>
+<p>
+    MIS.Y2KTEST.BASEGDG.PTH.SEND
+</p>
+<br />
+<br />
+20) Backup of the day’s online activity. Run job BACKUPJ in MIS.Y2KTEST.BASEJCL, however, ensure the last qualifier of the
+backup data set denotes the activity day. In addition, one of the qualifiers should denote this is the backup immediately
+proceeding the online activity. For example: DBA.Y2KTEST.BASE.HMRNI0$.DAY0.ONLINE <br />
+<br />
+<br />
+21) Make a copy of the online BACKUP JCL. For example: MIS.Y2KTEST.BASEOUTJ (OBUDAY1). Use the commands PRT DATASET, PRT,
+and PRT CLOSE in SDSF. See Step # 24. <br />
+<br />
+<br />
+22) Set XCHANGE date for batch runs (see step # 3, <b>but enter $Y2K*</b> under Job Name <b>and H in first column to set
+and hold the date</b>). <br />
+<br />
+<br />
+23) Run night batch job for MRT. Submit member $DAYx (where x = activity day) in MIS.Y2KTEST.BASEJCL. <br />
+<br />
+<br />
+24) <b>MRT BATCH CONTINUED</b>: The following jobs will be submitted on their current exchange date + 1 day and a time of
+00:05: DAY1MOR, DAY10MO, DAY13MO, DAY4MOR, DAY8MOR, and DAY9MOR. <br />
+<br />
+<br />
+25) Run night batch job for OE. Submit the following members (all in MIS.Y2KTEST.BASEJCL): <b>Change INPUT_DATE for
+JOES0160</b> <br />
+<br />
+<br />
+- $Y2KJ150 <br />
+- $Y2KJ180 <br />
+- $Y2K1030 <br />
+- $Y2K1050 <br />
+- $Y2K9000 <br />
+- $Y2KJ090 <br />
+- $Y2KJ470 <br />
+- $Y2KJ630 <br />
+- $Y2KJ670 <br />
+- <b>$Y2KJ160</b> <br />
+- $Y2KI700 <br />
+- $Y2KJ260 <br />
+- $Y2KOEBE <br />
+<br />
+26) <b>OE BATCH CONTINUED:</b> If the activity day = 4 or = 7 then submit job $OEDAY4 or $OEDAY7 respectively. This job(s)
+should be submitted before the normal stream of jobs.NIGHTJOB. <br />
+<br />
+<br />
+27) <b>OE BATCH CONTINUED:</b> On the last activity day submit ENDJOB after the normal stream of jobs. <br />
+<br />
+<br />
+28) Save OE and MRT batch to TSO data sets (use the PRINT DATASET, PRT, and PRT CLOSE commands in SDSF) – <b>SEE ATTACHED
+DETAILS</b>. For example MIS.Y2KTEST.BASEOUTP (ONTBDY1) and MIS.Y2KTEST.BASEOUTP (MNTBDY1). <br />
+<br />
+<br />
+29) Print OE and MRT batch. (use the XS, PRT, and PRT CLOSE commands in SDSF) – <b>SEE ATTACHED DETAILS</b> <br />
+<br />
+<br />
+30) Batch reports for OE and MRT will be in the output bin outside of Chel and Paul’s office. These reports are for review
+and validation of night batch. <br /></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

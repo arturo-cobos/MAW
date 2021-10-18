@@ -1,0 +1,478 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Artifact: Service Specification
+			(ART 0585)
+		</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="service_specification">
+<meta name="uma.presentationName" content="Service Specification">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_umgOsJ6vEd261rSlziDYzQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Artifact: Service Specification
+			(ART 0585)
+		</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/artifact.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This artifact captures the design details needed to realize a service.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">The purpose of this artifact is to define the responsibilities and key characteristics for individual services from which
+detailed design and implementation activities can be performed.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Container Artifact</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/workproducts/service_model_AA7DDA59.html" guid="_fxbwIBmHEdqx_IUyKxxtEg">Service Model</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Responsible:
+								</span></td><td class="sectionTableCell"><span class="sectionTableCellHeading">Modified By:
+								</span>
+<ul>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/roles/soa_architect_868D1C78.html" guid="_6a6fsMATEd2tiPGdefU3zg">SOA Architect</a>
+</li>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/software_designer_D18DC3B2.html" guid="_PaVbABjREduDY9xFzEM2Fg">Software Designer</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Tasks</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Input To:
+								</span></td><td class="sectionTableCell"><span class="sectionTableCellHeading">Output From:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.component_sys_arch_soma.addon-ibm_lic/tasks/assign_service_to_service_components_FF37FDF4.html" guid="_I8Qt4B_XEdqF5c1Hhhq2Uw">Assign Services to Service Components</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/associate_bus_rules_policies_with_svc_ops_6C10428B.html" guid="_-vEjYCmXEdyb7p_TLTXB6w">Associate Business Rules and Policies with Service Operations</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/assoicate_use_cases_with_service_operations_1448A63D.html" guid="_O1qEcF9NEduhbPCAnI7o2Q">Associate Use Cases with Service Operations</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/create_service_context_diagram_3A5FD1A4.html" guid="_Z71PoCmYEdyb7p_TLTXB6w">Create Service Context Diagram</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/define_service_interface_messaging_style_C9E8472.html" guid="_i49GIJYiEd20ttcATDSVvQ">Define Service Interface Messaging Style</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/define_service_message_exchange_pattern_25575E73.html" guid="_CDWbsJYaEd20ttcATDSVvQ">Define Service Message Exchange Pattern</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/define_service_operations_C27017FE.html" guid="_j1XcoEOCEduXIri7BAc1Jg">Define Service Operations</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/document_state_management_decisions_FABC683E.html" guid="_2w8DwF_nEduhbPCAnI7o2Q">Document State Management Decisions</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/identify_events_with_service_E5634B54.html" guid="_mpHPIF13EduE1aXRcyVMBg">Identify Events Associated With Service</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/map_svc_op_msg_to_existing_sys_interface_C4F9BC77.html" guid="_-dKJsIVkEdunzas35luIdQ">Map Service Operation Message to Existing System Interfaces</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/map_svc_op_params_to_canonical_msg_model_6B5B0AB5.html" guid="_-z_f4IVlEdunzas35luIdQ">Map Service Operation Parameters to Canonical Message Model</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/specify_context_aware_service_specification_B32F9997.html" guid="_1rFawG3kEdulmrMDVQ1f_Q">Specify Context-Aware Service Specification</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/specify_input_output_error_msg_for_svc_ops_92F69AB8.html" guid="_01GXYEOGEduXIri7BAc1Jg">Specify Input, Output and Error Messages for Service Operations</a>
+</li>
+<li>
+<a href="./../../practice.tech.soma.svc_spec_rlzn.base-ibm_lic/tasks/specify_nfr_for_svc_and_svc_ops_129647EC.html" guid="_N_Z4YBBfEd2RQMQjayIJ9A">Specify Non-functional Requirements for Service and Service Operations</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Main Description</th><td class="sectionTableCell"><p>
+    This artifact contains detailed information captured about services during SOMA Specification and Realization phases.
+    Along with specifying the details of the exposed services, certain types of requirements and constraints are also
+    summarized, including specific types of non-functional requirements and realization decisions specific to a service.
+</p>
+<p>
+    There should be one instance of this for each service in the model.
+</p>
+<p>
+    <img height="522" alt="Service Specification Context" src="./../../core.tech.soma.common.base-ibm_lic/workproducts/resources/Svc_Spec_Context.jpg" width="600" />
+</p>
+<p>
+    Table 1 shows the elements of the Service Specification that are captured in this artifact.<br />
+    <br />
+</p>
+<table title="Table 1 - Service Specification Elements" cellspacing="0" cellpadding="2" width="85%" border="1">
+    <caption>
+        Table 1 - Service Specification Elements
+    </caption>
+    <tbody>
+        <tr>
+            <th id="" scope="col" abbr="">
+                Section
+            </th>
+            <th id="" scope="col" abbr="">
+                Description
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Service Context Aware Attributes
+            </td>
+            <td>
+                Specifies context aware attributes for dynamic assembling and routing.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Service Operation
+            </td>
+            <td>
+                Identifies service operations.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Events
+            </td>
+            <td>
+                Identify events that trigger services and service operations.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Rules and Policies
+            </td>
+            <td>
+                Specify/associate rules executed by service and service operation and policies it follows.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Service Context Diagram
+            </td>
+            <td>
+                Illustrates the service consumers and service providers.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Service Messages
+            </td>
+            <td>
+                Documents messages that are exchanged between service consumer and service provider.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Service Non-Functional Requirements
+            </td>
+            <td>
+                Documents the non-functional requirements that dictate those characteristics.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                State Management Decisions
+            </td>
+            <td>
+                State can be an important consideration for composite services and the related decisions are documented
+                here.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Service Allocation To Components
+            </td>
+            <td>
+                Map to Service Component realizing the service and Functional and Technical Components
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Service Realization Decisions
+            </td>
+            <td>
+                Documents architectural and technical decisions specific to the service.
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<br />
+<br />
+<br /></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Brief Outline</th><td class="sectionTableCell"><p>
+    The Service Specification details the various elements of the service design that are critical for the efficient and
+    successful implementation of the services. This artifact captures the following:
+</p>
+<ol>
+    <li>
+        Service context aware attributes&nbsp;- Specifies context aware attributes for dynamic assembling and routing.
+    </li>
+    <li>
+        Service operations - Specific capabilities/operations provided by the service
+    </li>
+    <li>
+        Events - Events that trigger service operation execution
+    </li>
+    <li>
+        Rules and policies&nbsp;- Specify/associate rules executed by service and service operation and policies it
+        follows.
+    </li>
+    <li>
+        Service context diagram&nbsp;- Illustrates the service consumers and service providers
+    </li>
+    <li>
+        Service messages - Documents messages that are exchanged between service consumer and service provider.
+    </li>
+    <li>
+        Service non-functional requirements - Documents the non-functional requirements that dictate service
+        characteristics
+    </li>
+    <li>
+        State management decisions - State can be an important consideration for composite services and the related
+        decisions are documented here.
+    </li>
+    <li>
+        Service allocation to components - Maps to Service, Functional, and Technical&nbsp;components realizing the
+        service.
+    </li>
+    <li>
+        Service realization decisions - Documents architectural and technical decisions specific to this service
+    </li>
+</ol></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Notation</th><td class="sectionTableCell"><p>
+    The Service Specification information will be captured using the various depictions shown below:
+</p>
+<p>
+    <br />
+    <strong><font size="3">Context Aware Attributes, Service Operations, Events, and Rules and
+    Policies</font></strong><br />
+    Document the context aware attributes for services for dynamic assembling and routing, service attributes, service
+    operations, the events that trigger the services and the service operations, and the various rules and policies
+    associated with the services.
+</p>
+<p>
+    <strong><font size="3">Service Context Diagram</font></strong><br />
+    Service context diagram illustrates interaction and data flow with service consumers and service providers.<br />
+</p>
+<p>
+    <img height="445" alt="service context diagram" src="./../../core.tech.soma.common.base-ibm_lic/workproducts/resources/service_context_diagram_fig_1.JPG" width="600" />&nbsp;
+</p>
+<p>
+    <strong><u>Service Context Diagram</u></strong>
+</p><br />
+<p>
+    <strong><font size="3">Service Messages</font></strong><br />
+    The Service Specification needs to capture only a high level description of the messages associated with a service.
+    Later activities will create a detailed message specification.&nbsp;
+</p>
+<p>
+    Enterprise message formats must be reconciled with the input/output messages of individual services/service operations,
+    so they are related and assigned to allow appropriate services to use and update them as needed. Services may need to
+    extract information from or expect output from the Common Enterprise Message format.&nbsp;
+</p>
+<p>
+    <strong><font size="3">Service Non-Functional Requirements</font></strong><br />
+    It is convenient to summarize certain types of nonfunctional requirements in the Service Specification to simplify the
+    validation of proposed decisions for how a service will be realized. For example, if an existing business system
+    function is proposed as a way to realize a service, then the availability level of the business system needs to be
+    equal to or better than the availability requirement of the service. This does not eliminate the need to fully document
+    nonfunctional requirements in their appropriate artifact, if one has been adopted for the project.
+</p>
+<p>
+    Nonfunctional requirements that can be summarized in the Service Specification:
+</p>
+<ul>
+    <li>
+        Availability (i.e. MTBF, MTTR)
+    </li>
+    <li>
+        Operational window (is there ever a time when the service is not expected to be used?)
+    </li>
+    <li>
+        Response time (how quickly does the service need to respond to a request)
+    </li>
+    <li>
+        Peak throughput (how many requests for the service can arrive per unit of time – e.g. per second, per minute, per
+        hour)
+    </li>
+</ul><br />
+<p>
+    <strong><font size="3">Service Allocation to Components</font></strong><br />
+    The Service Specification work product captures the mapping between Services and Service Components. The detailed
+    modeling of the realization of a service is documented in the appropriate functional architecture model, where the
+    relationships between Service, Functional and Technical components are defined. As decisions are made to allocation
+    services to service components they are documented in the Service Specification.
+</p>
+<p>
+    <strong><font size="3">Realization Decisions</font></strong><br />
+    Two areas of realization decisions are of interest to the Service Specification. Decisions need to be made about which
+    services will be allocated to which service components. Certain architectural decisions also need to be made that are
+    directly related to the realization of services. They will be noted and summarized here, but are fully documented in
+    the appropriate artifact for logging architectural decisions. Summarizing these architectural decisions here should be
+    viewed as a convenience for easy reference during service modeling activities, not a replacement for the appropriate
+    architectural decision log artifact.
+</p>
+<p>
+    <br />
+    <strong>Service Realization related architectural decisions</strong><br />
+    Certain architectural decisions points pertain to services and the services layer.
+</p>
+<p>
+    &nbsp;Note that more than one alternative might be adopted for certain decision points. In those cases the decision
+    point should be listed once for each adopted alternative, along with a list of services that the alternative will be
+    applied to.
+</p>
+<p>
+    <br />
+    <strong><font size="3">State Management Decisions</font></strong><br />
+    Although an individual service is considered stateless, compositions often require that certain information (state) be
+    managed during the time that the elements of the composition are being invoked. State management decisions describe the
+    state related requirements and how the requirement will be met.&nbsp;
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Selected Representation</th><td class="sectionTableCell">This information in this artifact can be captured using SOMA-ME modeling tool. The SOMA-ME also aids in the generation of
+the artifact from the model created using the tool.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Templates</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/guidances/templates/service_specification_4A1CBDEF.html" guid="_LHiFgKbPEd2jiLj0Mt_Ztw">Service Specification</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/guidances/examples/rent_a_car_realization_decisions_143689D7.html" guid="_siuPAB_iEdqF5c1Hhhq2Uw">Rent-a-Car Realization Decisions</a>
+</li>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/guidances/examples/rent_a_car_realization_matrix_B5D21E11.html" guid="_YXo1wB_iEdqF5c1Hhhq2Uw">Rent-a-Car Realization Matrix</a>
+</li>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/guidances/examples/rent_a_car_service_allocation_93D7FE31.html" guid="_CO-EkB_ZEdqF5c1Hhhq2Uw">Rent-a-Car Service Allocation</a>
+</li>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/guidances/examples/rent_a_car_service_message_C8FE3941.html" guid="_9If_MB_GEdqF5c1Hhhq2Uw">Rent-a-Car Service Message</a>
+</li>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/guidances/examples/rent_a_car_soap_message_1D5CA020.html" guid="_ZP4goB_HEdqF5c1Hhhq2Uw">Rent-a-Car SOAP Message</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">Only those services that pass the Service Litmus test and are planned to be exposed are specified further.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Tailoring</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Impact of not having</th><td class="sectionTableCell">Without this artifact it would be difficult to specify the details of the services that have to be realized and implemented
+and to document the service realization decisions.</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Reasons for not needing</th><td class="sectionTableCell">This&nbsp;artifact&nbsp;is not needed if either the services are not externalized, or if the externalized services are very
+simple and the non-functional requirements for them are not stringent.</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Representation Options</th><td class="sectionTableCell">The Service Specification MS Word template can be used directly when SOMA-ME is not available for the project.</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Practice: Solution Template for Custom Service Component Development (R4SC)</title>
+<meta name="uma.type" content="Practice">
+<meta name="uma.name" content="soma_st_cscd">
+<meta name="uma.presentationName" content="Solution Template for Custom Service Component Development (R4SC)">
+<meta name="element_type" content="Practice">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_OXxs0GqkEd6kCPR0Evw_Og"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_OXxs0GqkEd6kCPR0Evw_Og"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Practice: Solution Template for Custom Service Component Development (R4SC)</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/practice.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The Custom Service Component Development Solution Template includes the unique tasks/activities that help in the implementation of Service Components via custom development.  It includes selection of best practice patterns and solution development scenarios.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content References</th><td class="sectionTableCell">
+<ul>
+<li>
+<img src="./../../../images/roadmap.gif" height="16" width="16"><a href="./../../../practice.tech.soma.st_cscd.base-ibm_lic/guidances/roadmaps/how_to_adopt_8F3ECF5B.html" guid="_NQGTEGqkEd6kCPR0Evw_Og">How to Adopt Solution Template for Custom Service Component Dev(R4SC)</a>
+</li>
+</ul>
+<ul>
+<li>Tasks</li>
+<ul>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/select_custom_development_patterns_21121D64.html" guid="_YvqtsJFbEd26aZHcRrXCQA">Select Custom Development Patterns</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/identify_custom_development_scenarios_7D54A1DC.html" guid="_q5N1wJGXEd26aZHcRrXCQA">Identify Custom Development Scenarios</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/define_comp_elements_using_cust _dev_scenario_B34F5640.html" guid="_MFpooJGcEd26aZHcRrXCQA">Define Component Elements Using Custom Development Scenarios</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/define_comp_elements_using_intg_dev_scenarios_E2636DF2.html" guid="_sfn1EJGmEd26aZHcRrXCQA">Define Component Elements Using Integration Development Scenarios</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/prepare_analysis_to_design_transform_7758EB7F.html" guid="_dSflwI9EEd2EeNR6oQinjQ">Prepare Analysis To Design Transform</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/transform_analysis_to_design_A29D812C.html" guid="_ZTX_AEgsEduZT5ac5raeSg">Transform Analysis To Design</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/refine_comp_element_in_svc_def_and_adap_layer_58928CCE.html" guid="_x27WUJG5Ed26aZHcRrXCQA">Refine Component Elements in Service Definition and Adaptation Layer</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/refine_comp_elements_in_ bus_mediaton_layer_D4C64459.html" guid="_7THckJG8Ed26aZHcRrXCQA">Refine Component Elements in Business Mediaton Layer</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/refine_comp_element_in_ intg_mediation_layer_39F8A5A4.html" guid="_oeD6wJG_Ed26aZHcRrXCQA">Refine Component Elements in Integration Mediaton Layer</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/dev_inter_diagams_for_cust_dev_scenarios_2879F4C9.html" guid="_Yf_NIJHCEd26aZHcRrXCQA">Develop Interaction Diagrams for Custom Development Scenarios</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/dev_inter_diagams_for_intg_dev_scenarios_1EC69F45.html" guid="_0jGdIJHDEd26aZHcRrXCQA">Develop Interaction Diagrams for Integration Development Scenarios</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/prepare_design_to_code_transform_14C413D3.html" guid="_-WpUcI9KEd2EeNR6oQinjQ">Prepare Design to Code Transform</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/transform_design_to_code_8D00B407.html" guid="_DREI8EgtEduZT5ac5raeSg">Transform Design to Code</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/augment_code_2DC8A32C.html" guid="_0VRAAJHEEd26aZHcRrXCQA">Augment Code</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.soma.st_cscd.base-ibm_lic/tasks/integrate_components_F02BAF41.html" guid="_Hlwj0JHGEd26aZHcRrXCQA">Integrate Components</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.soma.st_cscd.base-ibm_lic/guidances/guidelines/recipe_for_service_component_r4sc_FD876E8A.html" guid="_Mn_c0J7mEd2SQ6qSttYbQw">Recipe for Service Component (R4SC)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell">The purpose of Custom Service Component Development Solution Template is to provide activities and tasks that are to be
+augmented to the SOMA delivery process in order to implement one or more service components via custom development.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    The Custom Service Component Development Solution Template includes the unique tasks/activities that help in the
+    implementation of Service Components via custom develpoment.
+</p>
+<p>
+    The purpose of this solution template is to custom develelop service components utilizing the best practice patterns.
+</p>
+<p>
+    There are two types of scenarios:
+</p>
+<p>
+    1) Custom Development Scenario:&nbsp; The business logic within the service component needs to be custom developed with
+    possible interaction with backend system for data and/or some business function.
+</p>
+<p>
+    2) Integration Develpoment Scenario: The service component implements the functionality mainly by wrappering/exposing
+    the back end functionality or by integrating an existing back end system.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,2238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Content Model for Content Information Architecture</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="content_model_info_arch">
+<meta name="uma.presentationName" content="Content Model for Content Information Architecture">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_zDIHsC-MEdyLdYeCuPqRvA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Content Model for Content Information Architecture</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/content_model_7679670B.html" guid="mwebD6EB314E2A801C79852568CE0069D50C">Content Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Content Information Architecture
+</h3><br />
+<b><i>Overall Topology</i></b> <br />
+<u><img style="WIDTH: 842px; HEIGHT: 987px" height="600" alt="Overall Topology" src="./../../../core.legacy.common_wp.extend-ibm_int/guidances/examples/resources/content_model_eg2a.JPG" width="600" /></u> <br />
+<b><i>Common Vocabulary</i></b> <br />
+The following definitions represent the types of things which must be defined and consolidated into a Common Vocabulary,
+and includes general content terms, as well as definitions of Metadata. Some of these terms may be in general use, but each
+organization will have unique terms and definitions that must be addressed. <br />
+<b>DEFINITIONS</b> <br />
+The following terms may be used in this document, and are temporarily defined here until a full glossary has been created. 
+<ul>
+    <li>
+        <div>
+            <b>Derived Element</b> - A derived element is one that was created by modifying another element. For example,
+            some HiRes images only contain the cropped portion of another image, i.e. only that portion that appeared in
+            the usage. Metadata associated with a derived element may be the same as, a subset of (some styles cropped
+            out), or different than (colors modified), the metadata associated with the original element.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Drop Code</b> – See Media/Drop Code in next section.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Element</b> – An element is the lowest level object in the data store that is described by the metadata. An
+            element may be image, text, etc.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Headline</b> – A headline is a specific type of text element.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Layout</b> – A layout is a sketch, or rough drawing, showing the placement of elements on a page or spread.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Navbar</b> – The navigation bar on an Internet page.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Page</b> – A page is a single page, i.e. half a spread. A page contains elements from a single category.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Photo sample</b> – Garment samples that are created and maintained specifically for use in photos.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Sidebar</b> – A sidebar is a specific type of element. A sidebar may be a complex element that contains
+            text, art, or both.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Splash</b> – A splash is an Internet feature page.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Spread</b> – Two pages that are related to each other. A spread contains elements from a single category, or
+            related categories, e.g., 09 Outerwear and 80 Cold Weather Accessories.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Theme</b> – A theme is an abstract concept that identifies the overall ‘look and feel’ of a catalog.
+        </div>
+    </li>
+</ul><br />
+<b>METADATA</b> <br />
+Requirements have been identified for the following metadata 
+<ul>
+    <li>
+        <div>
+            <b>Catalog Number</b> – The eight-digit, unique number for an item in a catalog. The Catalog Number identifies
+            the Style Number, the Media/Drop Code, and a Check Digit as described in Appendix A. An item will have the same
+            Catalog Number when it appears in the same Media in different years if the Style Number has not changed.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Category Number</b> – The Category Number is a unique identifier for the category, or group, a product
+            belongs in. Categories include groups such as Luggage, Footwear, etc. Refer to Appendix B for the list of
+            catalog Category Numbers. The Category Numbers for the Internet are different from those of the paper catalogs.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Check Digit</b> – A Check Digit appears as the last character of the Catalog Number. The Check Digit is used
+            to verify that the Catalog Number was entered correctly.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Color</b> – The Color attribute identifies the color of a product in an image. The client has a cumulative
+            list of colors and their encoding. (Refer to Appendix C for examples of the color encoding.) New colors may be
+            added to the list, but the encoding of existing colors should not change.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Element Type</b> – The type of object an element entry describes, e.g., image, text, product specification,
+            etc., as described in Appendix D.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>HiRes</b> – The identification / location of the HiRes form of an image.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Image Identifier</b> – A unique identifier for an image. The Lands’ End Naming Convention is described in
+            Appendix E.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Last Retrieved</b> – Contains the date an element was last retrieved. This will be used for creating aging
+            reports. The specific events that trigger the updating of the Last Retrieved date need to be defined.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>LowRes</b> – The identification / location of the LowRes form of an image.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Master Style Name</b> – The name or description associated with the Master Style Number.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Master Style Number</b> – The Master Style Number links all items of the same style even though they may
+            have different style numbers, i.e. regular size, tall size, petit size, etc. In some cases, e.g., Coming Home,
+            there may only be the Master Style; sub-styles, e.g. king size, queen size, etc. do not have individual Style
+            Numbers. In other cases, regular size, tall size, etc. will have individual Style Numbers and one of the
+            individual Style Numbers will be used as the Master Style.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Media/Drop Code</b> – The Media/Drop Code in the sixth and seventh characters of the Catalog Number
+            identifies the media, e.g., catalog, Internet, Business Reply Card (BRC), etc. An element may have multiple
+            Media/Drop Codes associated with it. Media/Drop Codes repeat each year and need the Year metadata attribute to
+            be unique. Examples of the Media/Drop Code are shown in Appendix F.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Page Number</b> – The page number in a catalog where an element appeared.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Parent Element</b> – The parent element is the element from which the current element was derived.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Persons</b> – The persons attribute identifies the type(s) of people in an image. For example, man, woman,
+            child, men, etc. Refer to the list of Persons Values in Appendix G.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Pick-or-Out</b> – Identifies whether the image described by an element is a Pick, an Out, etc. Refer to the
+            list of Pick-or-Out Values in Appendix H.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Pose</b> – Identifies the pose, e.g., standing, sitting, running, etc., of the model in the image. Refer to
+            the list of Pose Values in Appendix I.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Scan Code</b> – The Scan Code identifies the type of scan of an image as shown in Appendix J.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Scene</b> – The Scene attribute identifies the type of scene in an image. For example, beach, school, none,
+            etc. Refer to the list of Scene Values in Appendix K.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Shoot Date</b> – The date of the photo shoot that created the image.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Shot Identifier</b> – The Shot Identifier is the identifier given the image (shot) by the Art Director.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Spread Identifier</b> – The identifier of a spread in a media as described in Appendix L.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Stock Keeping Unit</b> – A 5- or 6-digit number used to identify a specific size and color for a style.
+            There does not appear to be a correlation between the Style Number and the Stock Keeping Unit.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Style Name</b> – The name or description associated with a Style Number.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Style Number</b> – Identifies the style of a product. A Style Number does not identify a specific size or
+            color (see Stock Keeping Unit). Multiple styles may be included in an element. Non-image, e.g., text,
+            editorial, sidebar, etc., elements may also be related to style numbers, e.g., the text describing the product.
+        </div>
+    </li>
+</ul>The Style Number will change if a pocket is altered or the silhouette is altered, and the other ‘matching’ styles need
+to be identified. The ability to link all elements of the same style that have different style numbers, e.g., regular size,
+tall size, petit size, etc., is required. See Master Style. <br />
+Note: A style may change categories over time without the Style Number changing. 
+<ul>
+    <li>
+        <div>
+            <b>Thumbnail</b> – The identification / location of the Thumbnail form of an image.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Time Value</b> – The run-time value that is associated with some types of elements, e.g., video clips, audio
+            clips, etc.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Version</b> – The client’s Naming Convention includes a Version character that does NOT have a predefined
+            meaning, but is simply used to differentiate between different versions of an image.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>View</b> – The type of view of an image as identified in Appendix M. Examples of views include on figure,
+            laydown, etc.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Year</b> – The year the media was ‘published’. The Year attribute is needed to uniquely identify a specific
+            catalog (or other media) because the Media/Drop Codes repeat each year.
+        </div>
+    </li>
+</ul>The following metadata represent placeholders for a ‘group’ of metadata, where the actual contents of the ‘group’,
+i.e. what information is actually required, is unknown at this time. 
+<ul>
+    <li>
+        <div>
+            <b>Media Rights</b> – Identifies any copyright, royalties, or other legal issues related to the use of the
+            element. For example, an element may have been purchased for use in print, on the Internet, etc. Refer to
+            Appendix N for potential Media Rights attributes.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Model Information</b> – Identifies the model in an image. Multiple Models may appear in an image.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Photographer Information</b> – Identifies the photographer (or author) of the element.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Workflow Information</b> - Need to be able to route to (1) standard list of predefined people with (2)
+            flexibility to delete and add to the list prior to routing. Need confirmation that a file has been opened and a
+            record of by whom. Need to use roles (not names) as the routing designator. But must also know WHO is
+            registered in that role. Need delegate function (allow to either be assigned by normal person in role or taken
+            by person who will perform duties for role.
+        </div>
+    </li>
+</ul>Note that not all the identified requirements will result in actual metadata attributes, but may actually be satisfied
+by a retrieval from the database. 
+<ul>
+    <li>
+        <div>
+            <b>Catalogs Used In</b> – Identify all the catalogs where an element appeared. International requests should
+            also include the page number.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Images Containing a Style</b> – Identify all the images that include a particular style.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Images Used by Catalog</b> – Identify all the images used in a catalog.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Styles in an Image</b> – Identify all the styles contained in an image.
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Styles Referenced by Text</b> – Identify all styles referenced by text
+        </div>
+    </li>
+    <li>
+        <div>
+            <b>Text References to a Style</b> – Identify all text that references a style.
+        </div>
+    </li>
+</ul><b><i>Classification and Labeling</i></b> <br />
+EXAMPLE 1 - A HIERARCHICAL EXAMPLE <br />
+<table border="1">
+    <tbody>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+                web
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+                bwdaily
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+                audio
+            </td>
+            <td valign="top" width="117">
+                <br />
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                december98
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                march98
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                Rafiles
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+            </td>
+            <td valign="top" width="135">
+                <br />
+                brill quotes
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+                dnflash
+            </td>
+            <td valign="top" width="117">
+                <br />
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                apr1998
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                apr1999
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                april
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                aug1998
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                aug1999
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                august
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                broadband
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                dec1997
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                dec1998
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                december
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                feb1998
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                feb1999
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                february
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+            </td>
+            <td valign="top" width="135">
+                <br />
+                art
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                jan1998
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                jan1999
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                january
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+            </td>
+            <td valign="top" width="135">
+                <br />
+                art
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                july
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                july1998
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+                july1999
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="54">
+                <br />
+            </td>
+            <td valign="top" width="90">
+                <br />
+            </td>
+            <td valign="top" width="99">
+                <br />
+            </td>
+            <td valign="top" width="117">
+                <br />
+            </td>
+            <td valign="top" width="135">
+                <br />
+            </td>
+            <td valign="top" width="95">
+                <br />
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+EXAMPLE 2 - A DOCUMENT-ORIENTED EXAMPLE <br />
+The following example is representative of the steps required to enter the classification and indexing values on a
+document-by-document basis. Each of the values in each of the fields, the classification, usability, etc., are the
+responsibility of the Information Architect. <br />
+This level of classification and indexing is a pre-requisite for navigation, effective search, etc. Over time, the elements
+of the content may be broken down and defined at a lower level, i.e., element within each defined structure. <br />
+For example, the style for a FAQ may define the headline for the question, the answer, the summary section and submission
+information separately. However, migration from a document level to an element level is something that requires a robust
+Information Architecture in place, and both the need and resources to (manual, or automated tool) break the documents
+apart, tagging each element specifically. <br />
+<br />
+<strong>Step 1: Pick the document taxonomy</strong> <br />
+<br />
+<strong>Step 2: Put in document information</strong> <br />
+<br />
+<b><i>Structures and Description</i></b> <br />
+Whether initially working at the document or content element level, the content must be fully defined in terms of specific
+attributes and metadata. <br />
+Both the values for the attributes, metadata fields, and metadata value will vary widely according to the organization.
+<br />
+This example has 2 primary segments: A visual ‘Logical Content Model’ which establishes the content elements, the
+associated metadata labels, and the Content Element Relationships. The second portions of this example are “Link Tables”
+which fully define element attributes and relationship to cross-indices that support alternate navigational constructs.
+<br />
+The following diagram shows the first level of decomposition of the client’s metadata requirements. Note that this level
+shows only the logical grouping of the identified metadata attributes, and the relationships between these groups. <br />
+<img style="WIDTH: 667px; HEIGHT: 775px" height="600" alt="Logical Content Model - 1st Level Decomposition" src="./../../../core.legacy.common_wp.extend-ibm_int/guidances/examples/resources/content_model_eg2b.JPG" width="600" /> <br />
+<br />
+The next diagram shows the second level of decomposition by adding link tables to handle the many-to-many relationships
+appearing in the preceding diagram, and to serve as homes for the attributes that appear on those links. <br />
+<img style="WIDTH: 768px; HEIGHT: 770px" height="600" alt="Logical Content Model - 2nd Level Decomposition" src="./../../../core.legacy.common_wp.extend-ibm_int/guidances/examples/resources/content_model_eg2c.JPG" width="600" /> <br />
+<br />
+<a><strong>Element Table</strong></a> <br />
+The Element table contains information about a single element in the database. An element may be an image, a piece of text,
+an audio or video clip, etc. The Element entry may actually contain the identification and location of several different
+variations of an element. For example, an element for an image might contain the identification and location of a Thumbnail
+image, a LowRes image, and a HiRes image. <br />
+The Element Table needed by the client will map directly to the MediaBank Element Table using existing fields where
+available and the 25 existing KEY1-5 and UFLD1-20 fields <br />
+<b>Primary key:</b> The Element Table attributes map into the MediaBank Element Table and use the same primary key,
+i.e.’Element_ID’. <br />
+<b>Alternate keys:</b> 
+<ul>
+    <li>
+        <div>
+            ‘Image Identifier’ is unique.
+        </div>
+    </li>
+</ul><b>Foreign keys:</b> none <br />
+<b># of rows</b>: There will be one row per stored element. <br />
+Insert rules: 
+<ul>
+    <li>
+        <div>
+            Permit insertion of an Element entry at any time (when ingested).
+        </div>
+    </li>
+    <li>
+        <div>
+            Permit insertion of a derived Element entry only when the referenced Element entry already exists.
+        </div>
+    </li>
+</ul>Delete rule: 
+<ul>
+    <li>
+        <div>
+            Permit deletion of an Element entry only under the client’s defined policies, and
+        </div>
+    </li>
+    <li>
+        <div>
+            Nullify the Parent Entry attributes of any Element entries referencing the deleted Element entry.
+        </div>
+    </li>
+    <li>
+        <div>
+            Cascade the deletion to all ElementModelLink entries referencing the deleted Element entry.
+        </div>
+    </li>
+    <li>
+        <div>
+            Cascade the deletion to all WhereUsedInfo entries referencing the deleted Element entry.
+        </div>
+    </li>
+    <li>
+        <div>
+            Cascade the deletion to all ElementStyleLink entries referencing the deleted Element entry.
+        </div>
+    </li>
+</ul><b>Origin of the information:</b> Most of the attribute information in the Element Table will originate when the
+element is entered (ingested) into the Digital Library. Other attributes, e.g., Media Rights, will be specifically entered
+at a later time. <br />
+<table border="1">
+    <thead>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                <b>Attribute Name</b>
+            </td>
+            <td valign="top" width="96">
+                <br />
+                <b>Type</b>
+            </td>
+            <td valign="top" width="96">
+                <br />
+                <b>Length</b>
+            </td>
+            <td valign="top" width="96">
+                <br />
+                <b>Qualifier</b>
+            </td>
+            <td valign="top" width="321">
+                <br />
+                <b>Comment</b>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Element_ID
+            </td>
+            <td valign="top" width="96">
+                <br />
+                N
+            </td>
+            <td valign="top" width="96">
+                <br />
+                10
+            </td>
+            <td valign="top" width="96">
+                <br />
+                U
+            </td>
+            <td valign="top" width="321">
+                <br />
+                Use the MediaBank ID field
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Element Type
+            </td>
+            <td valign="top" width="96">
+                <br />
+            </td>
+            <td valign="top" width="96">
+                <br />
+            </td>
+            <td valign="top" width="96">
+                <br />
+                A
+            </td>
+            <td valign="top" width="321">
+                <br />
+                Use the MediaBank<br />
+                KEY1-5 or UFLD1-20 fields
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Hi Res
+            </td>
+            <td valign="top" width="96">
+                <br />
+                C
+            </td>
+            <td valign="top" width="96">
+                <br />
+                255
+            </td>
+            <td valign="top" width="96">
+                <br />
+                A
+            </td>
+            <td valign="top" width="321">
+                <br />
+                Use the MediaBank<br />
+                STOREDIR field
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Image Identifier
+            </td>
+            <td valign="top" width="96">
+                <br />
+                C
+            </td>
+            <td valign="top" width="96">
+                <br />
+                32
+            </td>
+            <td valign="top" width="96">
+                <br />
+                U
+            </td>
+            <td valign="top" width="321">
+                <br />
+                Use the MediaBank<br />
+                TITLE field
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Last Retrieved
+            </td>
+            <td valign="top" width="96">
+                <br />
+                C
+            </td>
+            <td valign="top" width="96">
+                <br />
+                8
+            </td>
+            <td valign="top" width="96">
+                <br />
+                A
+            </td>
+            <td valign="top" width="321">
+                <br />
+                The final requirements are yet to be determined.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Low Res
+            </td>
+            <td valign="top" width="96">
+                <br />
+                C
+            </td>
+            <td valign="top" width="96">
+                <br />
+                255
+            </td>
+            <td valign="top" width="96">
+                <br />
+                A
+            </td>
+            <td valign="top" width="321">
+                <br />
+                Use the MediaBank<br />
+                LOEPSDIR or LOTIFDIR fields
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Media Rights
+            </td>
+            <td valign="top" width="96">
+                <br />
+                Complex<br />
+                TBD
+            </td>
+            <td valign="top" width="96">
+                <br />
+            </td>
+            <td valign="top" width="96">
+                <br />
+            </td>
+            <td valign="top" width="321">
+                <br />
+                The final requirements are yet to be determined.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Parent Element
+            </td>
+            <td valign="top" width="96">
+                <br />
+                N
+            </td>
+            <td valign="top" width="96">
+                <br />
+                10
+            </td>
+            <td valign="top" width="96">
+                <br />
+            </td>
+            <td valign="top" width="321">
+                <br />
+                The final requirements are yet to be determined.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Persons
+            </td>
+            <td valign="top" width="96">
+                <br />
+                C
+            </td>
+            <td valign="top" width="96">
+                <br />
+            </td>
+            <td valign="top" width="96">
+                <br />
+                A
+            </td>
+            <td valign="top" width="321">
+                <br />
+                Use the MediaBank<br />
+                KEY1-5 or UFLD1-20 fields
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Photographer Information
+            </td>
+            <td valign="top" width="96">
+                <br />
+                Complex<br />
+                TBD
+            </td>
+            <td valign="top" width="96">
+                <br />
+            </td>
+            <td valign="top" width="96">
+                <br />
+            </td>
+            <td valign="top" width="321">
+                <br />
+                The final requirements are yet to be determined.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Pick-or-Out
+            </td>
+            <td valign="top" width="96">
+                <br />
+                C
+            </td>
+            <td valign="top" width="96">
+                <br />
+            </td>
+            <td valign="top" width="96">
+                <br />
+                A
+            </td>
+            <td valign="top" width="321">
+                <br />
+                Use the MediaBank<br />
+                KEY1-5 or UFLD1-20 fields
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Pose
+            </td>
+            <td valign="top" width="96">
+                <br />
+                C
+            </td>
+            <td valign="top" width="96">
+                <br />
+            </td>
+            <td valign="top" width="96">
+                <br />
+                A
+            </td>
+            <td valign="top" width="321">
+                <br />
+                Use the MediaBank<br />
+                KEY1-5 or UFLD1-20 fields
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Scan Code
+            </td>
+            <td valign="top" width="96">
+                <br />
+                C
+            </td>
+            <td valign="top" width="96">
+                <br />
+            </td>
+            <td valign="top" width="96">
+                <br />
+                A
+            </td>
+            <td valign="top" width="321">
+                <br />
+                Use the MediaBank<br />
+                KEY1-5 or UFLD1-20 fields
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Scene
+            </td>
+            <td valign="top" width="96">
+                <br />
+                C
+            </td>
+            <td valign="top" width="96">
+                <br />
+            </td>
+            <td valign="top" width="96">
+                <br />
+                A
+            </td>
+            <td valign="top" width="321">
+                <br />
+                Use the MediaBank<br />
+                KEY1-5 or UFLD1-20 fields
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Shoot Date
+            </td>
+            <td valign="top" width="96">
+                <br />
+                C
+            </td>
+            <td valign="top" width="96">
+                <br />
+                8
+            </td>
+            <td valign="top" width="96">
+                <br />
+                A
+            </td>
+            <td valign="top" width="321">
+                <br />
+                Use the MediaBank<br />
+                KEY1-5 or UFLD1-20 fields
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Shot Identifier
+            </td>
+            <td valign="top" width="96">
+                <br />
+                C
+            </td>
+            <td valign="top" width="96">
+                <br />
+            </td>
+            <td valign="top" width="96">
+                <br />
+                U
+            </td>
+            <td valign="top" width="321">
+                <br />
+                Use the MediaBank<br />
+                KEY1-5 or UFLD1-20 fields
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Thumbnail
+            </td>
+            <td valign="top" width="96">
+                <br />
+                C
+            </td>
+            <td valign="top" width="96">
+                <br />
+                255
+            </td>
+            <td valign="top" width="96">
+                <br />
+                A
+            </td>
+            <td valign="top" width="321">
+                <br />
+                Use the MediaBank<br />
+                THUMBDIR field
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Time Value
+            </td>
+            <td valign="top" width="96">
+                <br />
+                N
+            </td>
+            <td valign="top" width="96">
+                <br />
+            </td>
+            <td valign="top" width="96">
+                <br />
+            </td>
+            <td valign="top" width="321">
+                <br />
+                Use the MediaBank<br />
+                KEY1-5 or UFLD1-20 fields
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Version
+            </td>
+            <td valign="top" width="96">
+                <br />
+                C
+            </td>
+            <td valign="top" width="96">
+                <br />
+                1
+            </td>
+            <td valign="top" width="96">
+                <br />
+                A
+            </td>
+            <td valign="top" width="321">
+                <br />
+                Use the MediaBank<br />
+                KEY1-5 or UFLD1-20 fields
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                View
+            </td>
+            <td valign="top" width="96">
+                <br />
+                C
+            </td>
+            <td valign="top" width="96">
+                <br />
+                1
+            </td>
+            <td valign="top" width="96">
+                <br />
+                A
+            </td>
+            <td valign="top" width="321">
+                <br />
+                Use the MediaBank<br />
+                KEY1-5 or UFLD1-20 fields
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<b>ElementModelLink Table</b> <br />
+The ElementModelLink table is used to resolve the many-to-many relationship between an image Element and the Model
+Information describing the models in an image. <br />
+Not all Element entries will be associated with an ElementModelInfo entry. For example, an image of a stack or a swatch
+will not have an associated model. <br />
+<b>Primary key:</b> The composite key, ‘Shot Identifier’ + ‘Model Information’, is unique. <br />
+<b>Alternate keys:</b> none <br />
+<b>Foreign keys:</b> 
+<ul>
+    <li>
+        <div>
+            ‘Shot Identifier’ refers to the Element Table.
+        </div>
+    </li>
+    <li>
+        <div>
+            ‘Model Information’ refers to the ModelInfo Table. The exact attributes of the Model Information that make up
+            the needed key are not known at this time.
+        </div>
+    </li>
+</ul><b># of rows:</b> There will be one row for each model that appears in each image, i.e. (the average number of models
+per image) times (number of images in the Digital Library). <br />
+Insert rule: 
+<ul>
+    <li>
+        <div>
+            Permit insertion of an ElementModelLink entry only when
+        </div>
+    </li>
+    <li>
+        <div>
+            the referenced Element entry already exists, and
+        </div>
+    </li>
+    <li>
+        <div>
+            the referenced ModelInfo entry already exists.
+        </div>
+    </li>
+</ul><b>Origin of the information:</b> The information in the ElementModelLink Table might originate from the post-shoot
+information on the Shot Card. 
+<table border="1">
+    <thead>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                <b>Attribute Name</b>
+            </td>
+            <td valign="top" width="96">
+                <br />
+                <b>Type</b>
+            </td>
+            <td valign="top" width="96">
+                <br />
+                <b>Length</b>
+            </td>
+            <td valign="top" width="96">
+                <br />
+                <b>Qualifier</b>
+            </td>
+            <td valign="top" width="321">
+                <br />
+                <b>Comment</b>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Shot Identifier
+            </td>
+            <td valign="top" width="96">
+                <br />
+                C
+            </td>
+            <td valign="top" width="96">
+                <br />
+            </td>
+            <td valign="top" width="96">
+                <br />
+                I
+            </td>
+            <td valign="top" width="321">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="171">
+                <br />
+                Model Information
+            </td>
+            <td valign="top" width="96">
+                <br />
+                Complex<br />
+                TBD
+            </td>
+            <td valign="top" width="96">
+                <br />
+            </td>
+            <td valign="top" width="96">
+                <br />
+                I
+            </td>
+            <td valign="top" width="321">
+                <br />
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<b>Notes, comments, and questions:</b> Is the Shot Identifier unique? We indicated it was unique in the Element Table, but
+what about derived images that result from cropping another image? Will they carry the original Shot Identifier? <br />
+<b><i>Navigation</i></b> <br />
+See Content Assessment WPD for examples of the following: 
+<ul>
+    <li>
+        <div>
+            Global Navigation
+        </div>
+    </li>
+    <li>
+        <div>
+            Hierarchical Navigation
+        </div>
+    </li>
+    <li>
+        <div>
+            Contextual Navigation
+        </div>
+    </li>
+    <li>
+        <div>
+            Supplemental Navigation
+        </div>
+    </li>
+</ul><b><i>Content Delivery Plan</i></b> <br />
+EXAMPLE 1 - VISUAL APPROCH <br />
+The focus of the Content Delivery Plan is not Design. Rather, it is the identification of the content necessary to support
+the user tasks and the business objectives. However, in different organizations, depending on the skills and background of
+the Information Architect, the Content Delivery Plan may be provided in a general visual design/placement format, as in
+Example #1; or, it may be focused solely on the content selection and identification, as in Example 2. <br />
+<table border="1">
+    <tbody>
+        <tr>
+            <td width="780" colspan="5">
+                <br />
+                <b><i>DAILY BRIEFING:</i></b> <i>SUB CHANNEL INDEX PAGE</i>
+            </td>
+            <td width="0">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td width="780" colspan="5">
+                <br />
+                Roof
+            </td>
+            <td width="0">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td width="180" rowspan="2">
+                <br />
+                Internal Promotion
+            </td>
+            <td width="259">
+                <br />
+                Advertisement
+            </td>
+            <td width="184" colspan="2">
+                <br />
+                Advertisement
+            </td>
+            <td width="158" rowspan="2">
+                <br />
+                Internal Promotion
+            </td>
+            <td width="0">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td width="443" colspan="3">
+                <br />
+                Section Header
+            </td>
+            <td width="0">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td width="180">
+                <br />
+                Channels
+            </td>
+            <td width="443" colspan="3">
+                <br />
+                Sub Channels<br />
+                Search
+            </td>
+            <td width="158">
+                <br />
+                Highlight Advertisement
+            </td>
+            <td width="0">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td width="180">
+                <br />
+                Sponsorship Advertisement
+            </td>
+            <td width="315" colspan="2" rowspan="3">
+                <br />
+                Content Channel Specific
+            </td>
+            <td width="128" rowspan="2">
+                <br />
+                Tool Well
+            </td>
+            <td width="158" rowspan="3">
+                <br />
+                Partner Area
+            </td>
+            <td width="0">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td width="180" rowspan="2">
+                <br />
+                Services
+            </td>
+            <td width="0" height="30">
+            </td>
+        </tr>
+        <tr>
+            <td width="128">
+                <br />
+                <br />
+                Feature Well<br />
+            </td>
+            <td width="0" height="156">
+            </td>
+        </tr>
+        <tr>
+            <td width="780" colspan="5">
+                <br />
+                Footer
+            </td>
+            <td width="0">
+                <br />
+            </td>
+        </tr>
+        <tr height="0">
+            <td width="172">
+            </td>
+            <td width="239">
+            </td>
+            <td width="52">
+            </td>
+            <td width="123">
+            </td>
+            <td width="152">
+            </td>
+            <td width="0">
+                <br />
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+EXAMPLE 2 - VISUAL APPROACH 
+<table>
+    <tbody>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                <b>Section Sub Section Field(s)/Type :Mode:Range Web ???</b>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <b>Header</b>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Document Type
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                DocumentType<br />
+                (String: Radio-Button: {HAT,FAQ,Technote,Readme, Feedback})
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Document Number
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                DocNumber<br />
+                (String: Text-Single: {TNXXXXXXX})
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Historical Number
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                HistoricalNumber<br />
+                (String: Text-Single: {TNXXXXXXX})
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Taxonomy (Organization:Division:Segment:Product:Component:Platform:Version); Two paths are recorded,
+                primary & cross-product category.*
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Division1, Division2<br />
+                (String: Text-Single: {ie. SWG - Software Group})<br />
+                <br />
+                Segment1, Segment2<br />
+                <br />
+                Product1, Product2 {generally refers to a packaged product, can also be a billable-service}<br />
+                (String: Text-Single: {TNXXXXXXX})<br />
+                <br />
+                Component1, Component2 {Category in this context is a category of Product1,Product2}<br />
+                (String: Text-Single: {TNXXXXXXX})<br />
+                <br />
+                Attr1, ????? {User Customizable field 1: For Software Group, this is PLATFORM}<br />
+                (String: Text-Multiple: {ie. OS/2, Windows, Linux})<br />
+                <br />
+                Attr2, ????? {User Customizable field 2: For Software Group, this is VERSION}<br />
+                (String: Text-Multiple: {ie 1.1})<br />
+                <br />
+                Attr3, ????? {User Customizable field 3: For Software Group, this is not used}<br />
+                Undefined
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Creation Date
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Date<br />
+                (String: Text: {mm/dd/yyyy , can be changed})
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Last Modified
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                DocModified<br />
+                (String: Text: {mm/dd/yyyy , can be changed})
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Last Published
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                DocPublished<br />
+                (String: Text: {mm/dd/yyyy , can be changed})
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Archival Date (this area is still being developed)
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Expire<br />
+                (String: Text: {mm/dd/yyyy , can be changed})
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Additional Keywords (for populating META tag)
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                AdditionalKeywords<br />
+                (String: Text-Multiple: {ie taxonomy,hierarchical})
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Security (Visibility or Audience) - this is a TBD, currently under investigation as how to implement
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Scope<br />
+                (String: Text-Multiple: {tbd})<br />
+                PublishChoices<br />
+                (String: Text-Multiple: {tbd})<br />
+                BPChoices<br />
+                (String: Text-Multiple: {tbd})
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Entitlement - this is TBD, currently under investigation as how to implement
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Entitlement<br />
+                (String: Text-Multiple: {ie Free, Restricted})
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                <b>Body</b>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Subject (Also known as the Title)
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Title<br />
+                (String: Text-Single)
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Abstract(For FAQ, known as Question)
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Abstract<br />
+                (String: Text-Single: {})
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Content(For FAQ, known as Answer) Note, Rich-Text implementation is tbd as of 1/1/0000
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Content<br />
+                (String: Text-Single: {})
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                <b>Footer</b>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Related URL
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                RelatedURLTitle<br />
+                (String: Text-Single: {})<br />
+                <br />
+                RelatedURL<br />
+                (String: Text-Single: {})
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Attachment
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                -moved to link document and downloads forms
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <b>Other</b>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Workflow Variables (It is not intended to transfer the content from these variables to the Internet;
+                however, they may be presented on the Intranet)
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="720">
+                <br />
+                Reviewers<br />
+                PreviousReviewers<br />
+                CurrentReviewers<br />
+                FutureReviewers<br />
+                ReviewStyle<br />
+                ReviewWindow<br />
+                ReviewTime<br />
+                ReviewerLog<br />
+                NotifyAfter<br />
+                <br />
+                Source (Notes, Web,)
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<b><i>Functional Requirements</i></b> <br />
+Include the identification and definition of core common functions, such as: printing, search, personalization, virus
+checking, language translation, currency conversion, alternate destination routing to a FAX, email, distribution list,
+etc), subscription, alternate formatting, advertising support, etc.) <br />
+The Information Architect will need to understand the application requirements, and work with the developers of those
+common functions, to assure that the underlying information structure will correctly support the functions. <br />
+In some cases, there may be additional classification and storage issues. For example, in order to maintain print
+integrity, some content may require storage and access in separate formats, e.g., one for browser display, and one for
+printing (such as a PDF file). <br />
+<b><i>Technology Requirements</i></b> <br />
+The requirements to support the site as designed must at some point be translated into specific technologies. For example,
+if the site objective is dynamic catalog publishing, showing current prices and available items only, then the underlying
+tools must be selected and implemented by the organization. In today’s environment, that would represent XML and SSL
+constructs, relying on DTD’s.The content requirements must be passed to the actual technology staff responsible for the
+development and deployment of the underlying technical structure and content coding. The responsibility of the Information
+Architect is to supply the definitions, not to do the actual coding of the supporting content constructs.</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

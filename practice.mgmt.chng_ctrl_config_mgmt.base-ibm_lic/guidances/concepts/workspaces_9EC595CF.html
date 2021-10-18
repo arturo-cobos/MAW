@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: Workspaces</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="workspaces">
+<meta name="uma.presentationName" content="Workspaces">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_Y1yukIX-Ed-Vnc6sgFVO5A", "_sb-88GptEeSdxcAgtnf5og", "_JsXkXXTaEd-KGq2Ooqf_9A"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4Y8RdEdyD76CYS6Ta7A", "_JsXkXXTaEd-KGq2Ooqf_9A"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_JsXkXXTaEd-KGq2Ooqf_9A"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: Workspaces</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">A workspace is a private area containing the code a developer is coding and testing in relative isolation from other developers and in accordance with the project's adopted standards.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.mgmt.chng_ctrl_config_mgmt.base-ibm_lic/workproducts/workspace_created_7EDCC9B9.html" guid="_zkfDIIYcEd-lFZcOwO6eUQ">Workspace Created</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    <a id="Definition" name="Definition">Definition</a><a id="XE_workspaces__definition" name="XE_workspaces__definition"></a>
+</h3>
+<p>
+    Workspaces refer to 'private' areas where developers can implement and test code in accordance with the project's
+    adopted standards in relative isolation from other developers. The Configuration Manager needs to create a workspace
+    environment for each developer on the project.
+</p>
+<h3>
+    <a id="Explanation" name="Explanation">Explanation</a>
+</h3>
+<p>
+    A workspace provides each developer with a consistent, flexible, inexpensive, and reproducible environment that selects
+    and presents the appropriate version of each file. The workspace needs to be able to provide fine-grained control over
+    both sharing and isolation. This is required because in most projects, developers need to stay isolated from changes
+    made by others; but at the same time, they must be able to unit-test their changes with changes made by certain other
+    developers.
+</p>
+<p>
+    When performing maintenance on older releases, a developer needs to be able to see older versions, binaries, documents,
+    tests, tools, and other objects. In this case the workspace serves as a 'time machine', making everything in the
+    environment, not just the sources, appear as it did in the past.
+</p>
+<p>
+    Each developer's workspace needs to be isolated, for purposes of editing, compiling, testing and debugging. However,
+    the isolation of the workspace should be relative and not absolute:
+</p>
+<ul>
+    <li>
+        Others should be able to track a developer's work and selectively integrate it into their own.
+    </li>
+    <li>
+        Others should be able to shut out. Until a subsequent integration period, those changes that may prove
+        destabilizing to their own work.
+    </li>
+</ul>
+<p>
+    A workspace can be completely private to an individual developer, or shared among a team of developers over a network.
+</p>
+<p>
+    In addition to providing access to source versions, a workspace needs to provide private (isolated) storage for files
+    generated during software development:
+</p>
+<ul>
+    <li>
+        Working (checked-out) versions of source files,
+    </li>
+    <li>
+        Executables,
+    </li>
+    <li>
+        Other workspace private objects - source code, test subdirectories, and test data files.
+    </li>
+</ul>
+<p>
+    A workspace's private storage would be typically located within a developer's home directory on a workstation. A
+    workspace shared by a group of developers might have its private storage area located on a central file server.
+    However, the actual location of the private storage is largely irrelevant. From the developer's point of view the
+    workspace's private storage should appear to be fully integrated.
+</p>
+<p align="center">
+    <img src="./../../../practice.mgmt.chng_ctrl_config_mgmt.base-ibm_lic/guidances/concepts/resources/co_wrksp.gif" width="434" height="311"     alt="Diagram shows 2 integration workspaces and a private workspace superimposed on the CM Cube." />
+</p>
+<p class="picturetext">
+    The figure above illustrates the notion of private and integration workspaces in the overall context of the CM Cube.
+</p>
+<h3>
+    <a id="WorkingConfigurations" name="WorkingConfigurations">Working Configurations</a><a id="XE_working_configurations" name="XE_working_configurations"></a><a id="XE_workspaces__working_configurations" name="XE_workspaces__working_configurations"></a>
+</h3>
+<p>
+    Working configurations (workspace profiles) refer to particular subsystems that make up a <b>working set</b> for the
+    project. A working set is a list of specific <b>versions</b> of subsystems that must be referenced, or modified, to
+    implement a piece of work. This list may represent the entire system or a subset.
+</p>
+<h3>
+    <a id="Views" name="Views">Views</a>
+</h3>
+<p>
+    A view provides access to a set of files in the project repository. Moreover, a view provides access to an appropriate
+    set of versions of those files:
+</p>
+<ul>
+    <li>
+        A new development view may provide access to the most recent versions of the files.
+    </li>
+    <li>
+        Another new development view may provide access to the versions being used by a team working on a new user
+        interface for your product.
+    </li>
+    <li>
+        A maintenance view may provide access to the versions of the files that were used to build a given release of the
+        product.
+    </li>
+</ul>
+<p>
+    A workspace, sometimes also called a view, allows developers to make and test changes in private before sharing the
+    modifications with the rest of the team. There are two types of views:
+</p>
+<ul>
+    <li>
+        Snapshot Views
+    </li>
+    <li>
+        Dynamic Views
+    </li>
+</ul>
+<p>
+    A <i>snapshot view</i> provides the developer with a stable, unchanging working environment. It is analogous to a
+    computer directory tree. A snapshot view is populated with copies of the appropriate versions of files from one or more
+    project repositories. Some people use the term "sandbox" for such a directory tree. When a developer wants to see
+    changes made by other team members, she updates her view. This style of working is characterized as a <b>pull</b> model
+    as it relies on actively pulling in the relevant information, rather than it being immediately available through
+    automatic refresh mechanisms.
+</p>
+<p>
+    A <i>dynamic view</i> is a virtual data structure as it appears to contain all the development data. Dynamic views do
+    not make local copies of files, but rely on over the network immediate updating. Dynamic views may be the best choice
+    in the following situations:
+</p>
+<ul>
+    <li>
+        There is limited client-side disk space
+    </li>
+    <li>
+        You want to take advantage of derived object sharing
+    </li>
+    <li>
+        The development team must work with the latest versions of the code. This feature is particularly useful for
+        integration that requires the latest version of any given software.
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

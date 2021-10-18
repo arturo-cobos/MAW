@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Security Architecture for General Web Security</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="security_architecture_web">
+<meta name="uma.presentationName" content="Security Architecture for General Web Security">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_DouTwDEIEdynW8FKSif1kA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Security Architecture for General Web Security</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This is an example of a General Web Security Architecture.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/security_architecture_E622835F.html" guid="mweb370C564F69E6DC6285256886005E1ADC">Security Architecture</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h4>
+    A General Web Security Functional Architecture<br />
+</h4>
+<p>
+    This architecture is built on a structure that employs end-to-end security between the browser and resource manager
+    (Web server, Data base manager (DB2, Sybase), Transaction monitor (CICS, IMS, ENCINA), DCE application server) in
+    addition to transport level security (see Figure below). The end-to-end security ensures that only authorized requests
+    are honored and that the data that flows between the browser and the resource manager is private and has integrity. In
+    addition, the two secure transports (one between the Browser and the Web Server, and the other from the Web Server to
+    the Resource Manager) are used to ensure that only valid requests are allowed to the adjacent tier. This architecture
+    eliminates the potential security gap that can exist if the Web Server is compromised.<br />
+</p>
+<p>
+    The end-to-end security is specifically accomplished by having the browser’s request digitally signed and enciphered by
+    the user. This request is then deciphered and signature validated by the resource manager. In addition, the response
+    from the resource manager is signed and enciphered so that only the user at the browser is permitted to obtain the
+    results.<br />
+</p>
+<p>
+    The diagram below overviews the architecture. Its description is as follows:<br />
+    1. Browser establishes a secure transport with the middle tier server. This accomplishes following security
+    services:<br />
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        - Mutual identification and authentication between the two parties.<br />
+        - Data Confidentiality and Integrity.<br />
+    </p>
+</blockquote>
+<p>
+    2. Browser sends a request to the middle tier server.<br />
+    3. Middle tier server makes an access control decision based on the identity of the user that was used in step 1. It
+    also can optionally log the users activity. This accomplishes the following security services:<br />
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        - Access Control<br />
+        - Logging for Audit<br />
+    </p>
+</blockquote>
+<p>
+    4. If the request is not permitted, it is rejected.<br />
+    5. If permitted, the middle tier establishes a secure transport with the resource manager handler. This accomplishes
+    following security services:<br />
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        - Mutual identification and authentication between the two parties.<br />
+        - Data Confidentiality and Integrity.<br />
+    </p>
+</blockquote>
+<p>
+    6. The browser request is relayed to the request handler.<br />
+    7. The request handler translates the Internet request into an enterprise request and forwards it to the resource
+    manager.<br />
+    8. The request is processed and the response is returned to the request handler.<br />
+    9. The request handler translates the enterprise response into an Internet response.<br />
+    10. The response is forwarded to the middle tier web server.<br />
+    11. The response is returned to the browser.<br />
+    12. End-to-end security is accomplished between the user and the request handler by digital signing and enciphering the
+    request and requests and responses. This accomplishes following security services:<br />
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        - Mutual identification and authentication between the two parties.<br />
+        - Data Confidentiality and Integrity.
+    </p>
+</blockquote>
+<p>
+    <img height="443" alt="Security Architecture1" src="./../../../core.legacy.common_wp.base-ibm_lic/guidances/examples/resources/security_architecture_01.jpg" width="721" /><br />
+    This architecture provides authentication, data confidentiality and integrity, access control and audit functions for
+    the applications regardless of whether the application is high risk or low risk.
+</p>
+<div align="center">
+    <table border="1">
+        <tbody>
+            <tr>
+                <td valign="top" width="273">
+                    <br />
+                </td>
+                <td valign="top" width="103">
+                    <br />
+                    Authentication
+                </td>
+                <td valign="top" width="102">
+                    <br />
+                    Confidentiality and Integrity
+                </td>
+                <td valign="top" width="72">
+                    <br />
+                    Access Control
+                </td>
+                <td valign="top" width="71">
+                    <br />
+                    Audit
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="273">
+                    <br />
+                    BrowseróWeb Server
+                </td>
+                <td valign="top" width="103">
+                    <br />
+                    Yes
+                </td>
+                <td valign="top" width="102">
+                    <br />
+                    Yes
+                </td>
+                <td valign="top" width="72">
+                    <br />
+                    Yes
+                </td>
+                <td valign="top" width="71">
+                    <br />
+                    Yes
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="273">
+                    <br />
+                    BrowseróWeb ServeróResource Manager
+                </td>
+                <td valign="top" width="103">
+                    <br />
+                    Yes
+                </td>
+                <td valign="top" width="102">
+                    <br />
+                    Yes
+                </td>
+                <td valign="top" width="72">
+                    <br />
+                    Yes
+                </td>
+                <td valign="top" width="71">
+                    <br />
+                    Yes
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="273">
+                    <br />
+                    Web Server óResource Manager
+                </td>
+                <td valign="top" width="103">
+                    <br />
+                    Yes
+                </td>
+                <td valign="top" width="102">
+                    <br />
+                    Yes
+                </td>
+                <td valign="top" width="72">
+                    <br />
+                    Yes
+                </td>
+                <td valign="top" width="71">
+                    <br />
+                    Yes
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div><br />
+<h4>
+    Security Architecture for the Resource Manager / Request Handler for Component shown above
+</h4>
+<p>
+    When the resource manager is a DCE enabled application server (SYBASE, DB2, CICS, IMS, Encina), the user’s signed and
+    enciphered request is relayed by the middle tier web server to a resource manager request handler that is a JPM
+    customized component. In this case the request handler<br />
+</p>
+<p>
+    1. Accepts enciphered requests from the middle tier server.<br />
+    2. Initiates a separate process / thread to handle the request.<br />
+    3. Verifies the signature and deciphers the request.<br />
+    4. Ensures that the user’s privilege to sign request has not been revoked.<br />
+    5. Establishes an enterprise identity that is to be used to process the request (based on the Internet credential,
+    certificate).<br />
+    6. Establishes a security context for the request that is based on the enterprise identity.<br />
+    7. Performs any necessary business logic including access to enterprise resource managers and the translation of
+    requests and responses to/from Internet and enterprise formats.<br />
+    8. Signs / enciphers the response.<br />
+    9. Returns the response to the middle tier web server.<br />
+    <br />
+</p>
+<blockquote dir="ltr">
+    <blockquote dir="ltr">
+        <br />
+        <img height="577" alt="Security Architecture2" src="./../../../core.legacy.common_wp.base-ibm_lic/guidances/examples/resources/security_architecture_02.jpg" width="722" /><br         class="NumberList" />
+        <strong>Web Architecture Resource Manager Request Handler</strong><br />
+    </blockquote>
+</blockquote></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

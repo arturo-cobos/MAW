@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Sample Realization Decisions By Architecture Layers</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="sample_realization_decisions_by_layers">
+<meta name="uma.presentationName" content="Sample Realization Decisions By Architecture Layers">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_40aPEFtaEd6bpPG1p_gnYA", "_sct8wGptEeSdxcAgtnf5og", "_scvx8GptEeSdxcAgtnf5og", "_TxXR0G9JEd-9z7-UXfcS-A"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_TxXR0G9JEd-9z7-UXfcS-A"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_TxXR0G9JEd-9z7-UXfcS-A"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Sample Realization Decisions By Architecture Layers</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Documents realization decisions by architecture layers of the reference architecture.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    IBM SOA reference architecture has 9 layers - 5 horizontal layers and 4 cross cutting (veritical layers)
+</p>
+<p>
+    The 4 cross cutting layers represent technical and non-functional capabilities required to build a solution.
+</p><br />
+<p>
+    Sample architectural and realization decisions to be taken in different layers are:<br />
+</p>
+<p>
+    <strong>Integration Layer</strong>
+</p>
+<ul>
+    <li>
+        How to take a service call and messages to the end point i.e. to enable a service consumer to connect/interact with
+        service providers?
+    </li>
+    <li>
+        How to handle service request and service response?
+    </li>
+    <li>
+        How to support communication through variety of protocols?
+    </li>
+    <li>
+        How to support variety of messaging styles such one way, pub-sub, request-response?
+    </li>
+    <li>
+        How to route messages to correct service provider?
+    </li>
+    <li>
+        How to transform protocol formats, e.g., from SOAP/HTTP to SOAP/Message Queue or SOAP/JMS?
+    </li>
+    <li>
+        How to link a variety of systems that do not directly support service-style interactions so that a variety of
+        services can be offered in a heterogeneous environment.
+    </li>
+    <li>
+        How to store and forward messages using message queuing?
+    </li>
+    <li>
+        How to transform data formats, e.g., from proprietary to standard format or industry standards and vice versa.
+    </li>
+    <li>
+        How to aggregate (including messages and data) from different services and service providers?
+    </li>
+    <li>
+        How to propagate the events from producers to consumers?
+    </li>
+    <li>
+        How to handle transactions from the other layers, especially when a statically composed service invokes a service
+        chain?
+    </li>
+    <li>
+        How to handle exceptions raised in the process of service invocation and message passing?
+    </li>
+    <li>
+        How to authenticate/authorize for service invocation and message routing?
+    </li>
+    <li>
+        How to capture and record message routing and service invocation history?
+    </li>
+    <li>
+        How to track and monitor the message routing and service invocation activities?<br />
+    </li>
+</ul>
+<p>
+    <strong>QoS Layer</strong>
+</p>
+<ul>
+    <li>
+        How to assure that access to resources has been given to the right identities, at the right time, for the right
+        purpose?
+    </li>
+    <li>
+        How to monitor and audit access to resources for unauthorized or unacceptable use?
+    </li>
+    <li>
+        How to protect unstructured and structured data from unauthorized access and data loss, according to the nature and
+        business value of information?
+    </li>
+    <li>
+        How to monitor and audit access to information?
+    </li>
+    <li>
+        How to maintain the security status through proactive changes to the system, reacting to identified vulnerabilities
+        and new threats, and to respond to detected incidents and reported problems
+    </li>
+    <li>
+        How to authenticate&nbsp; based on proper roles?
+    </li>
+    <li>
+        How to authorize based on proper roles?
+    </li>
+    <li>
+        How to secure and encrypt service messages?
+    </li>
+</ul>
+<p>
+    <strong>Information Layer</strong>
+</p>
+<ul>
+    <li>
+        What mechanism will be used to access data and provide integration and/or replication services? Example:
+        Information-as-a-Services, Wrapper/adapter pattern, information integration
+    </li>
+    <li>
+        How to expose data as services, to add/remove/manipulate data entries in different services or service components,
+        to disable some data from outside access?
+    </li>
+    <li>
+        How to interface with the information layer in multiple ways such as message based, service call, batch interface?
+    </li>
+    <li>
+        How to handling representing data from various data sources in a unified data format? How to transform and map data
+        from one format to another and align data from different resources.?
+    </li>
+    <li>
+        How to manage lifecycle of business entities?
+    </li>
+    <li>
+        How to manage hierarchy and relationship among data?
+    </li>
+    <li>
+        How to validate records against defined business rules?
+    </li>
+    <li>
+        How to notify and trigger actions based upon events detected within the data?
+    </li>
+    <li>
+        How to validate and enforce data quality rules?
+    </li>
+    <li>
+        Which pattern will be used for information integration? Example: Consolidation, Federation, Message Integration
+    </li>
+    <li>
+        How to perform extract, transform, load (ETL capabilities) data from one source to other. How to extract relevant
+        information from sources, transforms the information into the appropriate integrated form, and loads the
+        information into the target repository?
+    </li>
+    <li>
+        How to perform Enterprise Information Integration capabilities such as access to federated query to structure and
+        unstructured data?
+    </li>
+    <li>
+        How to virtualize data representing actual data from the actual data repositories of various types, such as a DB2
+        database in the Operational System layer, or an excel file.?
+    </li>
+    <li>
+        How to handle data transformation (including transformation of data types and contents) and to aggregate data from
+        multiple data sources.?
+    </li>
+    <li>
+        How to perform data standardization and perform data reconciliation including semantic reconciliation?
+    </li>
+    <li>
+        How to cleanse and match inbound records to existing data?
+    </li>
+    <li>
+        How to cache data in support of the data virtualization/ information services capability?
+    </li>
+    <li>
+        How to manage and maintain meta-data in common metadata repository for the enterprise?
+    </li>
+    <li>
+        How to manage to capture, aggregate, and manage unstructured content in a variety of formats such as images, text
+        documents, web pages, spreadsheets, presentations, graphics, e-mail, video, and other multimedia?
+    </li>
+    <li>
+        How to author, configure, manage, customize and extend meta-data?
+    </li>
+    <li>
+        How to store operational and re-shaped information (structured and unstructured) that adds business value including
+        common model of data. Used to share canonical forms (common data models) between SOA integration layer elements and
+        also other SOA Layer elements. Typically invoked by other components (including information virtualization
+        capabilities)?
+    </li>
+    <li>
+        How to store instance and definition of master data and historical data that records changes to master data.?
+    </li>
+    <li>
+        How to store analytical data?
+    </li>
+    <li>
+        How to handle access privileges of various participants to data?
+    </li>
+    <li>
+        How to control access on individual data items?
+    </li>
+    <li>
+        How to monitor and manage data usages using a log-like facility. Typical traceHow log includes: who has accessed
+        the data, when, and what part of the data has been accessed?
+    </li>
+    <li>
+        How to analyze data access history and providing optimization algorithms and business intelligence for data
+        optimization?
+    </li>
+    <li>
+        How to query and search capabilities for enterprise information?
+    </li>
+    <li>
+        How to visualize interactively the results from business analytics and data analysis?
+    </li>
+    <li>
+        How to interface with the integration layer and obtains event from the integration layer. How to analyze this event
+        information, both in realtime/near-realtime, as well as stored (warehoused) events?
+    </li>
+    <li>
+        How to review and assess inbound service activity in the form of event information and determines responses or
+        issues alerts/ notification?
+    </li>
+</ul>
+<p>
+    <strong>Governance Layer</strong>
+</p>
+<ul>
+    <li>
+        How to advertize and discover available services?
+    </li>
+    <li>
+        How to store and access governed artifacts and best practices for solutions based on SOA principles?
+    </li>
+    <li>
+        How to define, manage and maintain policies?
+    </li>
+    <li>
+        How to enforce policies and evaluate compliance of policies&nbsp;and identifying&nbsp;violations of policies?
+    </li>
+    <li>
+        How to measure, gather, and evaluate metrics on SOA services, governed processes and governing processes?
+    </li>
+    <li>
+        How to indicate the status of the governing and governed processes and their metrics?
+    </li>
+    <li>
+        How to capture the results of governing processes and their effectiveness?
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Conducting a Critical Design Review</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="conducting_cdr">
+<meta name="uma.presentationName" content="Conducting a Critical Design Review">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_ic10YD1DEd6fVa8fv3BibQ", "_sgb_IGptEeSdxcAgtnf5og", "_sghesGptEeSdxcAgtnf5og", "mweb0EE0394CF1F83C7185256D130052F67F"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb0EE0394CF1F83C7185256D130052F67F"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb0EE0394CF1F83C7185256D130052F67F"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Conducting a Critical Design Review</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The Critical Design Review is held to consolidate component design documentation and review it to develop a design baseline.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.sys_eng.base-ibm_lic/workproducts/cdr_results_80512754.html" guid="mwebA400A2E8D78B5EB785256D110045709E">Critical Design Review Results</a>
+</li>
+<li>
+<a href="./../../../practice.tech.sys_eng.extend-ibm_int/tasks/perform_critical_design_review_3BD2F06D.html" guid="mweb093C356700000113D4B27DAC59012EBB">Perform the Critical Design Review</a>
+</li>
+<li>
+<a href="./../../../practice.tech.sys_eng.extend-ibm_int/tasks/prepare_for_critical_design_review_D9D0BA24.html" guid="mweb093C356700000113D4B25A8538DAE679">Prepare for Critical Design Review</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <strong>1. Description</strong>
+</p>
+<p>
+    The objectives of the Critical Design Review (CDR) are:
+</p>
+<div style="MARGIN-LEFT: 2em">
+    <ol>
+        <li>
+            Establish component design baseline,
+        </li>
+        <li>
+            Review the components' design for completeness,
+        </li>
+        <li>
+            Review the components' test plans,
+        </li>
+        <li>
+            Verify that the end-to-end test strategy validates system requirements,
+        </li>
+        <li>
+            Verify production infrastructure capacity supports the system requirements,
+        </li>
+        <li>
+            Establish traceability from component requirements to component design,
+        </li>
+        <li>
+            Identify/review technical risks and mitigation plans.
+        </li>
+    </ol>
+</div>
+<p>
+    <strong>2. Details</strong>
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        <strong>Review Participants</strong>
+    </p>
+    <p>
+        Team members to be part of the review should include:
+    </p>
+</blockquote>
+<div style="MARGIN-LEFT: 4em">
+    <ol>
+        <li>
+            Customer(s) / Stakeholder(s)&nbsp;
+        </li>
+        <li>
+            Solution Project Manager (SPM)&nbsp;
+        </li>
+        <li>
+            Systems Engineering / Architecture team&nbsp;
+        </li>
+        <li>
+            System Test Team (system and performance test)&nbsp;
+        </li>
+        <li>
+            Service Delivery Center representative - architect and/or Move To Production (MTP) lead&nbsp;
+        </li>
+        <li>
+            Application Development teams.
+        </li>
+    </ol>
+</div>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        <strong>Review Information</strong>
+    </p>
+    <p>
+        The systems engineer (SE) leads the Critical Design Review, thus he/she must work with other team members to
+        prepare the CDR package. Copy the CDR template and update it as described below. The template has been used for
+        other CDRs, but it may be tailored as necessary for your and your customer's needs.
+    </p>
+    <p>
+        The CDR should be a REVIEW of the system design and not a working session to define the design. The systems
+        engineer should define have defined the baseline in the System Requirements Review (SRR) and the Preliminary
+        Requirements Review (PDR). The SRR defines the system baseline and the PDR (if held) defines the component
+        baseline. If the PDR is not held, then the component baseline should have been reviewed as part of the SRR.
+    </p>
+    <p>
+        The CDR is a review of the following information:
+    </p>
+    <ul>
+        <li>
+            Component designs - to verify that the designs meet the component requirements
+        </li>
+        <li>
+            Component and e2e test plans - to verify that the test plans are sufficient to test the requirements
+        </li>
+        <li>
+            Production infrastructure capacities - to verify that the production infrastructure will support the
+            requirements
+        </li>
+    </ul>
+    <p>
+        <strong>Review Template Usage</strong>
+    </p>
+    <p>
+        The CDR template:
+    </p>
+    <p>
+        Add a review cover sheet - provide a review date & time, SE contact name, and review/project name
+    </p>
+    <p>
+        Page 1 - delete this page
+    </p>
+    <p>
+        Page 2 - delete this page
+    </p>
+    <p>
+        Page 3 & 4 - tailor as needed
+    </p>
+    <p>
+        Pages 5 through 6 - describes the review criteria. This is the material that you should create when preparing for
+        the review.
+    </p>
+    <p>
+        Page 7 - provides review scoring information
+    </p>
+    <p>
+        Page 8 -provides a sample agenda that you can use
+    </p>
+    <p>
+        Page 9 - update the chart such that you get a signoff for each system requirement. The signoff persons should be 1)
+        customer(s) & 2) IBM Global Services (IGS) representative – the SPM or whoever is best for your project. But
+        there needs to be at least one person from the customer organization and one person from IGS, such that a common
+        understanding of the system requirements is reached. The presenter is usually someone on the Systems Engineering
+        team. There should not be any issues before the review. This page can be used to document any issues during the
+        review that would prevent signoff.
+    </p>
+    <p>
+        <strong>Steps for Conducting the Review</strong>
+    </p>
+    <p>
+        The Systems Engineer leads the CDR by following his CDR agenda. The goal of the CDR is to verify that the component
+        designs meet the component requirements, to verify the component and e2e test plans, and to verify the necessary
+        infrastructure needs.
+    </p>
+    <p>
+        Experience from past reviews has shown that the following process is best for the CDR:
+    </p>
+    <ol>
+        <li>
+            Review all system and component requirement changes since the requirements baselines were defined. Or, if
+            possible, provide a list of all requirements, showing traceability, to define the review requirements baseline.
+            Review any Business Process changes since it was baselined.&nbsp;
+        </li>
+        <li>
+            For each system requirement, review all component requirements and <b>designs</b> that are needed to satisfy
+            the system requirement (which shows traceability to the system requirement). Gain approval that the sum of the
+            component designs fully satisfies the system requirement.&nbsp;
+        </li>
+        <li>
+            Review the Service Delivery Center (SDC) material<br />
+            Production infrastructure architecture<br />
+            Monitoring, Measurement, Management (M3) should have probe architectures documented and probe design scenarios
+            documented if any business requirements include "real time" transaction availability and transaction timing
+            reporting requirements.<br />
+            Any systems monitoring processes over and above the standard offering (i.e., World Wide Commend Center,
+            Centralized monitoring and support, application monitoring, business volumes measurement and forecasting, etc.)
+            should be documented here.<br />
+            Production capacity projections and resources&nbsp;
+        </li>
+        <li>
+            For each of the test types to be performed (Systems Integration Testing, Performance / Stress Testing, User
+            Acceptance Testing, Pre-Production Testing, etc), review 
+            <ul>
+                <li>
+                    Test scope and requirements
+                </li>
+                <li>
+                    Test environment&nbsp;
+                </li>
+                <li>
+                    Test Data&nbsp;
+                </li>
+                <li>
+                    Test Ground rules
+                </li>
+            </ul>
+        </li>
+        <li>
+            Review any Data Load for the Tests or for the Production System.&nbsp;
+        </li>
+        <li>
+            Note defects, issues, risks, and dependencies for all sections as you review the sections&nbsp;
+        </li>
+        <li>
+            Gain signoffs for each section, as you review the section&nbsp;
+        </li>
+        <li>
+            Review the signoff sheet, the defects, the risks, the issues, and the action items so that everyone agrees with
+            the review results.&nbsp;
+        </li>
+        <li>
+            Update the scorecard at the back of the review template to score the effectiveness of the review.
+        </li>
+    </ol>
+    <p>
+        The CDR should be aligned with the SDC Kickoff meeting, since the SDC representative will prepare much of the same
+        materials for the two meetings.
+    </p>
+</blockquote></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

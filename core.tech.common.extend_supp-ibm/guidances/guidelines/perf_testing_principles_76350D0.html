@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Performance Testing Principles</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="perf_testing_principles">
+<meta name="uma.presentationName" content="Performance Testing Principles">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_0EWIAHODEdyur-UVVhx-aQ"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_0EWIAHODEdyur-UVVhx-aQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Performance Testing Principles</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline describes some heuristics for optimizing your performance testing effort.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Introduction
+</h3>
+<p>
+    This general guideline discusses some key principles for performance testing. It covers the following major tasks:
+</p>
+<ul>
+    <li>
+        <a href="#Discover Your Customer's Goals">Discover Your Customer's Goals</a>
+    </li>
+    <li>
+        <a href="#Create a Detailed Workload Model">Create a Detailed Workload Model</a>
+    </li>
+    <li>
+        <a href="#Simplify the Customer's Workload">Simplify the Customer's Workload</a>
+    </li>
+    <li>
+        <a href="#Gain Agreement on the Workload Model">Gain Agreement on the Workload Model</a>
+    </li>
+    <li>
+        <a href="#Specify What Measurements are Significant">Specify What Measurements are Significant</a>
+    </li>
+    <li>
+        <a href="#Maintain Control of the Test Environment">Maintain Control of the Test Environment</a>
+    </li>
+    <li>
+        <a href="#Report the Test Results in the Context of the Workload Specification and Lab Environment">Report
+        the Test Results in the Context of the Workload Specification and Lab Environment</a>
+    </li>
+    <li>
+        <a href="#Formally Document Results and Recommendations">Formally Document Results and Recommendations</a>
+    </li>
+</ul><br />
+<h3>
+    <a id="Discover Your Customer's Goals" name="Discover Your Customer's Goals">Discover Your Customer's Goals</a>
+</h3>
+<p>
+    There are many reasons to do a performance test. Some of these include high availability (long running stability under
+    load), system capacity (how many users or transactions can I do?), or service level agreement (do the key transactions
+    return in under X seconds?). Find out from your customer exactly what questions need to be answered so you know how to
+    design your tests and lab experiments. By formulating and documenting testing goals, you will have a good basis to
+    begin building your workload model.
+</p>
+<h3>
+    <a id="Create a Detailed Workload Model" name="Create a Detailed Workload Model">Create a Detailed Workload Model</a>
+</h3>
+<p>
+    The key to a successful and orderly (well-run) performance test is developing a detailed workload model. You will need
+    access to either a statistical breakdown of an existing production workload, or the ability to synthesize the workload
+    by gathering the equivalent data with analysts from the customer's business operations department.
+</p>
+<p>
+    With the help of the analysts, you will need to answer questions like the following:
+</p>
+<ol>
+    <li>
+        What are the most frequently executed 20% of the transactions, which probably generate 80% of the total system
+        load?
+    </li>
+    <li>
+        What are the expected transaction rates for each of these transaction types?
+    </li>
+    <li>
+        Which data inputs are the independent variables that spread the data accesses across any back-end databases
+        involved?
+    </li>
+    <li>
+        Are there classes of users on the system who do very different sets of transactions that each need to be modeled
+        separately?
+    </li>
+    <li>
+        How many of each user class are simultaneously active during the busiest hour of the day?
+    </li>
+    <li>
+        Are there any variable data design or uniqueness constraints on the data inputs?
+    </li>
+    <li>
+        Are there any background batch jobs or reports that cause a significant portion of the system load (even though
+        their frequency is not in the top 20% of the operations)?
+    </li>
+</ol>
+<p>
+    Based on the answers to these and other similar questions, you need to construct a user scenario for each of the
+    transactions or other operations contained in the workload model. If types of users have been identified with relative
+    or absolute numbers of users in each, then these need to be specified in the workload model. If user types are not
+    used, then cumulative transaction rates need to be translated into numbers of simultaneous user scenarios, which are
+    then used to accomplish the total workload transaction rates.
+</p>
+<p>
+    You need to be specific about average think times between user interactions and average transaction rates, and then
+    identify data inputs for variation. You also need to identify key transactions for measurement and tuning activities,
+    as well as expected response time values for each.
+</p>
+<p>
+    The modeled <i>Busy Hour</i> should be explicitly called out and associated with the workload characteristics.
+    Constraints on the size and composition of the test environment data state at the beginning of each test run need to be
+    explicitly called out in the workload specification.
+</p>
+<h3>
+    <a id="Simplify the Customer's Workload" name="Simplify the Customer's Workload">Simplify the Customer's Workload</a>
+</h3>
+<p>
+    Most of the time, the customer will want much too much of the real workload modeled in the performance test. Work with
+    the customer to agree on as many simplifications of the workload model as can be done while maintaining the overall
+    usefulness of the prediction capability of the model. As long as the workload model accurately predicts the Busy Hour
+    performance of the system and adequately stresses all of the subsystems with approximate work done under production
+    conditions, the model is useful for predicting the production system's behavior.
+</p>
+<p>
+    This approximate behavior of the workload model is the essence of doing valuable performance testing. For example, if
+    there are three variations on how to enter a new customer record into a customer database, pick the most frequent or
+    the one that is closest (by some estimation) to the average user scenario. Then combine the transaction rates for all
+    three variations and use the average user scenario in the workload model.
+</p>
+<p>
+    Ideally the notion of simplifying the workload yields a much quicker implementation of the workload model, and makes it
+    both more flexible and adaptable to use in the future as the customer's workload changes over time. Adjustments can be
+    made to transaction rates, database sizes, data input variations, and total volume of work without having to implement
+    new or different user scenarios. This concept makes a workload model reusable and useful to predict the answers to many
+    "what-if" scenarios posed by the customer, both now and in in the future.
+</p>
+<h3>
+    <a id="Gain Agreement on the Workload Model" name="Gain Agreement on the Workload Model">Gain Agreement on the Workload
+    Model</a>
+</h3>
+<p>
+    Because of the abstraction contained in the workload model, you need to sit down with the customer and explain the
+    details of the workload model, including both what it does model and what it doesn't. All of this needs to be done with
+    the customer <i>before</i> implementation of the model begins. Doing this -- gaining acceptance of the workload model
+    content ahead of time, in an atmosphere of collaboration -- results in later meetings with the customer being centered
+    on the test results and not whether the model was correct.
+</p>
+<p>
+    These later meetings tend to be filled with emotion, because the customer feels pressure since major business decisions
+    often ride on the outcome of the performance test measurements. If the customer is not familiar with the workload model
+    employed in the test, the focus shifts to understanding the model and figuring out if it is a true predictor of
+    production system performance. This is counterproductive after the workload model is implemented and being used, as the
+    focus needs to be on system tuning and potentially re-hosting or re-implementing some of the system before placing it
+    into production. These are costly and typically time-critical decisions that should be the focus of the customer
+    meetings once measurement data is available.
+</p>
+<h3>
+    <a id="Specify What Measurements are Significant" name="Specify What Measurements are Significant">Specify What
+    Measurements are Significant</a>
+</h3>
+<p>
+    Often there are a small number of the transaction types or critical business scenarios that contain measurement points
+    that signal whether or not the system is behaving within acceptable parameters. Usually different operations result in
+    different enough response time values that they should not be statistically grouped together since, when taken as a
+    single sample set, they really do not predict the behavior of any operation.
+</p>
+<p>
+    You should specify in the workload model which of these measurements are the important ones to monitor, and also have a
+    time threshold of acceptability values for each of these measurement points. Much of the system tuning efforts should
+    be focused on achieving these values through system parameter adjustments, and in some cases coding adjustments within
+    the application. Since these key measurements are the one most heavily scrutinized, they should be chosen carefully in
+    conjunction with the customer and their business analysts as part of the workload model development.
+</p>
+<p>
+    Usually some peripheral measurements come up with unacceptable values and result in changes to the system. However, the
+    key measurements point to whether or not the system is ready for production deployment, and are central to that
+    decision.
+</p>
+<h3>
+    <a id="Maintain Control of the Test Environment" name="Maintain Control of the Test Environment">Maintain Control of
+    the Test Environment</a>
+</h3>
+<p>
+    The performance testing laboratory environment has a large number of components, the states of which must be tightly
+    controlled so that changes made between test runs are well understood. This promotes predictability and
+    reproduceability of performance test results.
+</p>
+<p>
+    Normally you should keep two change logs, one for the test driver complex and one for the system under test complex.
+    The change log for the performance test driver complex is the record of changes to the hardware and software networking
+    fabric specifically not part of the system to be deployed. The change log for the system under test is the record of
+    all changes to the hardware, software, and networking that need to be reflected in the production system once it is
+    deployed. System tuning changes are very important to keep in the log and associate with specific test results. This
+    ensures that once an experiment has been tried and results gathered, the experiment will not have to be repeated just
+    to reconstruct the results because there was some uncertainty about the system state when certain results were
+    recorded.
+</p>
+<p>
+    If results impacting changes are being made to the driver complex, such as a change to the user think times or some
+    transaction rates, no meaningful tuning comparisons can be made to previous test runs. Since the workload changed, the
+    results must be re-baselined so that new tuning experiments can be compared before and after the change was attempted.
+    Since these large performance labs can consist of dozens of systems and networking components, an accurate account of
+    all changes is crucial to make progress towards a tuned and fully characterized system.
+</p>
+<h3>
+    <a id="Report the Test Results in the Context of the Workload Specification and Lab Environment" name="Report the Test Results in the Context of the Workload Specification and Lab Environment">Report the Test Results
+    in the Context of the Workload Specification and Lab Environment</a>
+</h3>
+<p>
+    Often there are many dynamic shifts in tactics between consecutive performance test runs, based on the measured results
+    from the previous run. Having a general test strategy and daily objectives during the process are important so that you
+    can make progress towards achieving the basic objectives of your test. The alternative to a constantly changing test
+    plan is to be pragmatic about the necessary adjustments during the test interval, and respond by keeping a separate
+    test log of experiments performed. Each test run should be logged, including excerpts from both change logs, as well as
+    what load level of the workload specification was being run during the experiment. The results associated with that run
+    are then logged with the environment data.
+</p>
+<p>
+    The test plan becomes a high-level test strategy with mid point objectives, such as:
+</p>
+<ul>
+    <li>
+        Have the application servers tuned by Tuesday
+    </li>
+    <li>
+        Perform database tuning on Wednesday and Thursday
+    </li>
+    <li>
+        Reserve Friday for any other subsystem tuning
+    </li>
+</ul>
+<p>
+    The final system measurements could then be made the following week between Monday and Wednesday.
+</p>
+<h3>
+    <a id="Formally Document Results and Recommendations" name="Formally Document Results and Recommendations">Formally
+    Document Results and Recommendations</a>
+</h3>
+<p>
+    Once all of the experiments have been run and the detailed results documented, the performance test analyst goes back
+    and summarizes for the customer the steps taken along the way -- during the entire testing interval -- and the
+    incremental results achieved. You should then give the customer a bottom line conclusion about the current state of the
+    system, as well as what steps should now be taken to move the system from its current state to where it fully meets all
+    of the objectives for the performance test. You should also document any recommended procedures or test environment
+    changes to make the next performance test run more smoothly. This final report should be very high quality, and have a
+    complete appendix or reference to the detailed test results. It should also reference the workload specification where
+    the testing goals were documented in detail.
+</p>
+<p>
+    Presenting this final report to the customer is the culmination of the performance test, and should provide a complete
+    communication of the summarized findings of the test.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

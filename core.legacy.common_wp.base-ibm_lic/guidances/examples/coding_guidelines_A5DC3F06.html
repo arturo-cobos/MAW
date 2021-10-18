@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Coding Guidelines</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="coding_guidelines">
+<meta name="uma.presentationName" content="Coding Guidelines">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_Deq1EDj5EdytV6NBXrpheA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Coding Guidelines</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">See the IBM OOTC C++ Coding Rules and Guidelines for an example of a complete set of guidelines. Here is an example from that text:</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/coding_guidelines_F8545F1E.html" guid="mwebFDE2F3370508352B85256882005F797D">Coding Guidelines</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><b>Rule 11.9 Do not return a pointer or reference to local data from a function.</b> <br />
+<b>Reason</b>: If a reference to local data is passed back from a function, the reference will end up pointing to data that
+has had its storage de-allocated upon termination of the function. <br />
+<b>Example</b> <br />
+int& func() <br />
+int i=10; <br />
+return i;//i is local to func() <br />
+void func2() <br />
+int& number = func(); <br />
+number = 20; //error! The storage pointed to by number has been <br />
+//deallocated. This would cause a runtime error. <br />
+<b>Note:</b> Most new C++ compilers will produce a warning regarding this error. <br />
+See VisualAge for Smalltalk UI coding guidelines (referenced below) for a complete set of user interface guidelines. Here
+are some examples from that text. <br />
+<b>Rule:</b> Do not make more than three connections of any kind between any two given components. Do not make more than
+two connections from a part to itself. <br />
+<b>Reason:</b> The more connections in a composition editor (CE), the harder it is to see what the code is supposed to do.
+Limiting the number of connections between two parts is a good start. An exception to this rule is deferred update parts
+and “clone” parts (see below). <br />
+<b>Rule:</b> If you need calculated attributes to refresh when using a deferred update part, use a “clone” part. <br />
+A deferred update part “catches” all attribute connections to the original part and executes them first after receiving the
+action “apply.” This means attributes calculated from other attributes will not update until the “apply” action is
+executed. <br />
+<b>Reason:</b> The clone part is a second part with the same type as the part with the deferred update part. Every
+interesting attribute is copied from the original to the clone. Entry fields are connected not only to the deferred update
+part, but also to the clone. This allows the clone part to provide calculated attributes immediately, while the deferred
+update part cannot until it receives the “apply” action. <br />
+Copying attributes to the clone is accomplished in one of three ways: with read-only connections from the original to the
+clone, with read-only connections from entry fields shared between the deferred update part and the clone, or using a
+script. Using a script is recommended only if the number of connections between the original and the clone exceeds ten.</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Building a Scorecard</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="building_a_scorecard">
+<meta name="uma.presentationName" content="Building a Scorecard">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mwebEEA2DAE356AE0B7C85256A0D00647669"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebEEA2DAE356AE0B7C85256A0D00647669"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Building a Scorecard</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The Building a Scorecard technique paper provides a framework for the definition of a report that can be used to summarize the measures (whole or in part) from a measurement model.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1&nbsp;Description
+</h3>
+<p>
+    This summarization focuses on the assessment of a set of measures against specific performance expectations and
+    provides a methodology for deriving an overall assessment score for that measurement set.
+</p>
+<h3>
+    2&nbsp;Context
+</h3>
+<p>
+    The “scorecard” as a reporting mechanism is widely used within the business and IT community given its earliest
+    introductions through the work of Robert Kaplan and David Norton in their Harvard Business Review article entitled,
+    “The Balanced Scorecard – Measures that Drive Performance”.
+</p>
+<p>
+    This technique paper does not intend to replace or duplicate an organizations desire to apply the methodologies devised
+    by Kaplan and Norton as a way to identify and define a set of measures appropriate for a scorecard.&nbsp;
+</p>
+<p>
+    Instead, it seeks to compliment the approaches and techniques described by a measurement model, with a corollary
+    approach for deriving an appropriate scorecard from a measurement model.
+</p>
+<p>
+    As part of laying the groundwork for further discussion in the development of the scorecard, it is important that a
+    thorough understanding of the stakeholders associated with the measurement program be performed.&nbsp; In the IBM
+    Global Services environment, those stakeholder could include both IBM internal organizations such as a Competency /
+    Competency Segment and IBM’s Customers.&nbsp;
+</p>
+<p>
+    To further this discussion, it is not uncommon for IBM’s Services Customers to require the implementation of a
+    scorecard to give them appropriate visibility into the achievements that IBM is delivering to them.
+</p>
+<p>
+    The picture below describes some of the stakeholders that may need to be considered.&nbsp;&nbsp;
+</p>
+<p>
+    <img height="323" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/BuildingaScorecardfig1.JPG" width="438" />
+</p>
+<p>
+    <br />
+    Before defining an approach for building a scorecard in section 3, it is important to first define the scorecard in a
+    generic sense as a framework for applying the steps for development and to define the necessary terms used to support
+    the scorecards development.
+</p>
+<p>
+    <strong>What is a scorecard?</strong>
+</p>
+<p>
+    In a very generic sense, a scorecard could be analogously looked at in the context of a student’s grade point average
+    (GPA) – the net result of a series of assessments across different courses, ultimately resulting in a singular
+    assessment of a student’s achievement.<br />
+    The scorecard takes this analogy one step further by organizing the various courses into appropriate categories and
+    applying a weight to each of the defined categories.
+</p>
+<p>
+    Following through with the GPA example, consider the idea of weighting the effect of various courses on the GPA based
+    on the area of study and relationship to your chosen field (or major of study).&nbsp; For instance, if you are computer
+    science major, your classes in computer related courses were given a higher weighting than non-major courses that every
+    student was required to take.
+</p>
+<p>
+    To re-phrase the analogy into terms associated with the measurement model, each measurement is placed into an
+    appropriate measurement category.&nbsp; A target is established for each measure to be used to evaluate
+    performance.&nbsp; Each of the measurement categories has an assigned weighting factor determined by the overall
+    importance of the category.&nbsp; The scorecard is then simply a computation, first at the category level to determine
+    the categories score and than across each category to arrive at an overall score for the scorecard.
+</p>
+<p>
+    The following picture describes this concept:
+</p>
+<p>
+    <img height="454" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/BuildingaScorecardfig2.JPG" width="600" />
+</p>
+<p>
+    <br />
+    It is important to note that in step 1, the sum of the weighting for each category must be equal to 100%.&nbsp; You can
+    see that in category D, where there are two measurements, that the total is indeed 100%.&nbsp;
+</p>
+<p>
+    In addition, in step 2, the sum of all of the weights for the categories must also sum 100%.
+</p>
+<p>
+    Finally, at both the category level in step 1 and the final score from step 2; the numeric assessment result could be
+    translated into an alphabetic grade given an appropriate scale definition.
+</p>
+<p>
+    For instance, an A could be defined as 90 to 100, a B as 80 to 90 and so on.&nbsp; The grade letter result for category
+    A for by a “B” and for category C would receive an “A”.
+</p>
+<p>
+    Finally, the scorecard can be built at multiple levels of the organization.&nbsp; In addition, the assessment of a
+    single scorecard can be done at different levels of the organization.&nbsp; For instance, a single scorecard could be
+    assessed at the CIO level of the organization and then individually assessed at the business units and various
+    application areas.
+</p>
+<p>
+    In this level of context, several critical success factors should be understood before moving into the steps for
+    building a scorecard:
+</p>
+<ul>
+    <li>
+        A reasonable number of measures should be included in the scorecard.&nbsp; If the measurement model has dozens of
+        measures, they should not all be included in the scorecard.
+    </li>
+    <li>
+        The number of categories should be kept small.&nbsp; You could use the same categories described in the measurement
+        model, or map the measurements to a smaller set of categories, such as the classic four from Kaplan and
+        Norton.&nbsp; They are described below:
+    </li>
+</ul>
+<p>
+    <img height="397" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/BuildingaScorecardfig3.JPG" width="525" />&nbsp;
+</p>
+<ul>
+    <li>
+        The appropriate processes must be implemented and in place to handle a number of operational requirements of a
+        scorecard: 
+        <ul>
+            <li>
+                Define / refine the measurements included in the scorecard (might be done yearly for example)
+            </li>
+            <li>
+                Identify the targets for the measurements (done in conjunction with the refinements to the scorecard
+                measures)
+            </li>
+            <li>
+                Define the weighting for each of the scorecard categories
+            </li>
+            <li>
+                Define the weighting for each of the measures included in each of the categories of the
+                scorecard&nbsp;<br />
+            </li>
+        </ul>
+    </li>
+</ul>
+<h3>
+    3&nbsp;Steps
+</h3>
+<h4>
+    3.1&nbsp; Define the categories for the scorecard
+</h4>
+<p>
+    In deciding what categorization schema to use for the scorecard, it is suggested that this categorization schema be the
+    same, or map closely to the categories used in building the measurement model.&nbsp; This is important given that the
+    balancing and prioritization processes performed in building the measurement model can be carried over into the
+    processes for developing the scorecard.
+</p>
+<h4>
+    3.2&nbsp; Identify the measures to include in each category
+</h4>
+<p>
+    Once the categories are defined, the measures to be included in each category should be identified.&nbsp; There are
+    several ways to accomplish this:
+</p>
+<ol>
+    <li>
+        A facilitated session that includes the various stakeholders of the scorecard to identify the measures 
+        <ul>
+            <li>
+                The relative importance of the goals and behaviors that these measures drive.&nbsp; If there are specific
+                goals that are vitally important to both the account and the customer’s success, those should be included
+                in the measurement model
+            </li>
+        </ul>
+    </li>
+    <li>
+        Include the highest priority measures from the measurement model – for instance the top 2 or 3.
+    </li>
+</ol>
+<p>
+    It is not uncommon at this point to also include contractually obligated measures since the scorecard can provide an
+    additional level of visibility for those measures.
+</p>
+<h4>
+    3.3&nbsp; Define the weighting for each measure
+</h4>
+<p>
+    Now that the measures are defined, the weight of each measure can be considered.&nbsp; Again, there are several ways to
+    accomplish this:
+</p>
+<ol>
+    <li>
+        A facilitated session such as the one used in Step 2 could also be used to weight the measures.
+    </li>
+    <li>
+        An equal split could be done for each of the measures (for instance 2 measures could be split 50-50, 4 –
+        25-25-25-25).
+    </li>
+    <li>
+        A more specific weight could be determined by the importance of each measure as determined by the measurement
+        model.
+    </li>
+</ol>
+<h4>
+    3.4&nbsp; Define the weighting for each category
+</h4>
+<p>
+    The final step in building the scorecard is to determine the weight for each category. This can be done by identifying
+    the relative weighting of the various measurement categories by looking at the prioritization that was performed in the
+    measurement model.&nbsp; Since the prioritization is typically done at the measurement category level in addition to
+    the measurement level, the category with the highest overall prioritization could get the highest weighting, second
+    highest, etc.
+</p>
+<p>
+    A second way could be done based on the relative important of each category as defined by the scorecard
+    stakeholders.&nbsp; This can be done in a facilitated session during the identification of the measurements to be
+    included in the model and the weighting of each of the measures.
+</p>
+<h4>
+    3.5&nbsp; Establish a baseline and/or targets for each measure
+</h4>
+<p>
+    In order for the scorecard to provide feedback on the performance of the organization, several attributes must be
+    considered for each measure:
+</p>
+<ul>
+    <li>
+        A baseline helps to establish the “where am I today?” context and can be used to help establish the targets for
+        each measure 
+        <ul>
+            <li>
+                For example, a target might be a 5% year over year improvement in productivity.
+            </li>
+        </ul>
+    </li>
+    <li>
+        Targets need to be established for each measure in order to determine the performance attainment for each
+        measure.&nbsp; These help to establish the “where do I want to be?” context for each measure. 
+        <ul>
+            <li>
+                For example, a target might be a turnover rate of no greater than 8% by 2002.
+            </li>
+        </ul>
+    </li>
+</ul>
+<h4>
+    3.6&nbsp; Define the scoring criteria for each measure and category
+</h4>
+<p>
+    If the requirement(s) to assign an equivalent grading is needed for the scorecard at the measurement level, the
+    category level or both, the scoring criteria need to be established.&nbsp;
+</p>
+<ul>
+    <li>
+        These could follow traditional educational scoring: 
+        <ul>
+            <li>
+                &nbsp;90% and greater Attainment = A
+            </li>
+            <li>
+                &nbsp;80% to 90% = B
+            </li>
+            <li>
+                70% to 80% = C
+            </li>
+            <li>
+                &nbsp;etc.<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        Or the scoring could be defined in relationship to the targets established: 
+        <ul>
+            <li>
+                + / - 5% of the target = A
+            </li>
+            <li>
+                + / - 5 to 10% = B
+            </li>
+            <li>
+                etc.
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    <strong>Scorecard Hint’s and Tip’s</strong>
+</p>
+<ul>
+    <li>
+        Although already stressed in the context section, it is important to remember to try to keep the number of measures
+        included in the scorecard to a small set.&nbsp;
+    </li>
+    <li>
+        In addition to the approach described in the technique paper, a variation of the methodology described in the
+        various publications that describe developing Balanced Scorecard could also be applied on the defined measurement
+        model to help identify and weight the set of measures for the scorecard.
+    </li>
+</ul>
+<h3>
+    4&nbsp;Tools
+</h3>
+<p>
+    There are a number of effective tools that can be used to produce a scorecard report.&nbsp; These include the
+    following:
+</p>
+<ul>
+    <li>
+        Spreadsheets: Static reports that are updated on a monthly basis to show overall performance.
+    </li>
+    <li>
+        Real-Time Graphs: A number of tools, such as Wired for OLAP and BRIO, allow the end-user to view performance
+        results in a graphical manner.&nbsp; These tools support analysis through drill-downs and other analytical
+        techniques.&nbsp; These techniques enable root-cause analysis to be done on those organizations (or on the
+        organization as a whole) that are performing at a less-than-desirable level.
+    </li>
+    <li>
+        In addition, there are many good Scorecard tools that are available that deal specifically with reporting and
+        analysis around a scorecard and can compliment any number of database architectures to source the data:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Hyperion Performance Scorecard - <a href="http://www.hyperion.com/epm_pm.cfm">http://www.hyperion.com/epm_pm.cfm</a>
+            </li>
+            <li>
+                Gentia Balanced Scorecard - <a href="http://www.gentia.com/products/gbsc/gbsc_intro.htm">http://www.gentia.com/products/gbsc/gbsc_intro.htm</a>
+            </li>
+            <li>
+                Dialog Software Balanced Scorecard - <a href="http://www.dialogsoftware.com/balancedscorecard/balanced_scorecard.htm">http://www.dialogsoftware.com/balancedscorecard/balanced_scorecard.htm</a>
+            </li>
+            <li>
+                Panorama Business Views PB Views - <a href="http://www.pbviews.com/pbviews/index.html">http://www.pbviews.com/pbviews/index.html</a>
+            </li>
+            <li>
+                SAS Strategic Vision - <a href="http://www.sas.com/products/strategic_vision/index.html">http://www.sas.com/products/strategic_vision/index.html</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    Real-time graphical reports are the recommended alternative because of their dynamic access and for the speed with
+    which they provide unambiguous feedback concerning the performance of an organization.&nbsp;
+</p>
+<h3>
+    5&nbsp;Examples
+</h3>
+<p>
+    The following is a sample of a scorecard built in a spreadsheet tool.&nbsp; This example uses the measurement model
+    categorization schema (6 measurement categories) for assessing the results of the scorecard.
+</p>
+<p>
+    <img height="689" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/BuildingaScorecardfig4.JPG" width="630" />
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

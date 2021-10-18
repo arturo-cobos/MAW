@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Application Programming Interface</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="app_prog_interface">
+<meta name="uma.presentationName" content="Application Programming Interface">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="__11lwCPGEdyevKDMqw80LA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Application Programming Interface</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This is an example of a class interface that was written to describe a simple C++ database server API</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/app_prog_interface_1524C6F4.html" guid="mwebAB3B1071A30D41AE8525688200570340">Application Programming Interface</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The document that contained it followed the structure outlined above. The excerpt that follows is from a section
+    documenting the <i>DbSession</i> class interface. Note that this documentation is intended for writers of <i>client</i>
+    code, not <i>customization</i> code. Therefore, only the public class interface is described. Note also that the
+    documentation is intended for object-oriented novices. Therefore the names and short descriptions of inherited methods
+    are included in the description of each class interface. This would not normally be done, but this audience would
+    expect to find all methods relevant to a particular class documented there.<br />
+    <br />
+     <b>Definition</b><br />
+     A DbSession is an object representing a database session. FileProxies for database files are created by DbSession
+    methods. The contents of the files are then accessed by means of FileProxy methods without further direct reference to
+    the DbSession.<br />
+     DbSessions <i>know</i> the FileProxies that are associated with them, and deleting a DbSession object deletes its
+    FileProxies. To ensure that FileProxy construction and deletion occur only at the correct time (and not, for example,
+    when a DbSession object is copied), copy and assignment operations are not part of the DbSession public
+    interface.<br />
+</p>
+<p>
+    Public methods<br />
+</p>
+<p>
+    <i>Static methods:</i><br />
+     <b>ApplicationManagerInstance</b><br />
+     Get the DbSession initiated by the application manager.<br />
+     <b><i>New methods</i>:</b><br />
+     <b>Open File</b><br />
+     Open an existing database file.<br />
+     <b>New File</b><br />
+     Create a new database file.<br />
+     <b>Open Binary Segment File</b><br />
+     Open an existing binary segment database file.<br />
+     <b>New Binary Segment File</b><br />
+     Create a new binary segment database file.<br />
+     <b>Open Voice Segment File</b><br />
+     Open an existing voice segment database file.<br />
+     <b>New Voice Segment File</b><br />
+     Create a new voice segment database file.<br />
+     <b>Get Handle</b><br />
+     Get the database server handle for this session.<br />
+     <b>Get Path</b><br />
+     Get the path used by the database server as the database file directory.<br />
+     <i>Inherited, overridden, or instantiated methods:</i><br />
+     <b>None</b><br />
+     <i>Special methods:</i><br />
+     <b>Constructor</b><br />
+     Create a DbSession.<br />
+     <b>Destructor</b><br />
+     Delete a DbSession.<br />
+</p>
+<p>
+    <i>Descriptions of new methods:</i><br />
+</p>
+<p>
+    <b>ApplicationManagerInstance</b><br />
+     <b>Purpose</b><br />
+     Get the DbSession instance, which represents the database session, initiated by the application manager. If the
+    instance does not yet exist, the method will construct it.<br />
+     <b>Format</b><br />
+     Static DbSession & Application Manager Instance (const GsiName gsiName).<br />
+     <b>Parameters: gsiName</b><br />
+     The NetBIOS name of the GSI for which the session is being used.<br />
+     <b>Notes</b><br />
+     The method wraps the vmsfopen function.<br />
+</p>
+<p>
+    <i>OpenFile</i><br />
+     <b>Purpose</b><br />
+     Open a database file and return a reference to a proxy for it.<br />
+     <b>Format</b><br />
+     virtual FileProxy & OpenFile(<br />
+     const FileName fileName,<br />
+     const DbSession::AccessMode accessMode =<br />
+     DbSession::READ_ONLY )<br />
+     <b>Parameters</b><br />
+     <b>fileName</b><br />
+     The name of the file to be opened.<br />
+     <b>accessMode</b><br />
+     The access mode of the new file proxy.<br />
+     <b>Notes</b><br />
+</p>
+<p>
+    <i>NewFile</i><br />
+     <b>Purpose</b><br />
+     Create a new database file and return a reference to a proxy for it. The underlying semantics of the method are those
+    of CreateDA in the existing API.<br />
+     <b>Format</b><br />
+     virtual FileProxy& NewFile(<br />
+     const FileName fileName,<br />
+     const int keyLength,<br />
+     const int recordLength,<br />
+     const int degree = 32 )<br />
+     <b>Parameters</b><br />
+     <b>fileName</b><br />
+     The name of the file to be created.<br />
+     <b>keyLength</b><br />
+     The length of the key. Possible values are 1 through 49.<br />
+     <b>recordLength</b><br />
+     The length of the record (both key and data).<br />
+     <b>degree</b><br />
+     Parameter influencing database index creation algorithm; default 32. Use the default unless otherwise
+    instructed.<br />
+     <b>Notes</b><br />
+     The new file proxy is read-write.<br />
+</p>
+<p>
+    Constructor<br />
+     <b>Purpose</b><br />
+     Create a DbSession object.<br />
+     <b>Format</b><br />
+     DbSession(<br />
+     const ClientName clientName,<br />
+     const GsiName gsiName,<br />
+     const PVOID ioArea = 0,<br />
+     const int ioAreaLength = 0,<br />
+     const int timeout = 0,<br />
+     const int sessionCount = 3,<br />
+     const IBoolean dllServer = False,<br />
+     const int adapter = 255 )<br />
+     <b>Parameters</b><br />
+     <b>clientName</b><br />
+     The NetBIOS client name.<br />
+     <b>gsiName</b><br />
+     The NetBIOS name of the GSI with which the session is being opened.<br />
+     <b>ioArea</b><br />
+     A pointer to the area to be used for GSI requests and responses; default 0. If the pointer is zero (0), the API
+    allocates the storage, but, in that case, the storage will be overwritten by each GSI request via this session.<br />
+     <b>ioAreaLength</b><br />
+     The length of the user-supplied IO area.<br />
+     <b>timeout</b><br />
+     The time allowed, in seconds, for a response from the LAN; default 0. The maximum value is 127. A value of zero (0)
+    specifies that no time-out is to be used.<br />
+     <b>sessionCount</b><br />
+     Relevant only if a real network is being used. The number of network sessions opened for the process; the default is
+    3. Only the sessionCount parameter for the first session (of any kind) created for each process is used.<br />
+     <b>dllServer</b><br />
+     Whether or not the call is made from a DT/2 DLL server; default False.<br />
+     <b>adapter</b><br />
+     The LAN adapter number as defined in the OS/2 system configuration; the default is 255. Possible values are 0 through
+    3 (LAN) or 255 (local). If an adapter has not been installed, use a value of 255, which means that all operations take
+    place locally.<br />
+     <b>Exception codes</b><br />
+     As for OpnSesDAE.<br />
+     <b>Notes</b><br />
+     Supporting declarations<br />
+     enum AccessMode {READ_ONLY, READ_WRITE}
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

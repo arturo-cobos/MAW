@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Task: Document Architectural Decisions</title>
+<meta name="uma.type" content="Task">
+<meta name="uma.name" content="doc_arch_decisions">
+<meta name="uma.presentationName" content="Document Architectural Decisions">
+<meta name="uma.category" content="Discipline:tech_arch:Technical Architecture">
+<meta name="element_type" content="activity">
+<meta name="filetype" content="description">
+<meta name="role" content="Technical Solution Architect">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_40aPEFtaEd6bpPG1p_gnYA", "_scYlkGptEeSdxcAgtnf5og", "_UI-v8DDaEdyz_pzDMsV8FQ"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_kpou0CmJEd65FoKJYXtPqg", "_vLdhkLUuEdyZzqoEHUdEQA", "_dRLFwLjdEdyRlZ7knXIZ8w", "_UI-v8DDaEdyz_pzDMsV8FQ"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', true, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div id="page-guid" value="_UI-v8DDaEdyz_pzDMsV8FQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Task: Document Architectural Decisions</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/task.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Make and document architectural decisions.</td>
+</tr>
+<tr>
+<td>Disciplines: <a href="./../../core.default.cat_def.base-ibm_lic/disciplines/tech_arch_AE23524A.html" guid="_dRLFwLjdEdyRlZ7knXIZ8w">Technical Architecture</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">Keep a log of decisions important to the structuring of the system, including alternatives considered and factors
+influencing the selection.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Primary Performer:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/technical_solution_architect_86C345D1.html" guid="mweb13E09E200176D42E052569F100647201">Technical Solution Architect</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Additional Performers:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/application_architect_43A26CDB.html" guid="mweb0181E0FE6AD970A4852567D8005056B5">Application Architect</a>
+</li>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/infrastructure_architect_1578FFE0.html" guid="mwebBD14B77ED1325BE4852567D800507451">Infrastructure Architect</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Inputs</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Mandatory:
+								</span>
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/architectural_decisions_3059F4D3.html" guid="mweb4BA812D47EEFD0A3852568820057215A">Architectural Decisions</a>
+</li>
+</ul>
+<ul></ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Optional:
+								</span>
+<ul>
+<li>None</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Outputs</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/architectural_decisions_3059F4D3.html" guid="mweb4BA812D47EEFD0A3852568820057215A">Architectural Decisions</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Ensure the issue or problem is clearly stated, evaluate the options that are available, make the decision and provide
+    the rationale behind the decision, document the decision using the appropriate template.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Steps</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="sectionTableSingleCell">
+<div class="stepHeading">State Issue or Problem</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Clearly state what the problem or issue is that has to be addressed.&nbsp; Obtain agreement from the appropriate
+stakeholders that this is the correct statement of the problem.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Consider Alternatives</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    Build a list of alternative solutions to the problem or issue.&nbsp; Review or consider one or more of the following
+    when drawing up a list of alternatives:
+</p>
+<ul>
+    <li>
+        Project objectives, goals, critical success factors, business drivers etc that may have been provided by the
+        stakeholders
+    </li>
+    <li>
+        The system requirements (business processes, use cases, qualities, constraints and change cases).
+    </li>
+    <li>
+        Architectural principles, policies and guidelines drawn up by the stakeholder.
+    </li>
+    <li>
+        Relevant reference architectures, architectural patterns or assets.
+    </li>
+    <li>
+        Product literature available from vendors or their web sites.
+    </li>
+    <li>
+        Technical information published in books, journals, web sites etc.
+    </li>
+    <li>
+        Project documentation such as plans, key milestones and dates etc.<br />
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Make Decision and Provide Rationale</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    Several factors need to be considered when making an architectural decision.&nbsp; Consider the following questions as
+    part of the decision making process:
+</p>
+<ul>
+    <li>
+        Does the solution need to comply with a reference architecture or architectural pattern?
+    </li>
+    <li>
+        Are there any overarching principle, policies, guidelines or standards that need to be complied with or adhered to?
+    </li>
+    <li>
+        What systems management and support implications does the decision have?
+    </li>
+    <li>
+        What are the security and privacy implications of the decision?
+    </li>
+    <li>
+        How does the decision affect the total cost of ownership?
+    </li>
+    <li>
+        If the decision requires the use of vendor products, packages, consulting or support what implications does this
+        have? For example what is the experience of the vendor? Are there suitable service level agreements in place? Are
+        there any liability or legal issues to address?
+    </li>
+    <li>
+        If the decision requires the use of a product or package what is the lead time on procuring these?&nbsp; Is that
+        consistent with project timescales?
+    </li>
+    <li>
+        Are there any change cases that have been identified that should be taken into account?
+    </li>
+</ul>
+<p>
+    Once the decision has been made ensure the rationale for making the decisions is properly and clearly stated.&nbsp;
+    Some decisions can have far reaching implications and must be reviewed with all the key stakeholders before being
+    finalized.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Document Decision</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Document the decision together with the options considered and rationale used in making the decision.&nbsp; Provide
+additional information (e.g. implications on other areas of the architecture, requirements impacted etc) as necessary.</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/examples/architectural_decisions_2664E7E2.html" guid="_5pNfQDetEdyrF6K2SkiByg">Architectural Decisions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Checklists</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/checklists/architectural_decisions_8E0A246E.html" guid="_Dj7t4DesEdyrF6K2SkiByg">Architectural Decisions</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Estimation Considerations</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/estimationconsiderations/architectural_decisions_BCB88E5D.html" guid="_qMfIADesEdyrF6K2SkiByg">Architectural Decisions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

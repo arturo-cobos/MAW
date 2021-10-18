@@ -1,0 +1,658 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Defining Cutover Criteria</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="defining_cutover_criteria">
+<meta name="uma.presentationName" content="Defining Cutover Criteria">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mwebF6E98E2F51C9934B852569AB0059E8C3"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebF6E98E2F51C9934B852569AB0059E8C3"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Defining Cutover Criteria</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1&nbsp;Description
+</h3>
+<p>
+    A bad example was judgment whether the new system is ready for production or not was urged just before its cutover.
+    Cutover criteria must be defined, reviewed, and agreed upon with the client not just before cutover but before system
+    testing.
+</p>
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                Objectives for determining cutover criteria are:
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    To&nbsp;manage un-attained items to take the most effective actions for the cutover.
+</p>To analyze the progress status of system tests from the viewpoint of operational feasibility. 
+<p>
+    To judge whether or not cutover is possible.
+</p>
+<ul>
+    <li>
+        If all the items have been achieved, cutover is unconditionally possible.<br />
+    </li>
+    <li>
+        If any item remains unaccomplished, there will be a corresponding risk. Therefore, the management of the user
+        departments must judge whether or not to accept cutover.
+    </li>
+</ul>
+<p>
+    The major items of cutover criteria are as follows:
+</p>
+<ol>
+    <li>
+        System quality
+    </li>
+    <li>
+        Capacity and performance
+    </li>
+    <li>
+        Operation
+    </li>
+    <li>
+        Migration and switchover
+    </li>
+    <li>
+        Maintenance and expansion after cutover
+    </li>
+    <li>
+        Achievement of contract (applicable to SI projects)
+    </li>
+</ol>Agreement should be reached with the user departments about all items under these major items, except number 6, as
+well as their criteria, before the beginning of system tests: 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>Break down the 6(5) major requirements to "medium items" and "minor items" according to the target system,
+operation environment and project characteristics. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>Considerations for setting up cutover criteria: 
+<ul>
+    <li>
+        In principle, use quantitative values for criteria so as to enable objective judgment. For criteria that cannot be
+        expressed quantitatively, choose items that minimize subjective judgment and establish "Yes/No" criteria. (For Y/N
+        items, it is essential to provide management materials that back up their use.)
+    </li>
+    <li>
+        There must be reasons for the criteria for every item. It must be possible to explain "Why cutover is not possible
+        without reaching this value" or "Why this value is sufficient."
+    </li>
+    <li>
+        The cutover criteria should be thoroughly reviewed by a team that includes third parties, to make sure that no
+        items are missing, nothing is duplicated, and unnecessary items are eliminated.
+    </li>
+    <li>
+        During system testing, achievement status will be monitored regularly to manage un-attained items. For any
+        un-attained items, determine when they will be accomplished. If there are bottlenecks, identify them so that the
+        necessary action can be taken.
+    </li>
+    <li>
+        As the new system is operated by users, it is preferable that the cutover is judged by management of users. The
+        management of users should fully understand and accept the cutover criteria.
+    </li>
+    <li>
+        Management material is required for each item to back up the judgment of conditions. This is especially essential
+        for items with Y/N criteria. Choose appropriate items according to the type and environment of the system (such as
+        its public nature, impact of failure).
+    </li>
+</ul>
+<h3>
+    2&nbsp;Examples
+</h3>
+<p>
+    Example of Cutover Criteria
+</p>
+<p>
+    Following are cutover criteria examples:
+</p>
+<h4>
+    2.1&nbsp; System Quality
+</h4>
+<ol>
+    <li>
+        Software quality 
+        <ul>
+            <li>
+                Decrease in undeleted bugs<br />
+                -&nbsp; Number of undeleted bugs of severity 1 (Count)<br />
+                -&nbsp; Number of undeleted bugs of severity 2 (Count)<br />
+                -&nbsp; Number of undeleted bugs of severity 3 and lower (Count)<br />
+            </li>
+            <li>
+                Decrease in detected bugs<br />
+                - &nbsp;Number of detected bugs in on-line system (Count/peak period)<br />
+                - &nbsp;Number of detected bugs in batch system (Count/peak period
+            </li>
+        </ul>
+    </li>
+    <li>
+        Sufficiency of functions 
+        <ul>
+            <li>
+                Target items in System Requirements Specification<br />
+                - &nbsp;List all items. (Y/N)
+            </li>
+        </ul>
+    </li>
+    <li>
+        Coverage of test cases 
+        <ul>
+            <li>
+                Items in External Specifications<br />
+                -&nbsp;&nbsp; List major items. (Y/N)
+            </li>
+            <li>
+                Recovery procedures<br />
+                - &nbsp;Number of verified CFIA elements (Count)
+            </li>
+        </ul>
+    </li>
+    <li>
+        End user assessment
+    </li>
+</ol>
+<div style="MARGIN-LEFT: 2em">
+    <ul>
+        <li>
+            Assessment items relating to ease of use<br />
+            -&nbsp;&nbsp;Number of poorly assessed items (Count/Total number of items)<br />
+            &nbsp;
+        </li>
+        <li>
+            Required promotion-<br />
+            -&nbsp; End user management (Number/Total number)<br />
+            - &nbsp;End users, operators (Number/Total number)
+        </li>
+    </ul>
+</div>
+<h4>
+    2.2&nbsp; Capacity and Performance
+</h4>
+<ol>
+    <li>
+        Throughput (peak period) 
+        <ul>
+            <li>
+                On-line<br />
+                - &nbsp;List a target transaction count for each system. (Count/sec)<br />
+            </li>
+            <li>
+                Batch<br />
+                - &nbsp;List a target job count for each critical path, as in "Processing count of Job XX.
+                (Count/min)".<br />
+            </li>
+            <li>
+                Network<br />
+                - &nbsp;Maximum trunk line traffic (Count/sec)<br />
+            </li>
+            <li>
+                Workstation<br />
+                - &nbsp;Maximum processing count (Count/hour)<br />
+            </li>
+            <li>
+                Inter-system interface<br />
+                - &nbsp;List a target transaction count for each interface. (Count/sec)
+            </li>
+        </ul>
+    </li>
+    <li>
+        Turnaround time (peak period)
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                On-line<br />
+                - &nbsp;Response time (sec/90 percentile)<br />
+            </li>
+            <li>
+                Batch output<br />
+                - &nbsp;End of balance specification table production (Time)<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        Allowable operating time zone (peak period) 
+        <ul>
+            <li>
+                Batch processing time zone<br />
+                - &nbsp;Required time after on-line operations (min)<br />
+            </li>
+            <li>
+                System recovery time<br />
+                - &nbsp;Recovery when CPU fails (min)<br />
+                - &nbsp;Recovery when Communication Control Unit #1 fails (min)<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        Capacity 
+        <ul>
+            <li>
+                Processor<br />
+                - &nbsp;CPU utilization (%)<br />
+                -&nbsp; Channel utilization (%)<br />
+                -&nbsp; RS utilization (MB)<br />
+                -&nbsp; ES utilization (MB), paging count (Count/sec), etc.<br />
+            </li>
+            <li>
+                DASD<br />
+                - &nbsp;Filling ratio (%)<br />
+                - &nbsp;Maximum actuator utilization (%)<br />
+            </li>
+            <li>
+                CCU<br />
+                - &nbsp;Required memory (KB)<br />
+                - &nbsp;Utilization (%)<br />
+            </li>
+            <li>
+                Network<br />
+                - &nbsp;Maximum trunk line utilization (%)<br />
+            </li>
+            <li>
+                Workstation<br />
+                - &nbsp;Maximum utilization (%)<br />
+            </li>
+            <li>
+                NCU<br />
+                - &nbsp;Maximum telephone line utilization (Erlang)<br />
+            </li>
+            <li>
+                Space<br />
+                - &nbsp;Surplus space (m 2 )<br />
+            </li>
+            <li>
+                Power<br />
+                - &nbsp;Surplus CFCF (KVA), etc.<br />
+            </li>
+            <li>
+                Air conditioning<br />
+                - &nbsp;Surplus (KCal/hr)<br />
+            </li>
+            <li>
+                Battery<br />
+                - &nbsp;Duration (min)<br />
+            </li>
+            <li>
+                Private generation<br />
+                - &nbsp;Duration (days)
+            </li>
+        </ul>
+    </li>
+</ol>
+<h4>
+    2.3&nbsp; Operation
+</h4>
+<ol>
+    <li>
+        System configuration<br />
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Center hardware configuration<br />
+                - &nbsp;Has the hardware installation needed for cutover been completed? (Y/N)<br />
+            </li>
+            <li>
+                Disk allocation<br />
+                - &nbsp;Maximum access count (Count/sec)<br />
+                - &nbsp;Path duplication to all actuators (Y/N)<br />
+            </li>
+            <li>
+                Software configuration<br />
+                - &nbsp;Have all required PTFs been applied? (Y/N)<br />
+            </li>
+            <li>
+                Network<br />
+                - &nbsp;Has an opening test been given to all communication lines to be used for system operation?
+                (Y/N)<br />
+            </li>
+            <li>
+                Terminal configuration<br />
+                - &nbsp;Have arrangements been made to move/install all terminals to be used for system operation?<br />
+            </li>
+            <li>
+                Various facilities<br />
+                - &nbsp;Has installation been completed? (Y/N)<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        Operating organization
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Operating organization<br />
+                - &nbsp;Has an organization been established? (Y/N),<br />
+                - &nbsp;Has a help desk been established? (Y/N), etc.<br />
+            </li>
+            <li>
+                Division of authority and responsibility<br />
+                - &nbsp;Is this stated explicitly in manuals? (Y/N)<br />
+            </li>
+            <li>
+                Special organization immediately after cutover<br />
+                - &nbsp;Has a standby organization been established?<br />
+                - &nbsp;Has a communication organization been established? (Y/N)<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        Center operations
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Organization<br />
+                - &nbsp;Have an organization and a working system been established? (Y/N)<br />
+                - &nbsp;Has operation training been completed? (Y/N)<br />
+            </li>
+            <li>
+                Operating procedures<br />
+                - &nbsp;Have the procedures, including recovery procedures, been verified? (Y/N), etc.<br />
+            </li>
+            <li>
+                Operation manuals<br />
+                - &nbsp;Has each type of verified manual been completed?<br />
+            </li>
+            <li>
+                I/O forms<br />
+                - &nbsp;Volume on hand (for [ ] days), etc.<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        End user operations
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Organization<br />
+                -&nbsp; Have an organization and a working rule been established? (Y/N)<br />
+                -&nbsp; &nbsp;Has operation training been completed? (Y/N)<br />
+            </li>
+            <li>
+                Manuals<br />
+                - &nbsp;Have verified manuals been completed? (Y/N), etc.<br />
+            </li>
+            <li>
+                Training about new application system<br />
+                - &nbsp;Training coverage (%), etc.<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        Security
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Security functions<br />
+                -&nbsp; Number of unsatisfied requirements (Count/Total number)<br />
+            </li>
+            <li>
+                Preventive control functions<br />
+                - &nbsp;Number of unsatisfied requirements (Count/Total number)<br />
+            </li>
+            <li>
+                Trouble indication functions<br />
+                - &nbsp;Number of unsatisfied requirements (Count/Total number)<br />
+            </li>
+            <li>
+                Audit trail holding functions<br />
+                -&nbsp; Number of unsatisfied requirements (Count/Total number)<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        Evaluation of operating department
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Acceptance test<br />
+                - &nbsp;Number of items assessed poorly (Count/Total number of items)
+            </li>
+        </ul>
+    </li>
+</ol>
+<h4>
+    2.4&nbsp; Migration and Switchover
+</h4>
+<ol>
+    <li>
+        Verification of migration system
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Quality of migration system<br />
+                - &nbsp;Number of detected bugs in migration program (Count/rehearsal)<br />
+                - &nbsp;Have the migration procedures been verified?<br />
+                - &nbsp;Have the manuals been verified? (Y/N)<br />
+            </li>
+            <li>
+                Quality of switchover file<br />
+                - &nbsp;Has defective data been fixed completely? (Y/N)<br />
+            </li>
+            <li>
+                File switchover rehearsal<br />
+                - &nbsp;Required switchover time (hour)<br />
+                - &nbsp;Number of remaining troubles (Count)<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        Fall back plan
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Method<br />
+                - &nbsp;Have the procedures been verified? (Y/N)<br />
+            </li>
+            <li>
+                Judgment timing<br />
+                - &nbsp;Is this stated in the migration manual? (Y/N)<br />
+            </li>
+            <li>
+                Communication to users<br />
+                - &nbsp;Has a fallback work structure been established? (Y/N)<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        Structure for migration
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Plan<br />
+                - &nbsp;Has the plan been reviewed? (Y/N)<br />
+            </li>
+            <li>
+                Schedule<br />
+                - &nbsp;Has the schedule been confirmed by the operating and user departments and makers? (Y/N)<br />
+            </li>
+            <li>
+                Organization<br />
+                - &nbsp;Have an organization and working rules been established? (Y/N)<br />
+                - &nbsp;Has the migration training been completed? (Y/N)<br />
+            </li>
+            <li>
+                Communication structure<br />
+                - &nbsp;Is this stated in the migration manual? (Y/N)<br />
+            </li>
+            <li>
+                Recovery procedures<br />
+                - &nbsp;Have the procedures been verified? (Y/N)
+            </li>
+        </ul>
+    </li>
+</ol>
+<h4>
+    2.5&nbsp; Maintenance and Expansion After Cutover
+</h4>
+<ol>
+    <li>
+        Regression test environment 
+        <ul>
+            <li>
+                Development and maintenance standards<br />
+                - &nbsp;Are standards manuals available? (Y/N)
+            </li>
+            <li>
+                Test data<br />
+                - &nbsp;Have test databases been developed? (Y/N)<br />
+                -&nbsp;&nbsp;Have test transactions been developed? (Y/N)<br />
+                -&nbsp; Has a regression test manual been completed?<br />
+            </li>
+            <li>
+                Test tools<br />
+                - &nbsp;Are all the necessary tools available? (Y/N)<br />
+                - &nbsp;Have the libraries been defined? (Y/N)<br />
+            </li>
+            <li>
+                Test Resources<br />
+                -&nbsp; Are all the necessary resources available? (Y/N)<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        Documents and libraries 
+        <ul>
+            <li>
+                Documents<br />
+                - &nbsp;Have the External Specifications been updated? (Count/Number of subsystems)<br />
+                - &nbsp;Have the Internal Specifications been updated? (Count/Number of subsystems)<br />
+            </li>
+            <li>
+                Files<br />
+                - &nbsp;Have the library management procedures been defined? (Y/N)<br />
+                - &nbsp;Is the storage space available? (Y/N)<br />
+            </li>
+            <li>
+                Change control<br />
+                - &nbsp;Have the procedures been defined and described in the form of a manual? (Y/N)
+            </li>
+        </ul>
+    </li>
+</ol>
+<h4>
+    2.6&nbsp; Contract Achievement (Applicable to SI Contracts)
+</h4>
+<ol>
+    <li>
+        Achievement of items in contract 
+        <ul>
+            <li>
+                Number of items that may present a problem (Count/Total number)
+            </li>
+        </ul>
+    </li>
+    <li>
+        Customer assessment of SI
+    </li>
+    <li>
+        Payments
+    </li>
+</ol>
+<div style="MARGIN-LEFT: 2em">
+    <ul>
+        <li>
+            Number of pending items (Count)
+        </li>
+    </ul>
+</div>
+<h4>
+    2.7&nbsp; Criteria Management Table
+</h4>
+<p>
+    A format similar to that shown in the following table is desirable for criteria management. If a different format is
+    used, the enumerated items in the table should still be used.
+</p>
+<p>
+    <img height="427" alt="" src="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/guidelines/resources/defining_cutover_criterea.JPG" width="629" />
+</p>
+<p>
+    Management materials that back up each of the items in the above table are necessary. When the criteria are Y/N, such
+    materials are necessary for each item.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

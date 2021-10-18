@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Document Analysis Methodology</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="document_analysis_methodology">
+<meta name="uma.presentationName" content="Document Analysis Methodology">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb3B5523DAC7F4BA61852567FD0064A1AC"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb3B5523DAC7F4BA61852567FD0064A1AC"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Document Analysis Methodology</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The objective of this technique is to provide some background and methodology for performing document analysis for an eCMS project.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/document_class_def_F0EA087.html" guid="mweb75183624B95C2B1C8525688200628CD0">Document Class Definitions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Definition
+</h3>
+<p>
+    The word document generally conjures up visions of a stack of paper, bound or stapled together, intended for reading in
+    a serial fashion, from front to back.
+</p>
+<p>
+    Traditionally a document is:
+</p>
+<ul>
+    <li>
+        A mass-produced publication<br />
+    </li>
+    <li>
+        A collection of words and pictures<br />
+    </li>
+    <li>
+        Crafted by authors and illustrators.&nbsp;
+    </li>
+</ul>
+<p>
+    More recently a document has been:
+</p>
+<ul>
+    <li>
+        A publication produced at department level, to be consumed in-house<br />
+    </li>
+    <li>
+        Standardized within the company or department<br />
+    </li>
+    <li>
+        Controlled by tradition or executive direction.&nbsp;
+    </li>
+</ul>
+<p>
+    These documents were often produced in islands of automation, not generally distributed freely electronically.&nbsp;
+</p>
+<p>
+    Today a document is a structured presentation or view of information.&nbsp; It is:
+</p>
+<ul>
+    <li>
+        A collection of related information, generated and rendered as needed in whatever format is required<br />
+    </li>
+    <li>
+        Standardized by information type, audience, subject matter or other organizing principle&nbsp;<br />
+    </li>
+    <li>
+        Sometimes controlled at the source level by the tools used to create the material (using proprietary storage
+        formats or access methods) although this is what the SGML/XML standards attempt to prevent.&nbsp;
+    </li>
+</ul>
+<p>
+    Not all the information that is relevant to this new environment will be found in traditional ‘document’ formats like
+    word processing formats or printed materials; one must also look in databases, spreadsheets and other information
+    sources.&nbsp;
+</p>
+<h3>
+    Business Purpose of Document Analysis
+</h3>
+<p>
+    The business reasons for doing document analysis are to:
+</p>
+<ul>
+    <li>
+        Understand the content and structure of existing information in terms that are specific to the client’s
+        business.&nbsp;&nbsp;<br />
+    </li>
+    <li>
+        Validate current practice or design new ways of structuring and representing the information to meet the needs of
+        the business, now and in the future.&nbsp;
+    </li>
+</ul>
+<p>
+    More specifically, this analysis will show how to:&nbsp;
+</p>
+<ul>
+    <li>
+        Facilitate standardization in tools, training, information structure and content, which can improve productivity
+        and consistency<br />
+    </li>
+    <li>
+        Exploit new technologies by having well-defined, well-understood and consistent information bases which can be more
+        easily adapted to exploitation of new technologies than information organized in an ad hoc fashion or information
+        stored in proprietary formats<br />
+    </li>
+    <li>
+        Organize the information so that the information that already exists can be found and used quickly, easily and
+        reliably&nbsp;<br />
+    </li>
+    <li>
+        Exploit new business opportunities by deriving new products from existing information assets&nbsp;<br />
+    </li>
+    <li>
+        Comply with industry standards to meet regulatory requirements or contractual requirements.&nbsp;
+    </li>
+</ul>
+<h3>
+    The Scope of Document Analysis
+</h3>
+<p>
+    The scope of document analysis goes beyond analysis of ‘documents’ and includes evaluating other sources of
+    information.&nbsp; An essential part of this analysis also includes understanding the business and technical
+    environment in which information is used.&nbsp; The information and an appropriate organization for the information is
+    the key to having what is necessary to efficiently implement the functions of the system, including workflow,
+    authoring, processing, query and retrieval, print and electronic delivery.&nbsp; This analysis will affect the design
+    of components of the system outside of the information source formats (SGML, word processing, etc.).&nbsp; It will
+    effect the attributes defined in the document management system and potentially database schemas as well.&nbsp;
+</p>
+<h3>
+    The Materials Needed
+</h3>
+<p>
+    The materials typically used in a document analysis are:
+</p>
+<ul>
+    <li>
+        Overall system requirements, system functional specifications and workflow specifications (Use Case Model,
+        Non-Functional Requirements, Usability Requirements)<br />
+    </li>
+    <li>
+        ER diagrams and other data schema descriptions (Logical Data Model)<br />
+    </li>
+    <li>
+        Hardcopy and softcopy samples of documents and other information sources, training samples or source coding
+        samples, presentation style and authoring guidelines, and industry standards (Document Inventory)
+    </li>
+</ul>
+<h3>
+    Methodology
+</h3>
+<p>
+    The following is an overview of the methodology used to evaluate the materials described above.&nbsp;
+</p>
+<ol>
+    <li>
+        Find and collect the relevant materials (Collect Document Inventory)<br />
+    </li>
+    <li>
+        Examine the source material, the system requirements and other specifications&nbsp;<br />
+    </li>
+    <li>
+        Find and define document classes and their boundaries, this may include inventing containers to associate
+        information, like the term and definition in a definition list&nbsp;<br />
+    </li>
+    <li>
+        Build basic models of common structures in the data, these will probably be modified as the analysis
+        proceeds&nbsp;<br />
+    </li>
+    <li>
+        Classify, group and define the relationships between document classes&nbsp;<br />
+    </li>
+    <li>
+        Learn, standardize and record the terminology as you perform the rest of these tasks.&nbsp;
+    </li>
+</ol>
+<p>
+    See the following diagram for a pictorial overview of the Document Analysis process.
+</p>
+<p>
+    <img height="575" alt="" src="./../../../core.legacy.common_wp.extend-ibm_int/guidances/guidelines/resources/docuemnt_analysis_data_flow_diagram.JPG" width="767" />
+</p>
+<h4>
+    Choosing Sample Document Sets
+</h4>
+<p>
+    Get a sample of all document types, including all variations if possible.&nbsp; If necessary, get subsets of instances
+    but care must be taken to get as diverse a sample as is representative of the corpus of documents being analyzed.
+</p>
+<p>
+    Get samples from different sources or authors since different sources often use different conventions or procedures
+    based on their history.
+</p>
+<p>
+    Get samples of different ages since the usage of tools often changes as users come and go and the organization gets
+    more familiar with the tools in use.&nbsp;
+</p>
+<h4>
+    Where Does Information Come From?
+</h4>
+<ul>
+    <li>
+        Evaluate data flows ‘outside-in’, or from the source to its use or uses.<br />
+    </li>
+    <li>
+        When multiple sources for the same information exist, investigate and find “one true source”<br />
+    </li>
+    <li>
+        Determine the impact of changes from source to previously imported information.&nbsp;
+    </li>
+</ul>
+<h4>
+    How to Analyze Documents
+</h4>
+<ul>
+    <li>
+        Choose sample document sets focusing on the domain of interest.<br />
+    </li>
+    <li>
+        Decide what questions to ask based on business objectives.&nbsp; Use the business objectives, the system
+        requirements and system functions to focus the analysis; if no function of the system requires that some document
+        class be identified, there is little point in refining the definition of that document class.<br />
+    </li>
+    <li>
+        Evaluate the documents, tracking and combining results by document type:<br />
+    </li>
+    <li>
+        Characteristics or semantics<br />
+    </li>
+    <li>
+        Internal structure<br />
+    </li>
+    <li>
+        Context.&nbsp;<br />
+    </li>
+    <li>
+        Build terminology and define structure for the document classes as described above.&nbsp;<br />
+    </li>
+    <li>
+        Differentiate between true structural or semantic differences and pure presentation differences.&nbsp;
+    </li>
+</ul>
+<h4>
+    Document Evaluation Questions
+</h4>
+<ul>
+    <li>
+        What basic types of information do/should various types of publications contain?<br />
+    </li>
+    <li>
+        What information is required by the processes and functions supported by the system?<br />
+    </li>
+    <li>
+        What does the style of presentation or the organization of the information tell me about the purpose and value of
+        the document object?&nbsp;<br />
+    </li>
+    <li>
+        Where are publications and/or information needed by processes and functions of the system inconsistent or redundant
+        and why?<br />
+    </li>
+    <li>
+        What external and internal standards apply?<br />
+    </li>
+    <li>
+        How do existing concepts of information and corresponding standards relate?
+    </li>
+</ul>
+<p>
+    For each document type:
+</p>
+<ul>
+    <li>
+        Who is the audience for this document type?<br />
+    </li>
+    <li>
+        What is the stated purpose of the document, if not stated, surmise what it is.<br />
+    </li>
+    <li>
+        What average document size was observed?<br />
+    </li>
+    <li>
+        What are the relative sizes of the major parts of the document?<br />
+    </li>
+    <li>
+        What is the character of the graphic content: type of graphics (scanned image, vector), size of the graphics on the
+        page, size of the graphics files, format of the graphics files<br />
+    </li>
+    <li>
+        What retrievability and navigation aids are present in the document?&nbsp; Table of contents, indices, etc.&nbsp;
+        What retrievability and navigation aids should be present?<br />
+    </li>
+    <li>
+        What other information is referenced?&nbsp; Links, bibliographic references, footnotes, etc.&nbsp;
+    </li>
+</ul>
+<p>
+    For a specific document class:
+</p>
+<ul>
+    <li>
+        What is the semantic of the document class?&nbsp; What does it mean?&nbsp; What does it represent?<br />
+    </li>
+    <li>
+        What system functions, workflow functions, use this class of information?<br />
+    </li>
+    <li>
+        What structure is the class part of?&nbsp; In what contexts is it used?&nbsp; What internal structure comprises the
+        class?&nbsp;<br />
+    </li>
+    <li>
+        What are the requirements or constraints on the document classes, for example a row cannot have more cells than
+        there are columns defined for it?<br />
+    </li>
+    <li>
+        What is the content of the document class, including additional document classes?&nbsp; For example, it may be
+        useful to define subclasses for fielded information like dates, addresses and many other classes of
+        information<br />
+    </li>
+    <li>
+        What are the relationships within this class or with other document classes: sequence, number of occurrences,
+        references?
+    </li>
+</ul>
+<p>
+    When going through this analysis, be sure to:
+</p>
+<ul>
+    <li>
+        Document samples of the valid instances of the document class<br />
+    </li>
+    <li>
+        Create class and document structure models based on the collection of document class definitions just created.
+    </li>
+</ul>
+<p>
+    Also note that:
+</p>
+<ul>
+    <li>
+        Document classes should make sense in the application domain<br />
+    </li>
+    <li>
+        Document classes will often correspond to nouns in requirements or functional descriptions
+    </li>
+</ul>
+<h4>
+    Describing Structure
+</h4>
+<p>
+    Remove inconsistency and redundancy that involves looking at all the defined document classes.&nbsp;
+</p>
+<ul>
+    <li>
+        Differentiate objects which differ in structure, content or attributes<br />
+    </li>
+    <li>
+        Add non-presentation structure where useful such as grouping elements<br />
+    </li>
+    <li>
+        Change non-standard structure to conform to standard structures
+    </li>
+</ul>
+<p>
+    Keep business and technical goals in mind: system function support, reuse, interchange, storage, convertibility.
+</p>
+<h4>
+    Object-Oriented Design and Document Analysis
+</h4>
+<p>
+    In some ways, the process of identifying document classes and objects to be implemented in a software system can be
+    very similar.&nbsp; Document classes are or contain data that is quantified into discrete, distinguishable
+    entities.&nbsp; Objects that have the same internal data structure and have the same behaviors when processed are
+    typically grouped into a class.&nbsp; Document classes may also share attributes and behaviors where ‘lower-level’ or
+    subclasses have the characteristics of the ‘higher-level’ superclasses, adding a few of their own (called inheritance)
+    or replacing them, called overloading.&nbsp; For document classes, like other object classes, it is possible to exploit
+    this kind of sub-classing in the implementation system using common code to process sub-classed information objects.
+</p>
+<p>
+    One point of confusion when dealing with document classes to be implemented using SGML/XML is that SGML, XML and other
+    similar markup systems have the concept of an instance hierarchy which really represents the structure of the content
+    of the higher level element.&nbsp; This is not the same inheritance in the object oriented design sense but it is
+    possible for some SGML/XML designs to specify the inheritance of properties (often specified as attributes) down this
+    instance hierarchy (font, point size, user level, operating system applicability) and even up that hierarchy (security
+    classification).&nbsp; This may be viewed as an association in OO terms, however in SGML/XML it is a very special
+    association because it is intrinsic to the markup system.&nbsp; It may be that in some cases, containment may be used
+    to represent other types of associations that document analysis uncovers, but that is an implementation concern.&nbsp;
+    Aggregation also represents this type of relationship.&nbsp;
+</p>
+<p>
+    There are several themes from the object-oriented design arena that have an important place in document analysis.
+</p>
+<p>
+    <strong>Abstraction</strong>
+</p>
+<p>
+    An important part of any analysis, this is the act of focusing on the essential characteristics of a piece of
+    information, ignoring those properties that are not a part of the object’s essence.&nbsp; A good test for this is
+    comparing two object instances and determining if they are the same class, in spite of their differences.&nbsp; If they
+    are, then the properties that do differ are not essential to the definition of that class.&nbsp;
+</p>
+<p>
+    <strong>Encapsulation</strong>
+</p>
+<p>
+    In document analysis, this means grouping information together at the appropriate level in the document’s
+    structure.&nbsp; In SGML, this is typically done using a hierarchy of containing elements.&nbsp; In the programming
+    domain, appropriate encapsulation prevents small local changes in a program from rippling across the entire program or
+    system.&nbsp; In information design, appropriate encapsulation enables reuse since the information most likely to be
+    reused as a unit is grouped together while unneeded information is not included.&nbsp; It also may mean that the
+    information to be processed is available when needed, not found in another part of the document or database.
+</p>
+<p>
+    <strong>Emphasis on Object Structure, Not Presentation Structure</strong>
+</p>
+<p>
+    As is found in object-oriented design, there is a pronounced emphasis on object structure, what an object is, rather
+    than how it is used, its presentation or processing.&nbsp; It is common to use information’s presentation or processing
+    as one defining characteristic of a given document object’s definition but not usually the defining
+    characteristic.&nbsp;
+</p>
+<p>
+    <strong>Synergy</strong>
+</p>
+<p>
+    Design is often a compromise but a good design finds ways to maximize the synergy of these factors while minimizing the
+    mismatches.&nbsp;
+</p>
+<p>
+    On the other hand, some aspects of object-oriented design are less useful in the document analysis.&nbsp; Combining
+    data and behavior falls into this category.&nbsp;
+</p>
+<p>
+    An excellent summary of how to identify and eliminate candidate objects and attributes can be found in Object-Oriented
+    Modeling and Design by Rumbaugh, et al. in Chapter 8, Analysis.&nbsp; Generally, class inheritance is not part of the
+    Document Analysis.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

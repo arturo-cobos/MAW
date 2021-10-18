@@ -1,0 +1,851 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Implementation Cutover Plan Testing</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="implementation_cutover_plan_testing">
+<meta name="uma.presentationName" content="Implementation Cutover Plan Testing">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mwebC01CEFED67E1409F852569A5006C71ED"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebC01CEFED67E1409F852569A5006C71ED"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Implementation Cutover Plan Testing</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1&nbsp;Description
+</h3>
+<p>
+    The objective of this technique paper is to identify steps to corroborate assumptions and logistics identified in the
+    Implementation Cutover plan. This document may be considered a quality control checklist for consideration during the
+    period leading up to full deployment.
+</p>Deployment, or cutover planning, is a set of tasks which both the client and project team agree are necessary to
+install and test the new system. Verifying that the cutover plan is workable and complete is crucial to ensuring the plan
+is built properly, that the installation will be seamless, and ultimately, that the user will not be unduly interrupted. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>Testing a cutover plan encompasses the following major areas: 
+<ul>
+    <li>
+        Ensuring that data conversion and data migration can be implemented securely
+    </li>
+    <li>
+        Verifying the readiness of all hardware, software and infrastructure components
+    </li>
+    <li>
+        Verifying that user needs before, during and following cutover, will be met
+    </li>
+</ul>
+<p>
+    The purpose of this technique paper is to provide guidance on the steps in assessing the readiness of all stakeholders
+    to accept and use the new system and to confirm the testing steps which must be completed before cutover commitment
+    takes place.
+</p>The steps within each section may be performed in parallel, or in any sequence. The steps may involve large communities
+within the organization, from purchasing to facilities management, and/or from training departments to help desks. Each of
+these verification steps must be coordinated by joint teams involving the project manager (IBM and client), systems
+architect, developers, testers and business users. 
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>When verifying cutover plans, some high-level recommendations include: 
+<ul>
+    <li>
+        Adhere to a regimen of staged sign-offs or approvals (e.g. "go" / "no go" decisions) as you execute the cutover
+        plan to ensure that tasks within each step do not get missed
+    </li>
+    <li>
+        When qualifying what functions require scrutiny in the cutover plan, consider those functions which match the
+        criteria "high risk, high usage, and /or high visibility"
+    </li>
+    <li>
+        Ensure all contractual obligations will be met by the implementation
+    </li>
+    <li>
+        Validate that all objectives are met as evidenced through system testing
+    </li>
+</ul>
+<h3>
+    2&nbsp;Steps
+</h3>
+<p>
+    A checklist of verification steps form the basis of testing an Implementation Cutover Plan:
+</p>
+<ol>
+    <li>
+        Verification of training, education, and skill levels<br />
+    </li>
+    <li>
+        Verification of timing of cutover including schedules and milestones<br />
+    </li>
+    <li>
+        Verification that infrastructure and components are in place<br />
+    </li>
+    <li>
+        Verification of site surveys, site plans, and specifications<br />
+    </li>
+    <li>
+        Confirmation of user support readiness prior to, during and following cutover<br />
+    </li>
+    <li>
+        Confirmation of hardware and software acquisition, delivery and installation logistics<br />
+    </li>
+    <li>
+        Verification of data backup, conversion and migration procedure&nbsp;<br />
+    </li>
+    <li>
+        Review Preparedness and confirm expectations of user community
+    </li>
+</ol>
+<p>
+    The following subsections describe these verification steps in more detail:
+</p>
+<h4>
+    2.1&nbsp; Verification of training, education, and skill levels
+</h4>
+<ul>
+    <li>
+        Selected training strategies are consistent or compatible with the current or planned end user technology
+        environment 
+        <ul>
+            <li>
+                If several methods were used to provide training, verify the suitability of the training method to suit
+                user needs<br />
+            </li>
+            <li>
+                Where a group of users have difficulty completing work in a test environment, re-evaluate whether the
+                training method or level of detailed instruction is at fault
+            </li>
+        </ul>
+    </li>
+    <li>
+        Additional training is planned to provide expanded user knowledge and in-depth training for key users<br />
+    </li>
+    <li>
+        Procedure manuals and user instructions have been exercised during Acceptance testing. Errors caught during testing
+        should be re-tested using walkthroughs and pilot install techniques<br />
+    </li>
+    <li>
+        New roles staffed and new responsibilities are documented as verified during User Acceptance<br />
+        <ul>
+            <li>
+                Consideration has been made for those who will be involved in pilot tests (advanced training) or parallel
+                testing (additional staff) when staffing<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        Objectives of user training have been met as measured by the user community 
+        <ul>
+            <li>
+                All usability and operability functions are accepted by the user community<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        Customization of menus required to access new system has been completed and verified 
+        <ul>
+            <li>
+                Typically, main menu panels must be updated to enable access to new system functions<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        All user ids,&nbsp; passwords, and network access have been made available to meet the rollout schedule<br />
+    </li>
+    <li>
+        Maintenance team to support new application is staffed and trained<br />
+    </li>
+    <li>
+        Mentoring has been considered as a means to augment training&nbsp; 
+        <ul>
+            <li>
+                Responsibility has been assigned and individual acceptance of the role has been obtained<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        A pre-rollout pilot is&nbsp; scheduled to verify user training, user documentation, and staffing
+        requirements&nbsp;<br />
+    </li>
+    <li>
+        Cutover rehearsals have been scheduled and conducted 
+        <ul>
+            <li>
+                Use the experience to refine time estimates, document procedures, and identify gaps
+            </li>
+            <li>
+                After making changes, walk through the schedules and documentation to ensure that the process continues to
+                ‘make sense’
+            </li>
+        </ul>
+    </li>
+</ul>
+<h4>
+    2.2&nbsp; Verification of timing of cutover including schedules and milestones
+</h4>
+<ul>
+    <li>
+        Verify that schedule does not conflict with highly ‘sensitive’ timeframes such as period end, month end, quarter
+        end, etc.&nbsp; Also, avoid periods of high business/transaction volumes, if possible<br />
+    </li>
+    <li>
+        Sequencing of activities has been reviewed<br />
+    </li>
+    <li>
+        Schedule allows for reasonable delays in shipping or setup such that equipment can be operational before the
+        cutover or pilot processing begins<br />
+    </li>
+    <li>
+        Schedule allows time for restoration of the old system (fall-back plan) prior to the final “go/no go” decision.
+        Include:<br />
+        - &nbsp;Library reallocation<br />
+        - &nbsp;Disk/file reallocation<br />
+        - &nbsp;Existing database and file conversion<br />
+        - &nbsp;New database and file loading<br />
+        - &nbsp;Network switch over<br />
+        - &nbsp;System parameter switches<br />
+        - &nbsp;Old system backup<br />
+    </li>
+    <li>
+        Cutover plan is built according to milestones (e.g. cutover tasks to be completed 2 weeks prior to going live, 1
+        day before going live, weekend of going live, first day after going live, etc.)<br />
+    </li>
+    <li>
+        Time is allowed after cutover before clean-up operations commence to ensure system stability<br />
+    </li>
+    <li>
+        Skills have been identified:<br />
+        - &nbsp;Proper resources have been assigned/committed according to the schedule<br />
+        - &nbsp;Each task is assigned to an individual and confirmation of the completed task will be relayed to the
+        cutover coordinator<br />
+        - &nbsp;A clear and complete responsibility matrix is agreed upon and communicated to each team member, including
+        users, quality assurance (QA), technical support, architects, network specialists, and project managers (PMs)<br />
+        - &nbsp;Note that although frequently the test manager and application development manager are not directly
+        involved in the cutover, they should be on site during the cutover for support purposes because of their experience
+        with the system
+    </li>
+</ul>
+<h4>
+    2.3&nbsp; Verification that infrastructure and components are in place
+</h4>
+<ul>
+    <li>
+        Project reporting procedures, escalation procedures, and issue management are in place up to the client management
+        and sponsor level until the project is officially closed<br />
+    </li>
+    <li>
+        Change Management is engaged and prepared<br />
+    </li>
+    <li>
+        Problem Management is engaged and prepared<br />
+        -&nbsp; The Project Manager should be prepared for “hard-ball” decisions on whether a problem is really a Severity
+        1, 2, or 3.&nbsp; Although it may contradict the original plan, with the stakeholder’s approval, many installations
+        often decide to proceed into production with Severity 2 problems outstanding depending on the risk incurred<br />
+    </li>
+    <li>
+        Space allocation is checked against latest volume predictions<br />
+    </li>
+    <li>
+        Operations and systems management teams are fully advised and have approved desired schedules including staging of
+        systems, and backups, as well as fallback/recovery stages<br />
+    </li>
+    <li>
+        A centralized ‘burn-in’ center has been established to setup workstations, load software and verify consistency and
+        accuracy of installation prior to shipment to the final destination<br />
+        - &nbsp;This is an effective tool to maximize use of resources and improve quality of the workstation
+        configuration<br />
+        -&nbsp; The burn-in center has an additional advantage of providing a single receiving point for components (e.g.
+        UPS, PC, cables and software may come from different locations)<br />
+    </li>
+    <li>
+        Installability testing performed:<br />
+        - &nbsp;Is the installation document complete and correct?<br />
+        -&nbsp; Is machine-readable data in the correct format?<br />
+        - &nbsp;Can the JCL or EXECs be tailored to meet local standards<br />
+        - &nbsp;Are all required components in the installation package?<br />
+        - &nbsp;Does the installation package include test data? Does it run?<br />
+    </li>
+    <li>
+        Are installation tuning parameters provided? Are they documented?<br />
+        Environment testing performed:<br />
+        - &nbsp;All required members and files have been transferred to the production libraries<br />
+        -&nbsp;&nbsp;Application works in production environment (e.g. through a pilot test or running the application on
+        the weekend etc.)<br />
+        - &nbsp;All batch jobs run with all job and file dependencies satisfied and can be completed within batch
+        processing window<br />
+        -&nbsp; All situations, such as daily and month-end, tested<br />
+    </li>
+    <li>
+        Metrics are in place for measurement and processes developed to correct deficiencies<br />
+        -&nbsp; Processes in place to collect / assimilate all information<br />
+        - &nbsp;Performance measurement tools enabled<br />
+        - &nbsp;Predicted volumes in place, reporting scheduled and reporting audience prepared<br />
+    </li>
+    <li>
+        Security procedures have been tested during Acceptance testing and all issues resolved<br />
+    </li>
+    <li>
+        Old system has been left in place for backup purposes for an adequate period of time although transition to the
+        production environment has already occurred<br />
+    </li>
+    <li>
+        Software Configuration Management (SCM) is established:<br />
+        - &nbsp;Service level objectives are in place<br />
+        - &nbsp;SCM activities are planned, and the plan is documented and approved by all stakeholders<br />
+        - &nbsp;Selected software work products are identified, controlled and available<br />
+        - &nbsp;Changes to identified software work products are controlled and problems are recorded/reviewed<br />
+        - &nbsp;Installation includes a basic installation verification check to ensure all components are
+        operational<br />
+        - &nbsp;Affected groups and individuals are informed of the status and content of software baselines<br />
+        - &nbsp;Project follows a written organizational policy for implementing SCM<br />
+        -&nbsp; A board having authority for managing the project’s software baselines exists<br />
+        -&nbsp; A group responsible for coordinating and implementing SCM for the project exists<br />
+        - &nbsp;Members of the SCM group are trained in procedures and methods to perform SCM activities<br />
+        - &nbsp;Standard reports on SCM activities are developed and made available to affected groups<br />
+    </li>
+</ul>
+<h4>
+    2.4&nbsp; Verification of site surveys, site plans, and specifications<br />
+</h4>
+<ul>
+    <li>
+        Inventory of locations including current addresses, cable identification, and LAN ids is available<br />
+    </li>
+    <li>
+        Updated inventory including cross-reference of changes to current sites and new locations is available<br />
+    </li>
+    <li>
+        Transition plan to accommodate changes is established<br />
+    </li>
+    <li>
+        All outstanding orders are checked:<br />
+        - &nbsp;No backorders exist<br />
+        - &nbsp;All deliveries are scheduled<br />
+        - &nbsp;All receiving location addresses are verified and personnel have been notified<br />
+        - &nbsp;All shippers are confirmed<br />
+    </li>
+    <li>
+        Access to all locations by assigned personnel is authorized, including third party suppliers, and their
+        agents<br />
+    </li>
+    <li>
+        All phone orders, lines, number assignments, deactivations, and reconfigurations are confirmed<br />
+    </li>
+    <li>
+        Circuit diagrams are updated and complete
+    </li>
+</ul>
+<h4>
+    2.5&nbsp; Confirmation of user support readiness prior to, during and following cutover
+</h4>
+<ul>
+    <li>
+        Support roles are defined and staffed<br />
+    </li>
+    <li>
+        Support criteria are defined:<br />
+        - &nbsp;Help desk questions<br />
+        -&nbsp; Error reporting processes<br />
+        -&nbsp; Feedback mechanisms<br />
+    </li>
+    <li>
+        User support criteria is met as verified during acceptance tests<br />
+    </li>
+    <li>
+        Requirements compared to final delivery functions are traced, a gap analysis has been performed, and final sign-off
+        from users has been obtained<br />
+    </li>
+    <li>
+        Full staff support is in place during cutover, key processing periods (first business day, weekend, month-end,
+        etc), system catch-up phase (recovering from deferred transactions during planned system outage), and
+        back-out/recovery, if necessary<br />
+    </li>
+    <li>
+        Communications plan is established:<br />
+        - &nbsp;Cutover to a new system utilizes more staff and impacts more people than at any other time in the life of
+        the project.&nbsp; Although communication occurs throughout cutover, the importance of effectively communicating –
+        progress, problems, updates – is critical to successful deployment. A cutover ‘kick-off’ meeting is one technique
+        that sets the direction for all follow-on tasks.&nbsp; The cutover kick-off meeting should have, as its purpose, to
+        review all items which are new and potentially unfamiliar to the participants such as:
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        Objectives of the rollout and the rollout acceptance (exit) criteria
+    </p>
+    <p>
+        Roles and responsibilities of each participant
+    </p>
+    <p>
+        Cutover plan and schedule and fallback procedure in case of an outage or failure of the new system
+    </p>
+    <p>
+        Batch data transmission schedules
+    </p>
+    <p>
+        Contents of the documentation
+    </p>
+    <p>
+        Help desk procedures
+    </p>
+    <p>
+        System support procedures
+    </p>
+    <p>
+        Production procedures
+    </p>
+    <p>
+        System startup and shutdown procedures and schedule
+    </p>
+    <p>
+        Security procedures
+    </p>
+    <p>
+        Data backup and restore procedures
+    </p>
+    <p>
+        New report formats and distribution schedules
+    </p>
+    <p>
+        Manual procedures which are being introduced
+    </p>
+    <p>
+        Audit procedures
+    </p>
+    <p>
+        Processes to be followed to phase out the old system
+    </p>
+    <ul>
+        <li>
+            Executive communications very important - A status call-in phone number is established for executives/decision
+            makers to hear a voice recording of up to minute progress during cutover.&nbsp; In practice, this has proven to
+            be a very efficient, effective, and time/cost saving technique to keep executives informed<br />
+        </li>
+        <li>
+            Notification process is prepared and ready to send according to defined schedule identifying each planned
+            disruption<br />
+        </li>
+        <li>
+            A communication plan must also consider what information is pertinent to the general public, especially in the
+            light that the new deployment may suffer setbacks in terms of decreased functionality, decreased performance or
+            total rollback to conditions prior to cutover acceptance.&nbsp; This part of the plan and its various
+            contingencies must be developed and reviewed very early in the cutover strategy process to enable all
+            stakeholders to consider wording, timing, media, etc.<br />
+        </li>
+        <li>
+            Pagers are available to contact decision-makers during cutover
+        </li>
+    </ul>
+</blockquote>
+<ul dir="ltr">
+    <li>
+        All workflow procedures and processes are consistent with the ‘new’ system and infrastructure. (Cutover will
+        undoubtedly be ineffective if the business process surrounding the new system implementation has not been
+        effectively tailored.)
+    </li>
+</ul>
+<h4>
+    2.6&nbsp; Confirmation of hardware and software acquisition, delivery and installation&nbsp;&nbsp;&nbsp; logistics
+</h4>
+<ul>
+    <li>
+        Hardware / software meets scalability targets for deployment based on expected transaction volumes and rollout
+        targets<br />
+    </li>
+    <li>
+        Risk mitigation process is in place in case volumes exceeded and/or schedules advanced<br />
+    </li>
+    <li>
+        PC software and associated device configuration standards are established, and rollout and installation plans are
+        verified via a walk-through<br />
+    </li>
+    <li>
+        As cutover begins, there will a need to identify, and correct misinformation.&nbsp; Here are some of the situations
+        which often occur and the plan must address them: 
+        <ul>
+            <li>
+                The client machine is not the same configuration (software or hardware) as that originally
+                inventoried<br />
+            </li>
+            <li>
+                The client machine is correctly configured but when software is installed, it appears to operate
+                differently than expected (e.g. Perhaps due to additional conflicting software, or a virus)<br />
+            </li>
+            <li>
+                The client machine is correctly configured and the installation goes smoothly, but the user operates the
+                device in a non-conventional manner.&nbsp; This concept of users of new systems acting in an erratic manner
+                is frequently prevalent and may cause large increases in Help Desk calls, or server transaction volumes.
+            </li>
+        </ul>
+    </li>
+</ul>
+<h3>
+    2.7&nbsp; Data backup, conversion and migration procedure verification
+</h3>
+<ul>
+    <li>
+        Backup procedures are in place and scheduled<br />
+        -&nbsp; Application must be capable of being restarted after failure (e.g. restoring data sets, backing out
+        changes, restarting or canceling jobs<br />
+        - &nbsp;Copies of critical programs, data, and documents stored off site as part of the vital records program<br />
+        - &nbsp;The following should be tested:
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        Can a checkpointed program be successfully restarted from a checkpoint?
+    </p>
+    <p>
+        Can a batch job be successfully restarted at any step marked restartable
+    </p>
+    <p>
+        Can a batch job be successfully cancelled and rerun another day
+    </p>
+    <p>
+        If an on-line program fails, are partial data updates correctly backed out?
+    </p>
+    <p>
+        Can vital record data be used to recreate the application?
+    </p>
+</blockquote>
+<ul>
+    <li>
+        All tasks that must be performed manually are staffed, backups are assigned, backout procedures are in place, and
+        training has been completed<br />
+    </li>
+    <li>
+        Conversion, migration, and archive strategy and criteria are in place<br />
+    </li>
+    <li>
+        Procedure to access archived data is documented and distributed to all users and has been tested<br />
+    </li>
+    <li>
+        Data conversion specifications may be site specific; thus, instructions for each site have been tailored as
+        necessary<br />
+    </li>
+    <li>
+        Data owners (3rd party, department, individual) have signed off acceptability<br />
+    </li>
+    <li>
+        Data verification reports have been run and checked for accuracy (hash totals)<br />
+    </li>
+    <li>
+        Data initialization verification has been performed<br />
+        - &nbsp;Run jobs with null data as typical with conditions to be expected of a new system (e.g.&nbsp; new period
+        end, new month-end, etc.)<br />
+    </li>
+    <li>
+        All entry and exit criteria are met during User Acceptance testing under ‘live’ conditions<br />
+        -&nbsp; Each data extraction, conversion, data formatter, copy or archive process is exercised, results are
+        verified under ‘live’ conditions<br />
+        -&nbsp;&nbsp;Data conversion/ migration should be tested immediately before going live and data used as input to
+        start-up cycle to test compatibility with new system being implemented<br />
+    </li>
+    <li>
+        Define and communicate limitations of Database Fallback and Roll Forward<br />
+        -&nbsp; After x number of production hours/days, a database fallback may no longer be possible and/or
+        practical.&nbsp; The window to update the old database with production transactions since the cutover may be
+        impractical or impossible<br />
+    </li>
+    <li>
+        Test and verify all interfaces to the new system including manual, automated<br />
+        -&nbsp; All systems have interfaces, whether to a human/manual process, a legacy system, or a recently introduced
+        client server application. Frequently, interfaces involve business partners such as EDI applications, web
+        applications or electronic transmission of business data. Each of these interfaces represent points of failure
+        which must be thoroughly tested, results verified and signed off before deployment.&nbsp;<br />
+    </li>
+</ul>
+<h4>
+    2.8&nbsp; Review Preparedness and confirm expectations of user community
+</h4>
+<ul>
+    <li>
+        Degree of schedule attainment during Acceptance testing is an indicator of level of user readiness<br />
+    </li>
+    <li>
+        Think about the unthinkable – develop a fallback plan and establish a formal plan to invoke it with the user
+        community.&nbsp;&nbsp; The plan must include go-no go decision points, communications steps, in addition to full
+        details.&nbsp; Be clear in terms of the desired fallback position (eg.&nbsp; How much to back out, final
+        configuration/ level of software the client machine should end up with, etc)<br />
+    </li>
+    <li>
+        Make precise decision trees with user executives about who calls a fallback<br />
+    </li>
+    <li>
+        Do not assume that users will continue to react the same way immediately after cutover<br />
+        <ul>
+            <li>
+                For example, users who were used to getting system responses in a certain time period, knowing there was a
+                new system at work, would do things that were not at all reasonable such as re-booting, canceling and
+                re-entering etc. This drives the transaction load up on parts of the system far beyond the design
+                points<br />
+            </li>
+            <li>
+                As an offset against getting unexpected behavior from users, test their role in cutover by reviewing
+                expectations with them.&nbsp; Provide users with an understanding of the following considerations:
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    Value and Function they will obtain right away
+</p>
+<p>
+    Value and Function they will see over a longer term
+</p>
+<p>
+    Limitations or impact they may expect in the short term, such as events that may cause them to feel anxiety in the
+    first 5 minutes, during the first week, etc.&nbsp; Rehearse the steps to communicate problems so that implementors can
+    fix them
+</p>
+<p>
+    Based on the pilot or user acceptance tests, review changes that have occurred that they may not be expecting
+</p>
+<p>
+    Rehearse the users role in the fallback plan
+</p>
+<ul>
+    <li>
+        Try to predict the number of Severity 1, 2, and 3 errors that exist before cutover starts and those that will arise
+        during and following cutover.&nbsp; Attempt to get user agreement to this number<br />
+    </li>
+    <li>
+        When users know they had approved a cutover with X number of Severity 2 errors, this can make the hours/days/weeks/
+        after cutover much less stressful
+    </li>
+</ul>
+<h4>
+    2.9&nbsp; General Hints, Tips, and Considerations
+</h4>
+<ul>
+    <li>
+        The process of thinking, planning and conducting rehearsal cutovers and fallback provides the team with a great
+        deal of confidence in the final cutover.&nbsp; Cutover rehearsals are done with a view that you will never need to
+        fallback.&nbsp; However, the process of thinking about fallback often points out areas where partial fallback is
+        possible. This in turn provides insights to cutover activities that can be reorganized to make the staging of the
+        cutover in smaller phases with intermediate checkpoints a possibility (e.g. some place where data stands still for
+        a little while). This can reduce project risk<br />
+    </li>
+    <li>
+        Perform a risk assessment<br />
+        -&nbsp; The cutover plan must be very thorough. Consider using static walkthroughs.&nbsp; Review what to
+        test.&nbsp;Review schedule and resource plans.&nbsp;&nbsp;Ensure that any vacation constraints are reflected in the
+        project plan<br />
+        -&nbsp; Focus on high risk, high usage and high visibility functionality and/or applications.&nbsp; (Note:&nbsp;
+        sometimes only one application is being implemented and a focus is on the functionality)<br />
+        - &nbsp;Set client expectations at the outset<br />
+        - &nbsp;Ensure that you have client consensus/sign-off<br />
+    </li>
+    <li>
+        Document for each step of conversion process:<br />
+        - &nbsp;What the major points of failure or risk are<br />
+        - &nbsp;Completion criteria<br />
+        - &nbsp;Steps to backout<br />
+        - &nbsp;Steps for manual override<br />
+    </li>
+    <li>
+        Encourage a "Learning Organization" - hold a post-implementation review for “lessons learned”
+    </li>
+</ul>
+<h3>
+    3&nbsp;Roles and Responsibilities
+</h3>
+<ul>
+    <li>
+        Systems administration<br />
+        - &nbsp;Operations Test Exit Criteria passed&nbsp;<br />
+        - &nbsp;New Operational Procedures developed<br />
+        - &nbsp;Implementation steps and tasks defined, documented and understood<br />
+        - &nbsp;Education and/or training completed prior to implementation for key staff<br />
+        - &nbsp;Security authorization requirements defined, documented and understood<br />
+        - &nbsp;Monitor system to validate new capacity plan meets SLA (Service Level Agreement) targets (e.g. users, CPU
+        capacity, channel activity etc.)<br />
+    </li>
+    <li>
+        Database management<br />
+        - &nbsp;Tools identified for implementation and cutover&nbsp;<br />
+        - &nbsp;Data migration plan documented (and reversible)<br />
+        - &nbsp;Data conversion plan documented<br />
+        - &nbsp;Plan for data maintenance during data conversion timeframe from source production database<br />
+        - &nbsp;Define, document and communicate limitations to database fallback and roll forward timeframes<br />
+        - &nbsp;Familiarity with new database architecture<br />
+    </li>
+    <li>
+        User Help Desk<br />
+        - &nbsp;Included in operations high level training&nbsp;<br />
+        - &nbsp;All key contacts should be documented and/or an escalation procedure well defined during early production
+        stages<br />
+    </li>
+    <li>
+        Network/LAN/WAN Support group<br />
+        - &nbsp;Included in operations high level training&nbsp;<br />
+        - &nbsp;Operations network test exit criteria passed<br />
+        - &nbsp;New network operations procedures developed<br />
+        - &nbsp;Implementation steps and tasks defined, documented and understood<br />
+        - &nbsp;Education and/or training completed prior to implementation for key staff<br />
+        - &nbsp;Security authorization requirements defined, documented and understood<br />
+        - &nbsp;Monitor network to validate new capacity plan meets SLA (Service Level Agreements) targets (e.g.
+        transmission time, block sizes etc.)<br />
+        - &nbsp;External client validation of connectivity to new functionality/application etc.<br />
+    </li>
+    <li>
+        HVAC systems engineering<br />
+        - &nbsp;Air cooling capacity planned and verified, and monitor for production use&nbsp;<br />
+        -&nbsp; Installations coordinated and/or completed before cutoff plan implemented<br />
+        - &nbsp;Update Business Continuity Plan if applicable<br />
+        - &nbsp;When implementation exit criteria has been completed, plan to remove old hardware configuration should be
+        executed<br />
+    </li>
+    <li>
+        Project manager<br />
+        - &nbsp;Creation of Go-Live report<br />
+        - &nbsp;Act as cutover coordinator or oversee those to whom assignment was delegated<br />
+        -&nbsp; Client sign off on all deployment criteria<br />
+        - &nbsp;Part of team to develop final recommendation to executive sponsor
+    </li>
+</ul>
+<h3>
+    4&nbsp;Examples
+</h3>
+<ul>
+    <li>
+        Best Practices<br />
+        -&nbsp; FIT for Cutover major elements slide from ICM Assetweb database: Application Design & Delivery &gt;
+        Deployment &gt; Cutover to Implementations&nbsp; (see Attachment #1)<br />
+    </li>
+    <li>
+        Real-life project examples / Templates<br />
+        -&nbsp; Test Plan Considerations Framework and Example (see Attachment #2 & #3)<br />
+        - &nbsp;Test Plan Checklist (see Attachment #4)
+    </li>
+</ul>
+<p>
+    Application Change Management (Install Phase) Checklist (see Attachment #5)
+</p>
+<h3>
+    5&nbsp;References
+</h3>
+<ul>
+    <li>
+        Internet/intranet sites:&nbsp;<br />
+        - &nbsp;Software Engineering Information Repository - <a href="http://seir.sei.cmu.edu/">http://seir.sei.cmu.edu/</a>&nbsp;<br />
+        - &nbsp;Testing Methods & Practice Database on the ICM AssetWeb<br />
+        -&nbsp; Software Testing Technologies Group (STTG)<br />
+        -&nbsp; Methods and Tools - <a href="http://w3-5.ibm.com/transform/project/pmtoolsuite/">http://w3-5.ibm.com/transform/project/pmtoolsuite/</a><br />
+        -&nbsp; Software Test discussion forum - <a href="http://wwwidd.raleigh.ibm.com/swtest/forum.html">http://wwwidd.raleigh.ibm.com/swtest/forum.html</a><br />
+    </li>
+    <li>
+        Books, journals, articles:&nbsp;<br />
+        -&nbsp; Software Engineering:&nbsp; A Practitioner's Approach, Roger S. Pressman, McGraw Hill, 1997<br />
+        - &nbsp;Handbook of Software Quality Assurance&nbsp; 3rd Edition, C. Gordon Schulmeyer/James I. McManus, Prentice
+        Hall, 1998<br />
+    </li>
+    <li>
+        Education:&nbsp;<br />
+        -&nbsp; Learning Tree International:&nbsp; Practical Software Testing Course - 4 days&nbsp;&nbsp; 1-800-267-1696
+    </li>
+</ul>
+<p>
+    IBM Testing Symposium - Best Practices including Implementation/Cutover
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/examples/test_plan_checklist_2FC01478.html" guid="_s5q3MMiMEdyR2PoKIUdueg">Test Plan Checklist</a>
+</li>
+<li>
+<a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/examples/test_plan_considerations_D9434452.html" guid="_tWIJsMiMEdyR2PoKIUdueg">Test Plan Considerations</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Supporting Materials</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/supportingmaterials/app_chng_mgmt_checklist_1F7313AB.html" guid="mweb037191023668981406">Application Change Management Checklist</a>
+</li>
+<li>
+<a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/supportingmaterials/fit_for_cutover_1F7313A7.html" guid="mweb037191023668981402">FIT for Cutover - Major Elements</a>
+</li>
+<li>
+<a href="./../../../core.legacy.common_gdnc.extend-ibm_int/guidances/supportingmaterials/test_plan_considerations_template_1F7313A8.html" guid="mweb037191023668981403">Test Plan Considerations - Template</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

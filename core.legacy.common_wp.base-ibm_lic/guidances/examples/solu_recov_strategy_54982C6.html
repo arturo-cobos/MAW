@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Solution Recovery Strategy</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="solu_recov_strategy">
+<meta name="uma.presentationName" content="Solution Recovery Strategy">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_3GUrgDNqEdyrqJ43F5V_SA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Solution Recovery Strategy</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This is the example of a manufacturer that assembles end product from parts purchased through two key suppliers. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/solution_recovery_strategy_A59D60A5.html" guid="mweb42B290122CF1E41785256BC10061D864">Solution Recovery Strategy</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The manufacturer’s purchasing system issues requests for available to promise (ATP) commitments from these two
+    suppliers based upon the proposed plan updates created by their fulfillment systems. This activity is performed under
+    an ATP process that includes detection of the need for fulfillment planning changes, creation of plan updates, and
+    commitment of suppliers to meet these revised plans. The relevant end points included in this ATP process are:
+</p>
+<ul>
+    <li>
+        Call Center CRM (Siebel)
+    </li>
+    <li>
+        Web Order Entry (IBM Websphere Commerce)
+    </li>
+    <li>
+        Sales & Distribution (SAP S&D module)
+    </li>
+    <li>
+        Inventory / Warehouse Management (CICS custom application)
+    </li>
+    <li>
+        Purchasing (CICS custom application).
+    </li>
+</ul>
+<p>
+    For brevity, this example depicts only Inventory / Warehouse Management application end point specific information.
+</p>
+<h3>
+    1.1 Inventory / Warehouse Management End Point
+</h3>
+<h3>
+    Inventory / Warehouse Management Base Recovery State
+</h3>
+<p>
+    Table 1 identifies the basic recovery information that must be in place within the Inventory / Warehouse Management
+    Application prior to recovery of any of the business processes it participates in.
+</p>
+<p>
+    &nbsp;<img height="260" alt="" src="./../../../core.legacy.common_wp.base-ibm_lic/guidances/examples/resources/dl_table1.gif" width="608" />
+</p>
+<h3>
+    External State Instrumentation for Inventory / Warehouse Management
+</h3>
+<p>
+    Inventory / Warehouse Management is a CICS on-line transaction application with a 3270 user interface that exercises a
+    set of CPI & ECI callable functions. Application information is stored in a DB2 database. There is no explicit
+    state keeping exposed by the function calls. As a result, the DB2 data stores must be examined to determine the current
+    state of the application.
+</p>
+<h3>
+    1.2 Available to Promise Process
+</h3>
+<p>
+    The ATP process, depicted in Figure 1, is the focus of recovery for this example.
+</p>
+<p>
+    <img height="502" alt="" src="./../../../core.legacy.common_wp.base-ibm_lic/guidances/examples/resources/dl_figure1.gif" width="524" />
+</p>
+<h3>
+    ATP Process Availability & Recovery Time Constraints
+</h3>
+<p>
+    The ATP process is available 24x7x365; excluding a maintenance window that occurs 11PM Eastern Sunday through 12AM
+    Pacific Monday. The allowable delay for an end-to-end ATP process is 2 hours. This process is executed an average once
+    per week, peaking at once per day during a worst-case business load scenario.
+</p>
+<p>
+    The most constraining element is the 2-hour ATP allowable delay. To minimize impact to the business the process
+    recovery should be completed within one hour, including the initial recovery of the failed application to the base
+    recovery state. In the worst-case scenario, that induces a 3-hour delay in the execution of the ATP process, which is
+    acceptable as a rarely occurring event.
+</p>
+<h3>
+    Information States for Available to Promise (ATP) Process
+</h3>
+<p>
+    Table 2 indicates the key end point information states for the recoverable states of the Available to Promise (ATP)
+    process in the business system. In several cases, multiple valid end point information states exist within the defined
+    business process solution state.
+</p>
+<p>
+    <img height="204" alt="" src="./../../../core.legacy.common_wp.base-ibm_lic/guidances/examples/resources/dl_table2.gif" width="620" />
+</p>
+<h3>
+    Recovery States View for the Inventory / Warehouse Management Application in the ATP Process
+</h3>
+<p>
+    Table 3 identifies the states that the Supply Plan for Inventory / Warehouse Management must be returned to, in order
+    to recover the ATP business process to the indicated states. Once the base state is achieved for Inventory / Warehouse
+    Management, the Supply Plan is the only additional information entity that must be manipulated to recover the
+    application to the proper state for the ATP process.
+</p>
+<p>
+    <font size="2"><img height="115" alt="" src="./../../../core.legacy.common_wp.base-ibm_lic/guidances/examples/resources/dl_table3.gif" width="621" /></font>
+</p>
+<h3>
+    Process and End point Recovery Order for Partner Information Synchronization and ATP
+</h3>
+<p>
+    This table depicts the desired order of recovery, for each end point within key Partner Information Synchronization and
+    ATP processes. The x’s indicate where no order preference exists. The shaded cells indicate where end points do not
+    participate in a process.
+</p>
+<p>
+    <font size="2"><img height="322" alt="" src="./../../../core.legacy.common_wp.base-ibm_lic/guidances/examples/resources/dl_table4.gif" width="632" /></font>
+</p>
+<h3>
+    Use Case to Recover Demand Plan Generated State from Inventory / Warehouse Management Application Failure
+</h3>
+<p>
+    This example use case depicts the recovery of the ATP process to the Demand Plan Generated State following the failure
+    of the Inventory / Warehouse Management application. It does not include the general preparation of Inventory /
+    Warehouse Management to participate in any business process. It assumes that the application is already in the state
+    reflected in Table 1.<br />
+    <br />
+</p>
+<table dir="ltr" cellspacing="1" cellpadding="7" width="590" border="1">
+    <tbody>
+        <tr>
+            <td width="11%">
+                <p>
+                    <strong>Use Case #</strong>
+                </p>
+            </td>
+            <td width="8%">
+                <p>
+                    ATP R3
+                </p>
+            </td>
+            <td width="80%" colspan="2">
+                <p>
+                    ATP Process Recovery to "Demand Plan Generated" state for Inventory / Warehouse Management Application
+                    Failure
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%" colspan="2">
+                <p>
+                    <strong>Subject Area</strong>
+                </p>
+            </td>
+            <td width="80%" colspan="2">
+                <p>
+                    ATP Recovery
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%" colspan="2">
+                <p>
+                    <strong>Business Event</strong>
+                </p>
+            </td>
+            <td width="80%" colspan="2">
+                <p>
+                    Triggered by recovery of Inventory / Warehouse Management Application to "Base" recovery state.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%" colspan="2">
+                <p>
+                    <strong>Actor(s)</strong>
+                </p>
+            </td>
+            <td width="80%" colspan="2">
+                <p>
+                    The actors are the applications: Inventory / Warehouse Management, SAP S&D, Purchasing, and
+                    Production Management.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%" colspan="2">
+                <p>
+                    <strong>Use Case Overview</strong>
+                </p>
+            </td>
+            <td width="80%" colspan="2">
+                <p>
+                    At application failure, SAP S&D had generated an updated Demand Plan, but a corresponding
+                    Production Plan had not yet been validated by Production Management. Between these two solution states,
+                    a production plan is generated by Production Management, a corresponding supply plan is generated by
+                    Inventory / Warehouse Management, and corresponding RFQs are issued to suppliers from Purchasing. Their
+                    responses are used by the applications to validate the supply and production plans. To return to the
+                    Demand Plan Generated state, the validated production plan must be removed from Production Management,
+                    and the demand plan reissued to production management. The updated supply plan is already removed form
+                    Inventory / Warehouse Management by virtue of its failure and recovery to base state.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%" colspan="2">
+                <p>
+                    <strong>Preconditions</strong>
+                </p>
+            </td>
+            <td width="80%" colspan="2">
+                <p>
+                    A valid generated demand plan exists in SAPS&D. All other actor applications are in valid
+                    processing states between the solution states "Demand Plan Generated" and "Production Plan Validated."
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="33%" colspan="3">
+                <p>
+                    <strong>Termination Outcome</strong>
+                </p>
+            </td>
+            <td width="67%">
+                <p>
+                    <strong>Conditions Affecting Termination Outcome</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="33%" colspan="3">
+                <p>
+                    Uncommitted production plans and supplier ATPs are removed or invalidated in the Production Management
+                    and Purchasing applications respectively. The updated demand plan is reissued to Production Management.
+                </p>
+            </td>
+            <td width="67%">
+                <p>
+                    All applications are available within the cycle time frame to perform their focussed processing.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="33%" colspan="3">
+                &nbsp;
+            </td>
+            <td width="67%">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td width="20%" colspan="2">
+                <p>
+                    <strong>Use Case Description</strong>
+                </p>
+            </td>
+            <td width="80%" colspan="2">
+                <p>
+                    To return to the Demand Plan Generated state, the validated production plan must be removed from
+                    Production Management, and the demand plan reissued to production management. In addition, any pending
+                    ATPs from the suppliers and the associated RFQs must be cleared from Purchasing. The updated supply
+                    plan is already removed form Inventory / Warehouse Management by virtue of its failure and recovery to
+                    base state.
+                </p>
+                <p>
+                    Production Management accepts a plan discard command. Purchasing by contrast requires the individual
+                    elements of both the supply need and supplier ATPs to be individually removed.
+                </p>
+                <p>
+                    SAP S&D will not reissue the demand plan without regenerating it from revised demand input,
+                    therefore it must be extracted from SAP’s data stores, or replayed from external persistent stores.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%" colspan="2">
+                <p>
+                    <strong>Use Case Associations</strong>
+                </p>
+            </td>
+            <td width="80%" colspan="2">
+                <p>
+                    N/A
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%" colspan="2">
+                <p>
+                    <strong>Traceability To</strong>
+                </p>
+            </td>
+            <td width="80%" colspan="2">
+                <p>
+                    N/A
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%" colspan="2">
+                <p>
+                    <strong>Inputs Summary</strong>
+                </p>
+            </td>
+            <td width="80%" colspan="2">
+                <p>
+                    Inventory / Warehouse Management reinitialized to base recovery state.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%" colspan="2">
+                <p>
+                    <strong>Output Summary</strong>
+                </p>
+            </td>
+            <td width="80%" colspan="2">
+                <p>
+                    Reissued demand plan.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%" colspan="2">
+                <p>
+                    <strong>Usability Index</strong>
+                </p>
+            </td>
+            <td width="80%" colspan="2">
+                <p>
+                    N/A
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%" colspan="2">
+                <p>
+                    <strong>Use Case Notes</strong>
+                </p>
+            </td>
+            <td width="80%" colspan="2">
+                <p>
+                    N/A
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<p>
+    <strong>Table 5 - ATP End point Recovery Use Case Example</strong>
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

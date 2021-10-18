@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Detailed Gap Analysis For Purpose Order</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="detailed_gap_analysis_po">
+<meta name="uma.presentationName" content="Detailed Gap Analysis For Purpose Order">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_emOYkDaFEdyV3oLDiz9lvQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Detailed Gap Analysis For Purpose Order</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This is an example showing the Purchase Order Gap Analysis.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/detailed_gap_analysis_B92378CE.html" guid="mwebF03ED079C1E90D5485256882006252F9">Detailed Gap Analysis</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><b>Name:</b> 07. Receiving – Reconcile to Purchase Order <br />
+<b>Identifier:</b> 22. Evaluated Receipts Settlement (ERS) <br />
+<b>Summary Results</b>: Medium <br />
+For approved suppliers, no comparison of goods received to goods ordered is done at time of receipt. <br />
+<b>Detailed Results:</b> The goods received (quantity and stock number) are physically accepted, recorded and stored.
+Subsequently, an automated comparison is made between open orders with the supplier and good received. For those where
+valid orders exist, payment is made. For those where no valid orders exist, a document is sent to the supplier (paper or
+electronic), detailing the results of the comparison. The supplier can then either make disposition arrangements for goods
+shipped in error, or the record may be amended depending on the situation. <br />
+<b>Gap Analysis:</b> The package checks for a valid purchase order at time of receipt, and requires special input if one if
+not found. The package has no list of ERS-approved suppliers. The package does do an automated comparison, and does produce
+a reconciliation report. <br />
+<br />
+<b>Options Considered:</b> 
+<table border="1">
+    <tbody>
+        <tr>
+            <td valign="top" width="201">
+                <br />
+                 <b>Option</b> 
+            </td>
+            <td valign="top" width="201">
+                <br />
+                 <b>Implementation Details</b> 
+            </td>
+            <td valign="top" width="201">
+                <br />
+                 <b>Evaluation</b> 
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="201">
+                <br />
+                 Modify the code to stop the check for P.O. at time of receipt for ERS suppliers.
+            </td>
+            <td valign="top" width="201">
+                <br />
+                 4 easy code modifications.<br />
+                 New table with appropriate maintenance screens.<br />
+                 New electronic transaction added to send reconciliation report.
+            </td>
+            <td valign="top" width="201">
+                <br />
+                 Will meet the requirement, but will still require more input by the receiving personnel than the current
+                system.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="201">
+                <br />
+                 Continue to use existing ERS system and interface results to package.
+            </td>
+            <td valign="top" width="201">
+                <br />
+                 2 interface programs.<br />
+                 
+            </td>
+            <td valign="top" width="201">
+                <br />
+                 Will meet the requirement, but interface will require platform integration between AS400and RS6000 not
+                currently necessary.
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="201">
+                <br />
+                 Create a new receiving function in the package using the package development tools.
+            </td>
+            <td valign="top" width="201">
+                <br />
+                 Medium difficulty subsystem, with 5 screens, 2 batch routines, and 2 reports.
+            </td>
+            <td valign="top" width="201">
+                <br />
+                 Will meet the requirement exactly, but requires design/development skills not currently on project.
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<b>Gap Resolution Strategy:</b> After discussions with the receiving manager, and the I/T analyst responsible for the old
+application, the project team determined that the first option, a slight modification of the package, was the most prudent
+given the project time schedule. However, the third option, new subsystem, will be added to the second release of
+functionality, scheduled for third quarter next year. <br />
+The implications of this decision are: 
+<ul>
+    <li>
+        <div>
+            The modifications specified by the first option will be added to the Inventory of Modifications, and developed
+            before the first release of the package to the users. (Project Team)
+        </div>
+    </li>
+    <li>
+        <div>
+            The receiving procedures will be modified to match the new workflow, and exception procedures will be modified
+            as well. (Receiving Manager)
+        </div>
+    </li>
+    <li>
+        <div>
+            The ERS suppliers will be notified of any changes in either the content or format of data they will be
+            receiving. (Procurement Manager, Corporate Communications)
+        </div>
+    </li>
+</ul>
+<b>Security Implications</b>: Security profiles may have to be modified.</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,1218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tool Mentor: Change Management Using Rational PM</title>
+<meta name="uma.type" content="ToolMentor">
+<meta name="uma.name" content="change_management_using_rpm">
+<meta name="uma.presentationName" content="Change Management Using Rational PM">
+<meta name="uma.category" content="Tool:rpm:Rational Portfolio Manager">
+<meta name="element_type" content="tool_mentor">
+<meta name="tool" content="Rational Portfolio Manager">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_4ghTYHu_Ed6TsOLr_oVa_g", "_6gWzQBwmEd22jZjNtWB9-A"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_VTspMMRfEdyD76CYS6Ta7A", "_SG-TMEBPEd-wGLsu70MtEw", "_6gWzQBwmEd22jZjNtWB9-A"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_6gWzQBwmEd22jZjNtWB9-A"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Tool Mentor: Change Management Using Rational PM</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/toolmentor.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This tool mentor provides guidance on how to perform Change Management when using the OnDemand Process Asset Library (OPAL) and Rational Portfolio Manager (Rational PM).</td>
+</tr>
+<tr>
+<td>Tool: <a href="./../../../core.mgmt.opal.common.extend-ibm_int/tools/rpm_8A92C682.html" guid="_SG-TMEBPEd-wGLsu70MtEw">Rational Portfolio Manager</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.mgmt.opal_min_pm.base-ibm_int/tasks/manage_chg_req_imsp610_C67F069D.html" guid="_2IuVcCCBEd6hVvspj7gpDg">Manage change request (IMSP610)</a>
+</li>
+<li>
+<a href="./../../../practice.mgmt.opal_full_pm.base-ibm_int/tasks/raise_change_request_imsp610_A0757F0F.html" guid="_XRm14ImoEd2jFNngtukaUA">Raise change request (IMSP610)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <strong>1. Purpose</strong>
+</p>
+<p>
+    This document provides guidance how Rational PM is used to support Change Management in accordance with the OnDemand
+    Process Asset Library (OPAL). This document may serve as a template for creating a tailored procedure or guideline.
+</p>
+<p>
+    This guidance document contains three sections:
+</p>
+<ol>
+    <li>
+        Purpose
+    </li>
+    <li>
+        How Rational PM supports the OPAL procedure
+    </li>
+    <li>
+        Usage table for Rational PM data elements (fields)
+    </li>
+</ol>The intent of this guidance is to provide sufficient direction on how Rational PM is used on a project to support
+Change Management, so that there are no ambiguities about the process and the team training can be concise. 
+<p>
+    The guidance assumes a basic understanding of how to use Rational PM and is not intended to be training material.
+    Detailed training on the use of Rational PM can be found by selecting Education and Training from the <a href="http://w3.ams1.ibm.com/igsdf/tools_mgmt.nsf/Content/RPM_RoleBased EDucation">GBS Rational Portfolio Management
+    Enablement</a> page.
+</p>
+<p>
+    <b>2. OPAL RPM Procedure - Tool Implementation of the OPAL Procedure</b><br />
+    The following process steps are taken from the <a href="http://opal.ibm.com/home/practice.mgmt.opal.hand_except.extend-ibm_int/capabilitypatterns/change_management_procedure_int_977902C.html" target="_blank">Change Management Procedure</a>. State refers to the State field in the Identification Portlet of the
+    Change element in Rational PM. Each procedure step and associated OPAL data to be captured and updated are detailed
+    below.
+</p>
+<table class="TableGrid" border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td valign="top" width="55">
+                <p class="Normal" align="center">
+                    Step
+                </p>
+            </td>
+            <td valign="top" width="264">
+                <p class="Normal" align="center">
+                    Description
+                </p>
+            </td>
+            <td valign="top" width="232">
+                <p class="Normal" align="center">
+                    Input State Values
+                </p>
+            </td>
+            <td valign="top" width="288">
+                <p class="Normal" align="center">
+                    Possible Out put State Values
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="55">
+                <p class="Normal" align="center">
+                    1
+                </p>
+            </td>
+            <td valign="top" width="264">
+                <br />
+                Raise Change Request
+            </td>
+            <td valign="top" width="232">
+                <br />
+                N/A
+            </td>
+            <td valign="top" width="288">
+                <br />
+                Identified
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="55">
+                <p class="Normal" align="center">
+                    2
+                </p>
+            </td>
+            <td valign="top" width="264">
+                <br />
+                Perform Initial assessment, reject or Accept for Analysis
+            </td>
+            <td valign="top" width="232">
+                <br />
+                Identified
+            </td>
+            <td valign="top" width="288">
+                <br />
+                Accepted for Analysis, Deferred, Rejected, Closed
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="55">
+                <p class="Normal" align="center">
+                    3
+                </p>
+            </td>
+            <td valign="top" width="264">
+                <br />
+                Manage contract changes
+            </td>
+            <td valign="top" width="232">
+                <br />
+                Identified
+            </td>
+            <td valign="top" width="288">
+                <br />
+                Accepted for Analysis, Rejected, Closed
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="55">
+                <p class="Normal" align="center">
+                    4
+                </p>
+            </td>
+            <td valign="top" width="264">
+                <br />
+                Determine impact and potential solutions
+            </td>
+            <td valign="top" width="232">
+                <br />
+                Accepted for Analysis
+            </td>
+            <td valign="top" width="288">
+                <br />
+                Submitted for Approval
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="55">
+                <p class="Normal" align="center">
+                    5
+                </p>
+            </td>
+            <td valign="top" width="264">
+                <br />
+                Obtain formal agreement and schedule change orders
+            </td>
+            <td valign="top" width="232">
+                <br />
+                Submitted for Approval
+            </td>
+            <td valign="top" width="288">
+                <br />
+                Approved for Implementation, Rejected, Deferred, Closed
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="55">
+                <p class="Normal" align="center">
+                    6
+                </p>
+            </td>
+            <td valign="top" width="264">
+                <br />
+                Implement change
+            </td>
+            <td valign="top" width="232">
+                <br />
+                Approved for Implementation
+            </td>
+            <td valign="top" width="288">
+                <br />
+                Implemented
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="55">
+                <p class="Normal" align="center">
+                    7
+                </p>
+            </td>
+            <td valign="top" width="264">
+                <br />
+                Close change
+            </td>
+            <td valign="top" width="232">
+                <br />
+                Implemented
+            </td>
+            <td valign="top" width="288">
+                <br />
+                Closed
+            </td>
+        </tr>
+    </tbody>
+</table>
+<blockquote dir="ltr">
+    <br clear="all" />
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Change_ProcessFlow.jpg" width="600" height="495" />
+</blockquote>
+<h4>
+    Step 1 - Raise Change Request - performed by Stakeholder
+</h4>
+<p class="Normal">
+    Please note that Rational PM elements in <b>BOLD</b> text and highlights are considered required. Other fields and
+    portlets are recommended for completeness. Refer to the table in section 3 for a complete description of all fields,
+    standards and practices.<br />
+</p>
+<ul>
+    <li class="Normal">
+        Receives Change from project stakeholder. 
+        <ul>
+            <li class="Normal">
+                CREATE Change Request in Scope Management using the OPAL IMSP610 Change template and the OPAL IMSP610
+                Change layout. Key information that should be captured includes <b>Rank, Description, Target Date, Proposed
+                By,</b> and <b>Completion Criteria</b>. A value for the <b>Change Type</b> should be captured in the
+                Attributes portlet. <b>State</b> is set to IDENTIFIED by RPM
+            </li>
+            <li class="Normal">
+                The OPAL IMSP610 Change template can be located by selecting Template from the Rational PM Scope Management
+                View and expanding the Scope Templates / OPAL Scope Templates folder.<br />
+            </li>
+        </ul>
+    </li>
+</ul>
+<p class="Normal" align="center">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Change_CreateElement.jpg" width="600" height="244" /><br class="Normal"     align="center" />
+</p>
+<blockquote dir="ltr">
+    <h4 class="Normal">
+        <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Change_Receive.jpg" width="523" height="434" />
+    </h4>
+</blockquote>
+<h4 class="Normal">
+    Step 2 - Perform Initial Assessment, Reject or Accept for Analysis - performed by Project Manager
+</h4>
+<ul>
+    <li class="Normal">
+        If Change determined to be valid and in scope including Contract Change handled within the project 
+        <ul>
+            <li class="Normal">
+                RECORD - assign Change owner in Staffing view or <b>Resources</b> portlet, enter Est Start, Est Finish, and
+                <b>Target</b> <b>Date</b>. Additional information to capture includes Quantification/Impact, Order of
+                Magnitude Cost/Benefits, Approved Cost/Benefits, and <b>Background</b> portlets. Change <b>State</b> to
+                ACCEPTED FOR ANALYSIS.
+            </li>
+        </ul>
+    </li>
+    <li class="Normal">
+        If Change determined to be invalid reject Change 
+        <ul>
+            <li class="Normal">
+                RECORD&nbsp;- document reason for rejecting Change in the <b>Status</b> portlet, update Closed By portlet
+                with person closing the Change. Change <b>State</b> to REJECTED. After notification of rejection is made to
+                requester, change <b>State</b> to CLOSED.
+            </li>
+        </ul>
+    </li>
+    <li class="Normal">
+        If Change determined to be deferred 
+        <ul>
+            <li class="Normal">
+                RECORD&nbsp;- document reason for deferring Change in the <b>Status</b> portlet. Change <b>State</b> to
+                DEFERRED.
+            </li>
+        </ul>
+    </li>
+    <li class="Normal">
+        If Change determined to be valid Contract Change outside of the project scope raise a Contract Change Request (CCR)
+        
+        <ul>
+            <li class="Normal">
+                RECORD&nbsp;- document decision on transferring ownership to Change Control Manager in the <b>Status</b>
+                portlet. State remains 'Identified' until CCR is accepted by the program management office. Then change
+                <b>State</b> to CLOSED.
+            </li>
+        </ul>
+    </li>
+</ul>
+<p class="Normal">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Change_Analysis.jpg" width="409" height="343" /><br clear="all" />
+</p>
+<h3>
+    Step 3 - Manage contract changes - performed by Change Control Manager, or Project Reviewer
+</h3>
+<ul>
+    <li>
+        Project Manager submits Contract Change Request (CCR) to IBM Program Management Office (PMO) and monitor changes
+        transferred to PMO as External Dependencies.
+    </li>
+    <li>
+        PMO performs initial assessment, and rejects or accepts the proposed contract change for analysis.
+    </li>
+    <li>
+        <div class="Normal">
+            If a full assessment of the change is required, then a Service Request must be entered to perform the analysis
+            and CCR is closed.
+        </div>
+    </li>
+    <li>
+        <div class="Normal">
+            If the CCR is acceptable but will not enter the Service Request process, PMO analyzes impact and potential
+            solutions, obtains formal agreement and schedule change orders, and then closes CCR.
+        </div>
+    </li>
+</ul>
+<h4>
+    Step 4 - Determine impact and potential solutions - performed by Project Manager, Business Process Analyst, Code
+    Reviewer, Implementer, or Stakeholder
+</h4>
+<ul>
+    <li>
+        <div class="Normal">
+            Review Change Request and assess impact
+        </div>
+    </li>
+    <li>
+        <div class="Normal">
+            If the impacts and potential solutions have been determined
+        </div>
+    </li>
+    <li>
+        <div class="Normal">
+            Record - Impact Assessment, Solutions Considered, Quantification/Impact, and Order of Magnitude Cost/Benefits.
+            Update <b>Status</b> with record of activity. Change <b>State</b>to 'SUBMITTED FOR APPROVAL'
+        </div>
+    </li>
+    <li>
+        <div class="Normal">
+            If the impacts and potential solutions have not been determined or require additional definition
+        </div>
+    </li>
+    <li>
+        <div class="Normal">
+            Update <b>Status</b> with record of activity, <b>State</b> remains 'ACCEPTED FOR ANALYSIS'
+        </div>
+    </li>
+</ul>
+<p class="Normal">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Change_Solution.jpg" width="456" height="453" /><br />
+    <br />
+</p>
+<h4>
+    Step 5 - Obtain formal agreement and schedule change orders - performed by Change Control Board or Project Sponsor
+</h4>
+<ul>
+    <li class="Normal">
+        Review results of the assessment with Change Control Board or Project Sponsor. 
+        <ul>
+            <li class="Normal">
+                If the Change is approved 
+                <ul>
+                    <li class="Normal">
+                        Update the hours, cost, and schedule information in the Approved Cost/Benefits portlet. Record who
+                        approved the Change in the <b>Approved By</b> portlet. Update <b>Status</b> portlet. Change
+                        <b>State</b> to 'APPROVED FOR IMPLEMENTATION'
+                    </li>
+                </ul>
+            </li>
+            <li class="Normal">
+                If the Change is rejected 
+                <ul>
+                    <li class="Normal">
+                        Update actions and reason for rejection in the <b>Status</b> portlet. Change <b>State</b> to
+                        REJECTED. After requester is notified change <b>State</b> to CLOSED
+                    </li>
+                </ul>
+            </li>
+            <li class="Normal">
+                If the Change is deferred 
+                <ul>
+                    <li class="Normal">
+                        Enter reason for deferral and expected date to review in the <b>Status</b> portlet. Notify
+                        requestor of the decision. Change <b>State</b> to DEFERRED.
+                    </li>
+                    <li class="Normal">
+                        Re-enter this step when the reasons for the deferral have been resolved.
+                    </li>
+                </ul>
+            </li>
+            <li class="Normal">
+                Use OPAL ENG319 Change Request Detail Report, OPAL ENG317 Change Log, and OPAL ENG319 Change Detail pivot
+                to assist with review and provide information to non Rational PM users.
+            </li>
+        </ul>
+    </li>
+</ul>
+<blockquote dir="ltr">
+    <p class="Normal">
+        <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Change_Approve.jpg" width="314" height="327" />&nbsp;<br />
+    </p>
+</blockquote>
+<p class="Normal" align="center">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Change_ReportDetail.jpg" width="593" height="576" /><br class="Normal" align="center" />
+    <br />
+</p>
+<p class="Normal" align="center">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Change_ReportLog.jpg" width="600" height="197" /><br class="Normal" align="center" />
+    <br />
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Change_ReportPivot.jpg" width="600" height="199" /><br />
+</p>
+<h4>
+    Step 6 - Implement change - performed by <a>Project Manager</a>
+</h4>
+<ul>
+    <li>
+        <div class="Normal">
+            Verify all actions and tasks for implementing change have been completed
+        </div>
+        <ul>
+            <li>
+                <div class="Normal">
+                    If completed
+                </div>
+                <ul>
+                    <li>
+                        <div class="Normal">
+                            Update <b>Solution Retained, Implementation</b>, and <b>Status</b> portlets. Change
+                            <b>State</b> to IMPLEMENTED.
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="Normal">
+                    If not completed
+                </div>
+                <div style="MARGIN-LEFT: 2em">
+                    <ul>
+                        <li>
+                            <div class="Normal">
+                                Update <b>Status</b> portlet. <b>State</b> remains 'APPROVED FOR IMPLEMENTATION'.<br                                 class="Normal" />
+                                <br />
+                                <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Change_Implement.jpg" width="423" height="354" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
+</ul>
+<h4>
+    Step 7 - Close change - performed by Project Manager
+</h4>
+<ul>
+    <li>
+        <div class="Normal">
+            Close the Change.
+        </div>
+        <ul>
+            <li>
+                <div class="Normal">
+                    Update <b>Status</b> portlet. Record person closing the Change in the <b>Closed By</b> portlet. Notify
+                    stakeholders that Change has been closed. Change <b>State</b> to CLOSED
+                </div>
+            </li>
+        </ul>
+    </li>
+</ul>
+<p class="Normal">
+    <img alt="" src="./../../../core.mgmt.opal.common.extend-ibm_int/guidances/toolmentors/resources/RPM_Change_Close.jpg" width="418" height="334" />
+</p>
+<h1>
+    3. Usage table for Rational PM data elements (fields)
+</h1>The table below describes the portlets and fields in the OPAL IMSP610 Change Layout in Rational PM. Portlets and
+Fields in <b>BOLD</b> are required, other fields and portlets are recommended for completeness. <br />
+Note: different layouts exist and vary in the portlets they display. 
+<table class="NormalTable" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                <b>Portlet / Field Name</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                <b>Description</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                <b>Standards and Practices</b>
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="708" colspan="3">
+                <br />
+                <b>Identification Portlet</b>
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                <b>Rank</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Rank defines the level of Severity of the Change<br />
+                This field is critical to the Business Management Review (BMR) Investment Map and should be set for each
+                Change
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Select one of the following values: 900: Critical<br />
+                700: High<br />
+                500: Medium<br />
+                300: Low
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                Reference Number
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Repository unique identifier for Change<br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Rational PM assigns reference Number automatically
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                External Reference Number
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                The project may have its own numbering system. This field can be used for tracking that number
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                External Reference Number is the manual text assigned by the PM<br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                Client Name
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Client Name
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter the name of the Client(s) impacted by the Change
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                Occurred Date/Time
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Date / time that the Change event occurred
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter the Date/Time of the event that caused the Change to be raised
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                Element security
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Security control - project level or by invitation. Project Level is the default<br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                For confidential and commercially sensitive information, use 'by invitation'.
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                <b>Target Date</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Target date for closing Change
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter the target date that is expected for closure of the Change
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                EST/Start
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Estimated start date
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter the date that activity is expected to start on the Change
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                EST/Finish
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Estimated finish date
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter the date that activity is expected to finish on the Change
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                <b>State</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                The state is related to the step in workflow<br />
+                <br />
+                <br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Use the following basic state values to identify the state of the Change during the lifecycle<br />
+                <u>Basic States</u>:<br />
+                Identified: Initial state prior to acceptance<br />
+                Accepted For Analysis: Accepted but not yet approved<br />
+                Rejected: Not accepted or approved<br />
+                Deferred: Not approved at this time<br />
+                Submitted For Approval: Sent to Change Control Board for approval to implement<br />
+                Approved For Implementation: Approved for implementing change<br />
+                Implemented: CR that has been implemented<br />
+                Closed: CR is closed after action has taken place and documentation finished. Fill in Closed By and Closed
+                Date<br />
+                <u>Non OPAL States</u>: These state values are available in RPM but are not used in the OPAL
+                procedure<br />
+                Technical Review<br />
+                Financial Review<br />
+                General / under review<br />
+                Estimated/sizing<br />
+                Assigned<br />
+                In Progress<br />
+                To be validated<br />
+                Approved<br />
+                Completed<br />
+                Sponsor Review<br />
+                Delivery Review<br />
+                Submitted for Approval<br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="708" colspan="3">
+                <b>Free Text Portlets</b>
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                <b>Description</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Change description, in sufficient detail to be understood by others on the team
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter a complete and detailed description of the Change. Symptoms and facts that are causing concern
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                <b>Status</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Comments on defining solutions, and progress in getting approval<br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Log of actions taken to perform Change management<br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                Background
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Further information, if more background required to support description<br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Document any applicable background information related to the Change
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                Impact Assessment
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Further information on impact assessment<br class="Normal" />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Document the impact that the Change will have on the project. Consider areas such as Cost, Schedule, Scope,
+                and Customer Satisfaction. Specify all project elements to be modified as a result of the Change<br                 class="Normal" />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                Completion Criteria
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Information necessary to satisfy Change Owner that the Change has been satisfactorily performed<br                 class="Normal" />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Document the criteria that will be used to ensure the Change has been fully implemented
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                <b>Solutions Considered</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Ongoing description of solutions considered<br class="Normal" />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter a description for each of the potential solutions discussed for consideration. Each solution
+                considered should be documented separately
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                <b>Solution Retained</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Description of solution approved<br class="Normal" />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter a description of the solution selected to resolve this Change. Update as necessary so requestor can
+                validate<br class="Normal" />
+                <br />
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                <b>Implementation</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Further information of plans for how solution to be implemented<br class="Normal" />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter information on how this Change will impact the implementation plan and any agreements impacted
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="708" colspan="3">
+                <br />
+                <b>Quantification/Impact portlet</b>
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                Schedule Impact in days
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Impact in days the element may have on the schedule
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter value in days.
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                <b>Order of Magnitude Work in hours(s)</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                The best estimate of the amount of work required to respond to this element
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter value in hours
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                Order of Magnitude Work Low in hour(s)
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                An estimate of the minimum amount of work required to respond to this element<br class="Normal" />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter value in hours
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                Order of Magnitude Work High in hour(s)
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                An estimate of the maximum amount of work required to respond to this element
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter value in hours
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="708" colspan="3">
+                <br />
+                <b>Order of Magnitude Cost / Benefit portlet</b>
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                <b>Order of Magnitude Cost</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Ballpark estimate for the cost of the element
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter value in selected currency<br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                Order of Magnitude Cost Low
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Ballpark estimate for the lowest possible cost of the element
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter value in selected currency
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                Order of Magnitude Cost High
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Ballpark estimate for the highest possible cost of the element
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter value in selected currency
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                Order of Magnitude Billable Revenue
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Ballpark estimate for the amount of Billable Revenue impacted by the element
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter value in selected currency
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                Order of Magnitude Non Billable Benefits
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Ballpark estimate for the amount of Non Billable Benefits impacted by the element
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter value in selected currency
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="708" colspan="3">
+                <br />
+                <b>Approved Cost/Benefits portlet</b>
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                Schedule impact in days
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                The impact to the schedule in terms of days that the Approved Change will have on the project
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter a value in days
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                <b>Cost</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                The impact in cost that the Approved Change will have on the project
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter a value in selected currency
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                Billable Revenue
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                The impact in terms of cost on Billable Revenue that the Approved Change will have on the project
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter a value in selected currency
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                Non Billable Benefits
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                The impact in terms of cost to Non Billable Benefits that the Approved Change will have on the project
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter a value in selected currency
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                <b>Work in Hours</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                The impact in hours that the Approved Change will have to the project
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter a value in hours
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="708" colspan="3">
+                <br />
+                <b>Other portlets</b>
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                Attributes
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Select attributes. Can be used to identify category of change. May be useful for portfolio reporting<br                 class="Normal" />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Enter a specific value for the Change Type attribute. Other attributes are dependent upon the owning
+                organization<br class="Normal" />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                <b>Resources</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Resources assigned to the Change
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Assign resources within this portlet (or Staffing View). If restricted access is needed use the 'By
+                Invitation' option
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                <b>Proposed by</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Name and date that resource opened the Change<br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Default entry is resource that created the Change. Can be modified
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                <b>Approved by</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Name and date that resource approved the Change<br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                For Changes requiring approval this is the name of approver and date approved<br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                <b>Closed By</b>
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                Name and date that resource closed the Change<br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                Default entry is resource that closed the Change
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                <br />
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="183">
+                <br />
+                Status Update
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="241">
+                <br />
+                History (version) of updates made to the RPM Change record
+            </td>
+            <td style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid"             valign="top" width="283">
+                <br />
+                System generated version control with ID, date, and time stamp of Change record updates
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Artifact: Solution Recovery Strategy
+			(OPS 413)
+		</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="solution_recovery_strategy">
+<meta name="uma.presentationName" content="Solution Recovery Strategy">
+<meta name="uma.category" content="@Type:@Name:@DisplayName">
+<meta name="uma.category" content="WorkProductType:procedure:Procedure">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_vrCfoa6CEdyI4IDvQ60EJA", "_O0L-wO3tEdugFZ65awqtDw", "_SPRJEO3uEdugFZ65awqtDw", "mweb42B290122CF1E41785256BC10061D864"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_HcVQwMRfEdyD76CYS6Ta7A", "_13NR7KxcEdyf7rzERpP8vA", "mweb42B290122CF1E41785256BC10061D864"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_WCR4YMRdEdyD76CYS6Ta7A", "mweb42B290122CF1E41785256BC10061D864"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb42B290122CF1E41785256BC10061D864"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Artifact: Solution Recovery Strategy
+			(OPS 413)
+		</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/artifact.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The Solution Recovery Strategy defines the approach(es) to be used in restoring an integrated business system to the most current valid state possible.</td>
+</tr>
+<tr>
+<td>Domains: <a href="./../../core.default.cat_def.base-ibm_lic/domains/business_continuity_897B6AF0.html" guid="_SPRJEO3uEdugFZ65awqtDw">Business Continuity</a>
+<br>Work Product Kinds: <a href="./../../core.default.cat_def.base-ibm_lic/workproducttypes/procedure_71991D67.html" guid="_13NR7KxcEdyf7rzERpP8vA">Procedure</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The established strategy forms the basis for further design and implementation of the recovery mechanisms for the
+    business system. This has a particularly strong influence on the design of integration systems, such as enterprise
+    application integration, for the solution. In such systems, it may be necessary to:
+</p>
+<ul>
+    <li>
+        Run several complex business transactions through the various end points to achieve a valid solution state
+    </li>
+    <li>
+        Account for in-flight business transactions between end points
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Main Description</th><td class="sectionTableCell"><p>
+    This strategy considers the end points that are involved, and the business processes that are to be recovered. It
+    establishes the state to which each end point must be recovered, in order to reach the solution target state for each
+    business process.&nbsp; The end points in Solution Recovery Strategy may include:
+</p>
+<ul>
+    <li>
+        Business applications
+    </li>
+    <li>
+        Web services or other business components
+    </li>
+    <li>
+        Business partner systems
+    </li>
+    <li>
+        Other business unit systems
+    </li>
+</ul>
+<p>
+    It is useful to contrast the Solution Recovery Strategy with a Disaster Recovery Strategy. The Disaster Recovery
+    Strategy focuses on recovery of an enterprises’ business IT operations as a whole. The Solution Recovery Strategy only
+    addresses the scope of a single business system. As such, the Solution Recovery Strategy provides a small part of the
+    approach necessary to perform disaster recovery for the business. In addition, the Solution Recovery Strategy is of
+    more general use. It addresses recovery of the solution due to an end point failure, not necessarily the result of a
+    business IT systems disaster.&nbsp;
+</p>
+<p>
+    The strategy should cover:
+</p>
+<ul>
+    <li>
+        Definition of the set of associated end points and valid recoverable states for each business process in the
+        business system.
+    </li>
+    <li>
+        Definition of the end point states that support each business process solution state.
+    </li>
+    <li>
+        Order of recovery for the end points associated with each business process, to bring it to the valid recovered
+        state.
+    </li>
+    <li>
+        Description of the conceptual level recovery approaches to be used with respect to the end points in the different
+        areas of the solution.&nbsp; This will provide an indication of where: 
+        <ul>
+            <li>
+                Compensating transactions are necessary
+            </li>
+            <li>
+                Roll back techniques are necessary
+            </li>
+            <li>
+                Custom recovery techniques are to be considered
+            </li>
+            <li>
+                Manual procedures will be needed, etc.
+            </li>
+        </ul>
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Brief Outline</th><td class="sectionTableCell"><p>
+    The Solution Recovery Strategy is presented in a series of views, beginning with an end point base recovery state view
+    for each end point. This view defines the information states within an end point that must be attained, prior to
+    attempting any solution business process recovery involving that end point.In addition, the strategy contains
+    functional requirements for end point instrumentation to enable external state determination.
+</p>
+<p>
+    The remaining views are enumerated by recoverable business process, and include:
+</p>
+<ul>
+    <li>
+        <div>
+            <i>Process availability & recovery time constraints:</i> records the required availability of the business
+            process, and the associated recovery time constraints.
+        </div>
+    </li>
+    <li>
+        <div>
+            <i>End point information states:</i> defines the information states allowable within the confines of each
+            recoverable solution state of a business process.
+        </div>
+    </li>
+    <li>
+        <div>
+            <i>End point recovery state:</i> specifies the information states that the end point will be recovered to for a
+            business process solution state.
+        </div>
+    </li>
+    <li>
+        <div>
+            <i>End point recovery order:</i> specifies the order of recovery of the included end points for each business
+            process.
+        </div>
+    </li>
+    <li>
+        <div>
+            <i>Recovery use case:</i> details the recovery of a business process, identifying at a conceptual level, the
+            approaches that must be taken to transition each included application into its specified recovery state.
+        </div>
+    </li>
+</ul>
+<p>
+    These view elements are often presented in a tabular format.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/guidances/examples/solu_recov_strategy_54982C6.html" guid="_3GUrgDNqEdyrqJ43F5V_SA">Solution Recovery Strategy</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Construction of this work product, and subsequent implementation of its recommendations, can easily become a “boiling
+    of the ocean” exercise if not properly scoped and controlled from the beginning.&nbsp; It is essential to identify the
+    absolute minimum number of recovery states for the integrated business system that will meet the needs of the
+    business.&nbsp; Every recovery state added requires an analysis of each end point involved, development of a recovery
+    strategy, and implementation of the integrated recovery capabilities.&nbsp;
+</p>
+<p>
+    Strike a balance between the process down time cost to the business, driven by the recovery time, and the recovery
+    capability development cost, driven by the number of recovery states identified.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Tailoring</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Impact of not having</th><td class="sectionTableCell"><p>
+    The impact of not having this work product may result in:
+</p>
+<ul>
+    <li>
+        Ad hoc recovery approaches to data recovery that lead to data and solution integrity issues.
+    </li>
+    <li>
+        Solution recovery times that are too long, and lead to significant loss of business capability, or revenue.
+    </li>
+    <li>
+        Increased risk of poorly recovered, or unrecoverable, solution failures.
+    </li>
+    <li>
+        A business system that is unsupportable, or too expensive to support long term.
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Reasons for not needing</th><td class="sectionTableCell"><p>
+    This work product may not be needed if there are few complex applications or external entities in the business system.
+    Under such conditions, its behavior may be simple enough that a "restart" or some other simple procedural approach may
+    suffice to recover the solution.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Checklists</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/guidances/checklists/solution_recovery_strategy_valver_1A4E4DFD.html" guid="_Xeq1oH6HEdyw8vLiq68PPA">Solution Recovery Strategy Validation and Verification</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/guidelines/solution_recovery_strategy_dev_1F98ADA9.html" guid="_Tb2QQDNjEdyMzoJu5tJlmg">Developing Solution Recovery Strategy</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Estimation Considerations</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/guidances/estimationconsiderations/solution_recovery_strategy_legacy_783B511D.html" guid="mweb037411719236111100">Solution Recovery Strategy (Legacy)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

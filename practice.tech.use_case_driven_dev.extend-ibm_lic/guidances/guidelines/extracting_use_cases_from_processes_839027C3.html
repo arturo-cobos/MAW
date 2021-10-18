@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Extracting Use-Cases from Processes</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="extracting_use_cases_from_processes">
+<meta name="uma.presentationName" content="Extracting Use-Cases from Processes">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_w1JD4B4jEd2bS8fFOQ7WWA", "_shH7oGptEeSdxcAgtnf5og", "_shP3cGptEeSdxcAgtnf5og", "_Lz4PoJKwEd-pafASY_87Bw"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_Lz4PoJKwEd-pafASY_87Bw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_Lz4PoJKwEd-pafASY_87Bw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Extracting Use-Cases from Processes</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Describes how to convert process activities into one or more use cases that describe how a business function will be implemented.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.use_case_driven_dev.base/tasks/identify_and_outline_requirements_90D272B9.html" guid="_P9cMUPV_EdmdHa9MmVPgqQ">Identify and Outline Requirements</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Convert process activities or leaf level process elements into one or more&nbsp;use cases that describe how a business
+    function will be implemented in IT solutions and systems. It links business requirements and business design to
+    technical/system requirements and solution design. Typically, we continue with process decomposition until we start
+    looking at user and system interactions. As we starting noticing user and system interactions in the descriptions of
+    sub processes and process activities we start to identify these interaction as (technical or system)&nbsp;use cases.
+</p>
+<p>
+    Process decomposition can continue to the point at which the processes being identified are the smallest activities
+    meaningful to&nbsp;the business&nbsp;and which when completed leave related information in a consistent state (either
+    updated, or returned to its original state). Following figure shows process decomposition into sub-processes and
+    finally (system/technical) use cases. The notion of a sub-process is a convenient construct used to denote further
+    levels of refinement of a process, into its constituent parts (sub-processes), recursively. Sub-processes are used to
+    identify candidate services while the list of use cases provides the initial scope for system design ("business as
+    usual).<br />
+</p>
+<p>
+    &nbsp;<img style="WIDTH: 821px; HEIGHT: 415px" height="301" alt="" src="./../../../practice.tech.use_case_driven_dev.extend-ibm_lic/guidances/guidelines/resources/process_decomposition.jpeg"     width="600" />&nbsp;
+</p>
+<p>
+    Once we get to the point where we begin to look at user-system interactions, we should stop and label the sub-process a
+    leaf-level sub-process or&nbsp; sometimes also called "Activity or Task". A leaf-level sub-process is a composite of
+    system use cases, for example, a leaf-level sub-process of "Find Customer" in "Process Order"&nbsp; process would have
+    use-cases of "Get Customer Name", "Get Customer Address" and "Get Order Items".
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

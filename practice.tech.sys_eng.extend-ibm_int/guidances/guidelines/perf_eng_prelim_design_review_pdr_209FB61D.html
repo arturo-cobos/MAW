@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Performance Engineering Preliminary Design Review (PDR) Checklist</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="perf_eng_prelim_design_review_pdr">
+<meta name="uma.presentationName" content="Performance Engineering Preliminary Design Review (PDR) Checklist">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mwebDC5C083A643B5F83852572AC006EB495"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebDC5C083A643B5F83852572AC006EB495"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Performance Engineering Preliminary Design Review (PDR) Checklist</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The Preliminary Design Review (PDR) ensures that overall system design & component requirements aptly address system (and customer) requirements selected for implementation, are well understood and are agreed to by all parties, and then a baseline is established for future reference, change control.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.sys_eng.extend-ibm_int/tasks/perform_prelim_design_review_DD16CE78.html" guid="mweb093C356700000113D4B23B217873B6F9">Perform the Preliminary Design Review</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1 Description
+</h3>
+<p>
+    In an Enterprise SE&A project, the Component Baseline contains the component requirements[see footnote1]&nbsp;for
+    the system described in the System Baseline.
+</p>
+<p>
+    This technique paper contains the checklists which the PE team uses during the PDR to ensure that the PE goals and
+    objectives have been adhered to during the Component Baseline Phase, It is important that the performance and capacity
+    aspects of the system design are well-conceived and capable of meeting requirements. This proves helpful to the later
+    SE&A baselines as the components are designed, implemented, tested and deployed, which in turn enhances the
+    likelihood that the overall project will satisfy the customer’s requirements. Deliverables, which are deemed deficient
+    from a performance and capacity standpoint, may lead to the entry of a defect, which is then taken into account during
+    the PDR Scorecard process.
+</p>
+<h3>
+    2 Usage Context
+</h3>
+<p>
+    This technique paper should be used as guidance while conducting a Preliminary Design Review in an enterprise SE&A
+    project.
+</p>
+<h3>
+    3 Content
+</h3>
+<p>
+    The following PE specific items should be verified during PDR:
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        <strong>PDR Preparation</strong>
+    </p>
+</blockquote>
+<div style="MARGIN-LEFT: 2em">
+    <ul>
+        <li>
+            PE work products / deliverables from SRR phase are revisited based on any new information&nbsp; 
+            <ul>
+                <li>
+                    Initial Sizing developed using appropriate level of performance estimation or modeling&nbsp;
+                </li>
+                <li>
+                    System viability / feasibility / risk assessed from performance perspective&nbsp;
+                </li>
+            </ul>
+        </li>
+        <li>
+            Key performance risks areas were evaluated using selected estimation / modeling techniques&nbsp;
+        </li>
+        <li>
+            Results of estimation forwarded to appropriate areas (e.g. architecture, development, deployment / operations,
+            etc.)&nbsp;
+        </li>
+        <li>
+            Component baseline materials reviewed by PE team, especially&nbsp; 
+            <ul>
+                <li>
+                    Architectural model (to gain an understanding of the components)&nbsp;
+                </li>
+                <li>
+                    Application model (to gain an understanding of the functionality and data)&nbsp;
+                </li>
+                <li>
+                    Non-Functional Requirements pertaining to performance&nbsp;
+                </li>
+                <li>
+                    Technical volumetric assumptions&nbsp;
+                </li>
+                <li>
+                    RTVM<br />
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        <strong>PDR Performance Questions</strong>
+    </p>
+</blockquote>
+<div dir="ltr" style="MARGIN-LEFT: 2em">
+    <ul>
+        <li>
+            Are the component performance requirements understood?
+        </li>
+        <li>
+            Are the component acceptance criteria for performance understood?
+        </li>
+        <li>
+            Has an initial sizing of the component solution been performed and fed into the overall system sizing?
+        </li>
+        <li>
+            Has the performance feasibility and risk for the component been accessed?
+        </li>
+        <li>
+            Have requirements for performance tools which will be required for development and for live monitoring of the
+            solution been defined.
+        </li>
+        <li>
+            Have business volumetrics changed? Will they change our technical volumetrics or other performance-critical
+            assumptions?&nbsp;
+        </li>
+        <li>
+            Are both system and component technical volumetrics available?
+        </li>
+        <li>
+            What implementation specifics will require technology research with respect to their performance
+            characteristics?
+        </li>
+        <li>
+            What results are available for the system performance estimation and modeling activities done to date?
+        </li>
+        <li>
+            What component areas will require performance estimation and/or modeling to address areas of performance risk?
+        </li>
+        <li>
+            Has the capacity plan been updated to take into account the system estimation/modeling done so far?&nbsp;
+        </li>
+        <li>
+            Are the Service Level Requirements (SLRs) complete? Does the system estimation/modeling work done so far give
+            us an idea of whether these SLRs can be met with the proposed solution?&nbsp;
+        </li>
+        <li>
+            What performance techniques (performance budgeting, profiling tools, etc.) will be used by the component
+            design/development teams?
+        </li>
+        <li>
+            Has a performance test strategy been defined?
+        </li>
+        <li>
+            Has the performance risk been reassessed since the SRR?
+        </li>
+        <li>
+            Will the performance-centric items satisfy the applicable PDR scorecard criteria, i.e. 
+            <ul>
+                <li>
+                    <b>Static Architecture Definition</b> 
+                    <ul>
+                        <li>
+                            Business monitoring tools (volume and volume projections) identified and agreed to.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Test Architecture Definition</b> 
+                    <ul>
+                        <li>
+                            Test architecture, approach, and the test data will sufficiently facilitate the verification of
+                            the system acceptance criteria and the system requirements, including the to-be business
+                            processes.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <strong>PDR Actions</strong>&nbsp; 
+            <ul>
+                <li>
+                    PDR issues are raised for concerns which may affect PDR scorecard findings.
+                </li>
+                <li>
+                    PE Strategy and Plan documents are updated as needed to reflect any new information coming out of the
+                    PDR, with stakeholders being informed.<br clear="all" />
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div>
+    <hr align="left" width="33%" size="1" />
+</div>
+<div>
+    Footnote:
+</div>
+<div id="ftn1">
+    <br />
+    [1] From an architecture perspective, the design of a higher level of the system will create a requirement against the
+    next lower level component of the system. This means that the “Preliminary Design” of the overall system will include
+    the requirements against each of that system’s components.
+</div></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,560 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Deliverable: Deployment Test Results
+			(DCD 071)
+		</title>
+<meta name="uma.type" content="Deliverable">
+<meta name="uma.name" content="deployment_test_results_071">
+<meta name="uma.presentationName" content="Deployment Test Results">
+<meta name="element_type" content="artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygM7qEdyK2sqmpZ13Zg", "_WCR4YcRdEdyD76CYS6Ta7A", "mweb4E2B6DFF66FE484C85256B1B00736861"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb4E2B6DFF66FE484C85256B1B00736861"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Deliverable: Deployment Test Results
+			(DCD 071)
+		</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/deliverable.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This deliverable provides a consolidated report of the various testing activities planned for and conducted during the Deployment phase for a solution. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">The purpose of this deliverable is to verify proper execution of the software including interfaces with other applications.
+It documents the results of Acceptance Testing along with Systems Integration Testing, Operability Testing, and other
+testing planned to be conducted in the Deployment phase for a solution release. It additionally serves to gain client
+acceptance for the tested solution release.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    This deliverable extends the tests defined to be performed during the Deployment phase at a high-level for a solution
+    as a whole and in detail for the solution release being deployed along with the results obtained for each test executed
+    and any outstanding testing issues relevant to the testing conducted for a specific solution release.
+</p>
+<p>
+    This document consists of the following major sections as apply to a solution and specifically to a given solution
+    release:
+</p>
+<ul>
+    <li>
+        For Acceptance Tests conducted 
+        <ul>
+            <li>
+                Definition of the acceptance tests conducted
+            </li>
+            <li>
+                The results of each test
+            </li>
+            <li>
+                A summary of the incidents reported during the Acceptance Testing and the current status of any outstanding
+                incidents
+            </li>
+            <li>
+                Unresolved issues identified in Acceptance Testing
+            </li>
+            <li>
+                Solution release acceptance recommendation
+            </li>
+        </ul>
+    </li>
+    <li>
+        For Systems Integration Tests and Operability Tests, and other testing levels planned to be&nbsp; conducted during
+        the Deployment phase beyond Acceptance Testing 
+        <ul>
+            <li>
+                Definition of the tests conducted
+            </li>
+            <li>
+                The results of those tests
+            </li>
+            <li>
+                Unresolved issues identified for those tests
+            </li>
+        </ul>
+    </li>
+    <li>
+        For Penetration Testing 
+        <ul>
+            <li>
+                Definition of the conducted test
+            </li>
+            <li>
+                Results of the test
+            </li>
+            <li>
+                List of issues identified in the test and their status
+            </li>
+        </ul>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Deliverable Properties</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">External Description</th><td class="sectionTableCell"><p>
+    The Deployment Tests Results deliverable provides a means to verify proper execution of the software including
+    interfaces with other applications and to gain client acceptance of the tested solution release.&nbsp; Additionally, it
+    verifies the security of the solution.
+</p>
+<p>
+    This deliverable documents the results of the following actions as pertain to the scope of a specific release for a
+    solution.
+</p>
+<ul>
+    <li>
+        Execution of the test cases defined to be conducted in the Deployment phase for a solution release’s Build
+        verifying the solution’s system interfaces and interactions are functionally correct and operationally sound,
+        ensure the solution created is secured, refining the goals for future release Builds based on identified errors,
+        and documenting testing results.
+    </li>
+    <li>
+        Evaluation of the development and testing results conducted in the Build Cycle phase for the release’s completed
+        Build along with adjustments and refinements to the goals and estimates for future solution release Builds, if
+        needed.
+    </li>
+    <li>
+        Refinement of the specifications for acceptance testing based on feedback from the system and integration tests
+        conducted for the release during the Build Cycle phase.
+    </li>
+    <li>
+        Assisting the client’s staff identified to perform and participate in executing the defined test cases for the test
+        levels planned and conducted in the Deployment phase to verify that the system is functionally correct and
+        operationally secure and sound.
+    </li>
+    <li>
+        Definition and management of the problem reporting process for acceptance testing.&nbsp; This includes defining and
+        communicating the process for reporting errors, tracking all errors reported by the users during the acceptance
+        testing, correcting errors, and notifying the users when the errors have been corrected.
+    </li>
+    <li>
+        Definition and management of the problem reporting process for penetration testing.&nbsp; This includes defining
+        and communicating the process for reporting security holes, status tracking of fixing these holes, correcting them,
+        and notifying the client when they have been corrected.
+    </li>
+    <li>
+        Documenting the results obtained for all tests conducted.
+    </li>
+</ul>
+<p>
+    The tested solution release is deemed acceptable for client receipt provided Acceptance Test results fall within the
+    criteria and tolerances specified in the Acceptance Test Plan.<br />
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Deliverable Parts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.mgmt.wwpmm.common.base-ibm_lic/workproducts/agreement_290C745.html" guid="mweb576433DB5286A8FA852568A9007D2828">Agreement</a>
+</li>
+<li>
+<a href="./../../core.mgmt.wwpmm.common.base-ibm_lic/workproducts/change_order_4D91792A.html" guid="mwebF5957D62677DC07F852568A9007D7973">Change Order</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/test_specification_E0A1A8C5.html" guid="mwebCE3B2E307A951B9485256885005D8027">Test Specification</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Packaging Instructions</th><td class="sectionTableCell"><p>
+    The final document may be delivered in hard copy format printed in a single, bound document.
+</p>
+<p>
+    The following work products contribute to the various deliverable topics or sections.
+</p>
+<p>
+    The testing specifications work products identified for each testing level are fully defined at a detailed level for a
+    specific release during Micro Design. They may each be revised, as needed, during the Build Cycle and Deployment phases
+    for a specific release. Modifications may also be made while developing one release that may apply to the solution as a
+    whole or to its future releases.
+</p>
+<p>
+    Some work products may also contain detailed descriptions of prior solution releases and high-level descriptions for
+    future solution releases that are discrete to those releases and not pertinent to the release undergoing the Deployment
+    phase. Such work products will be iterated and more fully developed in later phases of the engagement as the need for
+    greater detail is identified and required per each solution release. In this regard, work products input to this
+    deliverable may be extensions and/or revisions to previously generated work products while others may be separate and
+    distinct instances specific to this project and/or phase.
+</p>
+<div align="center">
+    <table border="1">
+        <thead>
+            <tr>
+                <td width="115">
+                    <br />
+                    <b>Report Topic</b>
+                </td>
+                <td width="174">
+                    <br />
+                    <b>Work Product</b>
+                </td>
+                <td width="120">
+                    <br />
+                    <b>Instance</b>
+                </td>
+                <td valign="top" width="144">
+                    <br />
+                    <b>Instance Completeness</b>
+                </td>
+                <td valign="top" width="85">
+                    <br />
+                    <b>Base / Optional</b>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td valign="top" width="638" colspan="5">
+                    <br />
+                    <b><i>Section: Executive Overview / Introduction</i></b>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="115">
+                    <br />
+                    Deliverable Description / Purpose
+                </td>
+                <td valign="top" width="174">
+                    <br />
+                    Agreement
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="144">
+                    <br />
+                    Should include a brief description and purpose of the deliverable (use the External Description as a
+                    starting point, if not included in the agreement)
+                </td>
+                <td valign="top" width="85">
+                    <br />
+                    Base
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="115">
+                    <br />
+                </td>
+                <td valign="top" width="174">
+                    <br />
+                    Change Order
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    various
+                </td>
+                <td valign="top" width="144">
+                    <br />
+                    Include any changes to the scope (relative to this deliverable) that have been agreed upon since the
+                    signed agreement (SOW)
+                </td>
+                <td valign="top" width="85">
+                    <br />
+                    Optional
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="638" colspan="5">
+                    <br />
+                    <b><i>Section: Acceptance Test Report</i></b>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="115">
+                    <br />
+                    Acceptance Test Specification
+                </td>
+                <td valign="top" width="174">
+                    <br />
+                    Test Specification
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="144">
+                    <br />
+                    Should include updates per evaluation of Build Cycle testing conducted for a specific solution release
+                    as pertain to Acceptance Testing. If no updates, may simply be reference to Acceptance Test
+                    Specification defined for the release in prior project phases.
+                </td>
+                <td valign="top" width="85">
+                    <br />
+                    Base
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="115">
+                    <br />
+                    Acceptance Test Report
+                </td>
+                <td valign="top" width="174">
+                    <br />
+                    Test Results
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    Acceptance Test
+                </td>
+                <td valign="top" width="144">
+                    <br />
+                </td>
+                <td valign="top" width="85">
+                    <br />
+                    Base
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="115">
+                    <br />
+                </td>
+                <td valign="top" width="174">
+                    <br />
+                    Test Report
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                    Acceptance Test
+                </td>
+                <td valign="top" width="144">
+                    <br />
+                </td>
+                <td valign="top" width="85">
+                    <br />
+                    Base
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="115">
+                    <br />
+                    Release Acceptance Recommendation
+                </td>
+                <td valign="top" width="174">
+                    <br />
+                    (none)
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="144">
+                    <br />
+                    Should include a brief summary of the results of the test execution and compared against the acceptance
+                    criteria. Should also include text relative to whether the release should be accepted.
+                </td>
+                <td valign="top" width="85">
+                    <br />
+                    Optional
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="638" colspan="5">
+                    <br />
+                    <b><i>Section: Release Tests Report</i></b>
+                </td>
+            </tr>
+            <tr>
+                <td width="638" colspan="5">
+                    <br />
+                    <i>The following is a template of the topics for each testing level to be performed. Please see the
+                    table following this table for additional information regarding each typical testing level.</i>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="115">
+                    <br />
+                    Specifications
+                </td>
+                <td valign="top" width="174">
+                    <br />
+                    Test Specification
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="144">
+                    <br />
+                    Should include updates per evaluation of Build Cycle testing conducted for a specific solution release
+                    as pertain to the testing level. If no updates, may simply be reference to testing level’s
+                    Specification defined for the release in prior project phases.
+                </td>
+                <td valign="top" width="85">
+                    <br />
+                    Base
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="115">
+                    <br />
+                    Report
+                </td>
+                <td valign="top" width="174">
+                    <br />
+                    Test Results
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="144">
+                    <br />
+                </td>
+                <td valign="top" width="85">
+                    <br />
+                    Base
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="115">
+                    <br />
+                </td>
+                <td valign="top" width="174">
+                    <br />
+                    Test Report
+                </td>
+                <td valign="top" width="120">
+                    <br />
+                </td>
+                <td valign="top" width="144">
+                    <br />
+                </td>
+                <td valign="top" width="85">
+                    <br />
+                    Base
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<div align="center">
+    <table border="1">
+        <tbody>
+            <tr>
+                <td width="127">
+                    <br />
+                    <b><i>Deployment Release Testing Level Subsection</i></b>
+                </td>
+                <td width="402">
+                    <br />
+                    <b><i>Subsection Topic Instances</i></b>
+                </td>
+                <td width="109">
+                    <br />
+                    <b><i>Subsection Topic Instance Completeness</i></b>
+                </td>
+            </tr>
+            <tr>
+                <td width="127">
+                    <br />
+                    Operability Testing
+                </td>
+                <td width="402">
+                    <br />
+                    As applies to the solution and fully articulated as applies to a specific solution release
+                </td>
+                <td width="109">
+                    <br />
+                    Fully articulated for a specific release
+                </td>
+            </tr>
+            <tr>
+                <td width="127">
+                    <br />
+                    Systems Integration Testing
+                </td>
+                <td width="402">
+                    <br />
+                    As applies to the systems comprising a solution that must interact with one another and fully
+                    articulated as applies to a specific solution release
+                </td>
+                <td width="109">
+                    <br />
+                    Fully articulated for a specific release
+                </td>
+            </tr>
+            <tr>
+                <td width="127">
+                    <br />
+                    Penetration Testing
+                </td>
+                <td width="402">
+                    <br />
+                    As applies to the solution ensuring the solution is securely built and implemented.
+                </td>
+                <td width="109">
+                    <br />
+                    Fully articulated for a specific release
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>
+    The concept of completeness of a work product instance depends largely on whether the work product will be finished in
+    this phase of the project or iterated for additional work in later phases. If the work product is to be iterated later,
+    it will only be partially complete at the end of this phase. Regardless of whether each work product instance is fully
+    or partially completed at this time, the content of the work products should be fully included in the deliverable being
+    produced.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright">&copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012&nbsp;All Rights Reserved <br />
+Property of IBM <br />
+These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>
